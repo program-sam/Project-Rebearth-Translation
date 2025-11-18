@@ -1,0 +1,449 @@
+{
+    "menu": {
+        "main": {
+            "title": "Project Rebearth Server",
+            "subtitle": "This is the Project Rebearth Demo! Only the sandbox mode is made available to the public. Please reach out if you have encounter any issues while playing.",
+            "serverOffline": "Cannot reach the server. Check your internet connection.",
+            "enterMultiplayer": "Enter World",
+            "newSandbox": "New Sandbox",
+            "loadSandbox": "Load Sandbox",
+            "settings": "Settings",
+            "credits": "Credits",
+            "returnToDesktop": "Return to Desktop"
+        },
+        "game": {
+            "menu": "Menu",
+            "quicksettings": "Settings",
+            "deleteEverything": "Delete Everything",
+            "saveBuild": "Save Build",
+            "saveSandbox": "Save Build"
+        }
+    },
+    "settings": {
+        "title": "Settings",
+        "musicVolume": "Music Volume",
+        "soundVolume": "Sound Volume",
+        "uiScale": "UI Scale",
+        "showClouds": "Show Clouds",
+        "showTrees": "Show Trees",
+        "textureResolution": "Texture Resolution",
+        "clearTileCache": "Clear Tile Cache",
+        "language": "Language",
+        "resolutions": {
+            "ultra": "Ultra",
+            "high": "High",
+            "medium": "Medium",
+            "low": "Low",
+            "potato": "Potato"
+        }
+    },
+    "game": {
+        "effects": {
+            "foodProduction": "Food Production",
+            "foodConsumption": "Food Consumption",
+            "goodsProduction": "Goods Production",
+            "allProduction": "All Production",
+            "happiness": "Happiness",
+            "taxation": "Taxation",
+            "raidRisk": "Raid Risk",
+            "researchSpeed": "Research Speed",
+            "expeditionCost": "Expedition Cost",
+            "constructionCost": "Construction Cost",
+            "exportCost": "Export Cost",
+            "importCost": "Import Cost",
+            "accidentRate": "Accident Rate"
+        },
+        "views": {
+            "watch": "Watch",
+            "build": "Build",
+            "politic": "Politics",
+            "market": "Market",
+            "explore": "Explore",
+            "player": "Player"
+        },
+        "buildings": {
+            "categories": {
+                "housing": "Housing",
+                "production": "Production",
+                "infrastructure": "Infrastructure",
+                "military": "Military",
+                "decoration": "Decoration",
+                "research": "Research",
+                "food": "Food & Agriculture",
+                "resources": "Resource Extraction",
+                "storage": "Storage",
+                "defense": "Defense",
+                "town": "Town & Community"
+            },
+            "assets": {
+                "center": "Center",
+                "square": "Square",
+                "market": "Market",
+                "hut": "Hut",
+                "house": "House",
+                "field": "Field",
+                "fishery": "Fishery",
+                "woodcutter": "Woodcutter",
+                "saw": "Sawmill",
+                "nursery": "Nursery",
+                "tent": "Tent",
+                "logpile": "Log Pile",
+                "boat": "Boat",
+                "pier": "Pier",
+                "path": "Path",
+                "road": "Road",
+                "bridge": "Bridge",
+                "quarry": "Quarry",
+                "claypit": "Clay Pit",
+                "stone_crane": "Stone Crane",
+                "clay_crane": "Clay Crane",
+                "windmill": "Windmill",
+                "bakery": "Bakery",
+                "tailor": "Tailor",
+                "tower": "Tower",
+                "water_tower": "Water Tower",
+                "tavern": "Tavern",
+                "warehouse": "Warehouse",
+                "brewery": "Brewery",
+                "port": "Port",
+                "dock": "Dock",
+                "small_ship": "Small Ship",
+                "medium_ship": "Medium Ship",
+                "large_ship": "Large Ship",
+                "university": "University",
+                "plaza": "Plaza",
+                "table": "Table",
+                "small_statue": "Small Statue",
+                "large_statue": "Large Statue",
+                "fountain": "Fountain",
+                "market_stall": "Market Stall",
+                "park": "Park",
+                "tree": "Tree",
+                "town_hall": "Town Hall",
+                "creamery": "Creamery",
+                "foraging_hut": "Foraging Hut",
+                "ruinsBig": "Large Ruins",
+                "ruinsSmall": "Small Ruins"
+            },
+            "descriptions": {
+                "center": "The center is the core of your town. It is the only building that can be placed anywhere on the map when you first start building. It can be upgraded to increase various stats and capabilities of your town.",
+                "square": "The square is the center of your town. It is the only building that can be placed anywhere on the map when you first start building. It can be upgraded to increase various stats and capabilities of your town.",
+                "market": "The market is used to buy and sell resources. Residential buildings need one close by. It also generates coin.",
+                "hut": "The hut is one of the basic residential buildings. It can house only a few people and consumes food and wood to survive.",
+                "house": "A house is a larger variant of the hut. It houses more people, but only consumes a little bit more food and wood.",
+                "field": "Fields are used to grow crops. They require a lot of space and workers, but produce a lot of food.",
+                "fishery": "A fishery is a building that produces food by fishing. It requires less space, but must be connected to a large body of water.",
+                "woodcutter": "The woodcutter produces wood when placed close to trees.",
+                "saw": "Building a sawmill increases the capacity of your woodcutter to produce wood.",
+                "nursery": "Building a nursery increases the capacity of your woodcutter to produce wood.",
+                "tent": "Building a tent increases the amount of workers your woodcutter can employ, increasing the capacity to produce wood.",
+                "logpile": "The logpile increases the maximum amount of wood your woodcutter can store.",
+                "boat": "The boat is used to fish in deeper waters. It can be placed on the water to increase the fishery's production capacity",
+                "pier": "The pier extends the fishery into deeper waters",
+                "path": "Paths are used to give structure to your village. they are not required for your buildings to function but just look cool.",
+                "road": "Roads are used to give structure to your village. they are not required for your buildings but look more fancy than paths.",
+                "bridge": "Bridges are used to cross rivers. They are not required for your buildings to function but just look cool.",
+                "quarry": "Quarries are used to mine stone. They require a lot of space and workers. They leave scars in the landscape that take many resources to repair.",
+                "claypit": "Claypits are used to extract clay from the earth. They require a lot of space and workers. They leave scars in the landscape that take many resources to repair.",
+                "stone_crane": "The crane is used to lift heavy stone blocks out of the quarry and increases the capacity of your quarry to produce stone.",
+                "clay_crane": "The crane is used to lift heavy earth blocks out of the quarry and increases the capacity of your pit to produce clay.",
+                "windmill": "The windmill is used to grind grains into flour so they can be used by the bakery.",
+                "bakery": "The bakery is used to bake bread from flour.",
+                "tailor": "The tailor is used to make clothes from leather, wool and other fibers.",
+                "tower": "The tower extends the range of your territory but is expensive to maintain.",
+                "water_tower": "The tower extends the range of your territory but is expensive to maintain.",
+                "tavern": "The tavern is a place for your citizens to meet and drink. It consumes drinks and earns you coin",
+                "warehouse": "The warehouse is used to store resources. It increases the storage capacity of your town.",
+                "brewery": "The brewery is used to produce drinks from grains and fruits.",
+                "port": "The port is used to trade with other towns and cities. It increases the range of your trade routes.",
+                "dock": "The dock expands your port and gives you more space for port buildings and ships.",
+                "small_ship": "The small ship lets you trade much more cheaply with other ports up to 5000km away.",
+                "medium_ship": "The medium ship lets you trade much more cheaply with other ports up to 10000km away.",
+                "large_ship": "The large ship lets you trade much more cheaply with other ports anywhere in the world",
+                "university": "The university is used to generate knowledge and discover new technologies.",
+                "plaza": "add pretty tiles to your town",
+                "table": "add a table to your town",
+                "small_statue": "add a small statue to your town",
+                "large_statue": "add a large statue to your town",
+                "fountain": "add a fountain to your town",
+                "market_stall": "add a market stall to your town",
+                "park": "add a park to your town",
+                "tree": "add a tree to your town",
+                "town_hall": "The town hall is the center of your town. It enables you to engage with alliances, see your ranking, and enact new laws in your town.",
+                "creamery": "The creamery is used to produce foodproducts from milk.",
+                "foraging_hut": "The foraging hut is used to gather resources from the environment. It gets less effective the more buildings are placed around it.",
+                "ruinsBig": "",
+                "ruinsSmall": ""
+            }
+        },
+        "resources": {
+            "wood": "Wood",
+            "stone": "Stone",
+            "earth": "Earth",
+            "food": "Food",
+            "grain": "Grain",
+            "wool": "Wool",
+            "flour": "Flour",
+            "drinks": "Drinks",
+            "clothes": "Clothes",
+            "coin": "Coin",
+            "pop": "Population"
+        },
+        "crops": {
+            "empty": "Empty",
+            "potato": "Potato",
+            "sheep": "Sheep",
+            "grain": "Grain",
+            "maize": "Maize",
+            "cow": "Cow",
+            "goat": "Goat"
+        },
+        "expedition": {
+            "start": "Start Expedition"
+        }
+    },
+    "modals": {
+        "ranking": {
+            "title": "Ranking",
+            "player": "Player",
+            "goToPlayer": "Go to Player"
+        },
+        "market": {
+            "title": "Market",
+            "resource": "Resource",
+            "price": "Price",
+            "quantity": "Quantity",
+            "buy": "BUY",
+            "sell": "SELL",
+            "sells": "sells",
+            "buys": "buys",
+            "for": "for",
+            "pricePerUnit": "Price per unit",
+            "base": "Base",
+            "transport": "Transport",
+            "total": "Total",
+            "back": "Back",
+            "unitPrice": "for a unit price of",
+            "totalLabel": "Total"
+        },
+        "orders": {
+            "title": "My Orders"
+        },
+        "archive": {
+            "title": "Archives"
+        },
+        "diplomacy": {
+            "title": "Diplomacy",
+            "you": "You",
+            "alliances": "Alliances",
+            "neutral": "Neutral",
+            "enemy": "Enemy"
+        },
+        "choices": {
+            "title": "Choices",
+            "selectChoice": "Select Choice"
+        },
+        "deleteConfirmation": {
+            "title": "Confirm Deletion",
+            "message": "Are you sure you want to delete your entire town? This action cannot be undone.",
+            "confirm": "Delete",
+            "cancel": "Cancel"
+        }
+    },
+    "popup": {
+        "townName": "Town Name",
+        "unnamedTown": "unnamed town",
+        "demolish": "Demolish",
+        "apply": "Apply",
+        "production": {
+            "title": "Production",
+            "rate": "Rate"
+        },
+        "storage": {
+            "title": "Storage"
+        },
+        "population": "Population",
+        "upgrade": "Upgrade to {{building}}",
+        "archive": "Archive"
+    },
+    "hud": {
+        "defaultTownName": "Your Town",
+        "capacity": "Capacity",
+        "placeCenterPrompt": "place your center"
+    },
+    "controls": {
+        "confirm": "✓",
+        "cancel": "✗",
+        "next": "Next",
+        "previous": "Previous",
+        "close": "Close",
+        "build": {
+            "addMorePoints": "Add more points to finish the shape!"
+        },
+        "explore": {
+            "title": "EXPLORATION",
+            "duration": "Duration",
+            "population": "Population",
+            "food": "Food",
+            "knowledge": "Knowledge",
+            "addMorePoints": "Add more points to start Exploring!"
+        }
+    },
+    "loading": {
+        "game": "Loading game...",
+        "assets": "Loading assets...",
+        "connecting": "Connecting to server..."
+    },
+    "errors": {
+        "loadingBuild": "Error loading build",
+        "serverConnection": "Server connection error",
+        "invalidFile": "Invalid file format",
+        "webWorkersNotSupported": "Cannot run the game: Web Workers not supported"
+    },
+    "units": {
+        "percentage": "{{value}}%",
+        "seconds": "{{value}}s",
+        "minutes": "{{value}}m",
+        "hours": "{{value}}h",
+        "days": "days",
+        "hoursLong": "hours",
+        "minutesLong": "minutes",
+        "secondsLong": "seconds"
+    },
+    "choices": {
+        "title": "Choices",
+        "exclusiveOptions": "Exclusive Options",
+        "option": "Option",
+        "unlock": "Unlock",
+        "lockedFor": "Locked for",
+        "titles": {
+            "tradeAlliance": "Trade Alliance",
+            "greatFederation": "Great Federation",
+            "scienceLeague": "Science League",
+            "workerSafety": "Worker Safety",
+            "veganSociety": "Vegan Society",
+            "taxation": "Taxation",
+            "exportFocus": "Trade - Export Focus",
+            "importFocus": "Trade - Import Focus",
+            "neutralFocus": "Trade - Neutral Focus",
+            "lowRations": "Low Rations",
+            "normalRations": "Normal Rations",
+            "lavishRations": "Lavish Rations"
+        },
+        "descriptions": {
+            "tradeAlliance": "A trade alliance offers discounted trade costs and increased taxation efficiency, but also a higher risk of raids.",
+            "greatFederation": "Forming a great federation offers better protection against raid events etc. and increased resource production, but also lower taxation efficiency.",
+            "scienceLeague": "Joining an institution or science league offers faster research and lower expedition costs, increased base happiness, but also increased construction cost and reduced productivity.",
+            "workerSafety": "Increased worker safety will reduce the number of work accident events, but also reduces output of all production buildings slightly.",
+            "veganSociety": "Switching to a vegan society allows you to produce more food per area, but prohibits you from producing animal products.",
+            "taxation": "Taxation, its only fair... Will generate gold for each inhabitant, but reduces happiness.",
+            "exportFocus": "Export focus will reduce the cost for people buying your goods, while increasing the cost of buying goods from other players.",
+            "importFocus": "Import focus will reduce the cost of buying goods from other players, while increasing the cost for people buying your goods.",
+            "neutralFocus": "Neutral focus will keep both import and export costs at standard rates.",
+            "lowRations": "Low rations will reduce the amount of food needed per person, but will also reduce happiness.",
+            "normalRations": "Normal rations will have no effect on food consumption.",
+            "lavishRations": "Lavish rations will increase the amount of food needed per person, but will also increase happiness."
+        }
+    },
+    "alliances": {
+        "createAlliance": "create alliance",
+        "createAllianceButton": "Create Alliance",
+        "placeholderName": "name",
+        "placeholderDescription": "description",
+        "allianceTradeInfo": "All alliances give the option to offer alliance specific trades that only members from the same alliance can see and accept.",
+        "tradeAllianceDesc": "A trade alliance offers discounted trade costs and increased taxation efficiency, but also a higher risk of raids.",
+        "greatFederationDesc": "Forming a great federation offers better protection against raid events etc. and increased resource production, but also lower taxation efficiency.",
+        "scienceLeagueDesc": "Joining an institution or science league offers faster research and lower expedition costs, increased base happiness, but also increased construction cost and reduced productivity.",
+        "marketSizeLabel": "Market Size:",
+        "applyForAlliance": "Apply for alliance",
+        "cancelApplication": "Cancel application",
+        "leaveAlliance": "leave alliance"
+    },
+    "orders": {
+        "myOrders": "My Orders",
+        "placeOrder": "Place an order",
+        "sell": "Sell",
+        "buy": "Buy",
+        "selling": "selling",
+        "buying": "buying",
+        "for": "for",
+        "amount": "Amount",
+        "unitPrice": "Unit Price",
+        "totalPrice": "Total Price",
+        "onlyAllianceMembers": "Only sell to alliance members",
+        "sellButton": "{{type}} {{amount}} {{resource}} for {{price}} per unit"
+    },
+    "tooltip": {
+        "cost": "Cost",
+        "costPerMeter": "(per m)",
+        "costPerSquareMeter": "(per m²)",
+        "cannotChange": "Cannot be changed for"
+    },
+    "tips": {
+        "loading": [
+            "You can rotate buildings before placing them by using the Q and E key.",
+            "Double click in the shape editor to place nodes.",
+            "Use the shift key to keep placing buildings."
+        ]
+    },
+    "politics": {
+        "loading": "Loading...",
+        "inviteToAlliance": "invite to your alliance",
+        "rankPrefix": "N°",
+        "name": "Name",
+        "members": "Members",
+        "marketSize": "Market Size",
+        "createAlliance": "create alliance",
+        "leaveAlliance": "leave alliance",
+        "cancelApplication": "cancel application",
+        "applyForAlliance": "apply for alliance",
+        "disbandAlliance": "disband alliance",
+        "kick": "kick",
+        "go": "go",
+        "reject": "reject",
+        "accept": "accept",
+        "globalRank": "Global Rank",
+        "rank": "Rank",
+        "value": "Value",
+        "noApplications": "There are no applications",
+        "noModifiers": "This alliance does not have any modifiers",
+        "choiceChangeCooldown": "this choice can be changed again after {{days}} day(s)",
+        "days": "days",
+        "alliances": "Alliances",
+        "marketSizeLabel": "Market Size: {{size}}",
+        "tradeAlliance": "Trade Alliance",
+        "greatFederation": "Great Federation",
+        "scienceLeague": "Science League",
+        "applications": "Applications",
+        "owner": "Owner",
+        "placeholderName": "Alliance Name",
+        "placeholderDescription": "Alliance Description",
+        "allianceTradeInfo": "Choose an alliance type:",
+        "tradeAllianceDesc": "Trade alliance description",
+        "greatFederationDesc": "Great federation description",
+        "scienceLeagueDesc": "Science league description",
+        "ranking": {
+            "population": "Population",
+            "resources": "Resources",
+            "buildings": "Buildings",
+            "area": "Area",
+            "overall": "Overall"
+        },
+        "common": {
+            "name": "Name",
+            "members": "Members",
+            "marketSize": "Market Size",
+            "value": "Value",
+            "owner": "Owner",
+            "globalRank": "Global Rank",
+            "rank": "Rank",
+            "kick": "Kick",
+            "accept": "Accept",
+            "reject": "Reject",
+            "applications": "Applications",
+            "tradeAlliance": "Trade Alliance",
+            "greatFederation": "Great Federation",
+            "scienceLeague": "Science League"
+        }
+    }
+}

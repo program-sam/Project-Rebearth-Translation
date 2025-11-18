@@ -1,0 +1,454 @@
+{
+    "menu": {
+        "main": {
+            "title": "Project Rebearth Server",
+            "subtitle": "Dit is de Project Rebearth Demo! Alleen de sandbox modus is beschikbaar voor het publiek. Neem contact op als je problemen ondervindt tijdens het spelen.",
+            "serverOffline": "Kan de server niet bereiken. Controleer je internetverbinding.",
+            "enterMultiplayer": "Wereld Betreden",
+            "newSandbox": "Nieuwe Sandbox",
+            "loadSandbox": "Sandbox Laden",
+            "settings": "Instellingen",
+            "credits": "Credits",
+            "returnToDesktop": "Spel Verlaten"
+        },
+        "game": {
+            "menu": "Menu",
+            "quicksettings": "Instellingen",
+            "deleteEverything": "Alles Verwijderen",
+            "saveBuild": "Creatie Opslaan",
+            "saveSandbox": "Creatie Opslaan"
+        }
+    },
+    "settings": {
+        "title": "Instellingen",
+        "musicVolume": "Muziekvolume",
+        "soundVolume": "Geluidsvolume",
+        "uiScale": "UI-schaal",
+        "showClouds": "Wolken Tonen",
+        "showTrees": "Bomen Tonen",
+        "textureResolution": "Terreinresolutie",
+        "clearTileCache": "Tegel Cache Wissen",
+        "language": "Taal",
+        "resolutions": {
+            "ultra": "Ultra",
+            "high": "Hoog",
+            "medium": "Gemiddeld",
+            "low": "Laag",
+            "potato": "Waardeloos"
+        }
+    },
+    "game": {
+        "effects": {
+            "foodProduction": "Voedselproductie",
+            "foodConsumption": "Voedselverbruik",
+            "goodsProduction": "Goederenproductie",
+            "allProduction": "Alle Productie",
+            "happiness": "Geluk",
+            "taxation": "Belasting",
+            "raidRisk": "Overvalrisico",
+            "researchSpeed": "Onderzoekssnelheid",
+            "expeditionCost": "Expeditiekosten",
+            "constructionCost": "Bouwkosten",
+            "exportCost": "Exportkosten",
+            "importCost": "Importkosten",
+            "accidentRate": "Ongevallenpercentage"
+        },
+        "views": {
+            "watch": "Observeren",
+            "build": "Bouwen",
+            "politic": "Politiek",
+            "market": "Markt",
+            "explore": "Verkennen",
+            "player": "Speler"
+        },
+        "buildings": {
+            "categories": {
+                "housing": "Huisvesting",
+                "production": "Productie",
+                "infrastructure": "Infrastructuur",
+                "military": "Militair",
+                "decoration": "Decoratie",
+                "research": "Onderzoek",
+                "food": "Voedsel & Landbouw",
+                "resources": "Grondstoffen",
+                "storage": "Opslag",
+                "defense": "Verdediging",
+                "town": "Gemeenschap"
+            },
+            "assets": {
+                "center": "Centrum",
+                "square": "Marktplein",
+                "market": "Markt",
+                "hut": "Hut",
+                "house": "Huis",
+                "field": "Veld",
+                "fishery": "Visserij",
+                "woodcutter": "Houthakker",
+                "saw": "Zagerij",
+                "nursery": "Kwekerij",
+                "tent": "Tent",
+                "logpile": "Houtstapel",
+                "boat": "Boot",
+                "pier": "Pier",
+                "path": "Pad",
+                "road": "Weg",
+                "bridge": "Brug",
+                "quarry": "Steengroeve",
+                "claypit": "Kleigroeve",
+                "stone_crane": "Steenkraan",
+                "clay_crane": "Kleikraan",
+                "windmill": "Windmolen",
+                "bakery": "Bakkerij",
+                "tailor": "Kleermaker",
+                "tower": "Toren",
+                "water_tower": "Watertoren",
+                "tavern": "Taverne",
+                "warehouse": "Magazijn",
+                "brewery": "Brouwerij",
+                "port": "Haven",
+                "dock": "Kade",
+                "small_ship": "Klein Schip",
+                "medium_ship": "Middelgroot Schip",
+                "large_ship": "Groot Schip",
+                "university": "Universiteit",
+                "plaza": "Plein",
+                "table": "Tafel",
+                "small_statue": "Klein Standbeeld",
+                "large_statue": "Groot Standbeeld",
+                "fountain": "Fontein",
+                "market_stall": "Marktkraam",
+                "park": "Park",
+                "tree": "Boom",
+                "town_hall": "Stadhuis",
+                "creamery": "Zuivelfabriek",
+                "foraging_hut": "Verzamelhut",
+                "ruinsBig": "Grote Ruïnes",
+                "ruinsSmall": "Kleine Ruïnes"
+            },
+            "descriptions": {
+                "center": "Het centrum is de kern van je stad. Het is het enige gebouw dat overal op de kaart kan worden geplaatst wanneer je begint met bouwen. Het kan worden geüpgraded om verschillende statistieken en capaciteiten van je stad te verhogen.",
+                "square": "Het plein is het centrum van je stad. Het is het enige gebouw dat overal op de kaart kan worden geplaatst wanneer je begint met bouwen. Het kan worden geüpgraded om verschillende statistieken en capaciteiten van je stad te verhogen.",
+                "market": "De markt wordt gebruikt om grondstoffen te kopen en verkopen. Woongebouwen hebben er een dichtbij nodig. Het genereert ook munten.",
+                "hut": "De hut is een van de basis woongebouwen. Het kan slechts een paar mensen huisvesten en verbruikt voedsel en hout om te overleven.",
+                "house": "Een huis is een grotere variant van de hut. Het huisvest meer mensen, maar verbruikt slechts iets meer voedsel en hout.",
+                "field": "Velden worden gebruikt om gewassen te verbouwen. Ze vereisen veel ruimte en arbeiders, maar produceren veel voedsel.",
+                "fishery": "Een visserij is een gebouw dat voedsel produceert door te vissen. Het vereist minder ruimte, maar moet verbonden zijn met een groot waterlichaam.",
+                "woodcutter": "De houthakker produceert hout wanneer het dicht bij bomen wordt geplaatst.",
+                "saw": "Het bouwen van een zagerij verhoogt de capaciteit van je houthakker om hout te produceren.",
+                "nursery": "Het bouwen van een kwekerij verhoogt de capaciteit van je houthakker om hout te produceren.",
+                "tent": "Het bouwen van een tent verhoogt het aantal arbeiders dat je houthakker kan inzetten, waardoor de capaciteit om hout te produceren toeneemt.",
+                "logpile": "De houtstapel verhoogt de maximale hoeveelheid hout die je houthakker kan opslaan.",
+                "boat": "De boot wordt gebruikt om te vissen in dieper water. Het kan op het water worden geplaatst om de productiecapaciteit van de visserij te verhogen",
+                "pier": "De pier breidt de visserij uit naar dieper water",
+                "path": "Paden worden gebruikt om structuur te geven aan je dorp. Ze zijn niet vereist voor het functioneren van je gebouwen, maar zien er cool uit.",
+                "road": "Wegen worden gebruikt om structuur te geven aan je dorp. Ze zijn niet vereist voor je gebouwen, maar zien er mooier uit dan paden.",
+                "bridge": "Bruggen worden gebruikt om rivieren over te steken. Ze zijn niet vereist voor het functioneren van je gebouwen, maar zien er cool uit.",
+                "quarry": "Steengroeves worden gebruikt om steen te delven. Ze vereisen veel ruimte en arbeiders. Ze laten littekens achter in het landschap die veel grondstoffen kosten om te repareren.",
+                "claypit": "Kleigroeves worden gebruikt om klei uit de aarde te halen. Ze vereisen veel ruimte en arbeiders. Ze laten littekens achter in het landschap die veel grondstoffen kosten om te repareren.",
+                "stone_crane": "De kraan wordt gebruikt om zware steenblokken uit de steengroeve te tillen en verhoogt de capaciteit van je steengroeve om steen te produceren.",
+                "clay_crane": "De kraan wordt gebruikt om zware aardblokken uit de groeve te tillen en verhoogt de capaciteit van je groeve om klei te produceren.",
+                "windmill": "De windmolen wordt gebruikt om granen tot meel te malen zodat ze door de bakkerij kunnen worden gebruikt.",
+                "bakery": "De bakkerij wordt gebruikt om brood van meel te bakken.",
+                "tailor": "De kleermaker wordt gebruikt om kleding van leer, wol en andere vezels te maken.",
+                "tower": "De toren breidt het bereik van je territorium uit, maar is duur om te onderhouden.",
+                "water_tower": "De toren breidt het bereik van je territorium uit, maar is duur om te onderhouden.",
+                "tavern": "De taverne is een plek waar je burgers samenkomen en drinken. Het verbruikt dranken en levert je munten op",
+                "warehouse": "Het magazijn wordt gebruikt om grondstoffen op te slaan. Het verhoogt de opslagcapaciteit van je stad.",
+                "brewery": "De brouwerij wordt gebruikt om dranken van granen en vruchten te produceren.",
+                "port": "De haven wordt gebruikt om te handelen met andere steden. Het verhoogt het bereik van je handelsroutes.",
+                "dock": "De kade breidt je haven uit en geeft je meer ruimte voor havengebouwen en schepen.",
+                "small_ship": "Het kleine schip laat je veel goedkoper handelen met andere havens tot 5000km afstand.",
+                "medium_ship": "Het middelgrote schip laat je veel goedkoper handelen met andere havens tot 10000km afstand.",
+                "large_ship": "Het grote schip laat je veel goedkoper handelen met andere havens overal ter wereld",
+                "university": "De universiteit wordt gebruikt om kennis te genereren en nieuwe technologieën te ontdekken.",
+                "plaza": "mooie tegels toevoegen aan je stad",
+                "table": "een tafel toevoegen aan je stad",
+                "small_statue": "een klein standbeeld toevoegen aan je stad",
+                "large_statue": "een groot standbeeld toevoegen aan je stad",
+                "fountain": "een fontein toevoegen aan je stad",
+                "market_stall": "een marktkraam toevoegen aan je stad",
+                "park": "een park toevoegen aan je stad",
+                "tree": "een boom toevoegen aan je stad",
+                "town_hall": "Het stadhuis is het centrum van je stad. Het stelt je in staat om deel te nemen aan allianties, je ranking te zien en nieuwe wetten in je stad uit te vaardigen.",
+                "creamery": "De zuivelfabriek wordt gebruikt om voedingsproducten van melk te produceren.",
+                "foraging_hut": "De verzamelhut wordt gebruikt om grondstoffen uit de omgeving te verzamelen. Het wordt minder effectief naarmate er meer gebouwen eromheen worden geplaatst.",
+                "ruinsBig": "",
+                "ruinsSmall": ""
+            }
+        },
+        "resources": {
+            "wood": "Hout",
+            "stone": "Steen",
+            "earth": "Aarde",
+            "food": "Voedsel",
+            "grain": "Graan",
+            "wool": "Wol",
+            "flour": "Bloem",
+            "drinks": "Dranken",
+            "clothes": "Kleding",
+            "coin": "Munt",
+            "pop": "Bevolking"
+        },
+        "crops": {
+            "empty": "Leeg",
+            "potato": "Aardappel",
+            "sheep": "Schaap",
+            "grain": "Graan",
+            "maize": "Maïs",
+            "cow": "Koe",
+            "goat": "Geit"
+        },
+        "expedition": {
+            "start": "Start Expeditie"
+        }
+    },
+    "modals": {
+        "ranking": {
+            "title": "Ranglijst",
+            "player": "Speler",
+            "population": "Bevolking",
+            "resources": "Middelen",
+            "buildings": "Gebouwen",
+            "area": "Gebied",
+            "overall": "Totaal",
+            "goToPlayer": "Naar Speler Gaan"
+        },
+        "market": {
+            "title": "Markt",
+            "resource": "Bron",
+            "price": "Prijs",
+            "quantity": "Hoeveelheid",
+            "buy": "KOPEN",
+            "sell": "VERKOPEN",
+            "sells": "verkoopt",
+            "buys": "koopt",
+            "for": "voor",
+            "pricePerUnit": "Prijs per eenheid",
+            "base": "Basis",
+            "transport": "Transport",
+            "total": "Totaal",
+            "back": "Terug",
+            "unitPrice": "voor een eenheidsprijs van",
+            "totalLabel": "Totaal"
+        },
+        "orders": {
+            "title": "Mijn Bestellingen"
+        },
+        "archive": {
+            "title": "Archieven"
+        },
+        "diplomacy": {
+            "title": "Diplomatie",
+            "you": "Jij",
+            "alliances": "Allianties",
+            "neutral": "Neutraal",
+            "enemy": "Vijand"
+        },
+        "choices": {
+            "title": "Keuzes",
+            "selectChoice": "Keuze Selecteren"
+        },
+        "deleteConfirmation": {
+            "title": "Verwijdering Bevestigen",
+            "message": "Weet je zeker dat je je hele stad wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+            "confirm": "Verwijderen",
+            "cancel": "Annuleren"
+        }
+    },
+    "popup": {
+        "townName": "Stadsnaam",
+        "unnamedTown": "naamloze stad",
+        "demolish": "Slopen",
+        "apply": "Toepassen",
+        "production": {
+            "title": "Productie",
+            "rate": "Snelheid"
+        },
+        "storage": {
+            "title": "Opslag"
+        },
+        "population": "Bevolking",
+        "upgrade": "Upgraden naar {{building}}",
+        "archive": "Archief"
+    },
+    "hud": {
+        "defaultTownName": "Jouw Stad",
+        "capacity": "Capaciteit",
+        "placeCenterPrompt": "plaats je centrum"
+    },
+    "controls": {
+        "confirm": "✓",
+        "cancel": "✗",
+        "next": "Volgende",
+        "previous": "Vorige",
+        "close": "Sluiten",
+        "build": {
+            "addMorePoints": "Voeg meer punten toe om de vorm af te maken!"
+        },
+        "explore": {
+            "title": "VERKENNING",
+            "duration": "Duur",
+            "population": "Bevolking",
+            "food": "Voedsel",
+            "knowledge": "Kennis",
+            "addMorePoints": "Voeg meer punten toe om te beginnen met Verkennen!"
+        }
+    },
+    "loading": {
+        "game": "Spel laden...",
+        "assets": "Bestanden laden...",
+        "connecting": "Verbinding maken met server..."
+    },
+    "errors": {
+        "loadingBuild": "Fout bij laden van build",
+        "serverConnection": "Server verbindingsfout",
+        "invalidFile": "Ongeldig bestandsformaat",
+        "webWorkersNotSupported": "Kan het spel niet uitvoeren: Web Workers niet ondersteund"
+    },
+    "units": {
+        "percentage": "{{value}}%",
+        "seconds": "{{value}}s",
+        "minutes": "{{value}}m",
+        "hours": "{{value}}h",
+        "days": "dagen",
+        "hoursLong": "uren",
+        "minutesLong": "minuten",
+        "secondsLong": "seconden"
+    },
+    "alliances": {
+        "createAlliance": "alliantie maken",
+        "createAllianceButton": "Alliantie Maken",
+        "placeholderName": "naam",
+        "placeholderDescription": "beschrijving",
+        "allianceTradeInfo": "Alle allianties bieden de mogelijkheid om alliantie-specifieke handel aan te bieden die alleen leden van dezelfde alliantie kunnen zien en accepteren.",
+        "tradeAllianceDesc": "Een handelsalliantie biedt gereduceerde handelskosten en verhoogde belastingefficiëntie, maar ook een hoger risico op overvallen.",
+        "greatFederationDesc": "Het vormen van een grote federatie biedt betere bescherming tegen overval gebeurtenissen enz. en verhoogde grondstofproductie, maar ook lagere belastingefficiëntie.",
+        "scienceLeagueDesc": "Toetreding tot een instituut of wetenschapsliga biedt sneller onderzoek en lagere expeditiekosten, verhoogd basisgeluk, maar ook verhoogde bouwkosten en gereduceerde productiviteit.",
+        "marketSizeLabel": "Marktgrootte:",
+        "applyForAlliance": "Aanvragen voor alliantie",
+        "cancelApplication": "Aanvraag annuleren",
+        "leaveAlliance": "alliantie verlaten"
+    },
+    "orders": {
+        "myOrders": "Mijn Orders",
+        "placeOrder": "Een order plaatsen",
+        "sell": "Verkopen",
+        "buy": "Kopen",
+        "selling": "verkopend",
+        "buying": "kopend",
+        "for": "voor",
+        "amount": "Hoeveelheid",
+        "unitPrice": "Eenheidsprijs",
+        "totalPrice": "Totaalprijs",
+        "onlyAllianceMembers": "Alleen verkopen aan alliantie leden",
+        "sellButton": "{{type}} {{amount}} {{resource}} voor {{price}} per eenheid"
+    },
+    "tooltip": {
+        "cost": "Kosten",
+        "costPerMeter": "(per m)",
+        "costPerSquareMeter": "(per m²)",
+        "cannotChange": "Kan niet worden gewijzigd voor"
+    },
+    "tips": {
+        "loading": [
+            "Je kunt gebouwen draaien voordat je ze plaatst met de Q en E toetsen.",
+            "Dubbelklik wanneer je vormen tekent om knooppunten te plaatsen.",
+            "Gebruik de Shift-toets om gebouwen te blijven plaatsen."
+        ]
+    },
+    "choices": {
+        "title": "Keuzes",
+        "exclusiveOptions": "Exclusieve Opties",
+        "option": "Optie",
+        "unlock": "Ontgrendelen",
+        "lockedFor": "Vergrendeld voor",
+        "titles": {
+            "tradeAlliance": "Handelsalliantie",
+            "greatFederation": "Grote Federatie",
+            "scienceLeague": "Wetenschapsliga",
+            "workerSafety": "Arbeidersveiligheid",
+            "veganSociety": "Veganistische Samenleving",
+            "taxation": "Belasting",
+            "exportFocus": "Handel - Export Focus",
+            "importFocus": "Handel - Import Focus",
+            "neutralFocus": "Handel - Neutrale Focus",
+            "lowRations": "Lage Rantsoenen",
+            "normalRations": "Normale Rantsoenen",
+            "lavishRations": "Rijke Rantsoenen"
+        },
+        "descriptions": {
+            "tradeAlliance": "Een handelsalliantie biedt lagere handelskosten en hogere belastingefficiëntie, maar ook een hoger risico op overvallen.",
+            "greatFederation": "Het vormen van een grote federatie biedt betere bescherming tegen overval gebeurtenissen enz. en verhoogde grondstofproductie, maar ook lagere belastingefficiëntie.",
+            "scienceLeague": "Toetreding tot een instituut of wetenschapsliga biedt sneller onderzoek en lagere expeditiekosten, verhoogd basisgeluk, maar ook verhoogde bouwkosten en gereduceerde productiviteit.",
+            "workerSafety": "Verhoogde arbeidersveiligheid zal het aantal arbeidsongevallengebeurtenissen verminderen, maar vermindert ook de output van alle productiegebouwen lichtjes.",
+            "veganSociety": "Overschakelen naar een veganistische samenleving stelt je in staat om meer voedsel per gebied te produceren, maar verbiedt de productie van dierlijke producten.",
+            "taxation": "Belasting, het is alleen maar eerlijk... Zal goud genereren voor elke inwoner, maar vermindert geluk.",
+            "exportFocus": "Export focus zal de kosten verminderen voor mensen die jouw goederen kopen, terwijl het de kosten verhoogt voor het kopen van goederen van andere spelers.",
+            "importFocus": "Import focus zal de kosten verminderen voor het kopen van goederen van andere spelers, terwijl het de kosten verhoogt voor mensen die jouw goederen kopen.",
+            "neutralFocus": "Neutrale focus zal zowel import- als exportkosten op standaardtarieven houden.",
+            "lowRations": "Lage rantsoenen zullen de hoeveelheid voedsel verminderen die nodig is per persoon, maar zullen ook geluk verminderen.",
+            "normalRations": "Normale rantsoenen zullen geen effect hebben op voedselconsumptie.",
+            "lavishRations": "Rijke rantsoenen zullen de hoeveelheid voedsel verhogen die nodig is per persoon, maar zullen ook geluk verhogen."
+        }
+    },
+    "politics": {
+        "loading": "Laden...",
+        "inviteToAlliance": "uitnodigen voor uw alliantie",
+        "rankPrefix": "Nr.",
+        "name": "Naam",
+        "members": "Leden",
+        "marketSize": "Marktgrootte",
+        "createAlliance": "alliantie creëren",
+        "leaveAlliance": "alliantie verlaten",
+        "cancelApplication": "aanvraag annuleren",
+        "applyForAlliance": "aanvragen voor alliantie",
+        "disbandAlliance": "alliantie ontbinden",
+        "kick": "verbannen",
+        "go": "ga",
+        "reject": "afwijzen",
+        "accept": "accepteren",
+        "globalRank": "Globale Rang",
+        "rank": "Rang",
+        "value": "Waarde",
+        "noApplications": "Er zijn geen aanvragen",
+        "noModifiers": "Deze alliantie heeft geen modificaties",
+        "choiceChangeCooldown": "deze keuze kan opnieuw worden gewijzigd na {{days}} dag(en)",
+        "days": "dagen",
+        "alliances": "Allianties",
+        "marketSizeLabel": "Marktgrootte: {{size}}",
+        "tradeAlliance": "Handelsalliantie",
+        "greatFederation": "Grote Federatie",
+        "scienceLeague": "Wetenschapsliga",
+        "applications": "Aanvragen",
+        "owner": "Eigenaar",
+        "placeholderName": "Alliantienaam",
+        "placeholderDescription": "Alliantiebeschrijving",
+        "allianceTradeInfo": "Kies een alliantietype:",
+        "tradeAllianceDesc": "Handelsalliantie beschrijving",
+        "greatFederationDesc": "Grote federatie beschrijving",
+        "scienceLeagueDesc": "Wetenschapsliga beschrijving",
+        "ranking": {
+            "population": "Bevolking",
+            "resources": "Bronnen",
+            "buildings": "Gebouwen",
+            "area": "Gebied",
+            "overall": "Algemeen"
+        },
+        "common": {
+            "name": "Naam",
+            "members": "Leden",
+            "marketSize": "Marktgrootte",
+            "value": "Waarde",
+            "owner": "Eigenaar",
+            "globalRank": "Globale Rang",
+            "rank": "Rang",
+            "kick": "Wegschoppen",
+            "accept": "Accepteren",
+            "reject": "Afwijzen",
+            "applications": "Aanvragen",
+            "tradeAlliance": "Handelsalliantie",
+            "greatFederation": "Grote Federatie",
+            "scienceLeague": "Wetenschapsliga"
+        }
+    }
+}
