@@ -1,0 +1,449 @@
+{
+    "menu": {
+        "main": {
+            "title": "Project Rebearth Server",
+            "subtitle": "Questa è la demo di Project Rebearth! Solo la modalità Sandbox è disponibile per il pubblico. Per favore contattaci se incontri qualsiasi problema mentre giochi.",
+            "serverOffline": "Impossibile raggiungere il server. Controlla la tua connessione internet.",
+            "enterMultiplayer": "Entra nel Mondo",
+            "newSandbox": "Nuova Sandbox",
+            "loadSandbox": "Carica Sandbox",
+            "settings": "Opzioni",
+            "credits": "Crediti",
+            "returnToDesktop": "Ritorna al Desktop"
+        },
+        "game": {
+            "menu": "Menu",
+            "quicksettings": "Opzioni",
+            "deleteEverything": "Cancella tutto",
+            "saveBuild": "Salva Build",
+            "saveSandbox": "Salva Sandbox"
+        }
+    },
+    "settings": {
+        "title": "Opzioni",
+        "musicVolume": "Volume Musica",
+        "soundVolume": "Volume Suoni",
+        "uiScale": "Scala interfaccia",
+        "showClouds": "Mostra nuvole",
+        "showTrees": "Mostra alberi",
+        "textureResolution": "Risoluzione Texture",
+        "clearTileCache": "Pulisci cache delle tile",
+        "language": "Lingua",
+        "resolutions": {
+            "ultra": "Ultra",
+            "high": "Alto",
+            "medium": "Medio",
+            "low": "Bassa",
+            "potato": "Patatosa"
+        }
+    },
+    "game": {
+        "effects": {
+            "foodProduction": "Produzione cibo",
+            "foodConsumption": "Consumo cibo",
+            "goodsProduction": "Produzione merci",
+            "allProduction": "Tutte le produzioni",
+            "happiness": "Felicità",
+            "taxation": "Tassa",
+            "raidRisk": "Rischio incursioni",
+            "researchSpeed": "Velocità di ricerca",
+            "expeditionCost": "Costo spedizione",
+            "constructionCost": "Costo costruzione",
+            "exportCost": "Costo esportazione",
+            "importCost": "Costo importazione",
+            "accidentRate": "Rateo incidenti"
+        },
+        "views": {
+            "watch": "Guarda",
+            "build": "Costruisci",
+            "politic": "Politica",
+            "market": "Mercato",
+            "explore": "Esplora",
+            "player": "Giocatore"
+        },
+        "buildings": {
+            "categories": {
+                "housing": "Abitazioni",
+                "production": "Produzione",
+                "infrastructure": "Infrastruttura",
+                "military": "Militare",
+                "decoration": "Decorazione",
+                "research": "Ricerca",
+                "food": "Cibo e Agricoltura",
+                "resources": "Estrazione Risorse",
+                "storage": "Magazzino",
+                "defense": "Difesa",
+                "town": "Città e Comunità"
+            },
+            "assets": {
+                "center": "Centro",
+                "square": "Piazza",
+                "market": "Mercato",
+                "hut": "Capanna",
+                "house": "Casa",
+                "field": "Campo",
+                "fishery": "Pescheria",
+                "woodcutter": "Falegnameria",
+                "saw": "Segheria",
+                "nursery": "Vivaio",
+                "tent": "Tenda",
+                "logpile": "Pila di Tronchi",
+                "boat": "Nave",
+                "pier": "Banchina",
+                "path": "Sentiero",
+                "road": "Strada",
+                "bridge": "Ponte",
+                "quarry": "Cava",
+                "claypit": "Cava di argilla",
+                "stone_crane": "Gru per pietra",
+                "clay_crane": "Gru per argilla",
+                "windmill": "Mulino a vento",
+                "bakery": "Forno",
+                "tailor": "Sarto",
+                "tower": "Torre",
+                "water_tower": "Torre dell'acqua",
+                "tavern": "Taverna",
+                "warehouse": "Magazzino",
+                "brewery": "Birrificio",
+                "port": "Porto",
+                "dock": "Molo",
+                "small_ship": "Nave Piccola",
+                "medium_ship": "Nave Media",
+                "large_ship": "Nave Grande",
+                "university": "Università",
+                "plaza": "Piastrellato",
+                "table": "Tavolo",
+                "small_statue": "Statua piccola",
+                "large_statue": "Statua grande",
+                "fountain": "Fontana",
+                "market_stall": "Bancarella",
+                "park": "Parco",
+                "tree": "Albero",
+                "town_hall": "Comune",
+                "creamery": "Cremeria",
+                "foraging_hut": "Capanna del Cacciatore",
+                "ruinsBig": "Rovine grandi",
+                "ruinsSmall": "Rovine piccole"
+            },
+            "descriptions": {
+                "center": "Il centro è il nucleo della tua città. È l'unico edificio che puoi piazzare liberamente sulla mappa quando inizi a costruire. Può essere migliorato per incrementare varie statistiche e le capacità della tua città.",
+                "square": "La piazza è il centro della tua città. È l'unico edificio che puoi piazzare liberamente sulla mappa quando inizi a costruire. Può essere migliorato per incrementare varie statistiche e le capacità della tua città.",
+                "market": "Il mercato è utilizzato per comprare e vendere risorse. Gli edifici residenziali devono essere posizionati vicini. Genera denaro.",
+                "hut": "La capanna è uno degli edifici residenziali di base. Può ospitare poche persone e consuma cibo e legna per sopravvivere.",
+                "house": "La casa è una versione più grande della capanna. Ospita più persone e consuma poco più cibo e legna.",
+                "field": "I campi sono utilizzati per crescere il raccolto. Serve tanto spazio e lavoratori ma produce molto cibo.",
+                "fishery": "La pescheria è un edificio che produce cibo attraverso la pesca. Serve meno spazio, ma deve essere a ridosso di un grande specchio d'acqua.",
+                "woodcutter": "La falegnameria produce legname quando è piazzata vicino agli alberi.",
+                "saw": "Costruire una segheria incrementa la capacità della tua falegnameria nella produzione di legname.",
+                "nursery": "Costruire un vivaio incrementa la capacità della tua falegnameria nella produzione di legname.",
+                "tent": "Costruire la tenda incrementa il numero di lavoratori che la falegnameria può assumere, incrementando la capacità di produrre legname.",
+                "logpile": "La pila di tronchi incrementa il quantitativo massimo di legname che il falegname può immagazzinare.",
+                "boat": "La nave è usata per pescare in acque profonde. Può essere piazzata nell'acqua per incrementare la capacità di produzione della pescheria.",
+                "pier": "La banchina estende la pescheria in acqua profonde.",
+                "path": "I sentieri sono usati per dare struttura al villaggio. Non sono necessari per il funzionamento delle costruzioni ma sono fighi.",
+                "road": "I sentieri sono usati per dare struttura al villaggio. Non sono necessari per il funzionamento delle costruzioni ma sono più raffinati dei sentieri.",
+                "bridge": "I ponti sono usati per attraversare i fiumi. Non sono necessari per il funzionamento delle costruzioni ma sono fighi.",
+                "quarry": "Le cave sono utilizzati per estrarre la pietra. Serve molto spazio e lavoratori. Lasciano cicatrici nel paesaggio che necessitano di molte risorse per ripararle.",
+                "claypit": "Le cave di argilla sono usate per estrarre argilla dalla terra. Serve molto spazio e lavoratori. Lasciano cicatrici nel paesaggio che necessitano di molte risorse per ripararle.",
+                "stone_crane": "La gru è usata per sollevare pesanti blocchi di pietra fuori dalla cava e incrementa la capacità della cava nella produzione di pietra.",
+                "clay_crane": "La gru è usata per sollevare pesanti blocchi di terra fuori dalla cava e incrementa la capacità della cava nella produzione di argilla.",
+                "windmill": "Il mulino a vento è usato per macinare il grano in farina che può essere usata nel fornaio.",
+                "bakery": "Il forno è usato per cuocere il pane dalla farina.",
+                "tailor": "Il sarto è usato per creare vestiti dalla pelle, lana e altre fibre.",
+                "tower": "La torre estende il raggio dei tuoi territori ma è costosa da mantenere.",
+                "water_tower": "La torre estende il raggio dei tuoi territori ma è costosa da mantenere.",
+                "tavern": "La taverna è il posto in cui i cittadini si incontrano e bevono. Consuma bevande e produce denaro.",
+                "warehouse": "Il magazzino è usato per immagazzinare risorse. Incrementa la capacità di immagazzinamento della città.",
+                "brewery": "Il birrificio è usato per produrre bevande dal grano e dalla frutta.",
+                "port": "Il porto è usato per commerciare gli altri paesi e città. Aumenta il raggio delle rotte commerciali.",
+                "dock": "Il molo espande il porto e crea spazio per strutture del porto e navi.",
+                "small_ship": "Le navi piccole ti lasciano commerciare più economicamente con i porti fino a 5000km di distanza.",
+                "medium_ship": "Le navi medie ti lasciano commerciare più economicamente con i porti fino a 1000km di distanza.",
+                "large_ship": "Le navi grandi ti lasciano commerciare più economicamente con gli altri porti posizionati ovunque nel mondo.",
+                "university": "L'università è usata per generare conoscenza e scoprire nuove tecnologie.",
+                "plaza": "aggiungi piastrelle gradevoli nella tua città",
+                "table": "aggiungi un tavolo nella tua città",
+                "small_statue": "aggiungi una statua piccola nella tua città",
+                "large_statue": "aggiungi una statua grande nella tua città",
+                "fountain": "aggiungi una fontana nella tua città",
+                "market_stall": "aggiungi una bancarella nella tua città",
+                "park": "aggiungi un parco alla tua città",
+                "tree": "aggiungi un albero alla tua città",
+                "town_hall": "Il comune è il centro della tua città. Abilita la possibilità di alleanze, la visione del ranking e l'emanazione di leggi nella tua città.",
+                "creamery": "La cremeria è usata per la creazione di cibo dal latte.",
+                "foraging_hut": "La capanna del cacciatore è usata per raccogliere risorse dall'ambiente. Diventa meno efficace più sono gli edifici costruiti intorno ad essa.",
+                "ruinsBig": "",
+                "ruinsSmall": ""
+            }
+        },
+        "resources": {
+            "wood": "Legname",
+            "stone": "Pietra",
+            "earth": "Terra",
+            "food": "Cibo",
+            "grain": "Grano",
+            "wool": "Lana",
+            "flour": "Farina",
+            "drinks": "Bevande",
+            "clothes": "Vestiti",
+            "coin": "Denaro",
+            "pop": "Popolazione"
+        },
+        "crops": {
+            "empty": "Vuoto",
+            "potato": "Patate",
+            "sheep": "Pecore",
+            "grain": "Grano",
+            "maize": "Mais",
+            "cow": "Mucche",
+            "goat": "Capre"
+        },
+        "expedition": {
+            "start": "Inizia Spedizione"
+        }
+    },    
+    "modals": {
+        "ranking": {
+            "title": "Ranking",
+            "player": "Giocatore",
+            "goToPlayer": "Vai al Giocatore"
+        },
+        "market": {
+            "title": "Mercato",
+            "resource": "Risorsa",
+            "price": "Prezzo",
+            "quantity": "Quantità",
+            "buy": "COMPRA",
+            "sell": "VENDI",
+            "sells": "vende",
+            "buys": "compra",
+            "for": "per",
+            "pricePerUnit": "Prezzo per unità",
+            "base": "Base",
+            "transport": "Trasporto",
+            "total": "Totale",
+            "back": "Indietro",
+            "unitPrice": "per un prezzo unitario di",
+            "totalLabel": "Totale"
+        },
+        "orders": {
+            "title": "I miei ordini"
+        },
+        "archive": {
+            "title": "Archivi"
+        },
+        "diplomacy": {
+            "title": "Diplomazia",
+            "you": "Tu",
+            "alliances": "Alleanze",
+            "neutral": "Neutrale",
+            "enemy": "Nemico"
+        },
+        "choices": {
+            "title": "Scelte",
+            "selectChoice": "Seleziona scelta"
+        },
+        "deleteConfirmation": {
+            "title": "Conferma cancellazione",
+            "message": "Sei sicuro di cancellare la tua città? Questa azione non può essere annullata.",
+            "confirm": "Conferma",
+            "cancel": "Indietro"
+        }
+    },
+    "popup": {
+        "townName": "Nome città",
+        "unnamedTown": "Città senza nome",
+        "demolish": "Demolisci",
+        "apply": "Applica",
+        "production": {
+            "title": "Produzione",
+            "rate": "Rateo"
+        },
+        "storage": {
+            "title": "Magazzino"
+        },
+        "population": "Popolazione",
+        "upgrade": "Migliora in {{building}}",
+        "archive": "Archivia"
+    },
+    "hud": {
+        "defaultTownName": "La tua città",
+        "capacity": "Capacità",
+        "placeCenterPrompt": "piazza il tuo centro"
+    },
+    "controls": {
+        "confirm": "✓",
+        "cancel": "✗",
+        "next": "Prossimo",
+        "previous": "Precedente",
+        "close": "Chiudi",
+        "build": {
+            "addMorePoints": "Aggiungi più punti per completare la forma!"
+        },
+        "explore": {
+            "title": "ESPLORAZIONE",
+            "duration": "Durata",
+            "population": "Popolazione",
+            "food": "Cibo",
+            "knowledge": "Conoscenza",
+            "addMorePoints": "Aggiungi più punti per iniziare ad esplorare!"
+        }
+    },
+    "loading": {
+        "game": "Caricamento gioco...",
+        "assets": "Caricamento asset...",
+        "connecting": "Connessione al server..."
+    },
+    "errors": {
+        "loadingBuild": "Errore nel caricamento della build",
+        "serverConnection": "Errore di connessione al server",
+        "invalidFile": "Format file invalido",
+        "webWorkersNotSupported": "Impossibile caricare il gioco: Web Workers not supported"
+    },
+    "units": {
+        "percentage": "{{value}}%",
+        "seconds": "{{value}}s",
+        "minutes": "{{value}}m",
+        "hours": "{{value}}h",
+        "days": "giorni",
+        "hoursLong": "ore",
+        "minutesLong": "minuti",
+        "secondsLong": "secondi"
+    },
+    "choices": {
+        "title": "Scelte",
+        "exclusiveOptions": "Opzioni esclusive",
+        "option": "Opzioni",
+        "unlock": "Sblocca",
+        "lockedFor": "Bloccato per",
+        "titles": {
+            "tradeAlliance": "Alleanza commerciale",
+            "greatFederation": "Gran Federazione",
+            "scienceLeague": "Lega Scientifica",
+            "workerSafety": "Sicurezza dei lavoratori",
+            "veganSociety": "Società vegana",
+            "taxation": "Tassazione",
+            "exportFocus": "Commercio - Focus esportazione",
+            "importFocus": "Commercio - Focus importazione",
+            "neutralFocus": "Commercio - Focus neutrale",
+            "lowRations": "Razioni basse",
+            "normalRations": "Razioni normali",
+            "lavishRations": "Razioni ricche"
+        },
+        "descriptions": {
+            "tradeAlliance": "Un'alleanza commerciale offre costi scontati nel commercio e incrementa l'efficienza della tassazione, ma aumenta anche il rischio di incursioni.",
+            "greatFederation": "Formare una gran federazione offre una protezione migliore contro incursioni ecc. e incrementa la produzione di risorse, ma abbassa l'efficacia della tassazione.",
+            "scienceLeague": "Entrare in un'istituzione o in una lega scientifica offre ricerche più veloci e minori costi di spedizione, aumenta la felicità base, ma anche i costi di costruzione e riduce la produttività.",
+            "workerSafety": "Una sicurezza dei lavoratori aumentata riduce il numero di incidenti sul lavoro, ma riduce leggermente l'output di tutti gli edifici produttivi.",
+            "veganSociety": "Cambiare in una società vegana permette la produzione di più cibo in relazione all'area, ma proibisce la produzione di prodotti animali.",
+            "taxation": "La tassazione può sembrare giusta... Produce oro per abitante, ma riduce la felicità.",
+            "exportFocus": "Focus sull'esportazione riduce il costo per le persone che comprano i tuoi beni, mentre incrementa il costo dei beni acquistati ad altri giocatori.",
+            "importFocus": "Focus sull'importazione riduce il costo dei beni comprati ad altri giocatori, mentre incrementa il costo per le persone che comprano i tuoi beni.",
+            "neutralFocus": "Focus neutrale mantiene i costi di importazione ed esportazione ai ratei standard.",
+            "lowRations": "Razioni basse riduce il quantitativo di cibo necessario per persona, ma riduce la felicità.",
+            "normalRations": "Le razioni normali non hanno effetto sul consumo di cibo.",
+            "lavishRations": "Le razioni ricche aumentano il quantitativo di cibo necessario per persona, ma aumentano anche la felicità."
+        }
+    },
+    "alliances": {
+        "createAlliance": "crea alleanza",
+        "createAllianceButton": "Crea Alleanza",
+        "placeholderName": "Nome",
+        "placeholderDescription": "Descrizione",
+        "allianceTradeInfo": "Tutte le alleanze danno l'opzione di offrire commerci specifici per alleanza che solo i membri possono vedere e accettare.",
+        "tradeAllianceDesc": "Un'alleanza commerciale offre costi scontati nel commercio e incrementa l'efficienza della tassazione, ma aumenta anche il rischio di incursioni.",
+        "greatFederationDesc": "Formare una gran federazione offre una protezione migliore contro incursioni ecc. e incrementa la produzione di risorse, ma abba l'efficacia della tassazione.",
+        "scienceLeagueDesc": "Entrare in un'istituzione o in una lega scientifica offre ricerche più veloci e minori costi di spedizione, aumenta la felicità base, ma anche i costi di costruzione e riduce la produttività.",
+        "marketSizeLabel": "Grandezza del mercato:",
+        "applyForAlliance": "Applica per alleanza",
+        "cancelApplication": "Cancella applicazione",
+        "leaveAlliance": "lascia alleanza"
+    },
+    "orders": {
+        "myOrders": "I miei ordini",
+        "placeOrder": "Piazza un ordine",
+        "sell": "Vendi",
+        "buy": "Compra",
+        "selling": "Vendendo",
+        "buying": "Comprando",
+        "for": "per",
+        "amount": "Ammontare",
+        "unitPrice": "Prezzo unità",
+        "totalPrice": "Prezzo totale",
+        "onlyAllianceMembers": "Vendi solo a membri dell'alleanza",
+        "sellButton": "{{type}} {{amount}} {{resource}} per {{price}} per unità"
+    },
+    "tooltip": {
+        "cost": "Costo",
+        "costPerMeter": "(per m)",
+        "costPerSquareMeter": "(per m²)",
+        "cannotChange": "Non si può cambiare per"
+    },
+    "tips": {
+        "loading": [
+            "Puoi ruotare le costruzioni prima di piazzarle con i tasti Q ed E",
+            "Doppio click nell'editor delle forme per piazzare i nodi.",
+            "Usa il tasto SHIFT per continuare a piazzare le costruzioni."
+        ]
+    },
+    "politics": {
+        "loading": "Caricamento...",
+        "inviteToAlliance": "invita nell'alleanza",
+        "rankPrefix": "N°",
+        "name": "Nome",
+        "members": "Membri",
+        "marketSize": "Grandezza del mercato",
+        "createAlliance": "crea alleanza",
+        "leaveAlliance": "lascia alleanza",
+        "cancelApplication": "cancella applicazione",
+        "applyForAlliance": "applica per alleanza",
+        "disbandAlliance": "sciogli alleanza",
+        "kick": "kick",
+        "go": "vai",
+        "reject": "rifiuta",
+        "accept": "accetta",
+        "globalRank": "Rank globale",
+        "rank": "Rank",
+        "value": "valore",
+        "noApplications": "Non ci sono applicazioni",
+        "noModifiers": "Quest'alleanza non ha modificatori",
+        "choiceChangeCooldown": "questa scelta può essere cambiata tra {{days}} giorni",
+        "days": "giorni",
+        "alliances": "Alleanza",
+        "marketSizeLabel": "Grandezza del mercato: {{size}}",
+        "tradeAlliance": "Alleanza commerciale",
+        "greatFederation": "Gran Federazione",
+        "scienceLeague": "Lega scientifica",
+        "applications": "Applicazioni",
+        "owner": "Proprietario",
+        "placeholderName": "Nome alleanza",
+        "placeholderDescription": "Descrizione alleanza",
+        "allianceTradeInfo": "Scegli un tipo di alleanza:",
+        "tradeAllianceDesc": "Descrizione alleanza commerciale",
+        "greatFederationDesc": "Descrizione Gran Federazione",
+        "scienceLeagueDesc": "Descrizione Lega scientifica",
+        "ranking": {
+            "population": "Popolazione",
+            "resources": "Risorse",
+            "buildings": "Costruzioni",
+            "area": "Area",
+            "overall": "Totale"
+        },
+        "common": {
+            "name": "Nome",
+            "members": "Membri",
+            "marketSize": "Grandezza mercato",
+            "value": "Valore",
+            "owner": "Proprietario",
+            "globalRank": "Rank globale",
+            "rank": "Rank",
+            "kick": "Kick",
+            "accept": "Accetta",
+            "reject": "Rifiuta",
+            "applications": "Applicazioni",
+            "tradeAlliance": "Alleanza commerciale",
+            "greatFederation": "Gran Federazione",
+            "scienceLeague": "Lega scientifica"
+        }
+    }
+}
