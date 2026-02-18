@@ -40,7 +40,8 @@
             "workerSafety": "Oamenii sunt cea mai mare valoare a ta. Crește siguranța producției, dar reduce randamentul.",
             "dubiousWorkingRules": "Oamenii sunt doar resurse. Crește producția, dar crește și rata accidentelor.",
             "crampedQuarters": "De cât spațiu personal ai nevoie cu adevărat? Putem caza mai multe persoane în aceleași case, nu-i așa?",
-            "intensiveFarming": "Agricultura intensivă vă permite să hrăniți animalele cu cereale, crescând cantitatea de produse animale pe care le puteți produce."
+            "intensiveFarming": "Agricultura intensivă vă permite să hrăniți animalele cu cereale, crescând cantitatea de produse animale pe care le puteți produce.",
+            "newTownBoost": "Ca nouă așezare, primești bonusuri temporare pentru a te ajuta să începi. Acestea vor dispărea în timp."
         },
         "exclusiveOptions": "Opțiuni exclusive",
         "lockedFor": "Blocat pentru",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Reguli de lucru dubioase",
             "crampedQuarters": "Ca sardinele!",
             "intensiveFarming": "Agricultură intensivă",
-            "newTownBoost": "Un nou început!",
-            "foodShortage": "Penurie alimentară"
+            "newTownBoost": "Un nou început!"
         },
         "unlock": "Deblocare"
     },
@@ -71,6 +71,12 @@
         "delete": "Ștergeți",
         "deleting": "Ștergere...",
         "loading": "Se încarcă..."
+    },
+    "connection": {
+        "backToMenu": "Înapoi la meniu",
+        "lost": "Conexiune pierdută",
+        "message": "Serverul este temporar indisponibil. Acest lucru se poate datora lucrărilor de întreținere sau unei reporniri. Progresul tău online este în siguranță, jocul va reporni automat odată ce conexiunea va fi restabilită.",
+        "reconnecting": "Reconectare"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Ei bine, ei bine... ce avem noi aici?",
             "bankruptcy": "Faliment!",
             "raid": "Bunurile tale au fost furate!",
-            "trade": "S-a făcut!"
+            "trade": "S-a făcut!",
+            "player_message": "Ai primit un e-mail!"
         },
         "descriptions": {
             "food_shortage": "Rămâi fără provizii! Dacă oamenii nu au ce mânca, vor fura tot ce pot pentru a supraviețui sau chiar vor înceta să mai lucreze.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Ce am găsit aici? Expediția ta s-a întors cu un animal surprinzător de blând. Se pare că preferă să trăiască în orașul tău decât în sălbăticie. Ar fi nepoliticos să-l trimitem înapoi acum, nu-i așa?",
             "bankruptcy": "Pur și simplu nu ai monede! Un turn s-a prăbușit. Turnurile pe care le-ai construit se vor deteriora și vor fi distruse dacă nu le întreții cu suficiente monede.",
             "raid": "Ar fi trebuit să-ți depozitezi mai bine bunurile! Erau la îndemâna oricui și niște hoți necunoscuți au fugit cu o parte din resursele tale.",
-            "trade": "Cineva a îndeplinit (o parte din) comanda ta comercială."
+            "trade": "Cineva a îndeplinit (o parte din) comanda ta comercială.",
+            "player_message": "Un mesager a sosit dintr-un alt oraș cu un mesaj pentru tine."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Gard din lemn",
                 "fence2": "Gard împletit",
                 "fence3": "Forma gardului",
+                "fence4": "Linia de gard",
                 "fences": "Garduri",
                 "field": "Câmp",
                 "firepit": "Foc de tabără",
@@ -182,6 +191,7 @@
                 "path": "Cale",
                 "pier": "Pier",
                 "plaza": "Piață",
+                "dirt": "Murdărie",
                 "port": "Port",
                 "quarry": "Carieră",
                 "road": "Drum",
@@ -241,6 +251,7 @@
                 "fence1": "Un gard simplu din lemn pentru a ține creaturile simple afară. Sau înăuntru.",
                 "fence2": "Un gard împletit pentru a ține creaturile simple afară. Sau înăuntru.",
                 "fence3": "Desenați un gard personalizat pentru a ține creaturile simple afară sau înăuntru.",
+                "fence4": "Desenează un gard lung pentru a ține creaturile simple afară. Sau înăuntru.",
                 "fences": "Gardurile sunt o modalitate excelentă de a ține vizitatorii nedoriți în afara orașului tău. Sau de a-i ține înăuntru.",
                 "firepit": "Un foc de tabără este o structură solidă care servește la încălzire și gătit. Nu uitați să-l stingeți înainte de a vă culca.",
                 "fireplace": "Nimic nu este mai plăcut decât să cânți în jurul unui șemineu. Deși fumul va ajunge întotdeauna exact la tine.",
@@ -256,7 +267,7 @@
                 "house_6": "Toată lumea are nevoie de un loc unde să locuiască. Această casă luxoasă oferă un loc unde oamenii tăi pot mânca și locui.",
                 "large_ship": "Nu cred că pot fi mai mari de atât. Uitați-vă la asta! Nu, serios, uitați-vă cu toții! Asta trebuie să reducă și mai mult costurile de transport.",
                 "large_statue": "O statuie mare pentru un tip mare. Oamenii spun că era chiar atât de mare.",
-                "logpile": "Care este cel mai bun mod de a depozita lemnul? Pur și simplu îngrămădește-l într-o grămadă.",
+                "logpile": "Care este cel mai bun mod de a depozita lemnul? Pur și simplu aruncă-l într-o grămadă.",
                 "market": "Piața vă va permite să faceți comerț cu alte orașe. Casele preferă să fie situate în apropierea acesteia.",
                 "market_stall": "adaugă un stand de piață în orașul tău",
                 "market_stall_1": "Un stand care vinde produse din carne.",
@@ -270,6 +281,7 @@
                 "path": "Un drum simplu de pământ. Își face treaba. Deși clădirile vor funcționa foarte bine și fără ele.",
                 "pier": "Oamenii jură că peștii mai mari se află în apele mai adânci. Să vedem cât de adânc putem ajunge.",
                 "plaza": "Piese frumoase pentru orașul tău frumos. Excelente pentru piețe, decorare sau pur și simplu pentru a-ți etala bogăția.",
+                "dirt": "Afișează unde merg oamenii, dar nimeni nu s-a deranjat să pună plăci adecvate.",
                 "port": "Portul vă permite să faceți comerț cu alte orașe. Este mult mai eficient decât comerțul terestru, iar costurile de transport vor fi reduse la jumătate.",
                 "quarry": "În cariere extragi pietrele din pământ. Este o muncă intensă, dar pietrele sunt veșnice! Ele lasă însă o cicatrice mare în peisaj.",
                 "road": "Drumurile conferă structură satului tău. Nu sunt necesare pentru clădirile tale, dar arată mai elegant decât potecile.",
@@ -324,9 +336,11 @@
             "happiness": "Fericire",
             "importCost": "Costul importului",
             "populationProduction": "Populație Modificare",
+            "populationCapacity": "Capacitate de cazare",
             "raidRisk": "Risc de furt (atunci când se depășește capacitatea de stocare)",
             "researchSpeed": "Viteza de cercetare",
-            "taxation": "Impozitare"
+            "taxation": "Impozitare",
+            "animalProduction": "Producția animalieră"
         },
         "expedition": {
             "start": "Începe expediția"
@@ -420,7 +434,7 @@
             "loadSandbox": "Încărcare Sandbox",
             "newSandbox": "Noul Sandbox",
             "returnToDesktop": "Reveniți la desktop",
-            "serverOffline": "Nu se poate conecta la server. Verificați conexiunea la internet sau posibilitatea ca serverul să fie nefuncțional.",
+            "serverOffline": "Nu se poate conecta la server. Este posibil ca serverul să fie suprasolicitat sau să fie temporar indisponibil din cauza lucrărilor de întreținere. Verificați Discord pentru a afla starea actuală.",
             "settings": "Setări",
             "subtitle": "Aceasta este o versiune preliminară a Project Rebearth. Vă rugăm să ne contactați dacă întâmpinați probleme în timpul jocului.",
             "demoSubtitle": "Aceasta este versiunea demo a Project Rebearth. Este activată doar funcția de construire a orașului în modul sandbox. Pentru a juca pe globul multiplayer cu gestionarea resurselor, descărcați versiunea completă.",
@@ -438,6 +452,8 @@
             "title": "Noul Sandbox"
         },
         "slots": {
+            "cooldownActive": "Acest slot este în perioada de răcire.",
+            "cooldownTimer": "Disponibil în format{{time}}",
             "deleteConfirm": "Sunteți sigur că doriți să ștergeți această salvare? Această acțiune nu poate fi anulată.",
             "empty": "Slot gol",
             "locked": "Blocat",
@@ -479,6 +495,17 @@
             "neutral": "Neutru",
             "title": "Diplomație",
             "you": "Tu"
+        },
+        "message": {
+            "title": "Trimite Messenger",
+            "sendMessage": "Trimite Messenger",
+            "to": "Pentru",
+            "placeholder": "Scrieți mesajul aici...",
+            "cost": "Cost",
+            "send": "Trimite",
+            "sending": "Se trimite...",
+            "sent": "Mesagerul a fost trimis!",
+            "insufficientGold": "Nu este suficient aur"
         },
         "market": {
             "amount": "Suma",
@@ -526,7 +553,7 @@
         "buying": "cumpărare",
         "confirmCancel": "Sunteți sigur că doriți să anulați această comandă?",
         "for": "pentru",
-        "marketStorage": "Depozit comercial",
+        "marketStorage": "Depozitare comercială",
         "myOrders": "Plasați comenzile",
         "noMarketStorage": "Nu există spațiu de stocare disponibil pe piață. Construiește clădiri comerciale pentru a plasa comenzi de vânzare.",
         "noOrders": "Nu există comenzi active",
@@ -650,16 +677,24 @@
             "Construiește o piață sau un port pentru a debloca comerțul cu alți jucători.",
             "Construiește o primărie pentru a debloca alianțe, clasamente și opțiuni.",
             "Construiește o universitate pentru a debloca expediții și cercetări.",
-            "O recenzie pe Steam ne ajută să găsim noi jucători care fac din acest joc o lume vie.",
+            "Alătură-te comunității noastre dinamice de jucători pe Discord pentru a-ți împărtăși creațiile și a primi sfaturi.",
+            "Unele clădiri pot fi amplasate numai în apropierea clădirii-mamă. De exemplu, ferăstrăul și tăietorul de lemne.",
             "Nu toate resursele sunt ușor de obținut peste tot. Uneori, comerțul va fi mai ieftin decât producerea tuturor resurselor pe cont propriu.",
             "O recenzie pe Steam ne ajută să găsim noi jucători care fac din acest joc o lume vie.",
-            "O recenzie pe Steam ne ajută să găsim noi jucători care fac din acest joc o lume vie.",
-            "Vizitați wiki-ul la projectrebearth.com pentru a afla totul despre lumea Project."
+            "Vizitați wiki-ul la projectrebearth.com pentru a afla totul despre lumea Project Rebearth."
         ]
+    },
+    "help": {
+        "hud": "Acest panou afișează toate resursele pe care le deții, le produci și le consumi. Trece cu mouse-ul peste pictograme pentru a vedea mai multe detalii despre fiecare resursă. Dacă o resursă este pe cale să se epuizeze, aceasta va fi evidențiată cu roșu, iar clădirile ar putea fi nevoite să-și reducă productivitatea. Dacă atingi capacitatea maximă, aceasta va fi afișată cu caractere aldine, iar clădirile tale vor înceta să mai producă. Efectele, cum ar fi bonusul de început, pot influența cantitatea pe care o produci sau o consumi. Aceste modificatori sunt afișați când treci cu mouse-ul peste o resursă. Vedeți cercul care se învârte în stânga? Acesta indică momentul în care jocul se sincronizează cu serverul. Nu veți vedea modificările resurselor până când sincronizarea nu este finalizată. Consumul și producția de resurse sunt afișate pe zi. Aceasta este o zi reală în timp real. Cu toate acestea, resursele dvs. vor crește încet.",
+        "market": "Bine ai venit pe piață! Iată toate lucrurile pe care ceilalți jucători vor să le cumpere sau să le vândă și, mai important, la ce preț! Vei plăti costurile de transport atunci când îndeplinești comanda altcuiva. Așadar, dacă aceștia se află la mare distanță, s-ar putea să nu merite sau chiar să coste mai mult decât sunt dispuși să plătească.",
+        "orders": "Plasați comenzile! Anunțați-i pe ceilalți jucători ce doriți să cumpărați sau să vindeți și la ce preț. Acesta este prețul pe care îl veți primi sau pe care îl veți plăti. Rețineți că ceilalți vor plăti transportul. Așadar, cumpărarea unui produs la un preț mic s-ar putea să nu fie rentabilă dacă costurile de transport ale celorlalți jucători sunt prea mari.",
+        "popup": "Această fereastră pop-up îți arată toate informațiile despre această clădire. Aici poți modifica parametrii cheie ai clădirii sau chiar îi poți muta. Această opțiune va fi disponibilă numai când te afli în modul de construire.",
+        "storage": "Aici puteți regla capacitatea de stocare a acestei clădiri. Ea are o anumită capacitate și poate stoca o anumită cantitate de mărfuri. Puteți modifica raportul, pentru a o optimiza în funcție de nevoile dvs."
     },
     "tooltip": {
         "cannotChange": "Nu poate fi modificat pentru",
         "construction": "Construcție",
+        "cost": "Cost",
         "refund": "Rambursare",
         "costPerMeter": "(pentru m)",
         "costPerSquareMeter": "(pe m²)",

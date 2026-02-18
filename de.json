@@ -40,7 +40,8 @@
             "workerSafety": "Menschen sind Ihr größtes Kapital. Erhöht die Produktionssicherheit, verringert jedoch den Output.",
             "dubiousWorkingRules": "Menschen sind nur Ressourcen. Steigert die Produktionsleistung, erhöht jedoch die Unfallrate.",
             "crampedQuarters": "Wie viel persönlichen Freiraum braucht man wirklich? Wir können doch mehr Menschen in denselben Häusern unterbringen, oder?",
-            "intensiveFarming": "Durch intensive Landwirtschaft können Sie Ihre Tiere mit Getreide füttern und so die Menge der tierischen Produkte, die Sie produzieren können, steigern."
+            "intensiveFarming": "Durch intensive Landwirtschaft können Sie Ihre Tiere mit Getreide füttern und so die Menge der tierischen Produkte, die Sie produzieren können, steigern.",
+            "newTownBoost": "Als neue Siedlung erhältst du vorübergehende Boni, die dir den Start erleichtern. Diese verlieren mit der Zeit ihre Wirkung."
         },
         "exclusiveOptions": "Exklusive Optionen",
         "lockedFor": "Gesperrt für",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Zweifelhafte Arbeitsregeln",
             "crampedQuarters": "Wie Sardinen!",
             "intensiveFarming": "Intensive Landwirtschaft",
-            "newTownBoost": "Neuanfang!",
-            "foodShortage": "Nahrungsmittelknappheit"
+            "newTownBoost": "Neuanfang!"
         },
         "unlock": "Freischalten"
     },
@@ -71,6 +71,12 @@
         "delete": "Löschen",
         "deleting": "Löschen...",
         "loading": "Wird geladen..."
+    },
+    "connection": {
+        "backToMenu": "Zurück zum Menü",
+        "lost": "Verbindung unterbrochen",
+        "message": "Der Server ist vorübergehend nicht erreichbar. Dies kann an Wartungsarbeiten oder einem Neustart liegen. Ihr Online-Fortschritt ist sicher, das Spiel wird automatisch fortgesetzt, sobald die Verbindung wiederhergestellt ist.",
+        "reconnecting": "Wiederverbinden"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Na, na, na ... was haben wir denn hier?",
             "bankruptcy": "Bankrott!",
             "raid": "Ihre Waren wurden gestohlen!",
-            "trade": "Abgemacht!"
+            "trade": "Abgemacht!",
+            "player_message": "Sie haben Post!"
         },
         "descriptions": {
             "food_shortage": "Ihnen geht das Essen aus! Wenn die Menschen nichts zu essen haben, werden sie stehlen, was sie können, um zu überleben, oder sogar aufhören zu arbeiten.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Was haben wir hier gefunden? Deine Expedition ist mit einem überraschend zahmen Tier zurückgekehrt. Es scheint lieber in deiner Stadt als in der Wildnis leben zu wollen. Es wäre unhöflich, es jetzt zurückzuschicken, oder?",
             "bankruptcy": "Du hast einfach keine Münzen! Ein Turm ist eingestürzt. Die Türme, die du gebaut hast, verfallen und werden zerstört, wenn du sie nicht mit ausreichend Münzen instand hältst.",
             "raid": "Du hättest deine Waren besser verstauen sollen! Sie waren leicht zu stehlen und unbekannte Diebe haben einen Teil deiner Ressourcen mitgenommen.",
-            "trade": "Jemand hat (einen Teil) Ihrer Handelsorder ausgeführt."
+            "trade": "Jemand hat (einen Teil) Ihrer Handelsorder ausgeführt.",
+            "player_message": "Ein Bote aus einer anderen Stadt ist mit einer Nachricht für dich angekommen."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Holzzaun",
                 "fence2": "Gewebter Zaun",
                 "fence3": "Zaunform",
+                "fence4": "Zaunlinie",
                 "fences": "Zäune",
                 "field": "Feld",
                 "firepit": "Feuerstelle",
@@ -182,6 +191,7 @@
                 "path": "Pfad",
                 "pier": "Pier",
                 "plaza": "Platz",
+                "dirt": "Dreck",
                 "port": "Hafen",
                 "quarry": "Steinbruch",
                 "road": "Straße",
@@ -241,6 +251,7 @@
                 "fence1": "Ein einfacher Holzzaun, um einfache Kreaturen fernzuhalten. Oder drinnen zu halten.",
                 "fence2": "Ein geflochtener Zaun, um einfache Kreaturen fernzuhalten. Oder drinnen zu halten.",
                 "fence3": "Zeichnen Sie einen benutzerdefinierten Zaun, um einfache Kreaturen fernzuhalten. Oder einzusperren.",
+                "fence4": "Zeichne einen langen Zaun, um einfache Kreaturen fernzuhalten. Oder einzusperren.",
                 "fences": "Zäune sind eine gute Möglichkeit, unerwünschte Besucher aus Ihrer Stadt fernzuhalten. Oder sie darin zu halten.",
                 "firepit": "Eine Feuerstelle ist eine stabile Konstruktion, um sich zu wärmen und Essen zuzubereiten. Vergessen Sie nur nicht, sie vor dem Schlafengehen zu löschen.",
                 "fireplace": "Nichts ist gemütlicher, als am Kamin zu singen. Auch wenn der Rauch immer genau zu Ihnen weht.",
@@ -256,7 +267,7 @@
                 "house_6": "Jeder braucht einen Ort zum Leben. Dieses luxuriöse Haus bietet deinen Leuten einen Ort zum Essen und Wohnen.",
                 "large_ship": "Ich glaube nicht, dass sie noch größer werden können. Seht euch das an! Nein, wirklich, seht euch das alle an! Das muss die Transportkosten noch weiter halbieren.",
                 "large_statue": "Eine große Statue für einen großen Mann. Die Leute sagen, er sei tatsächlich so groß gewesen.",
-                "logpile": "Wie lagert man Holz am besten? Einfach zu einem Haufen aufschichten.",
+                "logpile": "Wie lagert man Holz am besten? Einfach auf einen Haufen werfen.",
                 "market": "Der Markt ermöglicht Ihnen den Handel mit anderen Städten. Häuser befinden sich gerne in der Nähe davon.",
                 "market_stall": "Füge deiner Stadt einen Marktstand hinzu.",
                 "market_stall_1": "Ein Stand, an dem Fleischprodukte verkauft werden.",
@@ -270,6 +281,7 @@
                 "path": "Ein einfacher Feldweg. Er erfüllt einfach seinen Zweck. Gebäude funktionieren aber auch ohne sie einwandfrei.",
                 "pier": "Die Leute schwören, dass die größeren Fische in tieferen Gewässern zu finden sind. Mal sehen, wie tief wir tauchen können.",
                 "plaza": "Hübsche Kacheln für Ihre hübsche Stadt. Ideal für Marktplätze, Dekoration oder einfach nur, um Ihren Reichtum zu zeigen.",
+                "dirt": "Es zeigt, wo die Leute laufen, aber niemand hat sich die Mühe gemacht, richtige Kacheln zu verlegen.",
                 "port": "Über den Hafen können Sie mit anderen Städten Handel treiben. Dies ist wesentlich effizienter als der Handel über Land, und die Transportkosten werden halbiert.",
                 "quarry": "In Steinbrüchen werden Steine aus der Erde gewonnen. Das ist eine anstrengende Arbeit, aber Steine sind für die Ewigkeit! Allerdings hinterlassen sie große Narben in der Landschaft.",
                 "road": "Straßen geben Ihrem Dorf Struktur. Sie sind für Ihre Gebäude nicht erforderlich, sehen aber schicker aus als Wege.",
@@ -324,9 +336,11 @@
             "happiness": "Glück",
             "importCost": "Importkosten",
             "populationProduction": "Bevölkerung Bearbeiten",
+            "populationCapacity": "Wohnraumkapazität",
             "raidRisk": "Diebstahlrisiko (bei Überschreitung der Lagerkapazität)",
             "researchSpeed": "Forschungsgeschwindigkeit",
-            "taxation": "Besteuerung"
+            "taxation": "Besteuerung",
+            "animalProduction": "Tierproduktion"
         },
         "expedition": {
             "start": "Expedition starten"
@@ -420,7 +434,7 @@
             "loadSandbox": "Sandbox laden",
             "newSandbox": "Neue Sandbox",
             "returnToDesktop": "Zurück zum Desktop",
-            "serverOffline": "Der Server kann nicht erreicht werden. Überprüfen Sie Ihre Internetverbindung oder ob der Server möglicherweise ausgefallen ist.",
+            "serverOffline": "Der Server kann nicht erreicht werden. Der Server ist möglicherweise stark ausgelastet oder wegen Wartungsarbeiten vorübergehend nicht erreichbar. Überprüfen Sie den aktuellen Status auf Discord.",
             "settings": "Einstellungen",
             "subtitle": "Dies ist eine Vorabversion von Project Rebearth. Bitte melden Sie sich, wenn Sie beim Spielen auf Probleme stoßen.",
             "demoSubtitle": "Dies ist die Demo von Project Rebearth. Nur der Sandbox-Stadtbau-Modus ist aktiviert. Um auf dem Multiplayer-Globus mit Ressourcenmanagement zu spielen, hol dir die Vollversion.",
@@ -438,6 +452,8 @@
             "title": "Neue Sandbox"
         },
         "slots": {
+            "cooldownActive": "Dieser Slot befindet sich in der Abklingzeit.",
+            "cooldownTimer": "Verfügbar in „{{time}}“",
             "deleteConfirm": "Möchten Sie diesen Spielstand wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.",
             "empty": "Leerer Platz",
             "locked": "Gesperrt",
@@ -479,6 +495,17 @@
             "neutral": "Neutral",
             "title": "Diplomatie",
             "you": "Sie"
+        },
+        "message": {
+            "title": "Messenger senden",
+            "sendMessage": "Messenger senden",
+            "to": "An",
+            "placeholder": "Schreiben Sie hier Ihre Nachricht...",
+            "cost": "Kosten",
+            "send": "Senden",
+            "sending": "Senden...",
+            "sent": "Der Bote wurde losgeschickt!",
+            "insufficientGold": "Nicht genug Gold"
         },
         "market": {
             "amount": "Betrag",
@@ -650,16 +677,24 @@
             "Baue einen Markt oder einen Hafen, um den Handel mit anderen Spielern freizuschalten.",
             "Baue ein Rathaus, um Allianzen, Ranglisten und Auswahlmöglichkeiten freizuschalten.",
             "Baue eine Universität, um Expeditionen und Forschungen freizuschalten.",
-            "Eine Rezension auf Steam hilft uns dabei, neue Spieler zu finden, die diese Welt lebendig machen.",
+            "Treten Sie unserer lebhaften Spielergemeinschaft auf Discord bei, um Ihre Kreationen zu teilen und Tipps zu erhalten.",
+            "Einige Gebäude können nur in der Nähe des übergeordneten Gebäudes platziert werden. Wie beispielsweise die Säge und der Holzfäller.",
             "Nicht alle Ressourcen sind überall leicht zu bekommen. Manchmal ist es günstiger, zu handeln, als alles selbst zu produzieren.",
             "Eine Rezension auf Steam hilft uns dabei, neue Spieler zu finden, die diese Welt lebendig machen.",
-            "Eine Rezension auf Steam hilft uns dabei, neue Spieler zu finden, die diese Welt lebendig machen.",
-            "Besuchen Sie das Wiki unter projectrebearth.com, um alles über die Welt von Project zu erfahren."
+            "Besuchen Sie das Wiki unter projectrebearth.com, um alles über die Welt von Project Rebearth zu erfahren."
         ]
+    },
+    "help": {
+        "hud": "Dieses Fenster zeigt alle Ressourcen an, über die Sie verfügen, die Sie produzieren und verbrauchen. Bewegen Sie den Mauszeiger über die Symbole, um weitere Details zu den einzelnen Ressourcen anzuzeigen. Wenn eine Ressource zur Neige geht, wird sie rot hervorgehoben, und Gebäude müssen möglicherweise ihre Produktivität drosseln. Wenn Sie Ihre Kapazitätsgrenze erreichen, wird dies fett dargestellt, und Ihre Gebäude stellen die Produktion ein. Effekte wie Ihr Starterbonus können Einfluss darauf haben, wie viel Sie produzieren oder verbrauchen. Diese Modifikatoren werden angezeigt, wenn Sie den Mauszeiger über eine Ressource bewegen. Sehen Sie den sich drehenden Kreis auf der linken Seite? Dieser zeigt an, wann das Spiel mit dem Server synchronisiert wird. Sie sehen keine Ressourcenänderungen, bis die Synchronisierung abgeschlossen ist. Der Ressourcenverbrauch und die Produktion werden pro Tag angezeigt. Dies ist ein tatsächlicher Echtzeit-Tag. Ihre Ressourcen werden jedoch langsam ansteigen.",
+        "market": "Willkommen auf dem Markt! Sehen Sie sich an, was andere Spieler kaufen oder verkaufen möchten und, was noch wichtiger ist, zu welchem Preis! Wenn Sie die Bestellung eines anderen Spielers ausführen, müssen Sie die Transportkosten übernehmen. Wenn der Besteller weit entfernt ist, lohnt sich das möglicherweise nicht oder kostet sogar mehr, als er zu zahlen bereit ist.",
+        "orders": "Geben Sie Ihre Bestellungen auf! Teilen Sie anderen Spielern mit, was Sie kaufen oder verkaufen möchten und zu welchem Preis. Diesen Preis erhalten Sie bzw. zahlen Sie. Beachten Sie, dass andere für den Transport bezahlen müssen. Daher kann es sein, dass der Kauf zu einem niedrigen Preis nicht funktioniert, wenn die Versandkosten der anderen Spieler zu hoch sind.",
+        "popup": "Dieses Popup-Fenster zeigt Ihnen alle Informationen zu diesem Gebäude. Hier können Sie wichtige Parameter des Gebäudes ändern oder sogar verschieben. Diese Funktion ist nur verfügbar, wenn Sie sich im Gebäudemodus befinden.",
+        "storage": "Hier können Sie einstellen, wie viel dieses Gebäude lagert. Es hat eine bestimmte Kapazität und kann eine bestimmte Menge an Gütern aufnehmen. Sie können das Verhältnis ändern, um es an Ihre Bedürfnisse anzupassen."
     },
     "tooltip": {
         "cannotChange": "Kann nicht geändert werden für",
         "construction": "Bauwesen",
+        "cost": "Kosten",
         "refund": "Rückerstattung",
         "costPerMeter": "(für m)",
         "costPerSquareMeter": "(pro m²)",

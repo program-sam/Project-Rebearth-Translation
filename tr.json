@@ -40,7 +40,8 @@
             "workerSafety": "İnsanlar her şeyden önemlidir. İş güvenliğini artırır, ancak üretim verimliliği düşer.",
             "dubiousWorkingRules": "İnsanlar sadece birer kaynaktır. Üretim çıktısını artırır, ancak iş kazası oranlarını yükseltir.",
             "crampedQuarters": "Kişisel alan diye bir şeye gerçekten ihtiyacın var mı? Aynı evlere daha çok kişi tıkabiliriz, değil mi?",
-            "intensiveFarming": "Yoğun çiftçilik, hayvanlarınızı tahılla beslemenizi sağlar ve hayvansal ürün üretimini artırır."
+            "intensiveFarming": "Yoğun çiftçilik, hayvanlarınızı tahılla beslemenizi sağlar ve hayvansal ürün üretimini artırır.",
+            "newTownBoost": "Yeni bir yerleşim yeri olarak, başlangıçta size yardımcı olacak geçici bonuslar alırsınız. Bu bonuslar zamanla ortadan kalkacaktır."
         },
         "exclusiveOptions": "Özel Seçenekler",
         "lockedFor": "Kilitli",
@@ -54,7 +55,7 @@
             "lowRations": "Düşük Erzak Payları",
             "neutralFocus": "Ticaret - Dengeli Ticaret",
             "normalRations": "Standart Erzak Payları",
-            "scienceLeague": "Bilim Birliği",
+            "scienceLeague": "Bilim Ligi",
             "taxation": "Vergilendirme",
             "tradeAlliance": "Ticaret Birliği",
             "veganSociety": "Vegan Topluluk",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Kuşkulu İş Kuralları",
             "crampedQuarters": "Tıka Basa!",
             "intensiveFarming": "Yoğun Tarım",
-            "newTownBoost": "Yeni başlangıçlar!",
-            "foodShortage": "Erzak Kıtlığı"
+            "newTownBoost": "Yeni başlangıçlar!"
         },
         "unlock": "Kilidi aç"
     },
@@ -71,6 +71,12 @@
         "delete": "Sil",
         "deleting": "Siliniyor...",
         "loading": "Yükleniyor..."
+    },
+    "connection": {
+        "backToMenu": "Menüye geri dön",
+        "lost": "Bağlantı Kesildi",
+        "message": "Sunucu geçici olarak erişilemez durumda. Bunun nedeni bakım veya yeniden başlatma olabilir. Çevrimiçi ilerlemeniz güvende, bağlantı yeniden kurulduğunda oyun otomatik olarak devam edecektir.",
+        "reconnecting": "Yeniden bağlanma"
     },
     "controls": {
         "build": {
@@ -89,10 +95,10 @@
             "addMorePoints": "Daha fazla nokta ekle",
             "calculating": "Hesaplanıyor...",
             "duration": "Süre",
-            "expedition": "Keşif seferi",
+            "expedition": "Keşif",
             "finished": "Bitti!",
-            "food": "Erzak",
-            "knowledge": "Bilim",
+            "food": "Yiyecek",
+            "knowledge": "Bilgi",
             "population": "Nüfus",
             "timeLeft": "Kalan süre",
             "title": "Keşif maliyetleri"
@@ -121,7 +127,8 @@
             "animal_unlock": "Vay vay vay... bu ne böyle?",
             "bankruptcy": "İflas!",
             "raid": "Malların çalındı!",
-            "trade": "Anlaştık!"
+            "trade": "Anlaştık!",
+            "player_message": "Postanız var!"
         },
         "descriptions": {
             "food_shortage": "Erzak tükenmek üzere! Halk karınlarını doyuramazsa, geçinmek için ne bulursa çalar, hatta iş bırakabilir.",
@@ -131,7 +138,9 @@
             "expedition_found": "Keşif birliğiniz değerli kaynaklarla ve bilgiyle geri döndü! Bu, kasabanızın gelişimine ve araştırma çalışmalarına büyük katkı sağlayacak. Ancak seyir defterlerinde ilginç bir kayıt var:",
             "animal_unlock": "Bu da ne böyle? Keşif birliğiniz şaşırtıcı derecede uysal bir hayvanla döndü. Kasabanızda yaşamayı vahşi doğaya tercih ediyor gibi görünüyor. Onu geri göndermek ayıp olur, değil mi?",
             "bankruptcy": "Kasada altın kalmadı! Bir kule harap oldu. Kulelerinize yeterli altınla bakım yapmazsanız yıpranır ve yıkılır.",
-            "raid": "Mallarınızı daha iyi saklamalıydınız! Göz önünde duruyorlardı ve kimliği belirsiz hırsızlar kaynaklarınızın bir kısmını alıp kaçtı."
+            "raid": "Mallarınızı daha iyi saklamalıydınız! Göz önünde duruyorlardı ve kimliği belirsiz hırsızlar kaynaklarınızın bir kısmını alıp kaçtı.",
+            "trade": "Birisi ticaret emrinizin (bir kısmını) yerine getirdi.",
+            "player_message": "Başka bir kasabadan bir haberci sana bir mesajla geldi."
         }
     },
     "game": {
@@ -152,6 +161,7 @@
                 "fence1": "Ahşap çit",
                 "fence2": "Hasır çit",
                 "fence3": "Çit şekli",
+                "fence4": "Çit Hattı",
                 "fences": "Çitler",
                 "field": "Tarla",
                 "firepit": "Ateş çukuru",
@@ -181,6 +191,7 @@
                 "path": "Yol",
                 "pier": "İskele",
                 "plaza": "Meydan",
+                "dirt": "Kir",
                 "port": "Liman",
                 "quarry": "Taş ocağı",
                 "road": "Yol",
@@ -222,7 +233,7 @@
                 "military": "Askeri",
                 "production": "Üretim",
                 "research": "Araştırma",
-                "resources": "Hammadde",
+                "resources": "Kaynaklar",
                 "storage": "Depolama",
                 "town": "Kasaba"
             },
@@ -240,6 +251,7 @@
                 "fence1": "Basit yaratıkları uzak tutmak için basit bir tahta çit. Ya da kaçırmamak için.",
                 "fence2": "Basit yaratıkları uzak tutmak için basit bir hasır çit. Ya da kaçırmamak için.",
                 "fence3": "Basit canlıları uzak tutmak ya da kaçırmamak için istediğin şekilde çit çiz.",
+                "fence4": "Basit yaratıkları dışarıda tutmak için uzun bir çit çizin. veya içeride.",
                 "fences": "Çitler, istenmeyen ziyaretçileri kasabanızdan uzak tutmanın harika bir yoludur. Ya da onları içeride tutmanın.",
                 "firepit": "Ateş çukuru, ısınmak ve yemek pişirmek için sağlam bir yapıdır. Sadece uyumadan önce söndürmeyi unutma.",
                 "fireplace": "Şöminenin başında şarkı söylemekten daha keyifli bir şey yok. Her ne kadar duman her zaman tam sana doğru esecek olsa da.",
@@ -247,15 +259,15 @@
                 "fishery": "Kıyıdaki küçük bir balıkçı kulübesinden daha huzurlu ne olabilir? Kasabanız için nispeten taze balık üretir.",
                 "foraging_hut": "Mühendislik harikalarımızdan biri! Kim akan suyu sevmez ki.",
                 "fountain": "Mühendislik alanındaki en büyük başarılarımızdan biri! Akan suyu kim sevmez ki?",
-                "house_1": "Herkesin yaşayacak bir yere ihtiyacı var. Bu küçük baraka halkınıza yiyecek ve barınacak bir yer sağlar.",
+                "house_1": "Herkesin yaşayacak bir yere ihtiyacı var. Bu küçük kulübe halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_2": "Herkesin yaşayacak bir yere ihtiyacı var. Bu küçük kulübe halkınıza yiyecek ve barınacak bir yer sağlar.",
-                "house_3": "Herkesin yaşayacak bir yere ihtiyacı var. Bu kamara halkınıza yiyecek ve barınacak bir yer sağlar.",
+                "house_3": "Herkesin yaşayacak bir yere ihtiyacı var. Bu ev halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_4": "Herkesin yaşayacak bir yere ihtiyacı var. Bu ev halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_5": "Herkesin yaşayacak bir yere ihtiyacı var. Bu konut halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_6": "Herkesin yaşayacak bir yere ihtiyacı var. Bu köşk halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "large_ship": "Bundan daha büyüğü olmaz herhâlde. Şuna bak! Hayır gerçekten, herkes baksın! Nakliye masraflarını daha da yarıya indiriyor olmalı.",
                 "large_statue": "İri bir adam için iri bir heykel. İnsanlar gerçekten bu kadar büyük olduğunu söylüyor.",
-                "logpile": "Odun depolamanın en iyi yolu? Bir yığın hâlinde üst üste at.",
+                "logpile": "Odunu saklamanın en iyi yolu nedir? Bir yığın halinde istiflemek.",
                 "market": "Pazar, diğer kasaba ve şehirlerle ticaret yapmanızı sağlar. Evler buraya yakın olmayı sever.",
                 "market_stall": "kasabanıza yeni bir pazar tezgâhı kurun",
                 "market_stall_1": "Et ürünleri satılan bir tezgâh.",
@@ -269,6 +281,7 @@
                 "path": "Basit bir toprak yol. Her ne kadar binalar onsuz da gayet iyi çalışsa da işini görür.",
                 "pier": "İnsanlar büyük balıkların derin sularda olduğuna yemin ediyor. Bakalım ne kadar derine inebileceğiz.",
                 "plaza": "Kasabanız için güzel karolar. Pazar yerleri, dekorasyon veya zenginliğinizi göstermek için harika.",
+                "dirt": "İnsanların yürüdüğü yerleri gösterir, ancak kimse düzgün fayans döşeme zahmetine girmez.",
                 "port": "Liman, diğer kasaba ve şehirlerle ticaret yapmanızı sağlar. Kara ticaretinden çok daha verimlidir ve nakliye maliyetlerini yarıya indirir.",
                 "quarry": "Taş ocaklarında yerden taş çıkarılır. Ağır bir iştir ama taşlar sonsuzdur! Yine de arazide büyük bir yara bırakır.",
                 "road": "Yollar köyünüze düzen verir. Binalar için şart değil ama patikalardan daha şıktır.",
@@ -323,9 +336,11 @@
             "happiness": "Mutluluk",
             "importCost": "İthalat maliyeti",
             "populationProduction": "Nüfus çarpanı",
+            "populationCapacity": "Konut Kapasitesi",
             "raidRisk": "Hırsızlık riski (depolama kapasitesini aştığında)",
             "researchSpeed": "Araştırma hızı",
-            "taxation": "Vergilendirme"
+            "taxation": "Vergilendirme",
+            "animalProduction": "Hayvansal Üretim"
         },
         "expedition": {
             "start": "Keşif seferi başlat"
@@ -417,15 +432,15 @@
             "credits": "Krediler",
             "enterMultiplayer": "Dünyaya gir",
             "loadSandbox": "Sandbox'ı yükle",
-            "newSandbox": "Yeni Sandbox",
+            "newSandbox": "Yeni sandbox",
             "returnToDesktop": "Masaüstüne dön",
-            "serverOffline": "Sunucuya ulaşılamıyor. İnternet bağlantınızı kontrol edin veya sunucu kapalı olabilir.",
+            "serverOffline": "Sunucuya ulaşılamıyor. Sunucu yoğun yük altında olabilir veya bakım nedeniyle geçici olarak kapalı olabilir. En son durumu Discord'da kontrol edin.",
             "settings": "Ayarlar",
             "subtitle": "Bu, Project Rebearth'ün erken sürümüdür. Oynarken herhangi bir sorunla karşılaşırsanız lütfen bize ulaşın.",
             "demoSubtitle": "Bu, Project Rebearth'ün demo sürümüdür. Sadece sandbox şehir kurma modu etkin. Kaynak yönetimli çok oyunculu küre için tam sürümü edinin..",
-            "title": "Project Rebearth sunucusu",
             "demoRestriction1": "Bu düğmenin arkasında Project Rebearth'ın devasa çevrimiçi çok oyunculu dünyası yatıyor. Ancak demoda, kaynak yönetimi olmayan sadece sandbox modu kullanılabilir.",
             "demoRestriction2": "Sandbox modu, harika haritalar oluşturmanıza, bunları yüksek çözünürlükte dışa aktarmanıza ve 1:1 ölçekli bir oyun dünyasının nasıl bir his olduğunu deneyimlemenize olanak tanır.",
+            "title": "Project Rebearth sunucusu",
             "welcome": "{{name}}'a hoş geldiniz!"
         },
         "sandbox": {
@@ -437,6 +452,8 @@
             "title": "Yeni sandbox"
         },
         "slots": {
+            "cooldownActive": "Bu slot bekleme süresindedir.",
+            "cooldownTimer": "{{time}}'da mevcuttur.",
             "deleteConfirm": "Bu kaydı silmek istediğinize emin misiniz? Bu işlem geri alınamaz.",
             "empty": "Boş yuva",
             "locked": "Kilitli",
@@ -447,7 +464,7 @@
             "slot": "Slot",
             "title": "Kayıt yuvası seç",
             "unlockHint1000": "1.000 sakinde açılır.",
-            "unlockHint10000": "10.000 sakinde açılır.",
+            "unlockHint10000": "10.000 nüfusa ulaşıldığında kilit açılır.",
             "unnamedCity": "İsimsiz şehir"
         },
         "locked": {
@@ -478,6 +495,17 @@
             "neutral": "Nötr",
             "title": "Diplomasi",
             "you": "Siz"
+        },
+        "message": {
+            "title": "Messenger'ı gönder",
+            "sendMessage": "Messenger'ı gönder",
+            "to": "To",
+            "placeholder": "Mesajınızı buraya yazın...",
+            "cost": "Maliyet",
+            "send": "Gönder",
+            "sending": "Gönderiliyor...",
+            "sent": "Mesaj gönderildi!",
+            "insufficientGold": "Yeterli altın yok"
         },
         "market": {
             "amount": "Miktar",
@@ -549,13 +577,13 @@
         "common": {
             "accept": "Kabul et",
             "applications": "Başvurular",
-            "globalRank": "Küresel sıralama",
+            "globalRank": "Küresel Sıralama",
             "greatFederation": "Büyük Federasyon",
             "kick": "Çıkar",
             "marketSize": "Pazar büyüklüğü",
             "members": "Üyeler",
             "name": "Ad",
-            "owner": "Sahibi",
+            "owner": "Kurucu",
             "rank": "Derece",
             "reject": "Reddet",
             "scienceLeague": "Bilim Ligi",
@@ -563,7 +591,7 @@
             "value": "Değer"
         },
         "createAlliance": "ittifak kur",
-        "days": "günler",
+        "days": "gün",
         "disbandAlliance": "ittifakı feshet",
         "globalRank": "Küresel Sıralama",
         "go": "to",
@@ -641,26 +669,34 @@
     },
     "tips": {
         "loading": [
-            "Oyundaki bir gün gerçek hayatta bir gün sürer. Aceleniz yok, şehrinizi kendi hızınızda büyütün.",
-            "Q ve E tuşlarıyla binaları yerleştirmeden önce döndürebilirsiniz.",
-            "Şekil düzenleyicide nokta koymak için çift tıklayın.",
-            "Art arda bina yerleştirmek için Shift tuşunu basılı tutun.",
-            "Herhangi bir sorunla karşılaşırsanız lütfen Discord'dan bize bildirin.",
-            "Eserlerinizi paylaşmak ve ipuçları almak için Discord'daki canlı topluluğumuza katılın.",
-            "Bazı binalar sadece ana binanın yakınına yerleştirilebilir. Keresteci ve oduncu gibi.",
-            "Her kaynağı her yerde bulmak kolay değildir. Bazen ticaret yapmak her şeyi kendin üretmekten daha ucuz olabilir.",
-            "Steam'de bir inceleme bırakmak, bu dünyayı canlı kılan yeni oyuncular bulmamıza yardımcı olur.",
+            "Oyundaki bir gün, gerçek hayattaki bir gün kadar sürer. Acele etmeyin ve kendi hızınızda şehrinizi büyütün.",
+            "Q ve E tuşlarını kullanarak binaları yerleştirmeden önce döndürebilirsiniz.",
+            "Şekil düzenleyicide çift tıklayarak düğümleri yerleştirin.",
+            "Shift tuşunu kullanarak binaları yerleştirmeye devam edin.",
+            "Herhangi bir sorunla karşılaşırsanız, lütfen Discord üzerinden bize bildirin.",
             "Diğer oyuncularla ticaret yapabilmek için bir pazar veya liman inşa edin.",
             "İttifakları, sıralamaları ve seçenekleri açmak için bir belediye binası inşa edin.",
             "Keşifleri ve araştırmaları açmak için bir üniversite kurun.",
-            "Project dünyası hakkında her şeyi öğrenmek için projectrebearth.com adresindeki wiki sayfasını ziyaret edin."
+            "Discord'daki canlı oyuncu topluluğumuza katılın, yaratımlarınızı paylaşın ve ipuçları alın.",
+            "Bazı binalar sadece ana binanın yakınına yerleştirilebilir. Testere ve oduncu gibi.",
+            "Tüm kaynaklar her yerde kolayca elde edilemez. Bazen ticaret, her şeyi kendiniz üretmekten daha ucuz olabilir.",
+            "Steam'deki yorumlar, bu oyunu canlı bir dünya haline getiren yeni oyuncular bulmamıza yardımcı oluyor.",
+            "Project Rebearth dünyası hakkında her şeyi öğrenmek için projectrebearth.com adresindeki wiki sayfasını ziyaret edin."
         ]
+    },
+    "help": {
+        "hud": "Bu panel, sahip olduğunuz, ürettiğiniz ve tükettiğiniz tüm kaynakları gösterir. Her bir kaynak hakkında daha fazla ayrıntı görmek için simgelerin üzerine fareyi getirin. Bir kaynağınız azalırsa, kırmızı renkle vurgulanır ve binalar üretkenliklerini azaltmak zorunda kalabilir. Kapasitenize ulaşırsanız, kalın harflerle gösterilir ve binalarınız üretim yapmayı durdurur. Başlangıç bonusunuz gibi etkiler, ne kadar ürettiğinizi veya tükettiğinizi etkileyebilir. Bu değiştiriciler, bir kaynağın üzerine fareyi getirdiğinizde gösterilir. Solda dönen daireyi görüyor musunuz? Bu, oyunun sunucuyla senkronize olduğunu gösterir. Senkronizasyon tamamlanana kadar kaynak değişikliklerini göremezsiniz. Kaynak tüketimi ve üretimi günlük olarak gösterilir. Bu, gerçek zamanlı bir gündür. Ancak kaynaklarınız yavaşça artacaktır.",
+        "market": "Pazara hoş geldiniz! Diğer oyuncuların satın almak veya satmak istedikleri her şeyi ve daha da önemlisi, hangi fiyata istediklerini görün! Başka birinin siparişini yerine getirdiğinizde nakliye masraflarını siz ödersiniz. Dolayısıyla, eğer uzaklarsa, bu masraflar değmeyebilir, hatta onların ödemek istedikleri miktardan daha fazla olabilir.",
+        "orders": "Siparişlerinizi verin! Diğer oyunculara neyi hangi fiyata satın almak veya satmak istediğinizi bildirin. Bu, alacağınız veya ödeyeceğiniz tutardır. Diğer oyuncuların nakliye ücretini ödeyeceğini unutmayın. Bu nedenle, düşük bir fiyata bir şey satın almak, diğer oyuncuların nakliye ücretleri çok yüksekse işe yaramayabilir.",
+        "popup": "Bu açılır pencere, bu bina hakkındaki tüm bilgileri gösterir. Burada binanın temel parametrelerini değiştirebilir, hatta taşıyabilirsiniz. Bu özellik yalnızca bina modundayken kullanılabilir.",
+        "storage": "Burada bu binanın depolama kapasitesini ayarlayabilirsiniz. Belirli bir kapasitesi ve belirli miktarda mal depolayabilir. İhtiyaçlarınıza göre optimize etmek için oranını değiştirebilirsiniz."
     },
     "tooltip": {
         "cannotChange": "Şu süre boyunca değiştirilemez",
         "construction": "İnşaat",
-        "costPerMeter": "(metre başına)",
+        "cost": "Maliyet",
         "refund": "Para iadesi",
+        "costPerMeter": "(metre başına)",
         "costPerSquareMeter": "(metrekare başına)",
         "effects": "Etkiler",
         "upkeep": "Bakım",

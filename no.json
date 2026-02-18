@@ -40,7 +40,8 @@
             "workerSafety": "Mennesker er din største ressurs. Øker produksjonssikkerheten, men reduserer produksjonen.",
             "dubiousWorkingRules": "Mennesker er bare ressurser. Øker produksjonsvolumet, men øker ulykkesfrekvensen.",
             "crampedQuarters": "Hvor mye personlig plass trenger du egentlig? Vi kan få plass til flere mennesker i de samme husene, ikke sant?",
-            "intensiveFarming": "Intensivt jordbruk gjør det mulig å fôre dyrene dine med korn, noe som øker mengden animalske produkter du kan produsere."
+            "intensiveFarming": "Intensivt jordbruk gjør det mulig å fôre dyrene dine med korn, noe som øker mengden animalske produkter du kan produsere.",
+            "newTownBoost": "Som ny bosetter får du midlertidige bonuser som hjelper deg i gang. Disse vil forsvinne over tid."
         },
         "exclusiveOptions": "Eksklusive alternativer",
         "lockedFor": "Låst for",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Tvilsomme arbeidsregler",
             "crampedQuarters": "Som sardiner!",
             "intensiveFarming": "Intensivt jordbruk",
-            "newTownBoost": "Nye begynnelser!",
-            "foodShortage": "Matmangel"
+            "newTownBoost": "Nye begynnelser!"
         },
         "unlock": "Lås opp"
     },
@@ -71,6 +71,12 @@
         "delete": "Slett",
         "deleting": "Sletter...",
         "loading": "Laster..."
+    },
+    "connection": {
+        "backToMenu": "Tilbake til menyen",
+        "lost": "Tilkoblingen er brutt",
+        "message": "Serveren er midlertidig utilgjengelig. Dette kan skyldes vedlikehold eller omstart. Din fremgang på nettet er trygg, spillet vil fortsette automatisk når forbindelsen er gjenopprettet.",
+        "reconnecting": "Koble til på nytt"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Vel, vel, vel... hva har vi her?",
             "bankruptcy": "Konkurs!",
             "raid": "Varene dine ble stjålet!",
-            "trade": "Avtale!"
+            "trade": "Avtale!",
+            "player_message": "Du har fått post!"
         },
         "descriptions": {
             "food_shortage": "Du går tom for mat! Hvis folk ikke får mat, vil de stjele alt de kan for å overleve, eller til og med slutte å jobbe.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Hva fant vi her? Ekspedisjonen din kom tilbake med et overraskende tamt dyr. Det ser ut til at det heller vil bo i byen din enn i villmarken. Det ville være uhøflig å sende det tilbake nå, ikke sant?",
             "bankruptcy": "Du har rett og slett ikke mynter! Et tårn har brutt sammen. Tårnene du har bygget vil forfalle og bli ødelagt hvis du ikke vedlikeholder dem med tilstrekkelig med mynter.",
             "raid": "Du burde ha oppbevart varene dine bedre! De var lett tilgjengelige, og noen ukjente tyver stakk av med en del av ressursene dine.",
-            "trade": "Noen har fullført (deler av) handelsordren din."
+            "trade": "Noen har fullført (deler av) handelsordren din.",
+            "player_message": "En budbringer har ankommet fra en annen by med en beskjed til deg."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Tre gjerde",
                 "fence2": "Vevd gjerde",
                 "fence3": "Gjerdeform",
+                "fence4": "Gjerdelinje",
                 "fences": "Gjerder",
                 "field": "Felt",
                 "firepit": "Fire Pit",
@@ -182,6 +191,7 @@
                 "path": "Stien",
                 "pier": "Pier",
                 "plaza": "Plaza",
+                "dirt": "Skitt",
                 "port": "Port",
                 "quarry": "Steinbrudd",
                 "road": "Veien",
@@ -241,6 +251,7 @@
                 "fence1": "Et enkelt treverkstak for å holde enkle skapninger ute. Eller inne.",
                 "fence2": "Et flettet gjerde for å holde enkle skapninger ute. Eller inne.",
                 "fence3": "Tegn et tilpasset gjerde for å holde enkle skapninger ute. Eller inne.",
+                "fence4": "Tegn et langt gjerde for å holde enkle skapninger ute. Eller inne.",
                 "fences": "Gjerder er en god måte å holde uønskede besøkende ute av byen din på. Eller å holde dem inne.",
                 "firepit": "En ildsted er en solid konstruksjon som holder varmen og brukes til matlaging. Bare husk å slukke den før du legger deg.",
                 "fireplace": "Ingenting er koseligere enn å synge rundt peisen. Selv om røyken alltid vil blåse rett mot deg.",
@@ -256,7 +267,7 @@
                 "house_6": "Alle trenger et sted å bo. Dette luksuriøse huset gir dine folk et sted å spise og bo.",
                 "large_ship": "Jeg tror ikke de kan bli større enn dette. Se på dette! Nei, virkelig, alle sammen, se på dette! Dette må halvere transportkostnadene enda mer.",
                 "large_statue": "En stor statue for en stor fyr. Folk sier at han faktisk var så stor.",
-                "logpile": "Hva er den beste måten å lagre tre på? Bare stap det i en haug.",
+                "logpile": "Hva er den beste måten å lagre tre på? Bare kast det i en haug.",
                 "market": "Markedet vil gi deg mulighet til å handle med andre byer. Husene liker å ligge i nærheten av dette.",
                 "market_stall": "Legg til en markedsbod i byen din",
                 "market_stall_1": "En bod som selger kjøttprodukter.",
@@ -270,6 +281,7 @@
                 "path": "En enkel grusvei. Den gjør bare jobben sin. Bygninger vil imidlertid fungere like bra uten dem.",
                 "pier": "Folk sverger på at de største fiskene finnes på dypt vann. La oss se hvor dypt vi kan gå.",
                 "plaza": "Pene fliser til din pene by. Perfekt til markedsplasser, dekorasjon eller bare for å vise frem rikdommen din.",
+                "dirt": "Det viser hvor folk går, men ingen gidder å legge ordentlige fliser.",
                 "port": "Havnen lar deg handle med andre byer. Det er mye mer effektivt enn å handle over land, og transportkostnadene blir halvert.",
                 "quarry": "I steinbrudd utvinner du stein fra jorden. Det er et intensivt arbeid, men stein varer evig! De etterlater imidlertid store arr i landskapet.",
                 "road": "Veier gir strukturen til landsbyen din. De er ikke nødvendige for bygningene dine, men ser finere ut enn stier.",
@@ -324,9 +336,11 @@
             "happiness": "Lykke",
             "importCost": "Importkostnad",
             "populationProduction": "Befolkning Rediger",
+            "populationCapacity": "Boligkapasitet",
             "raidRisk": "Tyveririsiko (ved overskridelse av lagringskapasitet)",
             "researchSpeed": "Forskningshastighet",
-            "taxation": "Beskatning"
+            "taxation": "Beskatning",
+            "animalProduction": "Dyreproduksjon"
         },
         "expedition": {
             "start": "Start Expedition"
@@ -420,7 +434,7 @@
             "loadSandbox": "Last inn Sandbox",
             "newSandbox": "Ny sandkasse",
             "returnToDesktop": "Gå tilbake til skrivebordet",
-            "serverOffline": "Kan ikke nå serveren. Kontroller internettforbindelsen din, eller serveren kan være nede.",
+            "serverOffline": "Kan ikke nå serveren. Serveren kan være overbelastet eller midlertidig nede på grunn av vedlikehold. Sjekk Discord for den siste statusen.",
             "settings": "Innstillinger",
             "subtitle": "Dette er en tidlig utgave av Project Rebearth. Ta kontakt hvis du støter på problemer mens du spiller.",
             "demoSubtitle": "Dette er en demo av Project Rebearth. Kun sandkasse-bybyggerspillet er aktivert. For å spille på flerspiller-kloden med ressursadministrasjon, må du kjøpe fullversjonen.",
@@ -438,6 +452,8 @@
             "title": "Ny sandkasse"
         },
         "slots": {
+            "cooldownActive": "Dette sporet er på avkjøling",
+            "cooldownTimer": "Tilgjengelig på {{time}}",
             "deleteConfirm": "Er du sikker på at du vil slette denne lagringen? Denne handlingen kan ikke angres.",
             "empty": "Tom plass",
             "locked": "Låst",
@@ -479,6 +495,17 @@
             "neutral": "Nøytral",
             "title": "Diplomati",
             "you": "Du"
+        },
+        "message": {
+            "title": "Send Messenger",
+            "sendMessage": "Send Messenger",
+            "to": "Til",
+            "placeholder": "Skriv meldingen din her...",
+            "cost": "Kostnad",
+            "send": "Send",
+            "sending": "Sender...",
+            "sent": "Budbringeren er sendt!",
+            "insufficientGold": "Ikke nok gull"
         },
         "market": {
             "amount": "Beløp",
@@ -650,16 +677,24 @@
             "Bygg et marked eller en havn for å låse opp handel med andre spillere.",
             "Bygg et rådhus for å låse opp allianser, rangeringer og valgmuligheter.",
             "Bygg et universitet for å låse opp ekspedisjoner og forskning.",
-            "En anmeldelse på Steam hjelper oss med å finne nye spillere som gjør dette til en levende verden.",
+            "Bli med i vårt livlige spillermiljø på Discord for å dele dine kreasjoner og få tips.",
+            "Noen bygninger kan bare plasseres i nærheten av hovedbygningen. For eksempel sagbruket og trefelleren.",
             "Ikke alle ressurser er like lett tilgjengelige overalt. Noen ganger vil det være billigere å handle enn å produsere alt selv.",
             "En anmeldelse på Steam hjelper oss med å finne nye spillere som gjør dette til en levende verden.",
-            "En anmeldelse på Steam hjelper oss med å finne nye spillere som gjør dette til en levende verden.",
-            "Besøk wiki-siden på projectrebearth.com for å lære alt om Project-universet."
+            "Besøk wiki-siden på projectrebearth.com for å lære alt om verdenen i Project Rebearth."
         ]
+    },
+    "help": {
+        "hud": "Dette panelet viser alle ressursene du har, produserer og forbruker. Hold musepekeren over ikonene for å se mer informasjon om hver ressurs. Hvis du har lite av en ressurs, vil den bli uthevet i rødt, og bygninger kan bli tvunget til å redusere produktiviteten. Hvis du når kapasiteten din, vil det vises i fet skrift, og bygningene dine slutter å produsere. Du kan ha effekter, som startbonusen din, som påvirker hvor mye du produserer eller forbruker. Disse modifikatorene vises når du holder musepekeren over en ressurs. Ser du den roterende sirkelen til venstre? Den indikerer når spillet synkroniseres med serveren. Du vil ikke se ressursendringer før synkroniseringen er fullført. Ressursforbruk og -produksjon vises per dag. Dette er en faktisk dag i sanntid. Ressursene dine vil imidlertid øke sakte.",
+        "market": "Velkommen til markedet! Se alle tingene andre spillere ønsker å kjøpe eller selge, og enda viktigere, til hvilken pris! Du må betale transportkostnader når du oppfyller andres bestillinger. Så hvis de er langt unna, kan det hende det ikke er verdt det, eller at det til og med koster mer enn det de er villige til å betale.",
+        "orders": "Legg inn dine bestillinger! Fortell de andre spillerne hva du ønsker å kjøpe eller selge, og til hvilken pris. Dette er hva du vil motta eller betale. Husk at andre vil betale for transport. Det kan derfor hende at det ikke lønner seg å kjøpe noe til en lav pris hvis de andre spillernes fraktkostnader er for høye.",
+        "popup": "Denne popup-vinduet viser deg all informasjon om denne bygningen. Her kan du endre viktige parametere for bygningen, eller til og med flytte dem. Dette er kun tilgjengelig når du er i byggemodus.",
+        "storage": "Her kan du justere hvor mye denne bygningen kan lagre. Den har en viss kapasitet og kan romme en viss mengde varer. Du kan endre forholdet for å optimalisere den etter dine behov."
     },
     "tooltip": {
         "cannotChange": "Kan ikke endres for",
         "construction": "Konstruksjon",
+        "cost": "Kostnad",
         "refund": "Refusjon",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(per m²)",

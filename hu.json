@@ -40,7 +40,8 @@
             "workerSafety": "Az emberek a legnagyobb értéke. Növeli a termelés biztonságát, de csökkenti a termelékenységet.",
             "dubiousWorkingRules": "Az emberek csak erőforrások. Növeli a termelési teljesítményt, de emeli a balesetek arányát.",
             "crampedQuarters": "Mennyi személyes térre van valójában szükséged? Ugye több embert is el tudunk helyezni ugyanazokban a házakban?",
-            "intensiveFarming": "Az intenzív gazdálkodás lehetővé teszi, hogy állataidat gabonával etesd, növelve ezzel az állati termékek termelési mennyiségét."
+            "intensiveFarming": "Az intenzív gazdálkodás lehetővé teszi, hogy állataidat gabonával etesd, növelve ezzel az állati termékek termelési mennyiségét.",
+            "newTownBoost": "Új településként ideiglenes bónuszokat kapsz, amelyek segítenek az indulásban. Ezek idővel elhalványulnak."
         },
         "exclusiveOptions": "Exkluzív opciók",
         "lockedFor": "Zárva",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Kétes működési szabályok",
             "crampedQuarters": "Mint a szardínia!",
             "intensiveFarming": "Intenzív gazdálkodás",
-            "newTownBoost": "Új kezdetek!",
-            "foodShortage": "Élelmiszerhiány"
+            "newTownBoost": "Új kezdetek!"
         },
         "unlock": "Feloldás"
     },
@@ -71,6 +71,12 @@
         "delete": "Törlés",
         "deleting": "Törlés...",
         "loading": "Betöltés..."
+    },
+    "connection": {
+        "backToMenu": "Vissza a menübe",
+        "lost": "Kapcsolat megszakadt",
+        "message": "A szerver ideiglenesen nem elérhető. Ez karbantartás vagy újraindítás miatt lehet. Az online előrehaladásod biztonságban van, a játék automatikusan folytatódik, amint a kapcsolat helyreáll.",
+        "reconnecting": "Újracsatlakozás"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Hát, hát, hát... mi van itt nekünk?",
             "bankruptcy": "Csőd!",
             "raid": "Ellopták az áruidat!",
-            "trade": "Megegyeztünk!"
+            "trade": "Megegyeztünk!",
+            "player_message": "Új üzeneted érkezett!"
         },
         "descriptions": {
             "food_shortage": "Kezd elfogyni az élelmiszer! Ha az emberek nem tudnak enni, akkor ellopnak mindent, amit csak tudnak, hogy megéljenek, vagy akár abbahagyják a munkát.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Mit találtunk itt? A expedíció egy meglepően szelíd állattal tért vissza. Úgy tűnik, inkább a városban szeretne élni, mint a vadonban. Nem lenne udvariatlan, ha most visszaküldené, ugye?",
             "bankruptcy": "Egyszerűen nincs pénzed! Egy torony összeomlott. Az általad épített tornyok romlani fognak és megsemmisülnek, ha nem tartod karban őket elegendő pénzzel.",
             "raid": "Jobban el kellett volna rejtened az áruidat! Könnyen hozzáférhetők voltak, és néhány ismeretlen tolvaj elvitte az erőforrásaid egy részét.",
-            "trade": "Valaki teljesítette (részben) a kereskedelmi megrendelésedet."
+            "trade": "Valaki teljesítette (részben) a kereskedelmi megrendelésedet.",
+            "player_message": "Egy hírnök érkezett egy másik városból, és üzenetet hozott neked."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Fa kerítés",
                 "fence2": "Szőtt kerítés",
                 "fence3": "Kerítés alakja",
+                "fence4": "Kerítésvonal",
                 "fences": "Kerítések",
                 "field": "Tér",
                 "firepit": "Tűzrakóhely",
@@ -182,6 +191,7 @@
                 "path": "Útvonal",
                 "pier": "Pier",
                 "plaza": "Plaza",
+                "dirt": "Dirt",
                 "port": "Port",
                 "quarry": "Kőbánya",
                 "road": "Út",
@@ -241,6 +251,7 @@
                 "fence1": "Egy egyszerű fa kerítés, amely egyszerű lények kívül tartására szolgál. Vagy bent tartására.",
                 "fence2": "Szövött kerítés, amely egyszerű lények kívül tartására szolgál. Vagy bent tartására.",
                 "fence3": "Rajzolj egy egyedi kerítést, hogy az egyszerű lények kívül maradjanak. Vagy bent.",
+                "fence4": "Rajzolj egy hosszú kerítést, hogy az egyszerű lények kívül maradjanak. Vagy bent.",
                 "fences": "A kerítések remek módszerek arra, hogy távol tartsák a nem kívánt látogatókat a városodtól, vagy éppen bent tartsák őket.",
                 "firepit": "A tűzrakóhely egy szilárd szerkezet, amely melegen tart és ételek elkészítésére szolgál. Ne felejtsd el eloltani, mielőtt aludni mész.",
                 "fireplace": "Nincs hangulatosabb, mint a kandalló körül énekelni. Bár a füst mindig pontosan feléd fog fújni.",
@@ -256,7 +267,7 @@
                 "house_6": "Mindenkinek szüksége van egy helyre, ahol élhet. Ez a luxus ház biztosít helyet az embereidnek, ahol enni és élni tudnak.",
                 "large_ship": "Szerintem ennél nagyobb már nem lehet. Nézzétek meg! Nem, komolyan, mindenki, nézzétek meg! Ez biztosan még jobban csökkenti a szállítási költségeket.",
                 "large_statue": "Egy nagy szobor egy nagy embernek. Az emberek azt mondják, hogy valójában ilyen nagy volt.",
-                "logpile": "Hogyan tároljuk a fát a legjobban? Csak halmozzuk fel egy kupacba.",
+                "logpile": "Hogyan tároljuk a fát a legjobban? Csak dobjuk egy halomba.",
                 "market": "A piacon más városokkal is kereskedhetsz. A házak szeretnek ehhez közel lenni.",
                 "market_stall": "Adj hozzá egy piaci standot a városodhoz!",
                 "market_stall_1": "Húsipari termékeket árusító stand.",
@@ -270,6 +281,7 @@
                 "path": "Egy egyszerű földút. Csak elvégzi a feladatát. Az épületek azonban ezek nélkül is tökéletesen működnek.",
                 "pier": "Az emberek esküsznek, hogy a nagyobb halak a mélyebb vizekben vannak. Lássuk, milyen mélyre tudunk lemerülni.",
                 "plaza": "Szép csempék a szép városodhoz. Kiválóan alkalmasak piacokhoz, dekorációhoz, vagy egyszerűen csak a vagyonod megmutatásához.",
+                "dirt": "Megmutatja, hol járnak az emberek, de senki sem vette a fáradtságot, hogy megfelelő csempéket rakjon le.",
                 "port": "A kikötő lehetővé teszi, hogy más városokkal kereskedj. Ez sokkal hatékonyabb, mint a szárazföldi kereskedelem, és a szállítási költségek felére csökkennek.",
                 "quarry": "A kőbányákban a földből bányásszák ki a köveket. Ez egy intenzív munka, de a kövek örökre megmaradnak! Nagy sebeket hagynak a tájban.",
                 "road": "Az utak strukturálják a falut. Nincsenek szükségük az épületekhez, de szebbnek tűnnek, mint az ösvények.",
@@ -324,9 +336,11 @@
             "happiness": "Boldogság",
             "importCost": "Importköltség",
             "populationProduction": "Népesség Szerkesztés",
+            "populationCapacity": "Lakhatási kapacitás",
             "raidRisk": "Lopás kockázata (a tárolókapacitás túllépése esetén)",
             "researchSpeed": "Kutatási sebesség",
-            "taxation": "Adózás"
+            "taxation": "Adózás",
+            "animalProduction": "Állattenyésztés"
         },
         "expedition": {
             "start": "Indítsd el az expedíciót"
@@ -420,7 +434,7 @@
             "loadSandbox": "Sandbox betöltése",
             "newSandbox": "Új Sandbox",
             "returnToDesktop": "Vissza az asztalra",
-            "serverOffline": "Nem lehet elérni a szervert. Ellenőrizze az internetkapcsolatát, vagy a szerver leállhatott.",
+            "serverOffline": "Nem lehet elérni a szervert. Lehet, hogy a szerver túlterhelt, vagy ideiglenesen karbantartás miatt nem elérhető. A legfrissebb állapotot a Discordon ellenőrizheti.",
             "settings": "Beállítások",
             "subtitle": "Ez a Project Rebearth korai verziója. Kérjük, vegye fel velünk a kapcsolatot, ha játék közben bármilyen problémát tapasztal.",
             "demoSubtitle": "Ez a Project Rebearth demója. Csak a sandbox városépítő funkció engedélyezett. Ha többjátékos globuson szeretnél játszani erőforrás-kezeléssel, töltsd le a teljes verziót.",
@@ -438,6 +452,8 @@
             "title": "Új Sandbox"
         },
         "slots": {
+            "cooldownActive": "Ez a hely cooldown alatt van.",
+            "cooldownTimer": "Elérhető az {{time}} oldalon.",
             "deleteConfirm": "Biztosan törölni szeretné ezt a mentést? Ez a művelet visszafordíthatatlan.",
             "empty": "Üres hely",
             "locked": "Zárt",
@@ -479,6 +495,17 @@
             "neutral": "Semleges",
             "title": "Diplomácia",
             "you": "Te"
+        },
+        "message": {
+            "title": "Küldés Messenger",
+            "sendMessage": "Küldés Messenger",
+            "to": "To",
+            "placeholder": "Írja ide üzenetét...",
+            "cost": "Költség",
+            "send": "Küldés",
+            "sending": "Küldés...",
+            "sent": "A hírnök elküldve!",
+            "insufficientGold": "Nincs elég arany"
         },
         "market": {
             "amount": "Összeg",
@@ -642,24 +669,32 @@
     },
     "tips": {
         "loading": [
-            "A játékban eltöltött egy nap a valós életben is egy napot jelent. Ne siess, és a saját tempódban építsd fel városodat.",
+            "A játékban eltöltött egy nap a valós életben is egy napnak felel meg. Ne siess, és a saját tempódban építsd fel városodat.",
             "A Q és E billentyűkkel elforgathatja az épületeket, mielőtt elhelyezi őket.",
             "Kattintson duplán a forma szerkesztőben a csomópontok elhelyezéséhez.",
             "A Shift billentyűvel folytathatod az épületek elhelyezését.",
             "Ha bármilyen problémát tapasztalsz, kérjük, jelezd nekünk a Discordon.",
             "Építs piacot vagy kikötőt, hogy más játékosokkal is kereskedhess.",
             "Építs egy városházát, hogy feloldd a szövetségeket, ranglistákat és választási lehetőségeket.",
-            "Építs egyetemet, hogy feloldd a kutatóutakat és a kutatásokat.",
+            "Építs egyetemet, hogy feloldd a expedíciókat és a kutatásokat.",
+            "Csatlakozz a Discordon található élénk játékos közösségünkhöz, hogy megoszthasd alkotásaidat és tippeket kaphass.",
+            "Egyes épületek csak a szülőépület közelében helyezhetők el. Például a fűrész és a favágó.",
+            "Nem minden erőforrás könnyen beszerezhető mindenhol. Néha olcsóbb kereskedni, mint mindent magadnak előállítani.",
             "A Steam-en írt vélemények segítenek nekünk új játékosokat találni, akik élettel töltik meg ezt a világot.",
-            "Nem minden erőforrás könnyen beszerezhető mindenhol. Néha a kereskedelem olcsóbb, mint mindent magadnak előállítani.",
-            "A Steam-en írt vélemények segítenek nekünk új játékosokat találni, akik élettel töltik meg ezt a világot.",
-            "A Steam-en írt vélemények segítenek nekünk új játékosokat találni, akik élettel töltik meg ezt a világot.",
-            "Látogass el a projectrebearth.com wiki oldalára, hogy mindent megtudj a Project világáról."
+            "Látogass el a projectrebearth.com wiki oldalára, hogy mindent megtudj a Project Rebearth világáról."
         ]
+    },
+    "help": {
+        "hud": "Ez a panel az összes rendelkezésre álló, előállított és felhasznált erőforrást mutatja. Az ikonok fölé viszve az egérmutatót további részletek jelennek meg az egyes erőforrásokról. Ha egy erőforrásból kevés van, az piros színnel jelenik meg, és az épületek kénytelenek lehetnek csökkenteni termelékenységüket. Ha eléri a kapacitáshatárt, az vastag betűvel jelenik meg, és az épületek leállnak a termeléssel. Vannak olyan hatások, mint például a kezdő bónusz, amelyek befolyásolják a termelés vagy a fogyasztás mértékét. Ezek a módosítók akkor jelennek meg, ha az egérmutatót egy erőforrás fölé viszi. Látod a bal oldalon forgó kört? Ez jelzi, hogy a játék szinkronizálódik a szerverrel. A szinkronizálás befejezéséig nem látsz erőforrás-változásokat. Az erőforrás-fogyasztás és -termelés naponta jelenik meg. Ez egy valós idejű nap. Az erőforrásaid azonban lassan fogynak.",
+        "market": "Üdvözöljük a piacon! Itt láthatja, hogy a többi játékos mit szeretne vásárolni vagy eladni, és ami még fontosabb, milyen áron! Ha mások megrendelését teljesíti, akkor a szállítási költségeket Önnek kell állnia. Ha tehát a megrendelő messze van, akkor lehet, hogy nem éri meg, vagy akár többet is fizethet, mint amennyit a megrendelő hajlandó fizetni.",
+        "orders": "Adja le megrendeléseit! Tájékoztassa a többi játékost, hogy mit szeretne vásárolni vagy eladni, és milyen áron. Ez az, amit kapni fog, vagy fizetni fog. Ne feledje, hogy a többiek fizetnek a szállításért. Tehát lehet, hogy nem érdemes alacsony áron vásárolni, ha a többi játékos szállítási költségei túl magasak.",
+        "popup": "Ez a felugró ablak az épületre vonatkozó összes információt megjeleníti. Itt megváltoztathatja az épület legfontosabb paramétereit, vagy akár áthelyezheti őket. Ez csak építési módban érhető el.",
+        "storage": "Itt beállíthatod, hogy ez az épület mennyi raktárkapacitással rendelkezzen. Az épületnek van egy bizonyos kapacitása, és egy bizonyos mennyiségű árut tud tárolni. Az arányt megváltoztathatod, hogy az igényeidnek megfelelően optimalizáld."
     },
     "tooltip": {
         "cannotChange": "Nem módosítható",
         "construction": "Építés",
+        "cost": "Költség",
         "refund": "Visszatérítés",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(m²-enként)",

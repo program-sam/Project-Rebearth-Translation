@@ -40,7 +40,8 @@
             "workerSafety": "Lidé jsou vaším největším bohatstvím. Zvyšuje bezpečnost výroby, ale snižuje výkon.",
             "dubiousWorkingRules": "Lidé jsou jen zdroje. Zvyšuje produkci, ale také zvyšuje počet nehod.",
             "crampedQuarters": "Kolik osobního prostoru opravdu potřebujete? Do stejných domů se vejde více lidí, že?",
-            "intensiveFarming": "Intenzivní zemědělství vám umožňuje krmit zvířata obilím, čímž se zvyšuje množství živočišných produktů, které můžete vyprodukovat."
+            "intensiveFarming": "Intenzivní zemědělství vám umožňuje krmit zvířata obilím, čímž se zvyšuje množství živočišných produktů, které můžete vyprodukovat.",
+            "newTownBoost": "Jako nová osada získáte dočasné bonusy, které vám pomohou začít. Tyto bonusy se časem vytratí."
         },
         "exclusiveOptions": "Exkluzivní možnosti",
         "lockedFor": "Zamčeno pro",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Pochybná pracovní pravidla",
             "crampedQuarters": "Jako sardinky!",
             "intensiveFarming": "Intenzivní zemědělství",
-            "newTownBoost": "Nový začátek!",
-            "foodShortage": "Nedostatek potravin"
+            "newTownBoost": "Nový začátek!"
         },
         "unlock": "Odemknout"
     },
@@ -71,6 +71,12 @@
         "delete": "Smazat",
         "deleting": "Odstraňování...",
         "loading": "Načítání..."
+    },
+    "connection": {
+        "backToMenu": "Zpět do nabídky",
+        "lost": "Ztráta připojení",
+        "message": "Server je dočasně nedostupný. Může to být způsobeno údržbou nebo restartem. Váš online postup je v bezpečí, hra se automaticky obnoví, jakmile bude obnoveno připojení.",
+        "reconnecting": "Opětovné připojení"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "No no no... co to tu máme?",
             "bankruptcy": "Bankrot!",
             "raid": "Vaše zboží bylo ukradeno!",
-            "trade": "Dohodnuto!"
+            "trade": "Dohodnuto!",
+            "player_message": "Máte poštu!"
         },
         "descriptions": {
             "food_shortage": "Docházejí vám zásoby jídla! Pokud lidé nebudou mít co jíst, budou krást, co se dá, aby přežili, nebo dokonce přestanou pracovat.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Co jsme zde našli? Vaše expedice se vrátila s překvapivě krotkým zvířetem. Zdá se, že chce žít spíše ve vašem městě než v divočině. Bylo by neslušné ho teď poslat zpět, že?",
             "bankruptcy": "Prostě nemáte žádné mince! Věž se zřítila. Věže, které jste postavili, se budou zhoršovat a zničí se, pokud je nebudete udržovat s dostatečným množstvím mincí.",
             "raid": "Měli jste své zboží lépe schovat! Bylo snadno dostupné a neznámí zloději odnesli část vašich zdrojů.",
-            "trade": "Někdo splnil (část) vaší obchodní objednávky."
+            "trade": "Někdo splnil (část) vaší obchodní objednávky.",
+            "player_message": "Z jiného města dorazil posel s vzkazem pro vás."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Dřevěný plot",
                 "fence2": "Tkaný plot",
                 "fence3": "Tvar plotu",
+                "fence4": "Hranice pozemku",
                 "fences": "Ploty",
                 "field": "Pole",
                 "firepit": "Ohniště",
@@ -182,6 +191,7 @@
                 "path": "Cesta",
                 "pier": "Pier",
                 "plaza": "Náměstí",
+                "dirt": "Špína",
                 "port": "Port",
                 "quarry": "Lom",
                 "road": "Silnice",
@@ -241,6 +251,7 @@
                 "fence1": "Jednoduchý dřevěný plot, který brání prostým tvorům ve vstupu. Nebo v odchodu.",
                 "fence2": "Tkaný plot, který brání prostým tvorům ve vstupu. Nebo v odchodu.",
                 "fence3": "Nakreslete vlastní plot, aby se jednoduché bytosti nedostaly ven. Nebo dovnitř.",
+                "fence4": "Nakreslete dlouhý plot, aby se jednoduché bytosti nedostaly ven. Nebo dovnitř.",
                 "fences": "Ploty jsou skvělým způsobem, jak udržet nežádoucí návštěvníky mimo vaše město. Nebo je udržet uvnitř.",
                 "firepit": "Ohniště je pevná konstrukce, která slouží k ohřevu a vaření jídla. Nezapomeňte ho před spaním uhasit.",
                 "fireplace": "Není nic útulnějšího než zpívat u krbu. I když kouř bude vždy foukat přesně na vás.",
@@ -256,7 +267,7 @@
                 "house_6": "Každý potřebuje místo k životu. Tento luxusní dům poskytuje vašim lidem místo, kde mohou jíst a žít.",
                 "large_ship": "Myslím, že větší už být nemohou. Podívejte se na to! Ne, vážně, všichni se na to podívejte! To musí ještě více snížit náklady na dopravu.",
                 "large_statue": "Velká socha pro velkého chlapa. Lidé říkají, že byl opravdu tak velký.",
-                "logpile": "Jak nejlépe skladovat dřevo? Prostě ho naházet na hromadu.",
+                "logpile": "Jak nejlépe skladovat dřevo? Prostě ho naházejte na hromadu.",
                 "market": "Trh vám umožní obchodovat s jinými městy. Domy mají rády blízkost trhu.",
                 "market_stall": "Přidejte do svého města tržní stánek.",
                 "market_stall_1": "Stánek s prodejem masných výrobků.",
@@ -270,6 +281,7 @@
                 "path": "Jednoduchá polní cesta. Prostě splní svůj účel. Budovy však budou fungovat i bez nich.",
                 "pier": "Lidé tvrdí, že větší ryby se nacházejí v hlubších vodách. Uvidíme, jak hluboko se dostaneme.",
                 "plaza": "Krásné dlaždice pro vaše krásné město. Skvělé pro tržiště, dekoraci nebo jen pro předvádění svého bohatství.",
+                "dirt": "Ukazuje, kudy lidé chodí, ale nikdo se neobtěžoval položit pořádné dlaždice.",
                 "port": "Přístav vám umožňuje obchodovat s jinými městy. Je to mnohem efektivnější než obchodování po zemi a náklady na dopravu se sníží na polovinu.",
                 "quarry": "V lomech těžíte kameny ze země. Je to náročná práce, ale kameny jsou věčné! Zanechávají však v krajině velké jizvy.",
                 "road": "Silnice dodávají vaší vesnici strukturu. Nejsou nezbytné pro vaše budovy, ale vypadají lépe než cesty.",
@@ -297,7 +309,7 @@
                 "woodcutter": "Dřevorubec bude řezat dřevo. Kolik dřeva? Tolik, kolik dřevorubec zvládne.",
                 "refinery": "Rafinerie se používá k rafinaci podivných hornin na lesklé tvárné horniny.",
                 "iron_mine": "Vykopali jsme hlubokou jámu, protože jsme našli nějaké podivné kameny. Pošleme tam všechny naše lidi, aby je přinesli. Co horšího se může stát?",
-                "iron_mine_upgraded": "S těmito podivnými materiály, které jsme našli, určitě dokážeme z podzemí vytěžit více lesklých kamenů!",
+                "iron_mine_upgraded": "S těmito podivnými materiály, které jsme našli, určitě dokážeme z podzemí vytěžit více lesklých kamenů mnohem rychleji!",
                 "glassworks": "Glassworks vám umožňuje vyrábět sklo z písku, které lze použít pro různé pokročilé aplikace.",
                 "tools_workshop": "V dílně na výrobu nástrojů můžete vyrábět nástroje, které jsou nezbytné pro práci některých lidí.",
                 "well": "I když je zábavné stát v dešti s otevřenou pusou, je to trochu složitější, když máte naplnit vanu. Studna se pro vaše město hodí lépe."
@@ -324,9 +336,11 @@
             "happiness": "Štěstí",
             "importCost": "Náklady na dovoz",
             "populationProduction": "Populace Upravit",
+            "populationCapacity": "Kapacita ubytování",
             "raidRisk": "Riziko krádeže (při překročení kapacity úložiště)",
             "researchSpeed": "Rychlost výzkumu",
-            "taxation": "Zdanění"
+            "taxation": "Zdanění",
+            "animalProduction": "Živočišná výroba"
         },
         "expedition": {
             "start": "Zahájit expedici"
@@ -420,7 +434,7 @@
             "loadSandbox": "Načíst Sandbox",
             "newSandbox": "Nový Sandbox",
             "returnToDesktop": "Návrat na plochu",
-            "serverOffline": "Nelze se připojit k serveru. Zkontrolujte připojení k internetu nebo zda server není mimo provoz.",
+            "serverOffline": "Nelze se připojit k serveru. Server může být přetížen nebo dočasně mimo provoz z důvodu údržby. Nejnovější informace najdete na Discord.",
             "settings": "Nastavení",
             "subtitle": "Toto je předběžná verze hry Project Rebearth. Pokud narazíte na nějaké problémy při hraní, kontaktujte nás.",
             "demoSubtitle": "Toto je demo hry Project Rebearth. K dispozici je pouze sandboxový editor měst. Chcete-li hrát na multiplayerovém globu s řízením zdrojů, pořiďte si plnou verzi.",
@@ -438,6 +452,8 @@
             "title": "Nový Sandbox"
         },
         "slots": {
+            "cooldownActive": "Tento slot je v cooldownu.",
+            "cooldownTimer": "K dispozici v{{time}}",
             "deleteConfirm": "Opravdu chcete smazat tuto uloženou hru? Tuto akci nelze vrátit zpět.",
             "empty": "Prázdné místo",
             "locked": "Zamčeno",
@@ -479,6 +495,17 @@
             "neutral": "Neutrální",
             "title": "Diplomacie",
             "you": "Vy"
+        },
+        "message": {
+            "title": "Odeslat Messenger",
+            "sendMessage": "Odeslat Messenger",
+            "to": "To",
+            "placeholder": "Zde napište svou zprávu...",
+            "cost": "Náklady",
+            "send": "Odeslat",
+            "sending": "Odesílání...",
+            "sent": "Posel byl odeslán!",
+            "insufficientGold": "Nedostatek zlata"
         },
         "market": {
             "amount": "Částka",
@@ -650,16 +677,24 @@
             "Postavte trh nebo přístav a odemkněte obchodování s ostatními hráči.",
             "Postavte radnici, abyste odemkli aliance, žebříčky a možnosti.",
             "Postavte univerzitu, abyste odemkli expedice a výzkum.",
-            "Recenze na Steam nám pomáhá najít nové hráče, kteří tento svět oživují.",
+            "Připojte se k naší živé komunitě hráčů na Discord a sdílejte své výtvory a získejte tipy.",
+            "Některé budovy lze umístit pouze v blízkosti mateřské budovy. Například pila a dřevorubec.",
             "Ne všechny suroviny lze snadno získat všude. Někdy bude obchodování levnější než vlastní výroba.",
             "Recenze na Steam nám pomáhá najít nové hráče, kteří tento svět oživují.",
-            "Recenze na Steam nám pomáhá najít nové hráče, kteří tento svět oživují.",
-            "Navštivte wiki na adrese projectrebearth.com a dozvíte se vše o světě Project."
+            "Navštivte wiki na adrese projectrebearth.com a dozvíte se vše o světě Project Rebearth."
         ]
+    },
+    "help": {
+        "hud": "Tento panel zobrazuje všechny zdroje, které máte, produkujete a spotřebováváte. Umístěte kurzor na ikony a zobrazí se další podrobnosti o jednotlivých zdrojích. Pokud vám dochází nějaký zdroj, bude zvýrazněn červeně a budovy mohou být nuceny snížit svou produktivitu. Pokud dosáhnete své kapacity, zobrazí se tučným písmem a vaše budovy přestanou produkovat. Můžete mít efekty, jako je váš startovací bonus, které ovlivňují, kolik produkujete nebo spotřebováváte. Tyto modifikátory se zobrazí, když umístíte kurzor na zdroj. Vidíte točící se kruh vlevo? Ten označuje, kdy se hra synchronizuje se serverem. Změny zdrojů neuvidíte, dokud synchronizace neskončí. Spotřeba a produkce zdrojů se zobrazují za den. Jedná se o skutečný den v reálném čase. Vaše zdroje však budou pomalu přibývat.",
+        "market": "Vítejte na trhu! Podívejte se, co ostatní hráči chtějí koupit nebo prodat, a co je ještě důležitější, za jakou cenu! Při plnění objednávky jiného hráče budete hradit náklady na dopravu. Pokud je tedy někdo daleko, nemusí se to vyplatit, nebo to dokonce může stát víc, než je ochoten zaplatit.",
+        "orders": "Zadejte své objednávky! Oznamte ostatním hráčům, co chcete koupit nebo prodat a za jakou cenu. To je částka, kterou obdržíte nebo zaplatíte. Mějte na paměti, že ostatní budou platit za dopravu. Nákup za nízkou cenu tedy nemusí být výhodný, pokud jsou náklady na dopravu ostatních hráčů příliš vysoké.",
+        "popup": "Toto vyskakovací okno zobrazuje všechny informace o této budově. Zde můžete změnit klíčové parametry budovy nebo je dokonce přesunout. Tato funkce je k dispozici pouze v režimu stavění.",
+        "storage": "Zde můžete nastavit, kolik tato budova skladuje. Má určitou kapacitu a může pojmout určité množství zboží. Můžete změnit její poměr, aby vyhovoval vašim potřebám."
     },
     "tooltip": {
         "cannotChange": "Nelze změnit pro",
         "construction": "Stavba",
+        "cost": "Náklady",
         "refund": "Vrácení peněz",
         "costPerMeter": "(pro m)",
         "costPerSquareMeter": "(na m²)",

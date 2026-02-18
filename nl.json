@@ -40,7 +40,8 @@
             "workerSafety": "Mensen zijn je grootste troef. Verhoogt de productieveiligheid, maar vermindert de output.",
             "dubiousWorkingRules": "Mensen zijn slechts middelen. Verhoogt de productie, maar verhoogt ook het aantal ongevallen.",
             "crampedQuarters": "Hoeveel persoonlijke ruimte heb je echt nodig? We kunnen toch meer mensen in dezelfde huizen onderbrengen?",
-            "intensiveFarming": "Door intensieve landbouw kun je je dieren graan voeren, waardoor je meer dierlijke producten kunt produceren."
+            "intensiveFarming": "Door intensieve landbouw kun je je dieren graan voeren, waardoor je meer dierlijke producten kunt produceren.",
+            "newTownBoost": "Als nieuwe nederzetting ontvang je tijdelijke bonussen om je op weg te helpen. Deze verdwijnen na verloop van tijd."
         },
         "exclusiveOptions": "Exclusieve opties",
         "lockedFor": "Vergrendeld voor",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Twijfelachtige werkregels",
             "crampedQuarters": "Net als sardientjes!",
             "intensiveFarming": "Intensieve landbouw",
-            "newTownBoost": "Een nieuw begin!",
-            "foodShortage": "Voedseltekort"
+            "newTownBoost": "Een nieuw begin!"
         },
         "unlock": "Ontgrendelen"
     },
@@ -71,6 +71,12 @@
         "delete": "Verwijderen",
         "deleting": "Verwijderen...",
         "loading": "Bezig met laden..."
+    },
+    "connection": {
+        "backToMenu": "Terug naar menu",
+        "lost": "Verbinding verbroken",
+        "message": "De server is tijdelijk niet bereikbaar. Dit kan te wijten zijn aan onderhoud of een herstart. Je online voortgang is veilig, het spel wordt automatisch hervat zodra de verbinding is hersteld.",
+        "reconnecting": "Opnieuw verbinden"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Wel wel wel... wat hebben we hier?",
             "bankruptcy": "Failliet!",
             "raid": "Je goederen zijn gestolen!",
-            "trade": "Afgesproken!"
+            "trade": "Afgesproken!",
+            "player_message": "Je hebt post!"
         },
         "descriptions": {
             "food_shortage": "Je raakt zonder voedsel! Als mensen niet kunnen eten, zullen ze alles stelen wat ze kunnen om te overleven, of zelfs stoppen met werken.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Wat hebben we hier gevonden? Je expeditie is teruggekeerd met een verrassend tam dier. Het lijkt liever in je stad te willen wonen dan in de wildernis. Het zou onbeleefd zijn om het nu terug te sturen, nietwaar?",
             "bankruptcy": "Je hebt gewoon geen geld! Een toren is ingestort. Torens die je hebt gebouwd, zullen verslechteren en vernietigd worden als je ze niet onderhoudt met voldoende geld.",
             "raid": "Je had je goederen beter moeten opbergen! Ze waren gemakkelijk te stelen en een aantal onbekende dieven hebben een deel van je voorraad meegenomen.",
-            "trade": "Iemand heeft (een deel van) je handelsorder uitgevoerd."
+            "trade": "Iemand heeft (een deel van) je handelsorder uitgevoerd.",
+            "player_message": "Er is een boodschapper uit een andere stad aangekomen met een bericht voor jou."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Houten hek",
                 "fence2": "Geweven hekwerk",
                 "fence3": "Omheiningvorm",
+                "fence4": "Heklijn",
                 "fences": "Hekken",
                 "field": "Veld",
                 "firepit": "Vuurplaats",
@@ -182,6 +191,7 @@
                 "path": "Pad",
                 "pier": "Pier",
                 "plaza": "Plein",
+                "dirt": "Dirt",
                 "port": "Poort",
                 "quarry": "Steengroeve",
                 "road": "Weg",
@@ -241,6 +251,7 @@
                 "fence1": "Een eenvoudige houten schutting om eenvoudige wezens buiten te houden. Of binnen.",
                 "fence2": "Een geweven hek om eenvoudige wezens buiten te houden. Of binnen.",
                 "fence3": "Teken een aangepast hek om eenvoudige wezens buiten te houden. Of binnen.",
+                "fence4": "Teken een lang hek om eenvoudige wezens buiten te houden. Of binnen.",
                 "fences": "Hekken zijn een uitstekende manier om ongewenste bezoekers uit je stad te weren. Of om ze binnen te houden.",
                 "firepit": "Een vuurplaats is een stevige constructie om warm te blijven en eten te koken. Vergeet alleen niet om het vuur te doven voordat je gaat slapen.",
                 "fireplace": "Niets is gezelliger dan zingen rond een open haard. Hoewel de rook altijd precies jouw kant op waait.",
@@ -256,7 +267,7 @@
                 "house_6": "Iedereen heeft een plek nodig om te wonen. Dit luxe huis biedt je mensen een plek om te eten en te wonen.",
                 "large_ship": "Ik denk niet dat ze nog groter kunnen worden dan dit. Kijk eens! Nee, echt, iedereen, kijk eens! Dit moet de transportkosten nog meer halveren.",
                 "large_statue": "Een groot standbeeld voor een grote man. Mensen zeggen dat hij echt zo groot was.",
-                "logpile": "De beste manier om hout op te slaan? Gewoon op een hoop gooien.",
+                "logpile": "De beste manier om hout op te slaan? Gooi het gewoon op een stapel.",
                 "market": "Op de markt kun je handel drijven met andere dorpen en steden. Huizen staan graag dicht bij deze markt.",
                 "market_stall": "Voeg een marktkraam toe aan je stad.",
                 "market_stall_1": "Een kraam waar vleesproducten worden verkocht.",
@@ -270,6 +281,7 @@
                 "path": "Een eenvoudig zandpad. Het voldoet prima. Hoewel gebouwen ook zonder deze tekst prima functioneren.",
                 "pier": "Mensen beweren dat de grotere vissen in diepere wateren zitten. Laten we eens kijken hoe diep we kunnen gaan.",
                 "plaza": "Mooie tegels voor je mooie stad. Ideaal voor markten, decoratie of gewoon om te pronken met je rijkdom.",
+                "dirt": "Het laat zien waar mensen lopen, maar niemand nam de moeite om de juiste tegels neer te leggen.",
                 "port": "Via de haven kun je handel drijven met andere steden. Dit is veel efficiënter dan handel over land en de transportkosten worden gehalveerd.",
                 "quarry": "In steengroeven haal je stenen uit de grond. Het is zwaar werk, maar stenen gaan eeuwig mee! Ze laten wel een groot litteken achter in het landschap.",
                 "road": "Wegen geven structuur aan je dorp. Ze zijn niet noodzakelijk voor je gebouwen, maar zien er mooier uit dan paden.",
@@ -324,9 +336,11 @@
             "happiness": "Geluk",
             "importCost": "Importkosten",
             "populationProduction": "Bevolking Wijzigen",
+            "populationCapacity": "Huisvestingscapaciteit",
             "raidRisk": "Diefstalrisico (bij overschrijding van opslagruimte)",
             "researchSpeed": "Onderzoekssnelheid",
-            "taxation": "Belastingheffing"
+            "taxation": "Belastingheffing",
+            "animalProduction": "Dierlijke productie"
         },
         "expedition": {
             "start": "Start expeditie"
@@ -420,11 +434,11 @@
             "loadSandbox": "Sandbox laden",
             "newSandbox": "Nieuwe sandbox",
             "returnToDesktop": "Terug naar bureaublad",
-            "serverOffline": "Kan geen verbinding maken met de server. Controleer uw internetverbinding of kijk of de server misschien niet werkt.",
+            "serverOffline": "Kan geen verbinding maken met de server. De server is mogelijk overbelast of tijdelijk buiten gebruik vanwege onderhoud. Kijk op Discord voor de laatste status.",
             "settings": "Instellingen",
             "subtitle": "Dit is een vroege versie van Project Rebearth. Neem contact met ons op als je tijdens het spelen problemen ondervindt.",
             "demoSubtitle": "Dit is de demo van Project Rebearth. Alleen de sandbox-stedenbouwgame is beschikbaar. Voor het spelen op de multiplayer-globe met resourcebeheer moet je de volledige versie aanschaffen.",
-            "demoRestriction1": "Achter deze knop gaat de enorme online multiplayerwereld van Project Rebearth schuil. Je bevindt je echter in de demo, waarin alleen de sandboxmodus zonder resourcebeheer beschikbaar is.",
+            "demoRestriction1": "Achter deze knop gaat de enorme online multiplayerwereld van Project Rebearth schuil. Je bevindt je echter in de demo, waar alleen de sandboxmodus zonder resourcebeheer beschikbaar is.",
             "demoRestriction2": "In de sandbox-modus kun je nog steeds geweldige kaarten maken, deze in hoge resolutie exporteren en ervaren hoe een spelwereld op schaal 1:1 aanvoelt.",
             "title": "Project Rebearth Server",
             "welcome": "Welkom, {{name}}!"
@@ -438,6 +452,8 @@
             "title": "Nieuwe sandbox"
         },
         "slots": {
+            "cooldownActive": "Deze slot is in cooldown.",
+            "cooldownTimer": "Beschikbaar in{{time}}",
             "deleteConfirm": "Weet u zeker dat u deze opgeslagen versie wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
             "empty": "Lege ruimte",
             "locked": "Vergrendeld",
@@ -479,6 +495,17 @@
             "neutral": "Neutraal",
             "title": "Diplomatie",
             "you": "U"
+        },
+        "message": {
+            "title": "Messenger verzenden",
+            "sendMessage": "Messenger verzenden",
+            "to": "Naar",
+            "placeholder": "Schrijf hier uw bericht...",
+            "cost": "Kosten",
+            "send": "Verzenden",
+            "sending": "Verzenden...",
+            "sent": "De boodschapper is verzonden!",
+            "insufficientGold": "Onvoldoende goud"
         },
         "market": {
             "amount": "Bedrag",
@@ -648,18 +675,26 @@
             "Gebruik de shift-toets om gebouwen te blijven plaatsen.",
             "Als je problemen ondervindt, laat het ons dan weten op Discord.",
             "Bouw een markt of een haven om handel met andere spelers mogelijk te maken.",
-            "Bouw een stadhuis om allianties, ranglijsten en keuzes vrij te spelen.",
+            "Bouw een stadhuis om allianties, ranglijsten en keuzes te ontgrendelen.",
             "Bouw een universiteit om expedities en onderzoek te ontgrendelen.",
-            "Een recensie op Steam helpt ons nieuwe spelers te vinden die deze wereld tot leven brengen.",
+            "Word lid van onze levendige community van spelers op Discord om je creaties te delen en tips te krijgen.",
+            "Sommige gebouwen kunnen alleen in de buurt van het moedergebouw worden geplaatst. Zoals de zaag en de houthakker.",
             "Niet alle grondstoffen zijn overal even gemakkelijk te verkrijgen. Soms is handelen goedkoper dan alles zelf produceren.",
             "Een recensie op Steam helpt ons nieuwe spelers te vinden die deze wereld tot leven brengen.",
-            "Een recensie op Steam helpt ons nieuwe spelers te vinden die deze wereld tot leven brengen.",
-            "Bezoek de wiki op projectrebearth.com voor alles over de wereld van Project."
+            "Bezoek de wiki op projectrebearth.com voor alles over de wereld van Project Rebearth."
         ]
+    },
+    "help": {
+        "hud": "Dit paneel toont alle grondstoffen die je hebt, produceert en verbruikt. Beweeg de muis over de pictogrammen voor meer informatie over elke grondstof. Als een grondstof bijna op is, wordt deze rood gemarkeerd en kunnen gebouwen gedwongen worden hun productiviteit te verminderen. Als je je capaciteit bereikt, wordt dit vetgedrukt weergegeven en stoppen je gebouwen met produceren. Effecten, zoals je startbonus, kunnen van invloed zijn op hoeveel je produceert of verbruikt. Deze modificatoren worden weergegeven wanneer je de muis over een grondstof beweegt. Zie je de draaiende cirkel aan de linkerkant? Die geeft aan wanneer het spel synchroniseert met de server. Je ziet geen veranderingen in grondstoffen totdat de synchronisatie is voltooid. Het verbruik en de productie van grondstoffen worden per dag weergegeven. Dit is een echte realtime dag. Je grondstoffen zullen echter langzaam toenemen.",
+        "market": "Welkom op de markt! Bekijk alle dingen die andere spelers willen kopen of verkopen, en nog belangrijker, tegen welke prijs! Je betaalt transportkosten wanneer je de bestelling van iemand anders uitvoert. Als ze ver weg zijn, is het misschien niet de moeite waard, of kost het zelfs meer dan wat ze bereid zijn te betalen.",
+        "orders": "Plaats je bestellingen! Laat andere spelers weten wat je wilt kopen of verkopen, en tegen welke prijs. Dit is wat je ontvangt of betaalt. Houd er rekening mee dat anderen voor het transport betalen. Dus iets voor een lage prijs kopen werkt misschien niet als de verzendkosten van andere spelers te hoog zijn.",
+        "popup": "Deze pop-up toont u alle informatie over dit gebouw. Hier kunt u belangrijke parameters van het gebouw wijzigen of zelfs verplaatsen. Dit is alleen beschikbaar wanneer u zich in de bouwmodus bevindt.",
+        "storage": "Hier kun je instellen hoeveel dit gebouw kan opslaan. Het heeft een bepaalde capaciteit en kan een bepaalde hoeveelheid goederen bevatten. Je kunt de verhouding aanpassen om het aan je behoeften te optimaliseren."
     },
     "tooltip": {
         "cannotChange": "Kan niet worden gewijzigd voor",
         "construction": "Bouw",
+        "cost": "Kosten",
         "refund": "Terugbetaling",
         "costPerMeter": "(voor m)",
         "costPerSquareMeter": "(per m²)",

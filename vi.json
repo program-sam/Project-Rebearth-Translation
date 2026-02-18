@@ -40,7 +40,8 @@
             "workerSafety": "Con người là tài sản quý giá nhất của bạn. Tăng cường an toàn sản xuất nhưng giảm sản lượng.",
             "dubiousWorkingRules": "Con người chỉ là tài nguyên. Tăng sản lượng sản xuất nhưng cũng làm tăng tỷ lệ tai nạn.",
             "crampedQuarters": "Bạn thực sự cần bao nhiêu không gian cá nhân? Chúng ta có thể chứa nhiều người hơn trong cùng một ngôi nhà, đúng không?",
-            "intensiveFarming": "Nông nghiệp thâm canh cho phép bạn cho động vật ăn ngũ cốc, từ đó tăng lượng sản phẩm động vật mà bạn có thể sản xuất."
+            "intensiveFarming": "Nông nghiệp thâm canh cho phép bạn cho động vật ăn ngũ cốc, từ đó tăng lượng sản phẩm động vật mà bạn có thể sản xuất.",
+            "newTownBoost": "Với tư cách là một khu định cư mới, bạn sẽ nhận được các phần thưởng tạm thời để hỗ trợ bạn bắt đầu. Các phần thưởng này sẽ dần biến mất theo thời gian."
         },
         "exclusiveOptions": "Tùy chọn độc quyền",
         "lockedFor": "Đã khóa",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Quy tắc làm việc đáng ngờ",
             "crampedQuarters": "Giống như cá mòi!",
             "intensiveFarming": "Nông nghiệp tập trung",
-            "newTownBoost": "Khởi đầu mới!",
-            "foodShortage": "Thiếu hụt lương thực"
+            "newTownBoost": "Khởi đầu mới!"
         },
         "unlock": "Mở khóa"
     },
@@ -71,6 +71,12 @@
         "delete": "Xóa",
         "deleting": "Xóa...",
         "loading": "Đang tải..."
+    },
+    "connection": {
+        "backToMenu": "Trở lại menu",
+        "lost": "Mất kết nối",
+        "message": "Máy chủ hiện không thể truy cập được. Điều này có thể do bảo trì hoặc khởi động lại. Tiến trình chơi trực tuyến của bạn vẫn an toàn, trò chơi sẽ tự động tiếp tục khi kết nối được khôi phục.",
+        "reconnecting": "Kết nối lại"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Ồ ồ ồ... đây là gì nhỉ?",
             "bankruptcy": "Phá sản!",
             "raid": "Hàng hóa của bạn đã bị đánh cắp!",
-            "trade": "Thỏa thuận!"
+            "trade": "Thỏa thuận!",
+            "player_message": "Bạn có thư mới!"
         },
         "descriptions": {
             "food_shortage": "Bạn đang cạn kiệt thực phẩm! Nếu người dân không có gì để ăn, họ sẽ ăn cắp bất cứ thứ gì có thể để sống sót, hoặc thậm chí ngừng làm việc.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Chúng ta đã tìm thấy gì ở đây? Đoàn thám hiểm của bạn đã trở về với một con vật khá hiền lành. Có vẻ như nó muốn sống trong thị trấn của bạn thay vì ở trong rừng hoang dã. Sẽ thật bất lịch sự nếu gửi nó trở lại bây giờ, phải không?",
             "bankruptcy": "Bạn không có đủ tiền! Một tháp đã bị hư hỏng. Các tháp mà bạn đã xây dựng sẽ bị hư hỏng và phá hủy nếu bạn không duy trì chúng bằng đủ tiền.",
             "raid": "Bạn nên cất giữ hàng hóa của mình cẩn thận hơn! Chúng đã bị lấy cắp một cách dễ dàng và một số tên trộm không rõ danh tính đã lấy đi một phần tài nguyên của bạn.",
-            "trade": "Ai đó đã hoàn thành (một phần) đơn đặt hàng của bạn."
+            "trade": "Ai đó đã hoàn thành (một phần) đơn đặt hàng của bạn.",
+            "player_message": "Một người đưa tin đã đến từ một thị trấn khác với một thông điệp dành cho bạn."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Hàng rào gỗ",
                 "fence2": "Hàng rào dệt",
                 "fence3": "Hình dạng hàng rào",
+                "fence4": "Đường ranh giới",
                 "fences": "Hàng rào",
                 "field": "Trường",
                 "firepit": "Lò sưởi",
@@ -182,6 +191,7 @@
                 "path": "Đường dẫn",
                 "pier": "Pier",
                 "plaza": "Quảng trường",
+                "dirt": "Bụi bẩn",
                 "port": "Cổng",
                 "quarry": "Mỏ đá",
                 "road": "Đường",
@@ -241,6 +251,7 @@
                 "fence1": "Một hàng rào gỗ đơn giản để ngăn chặn các sinh vật đơn giản ra ngoài hoặc vào trong.",
                 "fence2": "Một hàng rào dệt để ngăn chặn các sinh vật đơn giản ra ngoài. Hoặc giữ chúng bên trong.",
                 "fence3": "Vẽ hàng rào tùy chỉnh để ngăn chặn các sinh vật đơn giản ra ngoài hoặc vào trong.",
+                "fence4": "Vẽ một hàng rào dài để ngăn chặn các sinh vật đơn giản ra ngoài hoặc vào trong.",
                 "fences": "Hàng rào là một cách tuyệt vời để ngăn chặn những vị khách không mong muốn xâm nhập vào thị trấn của bạn. Hoặc để giữ họ lại bên trong.",
                 "firepit": "Lò sưởi là một cấu trúc chắc chắn để giữ ấm và nấu ăn. Đừng quên tắt nó trước khi đi ngủ.",
                 "fireplace": "Không có gì ấm cúng hơn việc hát quanh lò sưởi. Mặc dù khói sẽ luôn thổi chính xác về phía bạn.",
@@ -256,7 +267,7 @@
                 "house_6": "Mọi người đều cần một nơi để sống. Ngôi nhà sang trọng này cung cấp một nơi cho người dân của bạn ăn uống và sinh sống.",
                 "large_ship": "Tôi không nghĩ họ có thể làm nó lớn hơn nữa. Nhìn này! Thật đấy, mọi người, nhìn này! Điều này chắc chắn sẽ giảm chi phí vận chuyển xuống một nửa.",
                 "large_statue": "Một bức tượng lớn cho một người đàn ông cao lớn. Người ta nói rằng anh ta thực sự cao lớn như vậy.",
-                "logpile": "Cách tốt nhất để lưu trữ gỗ? Chỉ cần chất nó thành đống.",
+                "logpile": "Cách tốt nhất để lưu trữ gỗ? Chỉ cần ném nó vào một đống.",
                 "market": "Thị trường cho phép bạn giao dịch với các thị trấn và thành phố khác. Các ngôi nhà thích nằm gần khu vực này.",
                 "market_stall": "Thêm một quầy hàng vào thị trấn của bạn.",
                 "market_stall_1": "Quầy bán sản phẩm thịt.",
@@ -270,6 +281,7 @@
                 "path": "Một con đường đất đơn giản. Nó chỉ đơn giản là hoàn thành công việc. Mặc dù các tòa nhà vẫn hoạt động tốt mà không cần chúng.",
                 "pier": "Người ta đồn rằng những con cá lớn hơn nằm ở vùng nước sâu hơn. Hãy xem chúng ta có thể đi sâu đến đâu.",
                 "plaza": "Những viên gạch đẹp cho thị trấn xinh xắn của bạn. Hoàn hảo cho các khu chợ, trang trí hoặc đơn giản là để khoe sự giàu có của bạn.",
+                "dirt": "Nó hiển thị nơi mọi người đi lại, nhưng không ai thèm đặt các ô gạch đúng cách.",
                 "port": "Cảng cho phép bạn giao dịch với các thị trấn và thành phố khác. Điều này hiệu quả hơn nhiều so với giao dịch qua đường bộ và chi phí vận chuyển sẽ giảm một nửa.",
                 "quarry": "Trong các mỏ đá, bạn khai thác đá từ lòng đất. Đây là công việc đòi hỏi nhiều công sức, nhưng đá thì mãi mãi! Tuy nhiên, việc khai thác để lại vết sẹo lớn trên cảnh quan.",
                 "road": "Đường sá tạo nên cấu trúc cho làng của bạn. Chúng không bắt buộc cho các công trình của bạn nhưng trông sang trọng hơn so với lối đi.",
@@ -324,9 +336,11 @@
             "happiness": "Hạnh phúc",
             "importCost": "Chi phí nhập khẩu",
             "populationProduction": "Dân số Sửa đổi",
+            "populationCapacity": "Khả năng chứa nhà ở",
             "raidRisk": "Rủi ro trộm cắp (khi vượt quá dung lượng lưu trữ)",
             "researchSpeed": "Tốc độ nghiên cứu",
-            "taxation": "Thuế"
+            "taxation": "Thuế",
+            "animalProduction": "Sản xuất động vật"
         },
         "expedition": {
             "start": "Bắt đầu cuộc thám hiểm"
@@ -420,7 +434,7 @@
             "loadSandbox": "Tải Sandbox",
             "newSandbox": "Sandbox mới",
             "returnToDesktop": "Trở về màn hình desktop",
-            "serverOffline": "Không thể kết nối với máy chủ. Vui lòng kiểm tra kết nối internet của bạn hoặc máy chủ có thể đang bị ngừng hoạt động.",
+            "serverOffline": "Không thể kết nối với máy chủ. Máy chủ có thể đang bị quá tải hoặc tạm thời ngừng hoạt động để bảo trì. Vui lòng kiểm tra Discord để cập nhật tình trạng mới nhất.",
             "settings": "Cài đặt",
             "subtitle": "Đây là phiên bản thử nghiệm ban đầu của Project Rebearth. Vui lòng liên hệ với chúng tôi nếu bạn gặp bất kỳ vấn đề nào trong quá trình chơi.",
             "demoSubtitle": "Đây là bản demo của Project Rebearth. Chỉ chế độ xây dựng thành phố sandbox được kích hoạt. Để chơi trên bản đồ đa người chơi với quản lý tài nguyên, hãy tải bản phát hành đầy đủ.",
@@ -438,6 +452,8 @@
             "title": "Sandbox mới"
         },
         "slots": {
+            "cooldownActive": "Khe này đang trong thời gian hồi chiêu.",
+            "cooldownTimer": "Có sẵn tại {{time}}",
             "deleteConfirm": "Bạn có chắc chắn muốn xóa bản lưu này không? Hành động này không thể hoàn tác.",
             "empty": "Khe trống",
             "locked": "Khóa",
@@ -479,6 +495,17 @@
             "neutral": "Trung lập",
             "title": "Ngoại giao",
             "you": "Bạn"
+        },
+        "message": {
+            "title": "Gửi tin nhắn qua Messenger",
+            "sendMessage": "Gửi tin nhắn qua Messenger",
+            "to": "Để",
+            "placeholder": "Viết thông điệp của bạn ở đây...",
+            "cost": "Chi phí",
+            "send": "Gửi",
+            "sending": "Đang gửi...",
+            "sent": "Thông điệp đã được gửi đi!",
+            "insufficientGold": "Không đủ vàng"
         },
         "market": {
             "amount": "Số lượng",
@@ -650,16 +677,24 @@
             "Xây dựng một thị trường hoặc cảng để mở khóa giao dịch với người chơi khác.",
             "Xây dựng tòa thị chính để mở khóa liên minh, bảng xếp hạng và các lựa chọn.",
             "Xây dựng một trường đại học để mở khóa các cuộc thám hiểm và nghiên cứu.",
-            "Một đánh giá trên Steam giúp chúng tôi tìm kiếm người chơi mới, biến thế giới này thành một thế giới sống động.",
+            "Hãy tham gia cộng đồng sôi động của chúng tôi trên Discord để chia sẻ tác phẩm của bạn và nhận lời khuyên.",
+            "Một số công trình chỉ có thể được đặt gần công trình cha. Ví dụ như cưa và thợ chặt gỗ.",
             "Không phải tất cả các tài nguyên đều dễ dàng có được ở mọi nơi. Đôi khi việc giao dịch sẽ rẻ hơn so với việc tự sản xuất mọi thứ.",
             "Một đánh giá trên Steam giúp chúng tôi tìm kiếm người chơi mới, biến thế giới này thành một thế giới sống động.",
-            "Một đánh giá trên Steam giúp chúng tôi tìm kiếm người chơi mới, biến thế giới này thành một thế giới sống động.",
-            "Hãy truy cập wiki tại projectrebearth.com để tìm hiểu mọi thứ về thế giới của Project."
+            "Truy cập wiki tại projectrebearth.com để tìm hiểu mọi thứ về thế giới của Project Rebearth."
         ]
+    },
+    "help": {
+        "hud": "Bảng điều khiển này hiển thị tất cả các tài nguyên bạn có, sản xuất và tiêu thụ. Di chuột qua các biểu tượng để xem chi tiết về từng tài nguyên. Nếu bạn sắp hết một tài nguyên, nó sẽ được đánh dấu bằng màu đỏ và các công trình có thể bị buộc phải giảm năng suất. Nếu bạn đạt đến giới hạn công suất, nó sẽ được hiển thị bằng chữ in đậm và các công trình sẽ ngừng sản xuất. Bạn có thể có các hiệu ứng, như phần thưởng khởi đầu, ảnh hưởng đến lượng sản xuất hoặc tiêu thụ. Các bộ điều chỉnh này sẽ hiển thị khi bạn di chuột qua một tài nguyên. Bạn có thấy vòng tròn quay ở bên trái không? Điều đó cho biết khi trò chơi đồng bộ hóa với máy chủ. Bạn sẽ không thấy thay đổi về tài nguyên cho đến khi quá trình đồng bộ hóa hoàn tất. Sản xuất và tiêu thụ tài nguyên được hiển thị theo ngày. Đây là một ngày thực tế theo thời gian thực. Tuy nhiên, tài nguyên của bạn sẽ tăng chậm.",
+        "market": "Chào mừng đến với thị trường! Hãy xem tất cả những thứ mà người chơi khác muốn mua hoặc bán, và quan trọng hơn, với giá bao nhiêu! Bạn sẽ phải trả chi phí vận chuyển khi hoàn thành đơn hàng của người khác. Vì vậy, nếu họ ở xa, có thể không đáng để làm, hoặc thậm chí chi phí có thể cao hơn mức họ sẵn sàng trả.",
+        "orders": "Đặt lệnh mua/bán! Thông báo cho các người chơi khác về những gì bạn muốn mua hoặc bán, và với giá bao nhiêu. Đây là những gì bạn sẽ nhận được hoặc phải trả. Hãy nhớ rằng người khác sẽ phải trả phí vận chuyển. Vì vậy, việc mua một thứ gì đó với giá thấp có thể không hiệu quả nếu chi phí vận chuyển của người chơi khác quá cao.",
+        "popup": "Cửa sổ popup này hiển thị tất cả thông tin về tòa nhà này. Tại đây, bạn có thể thay đổi các thông số chính của tòa nhà hoặc thậm chí di chuyển chúng. Tính năng này chỉ khả dụng khi bạn ở chế độ xây dựng.",
+        "storage": "Tại đây, bạn có thể điều chỉnh dung lượng lưu trữ của tòa nhà này. Nó có một dung lượng nhất định và có thể chứa một lượng hàng hóa nhất định. Bạn có thể thay đổi tỷ lệ của nó để tối ưu hóa cho nhu cầu của mình."
     },
     "tooltip": {
         "cannotChange": "Không thể thay đổi cho",
         "construction": "Xây dựng",
+        "cost": "Chi phí",
         "refund": "Hoàn tiền",
         "costPerMeter": "(cho m)",
         "costPerSquareMeter": "(mỗi m²)",

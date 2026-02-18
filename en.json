@@ -40,7 +40,8 @@
             "workerSafety": "People are your greatest asset. Increases production safety but reduces output.",
             "dubiousWorkingRules": "People are just resources. Increases production output but increases accident rates.",
             "crampedQuarters": "How much personal space do you really need? We can fit more people in the same houses, right?",
-            "intensiveFarming": "Intensive farming allows you to feed your animals grains, increasing the amount of animal products you can produce."            
+            "intensiveFarming": "Intensive farming allows you to feed your animals grains, increasing the amount of animal products you can produce.",
+            "newTownBoost": "As a new settlement, you receive temporary bonuses to help you get started. These will fade over time."            
         },
         "exclusiveOptions": "Exclusive Options",
         "lockedFor": "Locked for",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Dubious Working Rules",
             "crampedQuarters": "Like Sardines!",
             "intensiveFarming": "Intensive Farming",
-            "newTownBoost": "New Beginnings!",
-            "foodShortage": "Food Shortage"
+            "newTownBoost": "New Beginnings!"
         },
         "unlock": "Unlock"
     },
@@ -71,6 +71,12 @@
         "delete": "Delete",
         "deleting": "Deleting...",
         "loading": "Loading..."
+    },
+    "connection": {
+        "backToMenu": "Back to Menu",
+        "lost": "Connection Lost",
+        "message": "The server is temporarily unreachable. This may be due to maintenance or a restart. Your online progress is safe, the game will resume automatically once the connection is restored.",
+        "reconnecting": "Reconnecting"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Well, well, well... what do we have here?",
             "bankruptcy": "Bankrupt!",
             "raid": "Your goods got stolen!",
-            "trade": "Deal!"
+            "trade": "Deal!",
+            "player_message": "You've got mail!"
         },
         "descriptions": {
             "food_shortage": "You are running out of food! If people can't eat, they will steal whatever they can to get by, or even stop working.",
@@ -132,7 +139,9 @@
             "animal_unlock": "What did we find here? Your expedition returned with a surprisingly tame animal. It seems to prefer living in your town rather than in the wilderness. It would be rude to send it back now, wouldn't it?",
             "bankruptcy": "You simply have no coin! A tower has broken down. Towers you have built will deteriorate and get destroyed if you don't maintain them with sufficient coin.",
             "raid": "You should have stowed away your goods better! They were easily up for grabs, and some unknown thieves made off with a portion of your resources.",
-            "trade": "Someone fulfilled (part of) your trade order."
+            "trade": "Someone fulfilled (part of) your trade order.",
+            "player_message": "A messenger has arrived from another town with a message for you."
+
         }
     },
     "game": {
@@ -153,6 +162,7 @@
                 "fence1": "Wood Fence",
                 "fence2": "Woven Fence",
                 "fence3": "Fence Shape",
+                "fence4": "Fence Line",
                 "fences": "Fences",
                 "field": "Field",
                 "firepit": "Fire Pit",
@@ -182,6 +192,7 @@
                 "path": "Path",
                 "pier": "Pier",
                 "plaza": "Plaza",
+                "dirt": "Dirt",
                 "port": "Port",
                 "quarry": "Quarry",
                 "road": "Road",
@@ -241,6 +252,7 @@
                 "fence1": "A simple wooden fence to keep simple creatures out or in.",
                 "fence2": "A woven fence to keep simple creatures out or in.",
                 "fence3": "Draw a custom fence to keep simple creatures out or in.",
+                "fence4": "Draw a long fence to keep simple creatures out. or in.",
                 "fences": "Fences are a great way to keep unwanted visitors out of your town, or to keep them in.",
                 "firepit": "A firepit is a solid structure to keep warm and cook food. Just don't forget to put it out before going to sleep.",
                 "fireplace": "Nothing is cozier than singing around a fireplace. Although the smoke will always blow precisely to you.",
@@ -270,6 +282,7 @@
                 "path": "A simple dirt path that gets the job done, although buildings will work just fine without them.",
                 "pier": "People swear the bigger fish are in the deeper waters. Let's see how deep we can go!",
                 "plaza": "Pretty tiles for your pretty town. Great for marketplaces, decoration, or just showing off your wealth.",
+                "dirt": "It shows where people walk, but nobody could be bothered to put down proper tiles.",
                 "port": "The port lets you trade with other towns and cities. It is a lot more efficient than trading over land, and transport costs will be halved.",
                 "quarry": "Quarries allow you to extract stones from the earth. It's an intensive job, but rocks are forever! They do leave a big scar in the landscape,though.",
                 "road": "Roads give structure to your village. They are not required for your buildings, but they look fancier than paths.",
@@ -324,9 +337,11 @@
             "happiness": "Happiness",
             "importCost": "Import Cost",
             "populationProduction": "Population Modifier",
+            "populationCapacity": "Housing Capacity",
             "raidRisk": "Theft Risk (when exceeding storage)",
             "researchSpeed": "Research Speed",
-            "taxation": "Taxation"
+            "taxation": "Taxation",
+            "animalProduction": "Animal Production"
         },
         "expedition": {
             "start": "Start Expedition"
@@ -420,7 +435,7 @@
             "loadSandbox": "Load Sandbox",
             "newSandbox": "New Sandbox",
             "returnToDesktop": "Return to Desktop",
-            "serverOffline": "Cannot reach the server. Try checking your internet connection, or the server might be down.",
+            "serverOffline": "Cannot reach the server. The server might be under heavy load, or down temporarily for maintenance. Check the Discord for the latest status.",
             "settings": "Settings",
             "subtitle": "This is an early release of Project Rebearth. Please reach out if you encounter any issues while playing.",
             "demoSubtitle": "This is the demo of Project Rebearth. Only the sandbox city-builder is enabled. For playing on the multiplayer globe with resource management, get the full release.",
@@ -438,6 +453,8 @@
             "title": "New Sandbox"
         },
         "slots": {
+            "cooldownActive": "This slot is on cooldown",
+            "cooldownTimer": "Available in {{time}}",
             "deleteConfirm": "Are you sure you want to delete this save? This action cannot be undone.",
             "empty": "Empty Slot",
             "locked": "Locked",
@@ -479,6 +496,17 @@
             "neutral": "Neutral",
             "title": "Diplomacy",
             "you": "You"
+        },
+        "message": {
+            "title": "Send Messenger",
+            "sendMessage": "Send Messenger",
+            "to": "To",
+            "placeholder": "Write your message here...",
+            "cost": "Cost",
+            "send": "Send",
+            "sending": "Sending...",
+            "sent": "The messenger has been sent!",
+            "insufficientGold": "Not enough gold"
         },
         "market": {
             "amount": "Amount",
@@ -657,9 +685,17 @@
             "Visit the wiki at projectrebearth.com to learn everything about the world of Project Rebearth!"
         ]
     },
+    "help": {
+        "hud": "This panel shows all the resources you have, produce and consume. Hover over the icons to see more details about each resource. If you are running low on a resource, it will be highlighted in red, and buildings might be forced to reduce their productivity. If you reach your capacity, it will show in bold and your buildings stop producing. You can have effects, like your starter bonus, influence how much you produce or consume. these modifiers are shown when you hover over a resource. Do you see the spinning circle on the left? That indicates when the game synchronizes with the server. you won't see resource changes until the synchronization is done. Resource consumption and production are shown per day. this is an actual real time day. However your resources will tick up slowly.",
+        "market": "Welcome to the market! Behold, all the things other players want to buy or sell, and more importantly, at what price! You will pay for transport costs when you fullfill someone else's order. So if they are far away, it might not be worth it, or even cost more than what they are willing to pay.",
+        "orders": "Place your orders! Announce to other players what you want to buy or sell, and at what price. This is what you will receive, or pay. Keep in mind that others will pay for transport. So buying something for a low price might not work other player's shipping costs are too high.",
+        "popup": "This popup shows you all the information about this building. Here you can change key parameters of the building, or even move them. This will only be available when you are in building mode.",
+        "storage": "Here you can adjust how much this building stores. It has a certain capacity, and a certain amount of goods it can hold. You can change its ratio, to optimize it for your needs."
+    },
     "tooltip": {
         "cannotChange": "Cannot be changed for",
         "construction": "Construction",
+        "cost": "Cost",
         "refund": "Refund",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(per m²)",

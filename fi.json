@@ -40,7 +40,8 @@
             "workerSafety": "Ihmiset ovat suurin voimavarasi. Lisää tuotannon turvallisuutta, mutta vähentää tuotantoa.",
             "dubiousWorkingRules": "Ihmiset ovat vain resursseja. Lisää tuotantoa, mutta lisää onnettomuuksien määrää.",
             "crampedQuarters": "Kuinka paljon henkilökohtaista tilaa todella tarvitset? Voimme mahduttaa enemmän ihmisiä samoihin taloihin, eikö niin?",
-            "intensiveFarming": "Intensiivinen maatalous mahdollistaa eläinten ruokkimisen viljalla, mikä lisää tuotettavien eläintuotteiden määrää."
+            "intensiveFarming": "Intensiivinen maatalous mahdollistaa eläinten ruokkimisen viljalla, mikä lisää tuotettavien eläintuotteiden määrää.",
+            "newTownBoost": "Uutena asukkaana saat väliaikaisia bonuksia, jotka auttavat sinua pääsemään alkuun. Nämä bonukset häviävät ajan myötä."
         },
         "exclusiveOptions": "Yksinoikeudella tarjottavat vaihtoehdot",
         "lockedFor": "Lukittu",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Epäilyttävät työehdot",
             "crampedQuarters": "Kuin sardiinit!",
             "intensiveFarming": "Intensiivinen maatalous",
-            "newTownBoost": "Uusi alku!",
-            "foodShortage": "Elintarvikepula"
+            "newTownBoost": "Uusi alku!"
         },
         "unlock": "Avaa"
     },
@@ -71,6 +71,12 @@
         "delete": "Poista",
         "deleting": "Poistetaan...",
         "loading": "Lataus..."
+    },
+    "connection": {
+        "backToMenu": "Takaisin valikkoon",
+        "lost": "Yhteys katkennut",
+        "message": "Palvelimeen ei voi tilapäisesti muodostaa yhteyttä. Tämä voi johtua huoltotöistä tai uudelleenkäynnistyksestä. Online-pelisi eteneminen on tallennettu, ja peli jatkuu automaattisesti, kun yhteys on palautettu.",
+        "reconnecting": "Uudelleenyhteys"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "No no no... mitä meillä täällä on?",
             "bankruptcy": "Konkurssi!",
             "raid": "Tavarat on varastettu!",
-            "trade": "Sovittu!"
+            "trade": "Sovittu!",
+            "player_message": "Sinulle on tullut viesti!"
         },
         "descriptions": {
             "food_shortage": "Ruoka on loppumassa! Jos ihmiset eivät saa syödä, he varastavat mitä tahansa selviytyäkseen tai jopa lopettavat työnteon.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Mitä löysimme täältä? Retkikuntasi palasi yllättävän kesyn eläimen kanssa. Se näyttää haluavan asua kaupungissasi eikä erämaassa. Olisi epäkohteliasta lähettää se nyt takaisin, eikö niin?",
             "bankruptcy": "Sinulla ei yksinkertaisesti ole kolikoita! Torni on romahtanut. Rakentamasi tornit rapistuvat ja tuhoutuvat, jos et ylläpidä niitä riittävällä määrällä kolikoita.",
             "raid": "Sinun olisi pitänyt varastoida tavarasi paremmin! Ne olivat helposti saatavilla, ja tuntemattomat varkaat veivät osan resursseistasi.",
-            "trade": "Joku on täyttänyt (osan) kauppatilauksestasi."
+            "trade": "Joku on täyttänyt (osan) kauppatilauksestasi.",
+            "player_message": "Toisesta kaupungista on saapunut lähetti, jolla on sinulle viesti."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Puuaita",
                 "fence2": "Kudottu aita",
                 "fence3": "Aidan muoto",
+                "fence4": "Aita",
                 "fences": "Aidat",
                 "field": "Kenttä",
                 "firepit": "Tulisija",
@@ -182,6 +191,7 @@
                 "path": "Polku",
                 "pier": "Pier",
                 "plaza": "Plaza",
+                "dirt": "Dirt",
                 "port": "Port",
                 "quarry": "Louhos",
                 "road": "Tie",
@@ -241,6 +251,7 @@
                 "fence1": "Yksinkertainen puuaita, joka pitää yksinkertaiset olennot poissa. Tai sisällä.",
                 "fence2": "Kudottu aita, joka pitää yksinkertaiset olennot poissa. Tai sisällä.",
                 "fence3": "Piirrä mukautettu aita pitämään yksinkertaiset olennot poissa tai sisällä.",
+                "fence4": "Piirrä pitkä aita pitääksesi yksinkertaiset olennot poissa. Tai sisällä.",
                 "fences": "Aidat ovat erinomainen tapa pitää ei-toivotut vierailijat poissa kaupungistasi tai pitää heidät sisällä.",
                 "firepit": "Tulisija on vankka rakenne, jonka avulla voi lämmetä ja valmistaa ruokaa. Muista vain sammuttaa se ennen nukkumaanmenoa.",
                 "fireplace": "Mikään ei ole kodikkaampaa kuin laulaminen takan ääressä. Vaikka savu puhaltaa aina juuri sinua kohti.",
@@ -256,7 +267,7 @@
                 "house_6": "Jokainen tarvitsee paikan, jossa asua. Tämä ylellinen talo tarjoaa kansallesi paikan, jossa syödä ja asua.",
                 "large_ship": "En usko, että ne voivat enää kasvaa tämän suuremmiksi. Katsokaa tätä! Ei, oikeasti, katsokaa kaikki tätä! Tämä varmasti puolittaa kuljetuskustannukset entisestään.",
                 "large_statue": "Suuri patsas suurelle miehelle. Ihmiset sanovat, että hän oli todellakin näin suuri.",
-                "logpile": "Mikä on paras tapa varastoida puuta? Kasaa se vain kasaan.",
+                "logpile": "Mikä on paras tapa varastoida puuta? Heitä se vain kasaan.",
                 "market": "Markkinat mahdollistavat kaupan muiden kaupunkien kanssa. Talot haluavat olla lähellä tätä.",
                 "market_stall": "lisää markkinakoju kaupunkiisi",
                 "market_stall_1": "Lihatuotteita myyvä koju.",
@@ -270,6 +281,7 @@
                 "path": "Yksinkertainen hiekkatie. Se vain hoitaa tehtävänsä. Rakennukset toimivat kuitenkin hyvin myös ilman niitä.",
                 "pier": "Ihmiset vannovat, että suuremmat kalat ovat syvemmillä vesillä. Katsotaanpa, kuinka syvälle pääsemme.",
                 "plaza": "Kauniita laattoja kauniiseen kaupunkiisi. Sopii erinomaisesti markkinapaikoille, koristeluun tai vain omaisuuden esittelyyn.",
+                "dirt": "Se näyttää, missä ihmiset kävelevät, mutta kukaan ei ole vaivautunut asettamaan kunnollisia laattoja.",
                 "port": "Sataman kautta voit käydä kauppaa muiden kaupunkien kanssa. Se on paljon tehokkaampaa kuin maitse tapahtuva kauppa, ja kuljetuskustannukset puolittuvat.",
                 "quarry": "Louhoksissa louhitaan kiviä maaperästä. Se on raskasta työtä, mutta kivet ovat ikuisia! Ne jättävät kuitenkin suuret arvet maisemaan.",
                 "road": "Tiet antavat kylällesi rakenteen. Ne eivät ole välttämättömiä rakennuksillesi, mutta näyttävät hienommilta kuin polut.",
@@ -324,9 +336,11 @@
             "happiness": "Onnellisuus",
             "importCost": "Tuontikustannukset",
             "populationProduction": "Väestö Muokkaa",
+            "populationCapacity": "Asumiskapasiteetti",
             "raidRisk": "Varkausriski (kun varastointikapasiteetti ylitetään)",
             "researchSpeed": "Tutkimuksen nopeus",
-            "taxation": "Verotus"
+            "taxation": "Verotus",
+            "animalProduction": "Eläintuotanto"
         },
         "expedition": {
             "start": "Aloita retki"
@@ -420,7 +434,7 @@
             "loadSandbox": "Lataa Sandbox",
             "newSandbox": "Uusi hiekkalaatikko",
             "returnToDesktop": "Palaa työpöydälle",
-            "serverOffline": "Palvelimeen ei saada yhteyttä. Tarkista internetyhteytesi tai palvelin saattaa olla poissa käytöstä.",
+            "serverOffline": "Palvelimeen ei saada yhteyttä. Palvelin saattaa olla ylikuormitettu tai tilapäisesti poissa käytöstä huoltotöiden vuoksi. Tarkista Discordista viimeisin tilanne.",
             "settings": "Asetukset",
             "subtitle": "Tämä on Project Rebearthin varhainen versio. Ota yhteyttä, jos kohtaat ongelmia pelatessasi.",
             "demoSubtitle": "Tämä on Project Rebearthin demo. Vain sandbox-kaupunkien rakentelu on käytössä. Jos haluat pelata moninpelissä, jossa on resurssienhallinta, hanki täysversio.",
@@ -438,6 +452,8 @@
             "title": "Uusi hiekkalaatikko"
         },
         "slots": {
+            "cooldownActive": "Tämä paikka on jäähdytysajalla.",
+            "cooldownTimer": "Saatavana osoitteessa {{time}}",
             "deleteConfirm": "Haluatko varmasti poistaa tämän tallennuksen? Tätä toimintoa ei voi peruuttaa.",
             "empty": "Tyhjä paikka",
             "locked": "Lukittu",
@@ -479,6 +495,17 @@
             "neutral": "Neutraali",
             "title": "Diplomatiikka",
             "you": "Sinä"
+        },
+        "message": {
+            "title": "Lähetä Messenger",
+            "sendMessage": "Lähetä Messenger",
+            "to": "To",
+            "placeholder": "Kirjoita viestisi tähän...",
+            "cost": "Kustannukset",
+            "send": "Lähetä",
+            "sending": "Lähetetään...",
+            "sent": "Viesti on lähetetty!",
+            "insufficientGold": "Ei tarpeeksi kultaa"
         },
         "market": {
             "amount": "Määrä",
@@ -650,16 +677,24 @@
             "Rakenna markkinat tai satama avataksesi kaupan muiden pelaajien kanssa.",
             "Rakenna kaupungintalo avataksesi liittoutumat, rankingit ja valinnat.",
             "Rakenna yliopisto avataksesi tutkimusmatkoja ja tutkimusta.",
-            "Steam-palvelussa julkaistu arvostelu auttaa meitä löytämään uusia pelaajia, jotka tekevät tästä elävän maailman.",
+            "Liity vilkkaaseen pelaajayhteisöömme Discordissa, jaa luomuksiasi ja hanki vinkkejä.",
+            "Jotkut rakennukset voidaan sijoittaa vain lähellä emorakennusta. Kuten saha ja puunhakkuukone.",
             "Kaikkia resursseja ei ole helppo hankkia kaikkialta. Joskus kauppa on halvempaa kuin kaiken tuottaminen itse.",
             "Steam-palvelussa julkaistu arvostelu auttaa meitä löytämään uusia pelaajia, jotka tekevät tästä elävän maailman.",
-            "Steam-palvelussa julkaistu arvostelu auttaa meitä löytämään uusia pelaajia, jotka tekevät tästä elävän maailman.",
-            "Vieraile projektin verkkosivustolla osoitteessa projectrebearth.com ja lue kaikki Project-pelin maailmasta."
+            "Vieraile wiki-sivustolla osoitteessa projectrebearth.com ja lue kaikki Project Rebearthin maailmasta."
         ]
+    },
+    "help": {
+        "hud": "Tämä paneeli näyttää kaikki resurssit, joita sinulla on, tuotat ja kulutat. Vie hiiri kuvakkeiden päälle nähdäksesi lisätietoja kustakin resurssista. Jos resurssi on loppumassa, se korostetaan punaisella, ja rakennusten tuottavuus saattaa joutua laskemaan. Jos saavutat kapasiteettisi rajan, se näkyy lihavoituna ja rakennuksesi lopettavat tuotannon. Voit vaikuttaa tuotantoosi tai kulutukseesi esimerkiksi aloitusbonuksella. Nämä muokkaajat näkyvät, kun viet hiiren resurssin päälle. Näetkö vasemmalla pyörivän ympyrän? Se osoittaa, milloin peli synkronoituu palvelimen kanssa. Et näe resurssien muutoksia ennen kuin synkronointi on valmis. Resurssien kulutus ja tuotanto näytetään päivittäin. Tämä on todellinen reaaliaikainen päivä. Resurssisi kuitenkin kasvavat hitaasti.",
+        "market": "Tervetuloa markkinoille! Katso, mitä muut pelaajat haluavat ostaa tai myydä, ja mikä tärkeintä, mihin hintaan! Maksat kuljetuskustannukset, kun täytät jonkun toisen tilauksen. Joten jos he ovat kaukana, se ei ehkä ole sen arvoista tai voi jopa maksaa enemmän kuin he ovat valmiita maksamaan.",
+        "orders": "Anna tilauksesi! Ilmoita muille pelaajille, mitä haluat ostaa tai myydä ja mihin hintaan. Tämä on se, mitä saat tai maksat. Muista, että muut maksavat kuljetuksesta. Joten halvan tuotteen ostaminen ei välttämättä kannata, jos muiden pelaajien kuljetuskustannukset ovat liian korkeat.",
+        "popup": "Tämä ponnahdusikkuna näyttää kaikki tiedot tästä rakennuksesta. Täällä voit muuttaa rakennuksen avainparametreja tai jopa siirtää niitä. Tämä on käytettävissä vain rakennusmoodissa.",
+        "storage": "Täällä voit säätää, kuinka paljon tämä rakennus varastoi. Sillä on tietty kapasiteetti ja tietty määrä tavaroita, joita se voi varastoida. Voit muuttaa sen suhdetta optimoidaksesi sen tarpeisiisi."
     },
     "tooltip": {
         "cannotChange": "Ei voi muuttaa",
         "construction": "Rakentaminen",
+        "cost": "Kustannukset",
         "refund": "Palautus",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(per m²)",

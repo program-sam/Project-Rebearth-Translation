@@ -40,7 +40,8 @@
             "workerSafety": "As pessoas são o seu maior patrimônio. Aumenta a segurança da produção, mas reduz a produção.",
             "dubiousWorkingRules": "As pessoas são apenas recursos. Aumenta a produção, mas aumenta as taxas de acidentes.",
             "crampedQuarters": "Quanto espaço pessoal você realmente precisa? Podemos acomodar mais pessoas nas mesmas casas, certo?",
-            "intensiveFarming": "A agricultura intensiva permite alimentar seus animais com grãos, aumentando a quantidade de produtos animais que você pode produzir."
+            "intensiveFarming": "A agricultura intensiva permite alimentar seus animais com grãos, aumentando a quantidade de produtos animais que você pode produzir.",
+            "newTownBoost": "Como novo assentamento, você recebe bônus temporários para ajudá-lo a começar. Eles desaparecerão com o tempo."
         },
         "exclusiveOptions": "Opções exclusivas",
         "lockedFor": "Bloqueado para",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Regras de trabalho duvidosas",
             "crampedQuarters": "Como sardinhas!",
             "intensiveFarming": "Agricultura intensiva",
-            "newTownBoost": "Novos Começos!",
-            "foodShortage": "Escassez de alimentos"
+            "newTownBoost": "Novos Começos!"
         },
         "unlock": "Desbloquear"
     },
@@ -71,6 +71,12 @@
         "delete": "Excluir",
         "deleting": "Excluindo...",
         "loading": "Carregando..."
+    },
+    "connection": {
+        "backToMenu": "Voltar ao menu",
+        "lost": "Conexão perdida",
+        "message": "O servidor está temporariamente indisponível. Isso pode ser devido a manutenção ou reinicialização. Seu progresso online está seguro, o jogo será retomado automaticamente assim que a conexão for restaurada.",
+        "reconnecting": "Reconectando"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Bem, bem, bem... o que temos aqui?",
             "bankruptcy": "Falência!",
             "raid": "Seus bens foram roubados!",
-            "trade": "Negócio fechado!"
+            "trade": "Negócio fechado!",
+            "player_message": "Você recebeu um e-mail!"
         },
         "descriptions": {
             "food_shortage": "Você está ficando sem comida! Se as pessoas não puderem comer, elas roubarão tudo o que puderem para sobreviver ou até mesmo deixarão de trabalhar.",
@@ -132,7 +139,8 @@
             "animal_unlock": "O que encontramos aqui? Sua expedição voltou com um animal surpreendentemente dócil. Ele parece querer viver em sua cidade, em vez de na selva. Seria rude mandá-lo de volta agora, não é mesmo?",
             "bankruptcy": "Você simplesmente não tem moedas! Uma torre foi destruída. As torres que você construiu se deteriorarão e serão destruídas se você não as mantiver com moedas suficientes.",
             "raid": "Você deveria ter guardado melhor seus bens! Eles estavam facilmente acessíveis e alguns ladrões desconhecidos levaram parte dos seus recursos.",
-            "trade": "Alguém cumpriu (parte da) sua ordem comercial."
+            "trade": "Alguém cumpriu (parte da) sua ordem comercial.",
+            "player_message": "Um mensageiro chegou de outra cidade com uma mensagem para você."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Cerca de madeira",
                 "fence2": "Cerca de tecido",
                 "fence3": "Forma da cerca",
+                "fence4": "Linha de vedação",
                 "fences": "Cercas",
                 "field": "Campo",
                 "firepit": "Fogueira",
@@ -182,6 +191,7 @@
                 "path": "Caminho",
                 "pier": "Pier",
                 "plaza": "Praça",
+                "dirt": "Sujeira",
                 "port": "Port",
                 "quarry": "Pedreira",
                 "road": "Estrada",
@@ -241,6 +251,7 @@
                 "fence1": "Uma cerca de madeira simples para manter criaturas simples fora. Ou dentro.",
                 "fence2": "Uma cerca trançada para manter criaturas simples fora. Ou dentro.",
                 "fence3": "Desenhe uma cerca personalizada para manter criaturas simples fora ou dentro.",
+                "fence4": "Construa uma cerca longa para manter criaturas simples fora ou dentro.",
                 "fences": "As cercas são uma ótima maneira de manter visitantes indesejados fora da sua cidade. Ou de mantê-los dentro.",
                 "firepit": "Uma fogueira é uma estrutura sólida para se aquecer e cozinhar alimentos. Só não se esqueça de apagá-la antes de ir dormir.",
                 "fireplace": "Nada é mais aconchegante do que cantar ao redor de uma lareira. Embora a fumaça sempre sopre diretamente para você.",
@@ -270,6 +281,7 @@
                 "path": "Um caminho de terra simples. Ele apenas cumpre sua função. Embora os edifícios funcionem perfeitamente sem eles.",
                 "pier": "As pessoas dizem que os peixes maiores estão nas águas mais profundas. Vamos ver até onde podemos ir.",
                 "plaza": "Azulejos bonitos para sua cidade bonita. Ótimo para mercados, decoração ou apenas para exibir sua riqueza.",
+                "dirt": "Mostra onde as pessoas andam, mas ninguém se preocupou em colocar os ladrilhos corretamente.",
                 "port": "O porto permite que você negocie com outras cidades. É muito mais eficiente do que negociar por terra e os custos de transporte serão reduzidos pela metade.",
                 "quarry": "Nas pedreiras, extrai-se as pedras da terra. É um trabalho intenso, mas as rochas são eternas! Elas deixam uma grande marca na paisagem.",
                 "road": "As estradas dão estrutura à sua vila. Elas não são necessárias para os seus edifícios, mas têm um aspecto mais elegante do que os caminhos.",
@@ -324,9 +336,11 @@
             "happiness": "Felicidade",
             "importCost": "Custo de importação",
             "populationProduction": "População Editar",
+            "populationCapacity": "Capacidade de alojamento",
             "raidRisk": "Risco de roubo (quando exceder o armazenamento)",
             "researchSpeed": "Velocidade de pesquisa",
-            "taxation": "Tributação"
+            "taxation": "Tributação",
+            "animalProduction": "Produção animal"
         },
         "expedition": {
             "start": "Iniciar expedição"
@@ -420,7 +434,7 @@
             "loadSandbox": "Carregar Sandbox",
             "newSandbox": "Nova área de testes",
             "returnToDesktop": "Voltar à área de trabalho",
-            "serverOffline": "Não é possível acessar o servidor. Verifique sua conexão com a Internet ou se o servidor está fora do ar.",
+            "serverOffline": "Não é possível acessar o servidor. O servidor pode estar sobrecarregado ou temporariamente fora do ar para manutenção. Verifique o Discord para obter o status mais recente.",
             "settings": "Configurações",
             "subtitle": "Esta é uma versão preliminar do Project Rebearth. Entre em contato conosco se encontrar algum problema durante o jogo.",
             "demoSubtitle": "Esta é a demonstração do Project Rebearth. Apenas o modo sandbox de construção de cidades está habilitado. Para jogar no modo multijogador global com gerenciamento de recursos, adquira a versão completa.",
@@ -438,6 +452,8 @@
             "title": "Nova área de testes"
         },
         "slots": {
+            "cooldownActive": "Este espaço está em espera.",
+            "cooldownTimer": "Disponível em {{time}}",
             "deleteConfirm": "Tem certeza de que deseja excluir este arquivo salvo? Esta ação não pode ser desfeita.",
             "empty": "Espaço vazio",
             "locked": "Bloqueado",
@@ -479,6 +495,17 @@
             "neutral": "Neutro",
             "title": "Diplomacia",
             "you": "Você"
+        },
+        "message": {
+            "title": "Enviar Messenger",
+            "sendMessage": "Enviar Messenger",
+            "to": "Para",
+            "placeholder": "Escreva sua mensagem aqui...",
+            "cost": "Custo",
+            "send": "Enviar",
+            "sending": "Enviando...",
+            "sent": "A mensagem foi enviada!",
+            "insufficientGold": "Ouro insuficiente"
         },
         "market": {
             "amount": "Valor",
@@ -650,16 +677,24 @@
             "Construa um mercado ou um porto para desbloquear o comércio com outros jogadores.",
             "Construa uma prefeitura para desbloquear alianças, classificações e opções.",
             "Construa uma universidade para desbloquear expedições e pesquisas.",
-            "Uma avaliação no Steam nos ajuda a encontrar novos jogadores que tornam este mundo vivo.",
+            "Junte-se à nossa animada comunidade de jogadores no Discord para compartilhar suas criações e obter dicas.",
+            "Alguns edifícios só podem ser colocados perto do edifício principal. Como a serra e o lenhador.",
             "Nem todos os recursos são fáceis de obter em todos os lugares. Às vezes, negociar será mais barato do que produzir tudo por conta própria.",
             "Uma avaliação no Steam nos ajuda a encontrar novos jogadores que tornam este mundo vivo.",
-            "Uma avaliação no Steam nos ajuda a encontrar novos jogadores que tornam este mundo vivo.",
-            "Visite o wiki em projectrebearth.com para saber tudo sobre o mundo do Project."
+            "Visite o wiki em projectrebearth.com para saber tudo sobre o mundo do Project Rebearth."
         ]
+    },
+    "help": {
+        "hud": "Este painel mostra todos os recursos que você possui, produz e consome. Passe o mouse sobre os ícones para ver mais detalhes sobre cada recurso. Se você estiver com poucos recursos, eles serão destacados em vermelho e os edifícios poderão ser forçados a reduzir sua produtividade. Se você atingir sua capacidade máxima, ela será exibida em negrito e seus edifícios deixarão de produzir. Você pode ter efeitos, como seu bônus inicial, que influenciam o quanto você produz ou consome. Esses modificadores são exibidos quando você passa o mouse sobre um recurso. Você vê o círculo girando à esquerda? Isso indica quando o jogo sincroniza com o servidor. Você não verá alterações nos recursos até que a sincronização seja concluída. O consumo e a produção de recursos são mostrados por dia. Este é um dia real em tempo real. No entanto, seus recursos aumentarão lentamente.",
+        "market": "Bem-vindo ao mercado! Veja tudo o que os outros jogadores querem comprar ou vender e, mais importante, a que preço! Você pagará os custos de transporte quando atender ao pedido de outra pessoa. Portanto, se eles estiverem longe, pode não valer a pena, ou até mesmo custar mais do que eles estão dispostos a pagar.",
+        "orders": "Faça suas encomendas! Anuncie aos outros jogadores o que você deseja comprar ou vender e a que preço. Isso é o que você receberá ou pagará. Lembre-se de que os outros pagarão pelo transporte. Portanto, comprar algo por um preço baixo pode não funcionar se os custos de envio dos outros jogadores forem muito altos.",
+        "popup": "Esta janela pop-up mostra todas as informações sobre este edifício. Aqui você pode alterar os parâmetros principais do edifício ou até mesmo movê-los. Isso só estará disponível quando você estiver no modo de construção.",
+        "storage": "Aqui você pode ajustar a capacidade de armazenamento deste edifício. Ele tem uma determinada capacidade e uma determinada quantidade de mercadorias que pode armazenar. Você pode alterar sua proporção para otimizá-la de acordo com suas necessidades."
     },
     "tooltip": {
         "cannotChange": "Não pode ser alterado para",
         "construction": "Construção",
+        "cost": "Custo",
         "refund": "Reembolso",
         "costPerMeter": "(para m)",
         "costPerSquareMeter": "(por m²)",

@@ -40,7 +40,8 @@
             "workerSafety": "Människor är din största tillgång. Ökar produktionssäkerheten men minskar produktionen.",
             "dubiousWorkingRules": "Människor är bara resurser. Ökar produktionen men ökar olycksfrekvensen.",
             "crampedQuarters": "Hur mycket personligt utrymme behöver du egentligen? Vi kan väl få plats med fler människor i samma hus?",
-            "intensiveFarming": "Intensivt jordbruk gör det möjligt att mata dina djur med spannmål, vilket ökar mängden animaliska produkter du kan producera."
+            "intensiveFarming": "Intensivt jordbruk gör det möjligt att mata dina djur med spannmål, vilket ökar mängden animaliska produkter du kan producera.",
+            "newTownBoost": "Som ny bosättning får du tillfälliga bonusar som hjälper dig att komma igång. Dessa försvinner med tiden."
         },
         "exclusiveOptions": "Exklusiva alternativ",
         "lockedFor": "Låst för",
@@ -62,8 +63,7 @@
             "dubiousWorkingRules": "Tvivelaktiga arbetsregler",
             "crampedQuarters": "Som sardiner!",
             "intensiveFarming": "Intensivt jordbruk",
-            "newTownBoost": "En ny början!",
-            "foodShortage": "Matbrist"
+            "newTownBoost": "En ny början!"
         },
         "unlock": "Lås upp"
     },
@@ -71,6 +71,12 @@
         "delete": "Radera",
         "deleting": "Radera...",
         "loading": "Laddar..."
+    },
+    "connection": {
+        "backToMenu": "Tillbaka till menyn",
+        "lost": "Anslutningen förlorad",
+        "message": "Servern är tillfälligt otillgänglig. Detta kan bero på underhåll eller omstart. Dina framsteg online är säkra, spelet återupptas automatiskt när anslutningen återställs.",
+        "reconnecting": "Återansluta"
     },
     "controls": {
         "build": {
@@ -121,7 +127,8 @@
             "animal_unlock": "Nå, nå, nå... vad har vi här?",
             "bankruptcy": "Konkurs!",
             "raid": "Dina varor har blivit stulna!",
-            "trade": "Avtalat!"
+            "trade": "Avtalat!",
+            "player_message": "Du har fått e-post!"
         },
         "descriptions": {
             "food_shortage": "Du har snart slut på mat! Om människor inte kan äta kommer de att stjäla vad de kan för att överleva, eller till och med sluta arbeta.",
@@ -132,7 +139,8 @@
             "animal_unlock": "Vad hittade vi här? Din expedition återvände med ett överraskande tamt djur. Det verkar vilja bo i din stad snarare än i vildmarken. Det vore väl oförskämt att skicka tillbaka det nu, eller hur?",
             "bankruptcy": "Du har helt enkelt inga mynt! Ett torn har rasat. Torn som du har byggt kommer att förfalla och förstöras om du inte underhåller dem med tillräckligt med mynt.",
             "raid": "Du borde ha förvarat dina varor bättre! De var lättillgängliga och okända tjuvar kom över en del av dina resurser.",
-            "trade": "Någon har genomfört (en del av) din handelsorder."
+            "trade": "Någon har genomfört (en del av) din handelsorder.",
+            "player_message": "En budbärare har anlänt från en annan stad med ett meddelande till dig."
         }
     },
     "game": {
@@ -153,6 +161,7 @@
                 "fence1": "Trästaket",
                 "fence2": "Vävt staket",
                 "fence3": "Staketform",
+                "fence4": "Staketlinje",
                 "fences": "Staket",
                 "field": "Fält",
                 "firepit": "Eldstad",
@@ -182,6 +191,7 @@
                 "path": "Sökväg",
                 "pier": "Pier",
                 "plaza": "Plaza",
+                "dirt": "Smuts",
                 "port": "Port",
                 "quarry": "Stenbrott",
                 "road": "Väg",
@@ -241,6 +251,7 @@
                 "fence1": "Ett enkelt trästaket för att hålla enkla varelser ute. Eller inne.",
                 "fence2": "Ett flätat staket för att hålla enkla varelser ute. Eller inne.",
                 "fence3": "Rita ett anpassat staket för att hålla enkla varelser ute. Eller inne.",
+                "fence4": "Rita ett långt staket för att hålla enkla varelser ute. Eller inne.",
                 "fences": "Staket är ett utmärkt sätt att hålla oönskade besökare borta från din stad. Eller att hålla dem kvar.",
                 "firepit": "En eldstad är en stabil konstruktion som håller värmen och används för att laga mat. Glöm bara inte att släcka den innan du går och lägger dig.",
                 "fireplace": "Inget är mysigare än att sjunga runt en öppen spis. Även om röken alltid kommer att blåsa rakt mot dig.",
@@ -256,7 +267,7 @@
                 "house_6": "Alla behöver någonstans att bo. Detta lyxiga hus ger dina människor en plats att äta och bo på.",
                 "large_ship": "Jag tror inte att de kan bli större än så här. Titta på det här! Nej, allvarligt, alla, titta på det här! Det här måste halvera transportkostnaderna ännu mer.",
                 "large_statue": "En stor staty för en stor kille. Folk säger att han faktiskt var så stor.",
-                "logpile": "Bästa sättet att lagra ved? Stapla den bara i en hög.",
+                "logpile": "Bästa sättet att förvara ved? Släng den bara i en hög.",
                 "market": "Marknaden gör det möjligt för dig att handla med andra städer. Hus ligger gärna nära detta.",
                 "market_stall": "Lägg till en marknadsbod i din stad",
                 "market_stall_1": "En bod som säljer köttprodukter.",
@@ -270,6 +281,7 @@
                 "path": "En enkel grusväg. Den fyller sin funktion. Byggnaderna fungerar dock utmärkt utan dem.",
                 "pier": "Folk svär på att de större fiskarna finns på djupare vatten. Låt oss se hur djupt vi kan gå.",
                 "plaza": "Vackra kakelplattor för din vackra stad. Perfekt för marknadsplatser, dekoration eller bara för att visa upp din rikedom.",
+                "dirt": "Det visar var folk går, men ingen brydde sig om att lägga ner ordentliga kakelplattor.",
                 "port": "Hamnen gör det möjligt att handla med andra städer. Det är mycket effektivare än att handla över land och transportkostnaderna halveras.",
                 "quarry": "I stenbrott bryter man sten från marken. Det är ett intensivt arbete, men stenar är eviga! De lämnar dock stora ärr i landskapet.",
                 "road": "Vägar ger struktur åt din by. De är inte nödvändiga för dina byggnader, men ser mer eleganta ut än stigar.",
@@ -324,9 +336,11 @@
             "happiness": "Lycka",
             "importCost": "Importkostnad",
             "populationProduction": "Befolkning Redigera",
+            "populationCapacity": "Bostadskapacitet",
             "raidRisk": "Stöldrisk (vid överskridande av lagringsutrymme)",
             "researchSpeed": "Forskningshastighet",
-            "taxation": "Beskattning"
+            "taxation": "Beskattning",
+            "animalProduction": "Djurproduktion"
         },
         "expedition": {
             "start": "Starta expedition"
@@ -420,7 +434,7 @@
             "loadSandbox": "Ladda Sandbox",
             "newSandbox": "Ny sandlåda",
             "returnToDesktop": "Återgå till skrivbordet",
-            "serverOffline": "Det går inte att nå servern. Kontrollera din internetanslutning eller servern kan vara nere.",
+            "serverOffline": "Det går inte att nå servern. Servern kan vara överbelastad eller tillfälligt nere för underhåll. Kontrollera Discord för den senaste statusen.",
             "settings": "Inställningar",
             "subtitle": "Detta är en tidig version av Project Rebearth. Kontakta oss om du stöter på några problem när du spelar.",
             "demoSubtitle": "Detta är en demo av Project Rebearth. Endast sandbox-stadsbyggaren är aktiverad. För att spela på multiplayer-glob med resurshantering, skaffa den fullständiga versionen.",
@@ -438,6 +452,8 @@
             "title": "Ny sandlåda"
         },
         "slots": {
+            "cooldownActive": "Denna plats är på cooldown.",
+            "cooldownTimer": "Finns på {{time}}",
             "deleteConfirm": "Är du säker på att du vill radera denna sparade fil? Denna åtgärd kan inte ångras.",
             "empty": "Tom plats",
             "locked": "Låst",
@@ -479,6 +495,17 @@
             "neutral": "Neutral",
             "title": "Diplomati",
             "you": "Du"
+        },
+        "message": {
+            "title": "Skicka Messenger",
+            "sendMessage": "Skicka Messenger",
+            "to": "Till",
+            "placeholder": "Skriv ditt meddelande här...",
+            "cost": "Kostnad",
+            "send": "Skicka",
+            "sending": "Skickar...",
+            "sent": "Budbäraren har skickats!",
+            "insufficientGold": "Inte tillräckligt med guld"
         },
         "market": {
             "amount": "Belopp",
@@ -650,16 +677,24 @@
             "Bygg en marknad eller en hamn för att låsa upp handel med andra spelare.",
             "Bygg ett rådhus för att låsa upp allianser, rankningar och valmöjligheter.",
             "Bygg ett universitet för att låsa upp expeditioner och forskning.",
-            "En recension på Steam hjälper oss att hitta nya spelare som gör detta till en levande värld.",
+            "Gå med i vår livliga spelargemenskap på Discord för att dela dina skapelser och få tips.",
+            "Vissa byggnader kan endast placeras nära den överordnade byggnaden. Till exempel sågen och skogshuggaren.",
             "Alla resurser är inte lika lätta att få tag på överallt. Ibland kan det vara billigare att handla än att producera allt själv.",
             "En recension på Steam hjälper oss att hitta nya spelare som gör detta till en levande värld.",
-            "En recension på Steam hjälper oss att hitta nya spelare som gör detta till en levande värld.",
-            "Besök wiki på projectrebearth.com för att lära dig allt om Project-världen."
+            "Besök wiki på projectrebearth.com för att lära dig allt om Project Rebearths värld."
         ]
+    },
+    "help": {
+        "hud": "Denna panel visar alla resurser du har, producerar och förbrukar. Håll muspekaren över ikonerna för att se mer information om varje resurs. Om du har ont om en resurs markeras den med rött och byggnaderna kan tvingas minska sin produktivitet. Om du når din kapacitet visas det i fetstil och dina byggnader slutar producera. Du kan ha effekter, som din startbonus, som påverkar hur mycket du producerar eller förbrukar. Dessa modifierare visas när du håller muspekaren över en resurs. Ser du den snurrande cirkeln till vänster? Den indikerar när spelet synkroniseras med servern. Du ser inte resursförändringar förrän synkroniseringen är klar. Resursförbrukning och produktion visas per dag. Detta är en faktisk realtidsdag. Dina resurser kommer dock att öka långsamt.",
+        "market": "Välkommen till marknaden! Här kan du se allt som andra spelare vill köpa eller sälja, och ännu viktigare, till vilket pris! Du betalar transportkostnaderna när du fullgör någon annans order. Om de bor långt bort kan det därför hända att det inte är värt det, eller till och med kosta mer än vad de är villiga att betala.",
+        "orders": "Lägg dina order! Meddela andra spelare vad du vill köpa eller sälja, och till vilket pris. Det är vad du kommer att få eller betala. Tänk på att andra kommer att betala för transporten. Att köpa något till ett lågt pris kanske inte fungerar om andra spelares fraktkostnader är för höga.",
+        "popup": "Denna popup visar all information om denna byggnad. Här kan du ändra viktiga parametrar för byggnaden eller till och med flytta dem. Detta är endast tillgängligt när du är i byggnadsläge.",
+        "storage": "Här kan du justera hur mycket denna byggnad lagrar. Den har en viss kapacitet och kan rymma en viss mängd varor. Du kan ändra dess förhållande för att optimera den efter dina behov."
     },
     "tooltip": {
         "cannotChange": "Kan inte ändras för",
         "construction": "Konstruktion",
+        "cost": "Kostnad",
         "refund": "Återbetalning",
         "costPerMeter": "(för m)",
         "costPerSquareMeter": "(per m²)",
