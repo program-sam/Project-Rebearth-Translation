@@ -188,9 +188,9 @@
                 "medium_ship": "Orta boy gemi",
                 "nursery": "Ağaç fidanlığı",
                 "park": "Park",
-                "path": "Yol",
+                "path": "Patika",
                 "pier": "İskele",
-                "plaza": "Meydan",
+                "plaza": "Plaza",
                 "dirt": "Kir",
                 "port": "Liman",
                 "quarry": "Taş ocağı",
@@ -240,7 +240,7 @@
             "descriptions": {
                 "bakery": "Taze ekmek kokusunun yerini hiçbir şey tutmaz. En taze undan ve arada bir araya karışan hamamböceğinden yapılır.",
                 "boat": "Derin sularda balık avlamak için birebir. Ara sıra sevgililerin de uğrak yeri oluyor tabii.",
-                "brewery": "Köprü işte. Ne bekliyorsun ki. Seni A noktasından B noktasına götürür.",
+                "brewery": "Biri ıslak tahıllarını çok uzun süre dışarıda bırakmış ve şimdi bu çılgınca popüler! Hadi bundan daha fazla yapalım.",
                 "bridge": "Bu bir köprü. Ne bekliyordunuz ki? Sizi A noktasından B noktasına götürür.",
                 "center": "Kasabanızın kalbi. Her şey burada başlar. Birkaç kişiyi barındırır ve temel ihtiyaçları depolar. Daha kalıcı görünen bir meydana yükseltilebilir.",
                 "clay_crane": "Kaldıraç, bel ağrısından kurtaran en büyük icatlardan biri! Artık kili çukurdan elle taşımana gerek yok, kaldıracı kullan yeter.",
@@ -257,7 +257,7 @@
                 "fireplace": "Şöminenin başında şarkı söylemekten daha keyifli bir şey yok. Her ne kadar duman her zaman tam sana doğru esecek olsa da.",
                 "field": "Araziyi temizleyip tarla yaptığımızda bitki ekebiliriz. Hatta bazıları yenilebilir.",
                 "fishery": "Kıyıdaki küçük bir balıkçı kulübesinden daha huzurlu ne olabilir? Kasabanız için nispeten taze balık üretir.",
-                "foraging_hut": "Mühendislik harikalarımızdan biri! Kim akan suyu sevmez ki.",
+                "foraging_hut": "Doğada yetişen her şeyi yiyebilecekken kimin şaşalı yiyeceklere ihtiyacı var ki? Toplayıcı kulübesi çeşitli materyaller toplar ancak bayağı açık alana ihtiyaç duyar.",
                 "fountain": "Mühendislik alanındaki en büyük başarılarımızdan biri! Akan suyu kim sevmez ki?",
                 "house_1": "Herkesin yaşayacak bir yere ihtiyacı var. Bu küçük baraka halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_2": "Herkesin yaşayacak bir yere ihtiyacı var. Bu küçük kulübe halkınıza yiyecek ve barınacak bir yer sağlar.",
@@ -278,7 +278,7 @@
                 "medium_ship": "İşte güzel bir gemi. Ne çok büyük ne çok küçük. Tam kararında. Nakliye masraflarını %25 düşürür.",
                 "nursery": "Oduncuyu ağaca göndermek yerine ağacı oduncuya getirsek olmaz mı?",
                 "park": "Vatandaşlarınızın vakit geçirebileceği güzel bir park ekleyin.",
-                "path": "Basit bir toprak yol. Her ne kadar binalar onsuz da gayet iyi çalışsa da işini görür.",
+                "path": "Basit bir toprak patika. Her ne kadar binalar onsuz da gayet iyi çalışsa da işini görür.",
                 "pier": "İnsanlar büyük balıkların derin sularda olduğuna yemin ediyor. Bakalım ne kadar derine inebileceğiz.",
                 "plaza": "Kasabanız için güzel karolar. Pazar yerleri, dekorasyon veya zenginliğinizi göstermek için harika.",
                 "dirt": "İnsanların yürüdüğü yerleri gösterir, ancak kimse düzgün fayans döşeme zahmetine girmez.",
@@ -320,14 +320,14 @@
             "empty": "Boş",
             "goat": "Keçi",
             "grain": "Tahıl",
-            "maize": "Maize",
+            "maize": "Mısır",
             "potato": "Patates",
             "sheep": "Koyun"
         },
         "effects": {
             "accidentRate": "Kaza oranı",
-            "allProduction": "Tüm üreti",
-            "constructionCost": "İnşamat maliyeti",
+            "allProduction": "Tüm üretim",
+            "constructionCost": "İnşaat maliyeti",
             "expeditionCost": "Keşif maliyeti",
             "exportCost": "İhracat maliyeti",
             "foodConsumption": "Gıda tüketimi",
@@ -354,12 +354,12 @@
             "food": "Yiyecek",
             "grain": "Tahıl",
             "happiness": "Mutluluk",
-            "knowledge": "Bilgi",
+            "knowledge": "İlim",
             "pop": "Nüfus",
             "stone": "Taş",
-            "wood": "Ahşap",
+            "wood": "Odun",
             "wool": "Yün",
-            "ore": "Biz",
+            "ore": "Cevher",
             "metal": "Metal",
             "tools": "Araç",
             "glass": "Cam",
@@ -423,13 +423,13 @@
     "menu": {
         "game": {
             "deleteEverything": "Her şeyi sil",
-            "menu": "Menü",
+            "menu": "Ana menü",
             "quicksettings": "Ayarlar",
             "saveBuild": "Yapıyı kaydet",
             "saveSandbox": "Yapıyı kaydet"
         },
         "main": {
-            "credits": "Krediler",
+            "credits": "Emeği geçenler",
             "enterMultiplayer": "Dünyaya gir",
             "loadSandbox": "Sandbox'ı yükle",
             "newSandbox": "Yeni Sandbox",
@@ -441,26 +441,26 @@
             "demoRestriction1": "Bu düğmenin arkasında Project Rebearth'ın devasa çevrimiçi çok oyunculu dünyası yatıyor. Ancak, siz demoda bulunuyorsunuz ve kaynak yönetimi olmayan sandbox modu kullanılabilir.",
             "demoRestriction2": "Sandbox modu, harika haritalar oluşturmanıza, bunları yüksek çözünürlükte dışa aktarmanıza ve 1:1 ölçekli bir oyun dünyasının nasıl bir his olduğunu deneyimlemenize olanak tanır.",
             "title": "Project Rebearth sunucusu",
-            "welcome": "{{name}}'a hoş geldiniz!"
+            "welcome": "Hoş geldin {{name}}!"
         },
         "sandbox": {
             "description": "Sandbox modu, çok oyunculu dünyanın kısıtlamaları olmadan özgürce inşa etmenizi sağlar. Sadece siz ve sıfır kaynak kısıtlaması. İlerlemenizi kaydedip daha sonra yükleyebilirsiniz.",
             "loadFromFile": "Dosyadan yükle",
             "loadTitle": "Sandbox'ı yükle",
             "noSaves": "Yerel kayıt bulunamadı.",
-            "start": "Yeni oyuna başla",
+            "start": "Yeni oyun başlat",
             "title": "Yeni sandbox"
         },
         "slots": {
-            "cooldownActive": "Bu slot bekleme süresindedir.",
-            "cooldownTimer": "{{time}}'da mevcuttur.",
+            "cooldownActive": "Bu yuva bekleme süresindedir.",
+            "cooldownTimer": "{{time}} sonra kullanıma açılacak.",
             "deleteConfirm": "Bu kaydı silmek istediğinize emin misiniz? Bu işlem geri alınamaz.",
             "empty": "Boş yuva",
             "guidelinesLink": "kullanıcı kılavuzları",
             "guidelinesNotice1": "Çevrimiçi çok oyunculu oyuna katılarak, aşağıdakileri kabul ve taahhüt etmiş olursunuz ",
             "guidelinesNotice2": ".",
             "guidelinesTitle": "Kullanıcı Kılavuzu",
-            "guidelinesIntro": "Görünüşe göre internetteki herkesin sağduyu anlayışı aynı değil. Bu nedenle, Project Rebearth'ın devasa çok oyunculu dünyasına katılırken kabul etmeniz gereken bir dizi kural var. Bu kurallar, dünyanın herkes için eğlenceli ve açık bir alan olmasını sağlar.",
+            "guidelinesIntro": "Görünüşe göre internetteki herkesin sağduyu anlayışı aynı değil. Bu nedenle, Project Rebearth'ün devasa çok oyunculu dünyasına katılırken kabul etmeniz gereken bir dizi kural var. Bu kurallar, dünyanın herkes için eğlenceli ve açık bir alan olmasını sağlar.",
             "guidelinesRule1": "Diğer oyunculara ve onların yaratımlarına saygılı olun. Başkalarına, kendinize davranılmasını istediğiniz gibi davranın.",
             "guidelinesRule2": "Uygunsuz dil veya semboller kullanılamaz. Rastgele oluşturulan isimler komik olabilir, ancak kullanıcıların girdikleri bilgiler uygunsuz olamaz.",
             "guidelinesRule3": "Botlar, istismar araçları veya otomasyon araçları kullanmayın. Bu oyun insanlar tarafından, insanlar tarafından oynanmak üzere geliştirilmiştir. Botların burada yeri yoktur.",
@@ -470,11 +470,11 @@
             "lockedText": "Kilitli",
             "newGame": "Yeni oyun",
             "play": "Oyna",
-            "population": "Sakinler",
-            "slot": "Slot",
+            "population": "Nüfus",
+            "slot": "Yuva",
             "title": "Kayıt yuvası seç",
-            "unlockHint1000": "1.000 sakinde açılır.",
-            "unlockHint10000": "10.000 nüfusa ulaşıldığında kilit açılır.",
+            "unlockHint1000": "1.000 nüfusa ulaşıldığında açılır.",
+            "unlockHint10000": "10.000 nüfusa ulaşıldığında açılır.",
             "unnamedCity": "İsimsiz şehir"
         },
         "locked": {
@@ -509,7 +509,7 @@
         "message": {
             "title": "Messenger'ı gönder",
             "sendMessage": "Messenger'ı gönder",
-            "to": "To",
+            "to": "Alıcı",
             "placeholder": "Mesajınızı buraya yazın...",
             "cost": "Maliyet",
             "send": "Gönder",
@@ -529,7 +529,7 @@
             "pricePerUnit": "Birim başına fiyat",
             "quantity": "Miktar",
             "resource": "Kaynak",
-            "sell": "Bak",
+            "sell": "SAT",
             "sells": "satıyor",
             "sold": "satıldı",
             "title": "Pazar",
@@ -604,7 +604,7 @@
         "days": "günler",
         "disbandAlliance": "ittifakı feshet",
         "globalRank": "Küresel Sıralama",
-        "go": "to",
+        "go": "Git",
         "inviteToAlliance": "ittifakına davet et",
         "kick": "çıkar",
         "leaveAlliance": "ittifaktan ayrıl",
@@ -619,7 +619,7 @@
         "placeholderDescription": "İttifak açıklaması",
         "placeholderName": "İttifak adı",
         "rank": "Derece",
-        "rankPrefix": "Hayır.",
+        "rankPrefix": "N°",
         "ranking": {
             "area": "Alan",
             "buildings": "Binalar",
@@ -636,7 +636,7 @@
         "demolish": "Yık",
         "population": "Nüfus",
         "production": {
-            "rate": "Değerlendirme",
+            "rate": "Oran",
             "title": "Üretim"
         },
         "storage": {
@@ -687,7 +687,11 @@
             "Eserlerinizi paylaşmak ve ipuçları almak için Discord'daki canlı topluluğumuza katılın.",
             "Bazı binalar sadece ana binanın yakınına yerleştirilebilir. Keresteci ve oduncu gibi.",
             "Her kaynağı her yerde bulmak kolay değildir. Bazen ticaret yapmak her şeyi kendin üretmekten daha ucuz olabilir.",
-            "Steam'de bir inceleme bırakmak, bu dünyayı canlı kılan yeni oyuncular bulmamıza yardımcı olur."
+            "Steam'de bir inceleme bırakmak, bu dünyayı canlı kılan yeni oyuncular bulmamıza yardımcı olur.",
+            "Diğer oyuncularla ticaret yapmanın kilidini açmak için bir pazar veya liman inşa edin.",
+            "İttifakların, sıralamaların ve seçimlerin kilidini açmak için bir belediye binası inşa edin.",
+            "Keşif seferlerinin ve araştırmanın kilidini açmak için bir üniversite inşa edin.",
+            "Project Rebearth dünyası hakkında her şeyi öğrenmek için projectrebearth.com adresindeki vikimizi ziyaret edin!"
         ]
     },
     "help": {
@@ -711,13 +715,13 @@
     },
     "units": {
         "days": "gün",
-        "hours": "{{value}} s",
+        "hours": "{{value}} sa",
         "hoursLong": "saat",
-        "minutes": "{{value}} d",
+        "minutes": "{{value}} dk",
         "minutesLong": "dakika",
         "perDay": "/gün",
-        "percentage": "{{değer}}",
-        "seconds": "{{value}} s",
+        "percentage": "{{value}}%",
+        "seconds": "{{value}} sn",
         "secondsLong": "saniye"
     },
     "warnings": {
