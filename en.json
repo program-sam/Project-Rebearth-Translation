@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Dubious Working Rules",
             "crampedQuarters": "Like Sardines!",
             "intensiveFarming": "Intensive Farming",
-            "newTownBoost": "New Beginnings!"
+            "newTownBoost": "New Beginnings!",
+            "foodShortage": "Food Shortage"
         },
         "unlock": "Unlock"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Back to Menu",
         "lost": "Connection Lost",
         "message": "The server is temporarily unreachable. This may be due to maintenance or a restart. Your online progress is safe, the game will resume automatically once the connection is restored.",
-        "reconnecting": "Reconnecting"
+        "reconnecting": "Reconnecting",
+        "suspended": "Account Suspended"
     },
     "controls": {
         "build": {
             "addMorePoints": "Add more points",
-            "areaLimitExceeded": "Area limit exceeded: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Whoa there! That is too big! {{size}} (max {{limit}})",
+            "areaTooSmall": "That is not much... Make a larger shape: {{size}} (min {{limit}})",
+            "cooldown": "Wait a second",
             "costs": "Costs:",
             "invalidLocation": "Invalid Location",
             "mustBeNear": "Must be near {{parent}}",
+            "notEnoughPop": "Not enough population",
             "notEnoughResources": "Not enough resources",
             "tooHigh": "Zoom in closer"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Add more points",
+            "areaTooLarge": "Now that's a bit too ambitious! Pick a smaller area: {{size}} (max {{limit}})",
+            "areaTooSmall": "Come on! Be a bit more ambitious! Explore a larger area: {{size}} (min {{limit}})",
             "calculating": "Calculating...",
             "duration": "Duration",
             "expedition": "Expedition",
             "finished": "Finished!",
             "food": "Food",
             "knowledge": "Knowledge",
+            "invalidArea": "No valid exploration area could be found here.",
             "population": "Population",
             "timeLeft": "Time left",
             "title": "Exploration Costs"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Okay",
+        "dontShowAgain": "Don't show again",
         "consequences": "Effects",
+        "buildings_affected": "Affected Buildings",
+        "destroyed": "Destroyed",
+        "shut_down": "Shut Down",
+        "unlocked": "Unlocked",
         "remaining": "{{count}} Remaining",
+        "throttleWarning": {
+            "title": "Resource Running Low!",
+            "description": "Your {{resource}} supply has dropped while some buildings still consume it. To prevent your resource from running out, buildings consuming it have been automatically throttled. Their production is reduced and will keep reducing as your resource depletes.",
+            "why": "Why does this happen?",
+            "whyExplanation": "When a resource drops below 10 and is being consumed faster than it is produced, your buildings slow down their production to use less of the resource. This prevents your economy from collapsing entirely.",
+            "howToFix": "How to fix it",
+            "howToFixExplanation": "Build more production buildings for this resource, reduce consumption by removing or pausing buildings that use it, or trade for it on the market. Once your rate turns positive, or your supply grows over 10 units, buildings will return to full production.",
+            "food": {
+                "title": "Your People Are Going Hungry!",
+                "description": "Your food supply is dropping low. Your people need food to survive.",
+                "whyExplanation": "Unlike other resources, food consumption from houses cannot be reduced automatically. When food runs out, desperate people may start stealing from your storage.",
+                "howToFixExplanation": "Build more farms, bakeries, fisheries or other food-producing buildings. You can also trade for food on the market. Make sure you increase food production, or buy it on the market, or your people will take matters into their own hands."
+            },
+            "coin": {
+                "title": "Running Out of Coin!",
+                "description": "Your coin reserves are running low. While some buildings will be throttled, not all coin-consuming buildings can be slowed down.",
+                "whyExplanation": "Some buildings that cost coin, like towers, cannot be throttled. If your coin drops too low, towers will deteriorate and eventually get destroyed. Other coin-consuming buildings will be throttled, but that may not be enough to stop the decline.",
+                "howToFixExplanation": "Increase your coin income by trading resources on the market, building more coin-generating buildings, or reducing expenses by removing costly buildings."
+            },
+            "wood": {
+                "title": "Wood Supply Running Low!",
+                "description": "Your wood supply is running low. Some buildings will be throttled, but houses also consume wood and cannot be slowed down.",
+                "whyExplanation": "While most wood-consuming buildings can be throttled, houses always consume wood and cannot be reduced. If your wood supply drops to zero, desperate people may start stealing from your storage.",
+                "howToFixExplanation": "Produce more wood or buy it on the market or your people will take matters into their own hands."
+            }
+        },
         "titles": {
             "food_shortage": "The people are hungry",
             "strike": "Strike",
             "celebration": "A gift for you",
             "productivity_boom": "Let's go!",
-            "expedition_found": "The expedition returns!",
+            "expedition_return": "The expedition returns!",
+            "artifact_found": "A finding!",
             "animal_unlock": "Well, well, well... what do we have here?",
             "bankruptcy": "Bankrupt!",
+            "outside_territory": "Building Lost!",
             "raid": "Your goods got stolen!",
+            "accident": "Workplace Accident",
             "trade": "Deal!",
             "player_message": "You've got mail!"
         },
@@ -135,10 +177,13 @@
             "strike": "The people are not happy! Whatever you are doing, they don't like it. Make sure your people stay happy to avoid buildings shutting down.",
             "celebration": "The people are happy! Whatever it is you are doing, keep doing it! As a little gift, they all collected some goods for you to continue building this amazing town. How cute!",
             "productivity_boom": "The people are ecstatic! They love you to bits and happily worked overtime for you. By doing that, they managed to produce a little more of everything. They want this town to succeed, you know!",
-            "expedition_found": "Your expedition has returned with valuable resources and knowledge! This will greatly benefit your town's development and research efforts. Their logbook has an interesting entry, however:",
+            "expedition_return": "Your expedition has returned with valuable resources! These materials will help advance your town's development.",
+            "artifact_found": "Your expedition has returned with an interesting finding! Their logbook has an interesting entry:",
             "animal_unlock": "What did we find here? Your expedition returned with a surprisingly tame animal. It seems to prefer living in your town rather than in the wilderness. It would be rude to send it back now, wouldn't it?",
             "bankruptcy": "You simply have no coin! A tower has broken down. Towers you have built will deteriorate and get destroyed if you don't maintain them with sufficient coin.",
+            "outside_territory": "A building outside of territory got destroyed! Make sure to keep your buildings within your territory, or they might get lost.",
             "raid": "You should have stowed away your goods better! They were easily up for grabs, and some unknown thieves made off with a portion of your resources.",
+            "accident": "A workplace accident has occurred! A building has been shut down due to unsafe working conditions.",
             "trade": "Someone fulfilled (part of) your trade order.",
             "player_message": "A messenger has arrived from another town with a message for you."
 
@@ -209,12 +254,13 @@
                 "tavern": "Tavern",
                 "tent": "Tent",
                 "tower": "Tower",
+                "towers": "Towers",
                 "town_hall": "Town Hall",
                 "tree": "Tree",
                 "university": "University",
                 "museum": "Museum",
                 "warehouse": "Warehouse",
-                "water_tower": "Water Tower",
+                "water_tower": "Sea Tower",
                 "windmill": "Windmill",
                 "windmill_upgraded": "Improved Windmill",
                 "woodcutter": "Woodcutter",
@@ -379,6 +425,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Double click to place nodes",
+            "fineRotate": "Fine rotation",
             "multiPlace": "Keep placing",
             "rotate": "Rotate",
             "restriction": "Unbuildable area"
@@ -438,6 +485,7 @@
             "serverOffline": "Cannot reach the server. The server might be under heavy load, or down temporarily for maintenance. Check the Discord for the latest status.",
             "settings": "Settings",
             "subtitle": "This is an early release of Project Rebearth. Please reach out if you encounter any issues while playing.",
+            "suspended": "Your account has been suspended. Reason: {{reason}}",
             "demoSubtitle": "This is the demo of Project Rebearth. Only the sandbox city-builder is enabled. For playing on the multiplayer globe with resource management, get the full release.",
             "demoRestriction1": "Behind this button lies the massive online multiplayer world of Project Rebearth. However, you are in the demo, and only the sandbox mode without resource management is available.",
             "demoRestriction2": "The sandbox mode still allows you to make awesome maps, export them in high resolution, and experience what a 1:1 scale game world feels like.",
@@ -466,13 +514,15 @@
             "guidelinesRule2": "No inappropriate language or symbols. Randomly generated names can be funny, but user submitted input may not be inappropriate.",
             "guidelinesRule3": "Don't use bots, exploits or automation tools. This game is built by humans, to be enjoyed by humans. Bots have no place here.",
             "guidelinesRule4": "Threats to other users are prohibited.",
-            "guidelinesOutro": "If you question whether something is allowed, it probably is not. Not following these guidelines may result in buildings being deleted, towns getting removed or your account (temporarily) being suspended at the moderators' discretion.",
+            "guidelinesRule5": "Don't use, or work with multiple accounts to do any of the above, or exploit game mechanics.",
+            "guidelinesOutro": "If you question whether something is allowed, it probably is not. Not following these guidelines may result in buildings being deleted, towns getting removed or your account (temporarily) being suspended at the moderators' discretion. If you see any of these behaviors, please report them to the moderators.",
             "locked": "Locked",
             "lockedText": "Locked",
             "newGame": "New Game",
             "play": "Play",
             "population": "Inhabitants",
             "slot": "Slot",
+            "suspended": "Account suspended",
             "title": "Select a Save Slot",
             "unlockHint1000": "Unlock at 1K inhabitants",
             "unlockHint10000": "Unlock at 10K inhabitants",
@@ -551,6 +601,17 @@
             "population": "Population",
             "resources": "Resources",
             "title": "Ranking"
+        },
+        "production": {
+            "title": "Production Overview",
+            "noBuildings": "You don't have any scalable production buildings yet.",
+            "buildingCount": "{{count}} building(s)",
+            "totalRate": "Total Rate",
+            "setAll": "Set All",
+            "applyAll": "Apply All",
+            "updated": "Updated",
+            "storage": "Storage",
+            "throttleHelp": "This building type is being throttled because a required resource is running low. Production is automatically reduced to prevent resources from going negative."
         },
         "save": {
             "download": "Download File",
@@ -649,7 +710,12 @@
         "upgrade": "Upgrade to {{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "General",
+            "performance": "Performance"
+        },
         "animations": "Animations",
+        "accessibleColors": "High Contrast",
         "fullscreen": "Fullscreen",
         "bushDensity": "Bush Density",
         "clearTileCache": "Clear Cached Data",
@@ -700,6 +766,7 @@
         "market": "Welcome to the market! Behold, all the things other players want to buy or sell, and more importantly, at what price! You will pay for transport costs when you fullfill someone else's order. So if they are far away, it might not be worth it, or even cost more than what they are willing to pay.",
         "orders": "Place your orders! Announce to other players what you want to buy or sell, and at what price. This is what you will receive, or pay. Keep in mind that others will pay for transport. So buying something for a low price might not work other player's shipping costs are too high.",
         "popup": "This popup shows you all the information about this building. Here you can change key parameters of the building, or even move them. This will only be available when you are in building mode.",
+        "production": "This panel gives you an overview of all your production buildings. You can adjust the production rate of each building individually. Buildings are grouped by type, and you can see each group's total resource output at a glance.",
         "storage": "Here you can adjust how much this building stores. It has a certain capacity, and a certain amount of goods it can hold. You can change its ratio, to optimize it for your needs."
     },
     "tooltip": {

@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Pochybná pracovní pravidla",
             "crampedQuarters": "Jako sardinky!",
             "intensiveFarming": "Intenzivní zemědělství",
-            "newTownBoost": "Nový začátek!"
+            "newTownBoost": "Nový začátek!",
+            "foodShortage": "Nedostatek potravin"
         },
         "unlock": "Odemknout"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Zpět do nabídky",
         "lost": "Ztráta připojení",
         "message": "Server je dočasně nedostupný. Může to být způsobeno údržbou nebo restartem. Váš online postup je v bezpečí, hra se automaticky obnoví, jakmile bude obnoveno připojení.",
-        "reconnecting": "Opětovné připojení"
+        "reconnecting": "Opětovné připojení",
+        "suspended": "Účet pozastaven"
     },
     "controls": {
         "build": {
             "addMorePoints": "Přidat další body",
-            "areaLimitExceeded": "Překročen limit oblasti: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Počkejte! To je příliš velké! {{size}} (max. {{limit}})",
+            "areaTooSmall": "To není moc... Vytvořte větší tvar: {{size}} (min. {{limit}})",
+            "cooldown": "Počkejte chvíli.",
             "costs": "Náklady:",
             "invalidLocation": "Neplatná poloha",
             "mustBeNear": "Musí být poblíž {{parent}}",
+            "notEnoughPop": "Nedostatečná populace",
             "notEnoughResources": "Nedostatek zdrojů",
             "tooHigh": "Přiblížit"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Přidat další body",
+            "areaTooLarge": "To je trochu příliš ambiciózní! Vyberte menší oblast: {{size}} (max. {{limit}})",
+            "areaTooSmall": "No tak! Buďte trochu ambicióznější! Prozkoumejte větší oblast: {{size}} (min. {{limit}})",
             "calculating": "Vypočítává se...",
             "duration": "Doba trvání",
             "expedition": "Expedice",
             "finished": "Hotovo!",
             "food": "Jídlo",
             "knowledge": "Znalosti",
+            "invalidArea": "Zde nebylo nalezeno žádné platné průzkumné území.",
             "population": "Populace",
             "timeLeft": "Zbývající čas",
             "title": "Náklady na průzkum"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Dobře.",
+        "dontShowAgain": "Už nezobrazovat",
         "consequences": "Efekty",
+        "buildings_affected": "Ovlivněné budovy",
+        "destroyed": "Zničeno",
+        "shut_down": "Vypnout",
+        "unlocked": "Odemčeno",
         "remaining": "{{count}} Zbývající",
+        "throttleWarning": {
+            "title": "Docházejí zdroje!",
+            "description": "Vaše zásoby suroviny „{{resource}}“ se snížily, zatímco některé budovy ji stále spotřebovávají. Aby se zabránilo vyčerpání vašich zdrojů, byla spotřeba budov automaticky omezena. Jejich produkce je snížena a bude se dále snižovat, jak se vaše zdroje budou vyčerpávat.",
+            "why": "Proč k tomu dochází?",
+            "whyExplanation": "Když množství suroviny klesne pod 10 a je spotřebovávána rychleji, než se produkuje, vaše budovy zpomalí svou produkci, aby spotřebovaly méně suroviny. Tím se zabrání úplnému kolapsu vaší ekonomiky.",
+            "howToFix": "Jak to opravit",
+            "howToFixExplanation": "Postavte více produkčních budov pro tento zdroj, snižte spotřebu odstraněním nebo pozastavením budov, které jej využívají, nebo jej vyměňte na trhu. Jakmile se vaše míra stane kladnou nebo vaše zásoby přesáhnou 10 jednotek, budovy se vrátí k plné produkci.",
+            "food": {
+                "title": "Vaši lidé hladoví!",
+                "description": "Vaše zásoby jídla se tenčí. Vaši lidé potřebují jídlo, aby přežili.",
+                "whyExplanation": "Na rozdíl od jiných zdrojů nelze spotřebu potravin z domů automaticky snížit. Když dojdou potraviny, zoufalí lidé mohou začít krást z vašich zásob.",
+                "howToFixExplanation": "Postavte více farem, pekáren, rybářských podniků nebo jiných budov na výrobu potravin. Můžete také obchodovat s potravinami na trhu. Zajistěte zvýšení produkce potravin nebo je nakupujte na trhu, jinak si vaši lidé vezmou věci do vlastních rukou."
+            },
+            "coin": {
+                "title": "Docházejí mince!",
+                "description": "Vaše zásoby mincí se tenčí. Některé budovy budou omezeny, ale ne všechny budovy spotřebovávající mince lze zpomalit.",
+                "whyExplanation": "Některé budovy, které stojí mince, jako například věže, nelze omezit. Pokud počet mincí klesne příliš nízko, věže se zhorší a nakonec budou zničeny. Ostatní budovy spotřebovávající mince budou omezeny, ale to nemusí stačit k zastavení úpadku.",
+                "howToFixExplanation": "Zvyšte své příjmy z mincí obchodováním se surovinami na trhu, stavbou dalších budov generujících mince nebo snížením výdajů odstraněním nákladných budov."
+            },
+            "wood": {
+                "title": "Zásoby dřeva docházejí!",
+                "description": "Vaše zásoby dřeva se tenčí. Některé budovy budou zpomaleny, ale domy také spotřebovávají dřevo a nelze je zpomalit.",
+                "whyExplanation": "Zatímco většina budov spotřebovávajících dřevo může být omezena, domy spotřebovávají dřevo neustále a jejich spotřeba nemůže být snížena. Pokud vaše zásoby dřeva klesnou na nulu, zoufalí lidé mohou začít krást z vašich skladů.",
+                "howToFixExplanation": "Vyrobte více dřeva nebo ho nakupte na trhu, jinak vaši lidé vezmou věci do svých rukou."
+            }
+        },
         "titles": {
             "food_shortage": "Lidé mají hlad.",
             "strike": "Úder",
             "celebration": "Dárek pro vás",
             "productivity_boom": "Jdeme na to!",
-            "expedition_found": "Expedice se vrací!",
+            "expedition_return": "Expedice se vrací!",
+            "artifact_found": "Objev!",
             "animal_unlock": "No, no, no... co to tu máme?",
             "bankruptcy": "Bankrot!",
+            "outside_territory": "Budova ztracena!",
             "raid": "Vaše zboží bylo ukradeno!",
+            "accident": "Pracovní úraz",
             "trade": "Dohodnuto!",
             "player_message": "Máte poštu!"
         },
@@ -135,10 +177,13 @@
             "strike": "Lidé nejsou spokojeni! Ať děláte cokoli, nelíbí se jim to. Ujistěte se, že vaši lidé zůstávají spokojení, aby se zabránilo uzavření budov.",
             "celebration": "Lidé jsou šťastní! Ať už děláte cokoli, pokračujte v tom! Jako malý dárek pro vás všichni nasbírali nějaké zboží, abyste mohli pokračovat v budování tohoto úžasného města. Jak milé!",
             "productivity_boom": "Lidé jsou nadšení! Milují vás a rádi pro vás pracují přesčas. Díky tomu se jim podařilo vyprodukovat o něco více všeho. Chtějí, aby se tomuto městu dařilo, víte!",
-            "expedition_found": "Vaše expedice se vrátila s cennými zdroji a poznatky! To výrazně přispěje k rozvoji vašeho města a výzkumným aktivitám. V jejich deníku se však nachází zajímavý záznam:",
+            "expedition_return": "Vaše expedice se vrátila s cennými surovinami! Tyto materiály pomohou rozvoji vašeho města.",
+            "artifact_found": "Vaše expedice se vrátila se zajímavým objevem! V jejich deníku je zajímavý záznam:",
             "animal_unlock": "Co jsme zde našli? Vaše expedice se vrátila s překvapivě krotkým zvířetem. Zdá se, že dává přednost životu ve vašem městě před životem v divočině. Bylo by neslušné ho teď poslat zpět, že?",
             "bankruptcy": "Prostě nemáte žádné mince! Věž se zřítila. Věže, které jste postavili, se budou zhoršovat a budou zničeny, pokud je nebudete udržovat s dostatečným množstvím mincí.",
+            "outside_territory": "Budova mimo území byla zničena! Ujistěte se, že vaše budovy zůstávají na vašem území, jinak o ně můžete přijít.",
             "raid": "Měl jsi své zboží lépe schovat! Bylo snadno dostupné a neznámí zloději ti ukradli část tvých zdrojů.",
+            "accident": "Došlo k pracovnímu úrazu! Budova byla uzavřena z důvodu nebezpečných pracovních podmínek.",
             "trade": "Někdo splnil (část) vaší obchodní objednávky.",
             "player_message": "Z jiného města dorazil posel s vzkazem pro vás."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Hospoda",
                 "tent": "Stan",
                 "tower": "Věž",
+                "towers": "Věže",
                 "town_hall": "Radnice",
                 "tree": "Strom",
                 "university": "Univerzita",
                 "museum": "Muzeum",
                 "warehouse": "Sklad",
-                "water_tower": "Vodárenská věž",
+                "water_tower": "Sea Tower",
                 "windmill": "Větrný mlýn",
                 "windmill_upgraded": "Vylepšený větrný mlýn",
                 "woodcutter": "Dřevorubec",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Dvojitým kliknutím umístíte uzly.",
+            "fineRotate": "Jemné otáčení",
             "multiPlace": "Pokračujte v umisťování",
             "rotate": "Otočit",
             "restriction": "Nezastavitelná oblast"
@@ -437,6 +484,7 @@
             "serverOffline": "Nelze se připojit k serveru. Server může být přetížen nebo dočasně mimo provoz z důvodu údržby. Nejnovější informace najdete na Discord.",
             "settings": "Nastavení",
             "subtitle": "Toto je předběžná verze hry Project Rebearth. Pokud narazíte na nějaké problémy při hraní, kontaktujte nás.",
+            "suspended": "Váš účet byl pozastaven. Důvod: {{reason}}",
             "demoSubtitle": "Toto je demo hry Project Rebearth. K dispozici je pouze sandboxový editor měst. Chcete-li hrát na multiplayerovém globu s řízením zdrojů, pořiďte si plnou verzi.",
             "demoRestriction1": "Za tímto tlačítkem se skrývá obrovský online multiplayerový svět Project Rebearth. Nacházíte se však v demoverzi, kde je k dispozici pouze režim sandbox bez správy zdrojů.",
             "demoRestriction2": "Režim sandboxu vám stále umožňuje vytvářet úžasné mapy, exportovat je ve vysokém rozlišení a zažít, jaké to je hrát ve světě ve měřítku 1:1.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Žádné nevhodné výrazy nebo symboly. Náhodně generovaná jména mohou být vtipná, ale vstupy od uživatelů nesmí být nevhodné.",
             "guidelinesRule3": "Nepoužívejte boty, exploity ani automatizační nástroje. Tato hra byla vytvořena lidmi, aby si ji mohli užít lidé. Boty zde nemají místo.",
             "guidelinesRule4": "Výhrůžky ostatním uživatelům jsou zakázány.",
-            "guidelinesOutro": "Pokud si nejste jisti, zda je něco povoleno, pravděpodobně to povoleno není. Nedodržení těchto pokynů může vést k odstranění budov, měst nebo (dočasnému) pozastavení vašeho účtu podle uvážení moderátorů.",
+            "guidelinesRule5": "Nepoužívejte ani nepracujte s více účty, abyste provedli některou z výše uvedených činností, ani nevyužívejte herní mechanismy.",
+            "guidelinesOutro": "Pokud si nejste jisti, zda je něco povoleno, pravděpodobně to povoleno není. Nedodržení těchto pokynů může vést k odstranění budov, měst nebo (dočasnému) pozastavení vašeho účtu podle uvážení moderátorů. Pokud zaznamenáte některé z těchto chování, nahlaste je prosím moderátorům.",
             "locked": "Zamčeno",
             "lockedText": "Zamčeno",
             "newGame": "Nová hra",
             "play": "Hrát",
             "population": "Obyvatelé",
             "slot": "Slot",
+            "suspended": "Účet pozastaven",
             "title": "Vyberte místo pro uložení",
             "unlockHint1000": "Odemknout při 1 000 obyvatelích",
             "unlockHint10000": "Odemknout při 10 000 obyvatelích",
@@ -550,6 +600,17 @@
             "population": "Populace",
             "resources": "Zdroje",
             "title": "Hodnocení"
+        },
+        "production": {
+            "title": "Přehled výroby",
+            "noBuildings": "Zatím nemáte žádné škálovatelné výrobní budovy.",
+            "buildingCount": "{{count}} budova (budovy)",
+            "totalRate": "Celkové hodnocení",
+            "setAll": "Nastavit vše",
+            "applyAll": "Použít vše",
+            "updated": "Aktualizováno",
+            "storage": "Úložiště",
+            "throttleHelp": "Tento typ budovy je omezován, protože dochází požadovaný zdroj. Produkce je automaticky snížena, aby se zabránilo zápornému stavu zdrojů."
         },
         "save": {
             "download": "Stáhnout soubor",
@@ -648,7 +709,12 @@
         "upgrade": "Upgradujte n{{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "Obecné",
+            "performance": "Výkon"
+        },
         "animations": "Animace",
+        "accessibleColors": "Vysoký kontrast",
         "fullscreen": "Celá obrazovka",
         "bushDensity": "Hustota křovin",
         "clearTileCache": "Vymazat data z mezipaměti",
@@ -699,6 +765,7 @@
         "market": "Vítejte na trhu! Podívejte se, co ostatní hráči chtějí koupit nebo prodat, a co je ještě důležitější, za jakou cenu! Při plnění objednávky jiného hráče budete hradit náklady na dopravu. Pokud je tedy někdo daleko, nemusí se to vyplatit, nebo to dokonce může stát víc, než je ochoten zaplatit.",
         "orders": "Zadejte své objednávky! Oznamte ostatním hráčům, co chcete koupit nebo prodat a za jakou cenu. To je částka, kterou obdržíte nebo zaplatíte. Mějte na paměti, že ostatní budou platit za dopravu. Nákup za nízkou cenu tedy nemusí být výhodný, pokud jsou náklady na dopravu ostatních hráčů příliš vysoké.",
         "popup": "Toto vyskakovací okno zobrazuje všechny informace o této budově. Zde můžete změnit klíčové parametry budovy nebo je dokonce přesunout. Tato funkce je k dispozici pouze v režimu stavění.",
+        "production": "Tento panel vám poskytuje přehled všech vašich výrobních budov. Můžete individuálně nastavit rychlost výroby každé budovy. Budovy jsou seskupeny podle typu a můžete si přehledně prohlédnout celkovou produkci zdrojů každé skupiny.",
         "storage": "Zde můžete nastavit, kolik tato budova skladuje. Má určitou kapacitu a může pojmout určité množství zboží. Můžete změnit její poměr, aby vyhovoval vašim potřebám."
     },
     "tooltip": {

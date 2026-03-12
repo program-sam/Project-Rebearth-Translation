@@ -11,6 +11,11 @@
     },
     "biomes": {
         "1": "Lasy tropikalne i subtropikalne liściaste",
+        "10": "Górskie łąki",
+        "11": "Tundra",
+        "12": "Las śródziemnomorski",
+        "13": "Pustynie i suche zarośla",
+        "14": "Lasy namorzynowe",
         "2": "Lasy tropikalne i subtropikalne liściaste",
         "3": "Lasy iglaste tropikalne i subtropikalne",
         "4": "Lasy umiarkowane i mieszane",
@@ -19,11 +24,6 @@
         "7": "Tropikalne i subtropikalne łąki",
         "8": "Sawanny umiarkowane",
         "9": "Zalane łąki",
-        "10": "Górskie łąki",
-        "11": "Tundra",
-        "12": "Las śródziemnomorski",
-        "13": "Pustynie i suche zarośla",
-        "14": "Lasy namorzynowe",
         "98": "Arktyczna pustynia",
         "99": "Lodowa pokrywa"
     },
@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Wątpliwe zasady działania",
             "crampedQuarters": "Jak sardynki!",
             "intensiveFarming": "Intensywne rolnictwo",
-            "newTownBoost": "Nowy początek!"
+            "newTownBoost": "Nowy początek!",
+            "foodShortage": "Niedobór żywności"
         },
         "unlock": "Odblokuj"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Powrót do menu",
         "lost": "Utrata połączenia",
         "message": "Serwer jest chwilowo niedostępny. Może to wynikać z konserwacji lub ponownego uruchomienia. Twoje postępy online są bezpieczne, gra zostanie wznowiona automatycznie po przywróceniu połączenia.",
-        "reconnecting": "Ponowne połączenie"
+        "reconnecting": "Ponowne połączenie",
+        "suspended": "Konto zawieszone"
     },
     "controls": {
         "build": {
-            "addMorePoints": "Dodaj więcej punktów, aby ukończyć kształt!",
-            "areaLimitExceeded": "Przekroczono limit obszaru: {{size}} {{relation}} {{limit}}",
+            "addMorePoints": "Dodaj więcej punktów, aby rozpocząć eksplorację!",
+            "areaTooLarge": "Chwileczkę! To jest za duże! {{size}} (maks. {{limit}})",
+            "areaTooSmall": "To nie jest dużo... Utwórz większy kształt: {{size}} (min. {{limit}})",
+            "cooldown": "Chwileczkę",
             "costs": "Koszty:",
             "invalidLocation": "Nieprawidłowa lokalizacja",
             "mustBeNear": "Musi znajdować się w pobliżu {{parent}}",
+            "notEnoughPop": "Niewystarczająca liczba ludności",
             "notEnoughResources": "Niewystarczające zasoby",
             "tooHigh": "Powiększ"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Dodaj więcej punktów, aby rozpocząć eksplorację!",
+            "areaTooLarge": "To trochę zbyt ambitne! Wybierz mniejszy obszar: {{size}} (maks. {{limit}})",
+            "areaTooSmall": "No dalej! Bądź trochę bardziej ambitny! Odkryj większy obszar: {{size}} (min. {{limit}})",
             "calculating": "Obliczanie...",
             "duration": "Czas trwania",
             "expedition": "Wyprawa",
             "finished": "Gotowe!",
             "food": "Jedzenie",
             "knowledge": "Wiedza",
+            "invalidArea": "Nie znaleziono tutaj żadnego obszaru nadającego się do eksploracji.",
             "population": "Populacja",
             "timeLeft": "Pozostały czas",
             "title": "EKSPLORACJA"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "OK",
+        "dontShowAgain": "Nie pokazuj ponownie",
         "consequences": "Efekty",
+        "buildings_affected": "Budynki, których dotyczy zmiana",
+        "destroyed": "Zniszczony",
+        "shut_down": "Wyłącz",
+        "unlocked": "Odblokowane",
         "remaining": "{{count}} Pozostałe",
+        "throttleWarning": {
+            "title": "Zasoby się kończą!",
+            "description": "Twoje zapasy surowca „{{resource}}” spadły, a niektóre budynki nadal go zużywają. Aby zapobiec wyczerpaniu się zasobów, budynki zużywające ten surowiec zostały automatycznie ograniczone. Ich produkcja została zmniejszona i będzie się nadal zmniejszać wraz z wyczerpywaniem się zasobów.",
+            "why": "Dlaczego tak się dzieje?",
+            "whyExplanation": "Gdy zasoby spadną poniżej poziomu 10 i są zużywane szybciej niż są produkowane, budynki spowalniają produkcję, aby zużywać mniej zasobów. Zapobiega to całkowitemu załamaniu gospodarki.",
+            "howToFix": "Jak to naprawić",
+            "howToFixExplanation": "Zbuduj więcej budynków produkcyjnych dla tego surowca, zmniejsz zużycie poprzez usunięcie lub wstrzymanie działania budynków, które go wykorzystują, lub wymień go na rynku. Gdy wskaźnik stanie się dodatni lub zapasy wzrosną powyżej 10 jednostek, budynki powrócą do pełnej produkcji.",
+            "food": {
+                "title": "Twoi ludzie są głodni!",
+                "description": "Twoje zapasy żywności są na wyczerpaniu. Twoi ludzie potrzebują jedzenia, aby przeżyć.",
+                "whyExplanation": "W przeciwieństwie do innych zasobów, spożycie żywności w domach nie może być automatycznie zmniejszane. Kiedy skończy się żywność, zdesperowani ludzie mogą zacząć kraść z twoich zapasów.",
+                "howToFixExplanation": "Zbuduj więcej farm, piekarni, łowisk lub innych budynków służących do produkcji żywności. Możesz również handlować żywnością na rynku. Pamiętaj, aby zwiększyć produkcję żywności lub kupować ją na rynku, w przeciwnym razie Twoi poddani wezmą sprawy w swoje ręce."
+            },
+            "coin": {
+                "title": "Kończą się monety!",
+                "description": "Twoje rezerwy monet są na wyczerpaniu. Niektóre budynki zostaną spowolnione, ale nie wszystkie budynki zużywające monety mogą zostać spowolnione.",
+                "whyExplanation": "Niektóre budynki, które kosztują monety, takie jak wieże, nie mogą być ograniczane. Jeśli liczba monet spadnie zbyt nisko, wieże ulegną zniszczeniu i ostatecznie zostaną zburzone. Inne budynki zużywające monety zostaną ograniczone, ale może to nie wystarczyć, aby powstrzymać spadek.",
+                "howToFixExplanation": "Zwiększ swoje dochody z monet, handlując zasobami na rynku, budując więcej budynków generujących monety lub zmniejszając wydatki poprzez usuwanie kosztownych budynków."
+            },
+            "wood": {
+                "title": "Zasoby drewna się wyczerpują!",
+                "description": "Twoje zapasy drewna się wyczerpują. Niektóre budynki zostaną spowolnione, ale domy również zużywają drewno i nie można ich spowolnić.",
+                "whyExplanation": "Podczas gdy zużycie drewna przez większość budynków można ograniczyć, domy zawsze zużywają drewno i nie można tego ograniczyć. Jeśli zapasy drewna spadną do zera, zdesperowani ludzie mogą zacząć kraść z magazynu.",
+                "howToFixExplanation": "Zwiększ produkcję drewna lub kup je na rynku, bo inaczej twoi ludzie wezmą sprawy w swoje ręce."
+            }
+        },
         "titles": {
             "food_shortage": "Ludzie są głodni.",
             "strike": "Uderzenie",
             "celebration": "Prezent dla Ciebie",
             "productivity_boom": "Do dzieła!",
-            "expedition_found": "Wyprawa powraca!",
+            "expedition_return": "Wyprawa powraca!",
+            "artifact_found": "Odkrycie!",
             "animal_unlock": "No proszę, proszę... co my tu mamy?",
             "bankruptcy": "Bankructwo!",
+            "outside_territory": "Budynek utracony!",
             "raid": "Twoje towary zostały skradzione!",
+            "accident": "Wypadek przy pracy",
             "trade": "Umowa zawarta!",
             "player_message": "Masz wiadomość!"
         },
@@ -135,10 +177,13 @@
             "strike": "Ludzie nie są zadowoleni! Cokolwiek robisz, im się to nie podoba. Dbaj o zadowolenie swoich ludzi, aby uniknąć zamknięcia budynków.",
             "celebration": "Ludzie są zadowoleni! Cokolwiek robisz, rób to dalej! Jako mały prezent, wszyscy zebrali dla Ciebie trochę towarów, abyś mógł dalej budować to niesamowite miasto. Jakie to urocze!",
             "productivity_boom": "Ludzie są zachwyceni! Kochają cię nad życie i chętnie pracują dla ciebie w nadgodzinach. Dzięki temu udało im się wyprodukować nieco więcej wszystkiego. Chcą, żeby to miasto odniosło sukces, wiesz!",
-            "expedition_found": "Twoja ekspedycja powróciła z cennymi zasobami i wiedzą! Przyniesie to ogromne korzyści dla rozwoju Twojego miasta i badań naukowych. W dzienniku ekspedycji znajduje się jednak interesujący wpis:",
+            "expedition_return": "Twoja ekspedycja powróciła z cennymi zasobami! Materiały te pomogą w rozwoju Twojego miasta.",
+            "artifact_found": "Twoja ekspedycja powróciła z interesującym odkryciem! W dzienniku pokładowym znajduje się interesujący wpis:",
             "animal_unlock": "Co tu znaleźliśmy? Twoja ekspedycja powróciła z zaskakująco oswojonym zwierzęciem. Wydaje się, że woli ono mieszkać w Twoim mieście niż na pustkowiu. Byłoby niegrzeczne odsyłać je teraz z powrotem, prawda?",
             "bankruptcy": "Po prostu nie masz monet! Wieża się zawaliła. Wieże, które zbudowałeś, będą niszczeć i ulegać zniszczeniu, jeśli nie będziesz ich utrzymywać za pomocą wystarczającej ilości monet.",
+            "outside_territory": "Budynek poza terytorium został zniszczony! Upewnij się, że Twoje budynki znajdują się na terytorium, w przeciwnym razie mogą zostać utracone.",
             "raid": "Powinieneś był lepiej schować swoje towary! Były łatwo dostępne i nieznani złodzieje ukradli część twoich zasobów.",
+            "accident": "Wystąpił wypadek w miejscu pracy! Budynek został zamknięty z powodu niebezpiecznych warunków pracy.",
             "trade": "Ktoś zrealizował (część) Twojego zlecenia handlowego.",
             "player_message": "Przybył posłaniec z innego miasta z wiadomością dla ciebie."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Karczma",
                 "tent": "Namiot",
                 "tower": "Wieża",
+                "towers": "Wieże",
                 "town_hall": "Ratusz",
                 "tree": "Drzewo",
                 "university": "Uniwersytet",
                 "museum": "Muzeum",
                 "warehouse": "Magazyn",
-                "water_tower": "Wieża ciśnień",
+                "water_tower": "Sea Tower",
                 "windmill": "Wiatrak",
                 "windmill_upgraded": "Ulepszony wiatrak",
                 "woodcutter": "Chata drwala",
@@ -227,14 +273,14 @@
             "categories": {
                 "decoration": "Dekoracje",
                 "defense": "Obrona",
-                "food": "Jedzenie i rolnictwo",
+                "food": "Jedzenie",
                 "housing": "Mieszkalne",
                 "infrastructure": "Infrastruktura",
                 "military": "Militarne",
-                "production": "Produkcyjne",
+                "production": "Produkcja",
                 "research": "Badania",
-                "resources": "Wydobycie surowców",
-                "storage": "Magazynowanie",
+                "resources": "Surowce",
+                "storage": "Magazyn",
                 "town": "Miasto i społeczność"
             },
             "descriptions": {
@@ -321,7 +367,7 @@
             "goat": "Kozy",
             "grain": "Zboże",
             "maize": "Kukurydza",
-            "potato": "Ziemniaki",
+            "potato": "Ziemniak",
             "sheep": "Owce"
         },
         "effects": {
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Kliknij dwukrotnie, aby umieścić węzły.",
+            "fineRotate": "Precyzyjna rotacja",
             "multiPlace": "Kontynuuj umieszczanie",
             "rotate": "Obróć",
             "restriction": "Obszar, na którym nie można budować"
@@ -425,18 +472,19 @@
             "deleteEverything": "Usuń wszystko",
             "menu": "Menu",
             "quicksettings": "Ustawienia",
-            "saveBuild": "Zapisz projekt",
+            "saveBuild": "Zapisz piaskownicę",
             "saveSandbox": "Zapisz piaskownicę"
         },
         "main": {
             "credits": "Twórcy",
             "enterMultiplayer": "Dołącz do Świata",
-            "loadSandbox": "Wczytaj piaskownicę",
+            "loadSandbox": "Załaduj piaskownicę",
             "newSandbox": "Nowa piaskownica",
             "returnToDesktop": "Wyjście do pulpitu",
             "serverOffline": "Nie można połączyć się z serwerem. Serwer może być przeciążony lub tymczasowo niedostępny z powodu konserwacji. Sprawdź najnowszy status na Discordzie.",
             "settings": "Ustawienia",
             "subtitle": "To jest demo gry Project Rebearth! Tylko tryb piaskownicy jest dostępny publicznie. Zgłoś proszę, jeśli napotkasz problemy w trakcie gry.",
+            "suspended": "Twoje konto zostało zawieszone. Powód: {{reason}}",
             "demoSubtitle": "To jest wersja demonstracyjna Project Rebearth. Dostępna jest tylko funkcja budowania miasta w trybie sandbox. Aby grać w trybie wieloosobowym z zarządzaniem zasobami, pobierz pełną wersję gry.",
             "demoRestriction1": "Za tym przyciskiem kryje się ogromny świat gry wieloosobowej online Project Rebearth. Jednakże znajdujesz się w wersji demo i dostępny jest tylko tryb sandbox bez zarządzania zasobami.",
             "demoRestriction2": "Tryb piaskownicy nadal pozwala tworzyć niesamowite mapy, eksportować je w wysokiej rozdzielczości i doświadczać, jak wygląda świat gry w skali 1:1.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Nie wolno używać nieodpowiedniego języka ani symboli. Losowo generowane nazwy mogą być zabawne, ale dane wprowadzane przez użytkowników nie mogą być nieodpowiednie.",
             "guidelinesRule3": "Nie używaj botów, exploitów ani narzędzi automatyzujących. Ta gra została stworzona przez ludzi, aby ludzie mogli się nią cieszyć. Boty nie mają tu miejsca.",
             "guidelinesRule4": "Groźby wobec innych użytkowników są zabronione.",
-            "guidelinesOutro": "Jeśli masz wątpliwości, czy coś jest dozwolone, prawdopodobnie nie jest. Nieprzestrzeganie tych wytycznych może skutkować usunięciem budynków, miast lub (tymczasowym) zawieszeniem konta według uznania moderatorów.",
+            "guidelinesRule5": "Nie używaj ani nie korzystaj z wielu kont, aby wykonać którekolwiek z powyższych czynności lub wykorzystać mechanikę gry.",
+            "guidelinesOutro": "Jeśli masz wątpliwości, czy coś jest dozwolone, prawdopodobnie nie jest. Nieprzestrzeganie tych wytycznych może skutkować usunięciem budynków, miast lub (tymczasowym) zawieszeniem konta według uznania moderatorów. Jeśli zauważysz którekolwiek z tych zachowań, zgłoś je moderatorom.",
             "locked": "Zablokowany",
             "lockedText": "Zablokowany",
             "newGame": "Nowa gra",
             "play": "Zagraj",
             "population": "Mieszkańcy",
             "slot": "Slot",
+            "suspended": "Konto zawieszone",
             "title": "Wybierz miejsce zapisu",
             "unlockHint1000": "Odblokuj przy 1000 mieszkańców",
             "unlockHint10000": "Odblokuj przy 10 tys. mieszkańców",
@@ -519,7 +569,7 @@
         },
         "market": {
             "amount": "Ilość",
-            "back": "Wróć",
+            "back": "Powrót",
             "base": "Cena bazowa",
             "buy": "KUP",
             "buys": "kupuje",
@@ -550,6 +600,17 @@
             "population": "Populacja",
             "resources": "Surowce",
             "title": "Ranking"
+        },
+        "production": {
+            "title": "Przegląd produkcji",
+            "noBuildings": "Nie masz jeszcze żadnych skalowalnych budynków produkcyjnych.",
+            "buildingCount": "{{count}} budynek (budynki)",
+            "totalRate": "Całkowita ocena",
+            "setAll": "Ustaw wszystko",
+            "applyAll": "Zastosuj wszystko",
+            "updated": "Zaktualizowano",
+            "storage": "Magazyn",
+            "throttleHelp": "Ten typ budynku jest ograniczany, ponieważ brakuje wymaganych zasobów. Produkcja jest automatycznie zmniejszana, aby zapobiec ujemnemu saldu zasobów."
         },
         "save": {
             "download": "Pobierz plik",
@@ -648,7 +709,12 @@
         "upgrade": "Aktualizacja do wersji {{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "Ogólne",
+            "performance": "Wydajność"
+        },
         "animations": "Animacje",
+        "accessibleColors": "Wysoki kontrast",
         "fullscreen": "Pełny ekran",
         "bushDensity": "Gęstość krzaków",
         "clearTileCache": "Wyczyść Tile Cache",
@@ -681,7 +747,17 @@
         "loading": [
             "Przed postawieniem budynku możesz go obracać przy użyciu klawiszy Q i E.",
             "Kliknij dwukrotnie w edytorze kształtów, aby umieścić węzły.",
-            "Użyj klawisza Shift, aby kontynuować stawianie budynków."
+            "Użyj klawisza Shift, aby kontynuować stawianie budynków.",
+            "Użyj klawisza Shift, aby kontynuować umieszczanie budynków.",
+            "Jeśli napotkasz jakiekolwiek problemy, poinformuj nas o tym na Discordzie.",
+            "Zbuduj targowisko lub port, aby odblokować handel z innymi graczami.",
+            "Zbuduj ratusz, aby odblokować sojusze, rankingi i opcje.",
+            "Zbuduj uniwersytet, aby odblokować wyprawy i badania.",
+            "Dołącz do naszej aktywnej społeczności graczy na Discordzie, aby dzielić się swoimi dziełami i uzyskać wskazówki.",
+            "Niektóre budynki można umieścić tylko w pobliżu budynku nadrzędnego, np. tartak i drwal.",
+            "Nie wszystkie zasoby są łatwo dostępne wszędzie. Czasami handel będzie tańszy niż samodzielna produkcja wszystkich zasobów.",
+            "Recenzja na Steam pomaga nam znaleźć nowych graczy, którzy pomogą nam stworzyć żywy świat.",
+            "Odwiedź stronę wiki pod adresem projectrebearth.com, aby dowiedzieć się wszystkiego o świecie Project Rebearth!"
         ]
     },
     "help": {
@@ -689,6 +765,7 @@
         "market": "Witamy na rynku! Zobacz, co inni gracze chcą kupić lub sprzedać, a co ważniejsze, za jaką cenę! Realizując zamówienie innego gracza, ponosisz koszty transportu. Jeśli więc znajduje się on daleko, może to nie być opłacalne, a nawet kosztować więcej niż jest on skłonny zapłacić.",
         "orders": "Składajcie zamówienia! Poinformujcie innych graczy, co chcecie kupić lub sprzedać i za jaką cenę. Tyle właśnie otrzymacie lub zapłacicie. Pamiętajcie, że inni gracze pokryją koszty transportu. Dlatego kupowanie czegoś za niską cenę może się nie opłacać, jeśli koszty wysyłki ponoszone przez innych graczy są zbyt wysokie.",
         "popup": "To okienko pokazuje wszystkie informacje o tym budynku. Tutaj możesz zmienić kluczowe parametry budynku, a nawet go przenieść. Ta opcja jest dostępna tylko w trybie budowania.",
+        "production": "Ten panel zawiera przegląd wszystkich budynków produkcyjnych. Możesz indywidualnie dostosować tempo produkcji każdego budynku. Budynki są pogrupowane według typu, a całkowitą produkcję zasobów każdej grupy można sprawdzić na pierwszy rzut oka.",
         "storage": "Tutaj możesz dostosować pojemność magazynu. Magazyn ma określoną pojemność i może pomieścić określoną ilość towarów. Możesz zmienić jego proporcje, aby dostosować go do swoich potrzeb."
     },
     "tooltip": {

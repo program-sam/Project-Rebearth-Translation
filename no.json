@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Tvilsomme arbeidsregler",
             "crampedQuarters": "Som sardiner!",
             "intensiveFarming": "Intensivt jordbruk",
-            "newTownBoost": "Nye begynnelser!"
+            "newTownBoost": "Nye begynnelser!",
+            "foodShortage": "Matmangel"
         },
         "unlock": "Lås opp"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Tilbake til menyen",
         "lost": "Tilkoblingen er brutt",
         "message": "Serveren er midlertidig utilgjengelig. Dette kan skyldes vedlikehold eller omstart. Din fremgang på nettet er trygg, spillet vil fortsette automatisk når forbindelsen er gjenopprettet.",
-        "reconnecting": "Koble til på nytt"
+        "reconnecting": "Koble til på nytt",
+        "suspended": "Konto suspendert"
     },
     "controls": {
         "build": {
             "addMorePoints": "Legg til flere poeng",
-            "areaLimitExceeded": "Områdegrense overskredet: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Hei, det er for stort! {{size}} (maks. {{limit}})",
+            "areaTooSmall": "Det er ikke mye... Lag en større form: {{size}} (min{{limit}}",
+            "cooldown": "Vent et øyeblikk",
             "costs": "Kostnader:",
             "invalidLocation": "Ugyldig plassering",
             "mustBeNear": "Må være nær {{parent}}",
+            "notEnoughPop": "Ikke nok befolkning",
             "notEnoughResources": "Ikke nok ressurser",
             "tooHigh": "Zoom inn nærmere"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Legg til flere poeng",
+            "areaTooLarge": "Det er litt for ambisiøst! Velg et mindre område: {{size}} (maks. {{limit}})",
+            "areaTooSmall": "Kom igjen! Vær litt mer ambisiøs! Utforsk et større område: {{size}} (min{{limit}})",
             "calculating": "Beregner...",
             "duration": "Varighet",
             "expedition": "Expedition",
             "finished": "Ferdig!",
             "food": "Mat",
             "knowledge": "Kunnskap",
+            "invalidArea": "Det ble ikke funnet noen gyldige utforskningsområder her.",
             "population": "Befolkning",
             "timeLeft": "Gjenværende tid",
             "title": "Utforskningskostnader"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Ok",
+        "dontShowAgain": "Ikke vis igjen",
         "consequences": "Effekter",
+        "buildings_affected": "Berørte bygninger",
+        "destroyed": "Ødelagt",
+        "shut_down": "Slå av",
+        "unlocked": "Låst opp",
         "remaining": "{{count}} Gjenværende",
+        "throttleWarning": {
+            "title": "Ressursene er snart oppbrukt!",
+            "description": "{{resource}}-forsyningen din har gått ned, mens noen bygninger fortsatt bruker den. For å forhindre at ressursen din tar slutt, har bygningene som bruker den blitt automatisk redusert. Produksjonen deres er redusert og vil fortsette å reduseres etter hvert som ressursen din tømmes.",
+            "why": "Hvorfor skjer dette?",
+            "whyExplanation": "Når en ressurs faller under 10 og forbrukes raskere enn den produseres, reduserer bygningene dine produksjonen for å bruke mindre av ressursen. Dette forhindrer at økonomien din kollapser fullstendig.",
+            "howToFix": "Hvordan fikse det",
+            "howToFixExplanation": "Bygg flere produksjonsbygninger for denne ressursen, reduser forbruket ved å fjerne eller pause bygninger som bruker den, eller bytt den på markedet. Når raten din blir positiv, eller forsyningen din vokser til over 10 enheter, vil bygningene gå tilbake til full produksjon.",
+            "food": {
+                "title": "Folket ditt sulter!",
+                "description": "Matforsyningen din er i ferd med å ta slutt. Folket ditt trenger mat for å overleve.",
+                "whyExplanation": "I motsetning til andre ressurser kan ikke matforbruket fra husene reduseres automatisk. Når maten tar slutt, kan desperate mennesker begynne å stjele fra lageret ditt.",
+                "howToFixExplanation": "Bygg flere gårder, bakerier, fiskerier eller andre matproduserende bygninger. Du kan også handle med mat på markedet. Sørg for å øke matproduksjonen eller kjøp mat på markedet, ellers vil folket ta saken i egne hender."
+            },
+            "coin": {
+                "title": "Tom for mynter!",
+                "description": "Myntreservene dine er i ferd med å ta slutt. Noen bygninger vil bli bremset, men ikke alle bygninger som bruker mynter kan bremses.",
+                "whyExplanation": "Noen bygninger som koster mynter, for eksempel tårn, kan ikke reduseres. Hvis myntbeholdningen din blir for lav, vil tårnene forringes og til slutt bli ødelagt. Andre bygninger som bruker mynter vil bli redusert, men det er ikke sikkert det er nok til å stoppe forfallet.",
+                "howToFixExplanation": "Øk myntinntektene dine ved å handle med ressurser på markedet, bygge flere myntgenererende bygninger eller redusere utgiftene ved å fjerne kostbare bygninger."
+            },
+            "wood": {
+                "title": "Treforsyningen er snart tom!",
+                "description": "Treforsyningen din er i ferd med å ta slutt. Noen bygninger vil bli bremset, men hus forbruker også tre og kan ikke bremses.",
+                "whyExplanation": "Mens de fleste treforbrukende bygninger kan reduseres, forbruker hus alltid tre og kan ikke reduseres. Hvis treforsyningen din faller til null, kan desperate mennesker begynne å stjele fra lageret ditt.",
+                "howToFixExplanation": "Produser mer trevirke eller kjøp det på markedet, ellers vil folket ditt ta saken i egne hender."
+            }
+        },
         "titles": {
             "food_shortage": "Folket er sultne",
             "strike": "Strike",
             "celebration": "En gave til deg",
             "productivity_boom": "Kom igjen!",
-            "expedition_found": "Ekspedisjonen er tilbake!",
+            "expedition_return": "Ekspedisjonen er tilbake!",
+            "artifact_found": "Et funn!",
             "animal_unlock": "Vel, vel, vel... hva har vi her?",
             "bankruptcy": "Konkurs!",
+            "outside_territory": "Bygningen er tapt!",
             "raid": "Varene dine ble stjålet!",
+            "accident": "Arbeidsulykke",
             "trade": "Avtale!",
             "player_message": "Du har fått post!"
         },
@@ -135,10 +177,13 @@
             "strike": "Folket er ikke fornøyd! Uansett hva du gjør, liker de det ikke. Sørg for at folket ditt er fornøyd, slik at bygningene ikke stenger.",
             "celebration": "Folk er fornøyde! Uansett hva du gjør, fortsett med det! Som en liten gave har de samlet inn noen varer til deg, slik at du kan fortsette å bygge denne fantastiske byen. Så søtt!",
             "productivity_boom": "Folk er ekstatiske! De elsker deg og jobbet gjerne overtid for deg. Ved å gjøre det klarte de å produsere litt mer av alt. De vil at denne byen skal lykkes, vet du!",
-            "expedition_found": "Ekspedisjonen din har returnert med verdifulle ressurser og kunnskap! Dette vil være til stor nytte for byens utvikling og forskningsarbeid. Loggboken deres inneholder imidlertid en interessant oppføring:",
+            "expedition_return": "Ekspedisjonen din har kommet tilbake med verdifulle ressurser! Disse materialene vil bidra til å fremme utviklingen av byen din.",
+            "artifact_found": "Ekspedisjonen din har kommet tilbake med et interessant funn! Loggboken deres inneholder en interessant oppføring:",
             "animal_unlock": "Hva fant vi her? Ekspedisjonen din kom tilbake med et overraskende tamt dyr. Det ser ut til å foretrekke å bo i byen din fremfor i villmarken. Det ville være uhøflig å sende det tilbake nå, ikke sant?",
             "bankruptcy": "Du har rett og slett ikke nok mynter! Et tårn har brutt sammen. Tårnene du har bygget vil forfalle og bli ødelagt hvis du ikke vedlikeholder dem med tilstrekkelig med mynter.",
+            "outside_territory": "En bygning utenfor territoriet ble ødelagt! Sørg for å holde bygningene dine innenfor territoriet ditt, ellers kan de gå tapt.",
             "raid": "Du burde ha oppbevart varene dine bedre! De var lett tilgjengelige, og noen ukjente tyver stakk av med en del av ressursene dine.",
+            "accident": "Det har skjedd en arbeidsulykke! En bygning er stengt på grunn av usikre arbeidsforhold.",
             "trade": "Noen har fullført (deler av) handelsordren din.",
             "player_message": "En budbringer har ankommet fra en annen by med en beskjed til deg."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Tavern",
                 "tent": "Telt",
                 "tower": "Tårn",
+                "towers": "Tårn",
                 "town_hall": "Rådhuset",
                 "tree": "Tre",
                 "university": "Universitet",
                 "museum": "Museum",
                 "warehouse": "Lager",
-                "water_tower": "Vanntårn",
+                "water_tower": "Sea Tower",
                 "windmill": "Windmill",
                 "windmill_upgraded": "Forbedret vindmølle",
                 "woodcutter": "Treskjærer",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Dobbeltklikk for å plassere noder",
+            "fineRotate": "Fin rotasjon",
             "multiPlace": "Fortsett å plassere",
             "rotate": "Roter",
             "restriction": "Område som ikke kan bygges på"
@@ -437,6 +484,7 @@
             "serverOffline": "Kan ikke nå serveren. Serveren kan være overbelastet eller midlertidig nede på grunn av vedlikehold. Sjekk Discord for den siste statusen.",
             "settings": "Innstillinger",
             "subtitle": "Dette er en tidlig utgave av Project Rebearth. Ta kontakt hvis du støter på problemer mens du spiller.",
+            "suspended": "Kontoen din er suspendert. Årsak: {{reason}}",
             "demoSubtitle": "Dette er en demo av Project Rebearth. Kun sandkasse-bybyggerspillet er aktivert. For å spille på flerspiller-kloden med ressursadministrasjon, må du kjøpe fullversjonen.",
             "demoRestriction1": "Bak denne knappen ligger den enorme online flerspillerverdenen til Project Rebearth. Du befinner deg imidlertid i demoen, og bare sandkassemodus uten ressursadministrasjon er tilgjengelig.",
             "demoRestriction2": "Sandkassemodus lar deg fortsatt lage fantastiske kart, eksportere dem i høy oppløsning og oppleve hvordan en spillverden i skala 1:1 føles.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Ingen upassende språk eller symboler. Tilfeldig genererte navn kan være morsomme, men brukerinnspill må ikke være upassende.",
             "guidelinesRule3": "Ikke bruk bots, exploits eller automatiseringsverktøy. Dette spillet er laget av mennesker, for å nytes av mennesker. Bots har ingen plass her.",
             "guidelinesRule4": "Trusler mot andre brukere er forbudt.",
-            "guidelinesOutro": "Hvis du er i tvil om noe er tillatt, er det sannsynligvis ikke det. Hvis du ikke følger disse retningslinjene, kan det føre til at bygninger blir slettet, byer fjernet eller at kontoen din (midlertidig) blir suspendert etter moderatorenes skjønn.",
+            "guidelinesRule5": "Ikke bruk eller arbeid med flere kontoer for å gjøre noe av det ovennevnte, eller utnytt spillmekanismer.",
+            "guidelinesOutro": "Hvis du er i tvil om noe er tillatt, er det sannsynligvis ikke det. Hvis du ikke følger disse retningslinjene, kan det føre til at bygninger blir slettet, byer fjernet eller at kontoen din (midlertidig) blir suspendert etter moderatorenes skjønn. Hvis du ser noen av disse handlingene, vennligst rapporter dem til moderatorene.",
             "locked": "Låst",
             "lockedText": "Låst",
             "newGame": "Nytt spill",
             "play": "Spill",
             "population": "Innbyggere",
             "slot": "Slot",
+            "suspended": "Konto suspendert",
             "title": "Velg en lagringsplass",
             "unlockHint1000": "Lås opp ved 1000 innbyggere",
             "unlockHint10000": "Lås opp ved 10 000 innbyggere",
@@ -550,6 +600,17 @@
             "population": "Befolkning",
             "resources": "Ressurser",
             "title": "Rangering"
+        },
+        "production": {
+            "title": "Produksjonsoversikt",
+            "noBuildings": "Du har ikke noen skalerbare produksjonsbygninger ennå.",
+            "buildingCount": "{{count}} bygning(er)",
+            "totalRate": "Totalvurdering",
+            "setAll": "Angi alt",
+            "applyAll": "Bruk alt",
+            "updated": "Oppdatert",
+            "storage": "Lagring",
+            "throttleHelp": "Denne bygningstypen blir bremset fordi en nødvendig ressurs er i ferd med å ta slutt. Produksjonen reduseres automatisk for å forhindre at ressursene blir negative."
         },
         "save": {
             "download": "Last ned fil",
@@ -648,7 +709,12 @@
         "upgrade": "Oppgrader til {{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "Generelt",
+            "performance": "Ytelse"
+        },
         "animations": "Animasjoner",
+        "accessibleColors": "Høy kontrast",
         "fullscreen": "Fullskjerm",
         "bushDensity": "Busktetthet",
         "clearTileCache": "Tøm cacheminne",
@@ -699,6 +765,7 @@
         "market": "Velkommen til markedet! Se alle tingene andre spillere ønsker å kjøpe eller selge, og enda viktigere, til hvilken pris! Du må betale transportkostnader når du oppfyller andres bestillinger. Så hvis de er langt unna, kan det hende det ikke er verdt det, eller at det til og med koster mer enn det de er villige til å betale.",
         "orders": "Legg inn dine bestillinger! Fortell de andre spillerne hva du ønsker å kjøpe eller selge, og til hvilken pris. Dette er hva du vil motta eller betale. Husk at andre vil betale for transport. Det kan derfor hende at det ikke lønner seg å kjøpe noe til en lav pris hvis de andre spillernes fraktkostnader er for høye.",
         "popup": "Denne popup-vinduet viser deg all informasjon om denne bygningen. Her kan du endre viktige parametere for bygningen, eller til og med flytte dem. Dette er kun tilgjengelig når du er i byggemodus.",
+        "production": "Dette panelet gir deg en oversikt over alle produksjonsbygningene dine. Du kan justere produksjonshastigheten for hver bygning individuelt. Bygningene er gruppert etter type, og du kan se hver gruppes totale ressursproduksjon på et øyeblikk.",
         "storage": "Her kan du justere hvor mye denne bygningen kan lagre. Den har en viss kapasitet og kan romme en viss mengde varer. Du kan endre forholdet for å optimalisere den etter dine behov."
     },
     "tooltip": {

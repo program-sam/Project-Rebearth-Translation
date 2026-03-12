@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Kétes működési szabályok",
             "crampedQuarters": "Mint a szardínia!",
             "intensiveFarming": "Intenzív gazdálkodás",
-            "newTownBoost": "Új kezdetek!"
+            "newTownBoost": "Új kezdetek!",
+            "foodShortage": "Élelmiszerhiány"
         },
         "unlock": "Feloldás"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Vissza a menübe",
         "lost": "Kapcsolat megszakadt",
         "message": "A szerver ideiglenesen nem elérhető. Ez karbantartás vagy újraindítás miatt lehet. Az online előrehaladásod biztonságban van, a játék automatikusan folytatódik, amint a kapcsolat helyreáll.",
-        "reconnecting": "Újracsatlakozás"
+        "reconnecting": "Újracsatlakozás",
+        "suspended": "Fiók felfüggesztve"
     },
     "controls": {
         "build": {
             "addMorePoints": "További pontok hozzáadása",
-            "areaLimitExceeded": "Területkorlát túllépése: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Hé, várj! Ez túl nagy! {{size}} (max. {{limit}})",
+            "areaTooSmall": "Ez nem sok... Készítsen nagyobb alakzatot: {{size}} (min{{limit}})",
+            "cooldown": "Várjon egy pillanatot!",
             "costs": "Költségek:",
             "invalidLocation": "Érvénytelen hely",
             "mustBeNear": "{{parent}} közelében kell lennie.",
+            "notEnoughPop": "Nincs elég népesség",
             "notEnoughResources": "Nincs elég erőforrás",
             "tooHigh": "Nagyítás"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "További pontok hozzáadása",
+            "areaTooLarge": "Ez egy kicsit túl ambiciózus! Válasszon egy kisebb területet: {{size}} (max. {{limit}})",
+            "areaTooSmall": "Gyerünk! Legyél egy kicsit ambiciózusabb! Fedezz fel egy nagyobb területet: {{size}} (min{{limit}})",
             "calculating": "Számítás...",
             "duration": "Időtartam",
             "expedition": "Expedíció",
             "finished": "Kész!",
             "food": "Élelmiszer",
             "knowledge": "Tudás",
+            "invalidArea": "Itt nem található érvényes felfedezési terület.",
             "population": "Népesség",
             "timeLeft": "Hátralévő idő",
             "title": "Felfedezési költségek"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Rendben.",
+        "dontShowAgain": "Ne mutasd meg újra",
         "consequences": "Hatások",
+        "buildings_affected": "Érintett épületek",
+        "destroyed": "Megsemmisült",
+        "shut_down": "Leállítás",
+        "unlocked": "Feloldva",
         "remaining": "{{count}} Maradék",
+        "throttleWarning": {
+            "title": "Erőforrások fogynak!",
+            "description": "Az „{{resource}}” készleted csökkent, miközben egyes épületek továbbra is fogyasztják azt. Annak érdekében, hogy az erőforrásod ne fogyjon el, az azt fogyasztó épületek automatikusan korlátozásra kerültek. Termelésük csökkent, és az erőforrásod kimerülésével tovább fog csökkenni.",
+            "why": "Miért történik ez?",
+            "whyExplanation": "Amikor egy erőforrás szintje 10 alá csökken, és gyorsabban fogy, mint amennyit termelnek, az épületek lelassítják a termelést, hogy kevesebb erőforrást használjanak fel. Ez megakadályozza a gazdaság teljes összeomlását.",
+            "howToFix": "Hogyan lehet kijavítani?",
+            "howToFixExplanation": "Építs több termelő épületet ehhez az erőforráshoz, csökkentsd a fogyasztást azáltal, hogy eltávolítod vagy leállítod az azt felhasználó épületeket, vagy cseréld el a piacon. Amint az arány pozitívvá válik, vagy a készleted meghaladja a 10 egységet, az épületek visszatérnek a teljes termeléshez.",
+            "food": {
+                "title": "Az embereid éheznek!",
+                "description": "Az élelmiszer-készleted fogytán van. Az embereidnek élelemre van szükségük a túléléshez.",
+                "whyExplanation": "Más erőforrásokkal ellentétben a házakból származó élelmiszer-fogyasztás nem csökkenthető automatikusan. Amikor elfogy az élelmiszer, a kétségbeesett emberek elkezdhetnek lopni a raktárból.",
+                "howToFixExplanation": "Építs több farmot, pékséget, halászati üzemet vagy más élelmiszer-előállító épületet. Az élelmiszert a piacon is megvásárolhatod. Gondoskodj az élelmiszertermelés növeléséről, vagy vásárolj a piacon, különben az emberek maguk fogják kezükbe venni a dolgokat."
+            },
+            "coin": {
+                "title": "Kifogyóban a pénz!",
+                "description": "Az érmekészleted fogytán van. Némely épületek működése lelassul, de nem minden érmét fogyasztó épület működése lassítható le.",
+                "whyExplanation": "Néhány, pénzbe kerülő épület, például a tornyok, nem korlátozhatók. Ha a pénzállományod túl alacsonyra csökken, a tornyok romlani kezdenek, és végül megsemmisülnek. Más, pénzt felemésztő épületek korlátozhatók, de ez nem feltétlenül elegendő a hanyatlás megállításához.",
+                "howToFixExplanation": "Növelje érmés bevételeit azáltal, hogy erőforrásokat kereskedik a piacon, több érmét termelő épületet épít, vagy csökkenti a kiadásokat a költséges épületek elbontásával."
+            },
+            "wood": {
+                "title": "A faellátás fogytán van!",
+                "description": "A faellátásod fogytán van. Néhány épület működése lelassul, de a házak is fogyasztanak fát, és azok működése nem lassítható le.",
+                "whyExplanation": "Míg a legtöbb faanyagot fogyasztó épület teljesítménye csökkenthető, a házak mindig faanyagot fogyasztanak, és teljesítményük nem csökkenthető. Ha a faanyag-készleted nullára csökken, a kétségbeesett emberek elkezdhetnek lopni a raktárból.",
+                "howToFixExplanation": "Termelj több fát, vagy vásárolj a piacon, különben az embereid saját kezükbe veszik az ügyeket."
+            }
+        },
         "titles": {
             "food_shortage": "Az emberek éhesek.",
             "strike": "Támadás",
             "celebration": "Ajándék neked",
             "productivity_boom": "Induljunk!",
-            "expedition_found": "A expedíció visszatér!",
+            "expedition_return": "A expedíció visszatér!",
+            "artifact_found": "Egy felfedezés!",
             "animal_unlock": "Nos, nos, nos... mi van itt nekünk?",
             "bankruptcy": "Csőd!",
+            "outside_territory": "Épület elveszett!",
             "raid": "Ellopták az áruidat!",
+            "accident": "Munkahelyi baleset",
             "trade": "Megegyeztünk!",
             "player_message": "Új üzeneted érkezett!"
         },
@@ -135,10 +177,13 @@
             "strike": "Az emberek nem boldogok! Bármit is csinálsz, nem tetszik nekik. Gondoskodj arról, hogy az embereid boldogok maradjanak, hogy elkerüld az épületek bezárását.",
             "celebration": "Az emberek boldogok! Bármit is csinálsz, folytasd csak! Kis ajándékként mindannyian összegyűjtöttek néhány árut, hogy folytathasd ennek a csodálatos városnak az építését. Milyen aranyos!",
             "productivity_boom": "Az emberek el vannak ragadtatva! Imádnak téged, és boldogan túlórázzanak érted. Ezáltal sikerült mindenből egy kicsit többet előállítaniuk. Azt akarják, hogy ez a város sikeres legyen, tudod!",
-            "expedition_found": "A expedíció értékes erőforrásokkal és ismeretekkel tért vissza! Ez nagyban elősegíti városod fejlődését és kutatási törekvéseit. Naplójukban azonban egy érdekes bejegyzés található:",
+            "expedition_return": "A expedíció értékes erőforrásokkal tért vissza! Ezek az anyagok elősegítik városod fejlődését.",
+            "artifact_found": "A expedíció érdekes felfedezéssel tért vissza! A naplójukban egy érdekes bejegyzés található:",
             "animal_unlock": "Mit találtunk itt? A expedíció egy meglepően szelíd állattal tért vissza. Úgy tűnik, inkább a városban szeretne élni, mint a vadonban. Nem lenne illendő most visszaküldeni, ugye?",
             "bankruptcy": "Egyszerűen nincs pénzed! Egy torony összeomlott. Az általad épített tornyok romlani fognak és megsemmisülnek, ha nem tartod karban őket elegendő pénzzel.",
+            "outside_territory": "A területen kívüli épület megsemmisült! Gondoskodj róla, hogy az épületeid a területeden belül legyenek, különben elveszhetnek.",
             "raid": "Jobban kellett volna elrejtened az áruidat! Könnyen hozzáférhetők voltak, és néhány ismeretlen tolvaj elvitte az erőforrásaid egy részét.",
+            "accident": "Munkahelyi baleset történt! Az épületet a nem biztonságos munkakörülmények miatt lezárták.",
             "trade": "Valaki teljesítette (részben) a kereskedelmi megrendelésedet.",
             "player_message": "Egy hírnök érkezett egy másik városból, és üzenetet hozott neked."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Tavern",
                 "tent": "Sátor",
                 "tower": "Tower",
+                "towers": "Tornyok",
                 "town_hall": "Városháza",
                 "tree": "Fa",
                 "university": "Egyetem",
                 "museum": "Múzeum",
                 "warehouse": "Raktár",
-                "water_tower": "Víztorony",
+                "water_tower": "Sea Tower",
                 "windmill": "Szélmalom",
                 "windmill_upgraded": "Továbbfejlesztett szélmalom",
                 "woodcutter": "Favágó",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Kattintson duplán a csomópontok elhelyezéséhez.",
+            "fineRotate": "Finom forgatás",
             "multiPlace": "Továbbra is helyezd el",
             "rotate": "Forgatás",
             "restriction": "Nem beépíthető terület"
@@ -437,6 +484,7 @@
             "serverOffline": "Nem lehet elérni a szervert. Lehet, hogy a szerver túlterhelt, vagy ideiglenesen karbantartás miatt nem elérhető. A legfrissebb állapotot a Discordon ellenőrizheti.",
             "settings": "Beállítások",
             "subtitle": "Ez a Project Rebearth korai verziója. Kérjük, vegye fel velünk a kapcsolatot, ha játék közben bármilyen problémát tapasztal.",
+            "suspended": "Fiókját felfüggesztettük. Ok: {{reason}}",
             "demoSubtitle": "Ez a Project Rebearth demója. Csak a sandbox városépítő funkció engedélyezett. Ha többjátékos globuson szeretnél játszani erőforrás-kezeléssel, töltsd le a teljes verziót.",
             "demoRestriction1": "E gomb mögött rejlik a Project Rebearth hatalmas online többjátékos világa. Jelenleg azonban a demó verziót használod, amelyben csak a sandbox mód érhető el, erőforrás-kezelés nélkül.",
             "demoRestriction2": "A sandbox módban továbbra is fantasztikus térképeket készíthetsz, azokat nagy felbontásban exportálhatod, és megtapasztalhatod, milyen érzés egy 1:1 méretarányú játékvilág.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Nincs helyénvalótlan nyelv vagy szimbólum. A véletlenszerűen generált nevek viccesek lehetnek, de a felhasználók által beküldött nevek nem lehetnek helyénvalótlanok.",
             "guidelinesRule3": "Ne használj botokat, exploitokat vagy automatizálási eszközöket. Ezt a játékot emberek készítették, hogy emberek élvezhessék. A botoknak itt nincs helyük.",
             "guidelinesRule4": "Más felhasználók fenyegetése tilos.",
-            "guidelinesOutro": "Ha kétséged van, hogy valami megengedett-e, akkor valószínűleg nem az. Ezen irányelvek be nem tartása az épületek törléséhez, a városok eltávolításához vagy a fiókod (ideiglenes) felfüggesztéséhez vezethet a moderátorok döntése alapján.",
+            "guidelinesRule5": "Ne használj, és ne dolgozz több fiókkal a fentiek végrehajtása érdekében, és ne használj ki a játék mechanizmusait.",
+            "guidelinesOutro": "Ha kétséged van, hogy valami megengedett-e, akkor valószínűleg nem az. Ezen irányelvek be nem tartása az épületek törléséhez, városok eltávolításához vagy fiókod (ideiglenes) felfüggesztéséhez vezethet a moderátorok döntése alapján. Ha ilyen viselkedést észlelsz, kérjük, jelentsd a moderátoroknak.",
             "locked": "Zárt",
             "lockedText": "Zárt",
             "newGame": "Új játék",
             "play": "Játék",
             "population": "Lakosság",
             "slot": "Slot",
+            "suspended": "Fiók felfüggesztve",
             "title": "Válasszon egy mentési helyet",
             "unlockHint1000": "1000 lakos elérése esetén feloldható",
             "unlockHint10000": "10 000 lakos elérése esetén feloldható",
@@ -550,6 +600,17 @@
             "population": "Népesség",
             "resources": "Források",
             "title": "Rangsor"
+        },
+        "production": {
+            "title": "Gyártási áttekintés",
+            "noBuildings": "Még nincs skálázható termelőépületed.",
+            "buildingCount": "{{count}} épület(ek)",
+            "totalRate": "Teljes értékelés",
+            "setAll": "Összes beállítása",
+            "applyAll": "Összes alkalmazása",
+            "updated": "Frissítve",
+            "storage": "Tárolás",
+            "throttleHelp": "Ez az épület típus korlátozva van, mert a szükséges erőforrások fogynak. A termelés automatikusan csökken, hogy az erőforrások ne váljanak negatívvá."
         },
         "save": {
             "download": "Fájl letöltése",
@@ -648,7 +709,12 @@
         "upgrade": "Frissítsen az {{building}} verzióra"
     },
     "settings": {
+        "tabs": {
+            "general": "Általános",
+            "performance": "Teljesítmény"
+        },
         "animations": "Animációk",
+        "accessibleColors": "Erős kontraszt",
         "fullscreen": "Teljes képernyő",
         "bushDensity": "Bush sűrűség",
         "clearTileCache": "Cache-adatok törlése",
@@ -699,6 +765,7 @@
         "market": "Üdvözöljük a piacon! Itt láthatja, hogy a többi játékos mit szeretne vásárolni vagy eladni, és ami még fontosabb, milyen áron! Ha mások megrendelését teljesíti, akkor a szállítási költségeket Önnek kell állnia. Ha tehát a megrendelő messze van, akkor lehet, hogy nem éri meg, vagy akár többet is fizethet, mint amennyit a megrendelő hajlandó fizetni.",
         "orders": "Adja le megrendeléseit! Tájékoztassa a többi játékost, hogy mit szeretne vásárolni vagy eladni, és milyen áron. Ez az, amit kapni fog, vagy fizetni fog. Ne feledje, hogy a többiek fizetnek a szállításért. Tehát lehet, hogy nem érdemes alacsony áron vásárolni, ha a többi játékos szállítási költségei túl magasak.",
         "popup": "Ez a felugró ablak az épületre vonatkozó összes információt megjeleníti. Itt megváltoztathatja az épület legfontosabb paramétereit, vagy akár áthelyezheti őket. Ez csak építési módban érhető el.",
+        "production": "Ez a panel áttekintést nyújt az összes termelőépületről. Az egyes épületek termelési sebességét külön-külön állíthatja be. Az épületek típus szerint vannak csoportosítva, és egy pillantással láthatja az egyes csoportok teljes erőforrás-termelését.",
         "storage": "Itt beállíthatod, hogy ez az épület mennyi raktárkapacitással rendelkezzen. Az épületnek van egy bizonyos kapacitása, és egy bizonyos mennyiségű árut tud tárolni. Az arányt megváltoztathatod, hogy az igényeidnek megfelelően optimalizáld."
     },
     "tooltip": {

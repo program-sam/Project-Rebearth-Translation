@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Reguli de lucru dubioase",
             "crampedQuarters": "Ca sardinele!",
             "intensiveFarming": "Agricultură intensivă",
-            "newTownBoost": "Un nou început!"
+            "newTownBoost": "Un nou început!",
+            "foodShortage": "Penurie alimentară"
         },
         "unlock": "Deblocare"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Înapoi la meniu",
         "lost": "Conexiune pierdută",
         "message": "Serverul este temporar indisponibil. Acest lucru se poate datora lucrărilor de întreținere sau unei reporniri. Progresul tău online este în siguranță, jocul va reporni automat odată ce conexiunea va fi restabilită.",
-        "reconnecting": "Reconectare"
+        "reconnecting": "Reconectare",
+        "suspended": "Cont suspendat"
     },
     "controls": {
         "build": {
             "addMorePoints": "Adăugați mai multe puncte",
-            "areaLimitExceeded": "Limita de zonă depășită: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Stai puțin! E prea mare! {{size}} (max {{limit}})",
+            "areaTooSmall": "Nu e prea mult... Creați o formă mai mare: {{size}} (min {{limit}})",
+            "cooldown": "Așteptați o secundă",
             "costs": "Costuri:",
             "invalidLocation": "Locație nevalidă",
             "mustBeNear": "Trebuie să fie aproape de {{parent}}",
+            "notEnoughPop": "Populație insuficientă",
             "notEnoughResources": "Resurse insuficiente",
             "tooHigh": "Măriți imaginea"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Adăugați mai multe puncte",
+            "areaTooLarge": "Este puțin prea ambițios! Alegeți o zonă mai mică: {{size}} (max {{limit}})",
+            "areaTooSmall": "Haide! Fii puțin mai ambițios! Explorează o zonă mai mare: {{size}} (min {{limit}})",
             "calculating": "Se calculează...",
             "duration": "Durată",
             "expedition": "Expediție",
             "finished": "Gata!",
             "food": "Alimente",
             "knowledge": "Cunoștințe",
+            "invalidArea": "Nu s-a găsit nicio zonă de explorare validă aici.",
             "population": "Populație",
             "timeLeft": "Timp rămas",
             "title": "Costuri de explorare"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Bine.",
+        "dontShowAgain": "Nu mai afișa",
         "consequences": "Efecte",
+        "buildings_affected": "Clădiri afectate",
+        "destroyed": "Distrus",
+        "shut_down": "Oprire",
+        "unlocked": "Deblocat",
         "remaining": "{{count}} Rămase",
+        "throttleWarning": {
+            "title": "Resursele se epuizează!",
+            "description": "Rezerva ta de „{{resource}}” a scăzut, în timp ce unele clădiri încă o consumă. Pentru a preveni epuizarea resursei, clădirile care o consumă au fost automat limitate. Producția lor este redusă și va continua să scadă pe măsură ce resursa se epuizează.",
+            "why": "De ce se întâmplă acest lucru?",
+            "whyExplanation": "Când o resursă scade sub 10 și este consumată mai repede decât este produsă, clădirile tale încetinesc producția pentru a utiliza mai puțin din resursă. Acest lucru împiedică economia ta să se prăbușească complet.",
+            "howToFix": "Cum se remediază",
+            "howToFixExplanation": "Construiește mai multe clădiri de producție pentru această resursă, redu consumul eliminând sau suspendând clădirile care o utilizează sau comercializează-o pe piață. Odată ce rata devine pozitivă sau oferta crește peste 10 unități, clădirile vor reveni la producția maximă.",
+            "food": {
+                "title": "Oamenii tăi sunt flămânzi!",
+                "description": "Rezervele tale de hrană sunt pe terminate. Oamenii tăi au nevoie de hrană pentru a supraviețui.",
+                "whyExplanation": "Spre deosebire de alte resurse, consumul de alimente din case nu poate fi redus automat. Când alimentele se epuizează, oamenii disperați pot începe să fure din depozitul tău.",
+                "howToFixExplanation": "Construiește mai multe ferme, brutării, pescării sau alte clădiri pentru producția de alimente. De asemenea, poți face comerț cu alimente pe piață. Asigură-te că crești producția de alimente sau că le cumperi de pe piață, altfel oamenii tăi vor lua lucrurile în propriile mâini."
+            },
+            "coin": {
+                "title": "Rămâi fără monede!",
+                "description": "Rezervele tale de monede sunt pe terminate. Deși unele clădiri vor fi restricționate, nu toate clădirile care consumă monede pot fi încetinite.",
+                "whyExplanation": "Unele clădiri care costă monede, cum ar fi turnurile, nu pot fi restricționate. Dacă numărul de monede scade prea mult, turnurile se vor deteriora și, în cele din urmă, vor fi distruse. Alte clădiri care consumă monede vor fi restricționate, dar acest lucru s-ar putea să nu fie suficient pentru a opri declinul.",
+                "howToFixExplanation": "Creșteți veniturile din monede tranzacționând resurse pe piață, construind mai multe clădiri generatoare de monede sau reducând cheltuielile prin eliminarea clădirilor costisitoare."
+            },
+            "wood": {
+                "title": "Rezerva de lemn se epuizează!",
+                "description": "Rezervele de lemn sunt pe terminate. Unele clădiri vor fi încetinite, dar casele consumă și ele lemn și nu pot fi încetinite.",
+                "whyExplanation": "În timp ce majoritatea clădirilor care consumă lemn pot fi restricționate, casele consumă întotdeauna lemn și nu pot fi reduse. Dacă rezerva ta de lemn scade la zero, oamenii disperați pot începe să fure din depozitul tău.",
+                "howToFixExplanation": "Produceți mai mult lemn sau cumpărați-l de pe piață, altfel oamenii vor lua lucrurile în propriile mâini."
+            }
+        },
         "titles": {
             "food_shortage": "Oamenii sunt flămânzi.",
             "strike": "Atac",
             "celebration": "Un cadou pentru tine",
             "productivity_boom": "Să începem!",
-            "expedition_found": "Expediția se întoarce!",
+            "expedition_return": "Expediția se întoarce!",
+            "artifact_found": "O descoperire!",
             "animal_unlock": "Ei bine, ei bine, ei bine... ce avem noi aici?",
             "bankruptcy": "Faliment!",
+            "outside_territory": "Clădire pierdută!",
             "raid": "Bunurile tale au fost furate!",
+            "accident": "Accident la locul de muncă",
             "trade": "S-a făcut!",
             "player_message": "Ai primit un e-mail!"
         },
@@ -135,10 +177,13 @@
             "strike": "Oamenii nu sunt mulțumiți! Orice ai face, lor nu le place. Asigură-te că oamenii tăi sunt mulțumiți pentru a evita închiderea clădirilor.",
             "celebration": "Oamenii sunt fericiți! Orice ai face, continuă să faci! Ca un mic cadou, toți au strâns niște bunuri pentru ca tu să continui să construiești acest oraș uimitor. Ce drăguț!",
             "productivity_boom": "Oamenii sunt în extaz! Te iubesc nespus și au lucrat cu bucurie ore suplimentare pentru tine. Astfel, au reușit să producă puțin mai mult din toate. Vor ca acest oraș să aibă succes, să știi!",
-            "expedition_found": "Expediția ta s-a întors cu resurse și cunoștințe valoroase! Acest lucru va contribui în mare măsură la dezvoltarea orașului tău și la eforturile de cercetare. Jurnalul lor de bord conține însă o mențiune interesantă:",
+            "expedition_return": "Expediția ta s-a întors cu resurse valoroase! Aceste materiale vor contribui la dezvoltarea orașului tău.",
+            "artifact_found": "Expediția ta s-a întors cu o descoperire interesantă! Jurnalul lor de bord conține o însemnare interesantă:",
             "animal_unlock": "Ce am găsit aici? Expediția ta s-a întors cu un animal surprinzător de blând. Se pare că preferă să trăiască în orașul tău decât în sălbăticie. Ar fi nepoliticos să-l trimitem înapoi acum, nu-i așa?",
             "bankruptcy": "Pur și simplu nu ai monede! Un turn s-a prăbușit. Turnurile pe care le-ai construit se vor deteriora și vor fi distruse dacă nu le întreții cu suficiente monede.",
+            "outside_territory": "O clădire din afara teritoriului a fost distrusă! Asigură-te că clădirile tale se află în interiorul teritoriului tău, altfel riscă să se piardă.",
             "raid": "Ar fi trebuit să-ți ascunzi mai bine bunurile! Erau la îndemâna oricui, iar niște hoți necunoscuți au fugit cu o parte din resursele tale.",
+            "accident": "A avut loc un accident la locul de muncă! O clădire a fost închisă din cauza condițiilor de muncă nesigure.",
             "trade": "Cineva a îndeplinit (o parte din) comanda ta comercială.",
             "player_message": "Un mesager a sosit dintr-un alt oraș cu un mesaj pentru tine."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Tavernă",
                 "tent": "Cort",
                 "tower": "Turn",
+                "towers": "Turnuri",
                 "town_hall": "Primărie",
                 "tree": "Arbore",
                 "university": "Universitate",
                 "museum": "Muzeu",
                 "warehouse": "Depozit",
-                "water_tower": "Turnul de apă",
+                "water_tower": "Turnul Mării",
                 "windmill": "Moară de vânt",
                 "windmill_upgraded": "Moară îmbunătățită",
                 "woodcutter": "Tăietor de lemne",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Faceți dublu clic pentru a plasa noduri.",
+            "fineRotate": "Rotație fină",
             "multiPlace": "Continuați să plasați",
             "rotate": "Rotește",
             "restriction": "Zonă neconstruibilă"
@@ -437,6 +484,7 @@
             "serverOffline": "Nu se poate conecta la server. Este posibil ca serverul să fie suprasolicitat sau să fie temporar indisponibil din cauza lucrărilor de întreținere. Verificați Discord pentru a afla starea actuală.",
             "settings": "Setări",
             "subtitle": "Aceasta este o versiune preliminară a Project Rebearth. Vă rugăm să ne contactați dacă întâmpinați probleme în timpul jocului.",
+            "suspended": "Contul dvs. a fost suspendat. Motiv: {{reason}}",
             "demoSubtitle": "Aceasta este versiunea demo a Project Rebearth. Este activată doar funcția de construire a orașului în modul sandbox. Pentru a juca pe globul multiplayer cu gestionarea resurselor, descărcați versiunea completă.",
             "demoRestriction1": "În spatele acestui buton se află lumea multiplayer online masivă a Project Rebearth. Cu toate acestea, vă aflați în versiunea demo și este disponibil doar modul sandbox, fără gestionarea resurselor.",
             "demoRestriction2": "Modul sandbox vă permite în continuare să creați hărți extraordinare, să le exportați la rezoluție înaltă și să experimentați cum este o lume de joc la scară 1:1.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Fără limbaj sau simboluri inadecvate. Numele generate aleatoriu pot fi amuzante, dar informațiile introduse de utilizatori nu trebuie să fie inadecvate.",
             "guidelinesRule3": "Nu folosiți roboți, exploatări sau instrumente de automatizare. Acest joc este creat de oameni, pentru a fi savurat de oameni. Roboții nu au ce căuta aici.",
             "guidelinesRule4": "Amenințările la adresa altor utilizatori sunt interzise.",
-            "guidelinesOutro": "Dacă te întrebi dacă ceva este permis, probabil că nu este. Nerespectarea acestor linii directoare poate duce la ștergerea clădirilor, eliminarea orașelor sau suspendarea (temporară) a contului tău, la discreția moderatorilor.",
+            "guidelinesRule5": "Nu utilizați și nu lucrați cu mai multe conturi pentru a face oricare dintre cele de mai sus sau pentru a exploata mecanismele jocului.",
+            "guidelinesOutro": "Dacă te întrebi dacă ceva este permis, probabil că nu este. Nerespectarea acestor linii directoare poate duce la ștergerea clădirilor, eliminarea orașelor sau suspendarea (temporară) a contului tău, la discreția moderatorilor. Dacă observi vreunul dintre aceste comportamente, te rugăm să le raportezi moderatorilor.",
             "locked": "Blocat",
             "lockedText": "Blocat",
             "newGame": "Joc nou",
             "play": "Joacă",
             "population": "Locuitori",
             "slot": "Slot",
+            "suspended": "Cont suspendat",
             "title": "Selectați un slot de salvare",
             "unlockHint1000": "Deblochează la 1.000 de locuitori",
             "unlockHint10000": "Deblocați la 10.000 de locuitori",
@@ -550,6 +600,17 @@
             "population": "Populație",
             "resources": "Resurse",
             "title": "Clasament"
+        },
+        "production": {
+            "title": "Prezentare generală a producției",
+            "noBuildings": "Nu ai încă clădiri de producție scalabile.",
+            "buildingCount": "{{count}} clădire(i)",
+            "totalRate": "Rată totală",
+            "setAll": "Setare totală",
+            "applyAll": "Aplică toate",
+            "updated": "Actualizat",
+            "storage": "Stocare",
+            "throttleHelp": "Acest tip de clădire este restricționat deoarece resursele necesare sunt pe terminate. Producția este redusă automat pentru a preveni epuizarea resurselor."
         },
         "save": {
             "download": "Descărcați fișierul",
@@ -648,7 +709,12 @@
         "upgrade": "Actualizați la {{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "General",
+            "performance": "Performanță"
+        },
         "animations": "Animații",
+        "accessibleColors": "Contrast ridicat",
         "fullscreen": "Ecran complet",
         "bushDensity": "Densitatea tufișurilor",
         "clearTileCache": "Ștergeți datele din memoria cache",
@@ -699,6 +765,7 @@
         "market": "Bine ai venit pe piață! Iată toate lucrurile pe care ceilalți jucători vor să le cumpere sau să le vândă și, mai important, la ce preț! Vei plăti costurile de transport atunci când îndeplinești comanda altcuiva. Așadar, dacă aceștia se află la mare distanță, s-ar putea să nu merite sau chiar să coste mai mult decât sunt dispuși să plătească.",
         "orders": "Plasați comenzile! Anunțați-i pe ceilalți jucători ce doriți să cumpărați sau să vindeți și la ce preț. Acesta este prețul pe care îl veți primi sau pe care îl veți plăti. Rețineți că ceilalți vor plăti transportul. Așadar, cumpărarea unui produs la un preț mic s-ar putea să nu fie rentabilă dacă costurile de transport ale celorlalți jucători sunt prea mari.",
         "popup": "Această fereastră pop-up îți arată toate informațiile despre această clădire. Aici poți modifica parametrii cheie ai clădirii sau chiar îi poți muta. Această opțiune va fi disponibilă numai când te afli în modul de construire.",
+        "production": "Acest panou vă oferă o imagine de ansamblu asupra tuturor clădirilor de producție. Puteți regla rata de producție a fiecărei clădiri în parte. Clădirile sunt grupate în funcție de tip, iar producția totală de resurse a fiecărui grup poate fi vizualizată dintr-o singură privire.",
         "storage": "Aici puteți regla capacitatea de stocare a acestei clădiri. Ea are o anumită capacitate și poate stoca o anumită cantitate de mărfuri. Puteți modifica raportul, pentru a o optimiza în funcție de nevoile dvs."
     },
     "tooltip": {

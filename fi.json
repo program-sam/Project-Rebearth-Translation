@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Epäilyttävät työehdot",
             "crampedQuarters": "Kuin sardiinit!",
             "intensiveFarming": "Intensiivinen maatalous",
-            "newTownBoost": "Uusi alku!"
+            "newTownBoost": "Uusi alku!",
+            "foodShortage": "Elintarvikepula"
         },
         "unlock": "Avaa"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Takaisin valikkoon",
         "lost": "Yhteys katkennut",
         "message": "Palvelimeen ei voi tilapäisesti muodostaa yhteyttä. Tämä voi johtua huoltotöistä tai uudelleenkäynnistyksestä. Online-pelisi eteneminen on tallennettu, ja peli jatkuu automaattisesti, kun yhteys on palautettu.",
-        "reconnecting": "Uudelleenyhteys"
+        "reconnecting": "Uudelleenyhteys",
+        "suspended": "Tili suljettu"
     },
     "controls": {
         "build": {
             "addMorePoints": "Lisää pisteitä",
-            "areaLimitExceeded": "Alueen raja ylitetty: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Hetkinen! Se on liian iso! {{size}} (max {{limit}})",
+            "areaTooSmall": "Se ei ole paljon... Tee suurempi muoto: {{size}} (minimi {{limit}})",
+            "cooldown": "Odota hetki",
             "costs": "Kustannukset:",
             "invalidLocation": "Virheellinen sijainti",
             "mustBeNear": "Täytyy olla lähellä {{parent}}",
+            "notEnoughPop": "Väestö ei riitä",
             "notEnoughResources": "Resurssit eivät riitä",
             "tooHigh": "Zoomaa lähemmäksi"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Lisää pisteitä",
+            "areaTooLarge": "Se on vähän liian kunnianhimoista! Valitse pienempi alue: {{size}} (maks. {{limit}})",
+            "areaTooSmall": "No niin! Ole vähän kunnianhimoisempi! Tutki laajempaa aluetta: {{size}} (min {{limit}})",
             "calculating": "Lasketaan...",
             "duration": "Kesto",
             "expedition": "Retkikunta",
             "finished": "Valmis!",
             "food": "Ruoka",
             "knowledge": "Tieto",
+            "invalidArea": "Täältä ei löytynyt kelvollista tutkimusalueita.",
             "population": "Väestö",
             "timeLeft": "Jäljellä oleva aika",
             "title": "Tutkimuskustannukset"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Selvä",
+        "dontShowAgain": "Älä näytä uudelleen",
         "consequences": "Tehosteet",
+        "buildings_affected": "Vaikuttavat rakennukset",
+        "destroyed": "Tuhoaminen",
+        "shut_down": "Sammuta",
+        "unlocked": "Lukitsematon",
         "remaining": "{{count}} Jäljellä",
+        "throttleWarning": {
+            "title": "Resurssit ovat loppumassa!",
+            "description": "{{resource}}-varastosi on ehtynyt, mutta jotkut rakennukset kuluttavat sitä edelleen. Jotta resurssisi eivät loppuisi kokonaan, niitä kuluttavien rakennusten toimintaa on automaattisesti rajoitettu. Niiden tuotanto on vähentynyt ja vähenee edelleen resurssiesi ehtyessä.",
+            "why": "Miksi näin tapahtuu?",
+            "whyExplanation": "Kun resurssien määrä laskee alle 10 ja niitä kulutetaan tuotantoa nopeammin, rakennuksesi hidastavat tuotantoaan resurssien kulutuksen vähentämiseksi. Tämä estää taloutesi romahtamisen kokonaan.",
+            "howToFix": "Kuinka korjata se",
+            "howToFixExplanation": "Rakenna lisää tuotantorakennuksia tätä resurssia varten, vähennä kulutusta poistamalla tai keskeyttämällä sitä käyttävät rakennukset tai käy kauppaa sillä markkinoilla. Kun tasapainosi muuttuu positiiviseksi tai tarjonta kasvaa yli 10 yksikköön, rakennukset palaavat täyteen tuotantoon.",
+            "food": {
+                "title": "Kansasi on nälkäinen!",
+                "description": "Ruokavarastosi ovat vähissä. Kansasi tarvitsee ruokaa selviytyäkseen.",
+                "whyExplanation": "Toisin kuin muut resurssit, talojen ruoan kulutusta ei voida vähentää automaattisesti. Kun ruoka loppuu, epätoivoiset ihmiset saattavat alkaa varastaa varastostasi.",
+                "howToFixExplanation": "Rakenna lisää maatiloja, leipomoita, kalastuslaitoksia tai muita elintarvikkeita tuottavia rakennuksia. Voit myös käydä kauppaa elintarvikkeilla markkinoilla. Varmista, että lisäät elintarviketuotantoa tai ostat sitä markkinoilta, tai kansasi ottaa asiat omiin käsiinsä."
+            },
+            "coin": {
+                "title": "Kolikot loppumassa!",
+                "description": "Kolikkoreservisi ovat vähissä. Joidenkin rakennusten toimintaa rajoitetaan, mutta kaikkia kolikoita kuluttavia rakennuksia ei voida hidastaa.",
+                "whyExplanation": "Joitakin kolikoita maksavia rakennuksia, kuten torneja, ei voi rajoittaa. Jos kolikkomääräsi laskee liian alhaiseksi, tornit rapistuvat ja tuhoutuvat lopulta. Muita kolikoita kuluttavia rakennuksia voidaan rajoittaa, mutta se ei välttämättä riitä pysäyttämään rappeutumista.",
+                "howToFixExplanation": "Lisää kolikkotuloja kauppaamalla resursseja markkinoilla, rakentamalla lisää kolikoita tuottavia rakennuksia tai vähentämällä kuluja poistamalla kalliita rakennuksia."
+            },
+            "wood": {
+                "title": "Puuvarastot ovat vähissä!",
+                "description": "Puuvarastosi on vähissä. Joidenkin rakennusten toiminta hidastuu, mutta myös talot kuluttavat puuta, eikä niiden toimintaa voida hidastaa.",
+                "whyExplanation": "Vaikka useimpien puuta kuluttavien rakennusten kulutusta voidaan rajoittaa, talot kuluttavat aina puuta eikä niiden kulutusta voida vähentää. Jos puuvarastosi tyhjenee, epätoivoiset ihmiset saattavat alkaa varastaa varastostasi.",
+                "howToFixExplanation": "Tuota enemmän puuta tai osta sitä markkinoilta, tai kansasi ottaa asiat omiin käsiinsä."
+            }
+        },
         "titles": {
             "food_shortage": "Ihmiset ovat nälkäisiä.",
             "strike": "Isku",
             "celebration": "Lahja sinulle",
             "productivity_boom": "Mennään!",
-            "expedition_found": "Retkikunta palaa!",
+            "expedition_return": "Retkikunta palaa!",
+            "artifact_found": "Löytö!",
             "animal_unlock": "No, no, no... mitä meillä täällä on?",
             "bankruptcy": "Konkurssi!",
+            "outside_territory": "Rakennus menetetty!",
             "raid": "Tavarat on varastettu!",
+            "accident": "Työtapaturma",
             "trade": "Sovittu!",
             "player_message": "Sinulle on tullut viesti!"
         },
@@ -135,10 +177,13 @@
             "strike": "Ihmiset eivät ole tyytyväisiä! Mitä tahansa teetkin, he eivät pidä siitä. Varmista, että ihmiset pysyvät tyytyväisinä, jotta rakennukset eivät sulkeudu.",
             "celebration": "Ihmiset ovat onnellisia! Jatka samaan malliin, mitä ikinä teetkin! Pienenä lahjana he ovat keränneet sinulle tavaroita, jotta voit jatkaa tämän upean kaupungin rakentamista. Kuinka suloista!",
             "productivity_boom": "Ihmiset ovat innoissaan! He rakastavat sinua ja tekivät mielellään ylitöitä puolestasi. Näin he onnistuivat tuottamaan hieman enemmän kaikkea. He haluavat, että tämä kaupunki menestyy, tiedätkö!",
-            "expedition_found": "Retkikuntasi on palannut mukanaan arvokkaita resursseja ja tietoa! Tämä hyödyttää suuresti kaupunkisi kehitystä ja tutkimustyötä. Heidän lokikirjassaan on kuitenkin mielenkiintoinen merkintä:",
+            "expedition_return": "Retkikuntasi on palannut mukanaan arvokkaita resursseja! Nämä materiaalit auttavat edistämään kaupunkisi kehitystä.",
+            "artifact_found": "Retkikuntasi on palannut mielenkiintoisen löydön kanssa! Heidän lokikirjassaan on mielenkiintoinen merkintä:",
             "animal_unlock": "Mitä löysimme täältä? Retkikuntasi palasi yllättävän kesyn eläimen kanssa. Se näyttää mieluummin elävän kaupungissasi kuin erämaassa. Olisi epäkohteliasta lähettää se nyt takaisin, eikö niin?",
             "bankruptcy": "Sinulla ei yksinkertaisesti ole kolikoita! Torni on romahtanut. Rakentamasi tornit rapistuvat ja tuhoutuvat, jos et ylläpidä niitä riittävällä määrällä kolikoita.",
+            "outside_territory": "Alueen ulkopuolella oleva rakennus tuhoutui! Varmista, että rakennuksesi ovat alueesi sisällä, tai ne voivat kadota.",
             "raid": "Olisit pitänyt varastoida tavarasi paremmin! Ne olivat helposti saatavilla, ja tuntemattomat varkaat veivät osan resursseistasi.",
+            "accident": "Työtapaturma on sattunut! Rakennus on suljettu vaarallisten työolojen vuoksi.",
             "trade": "Joku on täyttänyt (osan) kauppatilauksestasi.",
             "player_message": "Toisesta kaupungista on saapunut lähetti, jolla on sinulle viesti."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Tavern",
                 "tent": "Teltta",
                 "tower": "Tower",
+                "towers": "Tornit",
                 "town_hall": "Kaupungintalo",
                 "tree": "Puu",
                 "university": "Yliopisto",
                 "museum": "Museo",
                 "warehouse": "Varasto",
-                "water_tower": "Vesitorni",
+                "water_tower": "Sea Tower",
                 "windmill": "Tuulimylly",
                 "windmill_upgraded": "Parannettu tuulimylly",
                 "woodcutter": "Puunkorjaaja",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Kaksoisnapsauta sijoittaaksesi solmuja.",
+            "fineRotate": "Hieno kierto",
             "multiPlace": "Jatka sijoittamista",
             "rotate": "Kierrä",
             "restriction": "Rakentamaton alue"
@@ -437,6 +484,7 @@
             "serverOffline": "Palvelimeen ei saada yhteyttä. Palvelin saattaa olla ylikuormitettu tai tilapäisesti poissa käytöstä huoltotöiden vuoksi. Tarkista Discordista viimeisin tilanne.",
             "settings": "Asetukset",
             "subtitle": "Tämä on Project Rebearthin varhainen versio. Ota yhteyttä, jos kohtaat ongelmia pelatessasi.",
+            "suspended": "Tilisi on suljettu. Syy: {{reason}}",
             "demoSubtitle": "Tämä on Project Rebearthin demo. Vain sandbox-kaupunkien rakentelu on käytössä. Jos haluat pelata moninpelissä, jossa on resurssienhallinta, hanki täysversio.",
             "demoRestriction1": "Tämän painikkeen takana on Project Rebearthin valtava online-moninpeli. Olet kuitenkin demoversiossa, jossa on käytettävissä vain sandbox-tila ilman resurssien hallintaa.",
             "demoRestriction2": "Sandbox-tilassa voit edelleen luoda upeita karttoja, viedä ne korkealla resoluutiolla ja kokea, miltä 1:1-mittakaavassa oleva pelimaailma tuntuu.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Ei sopimatonta kieltä tai symboleja. Satunnaisesti luodut nimet voivat olla hauskoja, mutta käyttäjien lähettämät nimet eivät saa olla sopimatonta.",
             "guidelinesRule3": "Älä käytä botteja, hyväksikäyttöohjelmia tai automaatiotyökaluja. Tämä peli on ihmisten luoma, ja se on tarkoitettu ihmisten nautittavaksi. Boteilla ei ole täällä sijaa.",
             "guidelinesRule4": "Muiden käyttäjien uhkailu on kielletty.",
-            "guidelinesOutro": "Jos epäilet, onko jokin asia sallittu, se todennäköisesti ei ole. Näiden ohjeiden noudattamatta jättäminen voi johtaa rakennusten poistamiseen, kaupunkien poistamiseen tai tilisi (väliaikaiseen) sulkemiseen moderaattoreiden harkinnan mukaan.",
+            "guidelinesRule5": "Älä käytä tai työskentele useilla tileillä edellä mainittujen toimien suorittamiseksi tai pelimekaniikan hyödyntämiseksi.",
+            "guidelinesOutro": "Jos epäilet, että jokin asia ei ole sallittua, se todennäköisesti ei ole. Näiden ohjeiden noudattamatta jättäminen voi johtaa rakennusten poistamiseen, kaupunkien poistamiseen tai tilisi (väliaikaiseen) sulkemiseen moderaattoreiden harkinnan mukaan. Jos huomaat tällaisia tapauksia, ilmoita niistä moderaattoreille.",
             "locked": "Lukittu",
             "lockedText": "Lukittu",
             "newGame": "Uusi peli",
             "play": "Pelaa",
             "population": "Asukkaat",
             "slot": "Slot",
+            "suspended": "Tili suljettu",
             "title": "Valitse tallennuspaikka",
             "unlockHint1000": "Avaa 1 000 asukkaan kohdalla",
             "unlockHint10000": "Avaa 10 000 asukkaan kohdalla",
@@ -550,6 +600,17 @@
             "population": "Väestö",
             "resources": "Resurssit",
             "title": "Sijoitus"
+        },
+        "production": {
+            "title": "Tuotannon yleiskatsaus",
+            "noBuildings": "Sinulla ei ole vielä skaalautuvia tuotantorakennuksia.",
+            "buildingCount": "{{count}} rakennus(t)",
+            "totalRate": "Kokonaisarvosana",
+            "setAll": "Aseta kaikki",
+            "applyAll": "Käytä kaikkia",
+            "updated": "Päivitetty",
+            "storage": "Tallennus",
+            "throttleHelp": "Tämän rakennustyypin tuotantoa rajoitetaan, koska tarvittava resurssi on loppumassa. Tuotantoa vähennetään automaattisesti, jotta resurssit eivät menisi miinukselle."
         },
         "save": {
             "download": "Lataa tiedosto",
@@ -648,7 +709,12 @@
         "upgrade": "Päivitä versioon {{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "Yleistä",
+            "performance": "Suorituskyky"
+        },
         "animations": "Animaatiot",
+        "accessibleColors": "Suuri kontrasti",
         "fullscreen": "Koko näyttö",
         "bushDensity": "Pensas tiheys",
         "clearTileCache": "Tyhjennä välimuistissa olevat tiedot",
@@ -699,6 +765,7 @@
         "market": "Tervetuloa markkinoille! Katso, mitä muut pelaajat haluavat ostaa tai myydä, ja mikä tärkeintä, mihin hintaan! Maksat kuljetuskustannukset, kun täytät jonkun toisen tilauksen. Joten jos he ovat kaukana, se ei ehkä ole sen arvoista tai voi jopa maksaa enemmän kuin he ovat valmiita maksamaan.",
         "orders": "Anna tilauksesi! Ilmoita muille pelaajille, mitä haluat ostaa tai myydä ja mihin hintaan. Tämä on se, mitä saat tai maksat. Muista, että muut maksavat kuljetuksesta. Joten halvan tuotteen ostaminen ei välttämättä kannata, jos muiden pelaajien kuljetuskustannukset ovat liian korkeat.",
         "popup": "Tämä ponnahdusikkuna näyttää kaikki tiedot tästä rakennuksesta. Täällä voit muuttaa rakennuksen avainparametreja tai jopa siirtää niitä. Tämä on käytettävissä vain rakennusmoodissa.",
+        "production": "Tämä paneeli antaa sinulle yleiskuvan kaikista tuotantorakennuksistasi. Voit säätää kunkin rakennuksen tuotantomäärää erikseen. Rakennukset on ryhmitelty tyypin mukaan, ja voit nähdä kunkin ryhmän kokonaisresurssituotannon yhdellä silmäyksellä.",
         "storage": "Täällä voit säätää, kuinka paljon tämä rakennus varastoi. Sillä on tietty kapasiteetti ja tietty määrä tavaroita, joita se voi varastoida. Voit muuttaa sen suhdetta optimoidaksesi sen tarpeisiisi."
     },
     "tooltip": {

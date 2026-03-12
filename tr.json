@@ -11,6 +11,11 @@
     },
     "biomes": {
         "1": "Tropikal ve subtropikal geniş yapraklı ormanlar",
+        "10": "Dağ çayırları",
+        "11": "Tundra",
+        "12": "Akdeniz ormanlık alanları",
+        "13": "Çöller ve kurak çalılık alanlar",
+        "14": "Mangrovlar",
         "2": "Tropikal ve subtropikal geniş yapraklı ormanlar",
         "3": "Tropikal ve subtropikal iğne yapraklı ormanlar",
         "4": "Ilıman ve karışık ormanlar",
@@ -19,11 +24,6 @@
         "7": "Tropikal ve subtropikal çayırlar",
         "8": "Ilıman savanlar",
         "9": "Sular altında kalan çayırlar",
-        "10": "Dağ çayırları",
-        "11": "Tundra",
-        "12": "Akdeniz ormanlık alanları",
-        "13": "Çöller ve kurak çalılık alanlar",
-        "14": "Mangrovlar",
         "98": "Arktik çorak alan",
         "99": "Buz tabakası"
     },
@@ -55,7 +55,7 @@
             "lowRations": "Düşük Erzak Payları",
             "neutralFocus": "Ticaret - Dengeli Ticaret",
             "normalRations": "Standart Erzak Payları",
-            "scienceLeague": "Bilim Birliği",
+            "scienceLeague": "Bilim Ligi",
             "taxation": "Vergilendirme",
             "tradeAlliance": "Ticaret Birliği",
             "veganSociety": "Vegan Topluluk",
@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Kuşkulu İş Kuralları",
             "crampedQuarters": "Tıka Basa!",
             "intensiveFarming": "Yoğun Tarım",
-            "newTownBoost": "Yeni başlangıçlar!"
+            "newTownBoost": "Yeni başlangıçlar!",
+            "foodShortage": "Erzak Kıtlığı"
         },
         "unlock": "Kilidi aç"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Menüye geri dön",
         "lost": "Bağlantı Kesildi",
         "message": "Sunucu geçici olarak erişilemez durumda. Bunun nedeni bakım veya yeniden başlatma olabilir. Çevrimiçi ilerlemeniz güvende, bağlantı yeniden kurulduğunda oyun otomatik olarak devam edecektir.",
-        "reconnecting": "Yeniden bağlanma"
+        "reconnecting": "Yeniden bağlanma",
+        "suspended": "Hesap Askıya Alındı"
     },
     "controls": {
         "build": {
             "addMorePoints": "Daha fazla nokta ekle",
-            "areaLimitExceeded": "Alan sınırı aşıldı: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Durun bakalım! Bu çok büyük! {{size}} (maks. {{limit}})",
+            "areaTooSmall": "Bu çok fazla değil... Daha büyük bir şekil oluşturun: {{size}} (min {{limit}})",
+            "cooldown": "Bir saniye bekleyin",
             "costs": "Maliyetler:",
             "invalidLocation": "Geçersiz Konum",
             "mustBeNear": "{{parent}} yakınında olmalıdır.",
+            "notEnoughPop": "Yeterli nüfus yok",
             "notEnoughResources": "Yetersiz kaynak",
             "tooHigh": "Yakınlaştır"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Daha fazla nokta ekle",
+            "areaTooLarge": "Bu biraz fazla iddialı! Daha küçük bir alan seçin: {{size}} (maks. {{limit}})",
+            "areaTooSmall": "Hadi! Biraz daha hırslı olun! Daha geniş bir alanı keşfedin: {{size}} (min {{limit}})",
             "calculating": "Hesaplanıyor...",
             "duration": "Süre",
-            "expedition": "Keşif seferi",
+            "expedition": "Keşif",
             "finished": "Bitti!",
-            "food": "Erzak",
-            "knowledge": "Bilim",
+            "food": "Yiyecek",
+            "knowledge": "Bilgi",
+            "invalidArea": "Burada geçerli bir keşif alanı bulunamadı.",
             "population": "Nüfus",
             "timeLeft": "Kalan süre",
             "title": "Keşif maliyetleri"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Tamam",
+        "dontShowAgain": "Bir daha gösterme",
         "consequences": "Etkiler",
+        "buildings_affected": "Etkilenen Binalar",
+        "destroyed": "Yok edildi",
+        "shut_down": "Kapat",
+        "unlocked": "Kilidi açıldı",
         "remaining": "{{count}} kaldı",
+        "throttleWarning": {
+            "title": "Kaynaklar Tükeniyor!",
+            "description": "{{resource}}'ınız azaldı, ancak bazı binalar hala bu kaynağı tüketmeye devam ediyor. Kaynağınızın tükenmesini önlemek için, bu kaynağı tüketen binalar otomatik olarak kısıtlandı. Bu binaların üretimi azaldı ve kaynağınız tükendikçe azalmaya devam edecek.",
+            "why": "Bu neden oluyor?",
+            "whyExplanation": "Bir kaynak 10'un altına düştüğünde ve üretilenden daha hızlı tüketildiğinde, binalarınız daha az kaynak kullanmak için üretimlerini yavaşlatır. Bu, ekonominizin tamamen çökmesini önler.",
+            "howToFix": "Nasıl düzeltilir",
+            "howToFixExplanation": "Bu kaynak için daha fazla üretim binası inşa edin, bu kaynağı kullanan binaları kaldırarak veya askıya alarak tüketimi azaltın ya da piyasada takas edin. Oranınız pozitif hale geldiğinde veya arzınız 10 birimin üzerine çıktığında, binalar tam üretime geri dönecektir.",
+            "food": {
+                "title": "Halkınız açlık çekiyor!",
+                "description": "Gıda stoğunuz azalıyor. Halkınızın hayatta kalmak için gıdaya ihtiyacı var.",
+                "whyExplanation": "Diğer kaynakların aksine, evlerden gelen gıda tüketimi otomatik olarak azaltılamaz. Gıda bittiğinde, çaresiz insanlar deponuzdan hırsızlık yapmaya başlayabilir.",
+                "howToFixExplanation": "Daha fazla çiftlik, fırın, balıkçı dükkanı veya diğer gıda üretim binaları inşa edin. Ayrıca pazarda gıda ticareti de yapabilirsiniz. Gıda üretimini artırdığınızdan veya pazardan satın aldığınızdan emin olun, aksi takdirde halkınız kendi başına harekete geçecektir."
+            },
+            "coin": {
+                "title": "Madeni para bitmek üzere!",
+                "description": "Madeni para rezervleriniz azalıyor. Bazı binalar yavaşlatılacak olsa da, madeni para tüketen tüm binalar yavaşlatılamaz.",
+                "whyExplanation": "Kuleler gibi madeni para gerektiren bazı binalar kısıtlanamaz. Madeni paranız çok azalırsa, kuleler bozulur ve sonunda yıkılır. Diğer madeni para gerektiren binalar kısıtlanacaktır, ancak bu düşüşü durdurmak için yeterli olmayabilir.",
+                "howToFixExplanation": "Piyasada kaynak ticareti yaparak, daha fazla para kazandıran binalar inşa ederek veya maliyetli binaları kaldırarak giderleri azaltarak para gelirinizi artırın."
+            },
+            "wood": {
+                "title": "Odun stoğu azalıyor!",
+                "description": "Odun stoğunuz azalıyor. Bazı binaların üretimi yavaşlayacak, ancak evler de odun tüketir ve yavaşlatılamaz.",
+                "whyExplanation": "Çoğu odun tüketen bina kısıtlanabilirken, evler her zaman odun tüketir ve azaltılamaz. Odun stoğunuz sıfıra düşerse, çaresiz insanlar deponuzdan hırsızlık yapmaya başlayabilir.",
+                "howToFixExplanation": "Daha fazla odun üretin veya piyasadan satın alın, aksi takdirde halkınız kendi başına harekete geçecektir."
+            }
+        },
         "titles": {
             "food_shortage": "Halk aç",
             "strike": "Grev",
             "celebration": "Sana bir hediye",
             "productivity_boom": "Tam gaz!",
-            "expedition_found": "Keşif birliği döndü!",
+            "expedition_return": "Keşif birliği döndü!",
+            "artifact_found": "Bir keşif!",
             "animal_unlock": "Vay vay vay... bu ne böyle?",
             "bankruptcy": "İflas!",
+            "outside_territory": "Bina kayboldu!",
             "raid": "Malların çalındı!",
+            "accident": "İş Kazası",
             "trade": "Anlaştık!",
             "player_message": "Postanız var!"
         },
@@ -135,10 +177,13 @@
             "strike": "Halk memnun değil! Ne yapıyorsan hoşlarına gitmiyor. Binaların durma noktasına gelmemesi için halkı mutlu tut.",
             "celebration": "Halk çok memnun! Ne yapıyorsan yapmaya devam et! Sana minik bir hediye olarak bu harika kasabayı büyütmeye devam etmen için biraz kaynak topladılar. Ne sevimli.",
             "productivity_boom": "Halk coşku içinde! Seni çok seviyorlar ve senin için seve seve fazla mesai yaptılar. Böylece her şeyden biraz daha fazla üretmeyi başardılar. Bu kasabanın başarılı olmasını istiyorlar. Bu kasabanın başarılı olmasını çok istiyorlar.",
-            "expedition_found": "Keşif birliğiniz değerli kaynaklarla ve bilgiyle geri döndü! Bu, kasabanızın gelişimine ve araştırma çalışmalarına büyük katkı sağlayacak. Ancak seyir defterlerinde ilginç bir kayıt var:",
+            "expedition_return": "Keşif geziniz değerli kaynaklarla geri döndü! Bu malzemeler, kasabanızın gelişimine katkıda bulunacak.",
+            "artifact_found": "Keşif ekibiniz ilginç bir bulguyla geri döndü! Günlüklerinde ilginç bir giriş var:",
             "animal_unlock": "Bu da ne böyle? Keşif birliğiniz şaşırtıcı derecede uysal bir hayvanla döndü. Kasabanızda yaşamayı vahşi doğaya tercih ediyor gibi görünüyor. Onu geri göndermek ayıp olur, değil mi?",
             "bankruptcy": "Kasada altın kalmadı! Bir kule harap oldu. Kulelerinize yeterli altınla bakım yapmazsanız yıpranır ve yıkılır.",
+            "outside_territory": "Bölgenin dışındaki bir bina yıkıldı! Binalarınızı bölgenizin içinde tutun, aksi takdirde kaybolabilirler.",
             "raid": "Mallarınızı daha iyi saklamalıydınız! Göz önünde duruyorlardı ve kimliği belirsiz hırsızlar kaynaklarınızın bir kısmını alıp kaçtı.",
+            "accident": "İş yerinde bir kaza meydana geldi! Güvenli olmayan çalışma koşulları nedeniyle bir bina kapatıldı.",
             "trade": "Birisi ticaret emrinizin (bir kısmını) yerine getirdi.",
             "player_message": "Başka bir kasabadan bir haberci sana bir mesajla geldi."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Han",
                 "tent": "Çadır",
                 "tower": "Kule",
+                "towers": "Kuleler",
                 "town_hall": "Belediye binası",
                 "tree": "Ağaç",
                 "university": "Üniversite",
                 "museum": "Müze",
                 "warehouse": "Depo",
-                "water_tower": "Su kulesi",
+                "water_tower": "Deniz Kulesi",
                 "windmill": "Yel değirmeni",
                 "windmill_upgraded": "Geliştirilmiş yel değirmeni",
                 "woodcutter": "Oduncu",
@@ -233,7 +279,7 @@
                 "military": "Askeri",
                 "production": "Üretim",
                 "research": "Araştırma",
-                "resources": "Hammadde",
+                "resources": "Kaynaklar",
                 "storage": "Depolama",
                 "town": "Kasaba"
             },
@@ -259,9 +305,9 @@
                 "fishery": "Kıyıdaki küçük bir balıkçı kulübesinden daha huzurlu ne olabilir? Kasabanız için nispeten taze balık üretir.",
                 "foraging_hut": "Doğada yetişen her şeyi yiyebilecekken kimin şaşalı yiyeceklere ihtiyacı var ki? Toplayıcı kulübesi çeşitli materyaller toplar ancak bayağı açık alana ihtiyaç duyar.",
                 "fountain": "Mühendislik alanındaki en büyük başarılarımızdan biri! Akan suyu kim sevmez ki?",
-                "house_1": "Herkesin yaşayacak bir yere ihtiyacı var. Bu küçük baraka halkınıza yiyecek ve barınacak bir yer sağlar.",
+                "house_1": "Herkesin yaşayacak bir yere ihtiyacı var. Bu küçük kulübe halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_2": "Herkesin yaşayacak bir yere ihtiyacı var. Bu küçük kulübe halkınıza yiyecek ve barınacak bir yer sağlar.",
-                "house_3": "Herkesin yaşayacak bir yere ihtiyacı var. Bu kamara halkınıza yiyecek ve barınacak bir yer sağlar.",
+                "house_3": "Herkesin yaşayacak bir yere ihtiyacı var. Bu ev halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_4": "Herkesin yaşayacak bir yere ihtiyacı var. Bu ev halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_5": "Herkesin yaşayacak bir yere ihtiyacı var. Bu konut halkınıza yiyecek ve barınacak bir yer sağlar.",
                 "house_6": "Herkesin yaşayacak bir yere ihtiyacı var. Bu köşk halkınıza yiyecek ve barınacak bir yer sağlar.",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Nokta koymak için çift tıkla.",
+            "fineRotate": "İnce dönüş",
             "multiPlace": "Art arda yerleştir",
             "rotate": "Döndür",
             "restriction": "İnşa edilemez alan"
@@ -432,11 +479,12 @@
             "credits": "Emeği geçenler",
             "enterMultiplayer": "Dünyaya gir",
             "loadSandbox": "Sandbox'ı yükle",
-            "newSandbox": "Yeni Sandbox",
+            "newSandbox": "Yeni sandbox",
             "returnToDesktop": "Masaüstüne dön",
             "serverOffline": "Sunucuya ulaşılamıyor. Sunucu yoğun yük altında olabilir veya bakım nedeniyle geçici olarak kapalı olabilir. En son durumu Discord'da kontrol edin.",
             "settings": "Ayarlar",
             "subtitle": "Bu, Project Rebearth'ün erken sürümüdür. Oynarken herhangi bir sorunla karşılaşırsanız lütfen bize ulaşın.",
+            "suspended": "Hesabınız askıya alınmıştır. Nedeni: {{reason}}",
             "demoSubtitle": "Bu, Project Rebearth'ün demo sürümüdür. Sadece sandbox şehir kurma modu etkin. Kaynak yönetimli çok oyunculu küre için tam sürümü edinin..",
             "demoRestriction1": "Bu düğmenin arkasında Project Rebearth'ın devasa çevrimiçi çok oyunculu dünyası yatıyor. Ancak, siz demoda bulunuyorsunuz ve kaynak yönetimi olmayan sandbox modu kullanılabilir.",
             "demoRestriction2": "Sandbox modu, harika haritalar oluşturmanıza, bunları yüksek çözünürlükte dışa aktarmanıza ve 1:1 ölçekli bir oyun dünyasının nasıl bir his olduğunu deneyimlemenize olanak tanır.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Uygunsuz dil veya semboller kullanılamaz. Rastgele oluşturulan isimler komik olabilir, ancak kullanıcıların girdikleri bilgiler uygunsuz olamaz.",
             "guidelinesRule3": "Botlar, istismar araçları veya otomasyon araçları kullanmayın. Bu oyun insanlar tarafından, insanlar tarafından oynanmak üzere geliştirilmiştir. Botların burada yeri yoktur.",
             "guidelinesRule4": "Diğer kullanıcılara yönelik tehditler yasaktır.",
-            "guidelinesOutro": "Bir şeyin izin verilip verilmediğini sorguluyorsanız, muhtemelen izin verilmiyordur. Bu kurallara uymamanız, moderatörlerin takdirine bağlı olarak binaların silinmesine, kasabaların kaldırılmasına veya hesabınızın (geçici olarak) askıya alınmasına neden olabilir.",
+            "guidelinesRule5": "Yukarıdakileri yapmak için birden fazla hesap kullanmayın veya bunlarla çalışmayın ya da oyun mekaniklerini suistimal etmeyin.",
+            "guidelinesOutro": "Bir şeyin izin verilip verilmediğini sorguluyorsanız, muhtemelen izin verilmiyordur. Bu kurallara uymamanız, moderatörlerin takdirine bağlı olarak binaların silinmesine, kasabaların kaldırılmasına veya hesabınızın (geçici olarak) askıya alınmasına neden olabilir. Bu tür davranışlar görürseniz, lütfen moderatörlere bildirin.",
             "locked": "Kilitli",
             "lockedText": "Kilitli",
             "newGame": "Yeni oyun",
             "play": "Oyna",
             "population": "Nüfus",
             "slot": "Yuva",
+            "suspended": "Hesap askıya alındı",
             "title": "Kayıt yuvası seç",
             "unlockHint1000": "1.000 nüfusa ulaşıldığında açılır.",
             "unlockHint10000": "10.000 nüfusa ulaşıldığında açılır.",
@@ -551,6 +601,17 @@
             "resources": "Kaynaklar",
             "title": "Sıralama"
         },
+        "production": {
+            "title": "Üretim Genel Bakış",
+            "noBuildings": "Henüz ölçeklenebilir üretim binalarınız yok.",
+            "buildingCount": "{{count}} bina(lar)",
+            "totalRate": "Toplam Puan",
+            "setAll": "Tümünü Ayarla",
+            "applyAll": "Tümünü Uygula",
+            "updated": "Güncellendi",
+            "storage": "Depolama",
+            "throttleHelp": "Bu bina türü, gerekli kaynakların azalması nedeniyle kısıtlanmaktadır. Kaynakların eksiye düşmesini önlemek için üretim otomatik olarak azaltılır."
+        },
         "save": {
             "download": "Dosyayı indir",
             "message": "Oyunun yerel olarak kaydedildi.",
@@ -587,13 +648,13 @@
         "common": {
             "accept": "Kabul et",
             "applications": "Başvurular",
-            "globalRank": "Küresel sıralama",
+            "globalRank": "Küresel Sıralama",
             "greatFederation": "Büyük Federasyon",
             "kick": "Çıkar",
             "marketSize": "Pazar büyüklüğü",
             "members": "Üyeler",
             "name": "Ad",
-            "owner": "Sahibi",
+            "owner": "Kurucu",
             "rank": "Derece",
             "reject": "Reddet",
             "scienceLeague": "Bilim Ligi",
@@ -601,7 +662,7 @@
             "value": "Değer"
         },
         "createAlliance": "ittifak kur",
-        "days": "günler",
+        "days": "gün",
         "disbandAlliance": "ittifakı feshet",
         "globalRank": "Küresel Sıralama",
         "go": "Git",
@@ -648,7 +709,12 @@
         "upgrade": "{{building}} binasına yükselt"
     },
     "settings": {
+        "tabs": {
+            "general": "Genel",
+            "performance": "Performans"
+        },
         "animations": "Animasyonlar",
+        "accessibleColors": "Yüksek Kontrast",
         "fullscreen": "Tam ekran",
         "bushDensity": "Çalı yoğunluğu",
         "clearTileCache": "Önbellek verilerini temizle",
@@ -699,6 +765,7 @@
         "market": "Pazara hoş geldiniz! Diğer oyuncuların satın almak veya satmak istedikleri her şeyi ve daha da önemlisi, hangi fiyata istediklerini görün! Başka birinin siparişini yerine getirdiğinizde nakliye masraflarını siz ödersiniz. Dolayısıyla, eğer uzaklarsa, bu masraflar değmeyebilir, hatta onların ödemek istedikleri miktardan daha fazla olabilir.",
         "orders": "Siparişlerinizi verin! Diğer oyunculara neyi hangi fiyata satın almak veya satmak istediğinizi bildirin. Bu, alacağınız veya ödeyeceğiniz tutardır. Diğer oyuncuların nakliye ücretini ödeyeceğini unutmayın. Bu nedenle, düşük bir fiyata bir şey satın almak, diğer oyuncuların nakliye ücretleri çok yüksekse işe yaramayabilir.",
         "popup": "Bu açılır pencere, bu bina hakkındaki tüm bilgileri gösterir. Burada binanın temel parametrelerini değiştirebilir, hatta taşıyabilirsiniz. Bu özellik yalnızca bina modundayken kullanılabilir.",
+        "production": "Bu panel, tüm üretim binalarınıza genel bir bakış sunar. Her binanın üretim hızını ayrı ayrı ayarlayabilirsiniz. Binalar türüne göre gruplandırılmıştır ve her grubun toplam kaynak üretimini bir bakışta görebilirsiniz.",
         "storage": "Burada bu binanın depolama kapasitesini ayarlayabilirsiniz. Belirli bir kapasitesi ve belirli miktarda mal depolayabilir. İhtiyaçlarınıza göre optimize etmek için oranını değiştirebilirsiniz."
     },
     "tooltip": {

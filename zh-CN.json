@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "可疑的工作规则",
             "crampedQuarters": "像沙丁鱼一样！",
             "intensiveFarming": "集约化农业",
-            "newTownBoost": "新起点！"
+            "newTownBoost": "新起点！",
+            "foodShortage": "粮食短缺"
         },
         "unlock": "解锁"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "返回菜单",
         "lost": "连接已断开",
         "message": "服务器暂时无法连接。这可能是由于维护或重启所致。您的在线进度已安全保存，一旦连接恢复，游戏将自动继续。",
-        "reconnecting": "重新连接"
+        "reconnecting": "重新连接",
+        "suspended": "账户暂停"
     },
     "controls": {
         "build": {
             "addMorePoints": "增加更多点数",
-            "areaLimitExceeded": "区域限制超出：{{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "等等！这太大了！{{size}}（最大{{limit}}）",
+            "areaTooSmall": "这太小了...请制作更大的形状：{{size}}（最小{{limit}}）",
+            "cooldown": "稍等片刻",
             "costs": "费用：",
             "invalidLocation": "无效位置",
             "mustBeNear": "必须靠近 {{parent}}",
+            "notEnoughPop": "人口不足",
             "notEnoughResources": "资源不足",
             "tooHigh": "放大查看"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "增加更多点数",
+            "areaTooLarge": "这目标有点太宏大了！请选择更小的区域：{{size}}（最大{{limit}}）",
+            "areaTooSmall": "来吧！再大胆些！探索更广阔的天地：{{size}}（最小{{limit}}）",
             "calculating": "正在计算...",
             "duration": "持续时间",
             "expedition": "远征",
             "finished": "完成！",
             "food": "食物",
             "knowledge": "知识",
+            "invalidArea": "此处未发现有效探索区域。",
             "population": "人口",
             "timeLeft": "剩余时间",
             "title": "探索费用"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "好的",
+        "dontShowAgain": "不再显示",
         "consequences": "效果",
+        "buildings_affected": "受影响的建筑物",
+        "destroyed": "被摧毁",
+        "shut_down": "关机",
+        "unlocked": "已解锁",
         "remaining": "{{count}} 剩余",
+        "throttleWarning": {
+            "title": "资源告急！",
+            "description": "您的{{resource}}储备量已下降，但部分建筑仍在消耗该资源。为防止资源耗尽，系统已自动限制消耗该资源的建筑。这些建筑的生产效率已降低，并将随着资源消耗持续下降。",
+            "why": "为什么会这样？",
+            "whyExplanation": "当资源储备低于10且消耗速度超过生产速度时，建筑将降低生产效率以减少资源消耗。此机制可防止经济体系彻底崩溃。",
+            "howToFix": "如何修复",
+            "howToFixExplanation": "建造更多生产该资源的建筑，通过拆除或暂停使用该资源的建筑来降低消耗，或在市场上交易获取。当生产率转为正值，或库存超过10单位时，建筑将恢复满负荷生产。",
+            "food": {
+                "title": "你的子民正在挨饿！",
+                "description": "你的食物储备正在急剧减少。你的子民需要食物才能生存。",
+                "whyExplanation": "与其他资源不同，房屋消耗的食物无法自动减少。当食物耗尽时，绝望的人们可能会开始偷窃你的储备。",
+                "howToFixExplanation": "建造更多农场、面包房、渔场或其他食品生产建筑。你也可以在市场上交易获取食物。务必增加食物产量或从市场上购买，否则你的子民会自行采取行动。"
+            },
+            "coin": {
+                "title": "金币即将耗尽！",
+                "description": "您的金币储备即将耗尽。虽然部分建筑的运作速度会受到限制，但并非所有消耗金币的建筑都能被减速。",
+                "whyExplanation": "部分消耗金币的建筑（如塔楼）无法进行限流。若金币储备过低，塔楼将逐渐损毁直至彻底崩塌。其他消耗金币的建筑虽可限流，但此举未必能阻止整体衰败趋势。",
+                "howToFixExplanation": "通过在市场上交易资源、建造更多产币建筑或拆除高成本建筑来降低开支，从而增加金币收入。"
+            },
+            "wood": {
+                "title": "木材供应告急！",
+                "description": "木材储备即将耗尽。部分建筑将被限速，但民居同样消耗木材且无法减缓建造速度。",
+                "whyExplanation": "虽然大多数消耗木材的建筑可调低产量，但民居始终持续消耗木材且无法减少。若木材储备归零，绝望的民众可能开始盗取仓库物资。",
+                "howToFixExplanation": "多生产木材或在市场上购买，否则你的子民将自行采取行动。"
+            }
+        },
         "titles": {
             "food_shortage": "百姓正挨饿",
             "strike": "突袭",
             "celebration": "一份赠予你的礼物",
             "productivity_boom": "出发吧！",
-            "expedition_found": "远征归来！",
+            "expedition_return": "远征归来！",
+            "artifact_found": "发现！",
             "animal_unlock": "哎呀呀……这是什么呢？",
             "bankruptcy": "破产！",
+            "outside_territory": "建筑物失守！",
             "raid": "你的货物被偷了！",
+            "accident": "工伤事故",
             "trade": "成交！",
             "player_message": "您有新邮件！"
         },
@@ -135,10 +177,13 @@
             "strike": "民众不满！无论你做什么，他们都不满意。请确保民众保持满意度，避免建筑物停运。",
             "celebration": "民众欢欣鼓舞！无论你在做什么，请继续下去！作为小小的心意，大家纷纷收集物资，助你继续建设这座美妙的城镇。多可爱啊！",
             "productivity_boom": "民众欣喜若狂！他们对你爱戴之情溢于言表，欣然为你加班加点。正因如此，各项生产都实现了小幅增长。要知道，他们都期盼着这座城镇的繁荣！",
-            "expedition_found": "您的探险队已满载珍贵资源与知识凯旋！这将极大促进城镇的发展与科研事业。不过他们的航海日志中有一段耐人寻味的记录：",
+            "expedition_return": "您的远征队已满载珍贵资源归来！这些物资将助力城镇发展。",
+            "artifact_found": "您的远征队带着有趣的发现归来了！他们的航海日志中有这样一段记录：",
             "animal_unlock": "我们在这里发现了什么？你的探险队带回了一只出人意料地温顺的动物。它似乎更喜欢住在你的城镇里，而不是荒野中。现在把它送回去，未免太失礼了吧？",
             "bankruptcy": "你根本没有金币！一座塔楼已然坍塌。若不以足够的金币进行维护，你建造的塔楼将逐渐损毁直至崩塌。",
+            "outside_territory": "领地外的建筑被摧毁了！请确保将建筑物建在领地内，否则可能会丢失。",
             "raid": "你本该把货物藏得更隐蔽些！它们暴露无遗，结果被不明身份的盗贼顺走了部分资源。",
+            "accident": "发生工伤事故！因工作环境存在安全隐患，某栋建筑已被勒令停用。",
             "trade": "有人已完成（部分）您的交易订单。",
             "player_message": "一位信使从另一座城镇赶来，为你带来一封信件。"
         }
@@ -208,12 +253,13 @@
                 "tavern": "酒馆",
                 "tent": "帐篷",
                 "tower": "塔防",
+                "towers": "塔楼",
                 "town_hall": "市政厅",
                 "tree": "树",
                 "university": "大学",
                 "museum": "博物馆",
                 "warehouse": "仓库",
-                "water_tower": "水塔",
+                "water_tower": "海之塔",
                 "windmill": "风车",
                 "windmill_upgraded": "改进型风车",
                 "woodcutter": "伐木工",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "双击放置节点",
+            "fineRotate": "精细旋转",
             "multiPlace": "继续放置",
             "rotate": "旋转",
             "restriction": "不可建造区域"
@@ -437,6 +484,7 @@
             "serverOffline": "无法连接服务器。服务器可能负载过高，或因维护暂时关闭。请通过Discord查看最新状态。",
             "settings": "设置",
             "subtitle": "这是《重生计划》的早期版本。若在游戏过程中遇到任何问题，请随时联系我们。",
+            "suspended": "您的账户已被暂停。原因：{{reason}}",
             "demoSubtitle": "这是《重生计划》的试玩版。当前仅开放沙盒城市建设模式。若需体验多人联机资源管理玩法，请获取完整版。",
             "demoRestriction1": "此按钮背后是《重生计划》庞大的在线多人游戏世界。但您当前处于试玩版，仅可体验无资源管理的沙盒模式。",
             "demoRestriction2": "沙盒模式依然能让你制作精彩地图，以高分辨率导出作品，并体验1:1比例游戏世界的真实感受。",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "禁止使用不当语言或符号。随机生成的名称可能具有趣味性，但用户提交的内容必须避免不当内容。",
             "guidelinesRule3": "请勿使用机器人、漏洞利用程序或自动化工具。本游戏由人类开发，供人类享受。机器人在此无立足之地。",
             "guidelinesRule4": "禁止对其他用户进行威胁。",
-            "guidelinesOutro": "若您对某项操作是否允许存疑，则该操作很可能不被允许。违反这些准则可能导致建筑物被删除、城镇遭移除，或您的账户被管理员酌情（暂时）停用。",
+            "guidelinesRule5": "请勿使用或通过多个账户进行上述操作，亦不得利用游戏机制进行任何违规行为。",
+            "guidelinesOutro": "若您对某项操作是否允许存疑，则该操作很可能不被允许。违反这些准则可能导致建筑物被删除、城镇遭移除，或您的账号被管理员酌情（暂时）停用。若发现任何此类行为，请向管理员举报。",
             "locked": "锁定",
             "lockedText": "锁定",
             "newGame": "新游戏",
             "play": "开始游戏",
             "population": "居民",
             "slot": "插槽",
+            "suspended": "账户暂停",
             "title": "选择保存槽位",
             "unlockHint1000": "人口达1000时解锁",
             "unlockHint10000": "人口达到10,000时解锁",
@@ -550,6 +600,17 @@
             "population": "人口",
             "resources": "资源",
             "title": "排名"
+        },
+        "production": {
+            "title": "制作概览",
+            "noBuildings": "你目前还没有任何可升级的生产建筑。",
+            "buildingCount": "{{count}} 建筑物",
+            "totalRate": "总评分",
+            "setAll": "全部设置",
+            "applyAll": "应用全部",
+            "updated": "更新",
+            "storage": "存储",
+            "throttleHelp": "该建筑类型因必需资源告急而被限速。生产效率已自动降低，以防止资源消耗超出储备量。"
         },
         "save": {
             "download": "下载文件",
@@ -648,7 +709,12 @@
         "upgrade": "升级至{{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "通用",
+            "performance": "性能"
+        },
         "animations": "动画效果",
+        "accessibleColors": "高对比度",
         "fullscreen": "全屏模式",
         "bushDensity": "灌木密度",
         "clearTileCache": "清除缓存数据",
@@ -699,6 +765,7 @@
         "market": "欢迎来到市场！这里汇集了其他玩家想要买卖的所有物品，更重要的是——它们的交易价格！当你完成他人订单时，需支付运输费用。因此若对方距离遥远，交易可能得不偿失，甚至导致成本超过对方愿意支付的价格。",
         "orders": "发布交易指令！向其他玩家宣告你想买卖的商品及价格。这将决定你获得或支付的金额。请注意：运输费用需由买家承担。因此低价购买可能因对方运费过高而无法成交。",
         "popup": "此弹窗将显示该建筑物的全部信息。您可在此调整建筑物的关键参数，甚至进行移动操作。该功能仅在建筑模式下可用。",
+        "production": "此面板为您提供所有生产建筑的概览。您可以单独调整每栋建筑的生产速率。建筑按类型分组，您可一目了然地查看每组建筑的总资源产量。",
         "storage": "此处可调整该建筑的存储容量。建筑拥有固定容量及可容纳的货物数量，您可通过修改存储比例来优化其适应需求。"
     },
     "tooltip": {

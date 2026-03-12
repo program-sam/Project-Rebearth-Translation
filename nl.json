@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Twijfelachtige werkregels",
             "crampedQuarters": "Net als sardientjes!",
             "intensiveFarming": "Intensieve landbouw",
-            "newTownBoost": "Een nieuw begin!"
+            "newTownBoost": "Een nieuw begin!",
+            "foodShortage": "Voedseltekort"
         },
         "unlock": "Ontgrendelen"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Terug naar menu",
         "lost": "Verbinding verbroken",
         "message": "De server is tijdelijk niet bereikbaar. Dit kan te wijten zijn aan onderhoud of een herstart. Je online voortgang is veilig, het spel wordt automatisch hervat zodra de verbinding is hersteld.",
-        "reconnecting": "Opnieuw verbinden"
+        "reconnecting": "Opnieuw verbinden",
+        "suspended": "Account opgeschort"
     },
     "controls": {
         "build": {
             "addMorePoints": "Meer punten toevoegen",
-            "areaLimitExceeded": "Gebiedsgrenzen overschreden: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Ho, ho! Dat is te groot! {{size}} (max. {{limit}})",
+            "areaTooSmall": "Dat is niet veel... Maak een grotere vorm: {{size}} (min{{limit}}e)",
+            "cooldown": "Wacht even",
             "costs": "Kosten:",
             "invalidLocation": "Ongeldige locatie",
             "mustBeNear": "Moet in de buurt zijn van {{parent}}",
+            "notEnoughPop": "Onvoldoende bevolking",
             "notEnoughResources": "Onvoldoende middelen",
             "tooHigh": "Zoom in"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Meer punten toevoegen",
+            "areaTooLarge": "Dat is een beetje te ambitieus! Kies een kleiner gebied: {{size}} (max{{limit}}",
+            "areaTooSmall": "Kom op! Wees wat ambitieuzer! Verken een groter gebied: {{size}} (min{{limit}}",
             "calculating": "Bezig met berekenen...",
             "duration": "Duur",
             "expedition": "Expeditie",
             "finished": "Klaar!",
             "food": "Voeding",
             "knowledge": "Kennis",
+            "invalidArea": "Hier kon geen geldig verkenningsgebied worden gevonden.",
             "population": "Bevolking",
             "timeLeft": "Resterende tijd",
             "title": "Verkenningkosten"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Oké",
+        "dontShowAgain": "Niet meer weergeven",
         "consequences": "Effecten",
+        "buildings_affected": "Betrokken gebouwen",
+        "destroyed": "Vernietigd",
+        "shut_down": "Afsluiten",
+        "unlocked": "Ontgrendeld",
         "remaining": "{{count}} Resterend",
+        "throttleWarning": {
+            "title": "Voorraad bijna op!",
+            "description": "Je voorraad '{{resource}}' is gedaald, terwijl sommige gebouwen deze grondstof nog steeds verbruiken. Om te voorkomen dat je grondstof opraakt, is het verbruik van gebouwen die deze grondstof verbruiken automatisch beperkt. Hun productie is verminderd en zal blijven verminderen naarmate je grondstof opraakt.",
+            "why": "Waarom gebeurt dit?",
+            "whyExplanation": "Wanneer een grondstof onder de 10 komt en sneller wordt verbruikt dan geproduceerd, vertragen je gebouwen hun productie om minder van de grondstof te gebruiken. Dit voorkomt dat je economie volledig instort.",
+            "howToFix": "Hoe dit te verhelpen",
+            "howToFixExplanation": "Bouw meer productiegebouwen voor deze grondstof, verminder het verbruik door gebouwen die deze grondstof gebruiken te verwijderen of te pauzeren, of ruil deze grondstof op de markt. Zodra je saldo positief wordt of je voorraad groter wordt dan 10 eenheden, zullen de gebouwen weer op volle kracht gaan produceren.",
+            "food": {
+                "title": "Je volk gaat verhongeren!",
+                "description": "Je voedselvoorraad raakt op. Je volk heeft voedsel nodig om te overleven.",
+                "whyExplanation": "In tegenstelling tot andere hulpbronnen kan het voedselverbruik van huizen niet automatisch worden verminderd. Wanneer het voedsel opraakt, kunnen wanhopige mensen gaan stelen uit uw voorraad.",
+                "howToFixExplanation": "Bouw meer boerderijen, bakkerijen, visserijen of andere gebouwen voor voedselproductie. Je kunt ook voedsel kopen op de markt. Zorg ervoor dat je de voedselproductie verhoogt of voedsel koopt op de markt, anders nemen je mensen het heft in eigen handen."
+            },
+            "coin": {
+                "title": "Je hebt bijna geen munten meer!",
+                "description": "Je muntenvoorraad raakt op. Sommige gebouwen zullen worden afgeremd, maar niet alle gebouwen die munten verbruiken kunnen worden vertraagd.",
+                "whyExplanation": "Sommige gebouwen die munten kosten, zoals torens, kunnen niet worden beperkt. Als je muntenvoorraad te laag wordt, zullen torens verslechteren en uiteindelijk worden vernietigd. Andere gebouwen die munten verbruiken, worden wel beperkt, maar dat is mogelijk niet voldoende om de achteruitgang te stoppen.",
+                "howToFixExplanation": "Verhoog je inkomsten door grondstoffen op de markt te verhandelen, meer gebouwen te bouwen die geld opleveren of kosten te besparen door dure gebouwen te verwijderen."
+            },
+            "wood": {
+                "title": "Houtvoorraad raakt op!",
+                "description": "Je houtvoorraad raakt op. Sommige gebouwen zullen worden afgeremd, maar huizen verbruiken ook hout en kunnen niet worden afgeremd.",
+                "whyExplanation": "Hoewel de meeste houtverbruikende gebouwen kunnen worden beperkt, verbruiken huizen altijd hout en kan dit verbruik niet worden verminderd. Als je houtvoorraad tot nul daalt, kunnen wanhopige mensen gaan stelen uit je opslagplaats.",
+                "howToFixExplanation": "Produceer meer hout of koop het op de markt, anders zullen je mensen het heft in eigen handen nemen."
+            }
+        },
         "titles": {
             "food_shortage": "De mensen hebben honger.",
             "strike": "Aanval",
             "celebration": "Een cadeau voor jou",
             "productivity_boom": "Kom op!",
-            "expedition_found": "De expeditie keert terug!",
+            "expedition_return": "De expeditie keert terug!",
+            "artifact_found": "Een vondst!",
             "animal_unlock": "Wel, wel, wel... wat hebben we hier?",
             "bankruptcy": "Failliet!",
+            "outside_territory": "Gebouw verloren!",
             "raid": "Je goederen zijn gestolen!",
+            "accident": "Arbeidsongeval",
             "trade": "Afgesproken!",
             "player_message": "Je hebt post!"
         },
@@ -135,10 +177,13 @@
             "strike": "De mensen zijn niet tevreden! Wat je ook doet, ze vinden het niet leuk. Zorg ervoor dat je mensen tevreden blijven om te voorkomen dat gebouwen worden gesloten.",
             "celebration": "De mensen zijn blij! Wat je ook doet, ga ermee door! Als klein cadeautje hebben ze allemaal wat spullen voor je verzameld, zodat je kunt doorgaan met het bouwen van deze geweldige stad. Wat schattig!",
             "productivity_boom": "De mensen zijn dolenthousiast! Ze zijn gek op je en hebben met plezier overuren voor je gemaakt. Daardoor hebben ze van alles net iets meer kunnen produceren. Ze willen dat deze stad een succes wordt, weet je!",
-            "expedition_found": "Je expeditie is teruggekeerd met waardevolle grondstoffen en kennis! Dit zal de ontwikkeling en onderzoeksinspanningen van je stad ten goede komen. Hun logboek bevat echter een interessante vermelding:",
+            "expedition_return": "Je expeditie is teruggekeerd met waardevolle grondstoffen! Deze materialen zullen helpen bij de ontwikkeling van je stad.",
+            "artifact_found": "Je expeditie is teruggekeerd met een interessante vondst! Hun logboek bevat een interessante vermelding:",
             "animal_unlock": "Wat hebben we hier gevonden? Je expeditie is teruggekeerd met een verrassend tam dier. Het lijkt liever in je stad te willen wonen dan in de wildernis. Het zou onbeleefd zijn om het nu terug te sturen, nietwaar?",
             "bankruptcy": "Je hebt gewoon geen geld! Een toren is ingestort. Torens die je hebt gebouwd, zullen verslechteren en worden vernietigd als je ze niet met voldoende geld onderhoudt.",
+            "outside_territory": "Een gebouw buiten je grondgebied is vernietigd! Zorg ervoor dat je gebouwen binnen je grondgebied blijven, anders kunnen ze verloren gaan.",
             "raid": "Je had je goederen beter moeten opbergen! Ze lagen voor het grijpen en onbekende dieven hebben een deel van je voorraad meegenomen.",
+            "accident": "Er heeft zich een arbeidsongeval voorgedaan! Een gebouw is gesloten vanwege onveilige werkomstandigheden.",
             "trade": "Iemand heeft (een deel van) je handelsorder uitgevoerd.",
             "player_message": "Er is een boodschapper uit een andere stad aangekomen met een bericht voor jou."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Tavern",
                 "tent": "Tent",
                 "tower": "Toren",
+                "towers": "Torens",
                 "town_hall": "Gemeentehuis",
                 "tree": "Boomstructuur",
                 "university": "Universiteit",
                 "museum": "Museum",
                 "warehouse": "Magazijn",
-                "water_tower": "Watertoren",
+                "water_tower": "Sea Tower",
                 "windmill": "Windmill",
                 "windmill_upgraded": "Verbeterde windmolen",
                 "woodcutter": "Houthakker",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Dubbelklik om knooppunten te plaatsen",
+            "fineRotate": "Fijne rotatie",
             "multiPlace": "Blijf plaatsen",
             "rotate": "Draaien",
             "restriction": "Niet-bebouwbaar gebied"
@@ -437,6 +484,7 @@
             "serverOffline": "Kan geen verbinding maken met de server. De server is mogelijk overbelast of tijdelijk buiten gebruik vanwege onderhoud. Kijk op Discord voor de laatste status.",
             "settings": "Instellingen",
             "subtitle": "Dit is een vroege versie van Project Rebearth. Neem contact met ons op als je tijdens het spelen problemen ondervindt.",
+            "suspended": "Uw account is opgeschort. Reden: {{reason}}",
             "demoSubtitle": "Dit is de demo van Project Rebearth. Alleen de sandbox-stedenbouwgame is beschikbaar. Voor het spelen op de multiplayer-globe met resourcebeheer moet je de volledige versie aanschaffen.",
             "demoRestriction1": "Achter deze knop gaat de enorme online multiplayerwereld van Project Rebearth schuil. Je bevindt je echter in de demo en alleen de sandbox-modus zonder resourcebeheer is beschikbaar.",
             "demoRestriction2": "In de sandbox-modus kun je nog steeds geweldige kaarten maken, deze in hoge resolutie exporteren en ervaren hoe een spelwereld op schaal 1:1 aanvoelt.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Geen ongepaste taal of symbolen. Willekeurig gegenereerde namen kunnen grappig zijn, maar door gebruikers ingediende input mag niet ongepast zijn.",
             "guidelinesRule3": "Gebruik geen bots, exploits of automatiseringstools. Dit spel is gemaakt door mensen, om door mensen te worden gespeeld. Bots horen hier niet thuis.",
             "guidelinesRule4": "Bedreigingen aan het adres van andere gebruikers zijn verboden.",
-            "guidelinesOutro": "Als je twijfelt of iets is toegestaan, is het waarschijnlijk niet toegestaan. Als je je niet aan deze richtlijnen houdt, kan dit ertoe leiden dat gebouwen worden verwijderd, steden worden verwijderd of je account (tijdelijk) wordt opgeschort, naar goeddunken van de moderators.",
+            "guidelinesRule5": "Gebruik geen meerdere accounts om een van bovenstaande handelingen uit te voeren of om misbruik te maken van de spelmechanismen.",
+            "guidelinesOutro": "Als je twijfelt of iets is toegestaan, is dat waarschijnlijk niet het geval. Als je je niet aan deze richtlijnen houdt, kan dit ertoe leiden dat gebouwen worden verwijderd, steden worden verwijderd of je account (tijdelijk) wordt opgeschort, naar goeddunken van de moderators. Als je een van deze gedragingen ziet, meld dit dan aan de moderators.",
             "locked": "Vergrendeld",
             "lockedText": "Vergrendeld",
             "newGame": "Nieuw spel",
             "play": "Spelen",
             "population": "Inwoners",
             "slot": "Slot",
+            "suspended": "Account opgeschort",
             "title": "Selecteer een opslagplaats",
             "unlockHint1000": "Ontgrendelen bij 1000 inwoners",
             "unlockHint10000": "Ontgrendelen bij 10.000 inwoners",
@@ -550,6 +600,17 @@
             "population": "Bevolking",
             "resources": "Bronnen",
             "title": "Ranglijst"
+        },
+        "production": {
+            "title": "Productieoverzicht",
+            "noBuildings": "Je hebt nog geen schaalbare productiegebouwen.",
+            "buildingCount": "{{count}} gebouw(en)",
+            "totalRate": "Totaalcijfer",
+            "setAll": "Alles instellen",
+            "applyAll": "Alles toepassen",
+            "updated": "Bijgewerkt",
+            "storage": "Opslag",
+            "throttleHelp": "Dit type gebouw wordt afgeremd omdat een benodigde grondstof bijna op is. De productie wordt automatisch verminderd om te voorkomen dat de grondstoffen negatief worden."
         },
         "save": {
             "download": "Bestand downloaden",
@@ -648,7 +709,12 @@
         "upgrade": "Upgrade naar {{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "Algemeen",
+            "performance": "Prestaties"
+        },
         "animations": "Animaties",
+        "accessibleColors": "Hoog contrast",
         "fullscreen": "Volledig scherm",
         "bushDensity": "Bossdichtheid",
         "clearTileCache": "Cachegegevens wissen",
@@ -699,6 +765,7 @@
         "market": "Welkom op de markt! Bekijk alle dingen die andere spelers willen kopen of verkopen, en nog belangrijker, tegen welke prijs! Je betaalt transportkosten wanneer je de bestelling van iemand anders uitvoert. Als ze ver weg zijn, is het misschien niet de moeite waard, of kost het zelfs meer dan wat ze bereid zijn te betalen.",
         "orders": "Plaats je bestellingen! Laat andere spelers weten wat je wilt kopen of verkopen, en tegen welke prijs. Dit is wat je ontvangt of betaalt. Houd er rekening mee dat anderen voor het transport betalen. Dus iets voor een lage prijs kopen werkt misschien niet als de verzendkosten van andere spelers te hoog zijn.",
         "popup": "Deze pop-up toont u alle informatie over dit gebouw. Hier kunt u belangrijke parameters van het gebouw wijzigen of zelfs verplaatsen. Dit is alleen beschikbaar wanneer u zich in de bouwmodus bevindt.",
+        "production": "Dit paneel geeft u een overzicht van al uw productiegebouwen. U kunt de productiesnelheid van elk gebouw afzonderlijk aanpassen. Gebouwen zijn gegroepeerd op type en u kunt in één oogopslag de totale grondstofproductie van elke groep zien.",
         "storage": "Hier kun je instellen hoeveel dit gebouw kan opslaan. Het heeft een bepaalde capaciteit en kan een bepaalde hoeveelheid goederen bevatten. Je kunt de verhouding aanpassen om het aan je behoeften te optimaliseren."
     },
     "tooltip": {

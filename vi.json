@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Quy tắc làm việc đáng ngờ",
             "crampedQuarters": "Giống như cá mòi!",
             "intensiveFarming": "Nông nghiệp tập trung",
-            "newTownBoost": "Khởi đầu mới!"
+            "newTownBoost": "Khởi đầu mới!",
+            "foodShortage": "Thiếu hụt lương thực"
         },
         "unlock": "Mở khóa"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Trở lại menu",
         "lost": "Mất kết nối",
         "message": "Máy chủ hiện không thể truy cập được. Điều này có thể do bảo trì hoặc khởi động lại. Tiến trình chơi trực tuyến của bạn vẫn an toàn, trò chơi sẽ tự động tiếp tục khi kết nối được khôi phục.",
-        "reconnecting": "Kết nối lại"
+        "reconnecting": "Kết nối lại",
+        "suspended": "Tài khoản bị tạm ngưng"
     },
     "controls": {
         "build": {
             "addMorePoints": "Thêm điểm",
-            "areaLimitExceeded": "Vượt quá giới hạn vùng: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Chờ đã! Điều đó quá lớn! {{size}} (tối đa {{limit}})",
+            "areaTooSmall": "Điều đó không nhiều... Tạo một hình dạng lớn hơn: {{size}} (tối thiểu {{limit}})",
+            "cooldown": "Chờ một lát",
             "costs": "Chi phí:",
             "invalidLocation": "Vị trí không hợp lệ",
             "mustBeNear": "Phải nằm gần {{parent}}",
+            "notEnoughPop": "Dân số không đủ.",
             "notEnoughResources": "Không đủ tài nguyên",
             "tooHigh": "Zoom vào gần hơn"
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Thêm điểm",
+            "areaTooLarge": "Điều đó có vẻ hơi tham vọng quá! Hãy chọn một khu vực nhỏ hơn: {{size}} (tối đa {{limit}})",
+            "areaTooSmall": "Nào! Hãy tham vọng hơn một chút! Khám phá khu vực rộng lớn hơn: {{size}} (tối thiểu {{limit}})",
             "calculating": "Đang tính toán...",
             "duration": "Thời lượng",
             "expedition": "Expedition",
             "finished": "Hoàn thành!",
             "food": "Thực phẩm",
             "knowledge": "Kiến thức",
+            "invalidArea": "Không tìm thấy khu vực khám phá hợp lệ nào ở đây.",
             "population": "Dân số",
             "timeLeft": "Thời gian còn lại",
             "title": "Chi phí khám phá"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Được rồi",
+        "dontShowAgain": "Không hiển thị lại",
         "consequences": "Hiệu ứng",
+        "buildings_affected": "Các tòa nhà bị ảnh hưởng",
+        "destroyed": "Bị phá hủy",
+        "shut_down": "Tắt máy",
+        "unlocked": "Đã mở khóa",
         "remaining": "{{count}} Còn lại",
+        "throttleWarning": {
+            "title": "Nguồn lực sắp cạn kiệt!",
+            "description": "Lượng cung cấp Năng lượng Tinh thần ({{resource}}) của bạn đã giảm trong khi một số công trình vẫn tiếp tục tiêu thụ nó. Để ngăn chặn nguồn tài nguyên của bạn cạn kiệt, các công trình tiêu thụ nó đã được tự động giới hạn. Sản lượng của chúng sẽ giảm dần và tiếp tục giảm khi nguồn tài nguyên của bạn cạn kiệt.",
+            "why": "Tại sao lại xảy ra điều này?",
+            "whyExplanation": "Khi một tài nguyên giảm xuống dưới 10 và bị tiêu thụ nhanh hơn tốc độ sản xuất, các công trình của bạn sẽ giảm tốc độ sản xuất để sử dụng ít tài nguyên hơn. Điều này giúp ngăn chặn nền kinh tế của bạn sụp đổ hoàn toàn.",
+            "howToFix": "Cách khắc phục",
+            "howToFixExplanation": "Xây dựng thêm các công trình sản xuất cho tài nguyên này, giảm tiêu thụ bằng cách loại bỏ hoặc tạm dừng các công trình sử dụng nó, hoặc giao dịch để có được nó trên thị trường. Khi tỷ lệ của bạn trở nên dương hoặc nguồn cung vượt quá 10 đơn vị, các công trình sẽ trở lại sản xuất đầy đủ.",
+            "food": {
+                "title": "Người dân của bạn đang đói!",
+                "description": "Nguồn cung cấp thực phẩm của bạn đang cạn kiệt. Người dân của bạn cần thực phẩm để sinh tồn.",
+                "whyExplanation": "Khác với các nguồn tài nguyên khác, việc tiêu thụ thực phẩm từ các ngôi nhà không thể được giảm tự động. Khi thực phẩm cạn kiệt, những người tuyệt vọng có thể bắt đầu trộm cắp từ kho của bạn.",
+                "howToFixExplanation": "Xây dựng thêm các trang trại, lò bánh, nhà máy chế biến thủy sản hoặc các công trình sản xuất thực phẩm khác. Bạn cũng có thể giao dịch thực phẩm trên thị trường. Đảm bảo tăng sản lượng thực phẩm, hoặc mua trên thị trường, nếu không người dân sẽ tự mình giải quyết vấn đề."
+            },
+            "coin": {
+                "title": "Hết xu!",
+                "description": "Kho dự trữ tiền xu của bạn đang cạn kiệt. Trong khi một số tòa nhà sẽ bị giới hạn, không phải tất cả các tòa nhà tiêu tốn tiền xu đều có thể bị giảm tốc độ.",
+                "whyExplanation": "Một số công trình tiêu tốn tiền xu, như tháp, không thể bị giới hạn. Nếu số tiền xu của bạn giảm xuống quá thấp, các tháp sẽ bị hư hỏng và cuối cùng bị phá hủy. Các công trình tiêu tốn tiền xu khác sẽ bị giới hạn, nhưng điều đó có thể không đủ để ngăn chặn sự suy giảm.",
+                "howToFixExplanation": "Tăng thu nhập tiền xu bằng cách giao dịch tài nguyên trên thị trường, xây dựng thêm các công trình tạo ra tiền xu, hoặc giảm chi phí bằng cách loại bỏ các công trình tốn kém."
+            },
+            "wood": {
+                "title": "Nguồn gỗ đang cạn kiệt!",
+                "description": "Nguồn gỗ của bạn đang cạn kiệt. Một số công trình sẽ bị giới hạn sản lượng, nhưng nhà ở cũng tiêu thụ gỗ và không thể bị giảm tốc độ.",
+                "whyExplanation": "Trong khi hầu hết các công trình tiêu thụ gỗ có thể được điều chỉnh, nhà ở luôn tiêu thụ gỗ và không thể giảm bớt. Nếu nguồn cung gỗ của bạn giảm xuống còn zero, những người tuyệt vọng có thể bắt đầu trộm cắp từ kho của bạn.",
+                "howToFixExplanation": "Sản xuất thêm gỗ hoặc mua trên thị trường, nếu không người dân của bạn sẽ tự mình hành động."
+            }
+        },
         "titles": {
             "food_shortage": "Người dân đang đói.",
             "strike": "Tấn công",
             "celebration": "Một món quà dành cho bạn",
             "productivity_boom": "Hãy bắt đầu!",
-            "expedition_found": "Cuộc thám hiểm trở lại!",
+            "expedition_return": "Cuộc thám hiểm trở lại!",
+            "artifact_found": "Một phát hiện!",
             "animal_unlock": "Ồ, ồ, ồ... đây là gì nhỉ?",
             "bankruptcy": "Phá sản!",
+            "outside_territory": "Tòa nhà bị phá hủy!",
             "raid": "Hàng hóa của bạn đã bị đánh cắp!",
+            "accident": "Tai nạn lao động",
             "trade": "Thỏa thuận!",
             "player_message": "Bạn có thư mới!"
         },
@@ -135,10 +177,13 @@
             "strike": "Người dân không hài lòng! Dù bạn đang làm gì, họ cũng không thích. Hãy đảm bảo người dân luôn hài lòng để tránh các tòa nhà bị đóng cửa.",
             "celebration": "Mọi người đều vui vẻ! Dù bạn đang làm gì, hãy tiếp tục làm nhé! Như một món quà nhỏ, mọi người đã thu thập một số vật phẩm để bạn tiếp tục xây dựng thị trấn tuyệt vời này. Thật đáng yêu!",
             "productivity_boom": "Mọi người đang rất phấn khích! Họ yêu mến bạn vô cùng và sẵn sàng làm thêm giờ để giúp bạn. Nhờ vậy, họ đã sản xuất được nhiều hơn một chút mọi thứ. Họ muốn thị trấn này thành công, bạn biết đấy!",
-            "expedition_found": "Cuộc thám hiểm của bạn đã trở về với những tài nguyên và kiến thức quý giá! Điều này sẽ mang lại lợi ích lớn cho sự phát triển và nỗ lực nghiên cứu của thị trấn bạn. Tuy nhiên, nhật ký của họ có một mục ghi chép thú vị:",
+            "expedition_return": "Đội thám hiểm của bạn đã trở về với những tài nguyên quý giá! Những vật liệu này sẽ giúp thúc đẩy sự phát triển của thị trấn của bạn.",
+            "artifact_found": "Đội thám hiểm của bạn đã trở về với một phát hiện thú vị! Sổ nhật ký của họ có một mục ghi chép thú vị:",
             "animal_unlock": "Chúng ta đã tìm thấy gì ở đây? Đoàn thám hiểm của bạn đã trở về với một con vật khá hiền lành. Có vẻ như nó thích sống trong thị trấn của bạn hơn là trong rừng hoang dã. Sẽ thật bất lịch sự nếu gửi nó trở lại bây giờ, phải không?",
             "bankruptcy": "Bạn không có đủ tiền! Một tháp đã bị hư hỏng. Các tháp mà bạn đã xây dựng sẽ bị hư hỏng và phá hủy nếu bạn không duy trì chúng bằng đủ tiền.",
+            "outside_territory": "Một tòa nhà nằm ngoài lãnh thổ đã bị phá hủy! Hãy đảm bảo giữ các tòa nhà của bạn trong lãnh thổ của mình, nếu không chúng có thể bị mất.",
             "raid": "Bạn nên cất giữ hàng hóa của mình cẩn thận hơn! Chúng quá dễ dàng bị lấy cắp, và một số tên trộm không rõ danh tính đã lấy đi một phần tài nguyên của bạn.",
+            "accident": "Một tai nạn lao động đã xảy ra! Một tòa nhà đã bị đóng cửa do điều kiện làm việc không an toàn.",
             "trade": "Ai đó đã hoàn thành (một phần) đơn đặt hàng của bạn.",
             "player_message": "Một người đưa tin đã đến từ một thị trấn khác với một thông điệp dành cho bạn."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Quán rượu",
                 "tent": "Lều",
                 "tower": "Tháp",
+                "towers": "Tháp",
                 "town_hall": "Tòa thị chính",
                 "tree": "Cây",
                 "university": "Trường đại học",
                 "museum": "Bảo tàng",
                 "warehouse": "Kho hàng",
-                "water_tower": "Tháp nước",
+                "water_tower": "Tháp Biển",
                 "windmill": "Cối xay gió",
                 "windmill_upgraded": "Cải tiến cối xay gió",
                 "woodcutter": "Người thợ chặt gỗ",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Nhấp đúp để đặt các nút.",
+            "fineRotate": "Xoay chính xác",
             "multiPlace": "Tiếp tục đặt",
             "rotate": "Xoay",
             "restriction": "Khu vực không thể xây dựng"
@@ -437,6 +484,7 @@
             "serverOffline": "Không thể kết nối với máy chủ. Máy chủ có thể đang bị quá tải hoặc tạm thời ngừng hoạt động để bảo trì. Vui lòng kiểm tra Discord để cập nhật tình trạng mới nhất.",
             "settings": "Cài đặt",
             "subtitle": "Đây là phiên bản thử nghiệm ban đầu của Project Rebearth. Vui lòng liên hệ với chúng tôi nếu bạn gặp bất kỳ vấn đề nào trong quá trình chơi.",
+            "suspended": "Tài khoản của bạn đã bị tạm ngưng. Lý do: {{reason}}",
             "demoSubtitle": "Đây là bản demo của Project Rebearth. Chỉ chế độ xây dựng thành phố sandbox được kích hoạt. Để chơi trên bản đồ đa người chơi với quản lý tài nguyên, hãy tải bản phát hành đầy đủ.",
             "demoRestriction1": "Phía sau nút này là thế giới trực tuyến đa người chơi khổng lồ của Project Rebearth. Tuy nhiên, bạn đang ở trong phiên bản demo và chỉ có chế độ sandbox mà không có quản lý tài nguyên.",
             "demoRestriction2": "Chế độ sandbox vẫn cho phép bạn tạo ra những bản đồ tuyệt vời, xuất chúng ở độ phân giải cao và trải nghiệm cảm giác của một thế giới game tỷ lệ 1:1.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Không sử dụng ngôn ngữ hoặc biểu tượng không phù hợp. Tên được tạo ngẫu nhiên có thể hài hước, nhưng nội dung do người dùng nhập vào có thể không phù hợp.",
             "guidelinesRule3": "Không sử dụng bot, lỗ hổng hoặc công cụ tự động hóa. Trò chơi này được tạo ra bởi con người, để con người thưởng thức. Bot không có chỗ đứng ở đây.",
             "guidelinesRule4": "Việc đe dọa người dùng khác bị cấm.",
-            "guidelinesOutro": "Nếu bạn nghi ngờ liệu một điều gì đó có được phép hay không, thì có lẽ nó không được phép. Việc không tuân thủ các hướng dẫn này có thể dẫn đến việc các công trình bị xóa, thành phố bị loại bỏ hoặc tài khoản của bạn (tạm thời) bị đình chỉ theo quyết định của các moderator.",
+            "guidelinesRule5": "Không sử dụng hoặc thao tác với nhiều tài khoản để thực hiện bất kỳ hành động nào nêu trên, hoặc lợi dụng cơ chế của trò chơi.",
+            "guidelinesOutro": "Nếu bạn nghi ngờ liệu một hành động nào đó có được phép hay không, thì có lẽ nó không được phép. Việc không tuân thủ các hướng dẫn này có thể dẫn đến việc các công trình bị xóa, thành phố bị loại bỏ hoặc tài khoản của bạn (tạm thời) bị khóa theo quyết định của các moderator. Nếu bạn phát hiện bất kỳ hành vi nào như vậy, vui lòng báo cáo cho các moderator.",
             "locked": "Khóa",
             "lockedText": "Khóa",
             "newGame": "Trò chơi mới",
             "play": "Chơi",
             "population": "Người dân",
             "slot": "Slot",
+            "suspended": "Tài khoản bị tạm ngưng",
             "title": "Chọn ô lưu trữ.",
             "unlockHint1000": "Mở khóa khi đạt 1.000 cư dân.",
             "unlockHint10000": "Mở khóa khi đạt 10.000 cư dân.",
@@ -550,6 +600,17 @@
             "population": "Dân số",
             "resources": "Tài nguyên",
             "title": "Xếp hạng"
+        },
+        "production": {
+            "title": "Tổng quan về sản xuất",
+            "noBuildings": "Bạn chưa có bất kỳ công trình sản xuất có thể mở rộng nào.",
+            "buildingCount": "{{count}} Công trình (các công trình)",
+            "totalRate": "Tỷ lệ tổng cộng",
+            "setAll": "Đặt tất cả",
+            "applyAll": "Áp dụng tất cả",
+            "updated": "Đã cập nhật",
+            "storage": "Lưu trữ",
+            "throttleHelp": "Loại công trình này đang bị giới hạn sản xuất vì một tài nguyên cần thiết đang cạn kiệt. Sản xuất sẽ tự động giảm để tránh tình trạng tài nguyên bị âm."
         },
         "save": {
             "download": "Tải xuống tệp",
@@ -648,7 +709,12 @@
         "upgrade": "Nâng cấp lên phiên bản{{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "Tổng quát",
+            "performance": "Hiệu suất"
+        },
         "animations": "Hoạt hình",
+        "accessibleColors": "Độ tương phản cao",
         "fullscreen": "Toàn màn hình",
         "bushDensity": "Độ dày bụi rậm",
         "clearTileCache": "Xóa dữ liệu đã lưu trong bộ nhớ cache.",
@@ -699,6 +765,7 @@
         "market": "Chào mừng đến với thị trường! Hãy xem tất cả những thứ mà người chơi khác muốn mua hoặc bán, và quan trọng hơn, với giá bao nhiêu! Bạn sẽ phải trả chi phí vận chuyển khi hoàn thành đơn hàng của người khác. Vì vậy, nếu họ ở xa, có thể không đáng để làm, hoặc thậm chí chi phí có thể cao hơn mức họ sẵn sàng trả.",
         "orders": "Đặt lệnh mua/bán! Thông báo cho các người chơi khác về những gì bạn muốn mua hoặc bán, và với giá bao nhiêu. Đây là những gì bạn sẽ nhận được hoặc phải trả. Hãy nhớ rằng người khác sẽ phải trả phí vận chuyển. Vì vậy, việc mua một thứ gì đó với giá thấp có thể không hiệu quả nếu chi phí vận chuyển của người chơi khác quá cao.",
         "popup": "Cửa sổ popup này hiển thị tất cả thông tin về tòa nhà này. Tại đây, bạn có thể thay đổi các thông số chính của tòa nhà hoặc thậm chí di chuyển chúng. Tính năng này chỉ khả dụng khi bạn ở chế độ xây dựng.",
+        "production": "Bảng điều khiển này cung cấp cho bạn tổng quan về tất cả các công trình sản xuất của bạn. Bạn có thể điều chỉnh tốc độ sản xuất của từng công trình một cách riêng biệt. Các công trình được phân loại theo loại, và bạn có thể xem tổng sản lượng tài nguyên của từng nhóm chỉ với một cái nhìn.",
         "storage": "Tại đây, bạn có thể điều chỉnh dung lượng lưu trữ của tòa nhà này. Nó có một dung lượng nhất định và có thể chứa một lượng hàng hóa nhất định. Bạn có thể thay đổi tỷ lệ của nó để tối ưu hóa cho nhu cầu của mình."
     },
     "tooltip": {

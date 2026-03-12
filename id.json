@@ -63,7 +63,8 @@
             "dubiousWorkingRules": "Aturan Kerja yang Meragukan",
             "crampedQuarters": "Seperti sarden!",
             "intensiveFarming": "Pertanian Intensif",
-            "newTownBoost": "Awal yang Baru!"
+            "newTownBoost": "Awal yang Baru!",
+            "foodShortage": "Kekurangan Pangan"
         },
         "unlock": "Buka kunci"
     },
@@ -76,15 +77,19 @@
         "backToMenu": "Kembali ke Menu",
         "lost": "Koneksi terputus",
         "message": "Server saat ini tidak dapat diakses sementara. Hal ini mungkin disebabkan oleh pemeliharaan atau restart. Kemajuan permainan Anda secara online aman, permainan akan dilanjutkan secara otomatis setelah koneksi pulih.",
-        "reconnecting": "Menghubungkan kembali"
+        "reconnecting": "Menghubungkan kembali",
+        "suspended": "Akun Ditangguhkan"
     },
     "controls": {
         "build": {
             "addMorePoints": "Tambahkan lebih banyak poin.",
-            "areaLimitExceeded": "Batasan area terlampaui: {{size}} {{relation}} {{limit}}",
+            "areaTooLarge": "Wah, itu terlalu besar! {{size}} (maksimal {{limit}})",
+            "areaTooSmall": "Itu tidak banyak... Buat bentuk yang lebih besar: {{size}} (min {{limit}})",
+            "cooldown": "Tunggu sebentar",
             "costs": "Biaya:",
             "invalidLocation": "Lokasi tidak valid",
             "mustBeNear": "Harus berada di dekat {{parent}}",
+            "notEnoughPop": "Populasi tidak cukup.",
             "notEnoughResources": "Sumber daya tidak mencukupi",
             "tooHigh": "Perbesar tampilan."
         },
@@ -93,12 +98,15 @@
         "confirm": "✓",
         "explore": {
             "addMorePoints": "Tambahkan lebih banyak poin.",
+            "areaTooLarge": "Itu terlalu ambisius! Pilih area yang lebih kecil: {{size}} (maks{{limit}})",
+            "areaTooSmall": "Ayo! Jadilah lebih ambisius! Jelajahi area yang lebih luas: {{size}} (min {{limit}})",
             "calculating": "Menghitung...",
             "duration": "Durasi",
             "expedition": "Ekspedisi",
             "finished": "Selesai!",
             "food": "Makanan",
             "knowledge": "Pengetahuan",
+            "invalidArea": "Tidak ditemukan area eksplorasi yang valid di sini.",
             "population": "Populasi",
             "timeLeft": "Waktu tersisa",
             "title": "Biaya Eksplorasi"
@@ -116,17 +124,51 @@
     },
     "events": {
         "confirm": "Oke",
+        "dontShowAgain": "Jangan tampilkan lagi.",
         "consequences": "Efek",
+        "buildings_affected": "Bangunan yang Terkena Dampak",
+        "destroyed": "Hancur",
+        "shut_down": "Matikan",
+        "unlocked": "Terkunci",
         "remaining": "{{count}} Sisa",
+        "throttleWarning": {
+            "title": "Sumber daya hampir habis!",
+            "description": "Pasokan sumber daya Anda ({{resource}}) telah berkurang, sementara beberapa bangunan masih mengonsumsinya. Untuk mencegah sumber daya Anda habis, bangunan yang mengonsumsinya telah secara otomatis dibatasi. Produksi mereka dikurangi dan akan terus berkurang seiring dengan berkurangnya sumber daya Anda.",
+            "why": "Mengapa hal ini terjadi?",
+            "whyExplanation": "Ketika sumber daya turun di bawah 10 dan dikonsumsi lebih cepat daripada diproduksi, bangunan Anda akan memperlambat produksi mereka untuk menggunakan lebih sedikit sumber daya. Hal ini mencegah ekonomi Anda runtuh sepenuhnya.",
+            "howToFix": "Cara memperbaikinya",
+            "howToFixExplanation": "Bangun lebih banyak bangunan produksi untuk sumber daya ini, kurangi konsumsi dengan menghapus atau menonaktifkan bangunan yang menggunakannya, atau tukar di pasar. Setelah tingkat Anda menjadi positif, atau pasokan Anda melebihi 10 unit, bangunan akan kembali ke produksi penuh.",
+            "food": {
+                "title": "Orang-orang Anda sedang kelaparan!",
+                "description": "Pasokan makanan Anda semakin menipis. Rakyat Anda membutuhkan makanan untuk bertahan hidup.",
+                "whyExplanation": "Berbeda dengan sumber daya lainnya, konsumsi makanan dari rumah-rumah tidak dapat dikurangi secara otomatis. Ketika makanan habis, orang-orang yang putus asa mungkin mulai mencuri dari persediaan Anda.",
+                "howToFixExplanation": "Bangun lebih banyak pertanian, toko roti, perikanan, atau bangunan lain yang menghasilkan makanan. Anda juga dapat berdagang makanan di pasar. Pastikan Anda meningkatkan produksi makanan, atau membelinya di pasar, atau rakyat Anda akan mengambil tindakan sendiri."
+            },
+            "coin": {
+                "title": "Koin Habis!",
+                "description": "Cadangan koin Anda hampir habis. Meskipun beberapa bangunan akan dibatasi, tidak semua bangunan yang mengonsumsi koin dapat diperlambat.",
+                "whyExplanation": "Beberapa bangunan yang membutuhkan koin, seperti menara, tidak dapat dibatasi. Jika koin Anda turun terlalu rendah, menara akan rusak dan akhirnya hancur. Bangunan lain yang mengonsumsi koin akan dibatasi, tetapi hal itu mungkin tidak cukup untuk menghentikan penurunan.",
+                "howToFixExplanation": "Tingkatkan penghasilan koin Anda dengan memperdagangkan sumber daya di pasar, membangun lebih banyak bangunan penghasil koin, atau mengurangi pengeluaran dengan menghapus bangunan yang mahal."
+            },
+            "wood": {
+                "title": "Pasokan Kayu Menipis!",
+                "description": "Pasokan kayu Anda hampir habis. Beberapa bangunan akan dibatasi, tetapi rumah juga mengonsumsi kayu dan tidak dapat diperlambat.",
+                "whyExplanation": "Meskipun sebagian besar bangunan yang mengonsumsi kayu dapat dibatasi, rumah selalu mengonsumsi kayu dan tidak dapat dikurangi. Jika pasokan kayu Anda turun menjadi nol, orang-orang yang putus asa mungkin mulai mencuri dari gudang Anda.",
+                "howToFixExplanation": "Produksi lebih banyak kayu atau belilah di pasar, atau rakyatmu akan mengambil tindakan sendiri."
+            }
+        },
         "titles": {
             "food_shortage": "Orang-orang kelaparan.",
             "strike": "Serangan",
             "celebration": "Hadiah untuk Anda",
             "productivity_boom": "Ayo mulai!",
-            "expedition_found": "Ekspedisi kembali!",
+            "expedition_return": "Ekspedisi kembali!",
+            "artifact_found": "Sebuah penemuan!",
             "animal_unlock": "Well, well, well... apa yang kita punya di sini?",
             "bankruptcy": "Bangkrut!",
+            "outside_territory": "Bangunan Hilang!",
             "raid": "Barang Anda dicuri!",
+            "accident": "Kecelakaan di tempat kerja",
             "trade": "Setuju!",
             "player_message": "Anda menerima pesan!"
         },
@@ -135,10 +177,13 @@
             "strike": "Orang-orang tidak senang! Apa pun yang Anda lakukan, mereka tidak menyukainya. Pastikan orang-orang Anda tetap senang untuk menghindari penutupan bangunan.",
             "celebration": "Orang-orang senang! Apa pun yang sedang kamu lakukan, teruslah melakukannya! Sebagai hadiah kecil, mereka semua mengumpulkan beberapa barang untukmu agar bisa terus membangun kota yang luar biasa ini. Lucu sekali!",
             "productivity_boom": "Orang-orang sangat antusias! Mereka sangat menyukai Anda dan dengan senang hati bekerja lembur untuk Anda. Dengan melakukan itu, mereka berhasil memproduksi sedikit lebih banyak dari segala sesuatu. Mereka ingin kota ini sukses, Anda tahu!",
-            "expedition_found": "Ekspedisi Anda telah kembali dengan sumber daya dan pengetahuan yang berharga! Hal ini akan sangat bermanfaat bagi perkembangan kota dan upaya penelitian Anda. Namun, buku harian mereka memiliki entri yang menarik:",
+            "expedition_return": "Ekspedisi Anda telah kembali dengan sumber daya berharga! Bahan-bahan ini akan membantu mempercepat perkembangan kota Anda.",
+            "artifact_found": "Ekspedisi Anda telah kembali dengan penemuan yang menarik! Buku harian mereka memiliki entri yang menarik:",
             "animal_unlock": "Apa yang kita temukan di sini? Ekspedisi Anda kembali dengan seekor hewan yang ternyata sangat jinak. Sepertinya hewan itu lebih suka tinggal di kota Anda daripada di hutan belantara. Akan tidak sopan jika kita mengembalikannya sekarang, bukan?",
             "bankruptcy": "Anda tidak memiliki koin sama sekali! Sebuah menara telah runtuh. Menara yang Anda bangun akan rusak dan hancur jika Anda tidak merawatnya dengan koin yang cukup.",
+            "outside_territory": "Sebuah bangunan di luar wilayahmu telah hancur! Pastikan untuk menjaga bangunanmu tetap berada di dalam wilayahmu, atau mereka mungkin hilang.",
             "raid": "Anda seharusnya menyimpan barang-barang Anda dengan lebih baik! Barang-barang tersebut mudah dijarah, dan beberapa pencuri tak dikenal berhasil membawa kabur sebagian sumber daya Anda.",
+            "accident": "Kecelakaan di tempat kerja telah terjadi! Sebuah gedung telah ditutup karena kondisi kerja yang tidak aman.",
             "trade": "Seseorang telah memenuhi (sebagian) pesanan perdagangan Anda.",
             "player_message": "Seorang kurir telah tiba dari kota lain dengan pesan untuk Anda."
         }
@@ -208,12 +253,13 @@
                 "tavern": "Tavern",
                 "tent": "Tenda",
                 "tower": "Menara",
+                "towers": "Menara",
                 "town_hall": "Balai Kota",
                 "tree": "Pohon",
                 "university": "Universitas",
                 "museum": "Museum",
                 "warehouse": "Gudang",
-                "water_tower": "Menara Air",
+                "water_tower": "Menara Laut",
                 "windmill": "Kincir angin",
                 "windmill_upgraded": "Turbin Angin yang Ditingkatkan",
                 "woodcutter": "Penebang kayu",
@@ -378,6 +424,7 @@
     "hud": {
         "build": {
             "doubleClickNodes": "Klik ganda untuk menempatkan node.",
+            "fineRotate": "Rotasi halus",
             "multiPlace": "Terus letakkan",
             "rotate": "Putar",
             "restriction": "Area yang tidak dapat dibangun."
@@ -437,6 +484,7 @@
             "serverOffline": "Tidak dapat terhubung ke server. Server mungkin sedang mengalami beban berat atau sedang offline sementara untuk pemeliharaan. Periksa Discord untuk status terbaru.",
             "settings": "Pengaturan",
             "subtitle": "Ini adalah versi awal dari Project Rebearth. Silakan hubungi kami jika Anda menemui masalah saat bermain.",
+            "suspended": "Akun Anda telah ditangguhkan. Alasan: {{reason}}",
             "demoSubtitle": "Ini adalah demo dari Project Rebearth. Hanya mode sandbox pembangun kota yang diaktifkan. Untuk bermain di globe multipemain dengan manajemen sumber daya, dapatkan versi lengkapnya.",
             "demoRestriction1": "Di balik tombol ini terdapat dunia multipemain online yang luas dari Project Rebearth. Namun, Anda berada di versi demo, dan hanya mode sandbox tanpa manajemen sumber daya yang tersedia.",
             "demoRestriction2": "Mode sandbox masih memungkinkan Anda untuk membuat peta yang luar biasa, mengekspornya dalam resolusi tinggi, dan merasakan seperti apa dunia permainan dengan skala 1:1.",
@@ -465,13 +513,15 @@
             "guidelinesRule2": "Tidak boleh menggunakan bahasa atau simbol yang tidak pantas. Nama yang dihasilkan secara acak bisa lucu, tetapi masukan yang dikirimkan oleh pengguna mungkin tidak pantas.",
             "guidelinesRule3": "Jangan gunakan bot, celah keamanan, atau alat otomatisasi. Permainan ini dibuat oleh manusia, untuk dinikmati oleh manusia. Bot tidak memiliki tempat di sini.",
             "guidelinesRule4": "Ancaman terhadap pengguna lain dilarang.",
-            "guidelinesOutro": "Jika Anda ragu apakah sesuatu diperbolehkan, kemungkinan besar hal tersebut tidak diperbolehkan. Tidak mengikuti pedoman ini dapat mengakibatkan bangunan dihapus, kota dihapus, atau akun Anda (sementara) ditangguhkan sesuai dengan kebijakan moderator.",
+            "guidelinesRule5": "Jangan gunakan, atau bekerja dengan beberapa akun untuk melakukan hal di atas, atau memanfaatkan mekanisme permainan.",
+            "guidelinesOutro": "Jika Anda ragu apakah sesuatu diperbolehkan, kemungkinan besar hal tersebut tidak diperbolehkan. Tidak mengikuti pedoman ini dapat mengakibatkan bangunan dihapus, kota dihapus, atau akun Anda (sementara) ditangguhkan sesuai kebijakan moderator. Jika Anda melihat perilaku semacam ini, silakan laporkan kepada moderator.",
             "locked": "Terkunci",
             "lockedText": "Terkunci",
             "newGame": "Permainan Baru",
             "play": "Mainkan",
             "population": "Penduduk",
             "slot": "Slot",
+            "suspended": "Akun ditangguhkan",
             "title": "Pilih Slot Simpan",
             "unlockHint1000": "Buka kunci pada 1.000 penduduk.",
             "unlockHint10000": "Buka kunci pada 10.000 penduduk.",
@@ -550,6 +600,17 @@
             "population": "Populasi",
             "resources": "Sumber daya",
             "title": "Peringkat"
+        },
+        "production": {
+            "title": "Ringkasan Produksi",
+            "noBuildings": "Anda belum memiliki bangunan produksi yang dapat diskalakan.",
+            "buildingCount": "{{count}} bangunan(an)",
+            "totalRate": "Total Rate",
+            "setAll": "Atur Semua",
+            "applyAll": "Terapkan Semua",
+            "updated": "Diperbarui",
+            "storage": "Penyimpanan",
+            "throttleHelp": "Jenis bangunan ini dibatasi karena sumber daya yang diperlukan sedang menipis. Produksi secara otomatis dikurangi untuk mencegah sumber daya menjadi negatif."
         },
         "save": {
             "download": "Unduh File",
@@ -648,7 +709,12 @@
         "upgrade": "Perbarui k{{building}}"
     },
     "settings": {
+        "tabs": {
+            "general": "Umum",
+            "performance": "Kinerja"
+        },
         "animations": "Animasi",
+        "accessibleColors": "Kontras Tinggi",
         "fullscreen": "Layar penuh",
         "bushDensity": "Kepadatan semak",
         "clearTileCache": "Hapus Data Cache",
@@ -699,6 +765,7 @@
         "market": "Selamat datang di pasar! Lihatlah semua barang yang ingin dibeli atau dijual oleh pemain lain, dan yang lebih penting, dengan harga berapa! Anda akan membayar biaya pengiriman saat memenuhi pesanan orang lain. Jadi, jika mereka berada jauh, mungkin tidak sepadan, atau bahkan biayanya lebih mahal daripada yang mereka bersedia bayar.",
         "orders": "Pasang pesanan Anda! Beritahukan kepada pemain lain apa yang ingin Anda beli atau jual, serta harganya. Ini adalah apa yang akan Anda terima atau bayar. Perlu diingat bahwa pemain lain akan membayar biaya pengiriman. Jadi, membeli sesuatu dengan harga rendah mungkin tidak berhasil jika biaya pengiriman pemain lain terlalu tinggi.",
         "popup": "Popup ini menampilkan semua informasi tentang bangunan ini. Di sini Anda dapat mengubah parameter utama bangunan, atau bahkan memindahkannya. Fitur ini hanya tersedia saat Anda berada dalam mode bangunan.",
+        "production": "Panel ini memberikan gambaran umum tentang semua bangunan produksi Anda. Anda dapat menyesuaikan laju produksi setiap bangunan secara individual. Bangunan dikelompokkan berdasarkan jenisnya, dan Anda dapat melihat total output sumber daya setiap kelompok dengan sekilas.",
         "storage": "Di sini Anda dapat menyesuaikan seberapa banyak bangunan ini dapat menyimpan barang. Bangunan ini memiliki kapasitas tertentu dan jumlah barang tertentu yang dapat ditampungnya. Anda dapat mengubah rasionya untuk mengoptimalkan sesuai kebutuhan Anda."
     },
     "tooltip": {
