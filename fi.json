@@ -35,7 +35,7 @@
             "lowRations": "Se on minun kakku! Pienet annokset vähentävät henkilöä kohti tarvittavan ruoan määrää, mutta ihmiset eivät pidä siitä.",
             "neutralFocus": "Markkinat ovat vapaat, tee mitä sinun täytyy tehdä. Pidä sekä tuonti- että vientikustannukset vakiokorkeudella.",
             "normalRations": "Juuri oikea määrä ruokaa kansallesi. Pidä ruoan kulutus normaalitasolla.",
-            "taxation": "Se on vain reilua... Tuottaa kultaa jokaiselle asukkaalle, mutta vähentää onnellisuutta.",
+            "taxation": "Se on vain reilua... Tuottaa 0,05 kultaa jokaisesta asukkaasta, mutta vähentää onnellisuutta.",
             "veganSociety": "Mikä outo idea syödä eläimiä... Lisää ruoantuotantoa, mutta et voi tuottaa eläintuotteita.",
             "workerSafety": "Ihmiset ovat suurin voimavarasi. Lisää tuotannon turvallisuutta, mutta vähentää tuotantoa.",
             "dubiousWorkingRules": "Ihmiset ovat vain resursseja. Lisää tuotantoa, mutta lisää onnettomuuksien määrää.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Se ei ole paljon... Tee suurempi muoto: {{size}} (minimi {{limit}})",
             "cooldown": "Odota hetki",
             "costs": "Kustannukset:",
+            "exclusionPreview": "Suljettu alue",
             "invalidLocation": "Virheellinen sijainti",
             "mustBeNear": "Täytyy olla lähellä {{parent}}",
             "notEnoughPop": "Väestö ei riitä",
             "notEnoughResources": "Resurssit eivät riitä",
+            "territoryPreview": "Alueen laajuus",
             "tooHigh": "Zoomaa lähemmäksi"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Retkikunta",
+                "taxation": "Verotus",
                 "bakery": "Leipomo",
                 "boat": "Vene",
                 "brewery": "Panim",
@@ -235,6 +238,7 @@
                 "park": "Puisto",
                 "path": "Polku",
                 "pier": "Pier",
+                "plantation": "Istutus",
                 "plaza": "Plaza",
                 "dirt": "Dirt",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Lisää kaupunkiisi mukava puisto, jossa kansalaiset voivat viettää aikaa.",
                 "path": "Yksinkertainen hiekkatie, joka hoitaa tehtävänsä, vaikka rakennukset toimivatkin hyvin ilman niitä.",
                 "pier": "Ihmiset vannovat, että suuremmat kalat ovat syvemmillä vesillä. Katsotaanpa, kuinka syvälle pääsemme!",
+                "plantation": "Miksi mennä metsään, kun voit antaa metsän tulla luoksesi?",
                 "plaza": "Kauniita laattoja kauniiseen kaupunkiisi. Sopii erinomaisesti markkinapaikoille, koristeluun tai vain omaisuuden esittelyyn.",
                 "dirt": "Se näyttää, missä ihmiset kävelevät, mutta kukaan ei ole vaivautunut asettamaan kunnollisia laattoja.",
                 "port": "Sataman kautta voit käydä kauppaa muiden kaupunkien kanssa. Se on paljon tehokkaampaa kuin maanteitse tapahtuva kauppa, ja kuljetuskustannukset puolittuvat.",
@@ -599,7 +604,8 @@
             "player": "Pelaaja",
             "population": "Väestö",
             "resources": "Resurssit",
-            "title": "Sijoitus"
+            "title": "Sijoitus",
+            "description": "Älä anna rankingien määrätä, miten haluat nauttia tästä pelistä ja mitä arvostat."
         },
         "production": {
             "title": "Tuotannon yleiskatsaus",
@@ -689,6 +695,7 @@
             "resources": "Resurssit"
         },
         "reject": "hylätä",
+        "lastActive": "viimeksi aktiivinen{{time}}s sitten",
         "value": "Arvo"
     },
     "popup": {

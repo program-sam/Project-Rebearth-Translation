@@ -35,7 +35,7 @@
             "lowRations": "Niskie racje zmniejszają ilość jedzenia potrzebną na osobę, ale obniżają szczęście.",
             "neutralFocus": "Fokus neutralny utrzymuje koszty importu i eksportu na standardowym poziomie.",
             "normalRations": "Normalne racje nie mają wpływu na zużycie jedzenia.",
-            "taxation": "Opodatkowanie przynosi złoto od każdego mieszkańca, ale obniża poziom szczęścia.",
+            "taxation": "To sprawiedliwe... Generuje 0,05 złota za każdego mieszkańca, ale obniża poziom zadowolenia.",
             "veganSociety": "Przejście na społeczeństwo wegańskie pozwala produkować więcej jedzenia na jednostkę powierzchni, ale uniemożliwia wytwarzanie produktów zwierzęcych.",
             "workerSafety": "Zwiększenie bezpieczeństwa pracowników zmniejsza liczbę wypadków w pracy, ale lekko obniża wydajność wszystkich budynków produkcyjnych.",
             "dubiousWorkingRules": "Ludzie są tylko zasobami. Zwiększa wydajność produkcji, ale podnosi wskaźnik wypadków.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "To nie jest dużo... Utwórz większy kształt: {{size}} (min. {{limit}})",
             "cooldown": "Chwileczkę",
             "costs": "Koszty:",
+            "exclusionPreview": "Strefa wykluczenia",
             "invalidLocation": "Nieprawidłowa lokalizacja",
             "mustBeNear": "Musi znajdować się w pobliżu {{parent}}",
             "notEnoughPop": "Niewystarczająca liczba ludności",
             "notEnoughResources": "Niewystarczające zasoby",
+            "territoryPreview": "Zasięg terytorialny",
             "tooHigh": "Powiększ"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Wyprawa",
+                "taxation": "Opodatkowanie",
                 "bakery": "Piekarnia",
                 "boat": "Łódź",
                 "brewery": "Browar",
@@ -235,6 +238,7 @@
                 "park": "Park",
                 "path": "Ścieżka",
                 "pier": "Molo",
+                "plantation": "Plantacja",
                 "plaza": "Plac",
                 "dirt": "Brud",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Dodaje park do Twojego miasta.",
                 "path": "Ścieżki nadają strukturę wiosce. Nie są wymagane do działania budynków, ale dobrze wyglądają.",
                 "pier": "Molo wydłuża chatę rybaka w kierunku głębszych wód.",
+                "plantation": "Po co iść do lasu, skoro las może przyjść do ciebie?",
                 "plaza": "Dodaje estetyczne place do Twojego miasta.",
                 "dirt": "Pokazuje, gdzie chodzą ludzie, ale nikt nie zadał sobie trudu, aby położyć odpowiednie płytki.",
                 "port": "Port służy do handlu z innymi miastami i wioskami. Zwiększa zasięg tras handlowych.",
@@ -599,7 +604,8 @@
             "player": "Gracz",
             "population": "Populacja",
             "resources": "Surowce",
-            "title": "Ranking"
+            "title": "Ranking",
+            "description": "Nie pozwól, aby rankingi decydowały o tym, jak chcesz czerpać radość z tej gry i co jest dla Ciebie ważne."
         },
         "production": {
             "title": "Przegląd produkcji",
@@ -689,6 +695,7 @@
             "resources": "Surowce"
         },
         "reject": "Odrzuć",
+        "lastActive": "ostatnia aktywność{{time}} temu",
         "value": "Wartość"
     },
     "popup": {

@@ -35,7 +35,7 @@
             "lowRations": "这是我的蛋糕！降低口粮会减少人均所需食物量，但人们不会喜欢这样。",
             "neutralFocus": "这是自由市场，各行其是。进出口成本均维持标准费率。",
             "normalRations": "为你的子民提供恰到好处的食物。保持食物消耗在标准水平。",
-            "taxation": "公平起见... 每位居民都会产生金钱，但会降低幸福度。",
+            "taxation": "这很公平……每名居民将产生0.05金币，但会降低幸福度。",
             "veganSociety": "吃动物真是个怪念头……虽能提升粮食产量，却无法生产动物制品。",
             "workerSafety": "人才是您最宝贵的资产。提升生产安全性但会降低产量。",
             "dubiousWorkingRules": "人只是资源。提高产量但事故率也会增加。",
@@ -87,10 +87,12 @@
             "areaTooSmall": "这太小了...请制作更大的形状：{{size}}（最小{{limit}}）",
             "cooldown": "稍等片刻",
             "costs": "费用：",
+            "exclusionPreview": "禁入区域",
             "invalidLocation": "无效位置",
             "mustBeNear": "必须靠近 {{parent}}",
             "notEnoughPop": "人口不足",
             "notEnoughResources": "资源不足",
+            "territoryPreview": "领土范围",
             "tooHigh": "放大查看"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "远征",
+                "taxation": "税收",
                 "bakery": "面包店",
                 "boat": "船",
                 "brewery": "酿酒厂",
@@ -235,6 +238,7 @@
                 "park": "公园",
                 "path": "路径",
                 "pier": "Pier",
+                "plantation": "种植园",
                 "plaza": "广场",
                 "dirt": "尘土",
                 "port": "端口",
@@ -326,6 +330,7 @@
                 "park": "为您的城镇增添一座宜人的公园，让市民们在此悠闲消磨时光。",
                 "path": "一条简易的土路，虽能完成任务，但建筑物即使没有它们也能正常运作。",
                 "pier": "人们坚信大鱼栖息于深水处。让我们看看能潜多深！",
+                "plantation": "既然森林会主动找上门，何必大费周章去森林呢？",
                 "plaza": "为您的美丽城镇增添精美地砖。适用于市场装饰、环境美化，或单纯展示您的财富。",
                 "dirt": "它显示了人们行走的位置，但没人愿意费心铺设正规的地砖。",
                 "port": "港口使您能够与其他城镇进行贸易。相比陆路贸易，这种方式效率更高，运输成本将减半。",
@@ -599,7 +604,8 @@
             "player": "玩家",
             "population": "人口",
             "resources": "资源",
-            "title": "排名"
+            "title": "排名",
+            "description": "不要让排名左右你享受游戏的方式以及你所看重的东西。"
         },
         "production": {
             "title": "制作概览",
@@ -689,6 +695,7 @@
             "resources": "资源"
         },
         "reject": "拒绝",
+        "lastActive": "最后活跃时间：{{time}}前",
         "value": "数值"
     },
     "popup": {

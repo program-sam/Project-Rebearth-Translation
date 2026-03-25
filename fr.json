@@ -35,7 +35,7 @@
             "lowRations": "C'est mon gâteau ! Des rations réduites diminueront la quantité de nourriture nécessaire par personne, mais les gens n'apprécieront pas cela.",
             "neutralFocus": "C'est un marché libre, faites ce que vous avez à faire. Maintenez les coûts d'importation et d'exportation à des taux standard.",
             "normalRations": "Juste la quantité de nourriture nécessaire pour votre peuple. Maintenez la consommation alimentaire à des niveaux normaux.",
-            "taxation": "C'est normal... Génère de l'or pour chaque habitant, mais réduit le bonheur.",
+            "taxation": "C'est normal... Génère 0,05 pièce d'or par habitant, mais réduit le niveau de bonheur.",
             "veganSociety": "Quelle idée étrange que de manger des animaux... Augmente la production alimentaire, mais vous ne pouvez pas produire de produits d'origine animale.",
             "workerSafety": "Les personnes sont votre plus grand atout. Augmente la sécurité de la production mais réduit le rendement.",
             "dubiousWorkingRules": "Les personnes ne sont que des ressources. Augmente la production, mais augmente également le taux d'accidents.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Ce n'est pas beaucoup... Créez une forme plus grande : {{size}} (min {{limit}})",
             "cooldown": "Attendez une seconde.",
             "costs": "Coûts :",
+            "exclusionPreview": "Exclusion zone",
             "invalidLocation": "Emplacement invalide",
             "mustBeNear": "Doit être proche de l'{{parent}}",
             "notEnoughPop": "Population insuffisante",
             "notEnoughResources": "Ressources insuffisantes",
+            "territoryPreview": "Étendue du territoire",
             "tooHigh": "Zoom avant"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expédition",
+                "taxation": "Fiscalité",
                 "bakery": "Boulangerie",
                 "boat": "Bateau",
                 "brewery": "Brasserie",
@@ -235,6 +238,7 @@
                 "park": "Parc",
                 "path": "Chemin",
                 "pier": "Jetée",
+                "plantation": "Plantation",
                 "plaza": "Place",
                 "dirt": "Saleté",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Ajoutez un joli parc à votre ville pour que vos citoyens puissent s'y promener.",
                 "path": "Un simple chemin de terre qui fait l'affaire, même si les bâtiments fonctionnent très bien sans.",
                 "pier": "Tout le monde dit que les plus gros poissons se trouvent dans les eaux profondes. Voyons jusqu'où nous pouvons aller !",
+                "plantation": "Pourquoi aller dans la forêt alors que vous pouvez la faire venir à vous ?",
                 "plaza": "De jolies tuiles pour votre jolie ville. Idéales pour les marchés, la décoration ou simplement pour montrer votre richesse.",
                 "dirt": "Il montre où les gens marchent, mais personne n'a pris la peine de poser des dalles correctes.",
                 "port": "Le port vous permet de commercer avec d'autres villes. C'est beaucoup plus efficace que le commerce terrestre, et les coûts de transport seront réduits de moitié.",
@@ -599,7 +604,8 @@
             "player": "Joueur",
             "population": "Population",
             "resources": "Ressources",
-            "title": "Classement"
+            "title": "Classement",
+            "description": "Ne laissez pas les classements dicter la façon dont vous voulez profiter de ce jeu et ce qui compte pour vous."
         },
         "production": {
             "title": "Aperçu de la production",
@@ -689,6 +695,7 @@
             "resources": "Ressources"
         },
         "reject": "Rejeter",
+        "lastActive": "Dernière activité il y a{{time}}",
         "value": "Valeur"
     },
     "popup": {

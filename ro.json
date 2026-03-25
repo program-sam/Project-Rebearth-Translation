@@ -35,7 +35,7 @@
             "lowRations": "E tortul meu! Rațiile reduse vor reduce cantitatea de hrană necesară per persoană, dar oamenilor nu le va plăcea.",
             "neutralFocus": "Este o piață liberă, faceți ce trebuie să faceți. Mențineți costurile de import și export la rate standard.",
             "normalRations": "Cantitatea potrivită de hrană pentru poporul tău. Menține consumul de hrană la niveluri standard.",
-            "taxation": "Este corect... Va genera aur pentru fiecare locuitor, dar va reduce fericirea.",
+            "taxation": "E corect... Va genera 0,05 aur pentru fiecare locuitor, dar reduce fericirea.",
             "veganSociety": "Ce idee ciudată să mănânci animale... Crește producția de alimente, dar nu poți produce produse de origine animală.",
             "workerSafety": "Oamenii sunt cea mai mare valoare a ta. Crește siguranța producției, dar reduce randamentul.",
             "dubiousWorkingRules": "Oamenii sunt doar resurse. Crește producția, dar crește și rata accidentelor.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Nu e prea mult... Creați o formă mai mare: {{size}} (min {{limit}})",
             "cooldown": "Așteptați o secundă",
             "costs": "Costuri:",
+            "exclusionPreview": "Zonă de excludere",
             "invalidLocation": "Locație nevalidă",
             "mustBeNear": "Trebuie să fie aproape de {{parent}}",
             "notEnoughPop": "Populație insuficientă",
             "notEnoughResources": "Resurse insuficiente",
+            "territoryPreview": "Aria teritorială",
             "tooHigh": "Măriți imaginea"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expediție",
+                "taxation": "Impozitare",
                 "bakery": "Brutărie",
                 "boat": "Barcă",
                 "brewery": "Fabrică de bere",
@@ -235,6 +238,7 @@
                 "park": "Parc",
                 "path": "Cale",
                 "pier": "Pier",
+                "plantation": "Plantație",
                 "plaza": "Piață",
                 "dirt": "Murdărie",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Adăugați un parc frumos în orașul dvs. pentru ca cetățenii să se poată relaxa.",
                 "path": "Un drum simplu de pământ care își îndeplinește rolul, deși clădirile vor funcționa foarte bine și fără ele.",
                 "pier": "Oamenii jură că peștii mai mari se află în apele mai adânci. Să vedem cât de adânc putem ajunge!",
+                "plantation": "De ce să te duci în pădure când poți lăsa pădurea să vină la tine?",
                 "plaza": "Piese frumoase pentru orașul tău frumos. Excelente pentru piețe, decorare sau pur și simplu pentru a-ți etala bogăția.",
                 "dirt": "Afișează unde merg oamenii, dar nimeni nu s-a deranjat să pună plăci adecvate.",
                 "port": "Portul vă permite să faceți comerț cu alte orașe. Este mult mai eficient decât comerțul terestru, iar costurile de transport vor fi reduse la jumătate.",
@@ -599,7 +604,8 @@
             "player": "Jucător",
             "population": "Populație",
             "resources": "Resurse",
-            "title": "Clasament"
+            "title": "Clasament",
+            "description": "Nu lăsa clasamentele să-ți dicteze modul în care vrei să te bucuri de acest joc și ceea ce apreciezi."
         },
         "production": {
             "title": "Prezentare generală a producției",
@@ -689,6 +695,7 @@
             "resources": "Resurse"
         },
         "reject": "respinge",
+        "lastActive": "ultima activitate acum{{time}}",
         "value": "Valoare"
     },
     "popup": {

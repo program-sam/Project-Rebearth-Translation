@@ -35,7 +35,7 @@
             "lowRations": "Pasta benim! Düşük erzak payları yiyecekten tasarruf sağlar, ama mutluluğu azaltır.",
             "neutralFocus": "Serbest piyasa, herkes bildiğini yapsın. İthalat ve ihracat maliyetleri standart düzeyde kalır.",
             "normalRations": "Halkınız için tam yeterli miktarda yiyecek. Gıda tüketimini standart oranlarda tutar.",
-            "taxation": "Herkes payına düşeni ödesin... Sakin başına altın geliri sağlar, ancak mutluluk azalır.",
+            "taxation": "Bu adil bir durum... Her bir sakin için 0,05 altın üretir, ancak mutluluğu azaltır.",
             "veganSociety": "Hayvanları yemek ne tuhaf bir fikir... Gıda üretimini artırır, fakat hayvansal ürün üretimi yapılamaz.",
             "workerSafety": "İnsanlar her şeyden önemlidir. İş güvenliğini artırır, ancak üretim verimliliği düşer.",
             "dubiousWorkingRules": "İnsanlar sadece birer kaynaktır. Üretim çıktısını artırır, ancak iş kazası oranlarını yükseltir.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Bu çok fazla değil... Daha büyük bir şekil oluşturun: {{size}} (min {{limit}})",
             "cooldown": "Bir saniye bekleyin",
             "costs": "Maliyetler:",
+            "exclusionPreview": "Yasak bölge",
             "invalidLocation": "Geçersiz Konum",
             "mustBeNear": "{{parent}} yakınında olmalıdır.",
             "notEnoughPop": "Yeterli nüfus yok",
             "notEnoughResources": "Yetersiz kaynak",
+            "territoryPreview": "Bölge aralığı",
             "tooHigh": "Yakınlaştır"
         },
         "cancel": "✗",
@@ -105,7 +107,7 @@
             "expedition": "Keşif",
             "finished": "Bitti!",
             "food": "Yiyecek",
-            "knowledge": "Bilgi",
+            "knowledge": "İlim",
             "invalidArea": "Burada geçerli bir keşif alanı bulunamadı.",
             "population": "Nüfus",
             "timeLeft": "Kalan süre",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Keşif",
+                "taxation": "Vergilendirme",
                 "bakery": "Fırın",
                 "boat": "Tekne",
                 "brewery": "Bira fabrikası",
@@ -235,6 +238,7 @@
                 "park": "Park",
                 "path": "Patika",
                 "pier": "İskele",
+                "plantation": "Plantasyon",
                 "plaza": "Plaza",
                 "dirt": "Kir",
                 "port": "Liman",
@@ -326,6 +330,7 @@
                 "park": "Vatandaşlarınızın vakit geçirebileceği güzel bir park ekleyin.",
                 "path": "Basit bir toprak patika. Her ne kadar binalar onsuz da gayet iyi çalışsa da işini görür.",
                 "pier": "İnsanlar büyük balıkların derin sularda olduğuna yemin ediyor. Bakalım ne kadar derine inebileceğiz.",
+                "plantation": "Orman size gelsin, neden ormana gidesiniz ki?",
                 "plaza": "Kasabanız için güzel karolar. Pazar yerleri, dekorasyon veya zenginliğinizi göstermek için harika.",
                 "dirt": "İnsanların yürüdüğü yerleri gösterir, ancak kimse düzgün fayans döşeme zahmetine girmez.",
                 "port": "Liman, diğer kasaba ve şehirlerle ticaret yapmanızı sağlar. Kara ticaretinden çok daha verimlidir ve nakliye maliyetlerini yarıya indirir.",
@@ -599,7 +604,8 @@
             "player": "Oyuncu",
             "population": "Nüfus",
             "resources": "Kaynaklar",
-            "title": "Sıralama"
+            "title": "Sıralama",
+            "description": "Sıralamaların, bu oyundan nasıl keyif alacağınızı ve neye değer verdiğinizi belirlemesine izin vermeyin."
         },
         "production": {
             "title": "Üretim Genel Bakış",
@@ -689,6 +695,7 @@
             "resources": "Kaynaklar"
         },
         "reject": "reddet",
+        "lastActive": "{{time}} önce son etkin",
         "value": "Değer"
     },
     "popup": {

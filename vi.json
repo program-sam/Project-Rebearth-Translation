@@ -35,7 +35,7 @@
             "lowRations": "Đây là bánh của tôi! Giảm khẩu phần sẽ làm giảm lượng thức ăn cần thiết cho mỗi người, nhưng mọi người sẽ không thích điều đó.",
             "neutralFocus": "Đây là thị trường tự do, hãy làm những gì bạn cần làm. Giữ chi phí nhập khẩu và xuất khẩu ở mức tiêu chuẩn.",
             "normalRations": "Lượng thức ăn vừa đủ cho người dân của bạn. Duy trì mức tiêu thụ thức ăn ở mức tiêu chuẩn.",
-            "taxation": "Đó là điều công bằng... Sẽ tạo ra vàng cho mỗi cư dân, nhưng làm giảm hạnh phúc.",
+            "taxation": "Điều này là công bằng... Sẽ tạo ra 0,05 vàng cho mỗi cư dân, nhưng làm giảm mức độ hạnh phúc.",
             "veganSociety": "Thật là một ý tưởng kỳ lạ khi ăn thịt động vật... Tăng sản lượng thực phẩm, nhưng bạn không thể sản xuất các sản phẩm từ động vật.",
             "workerSafety": "Con người là tài sản quý giá nhất của bạn. Tăng cường an toàn sản xuất nhưng giảm sản lượng.",
             "dubiousWorkingRules": "Con người chỉ là tài nguyên. Tăng sản lượng sản xuất nhưng cũng làm tăng tỷ lệ tai nạn.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Điều đó không nhiều... Tạo một hình dạng lớn hơn: {{size}} (tối thiểu {{limit}})",
             "cooldown": "Chờ một lát",
             "costs": "Chi phí:",
+            "exclusionPreview": "Khu vực cấm",
             "invalidLocation": "Vị trí không hợp lệ",
             "mustBeNear": "Phải nằm gần {{parent}}",
             "notEnoughPop": "Dân số không đủ.",
             "notEnoughResources": "Không đủ tài nguyên",
+            "territoryPreview": "Phạm vi lãnh thổ",
             "tooHigh": "Zoom vào gần hơn"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expedition",
+                "taxation": "Thuế",
                 "bakery": "Cửa hàng bánh mì",
                 "boat": "Tàu",
                 "brewery": "Nhà máy bia",
@@ -235,6 +238,7 @@
                 "park": "Công viên",
                 "path": "Đường dẫn",
                 "pier": "Pier",
+                "plantation": "Trang trại",
                 "plaza": "Quảng trường",
                 "dirt": "Bụi bẩn",
                 "port": "Cổng",
@@ -326,6 +330,7 @@
                 "park": "Thêm một công viên đẹp vào thị trấn của bạn để cư dân có thể thư giãn và tận hưởng.",
                 "path": "Một con đường đất đơn giản nhưng hiệu quả, mặc dù các tòa nhà vẫn hoạt động bình thường mà không cần đến chúng.",
                 "pier": "Người ta đồn rằng những con cá lớn hơn nằm ở những vùng nước sâu hơn. Hãy xem chúng ta có thể đi sâu đến đâu!",
+                "plantation": "Tại sao phải vào rừng khi bạn có thể để rừng đến với mình?",
                 "plaza": "Những viên gạch đẹp cho thị trấn xinh xắn của bạn. Hoàn hảo cho các khu chợ, trang trí hoặc đơn giản là để khoe sự giàu có của bạn.",
                 "dirt": "Nó hiển thị nơi mọi người đi lại, nhưng không ai thèm đặt các ô gạch đúng cách.",
                 "port": "Cảng cho phép bạn giao dịch với các thị trấn và thành phố khác. Việc giao dịch qua đường biển hiệu quả hơn nhiều so với giao dịch trên đất liền, và chi phí vận chuyển sẽ được giảm một nửa.",
@@ -599,7 +604,8 @@
             "player": "Người chơi",
             "population": "Dân số",
             "resources": "Tài nguyên",
-            "title": "Xếp hạng"
+            "title": "Xếp hạng",
+            "description": "Đừng để bảng xếp hạng chi phối cách bạn muốn tận hưởng trò chơi này và những gì bạn coi trọng."
         },
         "production": {
             "title": "Tổng quan về sản xuất",
@@ -689,6 +695,7 @@
             "resources": "Tài nguyên"
         },
         "reject": "Từ chối",
+        "lastActive": "Hoạt động lần cuối cách đây {{time}}",
         "value": "Giá trị"
     },
     "popup": {

@@ -35,7 +35,7 @@
             "lowRations": "Razioni basse riduce il quantitativo di cibo necessario per persona, ma riduce la felicità.",
             "neutralFocus": "Focus neutrale mantiene i costi di importazione ed esportazione ai ratei standard.",
             "normalRations": "Le razioni normali non hanno effetto sul consumo di cibo.",
-            "taxation": "La tassazione può sembrare giusta... Produce oro per abitante, ma riduce la felicità.",
+            "taxation": "È giusto così... Genererà 0,05 oro per ogni abitante, ma ridurrà la felicità.",
             "veganSociety": "Cambiare in una società vegana permette la produzione di più cibo in relazione all'area, ma proibisce la produzione di prodotti animali.",
             "workerSafety": "Una sicurezza dei lavoratori aumentata riduce il numero di incidenti sul lavoro, ma riduce leggermente l'output di tutti gli edifici produttivi.",
             "dubiousWorkingRules": "Le persone sono solo risorse. Aumenta la produzione, ma aumenta anche il tasso di incidenti.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Non è molto... Crea una forma più grande: {{size}} (min {{limit}})",
             "cooldown": "Aspetta un attimo",
             "costs": "Costi:",
+            "exclusionPreview": "Zona di esclusione",
             "invalidLocation": "Posizione non valida",
             "mustBeNear": "Deve essere vicino a {{parent}}",
             "notEnoughPop": "Popolazione insufficiente",
             "notEnoughResources": "Risorse insufficienti",
+            "territoryPreview": "Estensione del territorio",
             "tooHigh": "Ingrandisci"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Spedizione",
+                "taxation": "Tassa",
                 "bakery": "Forno",
                 "boat": "Nave",
                 "brewery": "Birrificio",
@@ -235,6 +238,7 @@
                 "park": "Parco",
                 "path": "Sentiero",
                 "pier": "Banchina",
+                "plantation": "Piantagione",
                 "plaza": "Piastrellato",
                 "dirt": "Sporco",
                 "port": "Porto",
@@ -326,6 +330,7 @@
                 "park": "aggiungi un parco alla tua città",
                 "path": "I sentieri sono usati per dare struttura al villaggio. Non sono necessari per il funzionamento delle costruzioni ma sono fighi.",
                 "pier": "La banchina estende la pescheria in acqua profonde.",
+                "plantation": "Perché andare nella foresta quando puoi far venire la foresta da te?",
                 "plaza": "aggiungi piastrelle gradevoli nella tua città",
                 "dirt": "Mostra dove camminano le persone, ma nessuno si è preso la briga di posizionare le piastrelle in modo corretto.",
                 "port": "Il porto è usato per commerciare gli altri paesi e città. Aumenta il raggio delle rotte commerciali.",
@@ -599,7 +604,8 @@
             "player": "Giocatore",
             "population": "Popolazione",
             "resources": "Risorse",
-            "title": "Ranking"
+            "title": "Ranking",
+            "description": "Non lasciare che le classifiche influenzino il modo in cui vuoi goderti questo gioco e ciò a cui dai valore."
         },
         "production": {
             "title": "Panoramica della produzione",
@@ -689,6 +695,7 @@
             "resources": "Risorse"
         },
         "reject": "rifiuta",
+        "lastActive": "Ultima attività{{time}}",
         "value": "valore"
     },
     "popup": {

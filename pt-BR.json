@@ -35,7 +35,7 @@
             "lowRations": "É o meu bolo! Rações reduzidas diminuirão a quantidade de comida necessária por pessoa, mas as pessoas não vão gostar disso.",
             "neutralFocus": "É um mercado livre, faça o que tiver que fazer. Mantenha os custos de importação e exportação nas taxas padrão.",
             "normalRations": "A quantidade certa de comida para o seu povo. Mantenha o consumo de alimentos dentro dos padrões normais.",
-            "taxation": "É justo... Gerará ouro para cada habitante, mas reduzirá a felicidade.",
+            "taxation": "É justo... Gerará 0,05 de ouro por cada habitante, mas reduz a felicidade.",
             "veganSociety": "Que ideia estranha comer animais... Aumenta a produção de alimentos, mas não permite produzir produtos de origem animal.",
             "workerSafety": "As pessoas são o seu maior patrimônio. Aumenta a segurança da produção, mas reduz a produção.",
             "dubiousWorkingRules": "As pessoas são apenas recursos. Aumenta a produção, mas aumenta as taxas de acidentes.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Isso não é muito... Crie uma forma maior: {{size}} ({{limit}} mínimo)",
             "cooldown": "Espere um segundo",
             "costs": "Custos:",
+            "exclusionPreview": "Zona de exclusão",
             "invalidLocation": "Localização inválida",
             "mustBeNear": "Deve estar próximo a {{parent}}",
             "notEnoughPop": "População insuficiente",
             "notEnoughResources": "Recursos insuficientes",
+            "territoryPreview": "Extensão do território",
             "tooHigh": "Ampliar"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expedition",
+                "taxation": "Tributação",
                 "bakery": "Padaria",
                 "boat": "Barco",
                 "brewery": "Cervejaria",
@@ -235,6 +238,7 @@
                 "park": "Parque",
                 "path": "Caminho",
                 "pier": "Pier",
+                "plantation": "Plantação",
                 "plaza": "Praça",
                 "dirt": "Sujeira",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Adicione um belo parque à sua cidade para os seus cidadãos passearem.",
                 "path": "Um caminho de terra simples que dá conta do recado, embora os edifícios funcionem perfeitamente sem ele.",
                 "pier": "As pessoas dizem que os peixes maiores estão nas águas mais profundas. Vamos ver até onde podemos chegar!",
+                "plantation": "Por que ir até a floresta se você pode deixar a floresta vir até você?",
                 "plaza": "Azulejos bonitos para sua cidade bonita. Ótimo para mercados, decoração ou apenas para exibir sua riqueza.",
                 "dirt": "Mostra onde as pessoas andam, mas ninguém se preocupou em colocar os ladrilhos corretamente.",
                 "port": "O porto permite que você negocie com outras cidades. É muito mais eficiente do que negociar por terra, e os custos de transporte serão reduzidos pela metade.",
@@ -599,7 +604,8 @@
             "player": "Jogador",
             "population": "População",
             "resources": "Recursos",
-            "title": "Classificação"
+            "title": "Classificação",
+            "description": "Não deixe que as classificações determinem como você quer aproveitar este jogo e o que você valoriza."
         },
         "production": {
             "title": "Visão geral da produção",
@@ -689,6 +695,7 @@
             "resources": "Recursos"
         },
         "reject": "rejeitar",
+        "lastActive": "última atividade{{time}}",
         "value": "Valor"
     },
     "popup": {

@@ -35,7 +35,7 @@
             "lowRations": "Ini kue saya! Rasi makanan yang rendah akan mengurangi jumlah makanan yang dibutuhkan per orang, tetapi orang-orang tidak akan menyukainya.",
             "neutralFocus": "Ini adalah pasar bebas, lakukan apa yang harus kamu lakukan. Pertahankan biaya impor dan ekspor pada tarif standar.",
             "normalRations": "Jumlah makanan yang tepat untuk rakyatmu. Jaga konsumsi makanan pada tingkat standar.",
-            "taxation": "Itu adil... Akan menghasilkan emas untuk setiap penduduk, tetapi mengurangi kebahagiaan.",
+            "taxation": "Itu wajar saja... Akan menghasilkan 0,05 emas untuk setiap penduduk, tetapi mengurangi tingkat kebahagiaan.",
             "veganSociety": "Ide aneh untuk memakan hewan... Meningkatkan produksi makanan, tetapi Anda tidak dapat memproduksi produk hewani.",
             "workerSafety": "Manusia adalah aset terbesar Anda. Meningkatkan keamanan produksi tetapi mengurangi output.",
             "dubiousWorkingRules": "Manusia hanyalah sumber daya. Meningkatkan output produksi tetapi meningkatkan tingkat kecelakaan.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Itu tidak banyak... Buat bentuk yang lebih besar: {{size}} (min {{limit}})",
             "cooldown": "Tunggu sebentar",
             "costs": "Biaya:",
+            "exclusionPreview": "Zona larangan",
             "invalidLocation": "Lokasi tidak valid",
             "mustBeNear": "Harus berada di dekat {{parent}}",
             "notEnoughPop": "Populasi tidak cukup.",
             "notEnoughResources": "Sumber daya tidak mencukupi",
+            "territoryPreview": "Jangkauan wilayah",
             "tooHigh": "Perbesar tampilan."
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Ekspedisi",
+                "taxation": "Pajak",
                 "bakery": "Toko roti",
                 "boat": "Perahu",
                 "brewery": "Pabrik Bir",
@@ -235,6 +238,7 @@
                 "park": "Park",
                 "path": "Jalur",
                 "pier": "Pier",
+                "plantation": "Perkebunan",
                 "plaza": "Plaza",
                 "dirt": "Kotoran",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Tambahkan taman yang indah ke kota Anda agar warga Anda dapat bersantai di sana.",
                 "path": "Sebuah jalan tanah sederhana yang berfungsi dengan baik, meskipun bangunan-bangunan tersebut tetap berfungsi dengan baik tanpa adanya jalan tersebut.",
                 "pier": "Orang-orang bersumpah bahwa ikan yang lebih besar berada di perairan yang lebih dalam. Mari kita lihat seberapa dalam kita bisa pergi!",
+                "plantation": "Mengapa harus pergi ke hutan jika hutan bisa datang kepadamu?",
                 "plaza": "Ubin cantik untuk kota cantik Anda. Cocok untuk pasar, dekorasi, atau sekadar memamerkan kekayaan Anda.",
                 "dirt": "Ini menunjukkan di mana orang berjalan, tetapi tidak ada yang repot-repot memasang ubin yang benar.",
                 "port": "Pelabuhan memungkinkan Anda berdagang dengan kota-kota lain. Ini jauh lebih efisien daripada berdagang melalui darat, dan biaya transportasi akan berkurang setengahnya.",
@@ -599,7 +604,8 @@
             "player": "Pemain",
             "population": "Populasi",
             "resources": "Sumber daya",
-            "title": "Peringkat"
+            "title": "Peringkat",
+            "description": "Jangan biarkan peringkat menentukan cara Anda menikmati permainan ini dan apa yang Anda anggap penting."
         },
         "production": {
             "title": "Ringkasan Produksi",
@@ -689,6 +695,7 @@
             "resources": "Sumber daya"
         },
         "reject": "Tolak",
+        "lastActive": "Terakhir aktif{{time}}",
         "value": "Nilai"
     },
     "popup": {

@@ -35,7 +35,7 @@
             "lowRations": "Je to můj dort! Nízké příděly sníží množství jídla potřebné na osobu, ale lidem se to nebude líbit.",
             "neutralFocus": "Je to volný trh, dělejte, co musíte. Udržujte náklady na dovoz i vývoz na standardní úrovni.",
             "normalRations": "Právě správné množství jídla pro vaše lidi. Udržujte spotřebu jídla na standardní úrovni.",
-            "taxation": "Je to spravedlivé... Vygeneruje zlato pro každého obyvatele, ale sníží spokojenost.",
+            "taxation": "Je to jen spravedlivé... Vytvoří 0,05 zlata za každého obyvatele, ale sníží spokojenost.",
             "veganSociety": "Jaký podivný nápad jíst zvířata... Zvyšuje produkci potravin, ale nelze vyrábět živočišné produkty.",
             "workerSafety": "Lidé jsou vaším největším bohatstvím. Zvyšuje bezpečnost výroby, ale snižuje výkon.",
             "dubiousWorkingRules": "Lidé jsou jen zdroje. Zvyšuje produkci, ale také zvyšuje počet nehod.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "To není moc... Vytvořte větší tvar: {{size}} (min. {{limit}})",
             "cooldown": "Počkejte chvíli.",
             "costs": "Náklady:",
+            "exclusionPreview": "Vyloučená zóna",
             "invalidLocation": "Neplatná poloha",
             "mustBeNear": "Musí být poblíž {{parent}}",
             "notEnoughPop": "Nedostatečná populace",
             "notEnoughResources": "Nedostatek zdrojů",
+            "territoryPreview": "Rozsah území",
             "tooHigh": "Přiblížit"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expedice",
+                "taxation": "Zdanění",
                 "bakery": "Pekařství",
                 "boat": "Loď",
                 "brewery": "Pivovar",
@@ -235,6 +238,7 @@
                 "park": "Park",
                 "path": "Cesta",
                 "pier": "Pier",
+                "plantation": "Plantáž",
                 "plaza": "Náměstí",
                 "dirt": "Špína",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Přidejte do svého města pěkný park, kde se budou moci vaši občané procházet.",
                 "path": "Jednoduchá polní cesta, která splní svůj účel, i když budovy budou fungovat i bez ní.",
                 "pier": "Lidé tvrdí, že větší ryby se nacházejí v hlubších vodách. Uvidíme, jak hluboko se dostaneme!",
+                "plantation": "Proč chodit do lesa, když si můžete nechat les přijít k vám?",
                 "plaza": "Krásné dlaždice pro vaše krásné město. Skvělé pro tržiště, dekoraci nebo jen pro předvádění svého bohatství.",
                 "dirt": "Ukazuje, kudy lidé chodí, ale nikdo se neobtěžoval položit pořádné dlaždice.",
                 "port": "Přístav vám umožňuje obchodovat s jinými městy. Je to mnohem efektivnější než obchodování po souši a náklady na dopravu se sníží na polovinu.",
@@ -599,7 +604,8 @@
             "player": "Hráč",
             "population": "Populace",
             "resources": "Zdroje",
-            "title": "Hodnocení"
+            "title": "Hodnocení",
+            "description": "Nenechte, aby žebříčky ovlivňovaly to, jak si chcete tuto hru užít a co je pro vás důležité."
         },
         "production": {
             "title": "Přehled výroby",
@@ -689,6 +695,7 @@
             "resources": "Zdroje"
         },
         "reject": "zamítnout",
+        "lastActive": "naposledy aktivní před{{time}}",
         "value": "Hodnota"
     },
     "popup": {

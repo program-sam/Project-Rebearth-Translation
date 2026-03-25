@@ -35,7 +35,7 @@
             "lowRations": "Det är min tårta! Låga ransoner minskar mängden mat som behövs per person, men folk kommer inte att gilla det.",
             "neutralFocus": "Det är en fri marknad, gör vad du måste göra. Håll både import- och exportkostnaderna på standardnivåer.",
             "normalRations": "Precis rätt mängd mat för ditt folk. Håll matkonsumtionen på normal nivå.",
-            "taxation": "Det är bara rättvist... Genererar guld för varje invånare, men minskar lyckan.",
+            "taxation": "Det är bara rättvist... Genererar 0,05 guld per invånare, men minskar lyckan.",
             "veganSociety": "Vilken konstig idé att äta djur... Ökar livsmedelsproduktionen, men du kan inte producera animaliska produkter.",
             "workerSafety": "Människor är din största tillgång. Ökar produktionssäkerheten men minskar produktionen.",
             "dubiousWorkingRules": "Människor är bara resurser. Ökar produktionen men ökar olycksfrekvensen.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Det är inte mycket... Gör en större form: {{size}} (min{{limit}})",
             "cooldown": "Vänta ett ögonblick",
             "costs": "Kostnader:",
+            "exclusionPreview": "Uteslutningszon",
             "invalidLocation": "Ogiltig plats",
             "mustBeNear": "Måste vara nära {{parent}}",
             "notEnoughPop": "Otillräcklig befolkning",
             "notEnoughResources": "Otillräckliga resurser",
+            "territoryPreview": "Territoriets utsträckning",
             "tooHigh": "Zooma in närmare"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expedition",
+                "taxation": "Beskattning",
                 "bakery": "Bageri",
                 "boat": "Båt",
                 "brewery": "Bryggeri",
@@ -235,6 +238,7 @@
                 "park": "Park",
                 "path": "Sökväg",
                 "pier": "Pier",
+                "plantation": "Plantation",
                 "plaza": "Plaza",
                 "dirt": "Smuts",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Lägg till en fin park i din stad där dina medborgare kan slöa.",
                 "path": "En enkel grusväg som fyller sin funktion, även om byggnaderna fungerar utmärkt utan dem.",
                 "pier": "Folk svär på att de större fiskarna finns på djupare vatten. Låt oss se hur djupt vi kan gå!",
+                "plantation": "Varför gå till skogen när du kan låta skogen komma till dig?",
                 "plaza": "Vackra kakelplattor för din vackra stad. Perfekt för marknadsplatser, dekoration eller bara för att visa upp din rikedom.",
                 "dirt": "Det visar var folk går, men ingen brydde sig om att lägga ner ordentliga kakelplattor.",
                 "port": "Hamnen gör det möjligt att handla med andra städer. Det är mycket effektivare än att handla över land, och transportkostnaderna halveras.",
@@ -599,7 +604,8 @@
             "player": "Spelare",
             "population": "Befolkning",
             "resources": "Resurser",
-            "title": "Rankning"
+            "title": "Rankning",
+            "description": "Låt inte rankningar styra hur du vill njuta av det här spelet och vad du värdesätter."
         },
         "production": {
             "title": "Produktionsöversikt",
@@ -689,6 +695,7 @@
             "resources": "Resurser"
         },
         "reject": "avvisa",
+        "lastActive": "senast aktivt för{{time}}",
         "value": "Värde"
     },
     "popup": {

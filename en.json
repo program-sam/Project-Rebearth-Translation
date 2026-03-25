@@ -35,7 +35,7 @@
             "lowRations": "It's my cake! Low rations will reduce the amount of food needed per person, but people won't like it.",
             "neutralFocus": "It's a free market, do what you gotta do. Keep both import and export costs at standard rates.",
             "normalRations": "Just the right amount of food for your people. Keep food consumption at standard rates.",
-            "taxation": "It's only fair... Will generate gold for each inhabitant, but reduces happiness.",
+            "taxation": "It's only fair... Will generate 0.05 gold for each inhabitant, but reduces happiness.",
             "veganSociety": "What a weird idea to eat animals... Increases food production, but you cannot produce animal products.",
             "workerSafety": "People are your greatest asset. Increases production safety but reduces output.",
             "dubiousWorkingRules": "People are just resources. Increases production output but increases accident rates.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "That is not much... Make a larger shape: {{size}} (min {{limit}})",
             "cooldown": "Wait a second",
             "costs": "Costs:",
+            "exclusionPreview": "Exclusion zone",
             "invalidLocation": "Invalid Location",
             "mustBeNear": "Must be near {{parent}}",
             "notEnoughPop": "Not enough population",
             "notEnoughResources": "Not enough resources",
+            "territoryPreview": "Territory range",
             "tooHigh": "Zoom in closer"
         },
         "cancel": "✗",
@@ -194,6 +196,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expedition",
+                "taxation": "Taxation",
                 "bakery": "Bakery",
                 "boat": "Boat",
                 "brewery": "Brewery",
@@ -236,6 +239,7 @@
                 "park": "Park",
                 "path": "Path",
                 "pier": "Pier",
+                "plantation": "Plantation",
                 "plaza": "Plaza",
                 "dirt": "Dirt",
                 "port": "Port",
@@ -327,6 +331,7 @@
                 "park": "Add a nice park to your town for your citizens to dillydally in.",
                 "path": "A simple dirt path that gets the job done, although buildings will work just fine without them.",
                 "pier": "People swear the bigger fish are in the deeper waters. Let's see how deep we can go!",
+                "plantation": "Why go to the forest when you can let the forest come to you?",
                 "plaza": "Pretty tiles for your pretty town. Great for marketplaces, decoration, or just showing off your wealth.",
                 "dirt": "It shows where people walk, but nobody could be bothered to put down proper tiles.",
                 "port": "The port lets you trade with other towns and cities. It is a lot more efficient than trading over land, and transport costs will be halved.",
@@ -600,7 +605,8 @@
             "player": "Player",
             "population": "Population",
             "resources": "Resources",
-            "title": "Ranking"
+            "title": "Ranking",
+            "description": "Don't let rankings control how you want to enjoy this game and what you value."
         },
         "production": {
             "title": "Production Overview",
@@ -690,6 +696,7 @@
             "resources": "Resources"
         },
         "reject": "reject",
+        "lastActive": "last active {{time}} ago",
         "value": "Value"
     },
     "popup": {

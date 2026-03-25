@@ -35,7 +35,7 @@
             "lowRations": "Het is mijn taart! Lage rantsoenen verminderen de hoeveelheid voedsel die per persoon nodig is, maar mensen zullen het niet leuk vinden.",
             "neutralFocus": "Het is een vrije markt, doe wat je moet doen. Houd zowel de import- als exportkosten op standaardtarieven.",
             "normalRations": "Precies de juiste hoeveelheid voedsel voor uw volk. Houd het voedselverbruik op het normale niveau.",
-            "taxation": "Het is niet meer dan eerlijk... Genereert goud voor elke inwoner, maar vermindert het geluksgevoel.",
+            "taxation": "Het is niet meer dan eerlijk... Levert 0,05 goud op per inwoner, maar vermindert het geluksgevoel.",
             "veganSociety": "Wat een raar idee om dieren te eten... Verhoogt de voedselproductie, maar je kunt geen dierlijke producten produceren.",
             "workerSafety": "Mensen zijn je grootste troef. Verhoogt de productieveiligheid, maar vermindert de output.",
             "dubiousWorkingRules": "Mensen zijn slechts middelen. Verhoogt de productie, maar verhoogt ook het aantal ongevallen.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Dat is niet veel... Maak een grotere vorm: {{size}} (min{{limit}}e)",
             "cooldown": "Wacht even",
             "costs": "Kosten:",
+            "exclusionPreview": "Uitsluitingszone",
             "invalidLocation": "Ongeldige locatie",
             "mustBeNear": "Moet in de buurt zijn van {{parent}}",
             "notEnoughPop": "Onvoldoende bevolking",
             "notEnoughResources": "Onvoldoende middelen",
+            "territoryPreview": "Territorium",
             "tooHigh": "Zoom in"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expeditie",
+                "taxation": "Belastingheffing",
                 "bakery": "Bakkerij",
                 "boat": "Boot",
                 "brewery": "Brouwerij",
@@ -235,6 +238,7 @@
                 "park": "Park",
                 "path": "Pad",
                 "pier": "Pier",
+                "plantation": "Plantage",
                 "plaza": "Plein",
                 "dirt": "Dirt",
                 "port": "Poort",
@@ -326,6 +330,7 @@
                 "park": "Voeg een mooi park toe aan je stad waar je burgers kunnen rondhangen.",
                 "path": "Een eenvoudig onverhard pad dat zijn werk doet, hoewel gebouwen ook prima zonder kunnen.",
                 "pier": "Mensen beweren dat de grotere vissen in diepere wateren zitten. Laten we eens kijken hoe diep we kunnen gaan!",
+                "plantation": "Waarom zou je naar het bos gaan als je het bos naar je toe kunt laten komen?",
                 "plaza": "Mooie tegels voor je mooie stad. Ideaal voor markten, decoratie of gewoon om te pronken met je rijkdom.",
                 "dirt": "Het laat zien waar mensen lopen, maar niemand nam de moeite om de juiste tegels neer te leggen.",
                 "port": "Via de haven kun je handel drijven met andere steden. Dit is veel efficiënter dan handel over land en de transportkosten worden gehalveerd.",
@@ -599,7 +604,8 @@
             "player": "Speler",
             "population": "Bevolking",
             "resources": "Bronnen",
-            "title": "Ranglijst"
+            "title": "Ranglijst",
+            "description": "Laat ranglijsten niet bepalen hoe je van dit spel wilt genieten en wat je belangrijk vindt."
         },
         "production": {
             "title": "Productieoverzicht",
@@ -689,6 +695,7 @@
             "resources": "Bronnen"
         },
         "reject": "afwijzen",
+        "lastActive": "Laatst actief {{time}} geleden",
         "value": "Waarde"
     },
     "popup": {

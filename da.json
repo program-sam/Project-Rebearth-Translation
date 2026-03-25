@@ -35,7 +35,7 @@
             "lowRations": "Det er min kage! Lav rationering reducerer den nødvendige mængde mad pr. person, men folk vil ikke bryde sig om det.",
             "neutralFocus": "Det er et frit marked, gør hvad du skal gøre. Hold både import- og eksportomkostningerne på standardpriser.",
             "normalRations": "Lige den rette mængde mad til dit folk. Hold madforbruget på et normalt niveau.",
-            "taxation": "Det er kun fair... Genererer guld for hver indbygger, men reducerer lykke.",
+            "taxation": "Det er kun rimeligt... Genererer 0,05 guld for hver indbygger, men reducerer tilfredsheden.",
             "veganSociety": "Hvor er det en mærkelig idé at spise dyr... Øger fødevareproduktionen, men du kan ikke producere animalske produkter.",
             "workerSafety": "Mennesker er din største aktiv. Øger produktionssikkerheden, men reducerer produktionen.",
             "dubiousWorkingRules": "Mennesker er blot ressourcer. Øger produktionen, men øger ulykkesfrekvensen.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Det er ikke meget... Lav en større form: {{size}} (min. {{limit}})",
             "cooldown": "Vent et øjeblik",
             "costs": "Omkostninger:",
+            "exclusionPreview": "Udelukkelseszone",
             "invalidLocation": "Ugyldig placering",
             "mustBeNear": "Skal være tæt på {{parent}}",
             "notEnoughPop": "Ikke nok befolkning",
             "notEnoughResources": "Ikke nok ressourcer",
+            "territoryPreview": "Territoriets udstrækning",
             "tooHigh": "Zoom ind tættere"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Ekspedition",
+                "taxation": "Beskatning",
                 "bakery": "Bageri",
                 "boat": "Båd",
                 "brewery": "Bryggeri",
@@ -235,6 +238,7 @@
                 "park": "Park",
                 "path": "Sti",
                 "pier": "Pier",
+                "plantation": "Plantation",
                 "plaza": "Plaza",
                 "dirt": "Dirt",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Tilføj en dejlig park til din by, hvor dine borgere kan slentre rundt.",
                 "path": "En simpel grusvej, der gør jobbet, selvom bygningerne fungerer fint uden dem.",
                 "pier": "Folk sværger, at de større fisk findes i de dybere farvande. Lad os se, hvor dybt vi kan komme!",
+                "plantation": "Hvorfor tage ud i skoven, når du kan lade skoven komme til dig?",
                 "plaza": "Smukke fliser til din smukke by. Perfekt til markedspladser, dekoration eller bare for at vise din rigdom frem.",
                 "dirt": "Det viser, hvor folk går, men ingen har gidet at lægge ordentlige fliser.",
                 "port": "Havnen giver dig mulighed for at handle med andre byer. Det er meget mere effektivt end handel over land, og transportomkostningerne halveres.",
@@ -599,7 +604,8 @@
             "player": "Spiller",
             "population": "Befolkning",
             "resources": "Ressourcer",
-            "title": "Rangering"
+            "title": "Rangering",
+            "description": "Lad ikke ranglisterne bestemme, hvordan du vil nyde dette spil, og hvad du værdsætter."
         },
         "production": {
             "title": "Produktionsoversigt",
@@ -689,6 +695,7 @@
             "resources": "Ressourcer"
         },
         "reject": "Afvis",
+        "lastActive": "sidste aktivitet{{time}}er siden",
         "value": "Værdi"
     },
     "popup": {

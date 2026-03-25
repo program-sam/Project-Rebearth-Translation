@@ -87,10 +87,12 @@
             "areaTooSmall": "That is not much... Make a larger shape: {{size}} (min {{limit}})",
             "cooldown": "Espera un segundo.",
             "costs": "Costes:",
+            "exclusionPreview": "Zona de exclusión",
             "invalidLocation": "Ubicación no válida",
             "mustBeNear": "Debe estar cerca de {{parent}}",
             "notEnoughPop": "Población insuficiente.",
             "notEnoughResources": "Recursos insuficientes.",
+            "territoryPreview": "Ámbito territorial",
             "tooHigh": "Acercar la imagen"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expedición",
+                "taxation": "Fiscalidad",
                 "bakery": "Panadería",
                 "boat": "Barco",
                 "brewery": "Cervecería",
@@ -235,6 +238,7 @@
                 "park": "Parque",
                 "path": "Ruta",
                 "pier": "Pier",
+                "plantation": "Plantación",
                 "plaza": "Plaza",
                 "dirt": "Suciedad",
                 "port": "Puerto",
@@ -326,6 +330,7 @@
                 "park": "Añade un bonito parque a tu ciudad para que tus ciudadanos puedan pasar el rato.",
                 "path": "Un sencillo camino de tierra. Simplemente cumple su función. Aunque los edificios funcionarán perfectamente sin ellos.",
                 "pier": "La gente asegura que los peces más grandes se encuentran en las aguas más profundas. Veamos hasta dónde podemos llegar.",
+                "plantation": "¿Por qué ir al bosque cuando puedes hacer que el bosque venga a ti?",
                 "plaza": "Bonitos azulejos para tu bonita ciudad. Ideales para mercados, decoración o simplemente para presumir de tu riqueza.",
                 "dirt": "Muestra por dónde camina la gente, pero nadie se ha molestado en colocar baldosas adecuadas.",
                 "port": "El puerto te permite comerciar con otros pueblos y ciudades. Es mucho más eficiente que el comercio por tierra y los costes de transporte se reducirán a la mitad.",
@@ -599,7 +604,8 @@
             "player": "Jugador",
             "population": "Población",
             "resources": "Recursos",
-            "title": "Clasificación"
+            "title": "Clasificación",
+            "description": "No dejes que las clasificaciones determinen cómo quieres disfrutar de este juego y qué es lo que más valoras."
         },
         "production": {
             "title": "Descripción general de la producción",
@@ -689,6 +695,7 @@
             "resources": "Recursos"
         },
         "reject": "Rechazar.",
+        "lastActive": "Última actividad{{time}}",
         "value": "Valor"
     },
     "popup": {

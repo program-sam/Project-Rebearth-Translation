@@ -35,7 +35,7 @@
             "lowRations": "Ez az én tortám! Az alacsony élelmiszeradagok csökkentik az egy főre jutó élelmiszermennyiséget, de az embereknek ez nem fog tetszeni.",
             "neutralFocus": "Ez egy szabad piac, tedd, amit tenned kell. Tartsd az import és export költségeket a szokásos szinten.",
             "normalRations": "Pontosan a megfelelő mennyiségű élelmiszer az embereidnek. Tartsd az élelmiszer-fogyasztást a szokásos szinten.",
-            "taxation": "Ez csak igazságos... Minden lakos után aranyat generál, de csökkenti a boldogságot.",
+            "taxation": "Ez csak igazságos... Minden lakos után 0,05 aranyat generál, de csökkenti a boldogságot.",
             "veganSociety": "Milyen furcsa ötlet állatokat enni... Növeli az élelmiszertermelést, de állati termékeket nem lehet előállítani.",
             "workerSafety": "Az emberek a legnagyobb értéke. Növeli a termelés biztonságát, de csökkenti a termelékenységet.",
             "dubiousWorkingRules": "Az emberek csak erőforrások. Növeli a termelési teljesítményt, de emeli a balesetek arányát.",
@@ -87,10 +87,12 @@
             "areaTooSmall": "Ez nem sok... Készítsen nagyobb alakzatot: {{size}} (min{{limit}})",
             "cooldown": "Várjon egy pillanatot!",
             "costs": "Költségek:",
+            "exclusionPreview": "Kizárási zóna",
             "invalidLocation": "Érvénytelen hely",
             "mustBeNear": "{{parent}} közelében kell lennie.",
             "notEnoughPop": "Nincs elég népesség",
             "notEnoughResources": "Nincs elég erőforrás",
+            "territoryPreview": "Területi hatály",
             "tooHigh": "Nagyítás"
         },
         "cancel": "✗",
@@ -193,6 +195,7 @@
         "buildings": {
             "assets": {
                 "expedition": "Expedíció",
+                "taxation": "Adózás",
                 "bakery": "Pékáru",
                 "boat": "Hajó",
                 "brewery": "Sörgyár",
@@ -235,6 +238,7 @@
                 "park": "Park",
                 "path": "Útvonal",
                 "pier": "Pier",
+                "plantation": "Ültetvény",
                 "plaza": "Plaza",
                 "dirt": "Dirt",
                 "port": "Port",
@@ -326,6 +330,7 @@
                 "park": "Adj hozzá egy szép parkot a városodhoz, ahol a polgárok elüldögélhetnek.",
                 "path": "Egy egyszerű földút, amely elvégzi a feladatát, bár az épületek ezek nélkül is tökéletesen működnek.",
                 "pier": "Az emberek esküsznek, hogy a nagyobb halak a mélyebb vizekben vannak. Lássuk, milyen mélyre tudunk lemerülni!",
+                "plantation": "Miért mennél az erdőbe, ha az erdő is eljöhet hozzád?",
                 "plaza": "Szép csempék a szép városodhoz. Kiválóan alkalmasak piacokhoz, dekorációhoz, vagy egyszerűen csak a vagyonod megmutatásához.",
                 "dirt": "Megmutatja, hol járnak az emberek, de senki sem vette a fáradtságot, hogy megfelelő csempéket rakjon le.",
                 "port": "A kikötő lehetővé teszi, hogy más városokkal kereskedj. Ez sokkal hatékonyabb, mint a szárazföldi kereskedelem, és a szállítási költségek felére csökkennek.",
@@ -599,7 +604,8 @@
             "player": "Játékos",
             "population": "Népesség",
             "resources": "Források",
-            "title": "Rangsor"
+            "title": "Rangsor",
+            "description": "Ne hagyd, hogy a ranglisták befolyásolják, hogyan szeretnéd élvezni ezt a játékot, és mit tartasz fontosnak."
         },
         "production": {
             "title": "Gyártási áttekintés",
@@ -689,6 +695,7 @@
             "resources": "Források"
         },
         "reject": "elutasítás",
+        "lastActive": "utolsó aktivitás{{time}}e",
         "value": "Érték"
     },
     "popup": {
