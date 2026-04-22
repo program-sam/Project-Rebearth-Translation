@@ -43,6 +43,8 @@
             "intensiveFarming": "集约化养殖可让您用谷物喂养牲畜，从而增加可生产的动物产品数量。",
             "newTownBoost": "作为新建立的定居点，您将获得临时增益效果以助您起步。这些增益效果会随时间逐渐消失。"
         },
+        "confirmChange": "您确定要更改此选项吗？",
+        "confirmLock": "此选项在{{time}}中将被锁定。",
         "exclusiveOptions": "专属选项",
         "lockedFor": "锁定状态",
         "option": "选项",
@@ -410,6 +412,7 @@
             "happiness": "幸福",
             "knowledge": "知识",
             "pop": "人口",
+            "population": "人口",
             "stone": "石",
             "wood": "木材",
             "wool": "羊毛",
@@ -436,6 +439,10 @@
             "multiPlace": "继续放置",
             "rotate": "旋转",
             "restriction": "不可建造区域"
+        },
+        "explore": {
+            "doubleClickDraw": "双击以绘制区域",
+            "adjustEffort": "使用滑块调整力度"
         },
         "capacity": "容量",
         "defaultTownName": "无名小镇",
@@ -491,6 +498,7 @@
             "returnToDesktop": "返回桌面",
             "serverOffline": "无法连接服务器。服务器可能负载过高，或因维护暂时关闭。请通过Discord查看最新状态。",
             "settings": "设置",
+            "blueprints": "蓝图",
             "subtitle": "这是《重生计划》的早期版本。若在游戏过程中遇到任何问题，请随时联系我们。",
             "suspended": "您的账户已被暂停。原因：{{reason}}",
             "demoSubtitle": "这是《重生计划》的试玩版。当前仅开放沙盒城市建设模式。若需体验多人联机资源管理玩法，请获取完整版。",
@@ -498,6 +506,29 @@
             "demoRestriction2": "沙盒模式依然能让你制作精彩地图，以高分辨率导出作品，并体验1:1比例游戏世界的真实感受。",
             "title": "重生计划服务器",
             "welcome": "欢迎，{{name}}！"
+        },
+        "blueprints": {
+            "title": "建筑蓝图",
+            "description": "创建可重复使用的建筑蓝图，以便快速放置一组建筑。",
+            "createNew": "创建新蓝图",
+            "noBlueprints": "目前尚无蓝图。快来创建你的第一个吧！",
+            "edit": "编辑",
+            "delete": "删除",
+            "deleteConfirm": "您确定要删除此蓝图吗？",
+            "enable": "启用蓝图",
+            "disable": "禁用蓝图",
+            "enabled": "已启用",
+            "disabled": "已禁用",
+            "unnamed": "未命名的蓝图",
+            "workshop": "研讨会",
+            "workshopItem": "研讨会",
+            "published": "已发布",
+            "publish": "发布",
+            "update": "更新",
+            "publishToWorkshop": "发布到 Steam 创意工坊",
+            "updateWorkshop": "更新创意工坊项目",
+            "duplicate": "创建副本",
+            "copyLabel": "(复制)"
         },
         "sandbox": {
             "description": "沙盒模式允许您在不受多人游戏世界限制的情况下自由建造。这里只有您自己，且没有任何资源限制。您可以保存进度并在稍后继续游戏。",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "档案"
+            "title": "档案",
+            "empty": "尚未发现任何文物。",
+            "emptyHint": "派遣探险队，揭开旧世界的秘密。",
+            "flyTo": "飞往该地点",
+            "needMuseum": "先建造一座博物馆"
         },
         "choices": {
             "selectChoice": "选择选项",
@@ -748,8 +783,10 @@
             "title": "存储"
         },
         "townName": "城镇名称：",
+        "marketName": "地区",
         "townColor": "城镇色彩：",
         "unnamedTown": "无名小镇",
+        "unnamedDistrict": "无名区",
         "upgrade": "升级至{{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "纹理分辨率",
         "title": "设置",
         "treeDensity": "树木密度",
-        "uiScale": "UI比例"
+        "uiScale": "UI比例",
+        "workerThreads": "CPU 线程",
+        "workerThreadsHelp": "控制用于渲染的后台线程数量。增加线程数可以加快贴图加载速度，但也会增加内存占用，并在低端设备上导致崩溃。请尝试调整，以找到适合您系统的最佳平衡点。"
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "浏览远征队发现的所有文物。每件文物都揭示了旧世界历史的一段片段，并可能蕴含珍贵的资源。",
         "hud": "此面板显示您拥有的所有资源、生产量与消耗量。将鼠标悬停在图标上可查看各资源详情。若某资源即将耗尽，该资源将以红色高亮显示，建筑可能被迫降低产量。当资源达到容量上限时，该资源将以粗体显示，建筑将停止生产。初始奖励等效果会影响您的生产或消耗量，悬停资源时可查看这些修正值。 看到左侧旋转的圆圈了吗？它表示游戏正在与服务器同步。同步完成前资源变化不会显示。资源消耗与生产以日为单位显示，对应真实时间的一天。不过资源数值会缓慢递增。",
         "market": "欢迎来到市场！这里汇集了其他玩家想要买卖的所有物品，更重要的是——它们的交易价格！当你完成他人订单时，需支付运输费用。因此若对方距离遥远，交易可能得不偿失，甚至导致成本超过对方愿意支付的价格。",
         "orders": "发布交易指令！向其他玩家宣告你想买卖的商品及价格。这将决定你获得或支付的金额。请注意：运输费用需由买家承担。因此低价购买可能因对方运费过高而无法成交。",
@@ -834,6 +874,36 @@
         "percentage": "{{value}}",
         "seconds": "{{value}} s",
         "secondsLong": "秒"
+    },
+    "blueprintEditor": {
+        "details": "蓝图详情",
+        "name": "名称",
+        "namePlaceholder": "蓝图名称",
+        "description": "描述",
+        "descriptionPlaceholder": "此蓝图构建的是什么？",
+        "category": "分类",
+        "categoryPlaceholder": "例如：工业区、住宅区",
+        "biome": "生物群系配置",
+        "allBiomes": "所有生物群系采用相同的布局",
+        "copyConfig": "复制生物群系配置",
+        "selectSource": "选择源生物群系",
+        "cancelCopy": "取消复制",
+        "copyTo": "复制到 {{biome}}",
+        "source": "来源",
+        "copyHint": "点击目标生物群系以将物品复制到该处",
+        "objectCount": "对象",
+        "totalCost": "总成本",
+        "save": "保存",
+        "exit": "退出",
+        "publish": "发布",
+        "updateWorkshop": "更新",
+        "published": "已发布！",
+        "publishFailed": "失败",
+        "buildMenu": "建筑物",
+        "rates": "评分",
+        "noRates": "放置建筑物以查看数据",
+        "deleteObject": "删除",
+        "outOfBounds": "蓝图区域外"
     },
     "warnings": {
         "notEnoughPop": "志愿者不足"

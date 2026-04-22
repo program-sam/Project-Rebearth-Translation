@@ -43,6 +43,8 @@
             "intensiveFarming": "Intensivt jordbruk gör det möjligt att mata dina djur med spannmål, vilket ökar mängden animaliska produkter du kan producera.",
             "newTownBoost": "Som ny bosättning får du tillfälliga bonusar som hjälper dig att komma igång. Dessa försvinner med tiden."
         },
+        "confirmChange": "Är du säker på att du vill ändra detta val?",
+        "confirmLock": "Detta val kommer att låsas för {{time}}.",
         "exclusiveOptions": "Exklusiva alternativ",
         "lockedFor": "Låst för",
         "option": "Alternativ",
@@ -410,6 +412,7 @@
             "happiness": "Lycka",
             "knowledge": "Kunskap",
             "pop": "Befolkning",
+            "population": "Befolkning",
             "stone": "Sten",
             "wood": "Trä",
             "wool": "Ull",
@@ -436,6 +439,10 @@
             "multiPlace": "Fortsätt placera",
             "rotate": "Rotera",
             "restriction": "Område som inte kan bebyggas"
+        },
+        "explore": {
+            "doubleClickDraw": "Dubbelklicka för att rita ett område",
+            "adjustEffort": "Använd skjutreglaget för att justera ansträngningen"
         },
         "capacity": "Kapacitet",
         "defaultTownName": "Namnlös stad",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Återgå till skrivbordet",
             "serverOffline": "Det går inte att nå servern. Servern kan vara överbelastad eller tillfälligt nere för underhåll. Kontrollera Discord för den senaste statusen.",
             "settings": "Inställningar",
+            "blueprints": "Ritningar",
             "subtitle": "Detta är en tidig version av Project Rebearth. Kontakta oss om du stöter på några problem när du spelar.",
             "suspended": "Ditt konto har stängts av. Orsak: {{reason}}",
             "demoSubtitle": "Detta är en demo av Project Rebearth. Endast sandbox-stadsbyggaren är aktiverad. För att spela på multiplayer-glob med resurshantering, skaffa den fullständiga versionen.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "I sandlådeläget kan du fortfarande skapa fantastiska kartor, exportera dem i hög upplösning och uppleva hur det känns att spela i en spelvärld i skala 1:1.",
             "title": "Projekt Rebearth Server",
             "welcome": "Välkommen, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Byggnadsritningar",
+            "description": "Skapa återanvändbara byggnadsritningar för att snabbt placera grupper av byggnader.",
+            "createNew": "Skapa ny blueprint",
+            "noBlueprints": "Inga ritningar ännu. Skapa din första!",
+            "edit": "Redigera",
+            "delete": "Radera",
+            "deleteConfirm": "Är du säker på att du vill ta bort denna blueprint?",
+            "enable": "Aktivera blueprint",
+            "disable": "Inaktivera blueprint",
+            "enabled": "Aktiverat",
+            "disabled": "Inaktiverat",
+            "unnamed": "Namnlös ritning",
+            "workshop": "Workshop",
+            "workshopItem": "Workshop",
+            "published": "Publicerad",
+            "publish": "Publicera",
+            "update": "Uppdatering",
+            "publishToWorkshop": "Publicera till Steam Workshop",
+            "updateWorkshop": "Uppdatera Workshop-objekt",
+            "duplicate": "Skapa en kopia",
+            "copyLabel": "(Kopiera)"
         },
         "sandbox": {
             "description": "Sandbox-läget låter dig bygga fritt utan begränsningarna i multiplayer-världen. Det är bara du och inga resursbegränsningar. Du kan spara dina framsteg och ladda dem senare.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Arkiv"
+            "title": "Arkiv",
+            "empty": "Inga artefakter har hittats ännu.",
+            "emptyHint": "Skicka ut expeditioner för att avslöja den gamla världens hemligheter.",
+            "flyTo": "Flyg till plats",
+            "needMuseum": "Bygg ett museum först"
         },
         "choices": {
             "selectChoice": "Välj alternativ",
@@ -748,8 +783,10 @@
             "title": "Lagring"
         },
         "townName": "Stadens namn:",
+        "marketName": "Distrikt",
         "townColor": "Stadens färg:",
         "unnamedTown": "Namnlös stad",
+        "unnamedDistrict": "namnlöst distrikt",
         "upgrade": "Uppgradera till {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Texturupplösning",
         "title": "Inställningar",
         "treeDensity": "Trädtäthet",
-        "uiScale": "UI-skala"
+        "uiScale": "UI-skala",
+        "workerThreads": "CPU-trådar",
+        "workerThreadsHelp": "Styr hur många bakgrundstrådar som används för rendering. Fler trådar kan påskynda inläsningen av rutor, men ökar också minnesanvändningen och kan orsaka krascher på enklare enheter. Experimentera för att hitta den bästa balansen för ditt system."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Bläddra bland alla artefakter som upptäckts av dina expeditioner. Varje artefakt avslöjar en bit av den gamla världens historia och kan innehålla värdefulla resurser.",
         "hud": "Denna panel visar alla resurser du har, producerar och förbrukar. Håll muspekaren över ikonerna för att se mer information om varje resurs. Om du har ont om en resurs markeras den med rött och byggnaderna kan tvingas minska sin produktivitet. Om du når din kapacitet visas det i fetstil och dina byggnader slutar producera. Du kan ha effekter, som din startbonus, som påverkar hur mycket du producerar eller förbrukar. Dessa modifierare visas när du håller muspekaren över en resurs. Ser du den snurrande cirkeln till vänster? Den indikerar när spelet synkroniseras med servern. Du ser inte resursförändringar förrän synkroniseringen är klar. Resursförbrukning och produktion visas per dag. Detta är en faktisk realtidsdag. Dina resurser kommer dock att öka långsamt.",
         "market": "Välkommen till marknaden! Här kan du se allt som andra spelare vill köpa eller sälja, och ännu viktigare, till vilket pris! Du betalar transportkostnaderna när du fullgör någon annans order. Om de bor långt bort kan det därför hända att det inte är värt det, eller till och med kosta mer än vad de är villiga att betala.",
         "orders": "Lägg dina order! Meddela andra spelare vad du vill köpa eller sälja, och till vilket pris. Det är vad du kommer att få eller betala. Tänk på att andra kommer att betala för transporten. Att köpa något till ett lågt pris kanske inte fungerar om andra spelares fraktkostnader är för höga.",
@@ -834,6 +874,36 @@
         "percentage": "{{värde}}",
         "seconds": "{{value}} s",
         "secondsLong": "sekunder"
+    },
+    "blueprintEditor": {
+        "details": "Detaljer om ritningen",
+        "name": "Namn",
+        "namePlaceholder": "Namn på blueprint",
+        "description": "Beskrivning",
+        "descriptionPlaceholder": "Vad bygger denna blueprint?",
+        "category": "Kategori",
+        "categoryPlaceholder": "t.ex. industriellt, bostäder",
+        "biome": "Biomkonfiguration",
+        "allBiomes": "Samma layout för alla biomer",
+        "copyConfig": "Kopiera biomkonfiguration",
+        "selectSource": "Välj källbiom",
+        "cancelCopy": "Avbryt kopiering",
+        "copyTo": "Kopiera till {{biome}}",
+        "source": "Källa",
+        "copyHint": "Klicka på ett målbiom för att kopiera objekt till",
+        "objectCount": "Objekt",
+        "totalCost": "Total kostnad",
+        "save": "Spara",
+        "exit": "Avsluta",
+        "publish": "Publicera",
+        "updateWorkshop": "Uppdatering",
+        "published": "Publicerat!",
+        "publishFailed": "Misslyckades",
+        "buildMenu": "Byggnader",
+        "rates": "Priser",
+        "noRates": "Placera byggnader för att se priser",
+        "deleteObject": "Ta bort",
+        "outOfBounds": "Utanför ritningsområdet"
     },
     "warnings": {
         "notEnoughPop": "Inte tillräckligt med volontärer"

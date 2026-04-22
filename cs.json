@@ -43,6 +43,8 @@
             "intensiveFarming": "Intenzivní zemědělství vám umožňuje krmit zvířata obilím, čímž se zvyšuje množství živočišných produktů, které můžete vyprodukovat.",
             "newTownBoost": "Jako nová osada získáte dočasné bonusy, které vám pomohou začít. Tyto bonusy se časem vytratí."
         },
+        "confirmChange": "Opravdu chcete tuto volbu změnit?",
+        "confirmLock": "Tato volba bude pro hru „{{time}}“ uzamčena.",
         "exclusiveOptions": "Exkluzivní možnosti",
         "lockedFor": "Zamčeno pro",
         "option": "Možnost",
@@ -410,6 +412,7 @@
             "happiness": "Štěstí",
             "knowledge": "Znalosti",
             "pop": "Populace",
+            "population": "Populace",
             "stone": "Kámen",
             "wood": "Dřevo",
             "wool": "Vlna",
@@ -436,6 +439,10 @@
             "multiPlace": "Pokračujte v umisťování",
             "rotate": "Otočit",
             "restriction": "Nezastavitelná oblast"
+        },
+        "explore": {
+            "doubleClickDraw": "Dvojitým kliknutím nakreslete oblast",
+            "adjustEffort": "Pomocí posuvníku nastavte úsilí"
         },
         "capacity": "Kapacita",
         "defaultTownName": "Bezejmenné město",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Návrat na plochu",
             "serverOffline": "Nelze se připojit k serveru. Server může být přetížen nebo dočasně mimo provoz z důvodu údržby. Nejnovější informace najdete na Discord.",
             "settings": "Nastavení",
+            "blueprints": "Návrhy",
             "subtitle": "Toto je předběžná verze hry Project Rebearth. Pokud narazíte na nějaké problémy při hraní, kontaktujte nás.",
             "suspended": "Váš účet byl pozastaven. Důvod: {{reason}}",
             "demoSubtitle": "Toto je demo hry Project Rebearth. K dispozici je pouze sandboxový editor měst. Chcete-li hrát na multiplayerovém globu s řízením zdrojů, pořiďte si plnou verzi.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Režim sandboxu vám stále umožňuje vytvářet úžasné mapy, exportovat je ve vysokém rozlišení a zažít, jaké to je hrát ve světě ve měřítku 1:1.",
             "title": "Projekt Rebearth Server",
             "welcome": "Vítejte, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Stavební plány",
+            "description": "Vytvořte opakovaně použitelné plány budov, abyste mohli rychle umisťovat skupiny budov.",
+            "createNew": "Vytvořit nový blueprint",
+            "noBlueprints": "Zatím žádné návrhy. Vytvořte svůj první!",
+            "edit": "Upravit",
+            "delete": "Smazat",
+            "deleteConfirm": "Opravdu chcete tento návrh smazat?",
+            "enable": "Povolit blueprint",
+            "disable": "Zakázat plán",
+            "enabled": "Povoleno",
+            "disabled": "Zakázáno",
+            "unnamed": "Bezejmenný návrh",
+            "workshop": "Workshop",
+            "workshopItem": "Workshop",
+            "published": "Zveřejněno",
+            "publish": "Publikovat",
+            "update": "Aktualizace",
+            "publishToWorkshop": "Publikovat na Steam Workshop",
+            "updateWorkshop": "Aktualizovat položku v Workshopu",
+            "duplicate": "Vytvořte kopii",
+            "copyLabel": "(Kopie)"
         },
         "sandbox": {
             "description": "Režim Sandbox vám umožňuje stavět bez omezení multiplayerového světa. Jste to jen vy a žádné omezení zdrojů. Svůj postup můžete uložit a později načíst.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Archivy"
+            "title": "Archivy",
+            "empty": "Zatím nebyly objeveny žádné artefakty.",
+            "emptyHint": "Vysílejte výpravy, abyste odhalili tajemství starého světa.",
+            "flyTo": "Letět na místo",
+            "needMuseum": "Nejprve postavte muzeum"
         },
         "choices": {
             "selectChoice": "Vyberte možnost",
@@ -748,8 +783,10 @@
             "title": "Úložiště"
         },
         "townName": "Název města:",
+        "marketName": "Okres",
         "townColor": "Barva města:",
         "unnamedTown": "bezejmenné město",
+        "unnamedDistrict": "bezejmenný okres",
         "upgrade": "Upgradujte n{{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Rozlišení textur",
         "title": "Nastavení",
         "treeDensity": "Hustota stromů",
-        "uiScale": "Měřítko uživatelského rozhraní"
+        "uiScale": "Měřítko uživatelského rozhraní",
+        "workerThreads": "Vlákna procesoru",
+        "workerThreadsHelp": "Určuje, kolik pozadních vláken se použije pro vykreslování. Více vláken může urychlit načítání dlaždic, ale také zvyšuje využití paměti a může způsobit pády na slabších zařízeních. Vyzkoušejte různé možnosti a najděte optimální nastavení pro váš systém."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Prohlédněte si všechny artefakty objevené vašimi expedicemi. Každý artefakt odhaluje kousek historie starého světa a může obsahovat cenné suroviny.",
         "hud": "Tento panel zobrazuje všechny zdroje, které máte, produkujete a spotřebováváte. Umístěte kurzor na ikony a zobrazí se další podrobnosti o jednotlivých zdrojích. Pokud vám dochází nějaký zdroj, bude zvýrazněn červeně a budovy mohou být nuceny snížit svou produktivitu. Pokud dosáhnete své kapacity, zobrazí se tučným písmem a vaše budovy přestanou produkovat. Můžete mít efekty, jako je váš startovací bonus, které ovlivňují, kolik produkujete nebo spotřebováváte. Tyto modifikátory se zobrazí, když umístíte kurzor na zdroj. Vidíte točící se kruh vlevo? Ten označuje, kdy se hra synchronizuje se serverem. Změny zdrojů neuvidíte, dokud synchronizace neskončí. Spotřeba a produkce zdrojů se zobrazují za den. Jedná se o skutečný den v reálném čase. Vaše zdroje však budou pomalu přibývat.",
         "market": "Vítejte na trhu! Podívejte se, co ostatní hráči chtějí koupit nebo prodat, a co je ještě důležitější, za jakou cenu! Při plnění objednávky jiného hráče budete hradit náklady na dopravu. Pokud je tedy někdo daleko, nemusí se to vyplatit, nebo to dokonce může stát víc, než je ochoten zaplatit.",
         "orders": "Zadejte své objednávky! Oznamte ostatním hráčům, co chcete koupit nebo prodat a za jakou cenu. To je částka, kterou obdržíte nebo zaplatíte. Mějte na paměti, že ostatní budou platit za dopravu. Nákup za nízkou cenu tedy nemusí být výhodný, pokud jsou náklady na dopravu ostatních hráčů příliš vysoké.",
@@ -834,6 +874,36 @@
         "percentage": "{{hodnota}}",
         "seconds": "{{value}} s",
         "secondsLong": "sekundy"
+    },
+    "blueprintEditor": {
+        "details": "Podrobnosti o plánu",
+        "name": "Název",
+        "namePlaceholder": "Název plánu",
+        "description": "Popis",
+        "descriptionPlaceholder": "Co tento blueprint vytváří?",
+        "category": "Kategorie",
+        "categoryPlaceholder": "např. průmyslové, obytné",
+        "biome": "Nastavení biomu",
+        "allBiomes": "Stejné rozložení pro všechny biomy",
+        "copyConfig": "Kopírovat konfiguraci biomu",
+        "selectSource": "Vyberte zdrojový biom",
+        "cancelCopy": "Zrušit kopírování",
+        "copyTo": "Zkopírujte na {{biome}}",
+        "source": "Zdroj",
+        "copyHint": "Klikněte na cílový biom, do kterého chcete objekty zkopírovat",
+        "objectCount": "Objekty",
+        "totalCost": "Celkové náklady",
+        "save": "Uložit",
+        "exit": "Konec",
+        "publish": "Publikovat",
+        "updateWorkshop": "Aktualizace",
+        "published": "Zveřejněno!",
+        "publishFailed": "Selhalo",
+        "buildMenu": "Budovy",
+        "rates": "Ceny",
+        "noRates": "Umístěte budovy a podívejte se na sazby",
+        "deleteObject": "Odebrat",
+        "outOfBounds": "Mimo oblast plánu"
     },
     "warnings": {
         "notEnoughPop": "Nedostatek dobrovolníků"

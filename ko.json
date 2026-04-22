@@ -43,6 +43,8 @@
             "intensiveFarming": "집약적 농업을 통해 가축에게 곡물을 먹여 생산할 수 있는 동물성 제품의 양을 늘릴 수 있습니다.",
             "newTownBoost": "새로운 정착지로서, 시작을 돕기 위한 임시 보너스를 받게 됩니다. 이 보너스는 시간이 지남에 따라 사라집니다."
         },
+        "confirmChange": "이 선택을 변경하시겠습니까?",
+        "confirmLock": "{{time}}에서는 이 선택 항목이 잠기게 됩니다.",
         "exclusiveOptions": "독점 옵션",
         "lockedFor": "잠금 설정됨",
         "option": "옵션",
@@ -410,6 +412,7 @@
             "happiness": "행복도",
             "knowledge": "지식",
             "pop": "인구",
+            "population": "인구",
             "stone": "돌",
             "wood": "우드",
             "wool": "양모",
@@ -436,6 +439,10 @@
             "multiPlace": "계속 배치하세요",
             "rotate": "회전",
             "restriction": "건설 불가 구역"
+        },
+        "explore": {
+            "doubleClickDraw": "더블 클릭하여 영역을 그립니다",
+            "adjustEffort": "슬라이더를 사용하여 난이도를 조절하세요"
         },
         "capacity": "용량",
         "defaultTownName": "이름 없는 마을",
@@ -491,6 +498,7 @@
             "returnToDesktop": "바탕 화면으로 돌아가기",
             "serverOffline": "서버에 연결할 수 없습니다. 서버가 과부하 상태이거나 유지보수로 인해 일시적으로 중단되었을 수 있습니다. 최신 상태는 디스코드에서 확인하세요.",
             "settings": "설정",
+            "blueprints": "블루프린트",
             "subtitle": "이것은 Project Rebearth의 초기 출시 버전입니다. 플레이 중 문제가 발생하면 연락 주시기 바랍니다.",
             "suspended": "귀하의 계정이 정지되었습니다. 이유: {{reason}}",
             "demoSubtitle": "이것은 Project Rebearth의 데모 버전입니다. 샌드박스 시티 빌더 기능만 활성화되어 있습니다. 자원 관리가 포함된 멀티플레이어 글로브에서 플레이하려면 정식 버전을 구매하세요.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "샌드박스 모드에서는 여전히 멋진 지도를 제작하고, 고해상도로 내보내며, 1:1 스케일의 게임 세계가 어떤 느낌인지 경험할 수 있습니다.",
             "title": "프로젝트 리버스 서버",
             "welcome": "{{name}}님, 환영합니다!"
+        },
+        "blueprints": {
+            "title": "건축 도면",
+            "description": "재사용 가능한 건물 설계도를 만들어 건물 그룹을 빠르게 배치하세요.",
+            "createNew": "새 블루프린트 만들기",
+            "noBlueprints": "아직 청사진이 없습니다. 첫 번째 청사진을 만들어 보세요!",
+            "edit": "편집",
+            "delete": "삭제",
+            "deleteConfirm": "이 블루프린트를 삭제하시겠습니까?",
+            "enable": "블루프린트 활성화",
+            "disable": "블루프린트 비활성화",
+            "enabled": "활성화됨",
+            "disabled": "사용 불가",
+            "unnamed": "이름 없는 블루프린트",
+            "workshop": "워크숍",
+            "workshopItem": "워크숍",
+            "published": "게시됨",
+            "publish": "게시",
+            "update": "업데이트",
+            "publishToWorkshop": "Steam 워크숍에 게시",
+            "updateWorkshop": "워크숍 아이템 업데이트",
+            "duplicate": "복사하기",
+            "copyLabel": "(복사)"
         },
         "sandbox": {
             "description": "샌드박스 모드에서는 멀티플레이어 세계의 제약 없이 자유롭게 건설할 수 있습니다. 오직 당신과 자원 제한이 전혀 없는 상태입니다. 진행 상황을 저장하고 나중에 불러올 수 있습니다.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "아카이브"
+            "title": "아카이브",
+            "empty": "아직 발견된 유물은 없습니다.",
+            "emptyHint": "원정대를 파견하여 고대 세계의 비밀을 밝혀내세요.",
+            "flyTo": "위치로 이동",
+            "needMuseum": "먼저 박물관을 건설하세요"
         },
         "choices": {
             "selectChoice": "선택 항목",
@@ -748,8 +783,10 @@
             "title": "저장소"
         },
         "townName": "마을 이름:",
+        "marketName": "지구",
         "townColor": "마을 색상:",
         "unnamedTown": "이름 없는 마을",
+        "unnamedDistrict": "이름 없는 구역",
         "upgrade": "{{building}}로 업그레이드하세요"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "텍스처 해상도",
         "title": "설정",
         "treeDensity": "나무 밀도",
-        "uiScale": "UI 스케일"
+        "uiScale": "UI 스케일",
+        "workerThreads": "CPU 스레드",
+        "workerThreadsHelp": "렌더링에 사용되는 백그라운드 스레드의 수를 제어합니다. 스레드 수를 늘리면 타일 로딩 속도가 빨라질 수 있지만, 메모리 사용량이 증가하고 저사양 기기에서는 충돌이 발생할 수 있습니다. 시스템에 가장 적합한 균형을 찾으려면 여러 설정을 시도해 보세요."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "탐험대를 통해 발견한 모든 유물을 살펴보세요. 각 유물은 옛 세계의 역사를 엿볼 수 있게 해주며, 귀중한 자원을 포함하고 있을 수도 있습니다.",
         "hud": "이 패널은 보유 중인 모든 자원과 생산량, 소비량을 보여줍니다. 아이콘 위에 마우스를 올리면 각 자원에 대한 상세 정보를 확인할 수 있습니다. 특정 자원이 부족해지면 빨간색으로 강조 표시되며, 건물들의 생산량이 강제로 감소할 수 있습니다. 수용량에 도달하면 굵은 글씨로 표시되며 건물들의 생산이 중단됩니다. 시작 보너스와 같은 효과가 생산량이나 소비량에 영향을 미칠 수 있습니다. 이러한 수정값은 자원에 마우스를 올렸을 때 표시됩니다. 왼쪽에 회전하는 원이 보이시나요? 이는 게임이 서버와 동기화되는 시점을 나타냅니다. 동기화가 완료되기 전까지는 자원 변화가 반영되지 않습니다. 자원 소비와 생산은 하루 단위로 표시됩니다. 이는 실제 실시간 하루를 의미합니다. 다만 자원은 서서히 증가합니다.",
         "market": "시장에 오신 것을 환영합니다! 다른 플레이어들이 사고 팔고 싶어 하는 모든 물건들, 그리고 무엇보다도 그 가격이 여기에 있습니다! 다른 사람의 주문을 처리할 때 운송비를 지불해야 합니다. 따라서 상대방이 멀리 떨어져 있다면, 그 물건을 가져오는 것이 가치가 없을 수도 있고, 심지어 상대방이 지불하려는 금액보다 더 많은 비용이 들 수도 있습니다.",
         "orders": "주문하세요! 다른 플레이어에게 구매 또는 판매하려는 품목과 가격을 알리세요. 이것이 여러분이 받거나 지불할 금액입니다. 다른 플레이어들이 운송비를 부담한다는 점을 명심하세요. 따라서 가격이 낮다고 해서 구매가 성사되지 않을 수 있습니다. 다른 플레이어의 배송비가 너무 높을 수 있기 때문입니다.",
@@ -834,6 +874,36 @@
         "percentage": "{{값}}",
         "seconds": "{{value}} s",
         "secondsLong": "초"
+    },
+    "blueprintEditor": {
+        "details": "블루프린트 세부 정보",
+        "name": "이름",
+        "namePlaceholder": "블루프린트 이름",
+        "description": "설명",
+        "descriptionPlaceholder": "이 블루프린트는 무엇을 생성하나요?",
+        "category": "카테고리",
+        "categoryPlaceholder": "예: 산업용, 주거용",
+        "biome": "생물군계 설정",
+        "allBiomes": "모든 생물군계에 동일한 레이아웃 적용",
+        "copyConfig": "생물군계 설정 복사",
+        "selectSource": "소스 생물군계 선택",
+        "cancelCopy": "복사 취소",
+        "copyTo": "{{biome}}에 복사",
+        "source": "출처",
+        "copyHint": "대상을 클릭하여 객체를 복사할 생물군계를 선택하세요",
+        "objectCount": "개체",
+        "totalCost": "총 비용",
+        "save": "저장",
+        "exit": "종료",
+        "publish": "게시",
+        "updateWorkshop": "업데이트",
+        "published": "게시됨!",
+        "publishFailed": "실패했습니다",
+        "buildMenu": "건물",
+        "rates": "요금",
+        "noRates": "건물을 배치하여 생산량을 확인하세요",
+        "deleteObject": "제거",
+        "outOfBounds": "블루프린트 영역 외부"
     },
     "warnings": {
         "notEnoughPop": "자원봉사자가 부족합니다"

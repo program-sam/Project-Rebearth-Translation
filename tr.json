@@ -43,6 +43,8 @@
             "intensiveFarming": "Yoğun çiftçilik, hayvanlarınızı tahılla beslemenizi sağlar ve hayvansal ürün üretimini artırır.",
             "newTownBoost": "Yeni bir yerleşim yeri olarak, başlangıçta size yardımcı olacak geçici bonuslar alırsınız. Bu bonuslar zamanla ortadan kalkacaktır."
         },
+        "confirmChange": "Bu seçimi değiştirmek istediğinizden emin misiniz?",
+        "confirmLock": "{{time}} için bu seçenek kilitlenecektir.",
         "exclusiveOptions": "Özel Seçenekler",
         "lockedFor": "Kilitli",
         "option": "Seçenek",
@@ -410,6 +412,7 @@
             "happiness": "Mutluluk",
             "knowledge": "İlim",
             "pop": "Nüfus",
+            "population": "Nüfus",
             "stone": "Taş",
             "wood": "Odun",
             "wool": "Yün",
@@ -436,6 +439,10 @@
             "multiPlace": "Art arda yerleştir",
             "rotate": "Döndür",
             "restriction": "İnşa edilemez alan"
+        },
+        "explore": {
+            "doubleClickDraw": "Bir alan çizmek için çift tıklayın",
+            "adjustEffort": "Kaydırıcıyı kullanarak eforu ayarlayın"
         },
         "capacity": "Kapasite",
         "defaultTownName": "İsimsiz Kasaba",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Masaüstüne dön",
             "serverOffline": "Sunucuya ulaşılamıyor. Sunucu yoğun yük altında olabilir veya bakım nedeniyle geçici olarak kapalı olabilir. En son durumu Discord'da kontrol edin.",
             "settings": "Ayarlar",
+            "blueprints": "Taslaklar",
             "subtitle": "Bu, Project Rebearth'ün erken sürümüdür. Oynarken herhangi bir sorunla karşılaşırsanız lütfen bize ulaşın.",
             "suspended": "Hesabınız askıya alınmıştır. Nedeni: {{reason}}",
             "demoSubtitle": "Bu, Project Rebearth'ün demo sürümüdür. Sadece sandbox şehir kurma modu etkin. Kaynak yönetimli çok oyunculu küre için tam sürümü edinin..",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Sandbox modu, harika haritalar oluşturmanıza, bunları yüksek çözünürlükte dışa aktarmanıza ve 1:1 ölçekli bir oyun dünyasının nasıl bir his olduğunu deneyimlemenize olanak tanır.",
             "title": "Project Rebearth sunucusu",
             "welcome": "Hoş geldin {{name}}!"
+        },
+        "blueprints": {
+            "title": "Bina Planları",
+            "description": "Yeniden kullanılabilir bina planları oluşturarak bina gruplarını hızlıca yerleştirin.",
+            "createNew": "Yeni Blueprint Oluştur",
+            "noBlueprints": "Henüz taslak yok. İlk taslağını oluştur!",
+            "edit": "Düzenle",
+            "delete": "Sil",
+            "deleteConfirm": "Bu şablonu silmek istediğinizden emin misiniz?",
+            "enable": "Blueprint'i etkinleştir",
+            "disable": "Blueprint'i devre dışı bırak",
+            "enabled": "Etkin",
+            "disabled": "Devre dışı",
+            "unnamed": "İsimsiz Blueprint",
+            "workshop": "Atölye",
+            "workshopItem": "Atölye",
+            "published": "Yayınlandı",
+            "publish": "Yayınla",
+            "update": "Güncelleme",
+            "publishToWorkshop": "Steam Workshop'a yayınla",
+            "updateWorkshop": "Atölye öğesini güncelle",
+            "duplicate": "Bir kopya oluştur",
+            "copyLabel": "(Kopyala)"
         },
         "sandbox": {
             "description": "Sandbox modu, çok oyunculu dünyanın kısıtlamaları olmadan özgürce inşa etmenizi sağlar. Sadece siz ve sıfır kaynak kısıtlaması. İlerlemenizi kaydedip daha sonra yükleyebilirsiniz.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Arşiv"
+            "title": "Arşiv",
+            "empty": "Henüz herhangi bir buluntu keşfedilmedi.",
+            "emptyHint": "Eski dünyanın sırlarını ortaya çıkarmak için keşif seferleri gönderin.",
+            "flyTo": "Konuma uç",
+            "needMuseum": "Önce bir müze inşa edin"
         },
         "choices": {
             "selectChoice": "Seçim yap",
@@ -748,8 +783,10 @@
             "title": "Depolama"
         },
         "townName": "Kasaba Adı:",
+        "marketName": "Bölge",
         "townColor": "Kasaba Rengi:",
         "unnamedTown": "isimsiz kasaba",
+        "unnamedDistrict": "isimsiz bölge",
         "upgrade": "{{building}} binasına yükselt"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Doku çözünürlüğü",
         "title": "Ayarlar",
         "treeDensity": "Ağaç yoğunluğu",
-        "uiScale": "Arayüz ölçeği"
+        "uiScale": "Arayüz ölçeği",
+        "workerThreads": "CPU İş Parçacıkları",
+        "workerThreadsHelp": "Render işlemi için kaç arka plan iş parçacığı kullanılacağını kontrol eder. Daha fazla iş parçacığı, döşeme yüklemeyi hızlandırabilir, ancak aynı zamanda bellek kullanımını artırır ve düşük kaliteli cihazlarda çökmelere neden olabilir. Sisteminiz için en iyi dengeyi bulmak amacıyla denemeler yapın."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Keşif gezilerinizde bulunan tüm eserleri inceleyin. Her eser, eski dünyanın tarihinin bir parçasını ortaya çıkarır ve değerli kaynaklar içerebilir.",
         "hud": "Bu panel, sahip olduğunuz, ürettiğiniz ve tükettiğiniz tüm kaynakları gösterir. Her bir kaynak hakkında daha fazla ayrıntı görmek için simgelerin üzerine fareyi getirin. Bir kaynağınız azalırsa, kırmızı renkle vurgulanır ve binalar üretkenliklerini azaltmak zorunda kalabilir. Kapasitenize ulaşırsanız, kalın harflerle gösterilir ve binalarınız üretim yapmayı durdurur. Başlangıç bonusunuz gibi etkiler, ne kadar ürettiğinizi veya tükettiğinizi etkileyebilir. Bu değiştiriciler, bir kaynağın üzerine fareyi getirdiğinizde gösterilir. Solda dönen daireyi görüyor musunuz? Bu, oyunun sunucuyla senkronize olduğunu gösterir. Senkronizasyon tamamlanana kadar kaynak değişikliklerini göremezsiniz. Kaynak tüketimi ve üretimi günlük olarak gösterilir. Bu, gerçek zamanlı bir gündür. Ancak kaynaklarınız yavaşça artacaktır.",
         "market": "Pazara hoş geldiniz! Diğer oyuncuların satın almak veya satmak istedikleri her şeyi ve daha da önemlisi, hangi fiyata istediklerini görün! Başka birinin siparişini yerine getirdiğinizde nakliye masraflarını siz ödersiniz. Dolayısıyla, eğer uzaklarsa, bu masraflar değmeyebilir, hatta onların ödemek istedikleri miktardan daha fazla olabilir.",
         "orders": "Siparişlerinizi verin! Diğer oyunculara neyi hangi fiyata satın almak veya satmak istediğinizi bildirin. Bu, alacağınız veya ödeyeceğiniz tutardır. Diğer oyuncuların nakliye ücretini ödeyeceğini unutmayın. Bu nedenle, düşük bir fiyata bir şey satın almak, diğer oyuncuların nakliye ücretleri çok yüksekse işe yaramayabilir.",
@@ -834,6 +874,36 @@
         "percentage": "{{value}}%",
         "seconds": "{{value}} sn",
         "secondsLong": "saniye"
+    },
+    "blueprintEditor": {
+        "details": "Plan Detayları",
+        "name": "Ad",
+        "namePlaceholder": "Blueprint adı",
+        "description": "Açıklama",
+        "descriptionPlaceholder": "Bu şablon neyi oluşturur?",
+        "category": "Kategori",
+        "categoryPlaceholder": "ör. Endüstriyel, Konut",
+        "biome": "Biyom Yapılandırması",
+        "allBiomes": "Tüm biyomlar için aynı düzen",
+        "copyConfig": "Biyom Yapılandırmasını Kopyala",
+        "selectSource": "Kaynak biyomu seçin",
+        "cancelCopy": "Kopyalamayı iptal et",
+        "copyTo": "{{biome}} adresine kopyala",
+        "source": "Kaynak",
+        "copyHint": "Nesneleri kopyalamak için bir hedef biyomuna tıklayın",
+        "objectCount": "Nesneler",
+        "totalCost": "Toplam Maliyet",
+        "save": "Kaydet",
+        "exit": "Çıkış",
+        "publish": "Yayınla",
+        "updateWorkshop": "Güncelleme",
+        "published": "Yayınlandı!",
+        "publishFailed": "Başarısız",
+        "buildMenu": "Binalar",
+        "rates": "Oranlar",
+        "noRates": "Binaları yerleştirerek oranları görün",
+        "deleteObject": "Kaldır",
+        "outOfBounds": "Mavi baskı alanı dışında"
     },
     "warnings": {
         "notEnoughPop": "Gönüllü sayısı yetersiz"

@@ -43,6 +43,8 @@
             "intensiveFarming": "Pertanian intensif memungkinkan Anda memberi makan hewan ternak dengan biji-bijian, sehingga meningkatkan jumlah produk hewan yang dapat Anda hasilkan.",
             "newTownBoost": "Sebagai pemukiman baru, Anda akan menerima bonus sementara untuk membantu Anda memulai. Bonus ini akan berkurang seiring waktu."
         },
+        "confirmChange": "Apakah Anda yakin ingin mengubah pilihan ini?",
+        "confirmLock": "Pilihan ini akan dikunci untuk {{time}}.",
         "exclusiveOptions": "Opsi Eksklusif",
         "lockedFor": "Diblokir untuk",
         "option": "Opsi",
@@ -410,6 +412,7 @@
             "happiness": "Kebahagiaan",
             "knowledge": "Pengetahuan",
             "pop": "Populasi",
+            "population": "Populasi",
             "stone": "Batu",
             "wood": "Kayu",
             "wool": "Wool",
@@ -436,6 +439,10 @@
             "multiPlace": "Terus letakkan",
             "rotate": "Putar",
             "restriction": "Area yang tidak dapat dibangun."
+        },
+        "explore": {
+            "doubleClickDraw": "Klik ganda untuk menggambar area",
+            "adjustEffort": "Gunakan penggeser untuk menyesuaikan tingkat kesulitan"
         },
         "capacity": "Kapasitas",
         "defaultTownName": "Kota Tanpa Nama",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Kembali ke Desktop",
             "serverOffline": "Tidak dapat terhubung ke server. Server mungkin sedang mengalami beban berat atau sedang offline sementara untuk pemeliharaan. Periksa Discord untuk status terbaru.",
             "settings": "Pengaturan",
+            "blueprints": "Blueprint",
             "subtitle": "Ini adalah versi awal dari Project Rebearth. Silakan hubungi kami jika Anda menemui masalah saat bermain.",
             "suspended": "Akun Anda telah ditangguhkan. Alasan: {{reason}}",
             "demoSubtitle": "Ini adalah demo dari Project Rebearth. Hanya mode sandbox pembangun kota yang diaktifkan. Untuk bermain di globe multipemain dengan manajemen sumber daya, dapatkan versi lengkapnya.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Mode sandbox masih memungkinkan Anda untuk membuat peta yang luar biasa, mengekspornya dalam resolusi tinggi, dan merasakan seperti apa dunia permainan dengan skala 1:1.",
             "title": "Server Proyek Rebearth",
             "welcome": "Selamat datang, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Rancangan Bangunan",
+            "description": "Buat cetak biru bangunan yang dapat digunakan kembali untuk menempatkan kelompok bangunan dengan cepat.",
+            "createNew": "Buat Blueprint Baru",
+            "noBlueprints": "Belum ada blueprint. Buat yang pertama!",
+            "edit": "Edit",
+            "delete": "Hapus",
+            "deleteConfirm": "Apakah Anda yakin ingin menghapus blueprint ini?",
+            "enable": "Aktifkan blueprint",
+            "disable": "Nonaktifkan blueprint",
+            "enabled": "Diaktifkan",
+            "disabled": "Dinonaktifkan",
+            "unnamed": "Blueprint Tanpa Nama",
+            "workshop": "Lokakarya",
+            "workshopItem": "Lokakarya",
+            "published": "Diterbitkan",
+            "publish": "Terbitkan",
+            "update": "Pembaruan",
+            "publishToWorkshop": "Publikasikan ke Steam Workshop",
+            "updateWorkshop": "Perbarui item Workshop",
+            "duplicate": "Buat salinan",
+            "copyLabel": "(Salin)"
         },
         "sandbox": {
             "description": "Mode Sandbox memungkinkan Anda membangun secara bebas tanpa batasan dunia multipemain. Hanya Anda dan tanpa batasan sumber daya. Anda dapat menyimpan kemajuan Anda dan memuatnya nanti.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Arsip"
+            "title": "Arsip",
+            "empty": "Belum ditemukan artefak.",
+            "emptyHint": "Kirim ekspedisi untuk mengungkap rahasia dunia kuno.",
+            "flyTo": "Terbang ke lokasi",
+            "needMuseum": "Bangun museum terlebih dahulu"
         },
         "choices": {
             "selectChoice": "Pilih Pilihan",
@@ -748,8 +783,10 @@
             "title": "Penyimpanan"
         },
         "townName": "Nama Kota:",
+        "marketName": "Distrik",
         "townColor": "Warna Kota:",
         "unnamedTown": "Kota tanpa nama",
+        "unnamedDistrict": "distrik tanpa nama",
         "upgrade": "Perbarui k{{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Resolusi Tekstur",
         "title": "Pengaturan",
         "treeDensity": "Kepadatan Pohon",
-        "uiScale": "Skala Antarmuka Pengguna"
+        "uiScale": "Skala Antarmuka Pengguna",
+        "workerThreads": "Thread CPU",
+        "workerThreadsHelp": "Mengatur jumlah thread latar belakang yang digunakan untuk rendering. Semakin banyak thread dapat mempercepat pemuatan ubin, tetapi juga meningkatkan penggunaan memori dan dapat menyebabkan crash pada perangkat kelas bawah. Cobalah berbagai pengaturan untuk menemukan keseimbangan terbaik untuk sistem Anda."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Jelajahi semua artefak yang ditemukan oleh ekspedisi Anda. Setiap artefak mengungkap sepotong sejarah dunia kuno dan mungkin mengandung sumber daya yang berharga.",
         "hud": "Panel ini menampilkan semua sumber daya yang Anda miliki, produksi, dan konsumsi. Arahkan kursor ke ikon untuk melihat detail lebih lanjut tentang setiap sumber daya. Jika Anda kehabisan sumber daya, sumber daya tersebut akan ditandai dengan warna merah, dan bangunan mungkin dipaksa untuk mengurangi produktivitasnya. Jika Anda mencapai kapasitas maksimum, sumber daya tersebut akan ditampilkan dengan huruf tebal dan bangunan berhenti memproduksi. Anda dapat memiliki efek, seperti bonus awal, yang memengaruhi seberapa banyak Anda memproduksi atau mengonsumsi. Modifikator ini ditampilkan saat Anda mengarahkan kursor ke sumber daya. Apakah Anda melihat lingkaran berputar di sebelah kiri? Itu menandakan saat permainan sinkronisasi dengan server. Anda tidak akan melihat perubahan sumber daya hingga sinkronisasi selesai. Konsumsi dan produksi sumber daya ditampilkan per hari. Ini adalah hari waktu nyata. Namun, sumber daya Anda akan bertambah secara perlahan.",
         "market": "Selamat datang di pasar! Lihatlah semua barang yang ingin dibeli atau dijual oleh pemain lain, dan yang lebih penting, dengan harga berapa! Anda akan membayar biaya pengiriman saat memenuhi pesanan orang lain. Jadi, jika mereka berada jauh, mungkin tidak sepadan, atau bahkan biayanya lebih mahal daripada yang mereka bersedia bayar.",
         "orders": "Pasang pesanan Anda! Beritahukan kepada pemain lain apa yang ingin Anda beli atau jual, serta harganya. Ini adalah apa yang akan Anda terima atau bayar. Perlu diingat bahwa pemain lain akan membayar biaya pengiriman. Jadi, membeli sesuatu dengan harga rendah mungkin tidak berhasil jika biaya pengiriman pemain lain terlalu tinggi.",
@@ -834,6 +874,36 @@
         "percentage": "{{nilai}}",
         "seconds": "{{value}} s",
         "secondsLong": "detik"
+    },
+    "blueprintEditor": {
+        "details": "Rincian Blueprint",
+        "name": "Nama",
+        "namePlaceholder": "Nama blueprint",
+        "description": "Deskripsi",
+        "descriptionPlaceholder": "Apa yang dibangun oleh blueprint ini?",
+        "category": "Kategori",
+        "categoryPlaceholder": "misalnya: Industri, Perumahan",
+        "biome": "Konfigurasi Bioma",
+        "allBiomes": "Tata letak yang sama untuk semua bioma",
+        "copyConfig": "Salin Konfigurasi Bioma",
+        "selectSource": "Pilih bioma sumber",
+        "cancelCopy": "Batalkan salin",
+        "copyTo": "Salin ke {{biome}}",
+        "source": "Sumber",
+        "copyHint": "Klik bioma tujuan untuk menyalin objek ke",
+        "objectCount": "Objek",
+        "totalCost": "Total Biaya",
+        "save": "Simpan",
+        "exit": "Keluar",
+        "publish": "Terbitkan",
+        "updateWorkshop": "Pembaruan",
+        "published": "Sudah diterbitkan!",
+        "publishFailed": "Gagal",
+        "buildMenu": "Bangunan",
+        "rates": "Tarif",
+        "noRates": "Tempatkan bangunan untuk melihat tarif",
+        "deleteObject": "Hapus",
+        "outOfBounds": "Di luar area blueprint"
     },
     "warnings": {
         "notEnoughPop": "Tidak cukup sukarelawan"

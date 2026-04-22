@@ -43,6 +43,8 @@
             "intensiveFarming": "Door intensieve landbouw kun je je dieren graan voeren, waardoor je meer dierlijke producten kunt produceren.",
             "newTownBoost": "Als nieuwe nederzetting ontvang je tijdelijke bonussen om je op weg te helpen. Deze verdwijnen na verloop van tijd."
         },
+        "confirmChange": "Weet u zeker dat u deze keuze wilt wijzigen?",
+        "confirmLock": "Deze keuze wordt vergrendeld voor {{time}}.",
         "exclusiveOptions": "Exclusieve opties",
         "lockedFor": "Vergrendeld voor",
         "option": "Optie",
@@ -410,6 +412,7 @@
             "happiness": "Geluk",
             "knowledge": "Kennis",
             "pop": "Bevolking",
+            "population": "Bevolking",
             "stone": "Steen",
             "wood": "Hout",
             "wool": "Wol",
@@ -436,6 +439,10 @@
             "multiPlace": "Blijf plaatsen",
             "rotate": "Draaien",
             "restriction": "Niet-bebouwbaar gebied"
+        },
+        "explore": {
+            "doubleClickDraw": "Dubbelklik om een gebied te tekenen",
+            "adjustEffort": "Gebruik de schuifregelaar om de inspanning aan te passen"
         },
         "capacity": "Capaciteit",
         "defaultTownName": "Naamloze stad",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Terug naar bureaublad",
             "serverOffline": "Kan geen verbinding maken met de server. De server is mogelijk overbelast of tijdelijk buiten gebruik vanwege onderhoud. Kijk op Discord voor de laatste status.",
             "settings": "Instellingen",
+            "blueprints": "Blauwdrukken",
             "subtitle": "Dit is een vroege versie van Project Rebearth. Neem contact met ons op als je tijdens het spelen problemen ondervindt.",
             "suspended": "Uw account is opgeschort. Reden: {{reason}}",
             "demoSubtitle": "Dit is de demo van Project Rebearth. Alleen de sandbox-stedenbouwgame is beschikbaar. Voor het spelen op de multiplayer-globe met resourcebeheer moet je de volledige versie aanschaffen.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "In de sandbox-modus kun je nog steeds geweldige kaarten maken, deze in hoge resolutie exporteren en ervaren hoe een spelwereld op schaal 1:1 aanvoelt.",
             "title": "Project Rebearth Server",
             "welcome": "Welkom, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Bouwtekeningen",
+            "description": "Maak herbruikbare bouwtekeningen om snel groepen gebouwen te plaatsen.",
+            "createNew": "Nieuwe blauwdruk maken",
+            "noBlueprints": "Er zijn nog geen blauwdrukken. Maak je eerste!",
+            "edit": "Bewerken",
+            "delete": "Verwijderen",
+            "deleteConfirm": "Weet u zeker dat u deze blauwdruk wilt verwijderen?",
+            "enable": "Blauwdruk inschakelen",
+            "disable": "Blauwdruk uitschakelen",
+            "enabled": "Ingeschakeld",
+            "disabled": "Uitgeschakeld",
+            "unnamed": "Naamloze blauwdruk",
+            "workshop": "Workshop",
+            "workshopItem": "Workshop",
+            "published": "Gepubliceerd",
+            "publish": "Publiceren",
+            "update": "Update",
+            "publishToWorkshop": "Publiceren op Steam Workshop",
+            "updateWorkshop": "Workshop-item bijwerken",
+            "duplicate": "Maak een kopie",
+            "copyLabel": "(Kopiëren)"
         },
         "sandbox": {
             "description": "In de sandboxmodus kun je vrij bouwen zonder de beperkingen van de multiplayerwereld. Het is alleen jij en er zijn geen beperkingen op het gebied van middelen. Je kunt je voortgang opslaan en later weer laden.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Archieven"
+            "title": "Archieven",
+            "empty": "Er zijn nog geen artefacten ontdekt.",
+            "emptyHint": "Stuur expedities op pad om de geheimen van de oude wereld te ontrafelen.",
+            "flyTo": "Vlieg naar locatie",
+            "needMuseum": "Bouw eerst een museum"
         },
         "choices": {
             "selectChoice": "Selecteer keuze",
@@ -748,8 +783,10 @@
             "title": "Opslag"
         },
         "townName": "Naam van de stad:",
+        "marketName": "District",
         "townColor": "Kleur van de stad:",
         "unnamedTown": "naamloze stad",
+        "unnamedDistrict": "naamloos district",
         "upgrade": "Upgrade naar {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Textuurresolutie",
         "title": "Instellingen",
         "treeDensity": "Bomen dichtheid",
-        "uiScale": "UI-schaal"
+        "uiScale": "UI-schaal",
+        "workerThreads": "CPU-threads",
+        "workerThreadsHelp": "Bepaalt hoeveel achtergrondthreads worden gebruikt voor het weergeven. Meer threads kunnen het laden van tegels versnellen, maar verhogen ook het geheugengebruik en kunnen crashes veroorzaken op minder krachtige apparaten. Experimenteer om de beste balans voor uw systeem te vinden."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Bekijk alle artefacten die tijdens je expedities zijn ontdekt. Elk artefact onthult een stukje van de geschiedenis van de oude wereld en kan waardevolle grondstoffen bevatten.",
         "hud": "Dit paneel toont alle grondstoffen die je hebt, produceert en verbruikt. Beweeg de muis over de pictogrammen voor meer informatie over elke grondstof. Als een grondstof bijna op is, wordt deze rood gemarkeerd en kunnen gebouwen gedwongen worden hun productiviteit te verminderen. Als je je capaciteit bereikt, wordt dit vetgedrukt weergegeven en stoppen je gebouwen met produceren. Effecten, zoals je startbonus, kunnen van invloed zijn op hoeveel je produceert of verbruikt. Deze modificatoren worden weergegeven wanneer je de muis over een grondstof beweegt. Zie je de draaiende cirkel aan de linkerkant? Die geeft aan wanneer het spel synchroniseert met de server. Je ziet geen veranderingen in grondstoffen totdat de synchronisatie is voltooid. Het verbruik en de productie van grondstoffen worden per dag weergegeven. Dit is een echte realtime dag. Je grondstoffen zullen echter langzaam toenemen.",
         "market": "Welkom op de markt! Bekijk alle dingen die andere spelers willen kopen of verkopen, en nog belangrijker, tegen welke prijs! Je betaalt transportkosten wanneer je de bestelling van iemand anders uitvoert. Als ze ver weg zijn, is het misschien niet de moeite waard, of kost het zelfs meer dan wat ze bereid zijn te betalen.",
         "orders": "Plaats je bestellingen! Laat andere spelers weten wat je wilt kopen of verkopen, en tegen welke prijs. Dit is wat je ontvangt of betaalt. Houd er rekening mee dat anderen voor het transport betalen. Dus iets voor een lage prijs kopen werkt misschien niet als de verzendkosten van andere spelers te hoog zijn.",
@@ -834,6 +874,36 @@
         "percentage": "{{waarde}}",
         "seconds": "{{value}} s",
         "secondsLong": "seconden"
+    },
+    "blueprintEditor": {
+        "details": "Details van de blauwdruk",
+        "name": "Naam",
+        "namePlaceholder": "Naam van de blauwdruk",
+        "description": "Beschrijving",
+        "descriptionPlaceholder": "Wat wordt er met deze blauwdruk gebouwd?",
+        "category": "Categorie",
+        "categoryPlaceholder": "bijv. Industrieel, Residentieel",
+        "biome": "Biome-configuratie",
+        "allBiomes": "Dezelfde lay-out voor alle biomen",
+        "copyConfig": "Biome Config kopiëren",
+        "selectSource": "Selecteer bronbiotoop",
+        "cancelCopy": "Kopiëren annuleren",
+        "copyTo": "Kopieer naar {{biome}}",
+        "source": "Bron",
+        "copyHint": "Klik op een doelbiotoop om objecten naar te kopiëren",
+        "objectCount": "Objecten",
+        "totalCost": "Totale kosten",
+        "save": "Opslaan",
+        "exit": "Afsluiten",
+        "publish": "Publiceren",
+        "updateWorkshop": "Update",
+        "published": "Gepubliceerd!",
+        "publishFailed": "Mislukt",
+        "buildMenu": "Gebouwen",
+        "rates": "Tarieven",
+        "noRates": "Plaats gebouwen om tarieven te bekijken",
+        "deleteObject": "Verwijderen",
+        "outOfBounds": "Buiten het blauwdrukgebied"
     },
     "warnings": {
         "notEnoughPop": "Onvoldoende vrijwilligers"

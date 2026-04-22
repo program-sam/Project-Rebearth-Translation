@@ -43,6 +43,8 @@
             "intensiveFarming": "La agricultura intensiva te permite alimentar a tus animales con cereales, lo que aumenta la cantidad de productos animales que puedes producir.",
             "newTownBoost": "Como nuevo asentamiento, recibirás bonificaciones temporales para ayudarte a empezar. Estas desaparecerán con el tiempo."
         },
+        "confirmChange": "¿Estás seguro de que quieres cambiar esta opción?",
+        "confirmLock": "Esta opción estará bloqueada para {{time}}.",
         "exclusiveOptions": "Opciones exclusivas",
         "lockedFor": "Bloqueado para",
         "option": "Opción",
@@ -410,6 +412,7 @@
             "happiness": "Felicidad",
             "knowledge": "Conocimientos",
             "pop": "Población",
+            "population": "Población",
             "stone": "Piedra",
             "wood": "Madera",
             "wool": "Lana",
@@ -436,6 +439,10 @@
             "multiPlace": "Sigue colocando",
             "rotate": "Girar",
             "restriction": "Área no edificable."
+        },
+        "explore": {
+            "doubleClickDraw": "Haz doble clic para dibujar un área",
+            "adjustEffort": "Utiliza el control deslizante para ajustar el esfuerzo"
         },
         "capacity": "Capacidad",
         "defaultTownName": "Pueblo sin nombre",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Volver al escritorio",
             "serverOffline": "No se puede conectar con el servidor. Comprueba tu conexión a Internet o es posible que el servidor esté caído.",
             "settings": "Configuración",
+            "blueprints": "Planos",
             "subtitle": "Esta es una versión preliminar de Project Rebearth. Ponte en contacto con nosotros si encuentras algún problema mientras juegas.",
             "suspended": "Tu cuenta ha sido suspendida. Motivo: {{reason}}",
             "demoSubtitle": "Esta es la demo de Project Rebearth. Solo está habilitado el constructor de ciudades sandbox. Para jugar en el globo multijugador con gestión de recursos, consigue la versión completa.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "El modo sandbox te sigue permitiendo crear mapas increíbles, exportarlos en alta resolución y experimentar cómo es un mundo de juego a escala 1:1.",
             "title": "Proyecto Rebearth Server",
             "welcome": "¡Bienvenido, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Planos de construcción",
+            "description": "Crea planos de construcción reutilizables para colocar rápidamente grupos de edificios.",
+            "createNew": "Crear nuevo esquema",
+            "noBlueprints": "Aún no hay planos. ¡Crea el primero!",
+            "edit": "Editar",
+            "delete": "Eliminar",
+            "deleteConfirm": "¿Estás seguro de que quieres eliminar este plano?",
+            "enable": "Habilitar plano",
+            "disable": "Desactivar plano",
+            "enabled": "Habilitado",
+            "disabled": "Desactivado",
+            "unnamed": "Plantilla sin nombre",
+            "workshop": "Taller",
+            "workshopItem": "Taller",
+            "published": "Publicado",
+            "publish": "Publicar",
+            "update": "Actualización",
+            "publishToWorkshop": "Publicar en Steam Workshop",
+            "updateWorkshop": "Actualizar objeto del Taller",
+            "duplicate": "Hacer una copia",
+            "copyLabel": "(Copiar)"
         },
         "sandbox": {
             "description": "El modo Sandbox te permite construir libremente sin las limitaciones del mundo multijugador. Solo tú y sin restricciones de recursos. Puedes guardar tu progreso y cargarlo más tarde.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Archivos"
+            "title": "Archivos",
+            "empty": "Aún no se han detectado artefactos.",
+            "emptyHint": "Envía expediciones para descubrir los secretos del mundo antiguo.",
+            "flyTo": "Volar a la ubicación",
+            "needMuseum": "Construye primero un museo"
         },
         "choices": {
             "selectChoice": "Seleccionar opción",
@@ -748,8 +783,10 @@
             "title": "Almacenamiento"
         },
         "townName": "Nombre de la ciudad:",
+        "marketName": "Distrito",
         "townColor": "Color de la ciudad:",
         "unnamedTown": "Pueblo sin nombre.",
+        "unnamedDistrict": "distrito sin nombre",
         "upgrade": "Actualiza a {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Resolución de texturas",
         "title": "Configuración",
         "treeDensity": "Densidad de árboles",
-        "uiScale": "Escala de la interfaz de usuario"
+        "uiScale": "Escala de la interfaz de usuario",
+        "workerThreads": "Subprocesos de la CPU",
+        "workerThreadsHelp": "Controla el número de subprocesos en segundo plano que se utilizan para el renderizado. Un mayor número de subprocesos puede acelerar la carga de los mosaicos, pero también aumenta el uso de memoria y puede provocar fallos en dispositivos de gama baja. Prueba diferentes configuraciones para encontrar el equilibrio óptimo para tu sistema."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Explora todos los artefactos descubiertos por tus expediciones. Cada artefacto revela un fragmento de la historia del mundo antiguo y puede contener recursos valiosos.",
         "hud": "Este panel muestra todos los recursos que tienes, produces y consumes. Pasa el cursor por encima de los iconos para ver más detalles sobre cada recurso. Si te estás quedando sin un recurso, se resaltará en rojo y es posible que los edificios se vean obligados a reducir su productividad. Si alcanzas tu capacidad máxima, se mostrará en negrita y tus edificios dejarán de producir. Puedes tener efectos, como tu bonificación inicial, que influyen en cuánto produces o consumes. Estos modificadores se muestran cuando pasas el cursor por encima de un recurso. ¿Ves el círculo giratorio a la derecha? Indica cuándo el juego se sincroniza con el servidor. No verás los cambios en los recursos hasta que se complete la sincronización. El consumo y la producción de recursos se muestran por día. Se trata de un día real en tiempo real. Sin embargo, tus recursos aumentarán lentamente.",
         "market": "¡Bienvenido al mercado! ¡Contempla todo lo que otros jugadores quieren comprar o vender y, lo que es más importante, a qué precio! Tendrás que pagar los gastos de transporte cuando cumplas con el pedido de otra persona. Por lo tanto, si se encuentran lejos, puede que no merezca la pena o que incluso te cueste más de lo que están dispuestos a pagar.",
         "orders": "¡Haz tus pedidos! Anuncia a los demás jugadores lo que quieres comprar o vender, y a qué precio. Esto es lo que recibirás o pagarás. Ten en cuenta que los demás pagarán el transporte. Por lo tanto, comprar algo a un precio bajo puede que no funcione si los gastos de envío de los demás jugadores son demasiado altos.",
@@ -834,6 +874,36 @@
         "percentage": "{{valor}}",
         "seconds": "{{value}} s",
         "secondsLong": "segundos"
+    },
+    "blueprintEditor": {
+        "details": "Detalles del plano",
+        "name": "Nombre",
+        "namePlaceholder": "Nombre del plano",
+        "description": "Descripción",
+        "descriptionPlaceholder": "¿Qué se crea con este plano?",
+        "category": "Categoría",
+        "categoryPlaceholder": "p. ej., Industrial, Residencial",
+        "biome": "Configuración del bioma",
+        "allBiomes": "El mismo diseño para todos los biomas",
+        "copyConfig": "Copiar configuración de bioma",
+        "selectSource": "Selecciona el bioma de origen",
+        "cancelCopy": "Cancelar copia",
+        "copyTo": "Copiar a {{biome}}",
+        "source": "Fuente",
+        "copyHint": "Haz clic en un bioma de destino para copiar objetos a",
+        "objectCount": "Objetos",
+        "totalCost": "Coste total",
+        "save": "Guardar",
+        "exit": "Salir",
+        "publish": "Publicar",
+        "updateWorkshop": "Actualización",
+        "published": "¡Publicado!",
+        "publishFailed": "Error",
+        "buildMenu": "Edificios",
+        "rates": "Tarifas",
+        "noRates": "Coloca edificios para ver las tasas",
+        "deleteObject": "Eliminar",
+        "outOfBounds": "Fuera del área del plano"
     },
     "warnings": {
         "notEnoughPop": "No hay suficientes voluntarios."

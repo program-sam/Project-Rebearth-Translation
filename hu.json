@@ -43,6 +43,8 @@
             "intensiveFarming": "Az intenzív gazdálkodás lehetővé teszi, hogy állataidat gabonával etesd, növelve ezzel az állati termékek termelési mennyiségét.",
             "newTownBoost": "Új településként ideiglenes bónuszokat kapsz, amelyek segítenek az indulásban. Ezek idővel elhalványulnak."
         },
+        "confirmChange": "Biztosan módosítani szeretné ezt a beállítást?",
+        "confirmLock": "Ez a beállítás az {{time}} verzióban le lesz zárva.",
         "exclusiveOptions": "Exkluzív opciók",
         "lockedFor": "Zárva",
         "option": "Opció",
@@ -410,6 +412,7 @@
             "happiness": "Boldogság",
             "knowledge": "Tudás",
             "pop": "Népesség",
+            "population": "Népesség",
             "stone": "Kő",
             "wood": "Fa",
             "wool": "Gyapjú",
@@ -436,6 +439,10 @@
             "multiPlace": "Továbbra is helyezd el",
             "rotate": "Forgatás",
             "restriction": "Nem beépíthető terület"
+        },
+        "explore": {
+            "doubleClickDraw": "Kattintson duplán egy terület megrajzolásához",
+            "adjustEffort": "A csúszkával állítsa be az erőfeszítést"
         },
         "capacity": "Kapacitás",
         "defaultTownName": "Névtelen város",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Vissza az asztalra",
             "serverOffline": "Nem lehet elérni a szervert. Lehet, hogy a szerver túlterhelt, vagy ideiglenesen karbantartás miatt nem elérhető. A legfrissebb állapotot a Discordon ellenőrizheti.",
             "settings": "Beállítások",
+            "blueprints": "Tervrajzok",
             "subtitle": "Ez a Project Rebearth korai verziója. Kérjük, vegye fel velünk a kapcsolatot, ha játék közben bármilyen problémát tapasztal.",
             "suspended": "Fiókját felfüggesztettük. Ok: {{reason}}",
             "demoSubtitle": "Ez a Project Rebearth demója. Csak a sandbox városépítő funkció engedélyezett. Ha többjátékos globuson szeretnél játszani erőforrás-kezeléssel, töltsd le a teljes verziót.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "A sandbox módban továbbra is fantasztikus térképeket készíthetsz, azokat nagy felbontásban exportálhatod, és megtapasztalhatod, milyen érzés egy 1:1 méretarányú játékvilág.",
             "title": "Project Rebearth szerver",
             "welcome": "Üdvözöljük, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Építési tervek",
+            "description": "Készíts újrafelhasználható építési tervrajzokat az épületcsoportok gyors elhelyezéséhez.",
+            "createNew": "Új terv létrehozása",
+            "noBlueprints": "Még nincsenek tervrajzok. Készítsd el az elsőt!",
+            "edit": "Szerkesztés",
+            "delete": "Törlés",
+            "deleteConfirm": "Biztosan törölni szeretné ezt a tervet?",
+            "enable": "Terv engedélyezése",
+            "disable": "Tervlet letiltása",
+            "enabled": "Engedélyezve",
+            "disabled": "Letiltva",
+            "unnamed": "Névtelen tervrajz",
+            "workshop": "Műhely",
+            "workshopItem": "Műhely",
+            "published": "Közzététel",
+            "publish": "Közzététel",
+            "update": "Frissítés",
+            "publishToWorkshop": "Közzététel a Steam Workshopon",
+            "updateWorkshop": "Workshop-elem frissítése",
+            "duplicate": "Készítsen másolatot",
+            "copyLabel": "(Másolás)"
         },
         "sandbox": {
             "description": "A Sandbox mód lehetővé teszi, hogy szabadon építs, a többjátékos világ korlátai nélkül. Csak te vagy és nulla erőforrás-korlátozás. Elmentheted az előrehaladásodat, és később betöltheted.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Archívumok"
+            "title": "Archívumok",
+            "empty": "Még nem találtak leleteket.",
+            "emptyHint": "Küldj expedíciókat, hogy felfedezd a régi világ titkait.",
+            "flyTo": "Repülj a helyszínre",
+            "needMuseum": "Először építs egy múzeumot"
         },
         "choices": {
             "selectChoice": "Választás kiválasztása",
@@ -748,8 +783,10 @@
             "title": "Tárolás"
         },
         "townName": "Város neve:",
+        "marketName": "Körzet",
         "townColor": "Város színe:",
         "unnamedTown": "névtelen város",
+        "unnamedDistrict": "névtelen kerület",
         "upgrade": "Frissítsen az {{building}} verzióra"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Textúra felbontás",
         "title": "Beállítások",
         "treeDensity": "Fa sűrűség",
-        "uiScale": "UI méretarány"
+        "uiScale": "UI méretarány",
+        "workerThreads": "CPU szálak",
+        "workerThreadsHelp": "Ez szabályozza, hogy hány háttérszálat használjon a játék a rendereléshez. Több szál gyorsíthatja a csempék betöltését, de növeli a memóriahasználatot, és alacsonyabb kategóriájú eszközökön összeomlást okozhat. Kísérletezzen, hogy megtalálja a rendszerének legmegfelelőbb beállítást."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Fedezd fel az expedícióid során talált összes leletet. Minden lelet a régi világ történelmének egy-egy darabját tárja fel, és értékes erőforrásokat is tartalmazhat.",
         "hud": "Ez a panel az összes rendelkezésre álló, előállított és felhasznált erőforrást mutatja. Az ikonok fölé viszve az egérmutatót további részletek jelennek meg az egyes erőforrásokról. Ha egy erőforrásból kevés van, az piros színnel jelenik meg, és az épületek kénytelenek lehetnek csökkenteni termelékenységüket. Ha eléri a kapacitáshatárt, az vastag betűvel jelenik meg, és az épületek leállnak a termeléssel. Vannak olyan hatások, mint például a kezdő bónusz, amelyek befolyásolják a termelés vagy a fogyasztás mértékét. Ezek a módosítók akkor jelennek meg, ha az egérmutatót egy erőforrás fölé viszi. Látod a bal oldalon forgó kört? Ez jelzi, hogy a játék szinkronizálódik a szerverrel. A szinkronizálás befejezéséig nem látsz erőforrás-változásokat. Az erőforrás-fogyasztás és -termelés naponta jelenik meg. Ez egy valós idejű nap. Az erőforrásaid azonban lassan fogynak.",
         "market": "Üdvözöljük a piacon! Itt láthatja, hogy a többi játékos mit szeretne vásárolni vagy eladni, és ami még fontosabb, milyen áron! Ha mások megrendelését teljesíti, akkor a szállítási költségeket Önnek kell állnia. Ha tehát a megrendelő messze van, akkor lehet, hogy nem éri meg, vagy akár többet is fizethet, mint amennyit a megrendelő hajlandó fizetni.",
         "orders": "Adja le megrendeléseit! Tájékoztassa a többi játékost, hogy mit szeretne vásárolni vagy eladni, és milyen áron. Ez az, amit kapni fog, vagy fizetni fog. Ne feledje, hogy a többiek fizetnek a szállításért. Tehát lehet, hogy nem érdemes alacsony áron vásárolni, ha a többi játékos szállítási költségei túl magasak.",
@@ -834,6 +874,36 @@
         "percentage": "{{érték}}",
         "seconds": "{{value}} s",
         "secondsLong": "másodperc"
+    },
+    "blueprintEditor": {
+        "details": "Tervrajz részletei",
+        "name": "Név",
+        "namePlaceholder": "Tervrajz neve",
+        "description": "Leírás",
+        "descriptionPlaceholder": "Mit épít ez a terv?",
+        "category": "Kategória",
+        "categoryPlaceholder": "pl. ipari, lakóépületek",
+        "biome": "Biom beállítások",
+        "allBiomes": "Ugyanaz az elrendezés minden biomában",
+        "copyConfig": "Biom konfiguráció másolása",
+        "selectSource": "Válassza ki a forrásbiomot",
+        "cancelCopy": "Másolás törlése",
+        "copyTo": "Másolás: {{biome}}",
+        "source": "Forrás",
+        "copyHint": "Kattintson egy célbiomra az objektumok másolásához",
+        "objectCount": "Objektumok",
+        "totalCost": "Teljes költség",
+        "save": "Mentés",
+        "exit": "Kilépés",
+        "publish": "Közzététel",
+        "updateWorkshop": "Frissítés",
+        "published": "Megjelent!",
+        "publishFailed": "Sikertelen",
+        "buildMenu": "Épületek",
+        "rates": "Árak",
+        "noRates": "Helyezzen el épületeket az árak megtekintéséhez",
+        "deleteObject": "Eltávolítás",
+        "outOfBounds": "A tervrajz területén kívül"
     },
     "warnings": {
         "notEnoughPop": "Nincs elég önkéntes"

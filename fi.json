@@ -43,6 +43,8 @@
             "intensiveFarming": "Intensiivinen maatalous mahdollistaa eläinten ruokkimisen viljalla, mikä lisää tuotettavien eläintuotteiden määrää.",
             "newTownBoost": "Uutena asukkaana saat väliaikaisia bonuksia, jotka auttavat sinua pääsemään alkuun. Nämä bonukset häviävät ajan myötä."
         },
+        "confirmChange": "Haluatko varmasti muuttaa tätä valintaa?",
+        "confirmLock": "Tämä valinta lukitaan{{time}}-versiossa.",
         "exclusiveOptions": "Yksinoikeudella tarjottavat vaihtoehdot",
         "lockedFor": "Lukittu",
         "option": "Vaihtoehto",
@@ -410,6 +412,7 @@
             "happiness": "Onnellisuus",
             "knowledge": "Tieto",
             "pop": "Väestö",
+            "population": "Väestö",
             "stone": "Kivi",
             "wood": "Puu",
             "wool": "Villa",
@@ -436,6 +439,10 @@
             "multiPlace": "Jatka sijoittamista",
             "rotate": "Kierrä",
             "restriction": "Rakentamaton alue"
+        },
+        "explore": {
+            "doubleClickDraw": "Kaksoisnapsauta piirtääksesi alueen",
+            "adjustEffort": "Säädä vaivannäköä liukusäätimellä"
         },
         "capacity": "Kapasiteetti",
         "defaultTownName": "Nimetön kaupunki",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Palaa työpöydälle",
             "serverOffline": "Palvelimeen ei saada yhteyttä. Palvelin saattaa olla ylikuormitettu tai tilapäisesti poissa käytöstä huoltotöiden vuoksi. Tarkista Discordista viimeisin tilanne.",
             "settings": "Asetukset",
+            "blueprints": "Suunnitelmat",
             "subtitle": "Tämä on Project Rebearthin varhainen versio. Ota yhteyttä, jos kohtaat ongelmia pelatessasi.",
             "suspended": "Tilisi on suljettu. Syy: {{reason}}",
             "demoSubtitle": "Tämä on Project Rebearthin demo. Vain sandbox-kaupunkien rakentelu on käytössä. Jos haluat pelata moninpelissä, jossa on resurssienhallinta, hanki täysversio.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Sandbox-tilassa voit edelleen luoda upeita karttoja, viedä ne korkealla resoluutiolla ja kokea, miltä 1:1-mittakaavassa oleva pelimaailma tuntuu.",
             "title": "Project Rebearth -palvelin",
             "welcome": "Tervetuloa, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Rakennussuunnitelmat",
+            "description": "Luo uudelleenkäytettäviä rakennuspiirustuksia, jotta voit sijoittaa rakennusryhmiä nopeasti.",
+            "createNew": "Luo uusi suunnitelma",
+            "noBlueprints": "Suunnitelmia ei ole vielä. Luo ensimmäinen!",
+            "edit": "Muokkaa",
+            "delete": "Poista",
+            "deleteConfirm": "Haluatko varmasti poistaa tämän suunnitelman?",
+            "enable": "Ota suunnitelma käyttöön",
+            "disable": "Poista suunnitelma käytöstä",
+            "enabled": "Käytössä",
+            "disabled": "Pois käytöstä",
+            "unnamed": "Nimetön suunnitelma",
+            "workshop": "Työpaja",
+            "workshopItem": "Työpaja",
+            "published": "Julkaistu",
+            "publish": "Julkaise",
+            "update": "Päivitä",
+            "publishToWorkshop": "Julkaise Steam Workshopissa",
+            "updateWorkshop": "Päivitä Workshop-kohde",
+            "duplicate": "Tee kopio",
+            "copyLabel": "(Kopioi)"
         },
         "sandbox": {
             "description": "Sandbox-tilassa voit rakentaa vapaasti ilman moninpelimaailman rajoituksia. Olet yksin ja resurssirajoituksia ei ole. Voit tallentaa edistymisesi ja ladata sen myöhemmin.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Arkistot"
+            "title": "Arkistot",
+            "empty": "Esineitä ei ole vielä löydetty.",
+            "emptyHint": "Lähetä tutkimusretkikuntia paljastamaan vanhan maailman salaisuudet.",
+            "flyTo": "Lennä sijaintiin",
+            "needMuseum": "Rakenna ensin museo"
         },
         "choices": {
             "selectChoice": "Valitse vaihtoehto",
@@ -748,8 +783,10 @@
             "title": "Tallennus"
         },
         "townName": "Kaupungin nimi:",
+        "marketName": "Piiri",
         "townColor": "Kaupungin väri:",
         "unnamedTown": "Nimetön kaupunki",
+        "unnamedDistrict": "nimeämätön alue",
         "upgrade": "Päivitä versioon {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Tekstuurin resoluutio",
         "title": "Asetukset",
         "treeDensity": "Puiden tiheys",
-        "uiScale": "UI-asteikko"
+        "uiScale": "UI-asteikko",
+        "workerThreads": "CPU-säikeet",
+        "workerThreadsHelp": "Määrittää, kuinka monta taustasäiettä käytetään renderointiin. Lisää säikeitä voi nopeuttaa ruutujen lataamista, mutta ne myös lisäävät muistin käyttöä ja voivat aiheuttaa kaatumisia heikommissa laitteissa. Kokeile, mikä on paras tasapaino järjestelmällesi."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Selaa kaikkia retkikuntiesi löytämää esineitä. Jokainen esine paljastaa palan vanhan maailman historiaa ja voi sisältää arvokkaita resursseja.",
         "hud": "Tämä paneeli näyttää kaikki resurssit, joita sinulla on, tuotat ja kulutat. Vie hiiri kuvakkeiden päälle nähdäksesi lisätietoja kustakin resurssista. Jos resurssi on loppumassa, se korostetaan punaisella, ja rakennusten tuottavuus saattaa joutua laskemaan. Jos saavutat kapasiteettisi rajan, se näkyy lihavoituna ja rakennuksesi lopettavat tuotannon. Voit vaikuttaa tuotantoosi tai kulutukseesi esimerkiksi aloitusbonuksella. Nämä muokkaajat näkyvät, kun viet hiiren resurssin päälle. Näetkö vasemmalla pyörivän ympyrän? Se osoittaa, milloin peli synkronoituu palvelimen kanssa. Et näe resurssien muutoksia ennen kuin synkronointi on valmis. Resurssien kulutus ja tuotanto näytetään päivittäin. Tämä on todellinen reaaliaikainen päivä. Resurssisi kuitenkin kasvavat hitaasti.",
         "market": "Tervetuloa markkinoille! Katso, mitä muut pelaajat haluavat ostaa tai myydä, ja mikä tärkeintä, mihin hintaan! Maksat kuljetuskustannukset, kun täytät jonkun toisen tilauksen. Joten jos he ovat kaukana, se ei ehkä ole sen arvoista tai voi jopa maksaa enemmän kuin he ovat valmiita maksamaan.",
         "orders": "Anna tilauksesi! Ilmoita muille pelaajille, mitä haluat ostaa tai myydä ja mihin hintaan. Tämä on se, mitä saat tai maksat. Muista, että muut maksavat kuljetuksesta. Joten halvan tuotteen ostaminen ei välttämättä kannata, jos muiden pelaajien kuljetuskustannukset ovat liian korkeat.",
@@ -834,6 +874,36 @@
         "percentage": "{{arvo}}",
         "seconds": "{{value}} s",
         "secondsLong": "sekuntia"
+    },
+    "blueprintEditor": {
+        "details": "Suunnitelman tiedot",
+        "name": "Nimi",
+        "namePlaceholder": "Suunnitelman nimi",
+        "description": "Kuvaus",
+        "descriptionPlaceholder": "Mitä tämä suunnitelma rakentaa?",
+        "category": "Luokka",
+        "categoryPlaceholder": "esim. Teollisuus, Asuminen",
+        "biome": "Biomin asetukset",
+        "allBiomes": "Sama ulkoasu kaikille biomille",
+        "copyConfig": "Kopioi biomin asetukset",
+        "selectSource": "Valitse lähdebiomi",
+        "cancelCopy": "Peruuta kopiointi",
+        "copyTo": "Kopioi osoitteeseen {{biome}}",
+        "source": "Lähde",
+        "copyHint": "Napsauta kohdebiomia, johon haluat kopioida kohteet",
+        "objectCount": "Objektit",
+        "totalCost": "Kokonaishinta",
+        "save": "Tallenna",
+        "exit": "Poistu",
+        "publish": "Julkaise",
+        "updateWorkshop": "Päivitä",
+        "published": "Julkaistu!",
+        "publishFailed": "Epäonnistui",
+        "buildMenu": "Rakennukset",
+        "rates": "Hinnat",
+        "noRates": "Sijoita rakennuksia nähdäksesi hinnat",
+        "deleteObject": "Poista",
+        "outOfBounds": "Suunnitelma-alueen ulkopuolella"
     },
     "warnings": {
         "notEnoughPop": "Ei tarpeeksi vapaaehtoisia"

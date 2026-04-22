@@ -43,6 +43,8 @@
             "intensiveFarming": "L'agricoltura intensiva consente di nutrire gli animali con cereali, aumentando la quantità di prodotti animali che è possibile produrre.",
             "newTownBoost": "Come nuovo insediamento, riceverai dei bonus temporanei per aiutarti a iniziare. Questi bonus svaniranno col tempo."
         },
+        "confirmChange": "Sei sicuro di voler modificare questa scelta?",
+        "confirmLock": "Questa opzione sarà bloccata per {{time}}.",
         "exclusiveOptions": "Opzioni esclusive",
         "lockedFor": "Bloccato per",
         "option": "Opzioni",
@@ -410,6 +412,7 @@
             "happiness": "Felicità",
             "knowledge": "Conoscenza",
             "pop": "Popolazione",
+            "population": "Popolazione",
             "stone": "Pietra",
             "wood": "Legname",
             "wool": "Lana",
@@ -436,6 +439,10 @@
             "multiPlace": "Continua a posizionare",
             "rotate": "Ruota",
             "restriction": "Area non edificabile"
+        },
+        "explore": {
+            "doubleClickDraw": "Fai doppio clic per disegnare un'area",
+            "adjustEffort": "Utilizza il cursore per regolare lo sforzo"
         },
         "capacity": "Capacità",
         "defaultTownName": "La tua città",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Ritorna al Desktop",
             "serverOffline": "Impossibile raggiungere il server. Il server potrebbe essere sovraccarico o temporaneamente fuori servizio per manutenzione. Controlla Discord per lo stato più recente.",
             "settings": "Opzioni",
+            "blueprints": "Progetti",
             "subtitle": "Questa è la demo di Project Rebearth! Al momento solo la modalità Sandbox è disponibile per il pubblico. Per favore contattaci se incontri qualsiasi problema mentre giochi.",
             "suspended": "Il tuo account è stato sospeso. Motivo: {{reason}}",
             "demoSubtitle": "Questa è la demo di Project Rebearth. È abilitato solo il city-builder sandbox. Per giocare sul globo multiplayer con gestione delle risorse, scarica la versione completa.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "La modalità sandbox ti consente ancora di creare mappe fantastiche, esportarle in alta risoluzione e provare l'esperienza di un mondo di gioco in scala 1:1.",
             "title": "Project Rebearth Server",
             "welcome": "Benvenuto, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Progetti di costruzione",
+            "description": "Crea progetti di edifici riutilizzabili per posizionare rapidamente gruppi di edifici.",
+            "createNew": "Crea nuovo blueprint",
+            "noBlueprints": "Non ci sono ancora progetti. Crea il tuo primo progetto!",
+            "edit": "Modifica",
+            "delete": "Conferma",
+            "deleteConfirm": "Sei sicuro di voler eliminare questo blueprint?",
+            "enable": "Abilita blueprint",
+            "disable": "Disattiva il progetto",
+            "enabled": "Abilitato",
+            "disabled": "Disabilitato",
+            "unnamed": "Blueprint senza nome",
+            "workshop": "Workshop",
+            "workshopItem": "Workshop",
+            "published": "Pubblicato",
+            "publish": "Pubblica",
+            "update": "Aggiornamento",
+            "publishToWorkshop": "Pubblica su Steam Workshop",
+            "updateWorkshop": "Aggiorna oggetto Workshop",
+            "duplicate": "Crea una copia",
+            "copyLabel": "(Copia)"
         },
         "sandbox": {
             "description": "La modalità Sandbox ti consente di costruire liberamente senza i vincoli del mondo multiplayer. Ci sei solo tu e nessuna restrizione sulle risorse. Puoi salvare i tuoi progressi e caricarli in un secondo momento.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Archivi"
+            "title": "Archivi",
+            "empty": "Non sono stati ancora rilevati artefatti.",
+            "emptyHint": "Invia spedizioni per svelare i segreti del mondo antico.",
+            "flyTo": "Vola verso la posizione",
+            "needMuseum": "Costruisci prima un museo"
         },
         "choices": {
             "selectChoice": "Seleziona scelta",
@@ -748,8 +783,10 @@
             "title": "Magazzino"
         },
         "townName": "Nome città",
+        "marketName": "Distretto",
         "townColor": "Colore della città:",
         "unnamedTown": "Città senza nome",
+        "unnamedDistrict": "distretto senza nome",
         "upgrade": "Migliora in {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Risoluzione Texture",
         "title": "Opzioni",
         "treeDensity": "Densità degli alberi",
-        "uiScale": "Scala interfaccia"
+        "uiScale": "Scala interfaccia",
+        "workerThreads": "Thread della CPU",
+        "workerThreadsHelp": "Controlla il numero di thread in background utilizzati per il rendering. Un numero maggiore di thread può velocizzare il caricamento delle tessere, ma aumenta anche l'utilizzo della memoria e può causare arresti anomali sui dispositivi di fascia bassa. Prova diverse impostazioni per trovare il miglior equilibrio per il tuo sistema."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Esplora tutti i reperti scoperti dalle tue spedizioni. Ogni reperto svela un frammento della storia del mondo antico e potrebbe contenere risorse preziose.",
         "hud": "Questo pannello mostra tutte le risorse che possiedi, produci e consumi. Passa con il mouse sulle icone per visualizzare maggiori dettagli su ciascuna risorsa. Se una risorsa sta per esaurirsi, verrà evidenziata in rosso e gli edifici potrebbero essere costretti a ridurre la loro produttività. Se raggiungi la tua capacità massima, verrà visualizzata in grassetto e i tuoi edifici smetteranno di produrre. Alcuni effetti, come il bonus iniziale, possono influenzare la quantità di risorse prodotte o consumate. Questi modificatori vengono visualizzati quando passi con il mouse su una risorsa. Vedi il cerchio che gira a sinistra? Indica quando il gioco si sincronizza con il server. Non vedrai le modifiche alle risorse fino al completamento della sincronizzazione. Il consumo e la produzione di risorse sono mostrati per giorno. Si tratta di un giorno reale in tempo reale. Tuttavia, le tue risorse aumenteranno lentamente.",
         "market": "Benvenuto sul mercato! Guarda tutte le cose che gli altri giocatori vogliono comprare o vendere e, cosa più importante, a quale prezzo! Pagherai le spese di trasporto quando evaderai l'ordine di qualcun altro. Quindi, se sono lontani, potrebbe non valerne la pena o addirittura costare più di quanto sono disposti a pagare.",
         "orders": "Inserisci i tuoi ordini! Comunica agli altri giocatori cosa desideri acquistare o vendere e a quale prezzo. Questo è ciò che riceverai o pagherai. Tieni presente che gli altri pagheranno le spese di trasporto. Quindi acquistare qualcosa a un prezzo basso potrebbe non funzionare se le spese di spedizione degli altri giocatori sono troppo elevate.",
@@ -834,6 +874,36 @@
         "percentage": "{{value}}%",
         "seconds": "{{value}}s",
         "secondsLong": "secondi"
+    },
+    "blueprintEditor": {
+        "details": "Dettagli del progetto",
+        "name": "Nome",
+        "namePlaceholder": "Nome del progetto",
+        "description": "Descrizione",
+        "descriptionPlaceholder": "Cosa realizza questo progetto?",
+        "category": "Categoria",
+        "categoryPlaceholder": "ad es. Industriale, Residenziale",
+        "biome": "Configurazione del bioma",
+        "allBiomes": "Stesso layout per tutti i biomi",
+        "copyConfig": "Copia configurazione bioma",
+        "selectSource": "Seleziona il bioma di origine",
+        "cancelCopy": "Annulla copia",
+        "copyTo": "Copia su {{biome}}",
+        "source": "Fonte",
+        "copyHint": "Fai clic su un bioma di destinazione per copiare gli oggetti",
+        "objectCount": "Oggetti",
+        "totalCost": "Costo totale",
+        "save": "Salva",
+        "exit": "Esci",
+        "publish": "Pubblica",
+        "updateWorkshop": "Aggiornamento",
+        "published": "Pubblicato!",
+        "publishFailed": "Errore",
+        "buildMenu": "Costruzioni",
+        "rates": "Tariffe",
+        "noRates": "Posiziona gli edifici per visualizzare i tassi",
+        "deleteObject": "Rimuovi",
+        "outOfBounds": "Area esterna al progetto"
     },
     "warnings": {
         "notEnoughPop": "Non ci sono abbastanza volontari"

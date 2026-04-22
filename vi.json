@@ -43,6 +43,8 @@
             "intensiveFarming": "Nông nghiệp thâm canh cho phép bạn cho động vật ăn ngũ cốc, từ đó tăng lượng sản phẩm động vật mà bạn có thể sản xuất.",
             "newTownBoost": "Với tư cách là một khu định cư mới, bạn sẽ nhận được các phần thưởng tạm thời để hỗ trợ bạn bắt đầu. Các phần thưởng này sẽ dần biến mất theo thời gian."
         },
+        "confirmChange": "Bạn có chắc chắn muốn thay đổi lựa chọn này không?",
+        "confirmLock": "Lựa chọn này sẽ bị khóa trong phiên bản \"{{time}}\".",
         "exclusiveOptions": "Tùy chọn độc quyền",
         "lockedFor": "Đã khóa",
         "option": "Tùy chọn",
@@ -410,6 +412,7 @@
             "happiness": "Hạnh phúc",
             "knowledge": "Kiến thức",
             "pop": "Dân số",
+            "population": "Dân số",
             "stone": "Đá",
             "wood": "Gỗ",
             "wool": "Len",
@@ -436,6 +439,10 @@
             "multiPlace": "Tiếp tục đặt",
             "rotate": "Xoay",
             "restriction": "Khu vực không thể xây dựng"
+        },
+        "explore": {
+            "doubleClickDraw": "Nhấp đúp để vẽ một vùng",
+            "adjustEffort": "Sử dụng thanh trượt để điều chỉnh mức độ nỗ lực"
         },
         "capacity": "Dung lượng",
         "defaultTownName": "Thị trấn không tên",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Trở về màn hình desktop",
             "serverOffline": "Không thể kết nối với máy chủ. Máy chủ có thể đang bị quá tải hoặc tạm thời ngừng hoạt động để bảo trì. Vui lòng kiểm tra Discord để cập nhật tình trạng mới nhất.",
             "settings": "Cài đặt",
+            "blueprints": "Bản thiết kế",
             "subtitle": "Đây là phiên bản thử nghiệm ban đầu của Project Rebearth. Vui lòng liên hệ với chúng tôi nếu bạn gặp bất kỳ vấn đề nào trong quá trình chơi.",
             "suspended": "Tài khoản của bạn đã bị tạm ngưng. Lý do: {{reason}}",
             "demoSubtitle": "Đây là bản demo của Project Rebearth. Chỉ chế độ xây dựng thành phố sandbox được kích hoạt. Để chơi trên bản đồ đa người chơi với quản lý tài nguyên, hãy tải bản phát hành đầy đủ.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Chế độ sandbox vẫn cho phép bạn tạo ra những bản đồ tuyệt vời, xuất chúng ở độ phân giải cao và trải nghiệm cảm giác của một thế giới game tỷ lệ 1:1.",
             "title": "Dự án Rebearth Server",
             "welcome": "Chào mừng, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Bản thiết kế công trình",
+            "description": "Tạo các bản thiết kế tòa nhà có thể tái sử dụng để nhanh chóng đặt các nhóm tòa nhà.",
+            "createNew": "Tạo bản thiết kế mới",
+            "noBlueprints": "Chưa có bản thiết kế nào. Hãy tạo bản thiết kế đầu tiên của bạn!",
+            "edit": "Chỉnh sửa",
+            "delete": "Xóa",
+            "deleteConfirm": "Bạn có chắc chắn muốn xóa bản thiết kế này không?",
+            "enable": "Bật bản thiết kế",
+            "disable": "Tắt bản thiết kế",
+            "enabled": "Đã bật",
+            "disabled": "Đã tắt",
+            "unnamed": "Bản thiết kế chưa có tên",
+            "workshop": "Hội thảo",
+            "workshopItem": "Hội thảo",
+            "published": "Đã xuất bản",
+            "publish": "Xuất bản",
+            "update": "Cập nhật",
+            "publishToWorkshop": "Đăng lên Steam Workshop",
+            "updateWorkshop": "Cập nhật vật phẩm trong Workshop",
+            "duplicate": "Tạo bản sao",
+            "copyLabel": "(Sao chép)"
         },
         "sandbox": {
             "description": "Chế độ Sandbox cho phép bạn xây dựng tự do mà không bị giới hạn bởi thế giới đa người chơi. Chỉ có bạn và không có giới hạn tài nguyên. Bạn có thể lưu tiến trình và tải lại sau này.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Lưu trữ"
+            "title": "Lưu trữ",
+            "empty": "Chưa phát hiện thấy bất kỳ hiện vật nào.",
+            "emptyHint": "Hãy gửi các đoàn thám hiểm để khám phá những bí mật của thế giới cổ xưa.",
+            "flyTo": "Bay đến vị trí",
+            "needMuseum": "Hãy xây dựng một bảo tàng trước tiên"
         },
         "choices": {
             "selectChoice": "Chọn tùy chọn",
@@ -748,8 +783,10 @@
             "title": "Lưu trữ"
         },
         "townName": "Tên thành phố:",
+        "marketName": "Quận",
         "townColor": "Màu sắc của thị trấn:",
         "unnamedTown": "Thị trấn không tên",
+        "unnamedDistrict": "quận không tên",
         "upgrade": "Nâng cấp lên phiên bản{{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Độ phân giải texture",
         "title": "Cài đặt",
         "treeDensity": "Mật độ cây",
-        "uiScale": "Tỷ lệ giao diện người dùng"
+        "uiScale": "Tỷ lệ giao diện người dùng",
+        "workerThreads": "Luồng CPU",
+        "workerThreadsHelp": "Điều chỉnh số lượng luồng nền được sử dụng để hiển thị. Sử dụng nhiều luồng hơn có thể tăng tốc độ tải các ô, nhưng cũng làm tăng mức sử dụng bộ nhớ và có thể gây ra sự cố trên các thiết bị cấu hình thấp. Hãy thử nghiệm để tìm ra sự cân bằng tối ưu cho hệ thống của bạn."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Khám phá tất cả các cổ vật được tìm thấy trong các cuộc thám hiểm của bạn. Mỗi cổ vật sẽ hé lộ một phần lịch sử của thế giới cổ đại và có thể chứa các tài nguyên quý giá.",
         "hud": "Bảng điều khiển này hiển thị tất cả các tài nguyên bạn có, sản xuất và tiêu thụ. Di chuột qua các biểu tượng để xem chi tiết về từng tài nguyên. Nếu bạn sắp hết một tài nguyên, nó sẽ được đánh dấu bằng màu đỏ và các công trình có thể bị buộc phải giảm năng suất. Nếu bạn đạt đến giới hạn công suất, nó sẽ được hiển thị bằng chữ in đậm và các công trình sẽ ngừng sản xuất. Bạn có thể có các hiệu ứng, như phần thưởng khởi đầu, ảnh hưởng đến lượng sản xuất hoặc tiêu thụ. Các bộ điều chỉnh này sẽ hiển thị khi bạn di chuột qua một tài nguyên. Bạn có thấy vòng tròn quay ở bên trái không? Điều đó cho biết khi trò chơi đồng bộ hóa với máy chủ. Bạn sẽ không thấy thay đổi về tài nguyên cho đến khi quá trình đồng bộ hóa hoàn tất. Sản xuất và tiêu thụ tài nguyên được hiển thị theo ngày. Đây là một ngày thực tế theo thời gian thực. Tuy nhiên, tài nguyên của bạn sẽ tăng chậm.",
         "market": "Chào mừng đến với thị trường! Hãy xem tất cả những thứ mà người chơi khác muốn mua hoặc bán, và quan trọng hơn, với giá bao nhiêu! Bạn sẽ phải trả chi phí vận chuyển khi hoàn thành đơn hàng của người khác. Vì vậy, nếu họ ở xa, có thể không đáng để làm, hoặc thậm chí chi phí có thể cao hơn mức họ sẵn sàng trả.",
         "orders": "Đặt lệnh mua/bán! Thông báo cho các người chơi khác về những gì bạn muốn mua hoặc bán, và với giá bao nhiêu. Đây là những gì bạn sẽ nhận được hoặc phải trả. Hãy nhớ rằng người khác sẽ phải trả phí vận chuyển. Vì vậy, việc mua một thứ gì đó với giá thấp có thể không hiệu quả nếu chi phí vận chuyển của người chơi khác quá cao.",
@@ -834,6 +874,36 @@
         "percentage": "{{giá trị}}",
         "seconds": "{{value}} s",
         "secondsLong": "giây"
+    },
+    "blueprintEditor": {
+        "details": "Chi tiết bản thiết kế",
+        "name": "Tên",
+        "namePlaceholder": "Tên bản thiết kế",
+        "description": "Mô tả",
+        "descriptionPlaceholder": "Bản thiết kế này xây dựng gì?",
+        "category": "Thể loại",
+        "categoryPlaceholder": "Ví dụ: Công nghiệp, Dân cư",
+        "biome": "Cấu hình sinh cảnh",
+        "allBiomes": "Cùng một bố cục cho tất cả các sinh cảnh",
+        "copyConfig": "Sao chép Cấu hình Biome",
+        "selectSource": "Chọn sinh cảnh nguồn",
+        "cancelCopy": "Hủy sao chép",
+        "copyTo": "Sao chép vào {{biome}}",
+        "source": "Nguồn",
+        "copyHint": "Nhấp vào một sinh cảnh mục tiêu để sao chép các đối tượng vào",
+        "objectCount": "Đối tượng",
+        "totalCost": "Tổng chi phí",
+        "save": "Lưu",
+        "exit": "Thoát",
+        "publish": "Xuất bản",
+        "updateWorkshop": "Cập nhật",
+        "published": "Đã xuất bản!",
+        "publishFailed": "Thất bại",
+        "buildMenu": "Công trình",
+        "rates": "Tỷ lệ",
+        "noRates": "Xếp các tòa nhà để xem tỷ lệ",
+        "deleteObject": "Xóa",
+        "outOfBounds": "Ngoài khu vực bản thiết kế"
     },
     "warnings": {
         "notEnoughPop": "Không đủ tình nguyện viên."

@@ -43,6 +43,8 @@
             "intensiveFarming": "Intensivt jordbruk gjør det mulig å fôre dyrene dine med korn, noe som øker mengden animalske produkter du kan produsere.",
             "newTownBoost": "Som ny bosetter får du midlertidige bonuser som hjelper deg i gang. Disse vil forsvinne over tid."
         },
+        "confirmChange": "Er du sikker på at du vil endre dette valget?",
+        "confirmLock": "Dette valget vil være låst for {{time}}.",
         "exclusiveOptions": "Eksklusive alternativer",
         "lockedFor": "Låst for",
         "option": "Alternativ",
@@ -410,6 +412,7 @@
             "happiness": "Lykke",
             "knowledge": "Kunnskap",
             "pop": "Befolkning",
+            "population": "Befolkning",
             "stone": "Stein",
             "wood": "Tre",
             "wool": "Ull",
@@ -436,6 +439,10 @@
             "multiPlace": "Fortsett å plassere",
             "rotate": "Roter",
             "restriction": "Område som ikke kan bygges på"
+        },
+        "explore": {
+            "doubleClickDraw": "Dobbeltklikk for å tegne et område",
+            "adjustEffort": "Bruk glidebryteren til å justere innsatsen"
         },
         "capacity": "Kapasitet",
         "defaultTownName": "Unavngitt by",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Gå tilbake til skrivebordet",
             "serverOffline": "Kan ikke nå serveren. Serveren kan være overbelastet eller midlertidig nede på grunn av vedlikehold. Sjekk Discord for den siste statusen.",
             "settings": "Innstillinger",
+            "blueprints": "Tegninger",
             "subtitle": "Dette er en tidlig utgave av Project Rebearth. Ta kontakt hvis du støter på problemer mens du spiller.",
             "suspended": "Kontoen din er suspendert. Årsak: {{reason}}",
             "demoSubtitle": "Dette er en demo av Project Rebearth. Kun sandkasse-bybyggerspillet er aktivert. For å spille på flerspiller-kloden med ressursadministrasjon, må du kjøpe fullversjonen.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Sandkassemodus lar deg fortsatt lage fantastiske kart, eksportere dem i høy oppløsning og oppleve hvordan en spillverden i skala 1:1 føles.",
             "title": "Prosjekt Rebearth Server",
             "welcome": "Velkommen, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Byggplaner",
+            "description": "Lag gjenbrukbare byggeplaner for å raskt plassere grupper av bygninger.",
+            "createNew": "Opprett ny blåkopi",
+            "noBlueprints": "Ingen blåkopier ennå. Lag din første!",
+            "edit": "Rediger",
+            "delete": "Slett",
+            "deleteConfirm": "Er du sikker på at du vil slette denne blåkopien?",
+            "enable": "Aktiver blåkopi",
+            "disable": "Deaktiver blåkopi",
+            "enabled": "Aktivert",
+            "disabled": "Deaktivert",
+            "unnamed": "Ubenavnet Blueprint",
+            "workshop": "Workshop",
+            "workshopItem": "Workshop",
+            "published": "Publisert",
+            "publish": "Publiser",
+            "update": "Oppdatering",
+            "publishToWorkshop": "Publiser til Steam Workshop",
+            "updateWorkshop": "Oppdater Workshop-element",
+            "duplicate": "Lag en kopi",
+            "copyLabel": "(Kopier)"
         },
         "sandbox": {
             "description": "Sandkassemodus lar deg bygge fritt uten begrensningene i flerspillerverdenen. Det er bare deg og ingen ressursbegrensninger. Du kan lagre fremgangen din og laste den inn senere.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Arkiver"
+            "title": "Arkiver",
+            "empty": "Ingen artefakter funnet ennå.",
+            "emptyHint": "Send ekspedisjoner for å avdekke hemmelighetene i den gamle verden.",
+            "flyTo": "Fly til sted",
+            "needMuseum": "Bygg et museum først"
         },
         "choices": {
             "selectChoice": "Velg valg",
@@ -748,8 +783,10 @@
             "title": "Lagring"
         },
         "townName": "Byens navn:",
+        "marketName": "District",
         "townColor": "Byens farge:",
         "unnamedTown": "Ubenevnt by",
+        "unnamedDistrict": "navnløst distrikt",
         "upgrade": "Oppgrader til {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Teksturoppløsning",
         "title": "Innstillinger",
         "treeDensity": "Trærnes tetthet",
-        "uiScale": "UI-skala"
+        "uiScale": "UI-skala",
+        "workerThreads": "CPU-tråder",
+        "workerThreadsHelp": "Styrer hvor mange bakgrunnstråder som brukes til rendering. Flere tråder kan øke hastigheten på innlasting av fliser, men øker også minnebruken og kan føre til krasj på enheter med lavere ytelse. Prøv deg frem for å finne den beste balansen for systemet ditt."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Se gjennom alle gjenstandene som ekspedisjonene dine har funnet. Hver gjenstand avslører en del av den gamle verdens historie og kan inneholde verdifulle ressurser.",
         "hud": "Dette panelet viser alle ressursene du har, produserer og forbruker. Hold musepekeren over ikonene for å se mer informasjon om hver ressurs. Hvis du har lite av en ressurs, vil den bli uthevet i rødt, og bygninger kan bli tvunget til å redusere produktiviteten. Hvis du når kapasiteten din, vil det vises i fet skrift, og bygningene dine slutter å produsere. Du kan ha effekter, som startbonusen din, som påvirker hvor mye du produserer eller forbruker. Disse modifikatorene vises når du holder musepekeren over en ressurs. Ser du den roterende sirkelen til venstre? Den indikerer når spillet synkroniseres med serveren. Du vil ikke se ressursendringer før synkroniseringen er fullført. Ressursforbruk og -produksjon vises per dag. Dette er en faktisk dag i sanntid. Ressursene dine vil imidlertid øke sakte.",
         "market": "Velkommen til markedet! Se alle tingene andre spillere ønsker å kjøpe eller selge, og enda viktigere, til hvilken pris! Du må betale transportkostnader når du oppfyller andres bestillinger. Så hvis de er langt unna, kan det hende det ikke er verdt det, eller at det til og med koster mer enn det de er villige til å betale.",
         "orders": "Legg inn dine bestillinger! Fortell de andre spillerne hva du ønsker å kjøpe eller selge, og til hvilken pris. Dette er hva du vil motta eller betale. Husk at andre vil betale for transport. Det kan derfor hende at det ikke lønner seg å kjøpe noe til en lav pris hvis de andre spillernes fraktkostnader er for høye.",
@@ -834,6 +874,36 @@
         "percentage": "{{verdi}}",
         "seconds": "{{value}} s",
         "secondsLong": "sekunder"
+    },
+    "blueprintEditor": {
+        "details": "Detaljer om blåkopi",
+        "name": "Navn",
+        "namePlaceholder": "Navn på blåkopi",
+        "description": "Beskrivelse",
+        "descriptionPlaceholder": "Hva bygger denne blåkopien?",
+        "category": "Kategori",
+        "categoryPlaceholder": "f.eks. Industri, Bolig",
+        "biome": "Biome-konfigurasjon",
+        "allBiomes": "Samme layout for alle biomer",
+        "copyConfig": "Kopier biomekonfigurasjon",
+        "selectSource": "Velg kildebiom",
+        "cancelCopy": "Avbryt kopiering",
+        "copyTo": "Kopier til {{biome}}",
+        "source": "Kilde",
+        "copyHint": "Klikk på et målbiom for å kopiere objekter til",
+        "objectCount": "Objekter",
+        "totalCost": "Total kostnad",
+        "save": "Lagre",
+        "exit": "Avslutt",
+        "publish": "Publiser",
+        "updateWorkshop": "Oppdatering",
+        "published": "Publisert!",
+        "publishFailed": "Mislyktes",
+        "buildMenu": "Bygninger",
+        "rates": "Priser",
+        "noRates": "Plasser bygninger for å se priser",
+        "deleteObject": "Fjern",
+        "outOfBounds": "Utenfor blåkopiområdet"
     },
     "warnings": {
         "notEnoughPop": "Ikke nok frivillige"

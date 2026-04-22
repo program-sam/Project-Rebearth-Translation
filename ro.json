@@ -43,6 +43,8 @@
             "intensiveFarming": "Agricultura intensivă vă permite să hrăniți animalele cu cereale, crescând cantitatea de produse animale pe care le puteți produce.",
             "newTownBoost": "Ca nouă așezare, primești bonusuri temporare pentru a te ajuta să începi. Acestea vor dispărea în timp."
         },
+        "confirmChange": "Ești sigur că vrei să schimbi această opțiune?",
+        "confirmLock": "Această opțiune va fi blocată pentru {{time}}.",
         "exclusiveOptions": "Opțiuni exclusive",
         "lockedFor": "Blocat pentru",
         "option": "Opțiune",
@@ -410,6 +412,7 @@
             "happiness": "Fericire",
             "knowledge": "Cunoștințe",
             "pop": "Populație",
+            "population": "Populație",
             "stone": "Piatra",
             "wood": "Lemn",
             "wool": "Lână",
@@ -436,6 +439,10 @@
             "multiPlace": "Continuați să plasați",
             "rotate": "Rotește",
             "restriction": "Zonă neconstruibilă"
+        },
+        "explore": {
+            "doubleClickDraw": "Faceți dublu clic pentru a desena o zonă",
+            "adjustEffort": "Folosiți glisorul pentru a regla efortul"
         },
         "capacity": "Capacitate",
         "defaultTownName": "Oraș fără nume",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Reveniți la desktop",
             "serverOffline": "Nu se poate conecta la server. Este posibil ca serverul să fie suprasolicitat sau să fie temporar indisponibil din cauza lucrărilor de întreținere. Verificați Discord pentru a afla starea actuală.",
             "settings": "Setări",
+            "blueprints": "Planuri",
             "subtitle": "Aceasta este o versiune preliminară a Project Rebearth. Vă rugăm să ne contactați dacă întâmpinați probleme în timpul jocului.",
             "suspended": "Contul dvs. a fost suspendat. Motiv: {{reason}}",
             "demoSubtitle": "Aceasta este versiunea demo a Project Rebearth. Este activată doar funcția de construire a orașului în modul sandbox. Pentru a juca pe globul multiplayer cu gestionarea resurselor, descărcați versiunea completă.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Modul sandbox vă permite în continuare să creați hărți extraordinare, să le exportați la rezoluție înaltă și să experimentați cum este o lume de joc la scară 1:1.",
             "title": "Proiectul Rebearth Server",
             "welcome": "Bine ai venit, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Planuri de construcție",
+            "description": "Creează planuri de construcție reutilizabile pentru a plasa rapid grupuri de clădiri.",
+            "createNew": "Creați un nou plan",
+            "noBlueprints": "Nu există încă schițe. Creează-ți prima!",
+            "edit": "Editare",
+            "delete": "Ștergeți",
+            "deleteConfirm": "Ești sigur că vrei să ștergi acest plan?",
+            "enable": "Activează schița",
+            "disable": "Dezactivează schița",
+            "enabled": "Activat",
+            "disabled": "Dezactivat",
+            "unnamed": "Plan fără nume",
+            "workshop": "Atelier",
+            "workshopItem": "Atelier",
+            "published": "Publicat",
+            "publish": "Publicare",
+            "update": "Actualizare",
+            "publishToWorkshop": "Publică pe Steam Workshop",
+            "updateWorkshop": "Actualizare articol Workshop",
+            "duplicate": "Creați o copie",
+            "copyLabel": "(Copiere)"
         },
         "sandbox": {
             "description": "Modul Sandbox îți permite să construiești liber, fără constrângerile lumii multiplayer. Ești doar tu și zero restricții de resurse. Poți salva progresul și îl poți încărca mai târziu.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Arhive"
+            "title": "Arhive",
+            "empty": "Nu s-au descoperit încă artefacte.",
+            "emptyHint": "Trimite expediții pentru a descoperi secretele lumii vechi.",
+            "flyTo": "Zboară către locație",
+            "needMuseum": "Construiește mai întâi un muzeu"
         },
         "choices": {
             "selectChoice": "Selectați opțiunea",
@@ -748,8 +783,10 @@
             "title": "Stocare"
         },
         "townName": "Numele orașului:",
+        "marketName": "District",
         "townColor": "Culoarea orașului:",
         "unnamedTown": "oraș fără nume",
+        "unnamedDistrict": "district fără nume",
         "upgrade": "Actualizați la {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Rezoluția texturii",
         "title": "Setări",
         "treeDensity": "Densitatea copacilor",
-        "uiScale": "Scala UI"
+        "uiScale": "Scala UI",
+        "workerThreads": "Fire de procesor",
+        "workerThreadsHelp": "Controlează numărul de fire de fundal utilizate pentru redare. Un număr mai mare de fire poate accelera încărcarea plăcilor, dar poate crește și consumul de memorie și poate provoca blocări pe dispozitivele mai vechi. Experimentați pentru a găsi echilibrul optim pentru sistemul dvs."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Răsfoiește toate artefactele descoperite de expedițiile tale. Fiecare artefact dezvăluie o parte din istoria lumii vechi și poate conține resurse valoroase.",
         "hud": "Acest panou afișează toate resursele pe care le deții, le produci și le consumi. Trece cu mouse-ul peste pictograme pentru a vedea mai multe detalii despre fiecare resursă. Dacă o resursă este pe cale să se epuizeze, aceasta va fi evidențiată cu roșu, iar clădirile ar putea fi nevoite să-și reducă productivitatea. Dacă atingi capacitatea maximă, aceasta va fi afișată cu caractere aldine, iar clădirile tale vor înceta să mai producă. Efectele, cum ar fi bonusul de început, pot influența cantitatea pe care o produci sau o consumi. Aceste modificatori sunt afișați când treci cu mouse-ul peste o resursă. Vedeți cercul care se învârte în stânga? Acesta indică momentul în care jocul se sincronizează cu serverul. Nu veți vedea modificările resurselor până când sincronizarea nu este finalizată. Consumul și producția de resurse sunt afișate pe zi. Aceasta este o zi reală în timp real. Cu toate acestea, resursele dvs. vor crește încet.",
         "market": "Bine ai venit pe piață! Iată toate lucrurile pe care ceilalți jucători vor să le cumpere sau să le vândă și, mai important, la ce preț! Vei plăti costurile de transport atunci când îndeplinești comanda altcuiva. Așadar, dacă aceștia se află la mare distanță, s-ar putea să nu merite sau chiar să coste mai mult decât sunt dispuși să plătească.",
         "orders": "Plasați comenzile! Anunțați-i pe ceilalți jucători ce doriți să cumpărați sau să vindeți și la ce preț. Acesta este prețul pe care îl veți primi sau pe care îl veți plăti. Rețineți că ceilalți vor plăti transportul. Așadar, cumpărarea unui produs la un preț mic s-ar putea să nu fie rentabilă dacă costurile de transport ale celorlalți jucători sunt prea mari.",
@@ -834,6 +874,36 @@
         "percentage": "{{valoare}}",
         "seconds": "{{value}} s",
         "secondsLong": "secunde"
+    },
+    "blueprintEditor": {
+        "details": "Detalii plan",
+        "name": "Nume",
+        "namePlaceholder": "Numele planului",
+        "description": "Descriere",
+        "descriptionPlaceholder": "Ce construiește acest plan?",
+        "category": "Categorie",
+        "categoryPlaceholder": "de ex. Industrial, Rezidențial",
+        "biome": "Configurarea biomului",
+        "allBiomes": "Același aspect pentru toate biotopurile",
+        "copyConfig": "Copiere configurație biotop",
+        "selectSource": "Selectează biomul sursă",
+        "cancelCopy": "Anulează copierea",
+        "copyTo": "Copiați în {{biome}}",
+        "source": "Sursă",
+        "copyHint": "Faceți clic pe un biom țintă pentru a copia obiectele în acesta",
+        "objectCount": "Obiecte",
+        "totalCost": "Cost total",
+        "save": "Salvare",
+        "exit": "Ieșire",
+        "publish": "Publicare",
+        "updateWorkshop": "Actualizare",
+        "published": "Publicat!",
+        "publishFailed": "Eșuat",
+        "buildMenu": "Clădiri",
+        "rates": "Tarife",
+        "noRates": "Amplasați clădiri pentru a vedea tarifele",
+        "deleteObject": "Eliminare",
+        "outOfBounds": "În afara zonei planului"
     },
     "warnings": {
         "notEnoughPop": "Nu sunt suficienți voluntari"

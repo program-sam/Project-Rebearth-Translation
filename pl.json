@@ -43,6 +43,8 @@
             "intensiveFarming": "Intensywna hodowla pozwala karmić zwierzęta zbożem, zwiększając ilość produktów pochodzenia zwierzęcego, które można wyprodukować.",
             "newTownBoost": "Jako nowa osada otrzymujesz tymczasowe bonusy, które pomogą Ci rozpocząć grę. Z czasem bonusy te będą zanikać."
         },
+        "confirmChange": "Czy na pewno chcesz zmienić ten wybór?",
+        "confirmLock": "Ta opcja zostanie zablokowana w grze „{{time}}”.",
         "exclusiveOptions": "Opcje ekskluzywne",
         "lockedFor": "Zablokowane dla",
         "option": "Opcja",
@@ -410,6 +412,7 @@
             "happiness": "Szczęście",
             "knowledge": "Wiedza",
             "pop": "Populacja",
+            "population": "Populacja",
             "stone": "Kamień",
             "wood": "Drewno",
             "wool": "Wełna",
@@ -436,6 +439,10 @@
             "multiPlace": "Kontynuuj umieszczanie",
             "rotate": "Obróć",
             "restriction": "Obszar, na którym nie można budować"
+        },
+        "explore": {
+            "doubleClickDraw": "Kliknij dwukrotnie, aby narysować obszar",
+            "adjustEffort": "Użyj suwaka, aby dostosować poziom trudności"
         },
         "capacity": "Pojemność",
         "defaultTownName": "Twoje miasto",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Wyjście do pulpitu",
             "serverOffline": "Nie można połączyć się z serwerem. Serwer może być przeciążony lub tymczasowo niedostępny z powodu konserwacji. Sprawdź najnowszy status na Discordzie.",
             "settings": "Ustawienia",
+            "blueprints": "Schematy",
             "subtitle": "To jest demo gry Project Rebearth! Tylko tryb piaskownicy jest dostępny publicznie. Zgłoś proszę, jeśli napotkasz problemy w trakcie gry.",
             "suspended": "Twoje konto zostało zawieszone. Powód: {{reason}}",
             "demoSubtitle": "To jest wersja demonstracyjna Project Rebearth. Dostępna jest tylko funkcja budowania miasta w trybie sandbox. Aby grać w trybie wieloosobowym z zarządzaniem zasobami, pobierz pełną wersję gry.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Tryb piaskownicy nadal pozwala tworzyć niesamowite mapy, eksportować je w wysokiej rozdzielczości i doświadczać, jak wygląda świat gry w skali 1:1.",
             "title": "Serwer Project Rebearth",
             "welcome": "Witamy, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Plany budynków",
+            "description": "Twórz plany budynków wielokrotnego użytku, aby szybko rozmieszczać grupy budynków.",
+            "createNew": "Utwórz nowy schemat",
+            "noBlueprints": "Nie ma jeszcze żadnych projektów. Stwórz swój pierwszy!",
+            "edit": "Edytuj",
+            "delete": "Usuń",
+            "deleteConfirm": "Czy na pewno chcesz usunąć ten schemat?",
+            "enable": "Włącz schemat",
+            "disable": "Wyłącz schemat",
+            "enabled": "Włączone",
+            "disabled": "Wyłączone",
+            "unnamed": "Nienazwany projekt",
+            "workshop": "Warsztaty",
+            "workshopItem": "Warsztaty",
+            "published": "Opublikowano",
+            "publish": "Opublikuj",
+            "update": "Aktualizacja",
+            "publishToWorkshop": "Opublikuj w Steam Workshop",
+            "updateWorkshop": "Zaktualizuj element w Workshopie",
+            "duplicate": "Utwórz kopię",
+            "copyLabel": "(Kopia)"
         },
         "sandbox": {
             "description": "Tryb piaskownicy pozwala na swobodne budowanie bez ograniczeń świata wieloosobowego. Jesteś tylko ty i zero ograniczeń dotyczących zasobów. Możesz zapisać swoje postępy i wczytać je później.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Archiwum"
+            "title": "Archiwum",
+            "empty": "Nie znaleziono jeszcze żadnych artefaktów.",
+            "emptyHint": "Wysyłaj ekspedycje, aby odkrywać tajemnice starego świata.",
+            "flyTo": "Leć do lokalizacji",
+            "needMuseum": "Najpierw zbuduj muzeum"
         },
         "choices": {
             "selectChoice": "Wybierz opcję",
@@ -748,8 +783,10 @@
             "title": "Magazyn"
         },
         "townName": "Nazwa miasta",
+        "marketName": "Dystrykt",
         "townColor": "Kolor miasta:",
         "unnamedTown": "Miasto bez nazwy",
+        "unnamedDistrict": "bez nazwy dzielnicy",
         "upgrade": "Aktualizacja do wersji {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Rozdzielczość tekstur",
         "title": "Ustawienia",
         "treeDensity": "Gęstość drzew",
-        "uiScale": "Skala interfejsu"
+        "uiScale": "Skala interfejsu",
+        "workerThreads": "Wątki procesora",
+        "workerThreadsHelp": "Kontroluje liczbę wątków w tle używanych do renderowania. Większa liczba wątków może przyspieszyć ładowanie kafelków, ale także zwiększyć zużycie pamięci i spowodować awarie na słabszych urządzeniach. Wypróbuj różne ustawienia, aby znaleźć optymalną równowagę dla swojego systemu."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Przeglądaj wszystkie artefakty odkryte podczas twoich wypraw. Każdy artefakt ujawnia fragment historii dawnego świata i może zawierać cenne zasoby.",
         "hud": "Ten panel pokazuje wszystkie zasoby, które posiadasz, produkujesz i zużywasz. Najedź kursorem na ikony, aby zobaczyć więcej szczegółów na temat każdego zasobu. Jeśli zasób się kończy, zostanie on podświetlony na czerwono, a budynki mogą być zmuszone do zmniejszenia swojej wydajności. Jeśli osiągniesz maksymalną pojemność, zostanie to pokazane pogrubioną czcionką, a Twoje budynki przestaną produkować. Możesz mieć efekty, takie jak bonus startowy, które wpływają na to, ile produkujesz lub zużywasz. Te modyfikatory są pokazane po najechaniu kursorem na zasób. Widzisz obracające się kółko po lewej stronie? Oznacza ono, że gra synchronizuje się z serwerem. Zmiany zasobów będą widoczne dopiero po zakończeniu synchronizacji. Zużycie i produkcja zasobów są wyświetlane w ujęciu dziennym. Jest to rzeczywisty czas rzeczywisty. Jednak Twoje zasoby będą powoli rosnąć.",
         "market": "Witamy na rynku! Zobacz, co inni gracze chcą kupić lub sprzedać, a co ważniejsze, za jaką cenę! Realizując zamówienie innego gracza, ponosisz koszty transportu. Jeśli więc znajduje się on daleko, może to nie być opłacalne, a nawet kosztować więcej niż jest on skłonny zapłacić.",
         "orders": "Składajcie zamówienia! Poinformujcie innych graczy, co chcecie kupić lub sprzedać i za jaką cenę. Tyle właśnie otrzymacie lub zapłacicie. Pamiętajcie, że inni gracze pokryją koszty transportu. Dlatego kupowanie czegoś za niską cenę może się nie opłacać, jeśli koszty wysyłki ponoszone przez innych graczy są zbyt wysokie.",
@@ -834,6 +874,36 @@
         "percentage": "{{value}}%",
         "seconds": "{{value}}s",
         "secondsLong": "sekund"
+    },
+    "blueprintEditor": {
+        "details": "Szczegóły projektu",
+        "name": "Nazwa",
+        "namePlaceholder": "Nazwa schematu",
+        "description": "Opis",
+        "descriptionPlaceholder": "Co tworzy ten projekt?",
+        "category": "Kategoria",
+        "categoryPlaceholder": "np. przemysłowy, mieszkaniowy",
+        "biome": "Konfiguracja biomu",
+        "allBiomes": "Ten sam układ dla wszystkich biomów",
+        "copyConfig": "Kopiuj konfigurację biomu",
+        "selectSource": "Wybierz biom źródłowy",
+        "cancelCopy": "Anuluj kopiowanie",
+        "copyTo": "Skopiuj do {{biome}}",
+        "source": "Źródło",
+        "copyHint": "Kliknij docelowy biom, aby skopiować obiekty do niego",
+        "objectCount": "Obiekty",
+        "totalCost": "Całkowity koszt",
+        "save": "Zapisz",
+        "exit": "Wyjdź",
+        "publish": "Opublikuj",
+        "updateWorkshop": "Aktualizacja",
+        "published": "Opublikowano!",
+        "publishFailed": "Nie powiodło się",
+        "buildMenu": "Budynki",
+        "rates": "Stawki",
+        "noRates": "Umieść budynki, aby sprawdzić stawki",
+        "deleteObject": "Usuń",
+        "outOfBounds": "Obszar poza schematem"
     },
     "warnings": {
         "notEnoughPop": "Za mało ochotników"

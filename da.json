@@ -43,6 +43,8 @@
             "intensiveFarming": "Intensivt landbrug giver dig mulighed for at fodre dine dyr med korn, hvilket øger mængden af animalske produkter, du kan producere.",
             "newTownBoost": "Som ny bosættelse modtager du midlertidige bonusser, der hjælper dig i gang. Disse forsvinder med tiden."
         },
+        "confirmChange": "Er du sikker på, at du vil ændre dette valg?",
+        "confirmLock": "Dette valg vil være låst for {{time}}.",
         "exclusiveOptions": "Eksklusive muligheder",
         "lockedFor": "Låst for",
         "option": "Valgmulighed",
@@ -410,6 +412,7 @@
             "happiness": "Lykke",
             "knowledge": "Viden",
             "pop": "Befolkning",
+            "population": "Befolkning",
             "stone": "Sten",
             "wood": "Træ",
             "wool": "Uld",
@@ -436,6 +439,10 @@
             "multiPlace": "Fortsæt med at placere",
             "rotate": "Rotér",
             "restriction": "Område, der ikke kan bebygges"
+        },
+        "explore": {
+            "doubleClickDraw": "Dobbeltklik for at tegne et område",
+            "adjustEffort": "Brug skyderen til at justere indsatsen"
         },
         "capacity": "Kapacitet",
         "defaultTownName": "Unavngiven by",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Tilbage til skrivebordet",
             "serverOffline": "Kan ikke oprette forbindelse til serveren. Serveren er muligvis overbelastet eller midlertidigt nede på grund af vedligeholdelse. Tjek Discord for den seneste status.",
             "settings": "Indstillinger",
+            "blueprints": "Tegninger",
             "subtitle": "Dette er en tidlig udgave af Project Rebearth. Kontakt os, hvis du støder på problemer under spillet.",
             "suspended": "Din konto er blevet suspenderet. Årsag: {{reason}}",
             "demoSubtitle": "Dette er demoen af Project Rebearth. Kun sandkasse-bybyggerspillet er aktiveret. For at spille på multiplayer-kloden med ressourcehåndtering skal du hente den fulde version.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Sandkasse-tilstanden giver dig stadig mulighed for at lave fantastiske kort, eksportere dem i høj opløsning og opleve, hvordan en spilverden i skala 1:1 føles.",
             "title": "Projekt Rebearth Server",
             "welcome": "Velkommen, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Byggeplaner",
+            "description": "Opret genanvendelige bygningstegninger for hurtigt at placere grupper af bygninger.",
+            "createNew": "Opret ny skitse",
+            "noBlueprints": "Der er endnu ingen skitser. Opret din første!",
+            "edit": "Rediger",
+            "delete": "Slet",
+            "deleteConfirm": "Er du sikker på, at du vil slette denne skitse?",
+            "enable": "Aktivér blueprint",
+            "disable": "Deaktiver blueprint",
+            "enabled": "Aktiveret",
+            "disabled": "Deaktiveret",
+            "unnamed": "Ubenævnt Blueprint",
+            "workshop": "Workshop",
+            "workshopItem": "Workshop",
+            "published": "Udgivet",
+            "publish": "Udgiv",
+            "update": "Opdatering",
+            "publishToWorkshop": "Udgiv på Steam Workshop",
+            "updateWorkshop": "Opdater Workshop-genstand",
+            "duplicate": "Lav en kopi",
+            "copyLabel": "(Kopier)"
         },
         "sandbox": {
             "description": "Sandkasse-tilstand giver dig mulighed for at bygge frit uden begrænsningerne fra multiplayer-verdenen. Det er kun dig og ingen ressourcebegrænsninger. Du kan gemme din fremgang og indlæse den senere.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Arkiver"
+            "title": "Arkiver",
+            "empty": "Der er endnu ikke fundet nogen artefakter.",
+            "emptyHint": "Send ekspeditioner ud for at afdække den gamle verdens hemmeligheder.",
+            "flyTo": "Flyv til stedet",
+            "needMuseum": "Byg først et museum"
         },
         "choices": {
             "selectChoice": "Vælg valgmulighed",
@@ -748,8 +783,10 @@
             "title": "Opbevaring"
         },
         "townName": "Byens navn:",
+        "marketName": "Distrikt",
         "townColor": "Byens farve:",
         "unnamedTown": "Unavngiven by",
+        "unnamedDistrict": "navnløst distrikt",
         "upgrade": "Opgrader til {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Teksturopløsning",
         "title": "Indstillinger",
         "treeDensity": "Træ tæthed",
-        "uiScale": "UI-skala"
+        "uiScale": "UI-skala",
+        "workerThreads": "CPU-tråde",
+        "workerThreadsHelp": "Styrer, hvor mange baggrundstråde der bruges til rendering. Flere tråde kan gøre indlæsningen af fliser hurtigere, men øger også hukommelsesforbruget og kan forårsage nedbrud på enheder i den lavere ende. Eksperimenter for at finde den bedste balance for dit system."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Gennemse alle artefakter, der er fundet af dine ekspeditioner. Hver artefakt afslører et stykke af den gamle verdens historie og kan indeholde værdifulde ressourcer.",
         "hud": "Dette panel viser alle de ressourcer, du har, producerer og forbruger. Hold musen over ikonerne for at se flere detaljer om hver ressource. Hvis du er ved at løbe tør for en ressource, vil den blive fremhævet med rødt, og bygninger kan blive tvunget til at reducere deres produktivitet. Hvis du når din kapacitet, vil det blive vist med fed skrift, og dine bygninger stopper med at producere. Du kan have effekter, såsom din startbonus, der påvirker, hvor meget du producerer eller forbruger. Disse modifikatorer vises, når du holder musen over en ressource. Kan du se den roterende cirkel til venstre? Den angiver, hvornår spillet synkroniseres med serveren. Du vil ikke se ændringer i ressourcerne, før synkroniseringen er færdig. Ressourceforbrug og -produktion vises pr. dag. Dette er en faktisk realtidsdag. Dine ressourcer vil dog stige langsomt.",
         "market": "Velkommen til markedet! Se alle de ting, andre spillere ønsker at købe eller sælge, og endnu vigtigere, til hvilken pris! Du betaler transportomkostninger, når du udfører en andens ordre. Så hvis de er langt væk, er det måske ikke det værd, eller det kan endda koste mere, end de er villige til at betale.",
         "orders": "Afgiv dine ordrer! Fortæl de andre spillere, hvad du vil købe eller sælge, og til hvilken pris. Det er det, du vil modtage eller betale. Husk, at andre vil betale for transporten. Så det kan være, at det ikke kan betale sig at købe noget til en lav pris, hvis de andre spilleres forsendelsesomkostninger er for høje.",
@@ -834,6 +874,36 @@
         "percentage": "{{værdi}}",
         "seconds": "{{value}} s",
         "secondsLong": "sekunder"
+    },
+    "blueprintEditor": {
+        "details": "Detaljer om blueprint",
+        "name": "Navn",
+        "namePlaceholder": "Navn på blueprint",
+        "description": "Beskrivelse",
+        "descriptionPlaceholder": "Hvad bygger denne blueprint?",
+        "category": "Kategori",
+        "categoryPlaceholder": "f.eks. Industri, Bolig",
+        "biome": "Biom-konfiguration",
+        "allBiomes": "Samme layout for alle biomer",
+        "copyConfig": "Kopier biome-konfiguration",
+        "selectSource": "Vælg kildebiom",
+        "cancelCopy": "Annuller kopiering",
+        "copyTo": "Kopier til {{biome}}",
+        "source": "Kilde",
+        "copyHint": "Klik på et målbiom for at kopiere objekter til",
+        "objectCount": "Objekter",
+        "totalCost": "Samlede omkostninger",
+        "save": "Gem",
+        "exit": "Afslut",
+        "publish": "Udgiv",
+        "updateWorkshop": "Opdatering",
+        "published": "Udgivet!",
+        "publishFailed": "Mislykkedes",
+        "buildMenu": "Bygninger",
+        "rates": "Priser",
+        "noRates": "Placer bygninger for at se priser",
+        "deleteObject": "Fjern",
+        "outOfBounds": "Uden for tegneområdet"
     },
     "warnings": {
         "notEnoughPop": "Ikke nok frivillige"

@@ -43,6 +43,8 @@
             "intensiveFarming": "L'agriculture intensive vous permet de nourrir vos animaux avec des céréales, ce qui augmente la quantité de produits animaux que vous pouvez produire.",
             "newTownBoost": "En tant que nouvelle colonie, vous recevez des bonus temporaires pour vous aider à démarrer. Ceux-ci disparaîtront avec le temps."
         },
+        "confirmChange": "Êtes-vous sûr de vouloir modifier ce choix ?",
+        "confirmLock": "Ce choix sera verrouillé pour l'{{time}}.",
         "exclusiveOptions": "Options exclusives",
         "lockedFor": "Verrouillé pour",
         "option": "Option",
@@ -410,6 +412,7 @@
             "happiness": "Bonheur",
             "knowledge": "Connaissances",
             "pop": "Population",
+            "population": "Population",
             "stone": "Pierre",
             "wood": "Bois",
             "wool": "Laine",
@@ -436,6 +439,10 @@
             "multiPlace": "Continuez à placer",
             "rotate": "Rotation",
             "restriction": "Zone non constructible"
+        },
+        "explore": {
+            "doubleClickDraw": "Double-cliquez pour tracer une zone",
+            "adjustEffort": "Utilisez le curseur pour régler l'effort"
         },
         "capacity": "Capacité",
         "defaultTownName": "Ville sans nom",
@@ -491,6 +498,7 @@
             "returnToDesktop": "Retour au bureau",
             "serverOffline": "Impossible d'atteindre le serveur. Le serveur est peut-être surchargé ou temporairement indisponible pour cause de maintenance. Consultez Discord pour connaître son état actuel.",
             "settings": "Paramètres",
+            "blueprints": "Plans",
             "subtitle": "Il s'agit d'une version préliminaire de Project Rebearth. N'hésitez pas à nous contacter si vous rencontrez des problèmes pendant le jeu.",
             "suspended": "Votre compte a été suspendu. Motif : {{reason}}",
             "demoSubtitle": "Ceci est la démo de Project Rebearth. Seul le mode bac à sable de construction de ville est activé. Pour jouer en mode multijoueur avec gestion des ressources, procurez-vous la version complète.",
@@ -498,6 +506,29 @@
             "demoRestriction2": "Le mode bac à sable vous permet toujours de créer des cartes impressionnantes, de les exporter en haute résolution et de découvrir à quoi ressemble un monde de jeu à l'échelle 1:1.",
             "title": "Projet Rebearth Server",
             "welcome": "Bienvenue, {{name}} !"
+        },
+        "blueprints": {
+            "title": "Plans de construction",
+            "description": "Créez des plans de construction réutilisables pour placer rapidement des groupes de bâtiments.",
+            "createNew": "Créer un nouveau plan",
+            "noBlueprints": "Il n'y a pas encore de schémas. Créez le premier !",
+            "edit": "Modifier",
+            "delete": "Supprimer",
+            "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce modèle ?",
+            "enable": "Activer le plan",
+            "disable": "Désactiver le plan",
+            "enabled": "Activé",
+            "disabled": "Désactivé",
+            "unnamed": "Blueprint sans nom",
+            "workshop": "Atelier",
+            "workshopItem": "Atelier",
+            "published": "Publié",
+            "publish": "Publier",
+            "update": "Mise à jour",
+            "publishToWorkshop": "Publier sur Steam Workshop",
+            "updateWorkshop": "Mettre à jour un élément de l'Atelier",
+            "duplicate": "Faire une copie",
+            "copyLabel": "(Copier)"
         },
         "sandbox": {
             "description": "Le mode Sandbox vous permet de construire librement sans les contraintes du monde multijoueur. Il n'y a que vous et aucune restriction en matière de ressources. Vous pouvez enregistrer votre progression et la charger plus tard.",
@@ -546,7 +577,11 @@
     },
     "modals": {
         "archive": {
-            "title": "Archives"
+            "title": "Archives",
+            "empty": "Aucun artefact n'a encore été découvert.",
+            "emptyHint": "Envoyez des expéditions pour percer les secrets de l'ancien monde.",
+            "flyTo": "Se rendre à l'emplacement",
+            "needMuseum": "Commencez par construire un musée"
         },
         "choices": {
             "selectChoice": "Sélectionner un choix",
@@ -748,8 +783,10 @@
             "title": "Stockage"
         },
         "townName": "Nom de la ville :",
+        "marketName": "District",
         "townColor": "Couleur de la ville :",
         "unnamedTown": "ville sans nom",
+        "unnamedDistrict": "quartier sans nom",
         "upgrade": "Mise à niveau vers {{building}}"
     },
     "settings": {
@@ -785,7 +822,9 @@
         "textureResolution": "Résolution des textures",
         "title": "Paramètres",
         "treeDensity": "Densité des arbres",
-        "uiScale": "Échelle de l'interface utilisateur"
+        "uiScale": "Échelle de l'interface utilisateur",
+        "workerThreads": "Threads du processeur",
+        "workerThreadsHelp": "Détermine le nombre de threads d'arrière-plan utilisés pour le rendu. Un nombre plus élevé de threads peut accélérer le chargement des tuiles, mais augmente également l'utilisation de la mémoire et peut provoquer des plantages sur les appareils bas de gamme. Faites des essais pour trouver le meilleur équilibre pour votre système."
     },
     "tips": {
         "loading": [
@@ -804,6 +843,7 @@
         ]
     },
     "help": {
+        "archive": "Parcourez tous les artefacts découverts lors de vos expéditions. Chaque artefact révèle un fragment de l'histoire de l'ancien monde et peut contenir des ressources précieuses.",
         "hud": "Ce panneau affiche toutes les ressources dont vous disposez, que vous produisez et que vous consommez. Passez votre souris sur les icônes pour obtenir plus de détails sur chaque ressource. Si vous êtes à court d'une ressource, celle-ci sera surlignée en rouge et les bâtiments pourraient être contraints de réduire leur productivité. Si vous atteignez votre capacité maximale, celle-ci s'affichera en gras et vos bâtiments cesseront de produire. Certains effets, comme votre bonus de départ, peuvent influencer votre production ou votre consommation. Ces modificateurs s'affichent lorsque vous passez votre souris sur une ressource. Vous voyez le cercle qui tourne à gauche ? Il indique quand le jeu se synchronise avec le serveur. Vous ne verrez pas les changements de ressources tant que la synchronisation n'est pas terminée. La consommation et la production de ressources sont affichées par jour. Il s'agit d'un jour réel en temps réel. Cependant, vos ressources augmenteront lentement.",
         "market": "Bienvenue sur le marché ! Découvrez tout ce que les autres joueurs souhaitent acheter ou vendre, et surtout, à quel prix ! Vous devrez payer les frais de transport lorsque vous honorerez la commande d'un autre joueur. Si celui-ci se trouve loin, cela peut ne pas en valoir la peine, voire coûter plus cher que ce qu'il est prêt à payer.",
         "orders": "Passez vos commandes ! Annoncez aux autres joueurs ce que vous souhaitez acheter ou vendre, et à quel prix. C'est ce que vous recevrez ou paierez. N'oubliez pas que les autres joueurs devront payer les frais de transport. Il se peut donc que l'achat d'un article à bas prix ne soit pas rentable si les frais d'expédition des autres joueurs sont trop élevés.",
@@ -834,6 +874,36 @@
         "percentage": "{{valeur}}",
         "seconds": "{{value}} s",
         "secondsLong": "secondes"
+    },
+    "blueprintEditor": {
+        "details": "Détails du plan",
+        "name": "Nom",
+        "namePlaceholder": "Nom du plan",
+        "description": "Description",
+        "descriptionPlaceholder": "Que permet de créer ce plan ?",
+        "category": "Catégorie",
+        "categoryPlaceholder": "Par exemple : Industriel, Résidentiel",
+        "biome": "Biome Configuration",
+        "allBiomes": "Même mise en page pour tous les biomes",
+        "copyConfig": "Copier la configuration du biome",
+        "selectSource": "Sélectionnez le biome source",
+        "cancelCopy": "Annuler la copie",
+        "copyTo": "Copier vers {{biome}}",
+        "source": "Source",
+        "copyHint": "Cliquez sur un biome cible pour y copier des objets",
+        "objectCount": "Objets",
+        "totalCost": "Coût total",
+        "save": "Enregistrer",
+        "exit": "Quitter",
+        "publish": "Publier",
+        "updateWorkshop": "Mise à jour",
+        "published": "Publié !",
+        "publishFailed": "Échec",
+        "buildMenu": "Bâtiments",
+        "rates": "Tarifs",
+        "noRates": "Placez des bâtiments pour voir les taux",
+        "deleteObject": "Supprimer",
+        "outOfBounds": "En dehors de la zone du plan"
     },
     "warnings": {
         "notEnoughPop": "Pas assez de volontaires"
