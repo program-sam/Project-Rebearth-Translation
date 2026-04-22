@@ -87,6 +87,9 @@
             "areaTooSmall": "Det er ikke mye... Lag en større form: {{size}} (min{{limit}}",
             "cooldown": "Vent et øyeblikk",
             "costs": "Kostnader:",
+            "editCostGrow": "Utvidelseskostnad",
+            "editCostShrink": "Omforme refusjon",
+            "editNoCostChange": "Ingen kostnadsendring",
             "exclusionPreview": "Utelukkelsessone",
             "invalidLocation": "Ugyldig plassering",
             "mustBeNear": "Må være nær {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Bygg et rådhus for å låse opp global rangering, allianser og valgmuligheter.",
             "university": "Bygg et universitet for å låse opp ekspedisjoner og forskning.",
             "market": "Bygg et marked eller en havn for å låse opp det globale markedet.",
-            "noBiomeAssets": "Det finnes ingen bygninger av denne typen i dette biom."
+            "noBiomeAssets": "Det finnes ingen bygninger av denne typen i dette biom.",
+            "veganSociety": "Blokkert av Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Bruk alt",
             "updated": "Oppdatert",
             "storage": "Lagring",
+            "expandAll": "Vis alt",
+            "collapseAll": "Skjul alt",
             "throttleHelp": "Denne bygningstypen blir bremset fordi en nødvendig ressurs er i ferd med å ta slutt. Produksjonen reduseres automatisk for å forhindre at ressursene blir negative."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Medlemmer",
             "name": "Navn",
             "owner": "Eier",
+            "moderator": "Moderator",
+            "member": "Medlem",
             "rank": "Rang",
             "reject": "Avvis",
             "scienceLeague": "Science League",
             "tradeAlliance": "Handelsallianse",
-            "value": "Verdi"
+            "value": "Verdi",
+            "role": "Rolle",
+            "town": "By",
+            "type": "Type",
+            "actions": "Handlinger"
         },
         "createAlliance": "Opprett allianse",
         "days": "dager",
         "disbandAlliance": "oppløse allianse",
+        "confirmDisband": "Er du sikker på at du vil oppløse denne alliansen? Denne handlingen kan ikke angres.",
+        "confirmLeave": "Er du sikker på at du vil forlate denne alliansen?",
+        "confirmKick": "Er du sikker på at du vil kaste ut {{name}} fra alliansen?",
+        "confirmTransfer": "Er du sikker på at du vil overføre eierskapet til {{name}}? Du vil miste din rolle som eier.",
+        "confirmDemote": "Er du sikker på at du vil nedgradere {{name}}?",
+        "editAlliance": "rediger allianse",
+        "editDescription": "Rediger beskrivelse",
+        "editName": "Rediger navn",
+        "saveChanges": "Lagre endringer",
         "globalRank": "Global rangering",
         "go": "til",
         "inviteToAlliance": "inviter til alliansen din",
@@ -679,12 +700,24 @@
         "marketSize": "Markedsstørrelse",
         "marketSizeLabel": "Markedsstørrelse: {{size}}",
         "members": "Medlemmer",
+        "messages": "Meldinger",
+        "messageBoard": "Oppslagstavle",
+        "postMessage": "Etter",
+        "messagePlaceholder": "Skriv en melding til alliansen din...",
+        "noMessages": "Ingen meldinger ennå.",
         "name": "Navn",
         "noApplications": "Det finnes ingen applikasjoner.",
         "noModifiers": "Denne alliansen har ingen modifikatorer.",
         "owner": "Eier",
+        "overview": "Oversikt",
+        "settings": "Innstillinger",
         "placeholderDescription": "Alliansebeskrivelse",
         "placeholderName": "Alliansenavn",
+        "promote": "fremme",
+        "demote": "degradere",
+        "transferOwnership": "overføre eierskap",
+        "deleteMessage": "Slett melding",
+        "confirmDeleteMessage": "Er du sikker på at du vil slette denne meldingen?",
         "rank": "Rang",
         "rankPrefix": "Nei.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "avvise",
         "lastActive": "sist aktiv for {{time}} siden",
-        "value": "Verdi"
+        "value": "Verdi",
+        "multipleOwners": "Kan ikke oppløses: det er flere eiere.",
+        "allianceSettings": "Allianseinnstillinger",
+        "dangerZone": "Farezone"
     },
     "popup": {
         "apply": "Bruk",
         "archive": "Arkiv",
         "demolish": "Riv",
+        "confirmDemolish": "Er du sikker på at du vil rive denne bygningen?",
         "population": "Befolkning",
         "production": {
             "rate": "Vurder",
@@ -763,8 +800,7 @@
             "Bli med i vårt livlige spillermiljø på Discord for å dele dine kreasjoner og få tips.",
             "Noen bygninger kan bare plasseres i nærheten av hovedbygningen, for eksempel sagbruket og trefelleren.",
             "Ikke alle ressurser er like lett tilgjengelige overalt. Noen ganger vil det være billigere å handle enn å produsere alt selv.",
-            "En anmeldelse på Steam hjelper oss med å finne nye spillere som kan bidra til å bygge en levende verden.",
-            "Besøk wiki-siden på projectrebearth.com for å lære alt om verdenen i Project Rebearth!"
+            "En anmeldelse på Steam hjelper oss med å finne nye spillere som kan bidra til å bygge en levende verden."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Kan ikke endres for",
         "construction": "Konstruksjon",
         "cost": "Kostnad",
+        "editShape": "Rediger form",
         "refund": "Refusjon",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(per m²)",

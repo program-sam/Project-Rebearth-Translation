@@ -87,6 +87,9 @@
             "areaTooSmall": "Ez nem sok... Készítsen nagyobb alakzatot: {{size}} (min{{limit}})",
             "cooldown": "Várjon egy pillanatot!",
             "costs": "Költségek:",
+            "editCostGrow": "Bővítési költség",
+            "editCostShrink": "Visszatérítés átalakítása",
+            "editNoCostChange": "Nincs költségváltozás",
             "exclusionPreview": "Kizárási zóna",
             "invalidLocation": "Érvénytelen hely",
             "mustBeNear": "{{parent}} közelében kell lennie.",
@@ -537,7 +540,8 @@
             "townHall": "Építs egy városházát, hogy feloldd a globális rangsort, a szövetségeket és a választási lehetőségeket.",
             "university": "Építs egyetemet, hogy feloldd a expedíciókat és a kutatásokat.",
             "market": "Építs piacot vagy kikötőt, hogy megnyisd a globális piacot.",
-            "noBiomeAssets": "Ebben a biomban nincs ilyen típusú épület."
+            "noBiomeAssets": "Ebben a biomban nincs ilyen típusú épület.",
+            "veganSociety": "A Vegan Society által blokkolva"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Összes alkalmazása",
             "updated": "Frissítve",
             "storage": "Tárolás",
+            "expandAll": "Összes kibontása",
+            "collapseAll": "Összecsukás",
             "throttleHelp": "Ez az épület típus korlátozva van, mert a szükséges erőforrások fogynak. A termelés automatikusan csökken, hogy az erőforrások ne váljanak negatívvá."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Tagok",
             "name": "Név",
             "owner": "Tulajdonos",
+            "moderator": "Moderátor",
+            "member": "Tag",
             "rank": "Rang",
             "reject": "Elutasítás",
             "scienceLeague": "Tudományos Liga",
             "tradeAlliance": "Kereskedelmi szövetség",
-            "value": "Érték"
+            "value": "Érték",
+            "role": "Szerep",
+            "town": "Város",
+            "type": "Típus",
+            "actions": "Műveletek"
         },
         "createAlliance": "szövetség létrehozása",
         "days": "napok",
         "disbandAlliance": "szövetség feloszlatása",
+        "confirmDisband": "Biztosan fel akarod oszlatni ezt a szövetséget? Ez a művelet nem vonható vissza.",
+        "confirmLeave": "Biztosan el akarod hagyni ezt a szövetséget?",
+        "confirmKick": "Biztosan ki akarod rúgni {{name}}-t a szövetségből?",
+        "confirmTransfer": "Biztosan át akarja adni a tulajdonjogot a {{name}}-nak? Elveszíti a tulajdonos szerepkörét.",
+        "confirmDemote": "Biztosan le akarod minősíteni a „{{name}}” játékot?",
+        "editAlliance": "szövetség szerkesztése",
+        "editDescription": "Leírás szerkesztése",
+        "editName": "Név szerkesztése",
+        "saveChanges": "Módosítások mentése",
         "globalRank": "Globális rangsor",
         "go": "to",
         "inviteToAlliance": "meghívás a szövetségedbe",
@@ -679,12 +700,24 @@
         "marketSize": "Piac mérete",
         "marketSizeLabel": "Piac mérete: {{size}}",
         "members": "Tagok",
+        "messages": "Üzenetek",
+        "messageBoard": "Üzenőfal",
+        "postMessage": "Utána",
+        "messagePlaceholder": "Írj üzenetet a szövetségednek...",
+        "noMessages": "Még nincs üzenet.",
         "name": "Név",
         "noApplications": "Nincsenek alkalmazások",
         "noModifiers": "Ennek a szövetségnek nincs módosítója.",
         "owner": "Tulajdonos",
+        "overview": "Áttekintés",
+        "settings": "Beállítások",
         "placeholderDescription": "Szövetség leírása",
         "placeholderName": "Szövetség neve",
+        "promote": "népszerűsíteni",
+        "demote": "visszaminősítés",
+        "transferOwnership": "tulajdonjog átruházása",
+        "deleteMessage": "Üzenet törlése",
+        "confirmDeleteMessage": "Biztosan törölni szeretné ezt az üzenetet?",
         "rank": "Rang",
         "rankPrefix": "Nem.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "elutasítás",
         "lastActive": "utolsó aktivitás{{time}}e",
-        "value": "Érték"
+        "value": "Érték",
+        "multipleOwners": "Nem lehet feloszlatni: több tulajdonos van.",
+        "allianceSettings": "Szövetségi beállítások",
+        "dangerZone": "Veszélyes zóna"
     },
     "popup": {
         "apply": "Alkalmazás",
         "archive": "Archívum",
         "demolish": "Bontás",
+        "confirmDemolish": "Biztosan le akarod bontani ezt az épületet?",
         "population": "Népesség",
         "production": {
             "rate": "Értékelés",
@@ -763,8 +800,7 @@
             "Csatlakozz a Discordon található élénk játékos közösségünkhöz, hogy megoszthasd alkotásaidat és tippeket kaphass.",
             "Egyes épületek, például a fűrész és a favágó, csak a szülőépület közelében helyezhetők el.",
             "Nem minden erőforrás könnyen beszerezhető mindenhol. Néha olcsóbb kereskedni, mint mindent magadnak előállítani.",
-            "A Steam-en írt vélemények segítenek nekünk új játékosokat találni, akikkel együtt élénk világot építhetünk.",
-            "Látogass el a projectrebearth.com wiki oldalára, hogy mindent megtudj a Project Rebearth világáról!"
+            "A Steam-en írt vélemények segítenek nekünk új játékosokat találni, akikkel együtt élénk világot építhetünk."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Nem módosítható",
         "construction": "Építés",
         "cost": "Költség",
+        "editShape": "Alakzat szerkesztése",
         "refund": "Visszatérítés",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(m²-enként)",

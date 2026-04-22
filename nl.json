@@ -35,7 +35,7 @@
             "lowRations": "Het is mijn taart! Lage rantsoenen verminderen de hoeveelheid voedsel die per persoon nodig is, maar mensen zullen het niet leuk vinden.",
             "neutralFocus": "Het is een vrije markt, doe wat je moet doen. Houd zowel de import- als exportkosten op standaardtarieven.",
             "normalRations": "Precies de juiste hoeveelheid voedsel voor uw volk. Houd het voedselverbruik op het normale niveau.",
-            "taxation": "Het is niet meer dan eerlijk... Levert 0,05 goud op per inwoner, maar vermindert het geluksgevoel.",
+            "taxation": "Het is niet meer dan eerlijk... Genereert goud voor elke inwoner, maar vermindert het geluksgevoel.",
             "veganSociety": "Wat een raar idee om dieren te eten... Verhoogt de voedselproductie, maar je kunt geen dierlijke producten produceren.",
             "workerSafety": "Mensen zijn je grootste troef. Verhoogt de productieveiligheid, maar vermindert de output.",
             "dubiousWorkingRules": "Mensen zijn slechts middelen. Verhoogt de productie, maar verhoogt ook het aantal ongevallen.",
@@ -87,12 +87,15 @@
             "areaTooSmall": "Dat is niet veel... Maak een grotere vorm: {{size}} (min{{limit}}e)",
             "cooldown": "Wacht even",
             "costs": "Kosten:",
+            "editCostGrow": "Uitbreidingskosten",
+            "editCostShrink": "Terugbetaling herzien",
+            "editNoCostChange": "Geen kostenwijziging",
             "exclusionPreview": "Uitsluitingszone",
             "invalidLocation": "Ongeldige locatie",
             "mustBeNear": "Moet in de buurt zijn van {{parent}}",
             "notEnoughPop": "Onvoldoende bevolking",
             "notEnoughResources": "Onvoldoende middelen",
-            "territoryPreview": "Territorium",
+            "territoryPreview": "Territoriumbereik",
             "tooHigh": "Zoom in"
         },
         "cancel": "✗",
@@ -537,7 +540,8 @@
             "townHall": "Bouw een stadhuis om de wereldwijde ranglijst, allianties en keuzes vrij te spelen.",
             "university": "Bouw een universiteit om expedities en onderzoek te ontgrendelen.",
             "market": "Bouw een markt of haven om de wereldmarkt te ontsluiten.",
-            "noBiomeAssets": "Er zijn geen gebouwen van dit type beschikbaar in dit biotoop."
+            "noBiomeAssets": "Er zijn geen gebouwen van dit type beschikbaar in dit biotoop.",
+            "veganSociety": "Geblokkeerd door Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Alles toepassen",
             "updated": "Bijgewerkt",
             "storage": "Opslag",
+            "expandAll": "Alles uitvouwen",
+            "collapseAll": "Alles samenvouwen",
             "throttleHelp": "Dit type gebouw wordt afgeremd omdat een benodigde grondstof bijna op is. De productie wordt automatisch verminderd om te voorkomen dat de grondstoffen negatief worden."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Leden",
             "name": "Naam",
             "owner": "Eigenaar",
+            "moderator": "Moderator",
+            "member": "Lid",
             "rank": "Rang",
             "reject": "Afwijzen",
             "scienceLeague": "Science League",
             "tradeAlliance": "Handelsalliantie",
-            "value": "Waarde"
+            "value": "Waarde",
+            "role": "Rol",
+            "town": "Stad",
+            "type": "Type",
+            "actions": "Acties"
         },
         "createAlliance": "Alliantie vormen",
         "days": "dagen",
         "disbandAlliance": "Alliantie ontbinden",
+        "confirmDisband": "Weet je zeker dat je deze alliantie wilt ontbinden? Deze actie kan niet ongedaan worden gemaakt.",
+        "confirmLeave": "Weet je zeker dat je deze alliantie wilt verlaten?",
+        "confirmKick": "Weet je zeker dat je {{name}} uit de alliantie wilt verwijderen?",
+        "confirmTransfer": "Weet u zeker dat u het eigendom wilt overdragen aan {{name}}? U verliest dan uw rol als eigenaar.",
+        "confirmDemote": "Weet u zeker dat u {{name}} wilt degraderen?",
+        "editAlliance": "alliantie bewerken",
+        "editDescription": "Beschrijving bewerken",
+        "editName": "Naam bewerken",
+        "saveChanges": "Wijzigingen opslaan",
         "globalRank": "Wereldwijde ranglijst",
         "go": "naar",
         "inviteToAlliance": "Nodig uit voor je alliantie",
@@ -679,12 +700,24 @@
         "marketSize": "Marktomvang",
         "marketSizeLabel": "Marktomvang: {{size}}",
         "members": "Leden",
+        "messages": "Berichten",
+        "messageBoard": "Prikbord",
+        "postMessage": "Na",
+        "messagePlaceholder": "Schrijf een bericht aan je alliantie...",
+        "noMessages": "Nog geen berichten.",
         "name": "Naam",
         "noApplications": "Er zijn geen toepassingen.",
         "noModifiers": "Deze alliantie heeft geen modificatoren.",
         "owner": "Eigenaar",
+        "overview": "Overzicht",
+        "settings": "Instellingen",
         "placeholderDescription": "Alliantie Beschrijving",
         "placeholderName": "Alliantienaam",
+        "promote": "promoten",
+        "demote": "degraderen",
+        "transferOwnership": "eigendom overdragen",
+        "deleteMessage": "Bericht verwijderen",
+        "confirmDeleteMessage": "Weet u zeker dat u dit bericht wilt verwijderen?",
         "rank": "Rang",
         "rankPrefix": "Nee.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "afwijzen",
         "lastActive": "Laatst actief {{time}} geleden",
-        "value": "Waarde"
+        "value": "Waarde",
+        "multipleOwners": "Kan niet worden ontbonden: er zijn meerdere eigenaren.",
+        "allianceSettings": "Alliantie-instellingen",
+        "dangerZone": "Gevaarlijke zone"
     },
     "popup": {
         "apply": "Toepassen",
         "archive": "Archief",
         "demolish": "Sloop",
+        "confirmDemolish": "Weet je zeker dat je dit gebouw wilt slopen?",
         "population": "Bevolking",
         "production": {
             "rate": "Beoordeel",
@@ -763,8 +800,7 @@
             "Word lid van onze levendige community van spelers op Discord om je creaties te delen en tips te krijgen.",
             "Sommige gebouwen kunnen alleen in de buurt van het moedergebouw worden geplaatst, zoals de zaag en de houthakker.",
             "Niet alle grondstoffen zijn overal even gemakkelijk te verkrijgen. Soms is handelen goedkoper dan alles zelf produceren.",
-            "Een recensie op Steam helpt ons nieuwe spelers te vinden om een levendige wereld op te bouwen.",
-            "Bezoek de wiki op projectrebearth.com voor alles over de wereld van Project Rebearth!"
+            "Een recensie op Steam helpt ons nieuwe spelers te vinden om een levendige wereld op te bouwen."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Kan niet worden gewijzigd voor",
         "construction": "Bouw",
         "cost": "Kosten",
+        "editShape": "Vorm bewerken",
         "refund": "Terugbetaling",
         "costPerMeter": "(voor m)",
         "costPerSquareMeter": "(per m²)",

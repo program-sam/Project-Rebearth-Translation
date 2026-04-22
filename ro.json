@@ -87,6 +87,9 @@
             "areaTooSmall": "Nu e prea mult... Creați o formă mai mare: {{size}} (min {{limit}})",
             "cooldown": "Așteptați o secundă",
             "costs": "Costuri:",
+            "editCostGrow": "Costul extinderii",
+            "editCostShrink": "Rambursare pentru Reshape",
+            "editNoCostChange": "Nicio modificare a costurilor",
             "exclusionPreview": "Zonă de excludere",
             "invalidLocation": "Locație nevalidă",
             "mustBeNear": "Trebuie să fie aproape de {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Construiește o primărie pentru a debloca clasamentul global, alianțele și opțiunile.",
             "university": "Construiește o universitate pentru a debloca expediții și cercetări.",
             "market": "Construiește o piață sau un port pentru a debloca piața globală.",
-            "noBiomeAssets": "Nu există clădiri de acest tip disponibile în acest biom."
+            "noBiomeAssets": "Nu există clădiri de acest tip disponibile în acest biom.",
+            "veganSociety": "Blocat de Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Aplică toate",
             "updated": "Actualizat",
             "storage": "Stocare",
+            "expandAll": "Extindeți tot",
+            "collapseAll": "Reduceți tot",
             "throttleHelp": "Acest tip de clădire este restricționat deoarece resursele necesare sunt pe terminate. Producția este redusă automat pentru a preveni epuizarea resurselor."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Membri",
             "name": "Nume",
             "owner": "Proprietar",
+            "moderator": "Moderator",
+            "member": "Membru",
             "rank": "Rang",
             "reject": "Respinge",
             "scienceLeague": "Liga Științifică",
             "tradeAlliance": "Alianța comercială",
-            "value": "Valoare"
+            "value": "Valoare",
+            "role": "Rol",
+            "town": "Oraș",
+            "type": "Tip",
+            "actions": "Acțiuni"
         },
         "createAlliance": "creați alianță",
         "days": "zile",
         "disbandAlliance": "desființează alianța",
+        "confirmDisband": "Ești sigur că vrei să dizolvi această alianță? Această acțiune nu poate fi anulată.",
+        "confirmLeave": "Ești sigur că vrei să părăsești această alianță?",
+        "confirmKick": "Ești sigur că vrei să-l elimini pe {{name}} din alianță?",
+        "confirmTransfer": "Ești sigur că vrei să transferi dreptul de proprietate către {{name}}? Îți vei pierde rolul de proprietar.",
+        "confirmDemote": "Ești sigur că vrei să retrogradezi „{{name}}”?",
+        "editAlliance": "editează alianța",
+        "editDescription": "Editează descrierea",
+        "editName": "Editați numele",
+        "saveChanges": "Salvează modificările",
         "globalRank": "Clasament global",
         "go": "către",
         "inviteToAlliance": "invită-l în alianța ta",
@@ -679,12 +700,24 @@
         "marketSize": "Dimensiunea pieței",
         "marketSizeLabel": "Dimensiunea pieței: {{size}}",
         "members": "Membri",
+        "messages": "Mesaje",
+        "messageBoard": "Forum",
+        "postMessage": "După",
+        "messagePlaceholder": "Scrie un mesaj alianței tale...",
+        "noMessages": "Nu există încă mesaje.",
         "name": "Nume",
         "noApplications": "Nu există aplicații.",
         "noModifiers": "Această alianță nu are modificatori.",
         "owner": "Proprietar",
+        "overview": "Prezentare generală",
+        "settings": "Setări",
         "placeholderDescription": "Alianță Descriere",
         "placeholderName": "Numele alianței",
+        "promote": "promova",
+        "demote": "retrogradare",
+        "transferOwnership": "transfer de proprietate",
+        "deleteMessage": "Șterge mesajul",
+        "confirmDeleteMessage": "Ești sigur că vrei să ștergi acest mesaj?",
         "rank": "Rang",
         "rankPrefix": "Nr.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "respinge",
         "lastActive": "ultima activitate acum{{time}}",
-        "value": "Valoare"
+        "value": "Valoare",
+        "multipleOwners": "Nu se poate desființa: există mai mulți proprietari.",
+        "allianceSettings": "Setări alianță",
+        "dangerZone": "Zona de pericol"
     },
     "popup": {
         "apply": "Aplicați",
         "archive": "Arhivă",
         "demolish": "Demolați",
+        "confirmDemolish": "Ești sigur că vrei să demolezi această clădire?",
         "population": "Populație",
         "production": {
             "rate": "Evaluează",
@@ -763,8 +800,7 @@
             "Alătură-te comunității noastre dinamice de jucători pe Discord pentru a-ți împărtăși creațiile și a primi sfaturi.",
             "Unele clădiri pot fi amplasate doar în apropierea clădirii-mamă, cum ar fi ferăstrăul și tăietorul de lemne.",
             "Nu toate resursele sunt ușor de obținut peste tot. Uneori, comerțul va fi mai ieftin decât producerea tuturor resurselor pe cont propriu.",
-            "O recenzie pe Steam ne ajută să găsim noi jucători pentru a construi o lume vie.",
-            "Vizitați wiki-ul la projectrebearth.com pentru a afla totul despre lumea Project Rebearth!"
+            "O recenzie pe Steam ne ajută să găsim noi jucători pentru a construi o lume vie."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Nu poate fi modificat pentru",
         "construction": "Construcție",
         "cost": "Cost",
+        "editShape": "Editare formă",
         "refund": "Rambursare",
         "costPerMeter": "(pentru m)",
         "costPerSquareMeter": "(pe m²)",

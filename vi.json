@@ -87,6 +87,9 @@
             "areaTooSmall": "Điều đó không nhiều... Tạo một hình dạng lớn hơn: {{size}} (tối thiểu {{limit}})",
             "cooldown": "Chờ một lát",
             "costs": "Chi phí:",
+            "editCostGrow": "Chi phí mở rộng",
+            "editCostShrink": "Hoàn tiền Reshape",
+            "editNoCostChange": "Không thay đổi chi phí",
             "exclusionPreview": "Khu vực cấm",
             "invalidLocation": "Vị trí không hợp lệ",
             "mustBeNear": "Phải nằm gần {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Xây dựng Tòa thị chính để mở khóa bảng xếp hạng toàn cầu, liên minh và các lựa chọn.",
             "university": "Xây dựng một trường đại học để mở khóa các cuộc thám hiểm và nghiên cứu.",
             "market": "Xây dựng Thị trường hoặc Cảng để mở khóa thị trường toàn cầu.",
-            "noBiomeAssets": "Không có công trình loại này trong sinh cảnh này."
+            "noBiomeAssets": "Không có công trình loại này trong sinh cảnh này.",
+            "veganSociety": "Bị chặn bởi Hiệp hội Ăn chay"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Áp dụng tất cả",
             "updated": "Đã cập nhật",
             "storage": "Lưu trữ",
+            "expandAll": "Mở rộng tất cả",
+            "collapseAll": "Thu gọn tất cả",
             "throttleHelp": "Loại công trình này đang bị giới hạn sản xuất vì một tài nguyên cần thiết đang cạn kiệt. Sản xuất sẽ tự động giảm để tránh tình trạng tài nguyên bị âm."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Thành viên",
             "name": "Tên",
             "owner": "Chủ sở hữu",
+            "moderator": "Người điều hành",
+            "member": "Thành viên",
             "rank": "Hạng",
             "reject": "Từ chối",
             "scienceLeague": "Liên minh Khoa học",
             "tradeAlliance": "Liên minh Thương mại",
-            "value": "Giá trị"
+            "value": "Giá trị",
+            "role": "Vai trò",
+            "town": "Thị trấn",
+            "type": "Loại",
+            "actions": "Hành động"
         },
         "createAlliance": "Tạo liên minh",
         "days": "ngày",
         "disbandAlliance": "Giải tán liên minh",
+        "confirmDisband": "Bạn có chắc chắn muốn giải tán liên minh này không? Hành động này không thể hoàn tác.",
+        "confirmLeave": "Bạn có chắc chắn muốn rời khỏi liên minh này không?",
+        "confirmKick": "Bạn có chắc chắn muốn loại bỏ {{name}} khỏi liên minh không?",
+        "confirmTransfer": "Bạn có chắc chắn muốn chuyển quyền sở hữu sang {{name}} không? Bạn sẽ mất vai trò chủ sở hữu.",
+        "confirmDemote": "Bạn có chắc chắn muốn hạ cấp \"{{name}}\" không?",
+        "editAlliance": "chỉnh sửa liên minh",
+        "editDescription": "Chỉnh sửa mô tả",
+        "editName": "Chỉnh sửa tên",
+        "saveChanges": "Lưu thay đổi",
         "globalRank": "Xếp hạng toàn cầu",
         "go": "để",
         "inviteToAlliance": "Mời tham gia liên minh của bạn.",
@@ -679,12 +700,24 @@
         "marketSize": "Quy mô thị trường",
         "marketSizeLabel": "Quy mô thị trường: {{size}}",
         "members": "Thành viên",
+        "messages": "Thông báo",
+        "messageBoard": "Bảng tin",
+        "postMessage": "Sau",
+        "messagePlaceholder": "Viết một tin nhắn cho liên minh của bạn...",
+        "noMessages": "Chưa có tin nhắn nào.",
         "name": "Tên",
         "noApplications": "Không có ứng dụng nào.",
         "noModifiers": "Liên minh này không có bất kỳ tuỳ chọn nào.",
         "owner": "Chủ sở hữu",
+        "overview": "Tổng quan",
+        "settings": "Cài đặt",
         "placeholderDescription": "Mô tả liên minh",
         "placeholderName": "Tên Liên minh",
+        "promote": "quảng bá",
+        "demote": "hạ cấp",
+        "transferOwnership": "Chuyển quyền sở hữu",
+        "deleteMessage": "Xóa tin nhắn",
+        "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa tin nhắn này không?",
         "rank": "Hạng",
         "rankPrefix": "Số.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "Từ chối",
         "lastActive": "Hoạt động lần cuối cách đây {{time}}",
-        "value": "Giá trị"
+        "value": "Giá trị",
+        "multipleOwners": "Không thể giải tán: có nhiều chủ sở hữu.",
+        "allianceSettings": "Cài đặt Liên minh",
+        "dangerZone": "Vùng nguy hiểm"
     },
     "popup": {
         "apply": "Áp dụng",
         "archive": "Lưu trữ",
         "demolish": "Phá hủy",
+        "confirmDemolish": "Bạn có chắc chắn muốn phá hủy tòa nhà này không?",
         "population": "Dân số",
         "production": {
             "rate": "Đánh giá",
@@ -763,8 +800,7 @@
             "Hãy tham gia cộng đồng sôi động của chúng tôi trên Discord để chia sẻ tác phẩm của bạn và nhận lời khuyên.",
             "Một số công trình chỉ có thể được đặt gần công trình chính, như cưa và thợ chặt gỗ.",
             "Không phải tất cả các tài nguyên đều dễ dàng có được ở mọi nơi. Đôi khi việc giao dịch sẽ rẻ hơn so với việc tự sản xuất mọi thứ.",
-            "Một đánh giá trên Steam giúp chúng tôi tìm kiếm người chơi mới để xây dựng một thế giới sống động.",
-            "Hãy truy cập wiki tại projectrebearth.com để tìm hiểu mọi thứ về thế giới của Project Rebearth!"
+            "Một đánh giá trên Steam giúp chúng tôi tìm kiếm người chơi mới để xây dựng một thế giới sống động."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Không thể thay đổi cho",
         "construction": "Xây dựng",
         "cost": "Chi phí",
+        "editShape": "Chỉnh sửa hình dạng",
         "refund": "Hoàn tiền",
         "costPerMeter": "(cho m)",
         "costPerSquareMeter": "(mỗi m²)",

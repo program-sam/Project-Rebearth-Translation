@@ -87,6 +87,9 @@
             "areaTooSmall": "Ce n'est pas beaucoup... Créez une forme plus grande : {{size}} (min {{limit}})",
             "cooldown": "Attendez une seconde.",
             "costs": "Coûts :",
+            "editCostGrow": "Coût de l'extension",
+            "editCostShrink": "Remboursement Reshape",
+            "editNoCostChange": "Pas de changement de coût",
             "exclusionPreview": "Exclusion zone",
             "invalidLocation": "Emplacement invalide",
             "mustBeNear": "Doit être proche de l'{{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Construisez un hôtel de ville pour débloquer le classement mondial, les alliances et les choix.",
             "university": "Construisez une université pour débloquer des expéditions et des recherches.",
             "market": "Construisez un marché ou un port pour débloquer le marché mondial.",
-            "noBiomeAssets": "Aucun bâtiment de ce type n'est disponible dans ce biome."
+            "noBiomeAssets": "Aucun bâtiment de ce type n'est disponible dans ce biome.",
+            "veganSociety": "Bloqué par la Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Appliquer tout",
             "updated": "Mis à jour",
             "storage": "Stockage",
+            "expandAll": "Tout développer",
+            "collapseAll": "Tout réduire",
             "throttleHelp": "Ce type de bâtiment est ralenti car une ressource nécessaire vient à manquer. La production est automatiquement réduite afin d'éviter que les ressources ne deviennent négatives."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Membres",
             "name": "Nom",
             "owner": "Propriétaire",
+            "moderator": "Modérateur",
+            "member": "Membre",
             "rank": "Rang",
             "reject": "Rejeter",
             "scienceLeague": "Ligue scientifique",
             "tradeAlliance": "Alliance commerciale",
-            "value": "Valeur"
+            "value": "Valeur",
+            "role": "Rôle",
+            "town": "Ville",
+            "type": "Type",
+            "actions": "Actions"
         },
         "createAlliance": "Créer une alliance",
         "days": "jours",
         "disbandAlliance": "dissoudre l'alliance",
+        "confirmDisband": "Êtes-vous sûr de vouloir dissoudre cette alliance ? Cette action ne peut pas être annulée.",
+        "confirmLeave": "Êtes-vous sûr de vouloir quitter cette alliance ?",
+        "confirmKick": "Êtes-vous sûr de vouloir exclure {{name}} de l'alliance ?",
+        "confirmTransfer": "Êtes-vous sûr de vouloir transférer la propriété à {{name}} ? Vous perdrez votre rôle de propriétaire.",
+        "confirmDemote": "Êtes-vous sûr de vouloir rétrograder {{name}} ?",
+        "editAlliance": "modifier l'alliance",
+        "editDescription": "Modifier la description",
+        "editName": "Modifier le nom",
+        "saveChanges": "Enregistrer les modifications",
         "globalRank": "Classement mondial",
         "go": "à",
         "inviteToAlliance": "Invitez à rejoindre votre alliance",
@@ -679,12 +700,24 @@
         "marketSize": "Taille du marché",
         "marketSizeLabel": "Taille du marché : {{size}}",
         "members": "Membres",
+        "messages": "Messages",
+        "messageBoard": "Forum",
+        "postMessage": "Après",
+        "messagePlaceholder": "Écris un message à ton alliance...",
+        "noMessages": "Aucun message pour l'instant.",
         "name": "Nom",
         "noApplications": "Il n'y a pas d'applications.",
         "noModifiers": "Cette alliance n'a pas de modificateurs.",
         "owner": "Propriétaire",
+        "overview": "Présentation",
+        "settings": "Paramètres",
         "placeholderDescription": "Alliance Description",
         "placeholderName": "Nom de l'alliance",
+        "promote": "promouvoir",
+        "demote": "rétrograder",
+        "transferOwnership": "transférer la propriété",
+        "deleteMessage": "Supprimer le message",
+        "confirmDeleteMessage": "Voulez-vous vraiment supprimer ce message ?",
         "rank": "Rang",
         "rankPrefix": "Non.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "Rejeter",
         "lastActive": "Dernière activité il y a{{time}}",
-        "value": "Valeur"
+        "value": "Valeur",
+        "multipleOwners": "Impossible de dissoudre : il y a plusieurs propriétaires.",
+        "allianceSettings": "Paramètres de l'alliance",
+        "dangerZone": "Danger Zone"
     },
     "popup": {
         "apply": "Appliquer",
         "archive": "Archive",
         "demolish": "Démolir",
+        "confirmDemolish": "Êtes-vous sûr de vouloir démolir ce bâtiment ?",
         "population": "Population",
         "production": {
             "rate": "Évaluer",
@@ -763,8 +800,7 @@
             "Rejoignez notre communauté animée de joueurs sur Discord pour partager vos créations et obtenir des conseils.",
             "Certains bâtiments ne peuvent être placés qu'à proximité du bâtiment parent, comme la scie et le bûcheron.",
             "Toutes les ressources ne sont pas faciles à obtenir partout. Parfois, il sera moins coûteux de faire du commerce que de tout produire soi-même.",
-            "Les avis sur Steam nous aident à trouver de nouveaux joueurs pour construire un monde vivant.",
-            "Rendez-vous sur le wiki à l'adresse projectrebearth.com pour tout savoir sur l'univers de Project Rebearth !"
+            "Les avis sur Steam nous aident à trouver de nouveaux joueurs pour construire un monde vivant."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Ne peut être modifié pour",
         "construction": "Construction",
         "cost": "Coût",
+        "editShape": "Modifier la forme",
         "refund": "Remboursement",
         "costPerMeter": "(pour m)",
         "costPerSquareMeter": "(par m²)",

@@ -87,6 +87,9 @@
             "areaTooSmall": "Bu çok fazla değil... Daha büyük bir şekil oluşturun: {{size}} (min {{limit}})",
             "cooldown": "Bir saniye bekleyin",
             "costs": "Maliyetler:",
+            "editCostGrow": "Genişletme maliyeti",
+            "editCostShrink": "Geri ödemeyi yeniden düzenle",
+            "editNoCostChange": "Maliyet değişikliği yok",
             "exclusionPreview": "Yasak bölge",
             "invalidLocation": "Geçersiz Konum",
             "mustBeNear": "{{parent}} yakınında olmalıdır.",
@@ -537,7 +540,8 @@
             "townHall": "Küresel sıralama, ittifaklar ve seçimlerin kilidini açmak için bir Belediye Binası inşa edin.",
             "university": "Keşif seferleri ve araştırmanın kilidini açmak için bir Üniversite inşa edin.",
             "market": "Küresel pazarın kilidini açmak için bir Pazar veya Liman inşa edin.",
-            "noBiomeAssets": "Bu biyomda bu türde bina mevcut değil."
+            "noBiomeAssets": "Bu biyomda bu türde bina mevcut değil.",
+            "veganSociety": "Vegan Society tarafından engellendi"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Tümünü Uygula",
             "updated": "Güncellendi",
             "storage": "Depolama",
+            "expandAll": "Tümünü Genişlet",
+            "collapseAll": "Tümünü daralt",
             "throttleHelp": "Bu bina türü, gerekli kaynakların azalması nedeniyle kısıtlanmaktadır. Kaynakların eksiye düşmesini önlemek için üretim otomatik olarak azaltılır."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Üyeler",
             "name": "Ad",
             "owner": "Kurucu",
+            "moderator": "Moderatör",
+            "member": "Üye",
             "rank": "Derece",
             "reject": "Reddet",
             "scienceLeague": "Bilim Ligi",
             "tradeAlliance": "Ticaret Birliği",
-            "value": "Değer"
+            "value": "Değer",
+            "role": "Rol",
+            "town": "Kasaba",
+            "type": "Tür",
+            "actions": "Eylemler"
         },
         "createAlliance": "ittifak kur",
         "days": "gün",
         "disbandAlliance": "ittifakı feshet",
+        "confirmDisband": "Bu ittifakı feshetmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+        "confirmLeave": "Bu ittifaktan ayrılmak istediğinizden emin misiniz?",
+        "confirmKick": "{{name}}'i ittifaktan atmak istediğinizden emin misiniz?",
+        "confirmTransfer": "{{name}}'a sahipliği devretmek istediğinizden emin misiniz? Sahiplik rolünüzü kaybedeceksiniz.",
+        "confirmDemote": "{{name}}'i geri çekmek istediğinizden emin misiniz?",
+        "editAlliance": "ittifak düzenle",
+        "editDescription": "Açıklamayı düzenle",
+        "editName": "Adı düzenle",
+        "saveChanges": "Değişiklikleri Kaydet",
         "globalRank": "Küresel Sıralama",
         "go": "Git",
         "inviteToAlliance": "ittifakına davet et",
@@ -679,12 +700,24 @@
         "marketSize": "Pazar büyüklüğü",
         "marketSizeLabel": "Pazar büyüklüğü: {{size}}",
         "members": "Üyeler",
+        "messages": "Mesajlar",
+        "messageBoard": "Mesaj Panosu",
+        "postMessage": "Sonra",
+        "messagePlaceholder": "İttifakına bir mesaj yaz...",
+        "noMessages": "Henüz mesaj yok.",
         "name": "Ad",
         "noApplications": "Uygulama yok",
         "noModifiers": "Bu ittifakın etkisi yok.",
         "owner": "Kurucu",
+        "overview": "Genel bakış",
+        "settings": "Ayarlar",
         "placeholderDescription": "İttifak açıklaması",
         "placeholderName": "İttifak adı",
+        "promote": "tanıtmak",
+        "demote": "rütbe indirmek",
+        "transferOwnership": "mülkiyeti devretmek",
+        "deleteMessage": "Mesajı sil",
+        "confirmDeleteMessage": "Bu mesajı silmek istediğinizden emin misiniz?",
         "rank": "Derece",
         "rankPrefix": "N°",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "reddet",
         "lastActive": "{{time}} önce son etkin",
-        "value": "Değer"
+        "value": "Değer",
+        "multipleOwners": "Dağırılamaz: birden fazla sahibi var.",
+        "allianceSettings": "İttifak Ayarları",
+        "dangerZone": "Tehlikeli Bölge"
     },
     "popup": {
         "apply": "Uygula",
         "archive": "Arşiv",
         "demolish": "Yık",
+        "confirmDemolish": "Bu binayı yıkmak istediğinizden emin misiniz?",
         "population": "Nüfus",
         "production": {
             "rate": "Oran",
@@ -763,8 +800,7 @@
             "Steam'de bir inceleme bırakmak, bu dünyayı canlı kılan yeni oyuncular bulmamıza yardımcı olur.",
             "Diğer oyuncularla ticaret yapmanın kilidini açmak için bir pazar veya liman inşa edin.",
             "İttifakların, sıralamaların ve seçimlerin kilidini açmak için bir belediye binası inşa edin.",
-            "Keşif seferlerinin ve araştırmanın kilidini açmak için bir üniversite inşa edin.",
-            "Project Rebearth dünyası hakkında her şeyi öğrenmek için projectrebearth.com adresindeki vikimizi ziyaret edin!"
+            "Keşif seferlerinin ve araştırmanın kilidini açmak için bir üniversite inşa edin."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Şu süre boyunca değiştirilemez",
         "construction": "İnşaat",
         "cost": "Maliyet",
+        "editShape": "Şekli düzenle",
         "refund": "Para iadesi",
         "costPerMeter": "(metre başına)",
         "costPerSquareMeter": "(metrekare başına)",

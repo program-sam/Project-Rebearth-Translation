@@ -87,6 +87,9 @@
             "areaTooSmall": "그건 별로... 더 큰 모양을 만드세요: {{size}} (최소 {{limit}})",
             "cooldown": "잠깐만요",
             "costs": "비용:",
+            "editCostGrow": "확장 비용",
+            "editCostShrink": "환불 재신청",
+            "editNoCostChange": "비용 변경 없음",
             "exclusionPreview": "진입 금지 구역",
             "invalidLocation": "잘못된 위치",
             "mustBeNear": "{{parent}} 근처에 위치해야 함",
@@ -537,7 +540,8 @@
             "townHall": "타운 홀을 건설하여 글로벌 랭킹, 동맹, 선택지를 해금하세요",
             "university": "탐험과 연구를 해금하려면 대학을 건설하세요.",
             "market": "시장을 건설하거나 항구를 건설하여 글로벌 시장을 개방하세요.",
-            "noBiomeAssets": "이 생물군계에는 이 유형의 건물이 없습니다."
+            "noBiomeAssets": "이 생물군계에는 이 유형의 건물이 없습니다.",
+            "veganSociety": "비건 협회에서 차단됨"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "모두 적용",
             "updated": "업데이트됨",
             "storage": "저장소",
+            "expandAll": "모두 펼치기",
+            "collapseAll": "모두 접기",
             "throttleHelp": "필수 자원이 부족해지면서 이 건물 유형의 생산이 제한되고 있습니다. 자원이 마이너스가 되는 것을 방지하기 위해 생산량이 자동으로 감소됩니다."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "회원",
             "name": "이름",
             "owner": "소유자",
+            "moderator": "사회자",
+            "member": "회원",
             "rank": "계급",
             "reject": "거절",
             "scienceLeague": "사이언스 리그",
             "tradeAlliance": "무역 동맹",
-            "value": "값"
+            "value": "값",
+            "role": "역할",
+            "town": "마을",
+            "type": "유형",
+            "actions": "작업"
         },
         "createAlliance": "동맹 생성",
         "days": "날짜",
         "disbandAlliance": "동맹 해산",
+        "confirmDisband": "이 동맹을 해산하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+        "confirmLeave": "이 동맹을 탈퇴하시겠습니까?",
+        "confirmKick": "정말 {{name}}를 동맹에서 제명하시겠습니까?",
+        "confirmTransfer": "{{name}}에게 소유권을 이전하시겠습니까? 소유자 권한을 잃게 됩니다.",
+        "confirmDemote": "{{name}}의 등급을 낮추시겠습니까?",
+        "editAlliance": "동맹 편집",
+        "editDescription": "설명 편집",
+        "editName": "이름 편집",
+        "saveChanges": "변경 사항 저장",
         "globalRank": "글로벌 랭크",
         "go": "to",
         "inviteToAlliance": "동맹에 초대합니다",
@@ -679,12 +700,24 @@
         "marketSize": "시장 규모",
         "marketSizeLabel": "시장 규모: {{size}}",
         "members": "회원",
+        "messages": "메시지",
+        "messageBoard": "게시판",
+        "postMessage": "이후",
+        "messagePlaceholder": "동맹원들에게 메시지를 작성해 주세요...",
+        "noMessages": "아직 메시지가 없습니다.",
         "name": "이름",
         "noApplications": "응용 프로그램이 없습니다.",
         "noModifiers": "이 동맹에는 수정자가 없습니다.",
         "owner": "소유자",
+        "overview": "개요",
+        "settings": "설정",
         "placeholderDescription": "동맹 설명",
         "placeholderName": "동맹 이름",
+        "promote": "홍보",
+        "demote": "강등",
+        "transferOwnership": "소유권 이전",
+        "deleteMessage": "메시지 삭제",
+        "confirmDeleteMessage": "이 메시지를 삭제하시겠습니까?",
         "rank": "계급",
         "rankPrefix": "번호 없음.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "거절",
         "lastActive": "마지막 활동: {{time}} 전",
-        "value": "값"
+        "value": "값",
+        "multipleOwners": "해산할 수 없습니다: 소유자가 여러 명입니다.",
+        "allianceSettings": "동맹 설정",
+        "dangerZone": "위험 구역"
     },
     "popup": {
         "apply": "적용",
         "archive": "아카이브",
         "demolish": "파괴",
+        "confirmDemolish": "이 건물을 철거하시겠습니까?",
         "population": "인구",
         "production": {
             "rate": "평가",
@@ -763,8 +800,7 @@
             "Discord에서 활기찬 플레이어 커뮤니티에 참여하여 여러분의 창작물을 공유하고 팁을 얻으세요.",
             "일부 건물은 본 건물 근처에만 배치할 수 있습니다. 예를 들어 톱과 나무꾼이 그렇습니다.",
             "모든 자원을 어디서나 쉽게 얻을 수 있는 것은 아닙니다. 때로는 모든 것을 직접 생산하는 것보다 거래하는 것이 더 저렴할 수 있습니다.",
-            "스팀 리뷰는 생동감 넘치는 세계를 함께 만들어갈 새로운 플레이어를 찾는 데 도움이 됩니다.",
-            "프로젝트 리버스(Project Rebearth)의 세계에 관한 모든 것을 알아보려면 projectrebearth.com의 위키를 방문하세요!"
+            "스팀 리뷰는 생동감 넘치는 세계를 함께 만들어갈 새로운 플레이어를 찾는 데 도움이 됩니다."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "변경할 수 없습니다.",
         "construction": "건설",
         "cost": "비용",
+        "editShape": "모양 편집",
         "refund": "환불",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(평방미터당)",

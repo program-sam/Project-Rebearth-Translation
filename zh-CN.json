@@ -87,6 +87,9 @@
             "areaTooSmall": "这太小了...请制作更大的形状：{{size}}（最小{{limit}}）",
             "cooldown": "稍等片刻",
             "costs": "费用：",
+            "editCostGrow": "扩张成本",
+            "editCostShrink": "退款重置",
+            "editNoCostChange": "费用不变",
             "exclusionPreview": "禁入区域",
             "invalidLocation": "无效位置",
             "mustBeNear": "必须靠近 {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "建造市政厅即可解锁全球排名、联盟系统及选择功能。",
             "university": "建造大学以解锁远征与研究。",
             "market": "建造市场或港口以解锁全球市场。",
-            "noBiomeAssets": "该生物群系中没有此类建筑。"
+            "noBiomeAssets": "该生物群系中没有此类建筑。",
+            "veganSociety": "被素食协会屏蔽"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "应用全部",
             "updated": "更新",
             "storage": "存储",
+            "expandAll": "展开全部",
+            "collapseAll": "收起全部",
             "throttleHelp": "该建筑类型因必需资源告急而被限速。生产效率已自动降低，以防止资源消耗超出储备量。"
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "成员",
             "name": "名称",
             "owner": "所有者",
+            "moderator": "主持人",
+            "member": "会员",
             "rank": "军衔",
             "reject": "拒绝",
             "scienceLeague": "科学联盟",
             "tradeAlliance": "贸易联盟",
-            "value": "数值"
+            "value": "数值",
+            "role": "角色",
+            "town": "城镇",
+            "type": "类型",
+            "actions": "操作"
         },
         "createAlliance": "创建联盟",
         "days": "天数",
         "disbandAlliance": "解散联盟",
+        "confirmDisband": "您确定要解散这个联盟吗？此操作无法撤销。",
+        "confirmLeave": "你确定要退出这个联盟吗？",
+        "confirmKick": "您确定要将{{name}}踢出联盟吗？",
+        "confirmTransfer": "您确定要将所有权转让给{{name}}吗？您将失去所有者身份。",
+        "confirmDemote": "您确定要降级{{name}}吗？",
+        "editAlliance": "编辑联盟",
+        "editDescription": "编辑描述",
+        "editName": "编辑名称",
+        "saveChanges": "保存更改",
         "globalRank": "全球排名",
         "go": "至",
         "inviteToAlliance": "邀请加入您的联盟",
@@ -679,12 +700,24 @@
         "marketSize": "市场规模",
         "marketSizeLabel": "市场规模：{{size}}",
         "members": "成员",
+        "messages": "消息",
+        "messageBoard": "留言板",
+        "postMessage": "之后",
+        "messagePlaceholder": "给你的联盟写一条消息……",
+        "noMessages": "尚无消息。",
         "name": "名称",
         "noApplications": "没有应用程序",
         "noModifiers": "该联盟没有附加修饰符",
         "owner": "所有者",
+        "overview": "概述",
+        "settings": "设置",
         "placeholderDescription": "联盟描述",
         "placeholderName": "联盟名称",
+        "promote": "推广",
+        "demote": "降级",
+        "transferOwnership": "转让所有权",
+        "deleteMessage": "删除消息",
+        "confirmDeleteMessage": "您确定要删除此消息吗？",
         "rank": "军衔",
         "rankPrefix": "编号。",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "拒绝",
         "lastActive": "最后活跃时间：{{time}}前",
-        "value": "数值"
+        "value": "数值",
+        "multipleOwners": "无法解散：存在多个所有者。",
+        "allianceSettings": "联盟设置",
+        "dangerZone": "危险区域"
     },
     "popup": {
         "apply": "应用",
         "archive": "存档",
         "demolish": "拆除",
+        "confirmDemolish": "您确定要拆除这栋建筑吗？",
         "population": "人口",
         "production": {
             "rate": "评分",
@@ -763,8 +800,7 @@
             "加入我们Discord平台上活跃的玩家社区，分享你的创作并获取技巧。",
             "某些建筑物只能靠近其母建筑放置，例如锯木厂和伐木工。",
             "并非所有资源在各地都易于获取。有时交易比自行生产所有物品更为划算。",
-            "在Steam平台的每条评价都能帮助我们发掘新玩家，共同构建生机勃勃的游戏世界。",
-            "访问projectrebearth.com的维基页面，了解关于Project Rebearth世界的所有信息！"
+            "在Steam平台的每条评价都能帮助我们发掘新玩家，共同构建生机勃勃的游戏世界。"
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "不可更改",
         "construction": "建筑",
         "cost": "成本",
+        "editShape": "编辑形状",
         "refund": "退款",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "（每平方米）",

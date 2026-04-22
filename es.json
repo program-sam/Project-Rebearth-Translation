@@ -87,6 +87,9 @@
             "areaTooSmall": "That is not much... Make a larger shape: {{size}} (min {{limit}})",
             "cooldown": "Espera un segundo.",
             "costs": "Costes:",
+            "editCostGrow": "Coste de expansión",
+            "editCostShrink": "Reembolso por cambio de formato",
+            "editNoCostChange": "Sin cambio de coste",
             "exclusionPreview": "Zona de exclusión",
             "invalidLocation": "Ubicación no válida",
             "mustBeNear": "Debe estar cerca de {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Construye un ayuntamiento para desbloquear la clasificación global, las alianzas y las opciones.",
             "university": "Construye una universidad para desbloquear expediciones e investigaciones.",
             "market": "Construye un mercado o un puerto para desbloquear el mercado global.",
-            "noBiomeAssets": "No hay edificios de este tipo disponibles en este bioma."
+            "noBiomeAssets": "No hay edificios de este tipo disponibles en este bioma.",
+            "veganSociety": "Bloqueado por la Sociedad Vegana"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Aplicar todo",
             "updated": "Actualizado",
             "storage": "Almacenamiento",
+            "expandAll": "Expandir todo",
+            "collapseAll": "Contraer todo",
             "throttleHelp": "Este tipo de edificio se está ralentizando porque un recurso necesario se está agotando. La producción se reduce automáticamente para evitar que los recursos se vuelvan negativos."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Miembros",
             "name": "Nombre",
             "owner": "Propietario",
+            "moderator": "Moderador",
+            "member": "Miembro",
             "rank": "Rango",
             "reject": "Rechazar",
             "scienceLeague": "Liga Científica",
             "tradeAlliance": "Alianza comercial",
-            "value": "Valor"
+            "value": "Valor",
+            "role": "Función",
+            "town": "Pueblo",
+            "type": "Tipo",
+            "actions": "Acciones"
         },
         "createAlliance": "Crear alianza",
         "days": "días",
         "disbandAlliance": "Disolver alianza.",
+        "confirmDisband": "¿Estás seguro de que quieres disolver esta alianza? Esta acción es permanente y no se puede deshacer.",
+        "confirmLeave": "¿Estás seguro de que quieres abandonar esta alianza?",
+        "confirmKick": "¿Estás seguro de que quieres expulsar a {{name}} de la alianza?",
+        "confirmTransfer": "¿Estás seguro de que quieres transferir la propiedad a {{name}}? Perderás tus privilegios de propietario.",
+        "confirmDemote": "¿Estás seguro de que quieres destituir a {{name}} como moderador?",
+        "editAlliance": "editar alianza",
+        "editDescription": "Editar descripción",
+        "editName": "Editar nombre",
+        "saveChanges": "guardar cambios",
         "globalRank": "Clasificación global",
         "go": "a",
         "inviteToAlliance": "Invita a tu alianza.",
@@ -679,12 +700,24 @@
         "marketSize": "Tamaño del mercado",
         "marketSizeLabel": "Tamaño del mercado: {{size}}",
         "members": "Miembros",
+        "messages": "Mensajes",
+        "messageBoard": "Tablón de anuncios",
+        "postMessage": "Después de",
+        "messagePlaceholder": "Escribir un aviso... (visible para todos los miembros)",
+        "noMessages": "Aún no hay mensajes. ¡Inicia la conversación!",
         "name": "Nombre",
         "noApplications": "No hay aplicaciones.",
         "noModifiers": "Esta alianza no tiene modificadores.",
         "owner": "Propietario",
+        "overview": "Descripción general",
+        "settings": "Configuración",
         "placeholderDescription": "Descripción de la alianza",
         "placeholderName": "Nombre de la alianza",
+        "promote": "Ascender a moderador",
+        "demote": "Descender de moderador",
+        "transferOwnership": "Transferir propiedad",
+        "deleteMessage": "Eliminar mensaje",
+        "confirmDeleteMessage": "¿Estás seguro de que quieres eliminar este mensaje?",
         "rank": "Rango",
         "rankPrefix": "No.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "Rechazar.",
         "lastActive": "Última actividad{{time}}",
-        "value": "Valor"
+        "value": "Valor",
+        "multipleOwners": "No se puede disolver: hay varios propietarios. Transfiere la propiedad primero.",
+        "allianceSettings": "Configuración de la alianza",
+        "dangerZone": "Zona de peligro"
     },
     "popup": {
         "apply": "Aplicar",
         "archive": "Archivo",
         "demolish": "Demoler",
+        "confirmDemolish": "¿Estás seguro de que quieres demoler este edificio?",
         "population": "Población",
         "production": {
             "rate": "Valorar",
@@ -763,8 +800,7 @@
             "Las reseñas en Steam nos ayudan a encontrar nuevos jugadores que hacen de este un mundo vivo.",
             "No todos los recursos son fáciles de conseguir en todas partes. A veces, comerciar será más barato que producirlo todo por ti mismo.",
             "Las reseñas en Steam nos ayudan a encontrar nuevos jugadores que hacen de este un mundo vivo.",
-            "Las reseñas en Steam nos ayudan a encontrar nuevos jugadores que hacen de este un mundo vivo.",
-            "Visita la wiki en projectrebearth.com para aprender todo sobre el mundo de Project."
+            "Las reseñas en Steam nos ayudan a encontrar nuevos jugadores que hacen de este un mundo vivo."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "No se puede cambiar para",
         "construction": "Construcción",
         "cost": "Coste",
+        "editShape": "Editar forma",
         "refund": "Reembolso",
         "costPerMeter": "(por m)",
         "costPerSquareMeter": "(por m²)",

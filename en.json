@@ -43,6 +43,8 @@
             "intensiveFarming": "Intensive farming allows you to feed your animals grains, increasing the amount of animal products you can produce.",
             "newTownBoost": "As a new settlement, you receive temporary bonuses to help you get started. These will fade over time."            
         },
+        "confirmChange": "Are you sure you want to change this choice?",
+        "confirmLock": "This choice will be locked for {{time}}.",
         "exclusiveOptions": "Exclusive Options",
         "lockedFor": "Locked for",
         "option": "Option",
@@ -87,6 +89,9 @@
             "areaTooSmall": "That is not much... Make a larger shape: {{size}} (min {{limit}})",
             "cooldown": "Wait a second",
             "costs": "Costs:",
+            "editCostGrow": "Expansion cost",
+            "editCostShrink": "Reshape refund",
+            "editNoCostChange": "No cost change",
             "exclusionPreview": "Exclusion zone",
             "invalidLocation": "Invalid Location",
             "mustBeNear": "Must be near {{parent}}",
@@ -408,6 +413,7 @@
             "happiness": "Happiness",
             "knowledge": "Knowledge",
             "pop": "Population",
+            "population": "Population",
             "stone": "Stone",
             "wood": "Wood",
             "wool": "Wool",
@@ -434,6 +440,10 @@
             "multiPlace": "Keep placing",
             "rotate": "Rotate",
             "restriction": "Unbuildable area"
+        },
+        "explore": {
+            "doubleClickDraw": "Double click to draw an area",
+            "adjustEffort": "Use the slider to adjust effort"
         },
         "capacity": "Capacity",
         "defaultTownName": "Unnamed Town",
@@ -489,6 +499,7 @@
             "returnToDesktop": "Return to Desktop",
             "serverOffline": "Cannot reach the server. The server might be under heavy load, or down temporarily for maintenance. Check the Discord for the latest status.",
             "settings": "Settings",
+            "blueprints": "Blueprints",
             "subtitle": "This is an early release of Project Rebearth. Please reach out if you encounter any issues while playing.",
             "suspended": "Your account has been suspended. Reason: {{reason}}",
             "demoSubtitle": "This is the demo of Project Rebearth. Only the sandbox city-builder is enabled. For playing on the multiplayer globe with resource management, get the full release.",
@@ -496,6 +507,29 @@
             "demoRestriction2": "The sandbox mode still allows you to make awesome maps, export them in high resolution, and experience what a 1:1 scale game world feels like.",
             "title": "Project Rebearth Server",
             "welcome": "Welcome, {{name}}!"
+        },
+        "blueprints": {
+            "title": "Building Blueprints",
+            "description": "Create reusable building blueprints to quickly place groups of buildings.",
+            "createNew": "Create New Blueprint",
+            "noBlueprints": "No blueprints yet. Create your first one!",
+            "edit": "Edit",
+            "delete": "Delete",
+            "deleteConfirm": "Are you sure you want to delete this blueprint?",
+            "enable": "Enable blueprint",
+            "disable": "Disable blueprint",
+            "enabled": "Enabled",
+            "disabled": "Disabled",
+            "unnamed": "Unnamed Blueprint",
+            "workshop": "Workshop",
+            "workshopItem": "Workshop",
+            "published": "Published",
+            "publish": "Publish",
+            "update": "Update",
+            "publishToWorkshop": "Publish to Steam Workshop",
+            "updateWorkshop": "Update Workshop item",
+            "duplicate": "Make a copy",
+            "copyLabel": "(Copy)"
         },
         "sandbox": {
             "description": "Sandbox mode allows you to build freely without the constraints of the multiplayer world. It is just you and zero resource restrictions. You can save your progress and load it later.",
@@ -538,12 +572,17 @@
             "townHall": "Build a Town Hall to unlock global ranking, alliances, and choices",
             "university": "Build a University to unlock expeditions and research.",
             "market": "Build a Market or Port to unlock the global market.",
-            "noBiomeAssets": "No buildings of this kind available in this biome."
+            "noBiomeAssets": "No buildings of this kind available in this biome.",
+            "veganSociety": "Blocked by Vegan Society"
         }
     },
     "modals": {
         "archive": {
-            "title": "Archives"
+            "title": "Archives",
+            "empty": "No artifacts discovered yet.",
+            "emptyHint": "Send expeditions to uncover the secrets of the old world.",
+            "flyTo": "Fly to location",
+            "needMuseum": "Build a Museum first"
         },
         "choices": {
             "selectChoice": "Select Choice",
@@ -617,6 +656,8 @@
             "applyAll": "Apply All",
             "updated": "Updated",
             "storage": "Storage",
+            "expandAll": "Expand All",
+            "collapseAll": "Collapse All",
             "throttleHelp": "This building type is being throttled because a required resource is running low. Production is automatically reduced to prevent resources from going negative."
         },
         "save": {
@@ -671,6 +712,7 @@
             "value": "Value",
             "role": "Role",
             "town": "Town",
+            "type": "Type",
             "actions": "Actions"
         },
         "createAlliance": "create alliance",
@@ -697,7 +739,7 @@
         "messages": "Messages",
         "messageBoard": "Message Board",
         "postMessage": "Post",
-        "messagePlaceholder": "Write a message...",
+        "messagePlaceholder": "Write a notice... (visible to all members)",
         "noMessages": "No messages yet. Start the conversation!",
         "name": "Name",
         "noApplications": "There are no applications",
@@ -710,6 +752,8 @@
         "promote": "Promote to Moderator",
         "demote": "Demote from Moderator",
         "transferOwnership": "Transfer Ownership",
+        "deleteMessage": "Delete message",
+        "confirmDeleteMessage": "Are you sure you want to delete this message?",
         "rank": "Rank",
         "rankPrefix": "N°",
         "ranking": {
@@ -730,6 +774,7 @@
         "apply": "Apply",
         "archive": "Archive",
         "demolish": "Demolish",
+        "confirmDemolish": "Are you sure you want to demolish this building?",
         "population": "Population",
         "production": {
             "rate": "Rate",
@@ -739,8 +784,10 @@
             "title": "Storage"
         },
         "townName": "Town Name:",
+        "marketName": "District",
         "townColor": "Town Color:",
         "unnamedTown": "unnamed town",
+        "unnamedDistrict": "unnamed district",
         "upgrade": "Upgrade to {{building}}"
     },
     "settings": {
@@ -776,7 +823,9 @@
         "textureResolution": "Texture Resolution",
         "title": "Settings",
         "treeDensity": "Tree Density",
-        "uiScale": "UI Scale"
+        "uiScale": "UI Scale",
+        "workerThreads": "CPU Threads",
+        "workerThreadsHelp": "Controls how many background threads are used for rendering. More threads can speed up tile loading, but also increase memory usage and may cause crashes on lower-end devices. Experiment to find the best balance for your system."
     },
     "tips": {
         "loading": [
@@ -791,11 +840,11 @@
             "Join our lively community of players on Discord to share your creations and get tips.",
             "Some buildings can only be placed close to the parent building, like the saw and the woodcutter.",
             "Not all resources are easy to get everywhere. Sometimes trading will be cheaper than producing everything yourself.",
-            "A review on Steam helps us find new players to build a living world.",
             "Visit the wiki at projectrebearth.com to learn everything about the world of Project Rebearth!"
         ]
     },
     "help": {
+        "archive": "Browse all artifacts discovered by your expeditions. Each artifact reveals a piece of the old world's history and may contain valuable resources.",
         "hud": "This panel shows all the resources you have, produce and consume. Hover over the icons to see more details about each resource. If you are running low on a resource, it will be highlighted in red, and buildings might be forced to reduce their productivity. If you reach your capacity, it will show in bold and your buildings stop producing. You can have effects, like your starter bonus, influence how much you produce or consume. these modifiers are shown when you hover over a resource. Do you see the spinning circle on the left? That indicates when the game synchronizes with the server. you won't see resource changes until the synchronization is done. Resource consumption and production are shown per day. this is an actual real time day. However your resources will tick up slowly.",
         "market": "Welcome to the market! Behold, all the things other players want to buy or sell, and more importantly, at what price! You will pay for transport costs when you fullfill someone else's order. So if they are far away, it might not be worth it, or even cost more than what they are willing to pay.",
         "orders": "Place your orders! Announce to other players what you want to buy or sell, and at what price. This is what you will receive, or pay. Keep in mind that others will pay for transport. So buying something for a low price might not work other player's shipping costs are too high.",
@@ -807,6 +856,7 @@
         "cannotChange": "Cannot be changed for",
         "construction": "Construction",
         "cost": "Cost",
+        "editShape": "Edit shape",
         "refund": "Refund",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(per m²)",
@@ -825,6 +875,36 @@
         "percentage": "{{value}}%",
         "seconds": "{{value}}s",
         "secondsLong": "seconds"
+    },
+    "blueprintEditor": {
+        "details": "Blueprint Details",
+        "name": "Name",
+        "namePlaceholder": "Blueprint name",
+        "description": "Description",
+        "descriptionPlaceholder": "What does this blueprint build?",
+        "category": "Category",
+        "categoryPlaceholder": "e.g. Industrial, Residential",
+        "biome": "Biome Configuration",
+        "allBiomes": "Same layout for all biomes",
+        "copyConfig": "Copy Biome Config",
+        "selectSource": "Select source biome",
+        "cancelCopy": "Cancel copy",
+        "copyTo": "Copy to {{biome}}",
+        "source": "Source",
+        "copyHint": "Click a target biome to copy objects to",
+        "objectCount": "Objects",
+        "totalCost": "Total Cost",
+        "save": "Save",
+        "exit": "Exit",
+        "publish": "Publish",
+        "updateWorkshop": "Update",
+        "published": "Published!",
+        "publishFailed": "Failed",
+        "buildMenu": "Buildings",
+        "rates": "Rates",
+        "noRates": "Place buildings to see rates",
+        "deleteObject": "Remove",
+        "outOfBounds": "Outside blueprint area"
     },
     "warnings": {
         "notEnoughPop": "Not enough volunteers"

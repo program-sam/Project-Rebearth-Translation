@@ -87,6 +87,9 @@
             "areaTooSmall": "To není moc... Vytvořte větší tvar: {{size}} (min. {{limit}})",
             "cooldown": "Počkejte chvíli.",
             "costs": "Náklady:",
+            "editCostGrow": "Náklady na rozšíření",
+            "editCostShrink": "Vrácení peněz za Reshape",
+            "editNoCostChange": "Žádná změna nákladů",
             "exclusionPreview": "Vyloučená zóna",
             "invalidLocation": "Neplatná poloha",
             "mustBeNear": "Musí být poblíž {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Postavte radnici a odemkněte globální žebříček, aliance a možnosti výběru.",
             "university": "Postavte univerzitu, abyste odemkli expedice a výzkum.",
             "market": "Postavte trh nebo přístav, abyste odemkli globální trh.",
-            "noBiomeAssets": "V tomto biomu nejsou k dispozici žádné budovy tohoto typu."
+            "noBiomeAssets": "V tomto biomu nejsou k dispozici žádné budovy tohoto typu.",
+            "veganSociety": "Blokováno Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Použít vše",
             "updated": "Aktualizováno",
             "storage": "Úložiště",
+            "expandAll": "Rozbalit vše",
+            "collapseAll": "Sbalit vše",
             "throttleHelp": "Tento typ budovy je omezován, protože dochází požadovaný zdroj. Produkce je automaticky snížena, aby se zabránilo zápornému stavu zdrojů."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Členové",
             "name": "Název",
             "owner": "Vlastník",
+            "moderator": "Moderátor",
+            "member": "Člen",
             "rank": "Hodnost",
             "reject": "Odmítnout",
             "scienceLeague": "Vědecká liga",
             "tradeAlliance": "Obchodní aliance",
-            "value": "Hodnota"
+            "value": "Hodnota",
+            "role": "Role",
+            "town": "Město",
+            "type": "Typ",
+            "actions": "Akce"
         },
         "createAlliance": "vytvořit alianci",
         "days": "dny",
         "disbandAlliance": "rozpustit alianci",
+        "confirmDisband": "Opravdu chcete tuto alianci rozpustit? Tuto akci nelze vrátit zpět.",
+        "confirmLeave": "Opravdu chcete opustit tuto alianci?",
+        "confirmKick": "Opravdu chceš vyloučit {{name}} z aliance?",
+        "confirmTransfer": "Opravdu chcete převést vlastnictví na {{name}}? Ztratíte svou roli vlastníka.",
+        "confirmDemote": "Opravdu chcete degradovat hru „{{name}}“?",
+        "editAlliance": "upravit alianci",
+        "editDescription": "Upravit popis",
+        "editName": "Upravit název",
+        "saveChanges": "Uložit změny",
         "globalRank": "Globální žebříček",
         "go": "k",
         "inviteToAlliance": "pozvat do své aliance",
@@ -679,12 +700,24 @@
         "marketSize": "Velikost trhu",
         "marketSizeLabel": "Velikost trhu: {{size}}",
         "members": "Členové",
+        "messages": "Zprávy",
+        "messageBoard": "Nástěnka",
+        "postMessage": "Po",
+        "messagePlaceholder": "Napiš zprávu své alianci...",
+        "noMessages": "Zatím žádné zprávy.",
         "name": "Název",
         "noApplications": "Neexistují žádné aplikace.",
         "noModifiers": "Tato aliance nemá žádné modifikátory.",
         "owner": "Vlastník",
+        "overview": "Přehled",
+        "settings": "Nastavení",
         "placeholderDescription": "Popis aliance",
         "placeholderName": "Název aliance",
+        "promote": "propagovat",
+        "demote": "degradovat",
+        "transferOwnership": "převést vlastnictví",
+        "deleteMessage": "Smazat zprávu",
+        "confirmDeleteMessage": "Opravdu chcete tuto zprávu smazat?",
         "rank": "Hodnost",
         "rankPrefix": "Ne.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "zamítnout",
         "lastActive": "naposledy aktivní před{{time}}",
-        "value": "Hodnota"
+        "value": "Hodnota",
+        "multipleOwners": "Nelze rozpustit: existuje více vlastníků.",
+        "allianceSettings": "Nastavení aliance",
+        "dangerZone": "Nebezpečná zóna"
     },
     "popup": {
         "apply": "Použít",
         "archive": "Archiv",
         "demolish": "Demolice",
+        "confirmDemolish": "Opravdu chcete tuto budovu zbourat?",
         "population": "Populace",
         "production": {
             "rate": "Hodnocení",
@@ -763,8 +800,7 @@
             "Připojte se k naší živé komunitě hráčů na Discord a sdílejte své výtvory a získejte tipy.",
             "Některé budovy lze umístit pouze v blízkosti mateřské budovy, například pila a dřevorubec.",
             "Ne všechny suroviny lze snadno získat všude. Někdy bude obchodování levnější než vlastní výroba.",
-            "Recenze na Steam nám pomáhá najít nové hráče, kteří nám pomohou vytvořit živoucí svět.",
-            "Navštivte wiki na adrese projectrebearth.com a dozvíte se vše o světě Project Rebearth!"
+            "Recenze na Steam nám pomáhá najít nové hráče, kteří nám pomohou vytvořit živoucí svět."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Nelze změnit pro",
         "construction": "Stavba",
         "cost": "Náklady",
+        "editShape": "Upravit tvar",
         "refund": "Vrácení peněz",
         "costPerMeter": "(pro m)",
         "costPerSquareMeter": "(na m²)",

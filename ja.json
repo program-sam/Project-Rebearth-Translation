@@ -87,6 +87,9 @@
             "areaTooSmall": "それはあまりにも小さい…より大きな形状を作成してください：{{size}}（最小{{limit}}）",
             "cooldown": "ちょっと待って",
             "costs": "コスト：",
+            "editCostGrow": "拡張コスト",
+            "editCostShrink": "返金手続き",
+            "editNoCostChange": "費用の変更なし",
             "exclusionPreview": "立入禁止区域",
             "invalidLocation": "無効な場所",
             "mustBeNear": "{{parent}} の近くにある必要があります",
@@ -537,7 +540,8 @@
             "townHall": "タウンホールを建設すると、グローバルランキング、同盟、選択肢が解放されます",
             "university": "大学を建設して、遠征と研究を解放しましょう。",
             "market": "市場または港を建設して、世界市場を開放しましょう。",
-            "noBiomeAssets": "このバイオームにはこの種の建造物は存在しません。"
+            "noBiomeAssets": "このバイオームにはこの種の建造物は存在しません。",
+            "veganSociety": "ヴィーガン協会によりブロックされました"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "すべて適用",
             "updated": "更新済み",
             "storage": "ストレージ",
+            "expandAll": "すべて展開",
+            "collapseAll": "すべて折りたたむ",
             "throttleHelp": "この建造物タイプは、必要な資源が不足しているため生産が制限されています。資源がマイナスにならないよう、生産量は自動的に減少します。"
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "メンバー",
             "name": "名前",
             "owner": "所有者",
+            "moderator": "モデレーター",
+            "member": "メンバー",
             "rank": "ランク",
             "reject": "却下",
             "scienceLeague": "サイエンスリーグ",
             "tradeAlliance": "貿易同盟",
-            "value": "値"
+            "value": "値",
+            "role": "役割",
+            "town": "町",
+            "type": "タイプ",
+            "actions": "アクション"
         },
         "createAlliance": "同盟を結成する",
         "days": "日数",
         "disbandAlliance": "同盟を解散する",
+        "confirmDisband": "この同盟を解散してもよろしいですか？この操作は取り消すことができません。",
+        "confirmLeave": "本当にこの同盟を脱退しますか？",
+        "confirmKick": "本当に{{name}}を同盟から追放しますか？",
+        "confirmTransfer": "{{name}} に所有権を譲渡してもよろしいですか？所有者としての権限を失うことになります。",
+        "confirmDemote": "「{{name}}」を降格してもよろしいですか？",
+        "editAlliance": "同盟を編集",
+        "editDescription": "説明を編集",
+        "editName": "名前を編集",
+        "saveChanges": "変更を保存",
         "globalRank": "グローバルランク",
         "go": "to",
         "inviteToAlliance": "同盟へ招待",
@@ -679,12 +700,24 @@
         "marketSize": "市場規模",
         "marketSizeLabel": "市場規模：{{size}}",
         "members": "メンバー",
+        "messages": "メッセージ",
+        "messageBoard": "掲示板",
+        "postMessage": "その後",
+        "messagePlaceholder": "同盟のメンバーへメッセージを書いてください...",
+        "noMessages": "まだメッセージはありません。",
         "name": "名前",
         "noApplications": "アプリケーションはありません",
         "noModifiers": "この同盟には修飾子が一切存在しません",
         "owner": "所有者",
+        "overview": "概要",
+        "settings": "設定",
         "placeholderDescription": "アライアンスの説明",
         "placeholderName": "同盟名",
+        "promote": "宣伝する",
+        "demote": "降格",
+        "transferOwnership": "所有権の移転",
+        "deleteMessage": "メッセージを削除",
+        "confirmDeleteMessage": "このメッセージを削除してもよろしいですか？",
         "rank": "ランク",
         "rankPrefix": "No.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "却下",
         "lastActive": "最終更新：{{time}}前",
-        "value": "値"
+        "value": "値",
+        "multipleOwners": "解散できません：所有者が複数います。",
+        "allianceSettings": "同盟設定",
+        "dangerZone": "危険地帯"
     },
     "popup": {
         "apply": "適用",
         "archive": "アーカイブ",
         "demolish": "破壊せよ",
+        "confirmDemolish": "この建物を破壊してもよろしいですか？",
         "population": "人口",
         "production": {
             "rate": "評価",
@@ -763,8 +800,7 @@
             "Discordで活発なプレイヤーコミュニティに参加し、作品を共有したり、コツを学びましょう。",
             "一部の建物は親建物近くにしか配置できません。例えば製材所や木こりなどです。",
             "すべての資源がどこでも簡単に手に入るわけではありません。時には、すべてを自力で生産するよりも取引した方が安上がりな場合もあります。",
-            "Steamでのレビューは、生き生きとした世界を構築する新たなプレイヤーを見つける手助けとなります。",
-            "Project Rebearthの世界についてすべてを知るには、projectrebearth.comのWikiをご覧ください！"
+            "Steamでのレビューは、生き生きとした世界を構築する新たなプレイヤーを見つける手助けとなります。"
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "変更不可",
         "construction": "建設",
         "cost": "コスト",
+        "editShape": "図形の編集",
         "refund": "返金",
         "costPerMeter": "(m用)",
         "costPerSquareMeter": "(平方メートルあたり)",

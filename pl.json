@@ -87,6 +87,9 @@
             "areaTooSmall": "To nie jest dużo... Utwórz większy kształt: {{size}} (min. {{limit}})",
             "cooldown": "Chwileczkę",
             "costs": "Koszty:",
+            "editCostGrow": "Koszt rozbudowy",
+            "editCostShrink": "Zwrot kosztów za zmianę kształtu",
+            "editNoCostChange": "Brak zmian w kosztach",
             "exclusionPreview": "Strefa wykluczenia",
             "invalidLocation": "Nieprawidłowa lokalizacja",
             "mustBeNear": "Musi znajdować się w pobliżu {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Zbuduj ratusz, aby odblokować globalny ranking, sojusze i opcje wyboru.",
             "university": "Zbuduj uniwersytet, aby odblokować wyprawy i badania.",
             "market": "Zbuduj rynek lub port, aby odblokować rynek globalny.",
-            "noBiomeAssets": "W tym biomie nie ma budynków tego typu."
+            "noBiomeAssets": "W tym biomie nie ma budynków tego typu.",
+            "veganSociety": "Zablokowane przez Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Zastosuj wszystko",
             "updated": "Zaktualizowano",
             "storage": "Magazyn",
+            "expandAll": "Rozwiń wszystko",
+            "collapseAll": "Zwiń wszystko",
             "throttleHelp": "Ten typ budynku jest ograniczany, ponieważ brakuje wymaganych zasobów. Produkcja jest automatycznie zmniejszana, aby zapobiec ujemnemu saldu zasobów."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Członkowie",
             "name": "Nazwa",
             "owner": "Właściciel",
+            "moderator": "Moderator",
+            "member": "Członek",
             "rank": "Pozycja",
             "reject": "Odrzuć",
             "scienceLeague": "Liga Naukowa",
             "tradeAlliance": "Sojusz handlowy",
-            "value": "Wartość"
+            "value": "Wartość",
+            "role": "Rola",
+            "town": "Miasto i społeczność",
+            "type": "Typ",
+            "actions": "Czynności"
         },
         "createAlliance": "Stwórz sojusz",
         "days": "dni",
         "disbandAlliance": "rozwiąż sojusz",
+        "confirmDisband": "Czy na pewno chcesz rozwiązać ten sojusz? Tego działania nie można cofnąć.",
+        "confirmLeave": "Czy na pewno chcesz opuścić ten sojusz?",
+        "confirmKick": "Czy na pewno chcesz wyrzucić {{name}} z sojuszu?",
+        "confirmTransfer": "Czy na pewno chcesz przenieść prawa własności na {{name}}? Utracisz rolę właściciela.",
+        "confirmDemote": "Czy na pewno chcesz obniżyć rangę {{name}}?",
+        "editAlliance": "edytuj sojusz",
+        "editDescription": "Edytuj opis",
+        "editName": "Edytuj nazwę",
+        "saveChanges": "Zapisz zmiany",
         "globalRank": "Ranking globalny",
         "go": "Przejdź",
         "inviteToAlliance": "zaproś do sojuszu",
@@ -679,12 +700,24 @@
         "marketSize": "Wielkość rynku",
         "marketSizeLabel": "Wielkość rynku: {{size}}",
         "members": "Członkowie",
+        "messages": "Komunikaty",
+        "messageBoard": "Forum dyskusyjne",
+        "postMessage": "Po",
+        "messagePlaceholder": "Napisz wiadomość do swojego sojuszu...",
+        "noMessages": "Jeszcze nie ma żadnych wiadomości.",
         "name": "Nazwa",
         "noApplications": "Brak zgłoszeń",
         "noModifiers": "Sojusz nie posiada żadnych modyfikatorów",
         "owner": "Właściciel",
+        "overview": "Przegląd",
+        "settings": "Ustawienia",
         "placeholderDescription": "Opis sojuszu",
         "placeholderName": "Nazwa sojuszu",
+        "promote": "promować",
+        "demote": "zdegradować",
+        "transferOwnership": "przeniesienie własności",
+        "deleteMessage": "Usuń wiadomość",
+        "confirmDeleteMessage": "Czy na pewno chcesz usunąć tę wiadomość?",
         "rank": "Pozycja",
         "rankPrefix": "N°",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "Odrzuć",
         "lastActive": "ostatnia aktywność{{time}} temu",
-        "value": "Wartość"
+        "value": "Wartość",
+        "multipleOwners": "Nie można rozwiązać: jest wielu właścicieli.",
+        "allianceSettings": "Ustawienia sojuszu",
+        "dangerZone": "Strefa zagrożenia"
     },
     "popup": {
         "apply": "Zastosuj",
         "archive": "Archiwizuj",
         "demolish": "Zburz",
+        "confirmDemolish": "Czy na pewno chcesz zburzyć ten budynek?",
         "population": "Populacja",
         "production": {
             "rate": "Wskaźnik",
@@ -763,8 +800,7 @@
             "Dołącz do naszej aktywnej społeczności graczy na Discordzie, aby dzielić się swoimi dziełami i uzyskać wskazówki.",
             "Niektóre budynki można umieścić tylko w pobliżu budynku nadrzędnego, np. tartak i drwal.",
             "Nie wszystkie zasoby są łatwo dostępne wszędzie. Czasami handel będzie tańszy niż samodzielna produkcja wszystkich zasobów.",
-            "Recenzja na Steam pomaga nam znaleźć nowych graczy, którzy pomogą nam stworzyć żywy świat.",
-            "Odwiedź stronę wiki pod adresem projectrebearth.com, aby dowiedzieć się wszystkiego o świecie Project Rebearth!"
+            "Recenzja na Steam pomaga nam znaleźć nowych graczy, którzy pomogą nam stworzyć żywy świat."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Nie można zmienić",
         "construction": "Budowa",
         "cost": "Koszt",
+        "editShape": "Edytuj kształt",
         "refund": "Zwrot kosztów",
         "costPerMeter": "(za m)",
         "costPerSquareMeter": "(za m²)",

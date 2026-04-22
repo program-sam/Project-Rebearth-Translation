@@ -87,6 +87,9 @@
             "areaTooSmall": "Det är inte mycket... Gör en större form: {{size}} (min{{limit}})",
             "cooldown": "Vänta ett ögonblick",
             "costs": "Kostnader:",
+            "editCostGrow": "Expansionskostnad",
+            "editCostShrink": "Återbetalning av Reshape",
+            "editNoCostChange": "Ingen kostnadsändring",
             "exclusionPreview": "Uteslutningszon",
             "invalidLocation": "Ogiltig plats",
             "mustBeNear": "Måste vara nära {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Bygg ett rådhus för att låsa upp global ranking, allianser och valmöjligheter.",
             "university": "Bygg ett universitet för att låsa upp expeditioner och forskning.",
             "market": "Bygg en marknad eller hamn för att låsa upp den globala marknaden.",
-            "noBiomeAssets": "Inga byggnader av denna typ finns tillgängliga i denna biom."
+            "noBiomeAssets": "Inga byggnader av denna typ finns tillgängliga i denna biom.",
+            "veganSociety": "Blockerad av Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Tillämpa alla",
             "updated": "Uppdaterad",
             "storage": "Lagring",
+            "expandAll": "Visa allt",
+            "collapseAll": "Dölj allt",
             "throttleHelp": "Denna byggnadstyp begränsas eftersom en nödvändig resurs håller på att ta slut. Produktionen minskas automatiskt för att förhindra att resurserna blir negativa."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Medlemmar",
             "name": "Namn",
             "owner": "Ägare",
+            "moderator": "Moderator",
+            "member": "Medlem",
             "rank": "Rank",
             "reject": "Avvisa",
             "scienceLeague": "Science League",
             "tradeAlliance": "Handelsallians",
-            "value": "Värde"
+            "value": "Värde",
+            "role": "Roll",
+            "town": "Stad",
+            "type": "Typ",
+            "actions": "Åtgärder"
         },
         "createAlliance": "skapa allians",
         "days": "dagar",
         "disbandAlliance": "upplösa allians",
+        "confirmDisband": "Är du säker på att du vill upplösa denna allians? Denna åtgärd kan inte ångras.",
+        "confirmLeave": "Är du säker på att du vill lämna denna allians?",
+        "confirmKick": "Är du säker på att du vill utesluta {{name}} från alliansen?",
+        "confirmTransfer": "Är du säker på att du vill överföra äganderätten till {{name}}? Du kommer att förlora din roll som ägare.",
+        "confirmDemote": "Är du säker på att du vill degradera {{name}}?",
+        "editAlliance": "redigera allians",
+        "editDescription": "Redigera beskrivning",
+        "editName": "Redigera namn",
+        "saveChanges": "Spara ändringar",
         "globalRank": "Global rankning",
         "go": "till",
         "inviteToAlliance": "Bjud in till din allians",
@@ -679,12 +700,24 @@
         "marketSize": "Marknadsstorlek",
         "marketSizeLabel": "Marknadsstorlek: {{size}}",
         "members": "Medlemmar",
+        "messages": "Meddelanden",
+        "messageBoard": "Anslagstavla",
+        "postMessage": "Efter",
+        "messagePlaceholder": "Skriv ett meddelande till din allians...",
+        "noMessages": "Inga meddelanden ännu.",
         "name": "Namn",
         "noApplications": "Det finns inga applikationer.",
         "noModifiers": "Denna allians har inga modifierare.",
         "owner": "Ägare",
+        "overview": "Översikt",
+        "settings": "Inställningar",
         "placeholderDescription": "Alliansbeskrivning",
         "placeholderName": "Alliansnamn",
+        "promote": "marknadsföra",
+        "demote": "degradera",
+        "transferOwnership": "överföra äganderätten",
+        "deleteMessage": "Ta bort meddelande",
+        "confirmDeleteMessage": "Är du säker på att du vill radera det här meddelandet?",
         "rank": "Rank",
         "rankPrefix": "Nej.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "avvisa",
         "lastActive": "senast aktivt för{{time}}",
-        "value": "Värde"
+        "value": "Värde",
+        "multipleOwners": "Kan inte upplösas: det finns flera ägare.",
+        "allianceSettings": "Alliansinställningar",
+        "dangerZone": "Farlig zon"
     },
     "popup": {
         "apply": "Tillämpa",
         "archive": "Arkiv",
         "demolish": "Demolera",
+        "confirmDemolish": "Är du säker på att du vill riva den här byggnaden?",
         "population": "Befolkning",
         "production": {
             "rate": "Betyg",
@@ -763,8 +800,7 @@
             "Gå med i vår livliga spelargemenskap på Discord för att dela dina skapelser och få tips.",
             "Vissa byggnader kan endast placeras nära huvudbyggnaden, till exempel sågen och vedhuggaren.",
             "Alla resurser är inte lika lätta att få tag på överallt. Ibland kan det vara billigare att handla än att producera allt själv.",
-            "En recension på Steam hjälper oss att hitta nya spelare för att bygga en levande värld.",
-            "Besök wikisidan på projectrebearth.com för att lära dig allt om Project Rebearths värld!"
+            "En recension på Steam hjälper oss att hitta nya spelare för att bygga en levande värld."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Kan inte ändras för",
         "construction": "Konstruktion",
         "cost": "Kostnad",
+        "editShape": "Redigera form",
         "refund": "Återbetalning",
         "costPerMeter": "(för m)",
         "costPerSquareMeter": "(per m²)",

@@ -87,6 +87,9 @@
             "areaTooSmall": "Se ei ole paljon... Tee suurempi muoto: {{size}} (minimi {{limit}})",
             "cooldown": "Odota hetki",
             "costs": "Kustannukset:",
+            "editCostGrow": "Laajennuskustannukset",
+            "editCostShrink": "Reshape-palautus",
+            "editNoCostChange": "Ei kustannusmuutosta",
             "exclusionPreview": "Suljettu alue",
             "invalidLocation": "Virheellinen sijainti",
             "mustBeNear": "Täytyy olla lähellä {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Rakenna kaupungintalo avataksesi globaalin rankingin, liittoutumat ja valinnat.",
             "university": "Rakenna yliopisto avataksesi tutkimusmatkat ja tutkimuksen.",
             "market": "Rakenna markkinapaikka tai satama avataksesi globaalin markkinan.",
-            "noBiomeAssets": "Tämän tyyppisiä rakennuksia ei ole saatavilla tässä biomassa."
+            "noBiomeAssets": "Tämän tyyppisiä rakennuksia ei ole saatavilla tässä biomassa.",
+            "veganSociety": "Estetty Vegan Society -järjestön toimesta"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Käytä kaikkia",
             "updated": "Päivitetty",
             "storage": "Tallennus",
+            "expandAll": "Näytä kaikki",
+            "collapseAll": "Piilota kaikki",
             "throttleHelp": "Tämän rakennustyypin tuotantoa rajoitetaan, koska tarvittava resurssi on loppumassa. Tuotantoa vähennetään automaattisesti, jotta resurssit eivät menisi miinukselle."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Jäsenet",
             "name": "Nimi",
             "owner": "Omistaja",
+            "moderator": "Moderaattori",
+            "member": "Jäsen",
             "rank": "Sijoitus",
             "reject": "Hylkää",
             "scienceLeague": "Tiedeliiga",
             "tradeAlliance": "Kauppaliitto",
-            "value": "Arvo"
+            "value": "Arvo",
+            "role": "Rooli",
+            "town": "Kaupunki",
+            "type": "Tyyppi",
+            "actions": "Toiminnot"
         },
         "createAlliance": "luo liittouma",
         "days": "päivät",
         "disbandAlliance": "liittouman purkaminen",
+        "confirmDisband": "Haluatko varmasti purkaa tämän liittouman? Tätä toimintoa ei voi peruuttaa.",
+        "confirmLeave": "Haluatko varmasti poistua tästä liittoumasta?",
+        "confirmKick": "Haluatko varmasti poistaa {{name}} liitosta?",
+        "confirmTransfer": "Haluatko varmasti siirtää omistusoikeuden osoitteeseen {{name}}? Menetät omistajan roolisi.",
+        "confirmDemote": "Haluatko varmasti alentaa {{name}}:n arvoa?",
+        "editAlliance": "muokkaa liittoumaa",
+        "editDescription": "Muokkaa kuvausta",
+        "editName": "Muokkaa nimeä",
+        "saveChanges": "Tallenna muutokset",
         "globalRank": "Globaali sijoitus",
         "go": "to",
         "inviteToAlliance": "Kutsu liittymään liittoumaasi",
@@ -679,12 +700,24 @@
         "marketSize": "Markkinoiden koko",
         "marketSizeLabel": "Markkinoiden koko: {{size}}",
         "members": "Jäsenet",
+        "messages": "Viestit",
+        "messageBoard": "Viestitaulu",
+        "postMessage": "Jälkeen",
+        "messagePlaceholder": "Kirjoita viesti liittolaisillesi...",
+        "noMessages": "Ei viestejä vielä.",
         "name": "Nimi",
         "noApplications": "Sovelluksia ei ole.",
         "noModifiers": "Tällä liittoumalle ei ole modifikaattoreita.",
         "owner": "Omistaja",
+        "overview": "Yleiskatsaus",
+        "settings": "Asetukset",
         "placeholderDescription": "Allianssin kuvaus",
         "placeholderName": "Allianssin nimi",
+        "promote": "mainostaa",
+        "demote": "alentaa",
+        "transferOwnership": "omistusoikeuden siirto",
+        "deleteMessage": "Poista viesti",
+        "confirmDeleteMessage": "Haluatko varmasti poistaa tämän viestin?",
         "rank": "Sijoitus",
         "rankPrefix": "Ei.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "hylätä",
         "lastActive": "viimeksi aktiivinen{{time}}s sitten",
-        "value": "Arvo"
+        "value": "Arvo",
+        "multipleOwners": "Ei voi hajottaa: omistajia on useita.",
+        "allianceSettings": "Allianssin asetukset",
+        "dangerZone": "Vaaravyöhyke"
     },
     "popup": {
         "apply": "Käytä",
         "archive": "Arkisto",
         "demolish": "Tuhoa",
+        "confirmDemolish": "Haluatko varmasti purkaa tämän rakennuksen?",
         "population": "Väestö",
         "production": {
             "rate": "Arvostele",
@@ -763,8 +800,7 @@
             "Liity vilkkaaseen pelaajayhteisöömme Discordissa, jaa luomuksiasi ja hanki vinkkejä.",
             "Jotkut rakennukset, kuten saha ja puunhakkuukone, voidaan sijoittaa vain lähellä emorakennusta.",
             "Kaikkia resursseja ei ole helppo hankkia kaikkialta. Joskus kauppa on halvempaa kuin kaiken tuottaminen itse.",
-            "Steam-arvostelu auttaa meitä löytämään uusia pelaajia elävän maailman rakentamiseen.",
-            "Vieraile wiki-sivustolla osoitteessa projectrebearth.com ja lue kaikki Project Rebearthin maailmasta!"
+            "Steam-arvostelu auttaa meitä löytämään uusia pelaajia elävän maailman rakentamiseen."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Ei voi muuttaa",
         "construction": "Rakentaminen",
         "cost": "Kustannukset",
+        "editShape": "Muokkaa muotoa",
         "refund": "Palautus",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(per m²)",

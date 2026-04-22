@@ -87,6 +87,9 @@
             "areaTooSmall": "Das ist nicht viel... Erstellen Sie eine größere Form: {{size}} (min. {{limit}})",
             "cooldown": "Einen Moment bitte",
             "costs": "Kosten:",
+            "editCostGrow": "Erweiterungskosten",
+            "editCostShrink": "Rückerstattung für „Reshape“",
+            "editNoCostChange": "Keine Kostenänderung",
             "exclusionPreview": "Sperrzone",
             "invalidLocation": "Ungültiger Standort",
             "mustBeNear": "Muss in der Nähe von {{parent}} sein.",
@@ -537,7 +540,8 @@
             "townHall": "Baue ein Rathaus, um globale Ranglisten, Allianzen und Auswahlmöglichkeiten freizuschalten.",
             "university": "Baue eine Universität, um Expeditionen und Forschungen freizuschalten.",
             "market": "Errichte einen Markt oder Hafen, um den globalen Markt freizuschalten.",
-            "noBiomeAssets": "In diesem Biom sind keine Gebäude dieser Art verfügbar."
+            "noBiomeAssets": "In diesem Biom sind keine Gebäude dieser Art verfügbar.",
+            "veganSociety": "Von der Vegan Society blockiert"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Alle anwenden",
             "updated": "Aktualisiert",
             "storage": "Speicher",
+            "expandAll": "Alle anzeigen",
+            "collapseAll": "Alle ausblenden",
             "throttleHelp": "Dieser Gebäudetyp wird gedrosselt, da eine erforderliche Ressource zur Neige geht. Die Produktion wird automatisch reduziert, um zu verhindern, dass die Ressourcen negativ werden."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Mitglieder",
             "name": "Name",
             "owner": "Eigentümer",
+            "moderator": "Moderator",
+            "member": "Mitglied",
             "rank": "Rang",
             "reject": "Ablehnen",
             "scienceLeague": "Wissenschaftsliga",
             "tradeAlliance": "Handelsallianz",
-            "value": "Wert"
+            "value": "Wert",
+            "role": "Rolle",
+            "town": "Stadt",
+            "type": "Typ",
+            "actions": "Aktionen"
         },
         "createAlliance": "Allianz gründen",
         "days": "Tage",
         "disbandAlliance": "Allianz auflösen",
+        "confirmDisband": "Möchtest du diese Allianz wirklich auflösen? Diese Aktion kann nicht rückgängig gemacht werden.",
+        "confirmLeave": "Möchtest du diese Allianz wirklich verlassen?",
+        "confirmKick": "Bist du sicher, dass du „{{name}}“ aus der Allianz ausschließen möchtest?",
+        "confirmTransfer": "Möchten Sie das Eigentumsrecht wirklich an {{name}} übertragen? Sie verlieren dabei Ihre Rolle als Eigentümer.",
+        "confirmDemote": "Möchten Sie „{{name}}“ wirklich herabstufen?",
+        "editAlliance": "Allianz bearbeiten",
+        "editDescription": "Beschreibung bearbeiten",
+        "editName": "Name bearbeiten",
+        "saveChanges": "Änderungen speichern",
         "globalRank": "Globale Rangliste",
         "go": "zu",
         "inviteToAlliance": "Lade ihn in deine Allianz ein.",
@@ -679,12 +700,24 @@
         "marketSize": "Marktgröße",
         "marketSizeLabel": "Marktgröße: {{size}}",
         "members": "Mitglieder",
+        "messages": "Meldungen",
+        "messageBoard": "Mitteilungsforum",
+        "postMessage": "Nach",
+        "messagePlaceholder": "Schreibe eine Nachricht an deine Allianz...",
+        "noMessages": "Noch keine Nachrichten.",
         "name": "Name",
         "noApplications": "Es gibt keine Anwendungen.",
         "noModifiers": "Diese Allianz hat keine Modifikatoren.",
         "owner": "Eigentümer",
+        "overview": "Übersicht",
+        "settings": "Einstellungen",
         "placeholderDescription": "Allianz Beschreibung",
         "placeholderName": "Name der Allianz",
+        "promote": "bewerben",
+        "demote": "Herabstufen",
+        "transferOwnership": "Eigentumsübertragung",
+        "deleteMessage": "Nachricht löschen",
+        "confirmDeleteMessage": "Möchten Sie diese Nachricht wirklich löschen?",
         "rank": "Rang",
         "rankPrefix": "Nr.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "Ablehnen",
         "lastActive": "Zuletzt aktiv vor {{time}}",
-        "value": "Wert"
+        "value": "Wert",
+        "multipleOwners": "Kann nicht aufgelöst werden: Es gibt mehrere Eigentümer.",
+        "allianceSettings": "Allianz-Einstellungen",
+        "dangerZone": "Gefahrenzone"
     },
     "popup": {
         "apply": "Anwenden",
         "archive": "Archiv",
         "demolish": "Zerstören",
+        "confirmDemolish": "Möchtest du dieses Gebäude wirklich abreißen?",
         "population": "Bevölkerung",
         "production": {
             "rate": "Bewertung",
@@ -763,8 +800,7 @@
             "Treten Sie unserer lebhaften Spielergemeinschaft auf Discord bei, um Ihre Kreationen zu teilen und Tipps zu erhalten.",
             "Einige Gebäude können nur in der Nähe des übergeordneten Gebäudes platziert werden, wie beispielsweise die Säge und der Holzfäller.",
             "Nicht alle Ressourcen sind überall leicht zu bekommen. Manchmal ist es günstiger, zu handeln, als alles selbst zu produzieren.",
-            "Eine Rezension auf Steam hilft uns dabei, neue Spieler zu finden, um eine lebendige Welt aufzubauen.",
-            "Besuchen Sie das Wiki unter projectrebearth.com, um alles über die Welt von Project Rebearth zu erfahren!"
+            "Eine Rezension auf Steam hilft uns dabei, neue Spieler zu finden, um eine lebendige Welt aufzubauen."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Kann nicht geändert werden für",
         "construction": "Bauwesen",
         "cost": "Kosten",
+        "editShape": "Form bearbeiten",
         "refund": "Rückerstattung",
         "costPerMeter": "(für m)",
         "costPerSquareMeter": "(pro m²)",

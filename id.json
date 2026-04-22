@@ -87,6 +87,9 @@
             "areaTooSmall": "Itu tidak banyak... Buat bentuk yang lebih besar: {{size}} (min {{limit}})",
             "cooldown": "Tunggu sebentar",
             "costs": "Biaya:",
+            "editCostGrow": "Biaya perluasan",
+            "editCostShrink": "Pengembalian dana Reshape",
+            "editNoCostChange": "Tidak ada perubahan biaya",
             "exclusionPreview": "Zona larangan",
             "invalidLocation": "Lokasi tidak valid",
             "mustBeNear": "Harus berada di dekat {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Bangun Balai Kota untuk membuka peringkat global, aliansi, dan pilihan.",
             "university": "Bangun Universitas untuk membuka ekspedisi dan penelitian.",
             "market": "Bangun Pasar atau Pelabuhan untuk membuka pasar global.",
-            "noBiomeAssets": "Tidak ada bangunan jenis ini yang tersedia di bioma ini."
+            "noBiomeAssets": "Tidak ada bangunan jenis ini yang tersedia di bioma ini.",
+            "veganSociety": "Diblokir oleh Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Terapkan Semua",
             "updated": "Diperbarui",
             "storage": "Penyimpanan",
+            "expandAll": "Perluas Semua",
+            "collapseAll": "Sembunyikan Semua",
             "throttleHelp": "Jenis bangunan ini dibatasi karena sumber daya yang diperlukan sedang menipis. Produksi secara otomatis dikurangi untuk mencegah sumber daya menjadi negatif."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Anggota",
             "name": "Nama",
             "owner": "Pemilik",
+            "moderator": "Moderator",
+            "member": "Anggota",
             "rank": "Peringkat",
             "reject": "Tolak",
             "scienceLeague": "Liga Sains",
             "tradeAlliance": "Aliansi Perdagangan",
-            "value": "Nilai"
+            "value": "Nilai",
+            "role": "Peran",
+            "town": "Kota",
+            "type": "Jenis",
+            "actions": "Tindakan"
         },
         "createAlliance": "Buat aliansi",
         "days": "hari",
         "disbandAlliance": "Bubarkan aliansi",
+        "confirmDisband": "Apakah Anda yakin ingin membubarkan aliansi ini? Tindakan ini tidak dapat dibatalkan.",
+        "confirmLeave": "Apakah Anda yakin ingin keluar dari aliansi ini?",
+        "confirmKick": "Apakah Anda yakin ingin mengeluarkan {{name}} dari aliansi?",
+        "confirmTransfer": "Apakah Anda yakin ingin mengalihkan kepemilikan ke {{name}}? Anda akan kehilangan peran sebagai pemilik.",
+        "confirmDemote": "Apakah Anda yakin ingin menurunkan peringkat \"{{name}}\"?",
+        "editAlliance": "edit aliansi",
+        "editDescription": "Edit deskripsi",
+        "editName": "Edit nama",
+        "saveChanges": "Simpan Perubahan",
         "globalRank": "Peringkat Global",
         "go": "untuk",
         "inviteToAlliance": "Undang ke aliansi Anda.",
@@ -679,12 +700,24 @@
         "marketSize": "Ukuran Pasar",
         "marketSizeLabel": "Ukuran Pasar: {{size}}",
         "members": "Anggota",
+        "messages": "Pesan",
+        "messageBoard": "Papan Pesan",
+        "postMessage": "Setelah",
+        "messagePlaceholder": "Tulis pesan untuk aliansimu...",
+        "noMessages": "Belum ada pesan.",
         "name": "Nama",
         "noApplications": "Tidak ada aplikasi.",
         "noModifiers": "Aliansi ini tidak memiliki modifikasi apa pun.",
         "owner": "Pemilik",
+        "overview": "Gambaran Umum",
+        "settings": "Pengaturan",
         "placeholderDescription": "Deskripsi Aliansi",
         "placeholderName": "Nama Aliansi",
+        "promote": "promosikan",
+        "demote": "menurunkan pangkat",
+        "transferOwnership": "mengalihkan kepemilikan",
+        "deleteMessage": "Hapus pesan",
+        "confirmDeleteMessage": "Apakah Anda yakin ingin menghapus pesan ini?",
         "rank": "Peringkat",
         "rankPrefix": "Tidak.",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "Tolak",
         "lastActive": "Terakhir aktif{{time}}",
-        "value": "Nilai"
+        "value": "Nilai",
+        "multipleOwners": "Tidak dapat dibubarkan: terdapat beberapa pemilik.",
+        "allianceSettings": "Pengaturan Aliansi",
+        "dangerZone": "Zona Bahaya"
     },
     "popup": {
         "apply": "Terapkan",
         "archive": "Arsip",
         "demolish": "Hancurkan",
+        "confirmDemolish": "Apakah Anda yakin ingin menghancurkan bangunan ini?",
         "population": "Populasi",
         "production": {
             "rate": "Peringkat",
@@ -763,8 +800,7 @@
             "Bergabunglah dengan komunitas pemain kami yang ramai di Discord untuk berbagi kreasi Anda dan mendapatkan tips.",
             "Beberapa bangunan hanya dapat ditempatkan dekat dengan bangunan induknya, seperti gergaji dan penebang kayu.",
             "Tidak semua sumber daya mudah didapatkan di mana-mana. Terkadang berdagang akan lebih murah daripada memproduksi semuanya sendiri.",
-            "Ulasan di Steam membantu kami menemukan pemain baru untuk membangun dunia yang hidup.",
-            "Kunjungi wiki di projectrebearth.com untuk mengetahui segala hal tentang dunia Project Rebearth!"
+            "Ulasan di Steam membantu kami menemukan pemain baru untuk membangun dunia yang hidup."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Tidak dapat diubah untuk",
         "construction": "Konstruksi",
         "cost": "Biaya",
+        "editShape": "Edit bentuk",
         "refund": "Pengembalian dana",
         "costPerMeter": "(untuk m)",
         "costPerSquareMeter": "(per m²)",

@@ -87,6 +87,9 @@
             "areaTooSmall": "Non è molto... Crea una forma più grande: {{size}} (min {{limit}})",
             "cooldown": "Aspetta un attimo",
             "costs": "Costi:",
+            "editCostGrow": "Costo dell'espansione",
+            "editCostShrink": "Rimborso per Reshape",
+            "editNoCostChange": "Nessuna modifica dei costi",
             "exclusionPreview": "Zona di esclusione",
             "invalidLocation": "Posizione non valida",
             "mustBeNear": "Deve essere vicino a {{parent}}",
@@ -537,7 +540,8 @@
             "townHall": "Costruisci un municipio per sbloccare la classifica globale, le alleanze e le scelte.",
             "university": "Costruisci un'università per sbloccare spedizioni e ricerche.",
             "market": "Costruisci un mercato o un porto per sbloccare il mercato globale.",
-            "noBiomeAssets": "Nessun edificio di questo tipo disponibile in questo bioma."
+            "noBiomeAssets": "Nessun edificio di questo tipo disponibile in questo bioma.",
+            "veganSociety": "Bloccato dalla Vegan Society"
         }
     },
     "modals": {
@@ -616,6 +620,8 @@
             "applyAll": "Applica tutto",
             "updated": "Aggiornato",
             "storage": "Magazzino",
+            "expandAll": "Espandi tutto",
+            "collapseAll": "Chiudi tutto",
             "throttleHelp": "Questo tipo di edificio è limitato perché una risorsa necessaria sta per esaurirsi. La produzione viene automaticamente ridotta per evitare che le risorse diventino negative."
         },
         "save": {
@@ -661,15 +667,30 @@
             "members": "Membri",
             "name": "Nome",
             "owner": "Proprietario",
+            "moderator": "Moderatore",
+            "member": "Membro",
             "rank": "Rank",
             "reject": "Rifiuta",
             "scienceLeague": "Lega scientifica",
             "tradeAlliance": "Alleanza commerciale",
-            "value": "valore"
+            "value": "valore",
+            "role": "Ruolo",
+            "town": "Città e Comunità",
+            "type": "Tipo",
+            "actions": "Azioni"
         },
         "createAlliance": "crea alleanza",
         "days": "giorni",
         "disbandAlliance": "sciogli alleanza",
+        "confirmDisband": "Sei sicuro di voler sciogliere questa alleanza? Questa azione non può essere annullata.",
+        "confirmLeave": "Sei sicuro di voler lasciare questa alleanza?",
+        "confirmKick": "Sei sicuro di voler espellere {{name}} dall'alleanza?",
+        "confirmTransfer": "Sei sicuro di voler trasferire la proprietà a {{name}}? Perderai il tuo ruolo di proprietario.",
+        "confirmDemote": "Sei sicuro di voler retrocedere \"{{name}}\"?",
+        "editAlliance": "modifica alleanza",
+        "editDescription": "Modifica descrizione",
+        "editName": "Modifica nome",
+        "saveChanges": "Salva modifiche",
         "globalRank": "Rank globale",
         "go": "vai",
         "inviteToAlliance": "invita nell'alleanza",
@@ -679,12 +700,24 @@
         "marketSize": "Grandezza del mercato",
         "marketSizeLabel": "Grandezza del mercato: {{size}}",
         "members": "Membri",
+        "messages": "Messaggi",
+        "messageBoard": "Bacheca",
+        "postMessage": "Dopo",
+        "messagePlaceholder": "Scrivi un messaggio alla tua alleanza...",
+        "noMessages": "Nessun messaggio per ora.",
         "name": "Nome",
         "noApplications": "Non ci sono applicazioni",
         "noModifiers": "Quest'alleanza non ha modificatori",
         "owner": "Proprietario",
+        "overview": "Panoramica",
+        "settings": "Opzioni",
         "placeholderDescription": "Descrizione alleanza",
         "placeholderName": "Nome alleanza",
+        "promote": "promuovere",
+        "demote": "retrocedere",
+        "transferOwnership": "trasferire la proprietà",
+        "deleteMessage": "Elimina messaggio",
+        "confirmDeleteMessage": "Sei sicuro di voler eliminare questo messaggio?",
         "rank": "Rank",
         "rankPrefix": "N°",
         "ranking": {
@@ -696,12 +729,16 @@
         },
         "reject": "rifiuta",
         "lastActive": "Ultima attività{{time}}",
-        "value": "valore"
+        "value": "valore",
+        "multipleOwners": "Impossibile sciogliere: ci sono più proprietari.",
+        "allianceSettings": "Impostazioni alleanza",
+        "dangerZone": "Zona di pericolo"
     },
     "popup": {
         "apply": "Applica",
         "archive": "Archivia",
         "demolish": "Demolisci",
+        "confirmDemolish": "Sei sicuro di voler demolire questo edificio?",
         "population": "Popolazione",
         "production": {
             "rate": "Rateo",
@@ -763,8 +800,7 @@
             "Unisciti alla nostra vivace community di giocatori su Discord per condividere le tue creazioni e ricevere consigli.",
             "Alcuni edifici possono essere posizionati solo vicino all'edificio principale, come la segheria e il boscaiolo.",
             "Non tutte le risorse sono facili da ottenere ovunque. A volte commerciare sarà più economico che produrre tutto da soli.",
-            "Una recensione su Steam ci aiuta a trovare nuovi giocatori con cui costruire un mondo vivente.",
-            "Visita il wiki all'indirizzo projectrebearth.com per scoprire tutto sul mondo di Project Rebearth!"
+            "Una recensione su Steam ci aiuta a trovare nuovi giocatori con cui costruire un mondo vivente."
         ]
     },
     "help": {
@@ -779,6 +815,7 @@
         "cannotChange": "Non si può cambiare per",
         "construction": "Costruzione",
         "cost": "Costo",
+        "editShape": "Modifica forma",
         "refund": "Rimborso",
         "costPerMeter": "(per m)",
         "costPerSquareMeter": "(per m²)",
