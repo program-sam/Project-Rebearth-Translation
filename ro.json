@@ -98,6 +98,7 @@
             "notEnoughPop": "Populație insuficientă",
             "notEnoughResources": "Resurse insuficiente",
             "territoryPreview": "Aria teritorială",
+            "tooClose": "Prea aproape de o altă clădire de același tip",
             "tooHigh": "Măriți imaginea"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Faceți dublu clic pentru a plasa noduri.",
             "fineRotate": "Rotație fină",
+            "mirror": "Oglindire orizontală",
             "multiPlace": "Continuați să plasați",
             "rotate": "Rotește",
             "restriction": "Zonă neconstruibilă"
@@ -499,6 +501,7 @@
             "serverOffline": "Nu se poate conecta la server. Este posibil ca serverul să fie suprasolicitat sau să fie temporar indisponibil din cauza lucrărilor de întreținere. Verificați Discord pentru a afla starea actuală.",
             "settings": "Setări",
             "blueprints": "Planuri",
+            "demolish": "Demolați",
             "subtitle": "Aceasta este o versiune preliminară a Project Rebearth. Vă rugăm să ne contactați dacă întâmpinați probleme în timpul jocului.",
             "suspended": "Contul dvs. a fost suspendat. Motiv: {{reason}}",
             "demoSubtitle": "Aceasta este versiunea demo a Project Rebearth. Este activată doar funcția de construire a orașului în modul sandbox. Pentru a juca pe globul multiplayer cu gestionarea resurselor, descărcați versiunea completă.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Planuri de construcție",
-            "description": "Creează planuri de construcție reutilizabile pentru a plasa rapid grupuri de clădiri.",
+            "description": "Creează planuri reutilizabile pe care să le amplasezi în orașul tău sau să le împărtășești cu alții.",
             "createNew": "Creați un nou plan",
             "noBlueprints": "Nu există încă schițe. Creează-ți prima!",
             "edit": "Editare",
@@ -527,7 +530,7 @@
             "update": "Actualizare",
             "publishToWorkshop": "Publică pe Steam Workshop",
             "updateWorkshop": "Actualizare articol Workshop",
-            "duplicate": "Creați o copie",
+            "duplicate": "Copiere",
             "copyLabel": "(Copiere)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Reduceți tot",
             "throttleHelp": "Acest tip de clădire este restricționat deoarece resursele necesare sunt pe terminate. Producția este redusă automat pentru a preveni epuizarea resurselor."
         },
+        "storage": {
+            "title": "Alocarea spațiului de stocare",
+            "noBuildings": "Nu ai încă clădiri de depozitare cu mai multe sloturi pentru resurse.",
+            "mixed": "Mixt",
+            "mixedHelp": "Clădirile de acest tip au în prezent alocări diferite. Aplicarea va seta toate valorile la cele afișate.",
+            "perBuildingVolume": "Volumul total de stocare per clădire",
+            "building": "construire",
+            "evenSplit": "Împărțire egală",
+            "reset": "Resetare",
+            "setFull": "Alocați 100% acestei resurse"
+        },
         "save": {
             "download": "Descărcați fișierul",
             "message": "Jocul tău a fost salvat local.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "district fără nume",
         "upgrade": "Actualizați la {{building}}"
     },
+    "demolish": {
+        "title": "Instrument de demolare",
+        "hint": "Trage pe hartă pentru a marca clădirile. Clădirile marcate apar în această listă și pot fi demolate împreună.",
+        "drawingPaused": "Desenarea este întreruptă. Faceți clic dreapta sau utilizați butonul de mai jos pentru a relua marcarea.",
+        "resumeDrawing": "Marcarea CV-ului",
+        "empty": "Nu sunt încă marcate clădiri. Trageți peste clădirile de pe hartă pentru a le adăuga la listă.",
+        "clearAll": "Șterge selecția",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Demolare...",
+        "confirmAll": "Ești sigur că vrei să demolezi clădirile d{{count}}? Această acțiune nu poate fi anulată.",
+        "removeFromList": "Eliminare din listă",
+        "removeGroup": "Elimină tot din acest grup",
+        "expandGroup": "Extindeți",
+        "collapseGroup": "Reduce",
+        "expandAll": "Extindeți tot",
+        "collapseAll": "Reduceți tot",
+        "selectedCount": "{{count}} selectat",
+        "selectedCountCapped": "{{count}} / {{cap}} selectat",
+        "someExcluded": "Unele clădiri marcate nu pot fi demolate și vor fi omise.",
+        "controlsTitle": "Instrument de demolare",
+        "controlsDrag": "Trageți pentru a marca clădirile",
+        "controlsScroll": "Rotiți rotița de derulare pentru a redimensiona pensula",
+        "controlsRight": "Faceți clic dreapta pentru a întrerupe/relua desenarea",
+        "refundTitle": "Rambursare",
+        "changesTitle": "Modificări ale resurselor",
+        "reason": {
+            "protected": "Această clădire nu poate fi demolată.",
+            "population": "Populația este insuficientă pentru a demola această clădire în condiții de siguranță.",
+            "other": "Această clădire nu poate fi demolată în acest moment."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "General",
-            "performance": "Performanță"
+            "performance": "Performanță",
+            "controls": "Comenzi"
+        },
+        "controls": {
+            "help": "Selectați „Rebind”, apoi apăsați o tastă pentru a o atribui. Comenzile rapide de la tastatură utilizează pozițiile fizice ale tastelor.",
+            "rebind": "Rebind",
+            "reset": "Resetare",
+            "resetAll": "Resetează tot",
+            "cancel": "Anulare",
+            "unbind": "Șterge",
+            "capturing": "Apăsați o tastă…",
+            "conflict": "Această cheie este utilizată și de o altă acțiune din același grup."
         },
         "animations": "Animații",
         "accessibleColors": "Contrast ridicat",
@@ -839,7 +895,8 @@
             "Alătură-te comunității noastre dinamice de jucători pe Discord pentru a-ți împărtăși creațiile și a primi sfaturi.",
             "Unele clădiri pot fi amplasate doar în apropierea clădirii-mamă, cum ar fi ferăstrăul și tăietorul de lemne.",
             "Nu toate resursele sunt ușor de obținut peste tot. Uneori, comerțul va fi mai ieftin decât producerea tuturor resurselor pe cont propriu.",
-            "O recenzie pe Steam ne ajută să găsim noi jucători pentru a construi o lume vie."
+            "O recenzie pe Steam ne ajută să găsim noi jucători pentru a construi o lume vie.",
+            "Găsește capre, oi și vaci organizând expediții. Aceste animale îți oferă resurse unice."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Plasați comenzile! Anunțați-i pe ceilalți jucători ce doriți să cumpărați sau să vindeți și la ce preț. Acesta este prețul pe care îl veți primi sau pe care îl veți plăti. Rețineți că ceilalți vor plăti transportul. Așadar, cumpărarea unui produs la un preț mic s-ar putea să nu fie rentabilă dacă costurile de transport ale celorlalți jucători sunt prea mari.",
         "popup": "Această fereastră pop-up îți arată toate informațiile despre această clădire. Aici poți modifica parametrii cheie ai clădirii sau chiar îi poți muta. Această opțiune va fi disponibilă numai când te afli în modul de construire.",
         "production": "Acest panou vă oferă o imagine de ansamblu asupra tuturor clădirilor de producție. Puteți regla rata de producție a fiecărei clădiri în parte. Clădirile sunt grupate în funcție de tip, iar producția totală de resurse a fiecărui grup poate fi vizualizată dintr-o singură privire.",
-        "storage": "Aici puteți regla capacitatea de stocare a acestei clădiri. Ea are o anumită capacitate și poate stoca o anumită cantitate de mărfuri. Puteți modifica raportul, pentru a o optimiza în funcție de nevoile dvs."
+        "storage": "Aici puteți regla capacitatea de stocare a acestei clădiri. Ea are o anumită capacitate și poate stoca o anumită cantitate de mărfuri. Puteți modifica raportul, pentru a o optimiza în funcție de nevoile dvs.",
+        "storageAllocation": "Acest panou îți permite să aloci în bloc capacitatea de stocare pentru toate clădirile de același tip. Mută glisoarele pentru a seta ce proporție din volumul total al fiecărei clădiri este rezervată pentru fiecare resursă. Suma nu poate depăși 100%; orice surplus reprezintă capacitate irosită. Aplicarea înlocuiește alocarea fiecărei clădiri de acel tip cu cea aleasă."
     },
     "tooltip": {
         "cannotChange": "Nu poate fi modificat pentru",
@@ -880,9 +938,9 @@
         "name": "Nume",
         "namePlaceholder": "Numele planului",
         "description": "Descriere",
-        "descriptionPlaceholder": "Ce construiește acest plan?",
+        "descriptionPlaceholder": "Ce este acest design?",
         "category": "Categorie",
-        "categoryPlaceholder": "de ex. Industrial, Rezidențial",
+        "categoryPlaceholder": "de ex. Industrial, Rezidențial...",
         "biome": "Configurarea biomului",
         "allBiomes": "Același aspect pentru toate biotopurile",
         "copyConfig": "Copiere configurație biotop",
@@ -903,7 +961,8 @@
         "rates": "Tarife",
         "noRates": "Amplasați clădiri pentru a vedea tarifele",
         "deleteObject": "Eliminare",
-        "outOfBounds": "În afara zonei planului"
+        "outOfBounds": "În afara zonei planului",
+        "duplicateLocation": "Locație duplicată"
     },
     "warnings": {
         "notEnoughPop": "Nu sunt suficienți voluntari"

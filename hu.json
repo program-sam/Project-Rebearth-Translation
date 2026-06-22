@@ -98,6 +98,7 @@
             "notEnoughPop": "Nincs elég népesség",
             "notEnoughResources": "Nincs elég erőforrás",
             "territoryPreview": "Területi hatály",
+            "tooClose": "Túl közel van egy másik, azonos típusú épülethez",
             "tooHigh": "Nagyítás"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Kattintson duplán a csomópontok elhelyezéséhez.",
             "fineRotate": "Finom forgatás",
+            "mirror": "Vízszintesen tükrözés",
             "multiPlace": "Továbbra is helyezd el",
             "rotate": "Forgatás",
             "restriction": "Nem beépíthető terület"
@@ -499,6 +501,7 @@
             "serverOffline": "Nem lehet elérni a szervert. Lehet, hogy a szerver túlterhelt, vagy ideiglenesen karbantartás miatt nem elérhető. A legfrissebb állapotot a Discordon ellenőrizheti.",
             "settings": "Beállítások",
             "blueprints": "Tervrajzok",
+            "demolish": "Bontás",
             "subtitle": "Ez a Project Rebearth korai verziója. Kérjük, vegye fel velünk a kapcsolatot, ha játék közben bármilyen problémát tapasztal.",
             "suspended": "Fiókját felfüggesztettük. Ok: {{reason}}",
             "demoSubtitle": "Ez a Project Rebearth demója. Csak a sandbox városépítő funkció engedélyezett. Ha többjátékos globuson szeretnél játszani erőforrás-kezeléssel, töltsd le a teljes verziót.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Építési tervek",
-            "description": "Készíts újrafelhasználható építési tervrajzokat az épületcsoportok gyors elhelyezéséhez.",
+            "description": "Készíts újrafelhasználható tervrajzokat, amelyeket elhelyezhetsz a városodban, vagy megoszthatsz másokkal.",
             "createNew": "Új terv létrehozása",
             "noBlueprints": "Még nincsenek tervrajzok. Készítsd el az elsőt!",
             "edit": "Szerkesztés",
@@ -527,7 +530,7 @@
             "update": "Frissítés",
             "publishToWorkshop": "Közzététel a Steam Workshopon",
             "updateWorkshop": "Workshop-elem frissítése",
-            "duplicate": "Készítsen másolatot",
+            "duplicate": "Másolás",
             "copyLabel": "(Másolás)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Összecsukás",
             "throttleHelp": "Ez az épület típus korlátozva van, mert a szükséges erőforrások fogynak. A termelés automatikusan csökken, hogy az erőforrások ne váljanak negatívvá."
         },
+        "storage": {
+            "title": "Tárolóhely-allokáció",
+            "noBuildings": "Még nincs olyan raktárépületed, amely több erőforrás-helyet tartalmazna.",
+            "mixed": "Vegyes",
+            "mixedHelp": "Az ilyen típusú épületek jelenleg eltérő értékekkel rendelkeznek. A beállítás alkalmazásával mindegyikük a megjelenített értékekre lesz állítva.",
+            "perBuildingVolume": "Teljes tárolókapacitás épületenként",
+            "building": "épület",
+            "evenSplit": "Egyenlő felosztás",
+            "reset": "Visszaállítás",
+            "setFull": "100%-ot rendeljen ehhez az erőforráshoz"
+        },
         "save": {
             "download": "Fájl letöltése",
             "message": "A játékod helyileg mentésre került.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "névtelen kerület",
         "upgrade": "Frissítsen az {{building}} verzióra"
     },
+    "demolish": {
+        "title": "Romboló eszköz",
+        "hint": "Húzza az egérrel a térképen az épületek kijelöléséhez. A kijelölt épületek megjelennek ebben a listában, és együtt lebonthatók.",
+        "drawingPaused": "A rajzolás szünetel. Kattintson a jobb gombbal, vagy használja az alábbi gombot a jelölés folytatásához.",
+        "resumeDrawing": "Jelölés folytatása",
+        "empty": "Még nincs megjelölve épület. Húzza az egérmutatót az épületek felett a térképen, hogy felvegye őket a listába.",
+        "clearAll": "Kijelölés törlése",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Bontás...",
+        "confirmAll": "Biztosan le akarod bontani az {{count}} épületeket? Ezt a műveletet nem lehet visszavonni.",
+        "removeFromList": "Törlés a listából",
+        "removeGroup": "E csoport összes elemének eltávolítása",
+        "expandGroup": "Bővítés",
+        "collapseGroup": "Összecsukás",
+        "expandAll": "Összes kibontása",
+        "collapseAll": "Összecsukás",
+        "selectedCount": "{{count}} kiválasztva",
+        "selectedCountCapped": "{{count}} / {{cap}} kiválasztva",
+        "someExcluded": "Egyes megjelölt épületeket nem lehet lebontani, ezért azok kihagyásra kerülnek.",
+        "controlsTitle": "Romboló eszköz",
+        "controlsDrag": "Húzza az egérrel az épületek kijelöléséhez",
+        "controlsScroll": "Görgessen a görgővel az ecset méretének módosításához",
+        "controlsRight": "Kattintson a jobb gombbal a rajzolás szüneteltetéséhez/folytatásához",
+        "refundTitle": "Visszatérítés",
+        "changesTitle": "Erőforrás-változások",
+        "reason": {
+            "protected": "Ez az épület nem bontatható le.",
+            "population": "Nincs elegendő lakosság ahhoz, hogy biztonságosan lebontsák ezt az épületet.",
+            "other": "Ez az épület jelenleg nem bontatható le."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Általános",
-            "performance": "Teljesítmény"
+            "performance": "Teljesítmény",
+            "controls": "Vezérlők"
+        },
+        "controls": {
+            "help": "Válassza a Rebind (Újrakötés) lehetőséget, majd nyomjon meg egy gombot a hozzárendeléshez. A billentyűparancsok a fizikai gombok helyét használják.",
+            "rebind": "Újrakötés",
+            "reset": "Visszaállítás",
+            "resetAll": "Minden visszaállítása",
+            "cancel": "Mégse",
+            "unbind": "Törlés",
+            "capturing": "Nyomjon meg egy gombot…",
+            "conflict": "Ezt a gombot egy másik művelet is használja ugyanabban a csoportban."
         },
         "animations": "Animációk",
         "accessibleColors": "Erős kontraszt",
@@ -839,7 +895,8 @@
             "Csatlakozz a Discordon található élénk játékos közösségünkhöz, hogy megoszthasd alkotásaidat és tippeket kaphass.",
             "Egyes épületek, például a fűrész és a favágó, csak a szülőépület közelében helyezhetők el.",
             "Nem minden erőforrás könnyen beszerezhető mindenhol. Néha olcsóbb kereskedni, mint mindent magadnak előállítani.",
-            "A Steam-en írt vélemények segítenek nekünk új játékosokat találni, akikkel együtt élénk világot építhetünk."
+            "A Steam-en írt vélemények segítenek nekünk új játékosokat találni, akikkel együtt élénk világot építhetünk.",
+            "Indíts expedíciókat, és találd meg a kecskéket, juhokat és teheneket. Ezek az állatok egyedi erőforrásokat adnak neked."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Adja le megrendeléseit! Tájékoztassa a többi játékost, hogy mit szeretne vásárolni vagy eladni, és milyen áron. Ez az, amit kapni fog, vagy fizetni fog. Ne feledje, hogy a többiek fizetnek a szállításért. Tehát lehet, hogy nem érdemes alacsony áron vásárolni, ha a többi játékos szállítási költségei túl magasak.",
         "popup": "Ez a felugró ablak az épületre vonatkozó összes információt megjeleníti. Itt megváltoztathatja az épület legfontosabb paramétereit, vagy akár áthelyezheti őket. Ez csak építési módban érhető el.",
         "production": "Ez a panel áttekintést nyújt az összes termelőépületről. Az egyes épületek termelési sebességét külön-külön állíthatja be. Az épületek típus szerint vannak csoportosítva, és egy pillantással láthatja az egyes csoportok teljes erőforrás-termelését.",
-        "storage": "Itt beállíthatod, hogy ez az épület mennyi raktárkapacitással rendelkezzen. Az épületnek van egy bizonyos kapacitása, és egy bizonyos mennyiségű árut tud tárolni. Az arányt megváltoztathatod, hogy az igényeidnek megfelelően optimalizáld."
+        "storage": "Itt beállíthatod, hogy ez az épület mennyi raktárkapacitással rendelkezzen. Az épületnek van egy bizonyos kapacitása, és egy bizonyos mennyiségű árut tud tárolni. Az arányt megváltoztathatod, hogy az igényeidnek megfelelően optimalizáld.",
+        "storageAllocation": "Ez a panel lehetővé teszi a tárolókapacitás tömeges elosztását az azonos típusú épületek között. A csúszkák mozgatásával állíthatja be, hogy az egyes épületek teljes térfogatának mekkora hányadát tartalékolja az egyes erőforrások számára. Az összeg nem haladhatja meg a 100%-ot; a fennmaradó rés a kihasználatlan kapacitás. Az alkalmazás minden ilyen típusú épületet felülír a kiválasztott elosztással."
     },
     "tooltip": {
         "cannotChange": "Nem módosítható",
@@ -880,9 +938,9 @@
         "name": "Név",
         "namePlaceholder": "Tervrajz neve",
         "description": "Leírás",
-        "descriptionPlaceholder": "Mit épít ez a terv?",
+        "descriptionPlaceholder": "Mi ez a terv?",
         "category": "Kategória",
-        "categoryPlaceholder": "pl. ipari, lakóépületek",
+        "categoryPlaceholder": "pl. Ipari, Lakossági...",
         "biome": "Biom beállítások",
         "allBiomes": "Ugyanaz az elrendezés minden biomában",
         "copyConfig": "Biom konfiguráció másolása",
@@ -903,7 +961,8 @@
         "rates": "Árak",
         "noRates": "Helyezzen el épületeket az árak megtekintéséhez",
         "deleteObject": "Eltávolítás",
-        "outOfBounds": "A tervrajz területén kívül"
+        "outOfBounds": "A tervrajz területén kívül",
+        "duplicateLocation": "Duplikált hely"
     },
     "warnings": {
         "notEnoughPop": "Nincs elég önkéntes"

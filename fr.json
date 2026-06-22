@@ -98,6 +98,7 @@
             "notEnoughPop": "Population insuffisante",
             "notEnoughResources": "Ressources insuffisantes",
             "territoryPreview": "Étendue du territoire",
+            "tooClose": "Trop proche d'un autre bâtiment du même type",
             "tooHigh": "Zoom avant"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Double-cliquez pour placer des nœuds.",
             "fineRotate": "Rotation fine",
+            "mirror": "Miroir horizontal",
             "multiPlace": "Continuez à placer",
             "rotate": "Rotation",
             "restriction": "Zone non constructible"
@@ -499,6 +501,7 @@
             "serverOffline": "Impossible d'atteindre le serveur. Le serveur est peut-être surchargé ou temporairement indisponible pour cause de maintenance. Consultez Discord pour connaître son état actuel.",
             "settings": "Paramètres",
             "blueprints": "Plans",
+            "demolish": "Démolir",
             "subtitle": "Il s'agit d'une version préliminaire de Project Rebearth. N'hésitez pas à nous contacter si vous rencontrez des problèmes pendant le jeu.",
             "suspended": "Votre compte a été suspendu. Motif : {{reason}}",
             "demoSubtitle": "Ceci est la démo de Project Rebearth. Seul le mode bac à sable de construction de ville est activé. Pour jouer en mode multijoueur avec gestion des ressources, procurez-vous la version complète.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Plans de construction",
-            "description": "Créez des plans de construction réutilisables pour placer rapidement des groupes de bâtiments.",
+            "description": "Créez des plans réutilisables à placer dans votre ville ou à partager avec d'autres.",
             "createNew": "Créer un nouveau plan",
             "noBlueprints": "Il n'y a pas encore de schémas. Créez le premier !",
             "edit": "Modifier",
@@ -527,7 +530,7 @@
             "update": "Mise à jour",
             "publishToWorkshop": "Publier sur Steam Workshop",
             "updateWorkshop": "Mettre à jour un élément de l'Atelier",
-            "duplicate": "Faire une copie",
+            "duplicate": "Copier",
             "copyLabel": "(Copier)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Tout réduire",
             "throttleHelp": "Ce type de bâtiment est ralenti car une ressource nécessaire vient à manquer. La production est automatiquement réduite afin d'éviter que les ressources ne deviennent négatives."
         },
+        "storage": {
+            "title": "Allocation de mémoire",
+            "noBuildings": "Vous ne disposez pas encore de bâtiments de stockage comportant plusieurs emplacements de ressources.",
+            "mixed": "Mixte",
+            "mixedHelp": "Les bâtiments de ce type ont actuellement des attributions différentes. En cliquant sur « Appliquer », vous les réglerez tous sur les valeurs indiquées.",
+            "perBuildingVolume": "Volume de stockage total par bâtiment",
+            "building": "construction",
+            "evenSplit": "Répartition égale",
+            "reset": "Réinitialiser",
+            "setFull": "Allouer 100 % à cette ressource"
+        },
         "save": {
             "download": "Télécharger le fichier",
             "message": "Votre partie a été sauvegardée localement.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "quartier sans nom",
         "upgrade": "Mise à niveau vers {{building}}"
     },
+    "demolish": {
+        "title": "Outil de démolition",
+        "hint": "Faites glisser votre souris sur la carte pour marquer des bâtiments. Les bâtiments marqués apparaissent dans cette liste et peuvent être démolis ensemble.",
+        "drawingPaused": "Dessin en pause. Cliquez avec le bouton droit ou utilisez le bouton ci-dessous pour reprendre le dessin.",
+        "resumeDrawing": "Reprendre la notation",
+        "empty": "Aucun bâtiment n'a encore été sélectionné. Faites glisser votre souris sur les bâtiments de la carte pour les ajouter à la liste.",
+        "clearAll": "Effacer la sélection",
+        "demolishAll": "Démolir ({{count}})",
+        "working": "Démolition en cours...",
+        "confirmAll": "Êtes-vous sûr de vouloir démolir les bâtiments d'{{count}} ? Cette action ne peut pas être annulée.",
+        "removeFromList": "Supprimer de la liste",
+        "removeGroup": "Supprimer tout ce qui se trouve dans ce groupe",
+        "expandGroup": "Développer",
+        "collapseGroup": "Réduire",
+        "expandAll": "Tout développer",
+        "collapseAll": "Réduire tout",
+        "selectedCount": "{{count}} sélectionné",
+        "selectedCountCapped": "{{count}} / {{cap}} sélectionné",
+        "someExcluded": "Certains bâtiments marqués ne peuvent pas être démolis et seront ignorés.",
+        "controlsTitle": "Outil de démolition",
+        "controlsDrag": "Faites glisser pour sélectionner les bâtiments",
+        "controlsScroll": "Faites défiler la molette pour redimensionner le pinceau",
+        "controlsRight": "Cliquez avec le bouton droit pour mettre en pause/reprendre le dessin",
+        "refundTitle": "Remboursement",
+        "changesTitle": "Modifications des ressources",
+        "reason": {
+            "protected": "Ce bâtiment ne peut pas être démoli.",
+            "population": "La population est insuffisante pour démolir ce bâtiment en toute sécurité.",
+            "other": "Ce bâtiment ne peut pas être démoli pour le moment."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Généralités",
-            "performance": "Performances"
+            "performance": "Performances",
+            "controls": "Commandes"
+        },
+        "controls": {
+            "help": "Sélectionnez « Rebind », puis appuyez sur une touche pour l'attribuer. Les raccourcis clavier utilisent les positions physiques des touches.",
+            "rebind": "Rebind",
+            "reset": "Réinitialiser",
+            "resetAll": "Tout réinitialiser",
+            "cancel": "Annuler",
+            "unbind": "Effacer",
+            "capturing": "Appuyez sur une touche…",
+            "conflict": "Cette touche est également utilisée par une autre action du même groupe."
         },
         "animations": "Animations",
         "accessibleColors": "Contraste élevé",
@@ -839,7 +895,8 @@
             "Rejoignez notre communauté animée de joueurs sur Discord pour partager vos créations et obtenir des conseils.",
             "Certains bâtiments ne peuvent être placés qu'à proximité du bâtiment parent, comme la scie et le bûcheron.",
             "Toutes les ressources ne sont pas faciles à obtenir partout. Parfois, il sera moins coûteux de faire du commerce que de tout produire soi-même.",
-            "Les avis sur Steam nous aident à trouver de nouveaux joueurs pour construire un monde vivant."
+            "Les avis sur Steam nous aident à trouver de nouveaux joueurs pour construire un monde vivant.",
+            "Partez en expédition pour trouver des chèvres, des moutons et des vaches. Ces animaux vous fournissent des ressources uniques."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Passez vos commandes ! Annoncez aux autres joueurs ce que vous souhaitez acheter ou vendre, et à quel prix. C'est ce que vous recevrez ou paierez. N'oubliez pas que les autres joueurs devront payer les frais de transport. Il se peut donc que l'achat d'un article à bas prix ne soit pas rentable si les frais d'expédition des autres joueurs sont trop élevés.",
         "popup": "Cette fenêtre contextuelle vous montre toutes les informations concernant ce bâtiment. Vous pouvez ici modifier les paramètres clés du bâtiment, voire les déplacer. Cette fonction n'est disponible que lorsque vous êtes en mode construction.",
         "production": "Ce panneau vous donne un aperçu de tous vos bâtiments de production. Vous pouvez ajuster individuellement le taux de production de chaque bâtiment. Les bâtiments sont regroupés par type et vous pouvez voir d'un seul coup d'œil la production totale de ressources de chaque groupe.",
-        "storage": "Vous pouvez ici régler la capacité de stockage de ce bâtiment. Il dispose d'une certaine capacité et peut contenir une certaine quantité de marchandises. Vous pouvez modifier son ratio afin de l'optimiser en fonction de vos besoins."
+        "storage": "Vous pouvez ici régler la capacité de stockage de ce bâtiment. Il dispose d'une certaine capacité et peut contenir une certaine quantité de marchandises. Vous pouvez modifier son ratio afin de l'optimiser en fonction de vos besoins.",
+        "storageAllocation": "Ce panneau vous permet d'attribuer en bloc la capacité de stockage à tous les bâtiments du même type. Déplacez les curseurs pour définir la part du volume total de chaque bâtiment réservée à chaque ressource. La somme ne peut pas dépasser 100 % ; tout écart correspond à une capacité gaspillée. L'application remplace l'attribution de chaque bâtiment de ce type par celle que vous avez choisie."
     },
     "tooltip": {
         "cannotChange": "Ne peut être modifié pour",
@@ -880,9 +938,9 @@
         "name": "Nom",
         "namePlaceholder": "Nom du plan",
         "description": "Description",
-        "descriptionPlaceholder": "Que permet de créer ce plan ?",
+        "descriptionPlaceholder": "De quoi s'agit-il ?",
         "category": "Catégorie",
-        "categoryPlaceholder": "Par exemple : Industriel, Résidentiel",
+        "categoryPlaceholder": "Par exemple : Industriel, Résidentiel...",
         "biome": "Biome Configuration",
         "allBiomes": "Même mise en page pour tous les biomes",
         "copyConfig": "Copier la configuration du biome",
@@ -903,7 +961,8 @@
         "rates": "Tarifs",
         "noRates": "Placez des bâtiments pour voir les taux",
         "deleteObject": "Supprimer",
-        "outOfBounds": "En dehors de la zone du plan"
+        "outOfBounds": "En dehors de la zone du plan",
+        "duplicateLocation": "Emplacement en double"
     },
     "warnings": {
         "notEnoughPop": "Pas assez de volontaires"

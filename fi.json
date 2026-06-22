@@ -98,6 +98,7 @@
             "notEnoughPop": "Väestö ei riitä",
             "notEnoughResources": "Resurssit eivät riitä",
             "territoryPreview": "Alueen laajuus",
+            "tooClose": "Liian lähellä toista samanlaista rakennusta",
             "tooHigh": "Zoomaa lähemmäksi"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Kaksoisnapsauta sijoittaaksesi solmuja.",
             "fineRotate": "Hieno kierto",
+            "mirror": "Peilaa vaakasuoraan",
             "multiPlace": "Jatka sijoittamista",
             "rotate": "Kierrä",
             "restriction": "Rakentamaton alue"
@@ -499,6 +501,7 @@
             "serverOffline": "Palvelimeen ei saada yhteyttä. Palvelin saattaa olla ylikuormitettu tai tilapäisesti poissa käytöstä huoltotöiden vuoksi. Tarkista Discordista viimeisin tilanne.",
             "settings": "Asetukset",
             "blueprints": "Suunnitelmat",
+            "demolish": "Tuhoa",
             "subtitle": "Tämä on Project Rebearthin varhainen versio. Ota yhteyttä, jos kohtaat ongelmia pelatessasi.",
             "suspended": "Tilisi on suljettu. Syy: {{reason}}",
             "demoSubtitle": "Tämä on Project Rebearthin demo. Vain sandbox-kaupunkien rakentelu on käytössä. Jos haluat pelata moninpelissä, jossa on resurssienhallinta, hanki täysversio.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Rakennussuunnitelmat",
-            "description": "Luo uudelleenkäytettäviä rakennuspiirustuksia, jotta voit sijoittaa rakennusryhmiä nopeasti.",
+            "description": "Luo uudelleen käytettäviä suunnitelmia, joita voit sijoittaa kaupunkiisi tai jakaa muiden kanssa.",
             "createNew": "Luo uusi suunnitelma",
             "noBlueprints": "Suunnitelmia ei ole vielä. Luo ensimmäinen!",
             "edit": "Muokkaa",
@@ -527,7 +530,7 @@
             "update": "Päivitä",
             "publishToWorkshop": "Julkaise Steam Workshopissa",
             "updateWorkshop": "Päivitä Workshop-kohde",
-            "duplicate": "Tee kopio",
+            "duplicate": "Kopioi",
             "copyLabel": "(Kopioi)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Piilota kaikki",
             "throttleHelp": "Tämän rakennustyypin tuotantoa rajoitetaan, koska tarvittava resurssi on loppumassa. Tuotantoa vähennetään automaattisesti, jotta resurssit eivät menisi miinukselle."
         },
+        "storage": {
+            "title": "Tallennustilan allokointi",
+            "noBuildings": "Sinulla ei ole vielä varastorakennuksia, joissa olisi useita resurssipaikkoja.",
+            "mixed": "Sekalainen",
+            "mixedHelp": "Tämän tyyppisillä rakennuksilla on tällä hetkellä erilaiset allokaatiot. Soveltaminen asettaa ne kaikki näkyviin arvoihin.",
+            "perBuildingVolume": "Rakennuksen kokonaisvarastointitilavuus",
+            "building": "rakentaminen",
+            "evenSplit": "Tasainen jako",
+            "reset": "Nollaa",
+            "setFull": "Käytä 100 % tähän resurssiin"
+        },
         "save": {
             "download": "Lataa tiedosto",
             "message": "Peli on tallennettu paikallisesti.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "nimeämätön alue",
         "upgrade": "Päivitä versioon {{building}}"
     },
+    "demolish": {
+        "title": "Purkutyökalu",
+        "hint": "Vedä kartalla merkitäksesi rakennuksia. Merkityt rakennukset näkyvät tässä luettelossa ja ne voidaan purkaa yhdessä.",
+        "drawingPaused": "Piirtäminen keskeytetty. Jatka merkitsemistä napsauttamalla hiiren oikealla painikkeella tai alla olevaa painiketta.",
+        "resumeDrawing": "Jatka merkitsemistä",
+        "empty": "Rakennuksia ei ole vielä merkitty. Vedä hiiren osoittimella kartan rakennusten yli lisätäksesi ne luetteloon.",
+        "clearAll": "Tyhjennä valinta",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Purkamassa...",
+        "confirmAll": "Haluatko varmasti purk{{count}}in rakennukset? Tätä ei voi peruuttaa.",
+        "removeFromList": "Poista luettelosta",
+        "removeGroup": "Poista kaikki tästä ryhmästä",
+        "expandGroup": "Laajenna",
+        "collapseGroup": "Piilota",
+        "expandAll": "Näytä kaikki",
+        "collapseAll": "Piilota kaikki",
+        "selectedCount": "{{count}} valittu",
+        "selectedCountCapped": "{{count}} / {{cap}} valittu",
+        "someExcluded": "Joitakin merkittyjä rakennuksia ei voi purkaa, joten ne ohitetaan.",
+        "controlsTitle": "Purkutyökalu",
+        "controlsDrag": "Vedä merkitäksesi rakennukset",
+        "controlsScroll": "Vierityspyörä siveltimen koon muuttamiseen",
+        "controlsRight": "Napsauta hiiren oikealla painikkeella keskeyttääksesi/jatkaaksesi piirtämistä",
+        "refundTitle": "Palautus",
+        "changesTitle": "Resurssimuutokset",
+        "reason": {
+            "protected": "Tätä rakennusta ei voi purkaa.",
+            "population": "Väestömäärä ei riitä tämän rakennuksen turvalliseen purkamiseen.",
+            "other": "Tätä rakennusta ei voi purkaa tällä hetkellä."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Yleistä",
-            "performance": "Suorituskyky"
+            "performance": "Suorituskyky",
+            "controls": "Ohjaus"
+        },
+        "controls": {
+            "help": "Valitse Rebind ja paina näppäintä, jolle haluat määrittää toiminnon. Pikanäppäimet käyttävät fyysisiä näppäinten sijainteja.",
+            "rebind": "Uudelleensidonta",
+            "reset": "Nollaa",
+            "resetAll": "Nollaa kaikki",
+            "cancel": "Peruuta",
+            "unbind": "Tyhjennä",
+            "capturing": "Paina näppäintä…",
+            "conflict": "Tätä näppäintä käytetään myös toisessa samassa ryhmässä olevassa toiminnossa."
         },
         "animations": "Animaatiot",
         "accessibleColors": "Suuri kontrasti",
@@ -839,7 +895,8 @@
             "Liity vilkkaaseen pelaajayhteisöömme Discordissa, jaa luomuksiasi ja hanki vinkkejä.",
             "Jotkut rakennukset, kuten saha ja puunhakkuukone, voidaan sijoittaa vain lähellä emorakennusta.",
             "Kaikkia resursseja ei ole helppo hankkia kaikkialta. Joskus kauppa on halvempaa kuin kaiken tuottaminen itse.",
-            "Steam-arvostelu auttaa meitä löytämään uusia pelaajia elävän maailman rakentamiseen."
+            "Steam-arvostelu auttaa meitä löytämään uusia pelaajia elävän maailman rakentamiseen.",
+            "Etsi vuohia, lampaita ja lehmiä järjestämällä retkikuntia. Nämä eläimet antavat sinulle ainutlaatuisia resursseja."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Anna tilauksesi! Ilmoita muille pelaajille, mitä haluat ostaa tai myydä ja mihin hintaan. Tämä on se, mitä saat tai maksat. Muista, että muut maksavat kuljetuksesta. Joten halvan tuotteen ostaminen ei välttämättä kannata, jos muiden pelaajien kuljetuskustannukset ovat liian korkeat.",
         "popup": "Tämä ponnahdusikkuna näyttää kaikki tiedot tästä rakennuksesta. Täällä voit muuttaa rakennuksen avainparametreja tai jopa siirtää niitä. Tämä on käytettävissä vain rakennusmoodissa.",
         "production": "Tämä paneeli antaa sinulle yleiskuvan kaikista tuotantorakennuksistasi. Voit säätää kunkin rakennuksen tuotantomäärää erikseen. Rakennukset on ryhmitelty tyypin mukaan, ja voit nähdä kunkin ryhmän kokonaisresurssituotannon yhdellä silmäyksellä.",
-        "storage": "Täällä voit säätää, kuinka paljon tämä rakennus varastoi. Sillä on tietty kapasiteetti ja tietty määrä tavaroita, joita se voi varastoida. Voit muuttaa sen suhdetta optimoidaksesi sen tarpeisiisi."
+        "storage": "Täällä voit säätää, kuinka paljon tämä rakennus varastoi. Sillä on tietty kapasiteetti ja tietty määrä tavaroita, joita se voi varastoida. Voit muuttaa sen suhdetta optimoidaksesi sen tarpeisiisi.",
+        "storageAllocation": "Tämän paneelin avulla voit jakaa tallennuskapasiteetin kerralla kaikille saman tyyppisille rakennuksille. Siirrä liukusäätimiä asettaaksesi, kuinka suuri osuus kunkin rakennuksen kokonaiskapasiteetista varataan kullekin resurssille. Summa ei voi ylittää 100 %; ylimääräinen kapasiteetti menee hukkaan. Soveltaminen korvaa kaikki kyseisen tyyppiset rakennukset valitulla jakamisella."
     },
     "tooltip": {
         "cannotChange": "Ei voi muuttaa",
@@ -880,9 +938,9 @@
         "name": "Nimi",
         "namePlaceholder": "Suunnitelman nimi",
         "description": "Kuvaus",
-        "descriptionPlaceholder": "Mitä tämä suunnitelma rakentaa?",
+        "descriptionPlaceholder": "Mikä tämä malli on?",
         "category": "Luokka",
-        "categoryPlaceholder": "esim. Teollisuus, Asuminen",
+        "categoryPlaceholder": "esim. Teollisuus, Asuminen...",
         "biome": "Biomin asetukset",
         "allBiomes": "Sama ulkoasu kaikille biomille",
         "copyConfig": "Kopioi biomin asetukset",
@@ -903,7 +961,8 @@
         "rates": "Hinnat",
         "noRates": "Sijoita rakennuksia nähdäksesi hinnat",
         "deleteObject": "Poista",
-        "outOfBounds": "Suunnitelma-alueen ulkopuolella"
+        "outOfBounds": "Suunnitelma-alueen ulkopuolella",
+        "duplicateLocation": "Kaksoiskohde"
     },
     "warnings": {
         "notEnoughPop": "Ei tarpeeksi vapaaehtoisia"

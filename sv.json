@@ -98,6 +98,7 @@
             "notEnoughPop": "Otillräcklig befolkning",
             "notEnoughResources": "Otillräckliga resurser",
             "territoryPreview": "Territoriets utsträckning",
+            "tooClose": "För nära en annan byggnad av samma typ",
             "tooHigh": "Zooma in närmare"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Dubbelklicka för att placera noder",
             "fineRotate": "Fin rotation",
+            "mirror": "Spegla horisontellt",
             "multiPlace": "Fortsätt placera",
             "rotate": "Rotera",
             "restriction": "Område som inte kan bebyggas"
@@ -499,6 +501,7 @@
             "serverOffline": "Det går inte att nå servern. Servern kan vara överbelastad eller tillfälligt nere för underhåll. Kontrollera Discord för den senaste statusen.",
             "settings": "Inställningar",
             "blueprints": "Ritningar",
+            "demolish": "Demolera",
             "subtitle": "Detta är en tidig version av Project Rebearth. Kontakta oss om du stöter på några problem när du spelar.",
             "suspended": "Ditt konto har stängts av. Orsak: {{reason}}",
             "demoSubtitle": "Detta är en demo av Project Rebearth. Endast sandbox-stadsbyggaren är aktiverad. För att spela på multiplayer-glob med resurshantering, skaffa den fullständiga versionen.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Byggnadsritningar",
-            "description": "Skapa återanvändbara byggnadsritningar för att snabbt placera grupper av byggnader.",
+            "description": "Skapa återanvändbara ritningar som du kan placera i din stad eller dela med andra.",
             "createNew": "Skapa ny blueprint",
             "noBlueprints": "Inga ritningar ännu. Skapa din första!",
             "edit": "Redigera",
@@ -527,7 +530,7 @@
             "update": "Uppdatering",
             "publishToWorkshop": "Publicera till Steam Workshop",
             "updateWorkshop": "Uppdatera Workshop-objekt",
-            "duplicate": "Skapa en kopia",
+            "duplicate": "Kopiera",
             "copyLabel": "(Kopiera)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Dölj allt",
             "throttleHelp": "Denna byggnadstyp begränsas eftersom en nödvändig resurs håller på att ta slut. Produktionen minskas automatiskt för att förhindra att resurserna blir negativa."
         },
+        "storage": {
+            "title": "Lagringsallokering",
+            "noBuildings": "Du har ännu inga lagerbyggnader med flera resursplatser.",
+            "mixed": "Blandat",
+            "mixedHelp": "Byggnader av denna typ har för närvarande olika tilldelningar. Om du tillämpar detta kommer alla att ställas in på de visade värdena.",
+            "perBuildingVolume": "Total lagringsvolym per byggnad",
+            "building": "byggnad",
+            "evenSplit": "Jämn fördelning",
+            "reset": "Återställ",
+            "setFull": "Tilldela 100 % till denna resurs"
+        },
         "save": {
             "download": "Ladda ner fil",
             "message": "Ditt spel har sparats lokalt.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "namnlöst distrikt",
         "upgrade": "Uppgradera till {{building}}"
     },
+    "demolish": {
+        "title": "Rivningsverktyg",
+        "hint": "Dra på kartan för att markera byggnader. Markerade byggnader visas i denna lista och kan rivas samtidigt.",
+        "drawingPaused": "Ritningen är pausad. Högerklicka eller använd knappen nedan för att återuppta markeringen.",
+        "resumeDrawing": "Återuppta markering",
+        "empty": "Inga byggnader har markerats ännu. Dra över byggnaderna på kartan för att lägga till dem i listan.",
+        "clearAll": "Rensa val",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Rivning...",
+        "confirmAll": "Är du säker på att du vill riva byggnaderna i{{count}}? Detta kan inte ångras.",
+        "removeFromList": "Ta bort från listan",
+        "removeGroup": "Ta bort allt i denna grupp",
+        "expandGroup": "Expandera",
+        "collapseGroup": "Dölj",
+        "expandAll": "Visa allt",
+        "collapseAll": "Dölj allt",
+        "selectedCount": "{{count}} valt",
+        "selectedCountCapped": "{{count}} / {{cap}} valt",
+        "someExcluded": "Vissa markerade byggnader kan inte rivas och kommer att hoppas över.",
+        "controlsTitle": "Rivningsverktyg",
+        "controlsDrag": "Dra för att markera byggnader",
+        "controlsScroll": "Rulla med rullhjulet för att ändra penselstorlek",
+        "controlsRight": "Högerklicka för att pausa/återuppta ritningen",
+        "refundTitle": "Återbetalning",
+        "changesTitle": "Resursändringar",
+        "reason": {
+            "protected": "Denna byggnad kan inte rivas.",
+            "population": "Det finns inte tillräckligt många invånare för att säkert riva denna byggnad.",
+            "other": "Denna byggnad kan inte rivas just nu."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Allmänt",
-            "performance": "Prestanda"
+            "performance": "Prestanda",
+            "controls": "Kontroller"
+        },
+        "controls": {
+            "help": "Välj Omkonfigurera och tryck sedan på en tangent för att tilldela den. Tangentbordsgenvägar använder fysiska tangentpositioner.",
+            "rebind": "Omkonfigurera",
+            "reset": "Återställ",
+            "resetAll": "Återställ allt",
+            "cancel": "Avbryt",
+            "unbind": "Rensa",
+            "capturing": "Tryck på en tangent…",
+            "conflict": "Denna tangent används även av en annan åtgärd i samma grupp."
         },
         "animations": "Animationer",
         "accessibleColors": "Hög kontrast",
@@ -839,7 +895,8 @@
             "Gå med i vår livliga spelargemenskap på Discord för att dela dina skapelser och få tips.",
             "Vissa byggnader kan endast placeras nära huvudbyggnaden, till exempel sågen och vedhuggaren.",
             "Alla resurser är inte lika lätta att få tag på överallt. Ibland kan det vara billigare att handla än att producera allt själv.",
-            "En recension på Steam hjälper oss att hitta nya spelare för att bygga en levande värld."
+            "En recension på Steam hjälper oss att hitta nya spelare för att bygga en levande värld.",
+            "Hitta getter, får och kor genom att genomföra expeditioner. Dessa djur ger dig unika resurser."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Lägg dina order! Meddela andra spelare vad du vill köpa eller sälja, och till vilket pris. Det är vad du kommer att få eller betala. Tänk på att andra kommer att betala för transporten. Att köpa något till ett lågt pris kanske inte fungerar om andra spelares fraktkostnader är för höga.",
         "popup": "Denna popup visar all information om denna byggnad. Här kan du ändra viktiga parametrar för byggnaden eller till och med flytta dem. Detta är endast tillgängligt när du är i byggnadsläge.",
         "production": "Denna panel ger dig en översikt över alla dina produktionsbyggnader. Du kan justera produktionshastigheten för varje byggnad individuellt. Byggnaderna är grupperade efter typ, och du kan se varje grupps totala resursproduktion på ett ögonblick.",
-        "storage": "Här kan du justera hur mycket denna byggnad lagrar. Den har en viss kapacitet och kan rymma en viss mängd varor. Du kan ändra dess förhållande för att optimera den efter dina behov."
+        "storage": "Här kan du justera hur mycket denna byggnad lagrar. Den har en viss kapacitet och kan rymma en viss mängd varor. Du kan ändra dess förhållande för att optimera den efter dina behov.",
+        "storageAllocation": "I det här fönstret kan du fördela lagringskapacitet i bulk till alla byggnader av samma typ. Flytta reglagen för att ställa in vilken andel av varje byggnads totala volym som ska reserveras för varje resurs. Summan får inte överstiga 100 %; eventuellt utrymme som inte utnyttjas är bortkastad kapacitet. När du tillämpar ändras alla byggnader av den typen till den valda fördelningen."
     },
     "tooltip": {
         "cannotChange": "Kan inte ändras för",
@@ -880,9 +938,9 @@
         "name": "Namn",
         "namePlaceholder": "Namn på blueprint",
         "description": "Beskrivning",
-        "descriptionPlaceholder": "Vad bygger denna blueprint?",
+        "descriptionPlaceholder": "Vad är det här för design?",
         "category": "Kategori",
-        "categoryPlaceholder": "t.ex. industriellt, bostäder",
+        "categoryPlaceholder": "t.ex. industri, bostäder...",
         "biome": "Biomkonfiguration",
         "allBiomes": "Samma layout för alla biomer",
         "copyConfig": "Kopiera biomkonfiguration",
@@ -903,7 +961,8 @@
         "rates": "Priser",
         "noRates": "Placera byggnader för att se priser",
         "deleteObject": "Ta bort",
-        "outOfBounds": "Utanför ritningsområdet"
+        "outOfBounds": "Utanför ritningsområdet",
+        "duplicateLocation": "Dubbel plats"
     },
     "warnings": {
         "notEnoughPop": "Inte tillräckligt med volontärer"

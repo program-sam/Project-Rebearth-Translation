@@ -98,6 +98,7 @@
             "notEnoughPop": "人口不足",
             "notEnoughResources": "资源不足",
             "territoryPreview": "领土范围",
+            "tooClose": "距离同类型的另一栋建筑太近",
             "tooHigh": "放大查看"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "双击放置节点",
             "fineRotate": "精细旋转",
+            "mirror": "水平镜像",
             "multiPlace": "继续放置",
             "rotate": "旋转",
             "restriction": "不可建造区域"
@@ -499,6 +501,7 @@
             "serverOffline": "无法连接服务器。服务器可能负载过高，或因维护暂时关闭。请通过Discord查看最新状态。",
             "settings": "设置",
             "blueprints": "蓝图",
+            "demolish": "拆除",
             "subtitle": "这是《重生计划》的早期版本。若在游戏过程中遇到任何问题，请随时联系我们。",
             "suspended": "您的账户已被暂停。原因：{{reason}}",
             "demoSubtitle": "这是《重生计划》的试玩版。当前仅开放沙盒城市建设模式。若需体验多人联机资源管理玩法，请获取完整版。",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "建筑蓝图",
-            "description": "创建可重复使用的建筑蓝图，以便快速放置一组建筑。",
+            "description": "创建可重复使用的蓝图设计，将其放置在你的城镇中或与他人分享。",
             "createNew": "创建新蓝图",
             "noBlueprints": "目前尚无蓝图。快来创建你的第一个吧！",
             "edit": "编辑",
@@ -527,7 +530,7 @@
             "update": "更新",
             "publishToWorkshop": "发布到 Steam 创意工坊",
             "updateWorkshop": "更新创意工坊项目",
-            "duplicate": "创建副本",
+            "duplicate": "复制",
             "copyLabel": "(复制)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "收起全部",
             "throttleHelp": "该建筑类型因必需资源告急而被限速。生产效率已自动降低，以防止资源消耗超出储备量。"
         },
+        "storage": {
+            "title": "存储分配",
+            "noBuildings": "您目前还没有拥有多个资源槽位的仓库。",
+            "mixed": "混合",
+            "mixedHelp": "此类建筑目前分配的资源各不相同。应用此设置将把它们全部设为所示数值。",
+            "perBuildingVolume": "每栋建筑的总存储容量",
+            "building": "建造",
+            "evenSplit": "均分",
+            "reset": "重置",
+            "setFull": "将 100% 分配给此资源"
+        },
         "save": {
             "download": "下载文件",
             "message": "您的游戏已保存至本地。",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "无名区",
         "upgrade": "升级至{{building}}"
     },
+    "demolish": {
+        "title": "拆除工具",
+        "hint": "在地图上拖动以标记建筑物。被标记的建筑物会显示在此列表中，并可一并拆除。",
+        "drawingPaused": "绘制已暂停。右键单击或使用下方的按钮继续标记。",
+        "resumeDrawing": "恢复标记",
+        "empty": "尚未标记任何建筑。在地图上拖动建筑即可将其添加到列表中。",
+        "clearAll": "清除选中项",
+        "demolishAll": "拆除（{{count}}）",
+        "working": "正在拆除……",
+        "confirmAll": "您确定要拆除{{count}}的建筑吗？此操作无法撤销。",
+        "removeFromList": "从列表中移除",
+        "removeGroup": "删除本组中的所有内容",
+        "expandGroup": "展开",
+        "collapseGroup": "折叠",
+        "expandAll": "展开全部",
+        "collapseAll": "收起全部",
+        "selectedCount": "{{count}} 已选中",
+        "selectedCountCapped": "{{count}} / 已选中{{cap}}",
+        "someExcluded": "某些标记的建筑物无法拆除，将被跳过。",
+        "controlsTitle": "拆除工具",
+        "controlsDrag": "拖动以标记建筑物",
+        "controlsScroll": "滚动鼠标滚轮调整画笔大小",
+        "controlsRight": "右键单击可暂停/恢复绘制",
+        "refundTitle": "退款",
+        "changesTitle": "资源变更",
+        "reason": {
+            "protected": "该建筑无法拆除。",
+            "population": "当前人口不足，无法安全拆除该建筑。",
+            "other": "目前无法拆除该建筑。"
+        }
+    },
     "settings": {
         "tabs": {
             "general": "通用",
-            "performance": "性能"
+            "performance": "性能",
+            "controls": "操作说明"
+        },
+        "controls": {
+            "help": "选择“重新绑定”，然后按下一个键进行分配。键盘快捷键使用物理按键位置。",
+            "rebind": "重新绑定",
+            "reset": "重置",
+            "resetAll": "全部重置",
+            "cancel": "取消",
+            "unbind": "清除",
+            "capturing": "按任意键……",
+            "conflict": "同一组中的另一个操作也会使用此键。"
         },
         "animations": "动画效果",
         "accessibleColors": "高对比度",
@@ -839,7 +895,8 @@
             "加入我们Discord平台上活跃的玩家社区，分享你的创作并获取技巧。",
             "某些建筑物只能靠近其母建筑放置，例如锯木厂和伐木工。",
             "并非所有资源在各地都易于获取。有时交易比自行生产所有物品更为划算。",
-            "在Steam平台的每条评价都能帮助我们发掘新玩家，共同构建生机勃勃的游戏世界。"
+            "在Steam平台的每条评价都能帮助我们发掘新玩家，共同构建生机勃勃的游戏世界。",
+            "通过组织探险队寻找山羊、绵羊和奶牛。这些动物会为你提供独特的资源。"
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "发布交易指令！向其他玩家宣告你想买卖的商品及价格。这将决定你获得或支付的金额。请注意：运输费用需由买家承担。因此低价购买可能因对方运费过高而无法成交。",
         "popup": "此弹窗将显示该建筑物的全部信息。您可在此调整建筑物的关键参数，甚至进行移动操作。该功能仅在建筑模式下可用。",
         "production": "此面板为您提供所有生产建筑的概览。您可以单独调整每栋建筑的生产速率。建筑按类型分组，您可一目了然地查看每组建筑的总资源产量。",
-        "storage": "此处可调整该建筑的存储容量。建筑拥有固定容量及可容纳的货物数量，您可通过修改存储比例来优化其适应需求。"
+        "storage": "此处可调整该建筑的存储容量。建筑拥有固定容量及可容纳的货物数量，您可通过修改存储比例来优化其适应需求。",
+        "storageAllocation": "此面板允许您批量分配同类型所有建筑的存储容量。拖动滑块可设置每种资源在各建筑总容积中所占的比例。总和不得超过100%；超出部分将作为浪费的容量。应用后，该类型的所有建筑都将被选定的分配方案覆盖。"
     },
     "tooltip": {
         "cannotChange": "不可更改",
@@ -880,9 +938,9 @@
         "name": "名称",
         "namePlaceholder": "蓝图名称",
         "description": "描述",
-        "descriptionPlaceholder": "此蓝图构建的是什么？",
+        "descriptionPlaceholder": "这是什么设计？",
         "category": "分类",
-        "categoryPlaceholder": "例如：工业区、住宅区",
+        "categoryPlaceholder": "例如：工业区、住宅区……",
         "biome": "生物群系配置",
         "allBiomes": "所有生物群系采用相同的布局",
         "copyConfig": "复制生物群系配置",
@@ -903,7 +961,8 @@
         "rates": "评分",
         "noRates": "放置建筑物以查看数据",
         "deleteObject": "删除",
-        "outOfBounds": "蓝图区域外"
+        "outOfBounds": "蓝图区域外",
+        "duplicateLocation": "位置重复"
     },
     "warnings": {
         "notEnoughPop": "志愿者不足"

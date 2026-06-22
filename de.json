@@ -98,6 +98,7 @@
             "notEnoughPop": "Nicht genügend Bevölkerung",
             "notEnoughResources": "Nicht genügend Ressourcen",
             "territoryPreview": "Gebietsausdehnung",
+            "tooClose": "Zu nah an einem anderen Gebäude desselben Typs",
             "tooHigh": "Näher heranzoomen"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Doppelklick zum Platzieren von Knoten",
             "fineRotate": "Feine Drehung",
+            "mirror": "Horizontal spiegeln",
             "multiPlace": "Weiter platzieren",
             "rotate": "Drehen",
             "restriction": "Nicht bebaubarer Bereich"
@@ -499,6 +501,7 @@
             "serverOffline": "Der Server kann nicht erreicht werden. Der Server ist möglicherweise stark ausgelastet oder wegen Wartungsarbeiten vorübergehend nicht erreichbar. Überprüfen Sie den aktuellen Status auf Discord.",
             "settings": "Einstellungen",
             "blueprints": "Entwürfe",
+            "demolish": "Zerstören",
             "subtitle": "Dies ist eine Vorabversion von Project Rebearth. Bitte melden Sie sich, wenn Sie beim Spielen auf Probleme stoßen.",
             "suspended": "Ihr Konto wurde gesperrt. Grund: {{reason}}",
             "demoSubtitle": "Dies ist die Demo von Project Rebearth. Nur der Sandbox-Stadtbau-Modus ist aktiviert. Um auf dem Multiplayer-Globus mit Ressourcenmanagement zu spielen, hol dir die Vollversion.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Baupläne",
-            "description": "Erstelle wiederverwendbare Baupläne, um Gruppen von Gebäuden schnell zu platzieren.",
+            "description": "Erstelle wiederverwendbare Entwürfe, die du in deiner Stadt platzieren oder mit anderen teilen kannst.",
             "createNew": "Neuen Blueprint erstellen",
             "noBlueprints": "Es gibt noch keine Entwürfe. Erstelle deinen ersten!",
             "edit": "Bearbeiten",
@@ -527,7 +530,7 @@
             "update": "Aktualisierung",
             "publishToWorkshop": "Auf Steam Workshop veröffentlichen",
             "updateWorkshop": "Workshop-Objekt aktualisieren",
-            "duplicate": "Kopie erstellen",
+            "duplicate": "Kopieren",
             "copyLabel": "(Kopie)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Alle ausblenden",
             "throttleHelp": "Dieser Gebäudetyp wird gedrosselt, da eine erforderliche Ressource zur Neige geht. Die Produktion wird automatisch reduziert, um zu verhindern, dass die Ressourcen negativ werden."
         },
+        "storage": {
+            "title": "Speicherzuweisung",
+            "noBuildings": "Du hast noch keine Lagergebäude mit mehreren Ressourcenplätzen.",
+            "mixed": "Gemischt",
+            "mixedHelp": "Gebäude dieses Typs weisen derzeit unterschiedliche Zuweisungen auf. Durch die Anwendung werden alle auf die angezeigten Werte gesetzt.",
+            "perBuildingVolume": "Gesamtspeichervolumen pro Gebäude",
+            "building": "Gebäude",
+            "evenSplit": "Gleichmäßig aufteilen",
+            "reset": "Zurücksetzen",
+            "setFull": "100 % dieser Ressource zuweisen"
+        },
         "save": {
             "download": "Datei herunterladen",
             "message": "Ihr Spiel wurde lokal gespeichert.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "unbenannter Bezirk",
         "upgrade": "Upgrade auf „{{building}}“"
     },
+    "demolish": {
+        "title": "Abbruchwerkzeug",
+        "hint": "Ziehe auf der Karte, um Gebäude zu markieren. Markierte Gebäude erscheinen in dieser Liste und können gemeinsam abgerissen werden.",
+        "drawingPaused": "Zeichnen unterbrochen. Klicken Sie mit der rechten Maustaste oder verwenden Sie die Schaltfläche unten, um das Markieren fortzusetzen.",
+        "resumeDrawing": "Markierung fortsetzen",
+        "empty": "Es sind noch keine Gebäude markiert. Ziehe den Mauszeiger über Gebäude auf der Karte, um sie zur Liste hinzuzufügen.",
+        "clearAll": "Auswahl löschen",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Abriss...",
+        "confirmAll": "Möchten Sie die Gebäude in „{{count}}“ wirklich abreißen? Dieser Vorgang kann nicht rückgängig gemacht werden.",
+        "removeFromList": "Aus der Liste entfernen",
+        "removeGroup": "Alle Elemente in dieser Gruppe entfernen",
+        "expandGroup": "Erweitern",
+        "collapseGroup": "Zusammenklappen",
+        "expandAll": "Alle anzeigen",
+        "collapseAll": "Alle ausblenden",
+        "selectedCount": "{{count}} ausgewählt",
+        "selectedCountCapped": "{{count}} / {{cap}} ausgewählt",
+        "someExcluded": "Einige markierte Gebäude können nicht abgerissen werden und werden übersprungen.",
+        "controlsTitle": "Abbruchwerkzeug",
+        "controlsDrag": "Ziehen, um Gebäude zu markieren",
+        "controlsScroll": "Scrollrad zum Ändern der Pinselgröße",
+        "controlsRight": "Rechtsklick zum Anhalten/Fortsetzen des Zeichnens",
+        "refundTitle": "Rückerstattung",
+        "changesTitle": "Änderungen an den Ressourcen",
+        "reason": {
+            "protected": "Dieses Gebäude kann nicht abgerissen werden.",
+            "population": "Die Bevölkerung ist zu gering, um dieses Gebäude sicher abzureißen.",
+            "other": "Dieses Gebäude kann derzeit nicht abgerissen werden."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Allgemein",
-            "performance": "Leistung"
+            "performance": "Leistung",
+            "controls": "Steuerung"
+        },
+        "controls": {
+            "help": "Wählen Sie „Neu belegen“ und drücken Sie dann eine Taste, um sie zuzuweisen. Tastaturkürzel verwenden die physischen Tastenpositionen.",
+            "rebind": "Neu binden",
+            "reset": "Zurücksetzen",
+            "resetAll": "Alles zurücksetzen",
+            "cancel": "Abbrechen",
+            "unbind": "Löschen",
+            "capturing": "Drücke eine Taste…",
+            "conflict": "Diese Taste wird auch von einer anderen Aktion in derselben Gruppe verwendet."
         },
         "animations": "Animationen",
         "accessibleColors": "Hoher Kontrast",
@@ -839,7 +895,8 @@
             "Treten Sie unserer lebhaften Spielergemeinschaft auf Discord bei, um Ihre Kreationen zu teilen und Tipps zu erhalten.",
             "Einige Gebäude können nur in der Nähe des übergeordneten Gebäudes platziert werden, wie beispielsweise die Säge und der Holzfäller.",
             "Nicht alle Ressourcen sind überall leicht zu bekommen. Manchmal ist es günstiger, zu handeln, als alles selbst zu produzieren.",
-            "Eine Rezension auf Steam hilft uns dabei, neue Spieler zu finden, um eine lebendige Welt aufzubauen."
+            "Eine Rezension auf Steam hilft uns dabei, neue Spieler zu finden, um eine lebendige Welt aufzubauen.",
+            "Finde Ziegen, Schafe und Kühe, indem du Expeditionen unternimmst. Diese Tiere liefern dir einzigartige Ressourcen."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Geben Sie Ihre Bestellungen auf! Teilen Sie anderen Spielern mit, was Sie kaufen oder verkaufen möchten und zu welchem Preis. Diesen Preis erhalten Sie bzw. zahlen Sie. Beachten Sie, dass andere für den Transport bezahlen müssen. Daher kann es sein, dass der Kauf zu einem niedrigen Preis nicht funktioniert, wenn die Versandkosten der anderen Spieler zu hoch sind.",
         "popup": "Dieses Popup-Fenster zeigt Ihnen alle Informationen zu diesem Gebäude. Hier können Sie wichtige Parameter des Gebäudes ändern oder sogar verschieben. Diese Funktion ist nur verfügbar, wenn Sie sich im Gebäudemodus befinden.",
         "production": "Dieses Fenster gibt Ihnen einen Überblick über alle Ihre Produktionsgebäude. Sie können die Produktionsrate jedes Gebäudes individuell anpassen. Die Gebäude sind nach Typ gruppiert, und Sie können die gesamte Ressourcenproduktion jeder Gruppe auf einen Blick sehen.",
-        "storage": "Hier können Sie einstellen, wie viel dieses Gebäude lagert. Es hat eine bestimmte Kapazität und kann eine bestimmte Menge an Gütern aufnehmen. Sie können das Verhältnis ändern, um es an Ihre Bedürfnisse anzupassen."
+        "storage": "Hier können Sie einstellen, wie viel dieses Gebäude lagert. Es hat eine bestimmte Kapazität und kann eine bestimmte Menge an Gütern aufnehmen. Sie können das Verhältnis ändern, um es an Ihre Bedürfnisse anzupassen.",
+        "storageAllocation": "Über dieses Fenster können Sie die Speicherkapazität für alle Gebäude desselben Typs pauschal zuweisen. Verschieben Sie die Schieberegler, um festzulegen, welcher Anteil des Gesamtvolumens jedes Gebäudes für die jeweilige Ressource reserviert werden soll. Die Summe darf 100 % nicht überschreiten; überschüssige Kapazität geht verloren. Durch das Anwenden werden alle Gebäude dieses Typs mit der gewählten Zuweisung überschrieben."
     },
     "tooltip": {
         "cannotChange": "Kann nicht geändert werden für",
@@ -880,9 +938,9 @@
         "name": "Name",
         "namePlaceholder": "Name des Blueprints",
         "description": "Beschreibung",
-        "descriptionPlaceholder": "Was wird mit diesem Blueprint erstellt?",
+        "descriptionPlaceholder": "Was ist das für ein Design?",
         "category": "Kategorie",
-        "categoryPlaceholder": "z. B. Industrie, Wohngebiet",
+        "categoryPlaceholder": "z. B. Industrie, Wohngebiet...",
         "biome": "Biom-Konfiguration",
         "allBiomes": "Gleiches Layout für alle Biome",
         "copyConfig": "Biom-Konfiguration kopieren",
@@ -903,7 +961,8 @@
         "rates": "Preise",
         "noRates": "Platziere Gebäude, um die Werte anzuzeigen",
         "deleteObject": "Entfernen",
-        "outOfBounds": "Außerhalb des Blueprint-Bereichs"
+        "outOfBounds": "Außerhalb des Blueprint-Bereichs",
+        "duplicateLocation": "Doppelte Position"
     },
     "warnings": {
         "notEnoughPop": "Nicht genügend Freiwillige"

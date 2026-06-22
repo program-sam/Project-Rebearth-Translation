@@ -98,6 +98,7 @@
             "notEnoughPop": "População insuficiente",
             "notEnoughResources": "Recursos insuficientes",
             "territoryPreview": "Área de território",
+            "tooClose": "Demasiado próximo de outro edifício do mesmo tipo",
             "tooHigh": "Ampliar"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Clique duas vezes para colocar nós",
             "fineRotate": "Rotação precisa",
+            "mirror": "Espelhar horizontalmente",
             "multiPlace": "Continue colocando",
             "rotate": "Rodar",
             "restriction": "Área não edificável"
@@ -499,6 +501,7 @@
             "serverOffline": "Não é possível aceder ao servidor. O servidor pode estar sobrecarregado ou temporariamente fora de serviço para manutenção. Verifique o Discord para obter o estado mais recente.",
             "settings": "Configurações",
             "blueprints": "Plantas",
+            "demolish": "Demolir",
             "subtitle": "Esta é uma versão inicial do Project Rebearth. Entre em contacto connosco se encontrar algum problema durante o jogo.",
             "suspended": "A sua conta foi suspensa. Motivo: {{reason}}",
             "demoSubtitle": "Esta é a demonstração do Project Rebearth. Apenas o modo sandbox de construção de cidades está ativado. Para jogar no modo multijogador global com gestão de recursos, adquira a versão completa.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Plantas de construção",
-            "description": "Crie plantas de construção reutilizáveis para colocar rapidamente grupos de edifícios.",
+            "description": "Crie projetos de plantas reutilizáveis para colocar na sua cidade ou partilhar com outras pessoas.",
             "createNew": "Criar novo blueprint",
             "noBlueprints": "Ainda não há esquemas. Crie o seu primeiro!",
             "edit": "Editar",
@@ -527,7 +530,7 @@
             "update": "Atualização",
             "publishToWorkshop": "Publicar no Steam Workshop",
             "updateWorkshop": "Atualizar item do Workshop",
-            "duplicate": "Fazer uma cópia",
+            "duplicate": "Copiar",
             "copyLabel": "(Cópia)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Recolher tudo",
             "throttleHelp": "Este tipo de edifício está a ser restringido porque um recurso necessário está a ficar escasso. A produção é automaticamente reduzida para evitar que os recursos fiquem negativos."
         },
+        "storage": {
+            "title": "Alocação de armazenamento",
+            "noBuildings": "Ainda não tens nenhum edifício de armazenamento com vários espaços para recursos.",
+            "mixed": "Misto",
+            "mixedHelp": "Os edifícios deste tipo têm atualmente atribuições diferentes. Ao aplicar, todos serão definidos para os valores apresentados.",
+            "perBuildingVolume": "Volume total de armazenamento por edifício",
+            "building": "construção",
+            "evenSplit": "Divisão igual",
+            "reset": "Reiniciar",
+            "setFull": "Atribuir 100% a este recurso"
+        },
         "save": {
             "download": "Descarregar ficheiro",
             "message": "O seu jogo foi guardado localmente.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "distrito sem nome",
         "upgrade": "Atualize para {{building}}"
     },
+    "demolish": {
+        "title": "Ferramenta de demolição",
+        "hint": "Arraste no mapa para marcar edifícios. Os edifícios marcados aparecem nesta lista e podem ser demolidos em conjunto.",
+        "drawingPaused": "Desenho em pausa. Clique com o botão direito do rato ou utilize o botão abaixo para retomar a marcação.",
+        "resumeDrawing": "Retomar a pontuação",
+        "empty": "Ainda não há edifícios marcados. Arraste o cursor sobre os edifícios no mapa para os adicionar à lista.",
+        "clearAll": "Limpar seleção",
+        "demolishAll": "Demolir ({{count}})",
+        "working": "A demolir...",
+        "confirmAll": "Tem a certeza de que quer demolir os edifícios d{{count}}? Esta ação não pode ser desfeita.",
+        "removeFromList": "Remover da lista",
+        "removeGroup": "Remover tudo neste grupo",
+        "expandGroup": "Expandir",
+        "collapseGroup": "Recolher",
+        "expandAll": "Expandir tudo",
+        "collapseAll": "Recolher tudo",
+        "selectedCount": "{{count}} selecionado",
+        "selectedCountCapped": "{{count}} / {{cap}} selecionado",
+        "someExcluded": "Alguns edifícios marcados não podem ser demolidos e serão ignorados.",
+        "controlsTitle": "Ferramenta de demolição",
+        "controlsDrag": "Arraste para marcar edifícios",
+        "controlsScroll": "Roda de rolagem para redimensionar o pincel",
+        "controlsRight": "Clique com o botão direito do rato para pausar/retomar o desenho",
+        "refundTitle": "Reembolso",
+        "changesTitle": "Alterações nos recursos",
+        "reason": {
+            "protected": "Este edifício não pode ser demolido.",
+            "population": "Não há população suficiente para demolir este edifício em segurança.",
+            "other": "Este edifício não pode ser demolido neste momento."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Geral",
-            "performance": "Desempenho"
+            "performance": "Desempenho",
+            "controls": "Controlos"
+        },
+        "controls": {
+            "help": "Selecione «Rebind» e, em seguida, prima uma tecla para a atribuir. Os atalhos de teclado utilizam as posições físicas das teclas.",
+            "rebind": "Rebind",
+            "reset": "Reiniciar",
+            "resetAll": "Repor tudo",
+            "cancel": "Cancelar",
+            "unbind": "Limpar",
+            "capturing": "Prima uma tecla…",
+            "conflict": "Esta tecla também é utilizada por outra ação no mesmo grupo."
         },
         "animations": "Animações",
         "accessibleColors": "Alto contraste",
@@ -839,7 +895,8 @@
             "Junte-se à nossa animada comunidade de jogadores no Discord para partilhar as suas criações e obter dicas.",
             "Alguns edifícios só podem ser colocados perto do edifício principal, como a serração e o lenhador.",
             "Nem todos os recursos são fáceis de obter em todos os lugares. Às vezes, negociar será mais barato do que produzir tudo por conta própria.",
-            "Uma avaliação no Steam ajuda-nos a encontrar novos jogadores para construir um mundo vivo."
+            "Uma avaliação no Steam ajuda-nos a encontrar novos jogadores para construir um mundo vivo.",
+            "Encontre cabras, ovelhas e vacas realizando expedições. Estes animais proporcionam-lhe recursos únicos."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Faça as suas encomendas! Anuncie aos outros jogadores o que pretende comprar ou vender e a que preço. É isso que receberá ou pagará. Tenha em mente que os outros pagarão pelo transporte. Portanto, comprar algo por um preço baixo pode não funcionar se os custos de envio dos outros jogadores forem muito altos.",
         "popup": "Esta janela pop-up mostra todas as informações sobre este edifício. Aqui pode alterar os parâmetros principais do edifício ou até mesmo movê-los. Esta opção só estará disponível quando estiver no modo de construção.",
         "production": "Este painel oferece uma visão geral de todos os seus edifícios de produção. Pode ajustar a taxa de produção de cada edifício individualmente. Os edifícios são agrupados por tipo, e pode ver rapidamente a produção total de recursos de cada grupo.",
-        "storage": "Aqui pode ajustar a capacidade de armazenamento deste edifício. Ele tem uma determinada capacidade e uma determinada quantidade de mercadorias que pode armazenar. Pode alterar a sua proporção, para otimizá-la de acordo com as suas necessidades."
+        "storage": "Aqui pode ajustar a capacidade de armazenamento deste edifício. Ele tem uma determinada capacidade e uma determinada quantidade de mercadorias que pode armazenar. Pode alterar a sua proporção, para otimizá-la de acordo com as suas necessidades.",
+        "storageAllocation": "Este painel permite-lhe atribuir capacidade de armazenamento em massa a todos os edifícios do mesmo tipo. Mova os controles deslizantes para definir que percentagem do volume total de cada edifício é reservada para cada recurso. A soma não pode exceder 100%; qualquer excedente é capacidade desperdiçada. Ao aplicar, todos os edifícios desse tipo serão substituídos pela atribuição escolhida."
     },
     "tooltip": {
         "cannotChange": "Não pode ser alterado para",
@@ -880,9 +938,9 @@
         "name": "Nome",
         "namePlaceholder": "Nome do plano",
         "description": "Descrição",
-        "descriptionPlaceholder": "O que é que este projeto constrói?",
+        "descriptionPlaceholder": "O que é este design?",
         "category": "Categoria",
-        "categoryPlaceholder": "por exemplo: Industrial, Residencial",
+        "categoryPlaceholder": "por exemplo: Industrial, Residencial...",
         "biome": "Configuração do bioma",
         "allBiomes": "O mesmo layout para todos os biomas",
         "copyConfig": "Copiar configuração do bioma",
@@ -903,7 +961,8 @@
         "rates": "Taxas",
         "noRates": "Coloque edifícios para ver as taxas",
         "deleteObject": "Remover",
-        "outOfBounds": "Fora da área do projeto"
+        "outOfBounds": "Fora da área do projeto",
+        "duplicateLocation": "Localização duplicada"
     },
     "warnings": {
         "notEnoughPop": "Não há voluntários suficientes."

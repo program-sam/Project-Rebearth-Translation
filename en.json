@@ -98,6 +98,7 @@
             "notEnoughPop": "Not enough population",
             "notEnoughResources": "Not enough resources",
             "territoryPreview": "Territory range",
+            "tooClose": "Too close to another building of the same type",
             "tooHigh": "Zoom in closer"
         },
         "cancel": "✗",
@@ -437,6 +438,7 @@
         "build": {
             "doubleClickNodes": "Double click to place nodes",
             "fineRotate": "Fine rotation",
+            "mirror": "Mirror horizontally",
             "multiPlace": "Keep placing",
             "rotate": "Rotate",
             "restriction": "Unbuildable area"
@@ -500,6 +502,7 @@
             "serverOffline": "Cannot reach the server. The server might be under heavy load, or down temporarily for maintenance. Check the Discord for the latest status.",
             "settings": "Settings",
             "blueprints": "Blueprints",
+            "demolish": "Demolish",
             "subtitle": "This is an early release of Project Rebearth. Please reach out if you encounter any issues while playing.",
             "suspended": "Your account has been suspended. Reason: {{reason}}",
             "demoSubtitle": "This is the demo of Project Rebearth. Only the sandbox city-builder is enabled. For playing on the multiplayer globe with resource management, get the full release.",
@@ -510,7 +513,7 @@
         },
         "blueprints": {
             "title": "Building Blueprints",
-            "description": "Create reusable building blueprints to quickly place groups of buildings.",
+            "description": "Create reusable blueprint designs to place in your town or share with others.",
             "createNew": "Create New Blueprint",
             "noBlueprints": "No blueprints yet. Create your first one!",
             "edit": "Edit",
@@ -528,7 +531,7 @@
             "update": "Update",
             "publishToWorkshop": "Publish to Steam Workshop",
             "updateWorkshop": "Update Workshop item",
-            "duplicate": "Make a copy",
+            "duplicate": "Copy",
             "copyLabel": "(Copy)"
         },
         "sandbox": {
@@ -660,6 +663,17 @@
             "collapseAll": "Collapse All",
             "throttleHelp": "This building type is being throttled because a required resource is running low. Production is automatically reduced to prevent resources from going negative."
         },
+        "storage": {
+            "title": "Storage Allocation",
+            "noBuildings": "You don't have any storage buildings with multiple resource slots yet.",
+            "mixed": "Mixed",
+            "mixedHelp": "Buildings of this type currently have different allocations. Applying will set them all to the values shown.",
+            "perBuildingVolume": "Total storage volume per building",
+            "building": "building",
+            "evenSplit": "Even Split",
+            "reset": "Reset",
+            "setFull": "Allocate 100% to this resource"
+        },
         "save": {
             "download": "Download File",
             "message": "Your game has been saved locally.",
@@ -790,10 +804,52 @@
         "unnamedDistrict": "unnamed district",
         "upgrade": "Upgrade to {{building}}"
     },
+    "demolish": {
+        "title": "Demolish Tool",
+        "hint": "Drag on the map to mark buildings. Marked buildings appear in this list and can be demolished together.",
+        "drawingPaused": "Drawing paused. Right-click or use the button below to resume marking.",
+        "resumeDrawing": "Resume marking",
+        "empty": "No buildings marked yet. Drag across buildings on the map to add them to the list.",
+        "clearAll": "Clear selection",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Demolishing...",
+        "confirmAll": "Are you sure you want to demolish {{count}} buildings? This cannot be undone.",
+        "removeFromList": "Remove from list",
+        "removeGroup": "Remove all in this group",
+        "expandGroup": "Expand",
+        "collapseGroup": "Collapse",
+        "expandAll": "Expand all",
+        "collapseAll": "Collapse all",
+        "selectedCount": "{{count}} selected",
+        "selectedCountCapped": "{{count}}/{{cap}} selected",
+        "someExcluded": "Some marked buildings cannot be demolished and will be skipped.",
+        "controlsTitle": "Demolish Tool",
+        "controlsDrag": "Drag to mark buildings",
+        "controlsScroll": "Scroll wheel to resize brush",
+        "controlsRight": "Right-click to pause/resume drawing",
+        "refundTitle": "Refund",
+        "changesTitle": "Resource changes",
+        "reason": {
+            "protected": "This building cannot be demolished.",
+            "population": "Not enough population to safely demolish this building.",
+            "other": "This building cannot be demolished right now."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "General",
-            "performance": "Performance"
+            "performance": "Performance",
+            "controls": "Controls"
+        },
+        "controls": {
+            "help": "Select Rebind, then press a key to assign it. Keyboard shortcuts use physical key positions.",
+            "rebind": "Rebind",
+            "reset": "Reset",
+            "resetAll": "Reset All",
+            "cancel": "Cancel",
+            "unbind": "Clear",
+            "capturing": "Press a key…",
+            "conflict": "This key is also used by another action in the same group."
         },
         "animations": "Animations",
         "accessibleColors": "High Contrast",
@@ -840,7 +896,8 @@
             "Join our lively community of players on Discord to share your creations and get tips.",
             "Some buildings can only be placed close to the parent building, like the saw and the woodcutter.",
             "Not all resources are easy to get everywhere. Sometimes trading will be cheaper than producing everything yourself.",
-            "Visit the wiki at projectrebearth.com to learn everything about the world of Project Rebearth!"
+            "Visit the wiki at projectrebearth.com to learn everything about the world of Project Rebearth!",
+            "Find goats, sheep and cows by running expeditions. These animals give you unique resources."
         ]
     },
     "help": {
@@ -850,7 +907,8 @@
         "orders": "Place your orders! Announce to other players what you want to buy or sell, and at what price. This is what you will receive, or pay. Keep in mind that others will pay for transport. So buying something for a low price might not work other player's shipping costs are too high.",
         "popup": "This popup shows you all the information about this building. Here you can change key parameters of the building, or even move them. This will only be available when you are in building mode.",
         "production": "This panel gives you an overview of all your production buildings. You can adjust the production rate of each building individually. Buildings are grouped by type, and you can see each group's total resource output at a glance.",
-        "storage": "Here you can adjust how much this building stores. It has a certain capacity, and a certain amount of goods it can hold. You can change its ratio, to optimize it for your needs."
+        "storage": "Here you can adjust how much this building stores. It has a certain capacity, and a certain amount of goods it can hold. You can change its ratio, to optimize it for your needs.",
+        "storageAllocation": "This panel lets you bulk-allocate storage capacity across all buildings of the same type. Move the sliders to set what share of each building's total volume is reserved for each resource. The sum cannot exceed 100%; any slack is wasted capacity. Applying overwrites every building of that type with the chosen allocation."
     },
     "tooltip": {
         "cannotChange": "Cannot be changed for",
@@ -881,9 +939,9 @@
         "name": "Name",
         "namePlaceholder": "Blueprint name",
         "description": "Description",
-        "descriptionPlaceholder": "What does this blueprint build?",
+        "descriptionPlaceholder": "What is this design?",
         "category": "Category",
-        "categoryPlaceholder": "e.g. Industrial, Residential",
+        "categoryPlaceholder": "e.g. Industrial, Residential...",
         "biome": "Biome Configuration",
         "allBiomes": "Same layout for all biomes",
         "copyConfig": "Copy Biome Config",
@@ -904,7 +962,8 @@
         "rates": "Rates",
         "noRates": "Place buildings to see rates",
         "deleteObject": "Remove",
-        "outOfBounds": "Outside blueprint area"
+        "outOfBounds": "Outside blueprint area",
+        "duplicateLocation": "Duplicate location"
     },
     "warnings": {
         "notEnoughPop": "Not enough volunteers"

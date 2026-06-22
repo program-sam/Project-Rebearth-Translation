@@ -98,6 +98,7 @@
             "notEnoughPop": "Niewystarczająca liczba ludności",
             "notEnoughResources": "Niewystarczające zasoby",
             "territoryPreview": "Zasięg terytorialny",
+            "tooClose": "Zbyt blisko innego budynku tego samego typu",
             "tooHigh": "Powiększ"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Kliknij dwukrotnie, aby umieścić węzły.",
             "fineRotate": "Precyzyjna rotacja",
+            "mirror": "Odbij w poziomie",
             "multiPlace": "Kontynuuj umieszczanie",
             "rotate": "Obróć",
             "restriction": "Obszar, na którym nie można budować"
@@ -499,6 +501,7 @@
             "serverOffline": "Nie można połączyć się z serwerem. Serwer może być przeciążony lub tymczasowo niedostępny z powodu konserwacji. Sprawdź najnowszy status na Discordzie.",
             "settings": "Ustawienia",
             "blueprints": "Schematy",
+            "demolish": "Zburz",
             "subtitle": "To jest demo gry Project Rebearth! Tylko tryb piaskownicy jest dostępny publicznie. Zgłoś proszę, jeśli napotkasz problemy w trakcie gry.",
             "suspended": "Twoje konto zostało zawieszone. Powód: {{reason}}",
             "demoSubtitle": "To jest wersja demonstracyjna Project Rebearth. Dostępna jest tylko funkcja budowania miasta w trybie sandbox. Aby grać w trybie wieloosobowym z zarządzaniem zasobami, pobierz pełną wersję gry.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Plany budynków",
-            "description": "Twórz plany budynków wielokrotnego użytku, aby szybko rozmieszczać grupy budynków.",
+            "description": "Twórz projekty planów, które można ponownie wykorzystać, aby umieścić je w swoim mieście lub udostępnić innym.",
             "createNew": "Utwórz nowy schemat",
             "noBlueprints": "Nie ma jeszcze żadnych projektów. Stwórz swój pierwszy!",
             "edit": "Edytuj",
@@ -527,7 +530,7 @@
             "update": "Aktualizacja",
             "publishToWorkshop": "Opublikuj w Steam Workshop",
             "updateWorkshop": "Zaktualizuj element w Workshopie",
-            "duplicate": "Utwórz kopię",
+            "duplicate": "Kopiuj",
             "copyLabel": "(Kopia)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Zwiń wszystko",
             "throttleHelp": "Ten typ budynku jest ograniczany, ponieważ brakuje wymaganych zasobów. Produkcja jest automatycznie zmniejszana, aby zapobiec ujemnemu saldu zasobów."
         },
+        "storage": {
+            "title": "Przydzielanie pamięci",
+            "noBuildings": "Nie masz jeszcze żadnych budynków magazynowych z wieloma slotami na surowce.",
+            "mixed": "Mieszane",
+            "mixedHelp": "Obiekty tego typu mają obecnie różne przypisania. Zastosowanie tej opcji ustawi je wszystkie na pokazane wartości.",
+            "perBuildingVolume": "Całkowita pojemność magazynowa na budynek",
+            "building": "budowanie",
+            "evenSplit": "Równy podział",
+            "reset": "Resetuj",
+            "setFull": "Przeznacz 100% na ten zasób"
+        },
         "save": {
             "download": "Pobierz plik",
             "message": "Twoja gra została zapisana lokalnie.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "bez nazwy dzielnicy",
         "upgrade": "Aktualizacja do wersji {{building}}"
     },
+    "demolish": {
+        "title": "Narzędzie do burzenia",
+        "hint": "Przeciągnij po mapie, aby zaznaczyć budynki. Zaznaczone budynki pojawiają się na tej liście i można je wspólnie wyburzyć.",
+        "drawingPaused": "Rysowanie wstrzymane. Kliknij prawym przyciskiem myszy lub użyj przycisku poniżej, aby wznowić rysowanie.",
+        "resumeDrawing": "Wznowienie oceniania",
+        "empty": "Nie zaznaczono jeszcze żadnych budynków. Przeciągnij kursorem po budynkach na mapie, aby dodać je do listy.",
+        "clearAll": "Wyczyść zaznaczenie",
+        "demolishAll": "Zburzyć ({{count}})",
+        "working": "Niszczenie...",
+        "confirmAll": "Czy na pewno chcesz zburzyć budynki w grze „{{count}}”? Nie można cofnąć tej czynności.",
+        "removeFromList": "Usuń z listy",
+        "removeGroup": "Usuń wszystko z tej grupy",
+        "expandGroup": "Rozwiń",
+        "collapseGroup": "Zwiń",
+        "expandAll": "Rozwiń wszystko",
+        "collapseAll": "Zwiń wszystko",
+        "selectedCount": "{{count}} wybrane",
+        "selectedCountCapped": "{{count}} / Wybrano {{cap}}",
+        "someExcluded": "Niektórych zaznaczonych budynków nie można wyburzyć i zostaną one pominięte.",
+        "controlsTitle": "Narzędzie do burzenia",
+        "controlsDrag": "Przeciągnij, aby zaznaczyć budynki",
+        "controlsScroll": "Przewiń kółkiem, aby zmienić rozmiar pędzla",
+        "controlsRight": "Kliknij prawym przyciskiem myszy, aby wstrzymać/wznowić rysowanie",
+        "refundTitle": "Zwrot kosztów",
+        "changesTitle": "Zmiany zasobów",
+        "reason": {
+            "protected": "Tego budynku nie można wyburzyć.",
+            "population": "Liczba mieszkańców jest zbyt mała, aby bezpiecznie wyburzyć ten budynek.",
+            "other": "W tej chwili nie można zburzyć tego budynku."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Ogólne",
-            "performance": "Wydajność"
+            "performance": "Wydajność",
+            "controls": "Sterowanie"
+        },
+        "controls": {
+            "help": "Wybierz opcję „Zmiana przypisania”, a następnie naciśnij klawisz, aby go przypisać. Skróty klawiaturowe wykorzystują fizyczne położenie klawiszy.",
+            "rebind": "Przełącz",
+            "reset": "Resetuj",
+            "resetAll": "Resetuj wszystko",
+            "cancel": "Anuluj",
+            "unbind": "Wyczyść",
+            "capturing": "Naciśnij klawisz…",
+            "conflict": "Ten klawisz jest również używany przez inną akcję w tej samej grupie."
         },
         "animations": "Animacje",
         "accessibleColors": "Wysoki kontrast",
@@ -839,7 +895,8 @@
             "Dołącz do naszej aktywnej społeczności graczy na Discordzie, aby dzielić się swoimi dziełami i uzyskać wskazówki.",
             "Niektóre budynki można umieścić tylko w pobliżu budynku nadrzędnego, np. tartak i drwal.",
             "Nie wszystkie zasoby są łatwo dostępne wszędzie. Czasami handel będzie tańszy niż samodzielna produkcja wszystkich zasobów.",
-            "Recenzja na Steam pomaga nam znaleźć nowych graczy, którzy pomogą nam stworzyć żywy świat."
+            "Recenzja na Steam pomaga nam znaleźć nowych graczy, którzy pomogą nam stworzyć żywy świat.",
+            "Organizuj wyprawy, aby znaleźć kozy, owce i krowy. Zwierzęta te dostarczają unikalnych zasobów."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Składajcie zamówienia! Poinformujcie innych graczy, co chcecie kupić lub sprzedać i za jaką cenę. Tyle właśnie otrzymacie lub zapłacicie. Pamiętajcie, że inni gracze pokryją koszty transportu. Dlatego kupowanie czegoś za niską cenę może się nie opłacać, jeśli koszty wysyłki ponoszone przez innych graczy są zbyt wysokie.",
         "popup": "To okienko pokazuje wszystkie informacje o tym budynku. Tutaj możesz zmienić kluczowe parametry budynku, a nawet go przenieść. Ta opcja jest dostępna tylko w trybie budowania.",
         "production": "Ten panel zawiera przegląd wszystkich budynków produkcyjnych. Możesz indywidualnie dostosować tempo produkcji każdego budynku. Budynki są pogrupowane według typu, a całkowitą produkcję zasobów każdej grupy można sprawdzić na pierwszy rzut oka.",
-        "storage": "Tutaj możesz dostosować pojemność magazynu. Magazyn ma określoną pojemność i może pomieścić określoną ilość towarów. Możesz zmienić jego proporcje, aby dostosować go do swoich potrzeb."
+        "storage": "Tutaj możesz dostosować pojemność magazynu. Magazyn ma określoną pojemność i może pomieścić określoną ilość towarów. Możesz zmienić jego proporcje, aby dostosować go do swoich potrzeb.",
+        "storageAllocation": "Ten panel pozwala na zbiorcze przydzielenie pojemności magazynowej we wszystkich budynkach tego samego typu. Przesuń suwaki, aby ustawić, jaka część całkowitej pojemności każdego budynku jest zarezerwowana dla każdego zasobu. Suma nie może przekroczyć 100%; wszelkie nadwyżki to zmarnowana pojemność. Zastosowanie tej opcji spowoduje nadpisanie przydziału dla każdego budynku tego typu wybranym przydziałem."
     },
     "tooltip": {
         "cannotChange": "Nie można zmienić",
@@ -880,9 +938,9 @@
         "name": "Nazwa",
         "namePlaceholder": "Nazwa schematu",
         "description": "Opis",
-        "descriptionPlaceholder": "Co tworzy ten projekt?",
+        "descriptionPlaceholder": "Czym jest ten projekt?",
         "category": "Kategoria",
-        "categoryPlaceholder": "np. przemysłowy, mieszkaniowy",
+        "categoryPlaceholder": "np. Przemysłowy, Mieszkaniowy...",
         "biome": "Konfiguracja biomu",
         "allBiomes": "Ten sam układ dla wszystkich biomów",
         "copyConfig": "Kopiuj konfigurację biomu",
@@ -903,7 +961,8 @@
         "rates": "Stawki",
         "noRates": "Umieść budynki, aby sprawdzić stawki",
         "deleteObject": "Usuń",
-        "outOfBounds": "Obszar poza schematem"
+        "outOfBounds": "Obszar poza schematem",
+        "duplicateLocation": "Zduplikowana lokalizacja"
     },
     "warnings": {
         "notEnoughPop": "Za mało ochotników"

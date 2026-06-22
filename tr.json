@@ -98,6 +98,7 @@
             "notEnoughPop": "Yeterli nüfus yok",
             "notEnoughResources": "Yetersiz kaynak",
             "territoryPreview": "Bölge aralığı",
+            "tooClose": "Aynı türden başka bir binaya çok yakın",
             "tooHigh": "Yakınlaştır"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Nokta koymak için çift tıkla.",
             "fineRotate": "İnce dönüş",
+            "mirror": "Yatay olarak yansıt",
             "multiPlace": "Art arda yerleştir",
             "rotate": "Döndür",
             "restriction": "İnşa edilemez alan"
@@ -499,6 +501,7 @@
             "serverOffline": "Sunucuya ulaşılamıyor. Sunucu yoğun yük altında olabilir veya bakım nedeniyle geçici olarak kapalı olabilir. En son durumu Discord'da kontrol edin.",
             "settings": "Ayarlar",
             "blueprints": "Taslaklar",
+            "demolish": "Yık",
             "subtitle": "Bu, Project Rebearth'ün erken sürümüdür. Oynarken herhangi bir sorunla karşılaşırsanız lütfen bize ulaşın.",
             "suspended": "Hesabınız askıya alınmıştır. Nedeni: {{reason}}",
             "demoSubtitle": "Bu, Project Rebearth'ün demo sürümüdür. Sadece sandbox şehir kurma modu etkin. Kaynak yönetimli çok oyunculu küre için tam sürümü edinin..",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Bina Planları",
-            "description": "Yeniden kullanılabilir bina planları oluşturarak bina gruplarını hızlıca yerleştirin.",
+            "description": "Şehrinize yerleştirmek veya başkalarıyla paylaşmak için yeniden kullanılabilir plan tasarımları oluşturun.",
             "createNew": "Yeni Blueprint Oluştur",
             "noBlueprints": "Henüz taslak yok. İlk taslağını oluştur!",
             "edit": "Düzenle",
@@ -527,7 +530,7 @@
             "update": "Güncelleme",
             "publishToWorkshop": "Steam Workshop'a yayınla",
             "updateWorkshop": "Atölye öğesini güncelle",
-            "duplicate": "Bir kopya oluştur",
+            "duplicate": "Kopyala",
             "copyLabel": "(Kopyala)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Tümünü daralt",
             "throttleHelp": "Bu bina türü, gerekli kaynakların azalması nedeniyle kısıtlanmaktadır. Kaynakların eksiye düşmesini önlemek için üretim otomatik olarak azaltılır."
         },
+        "storage": {
+            "title": "Depolama Alanı Tahsisi",
+            "noBuildings": "Henüz birden fazla kaynak yuvası olan depo binanız yok.",
+            "mixed": "Karışık",
+            "mixedHelp": "Bu tür binalar şu anda farklı tahsisatlara sahiptir. Uygulama, hepsini gösterilen değerlere ayarlayacaktır.",
+            "perBuildingVolume": "Bina başına toplam depolama hacmi",
+            "building": "inşaat",
+            "evenSplit": "Eşit Paylaşım",
+            "reset": "Sıfırla",
+            "setFull": "Bu kaynağa %100 tahsis et"
+        },
         "save": {
             "download": "Dosyayı indir",
             "message": "Oyunun yerel olarak kaydedildi.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "isimsiz bölge",
         "upgrade": "{{building}} binasına yükselt"
     },
+    "demolish": {
+        "title": "Yıkım Aracı",
+        "hint": "Harita üzerinde sürükleyerek binaları işaretleyin. İşaretlenen binalar bu listede görünür ve toplu olarak yıkılabilir.",
+        "drawingPaused": "Çizim duraklatıldı. İşlemi devam ettirmek için sağ tıklayın veya aşağıdaki düğmeyi kullanın.",
+        "resumeDrawing": "İşaretlemeyi sürdür",
+        "empty": "Henüz işaretlenmiş bina yok. Harita üzerindeki binaların üzerine sürükleyerek listeye ekleyin.",
+        "clearAll": "Seçimi temizle",
+        "demolishAll": "Yık ({{count}})",
+        "working": "Yıkılıyor...",
+        "confirmAll": "{{count}}'daki binaları yıkmak istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+        "removeFromList": "Listeden kaldır",
+        "removeGroup": "Bu gruptaki tümünü kaldır",
+        "expandGroup": "Genişlet",
+        "collapseGroup": "Daralt",
+        "expandAll": "Tümünü genişlet",
+        "collapseAll": "Tümünü daralt",
+        "selectedCount": "{{count}} seçildi",
+        "selectedCountCapped": "{{count}} / {{cap}} seçildi",
+        "someExcluded": "Bazı işaretli binalar yıkılamaz ve atlanacaktır.",
+        "controlsTitle": "Yıkım Aracı",
+        "controlsDrag": "Binaları işaretlemek için sürükleyin",
+        "controlsScroll": "Fare tekerleğini kullanarak fırçanın boyutunu değiştirin",
+        "controlsRight": "Çizimi duraklatmak/devam ettirmek için sağ tıklayın",
+        "refundTitle": "Para iadesi",
+        "changesTitle": "Kaynak değişiklikleri",
+        "reason": {
+            "protected": "Bu bina yıkılamaz.",
+            "population": "Bu binayı güvenli bir şekilde yıkmak için yeterli nüfus yok.",
+            "other": "Bu bina şu anda yıkılamaz."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Genel",
-            "performance": "Performans"
+            "performance": "Performans",
+            "controls": "Kontroller"
+        },
+        "controls": {
+            "help": "Yeniden Atama'yı seçin, ardından atamak istediğiniz tuşa basın. Klavye kısayolları fiziksel tuş konumlarını kullanır.",
+            "rebind": "Yeniden bağla",
+            "reset": "Sıfırla",
+            "resetAll": "Tümünü Sıfırla",
+            "cancel": "İptal",
+            "unbind": "Temizle",
+            "capturing": "Bir tuşa basın…",
+            "conflict": "Bu tuş, aynı gruptaki başka bir eylem tarafından da kullanılır."
         },
         "animations": "Animasyonlar",
         "accessibleColors": "Yüksek Kontrast",
@@ -839,7 +895,8 @@
             "Steam'de bir inceleme bırakmak, bu dünyayı canlı kılan yeni oyuncular bulmamıza yardımcı olur.",
             "Diğer oyuncularla ticaret yapmanın kilidini açmak için bir pazar veya liman inşa edin.",
             "İttifakların, sıralamaların ve seçimlerin kilidini açmak için bir belediye binası inşa edin.",
-            "Keşif seferlerinin ve araştırmanın kilidini açmak için bir üniversite inşa edin."
+            "Keşif seferlerinin ve araştırmanın kilidini açmak için bir üniversite inşa edin.",
+            "Keşif gezileri düzenleyerek keçileri, koyunları ve inekleri bulun. Bu hayvanlar size eşsiz kaynaklar sağlar."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Siparişlerinizi verin! Diğer oyunculara neyi hangi fiyata satın almak veya satmak istediğinizi bildirin. Bu, alacağınız veya ödeyeceğiniz tutardır. Diğer oyuncuların nakliye ücretini ödeyeceğini unutmayın. Bu nedenle, düşük bir fiyata bir şey satın almak, diğer oyuncuların nakliye ücretleri çok yüksekse işe yaramayabilir.",
         "popup": "Bu açılır pencere, bu bina hakkındaki tüm bilgileri gösterir. Burada binanın temel parametrelerini değiştirebilir, hatta taşıyabilirsiniz. Bu özellik yalnızca bina modundayken kullanılabilir.",
         "production": "Bu panel, tüm üretim binalarınıza genel bir bakış sunar. Her binanın üretim hızını ayrı ayrı ayarlayabilirsiniz. Binalar türüne göre gruplandırılmıştır ve her grubun toplam kaynak üretimini bir bakışta görebilirsiniz.",
-        "storage": "Burada bu binanın depolama kapasitesini ayarlayabilirsiniz. Belirli bir kapasitesi ve belirli miktarda mal depolayabilir. İhtiyaçlarınıza göre optimize etmek için oranını değiştirebilirsiniz."
+        "storage": "Burada bu binanın depolama kapasitesini ayarlayabilirsiniz. Belirli bir kapasitesi ve belirli miktarda mal depolayabilir. İhtiyaçlarınıza göre optimize etmek için oranını değiştirebilirsiniz.",
+        "storageAllocation": "Bu panel, aynı türdeki tüm binalara depolama kapasitesini toplu olarak tahsis etmenizi sağlar. Kaydırıcıları hareket ettirerek her bir binanın toplam hacminin ne kadarının her bir kaynak için ayrılacağını belirleyin. Toplam %100'ü geçemez; fazlalık kapasite israfı anlamına gelir. Uygulama, o türdeki tüm binaları seçilen tahsisatla üzerine yazar."
     },
     "tooltip": {
         "cannotChange": "Şu süre boyunca değiştirilemez",
@@ -880,9 +938,9 @@
         "name": "Ad",
         "namePlaceholder": "Blueprint adı",
         "description": "Açıklama",
-        "descriptionPlaceholder": "Bu şablon neyi oluşturur?",
+        "descriptionPlaceholder": "Bu tasarım nedir?",
         "category": "Kategori",
-        "categoryPlaceholder": "ör. Endüstriyel, Konut",
+        "categoryPlaceholder": "Örneğin: Endüstriyel, Konut...",
         "biome": "Biyom Yapılandırması",
         "allBiomes": "Tüm biyomlar için aynı düzen",
         "copyConfig": "Biyom Yapılandırmasını Kopyala",
@@ -903,7 +961,8 @@
         "rates": "Oranlar",
         "noRates": "Binaları yerleştirerek oranları görün",
         "deleteObject": "Kaldır",
-        "outOfBounds": "Mavi baskı alanı dışında"
+        "outOfBounds": "Mavi baskı alanı dışında",
+        "duplicateLocation": "Yinelenen konum"
     },
     "warnings": {
         "notEnoughPop": "Gönüllü sayısı yetersiz"

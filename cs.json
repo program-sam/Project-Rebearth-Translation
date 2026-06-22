@@ -98,6 +98,7 @@
             "notEnoughPop": "Nedostatečná populace",
             "notEnoughResources": "Nedostatek zdrojů",
             "territoryPreview": "Rozsah území",
+            "tooClose": "Příliš blízko jiné budově stejného typu",
             "tooHigh": "Přiblížit"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Dvojitým kliknutím umístíte uzly.",
             "fineRotate": "Jemné otáčení",
+            "mirror": "Zrcadlit vodorovně",
             "multiPlace": "Pokračujte v umisťování",
             "rotate": "Otočit",
             "restriction": "Nezastavitelná oblast"
@@ -499,6 +501,7 @@
             "serverOffline": "Nelze se připojit k serveru. Server může být přetížen nebo dočasně mimo provoz z důvodu údržby. Nejnovější informace najdete na Discord.",
             "settings": "Nastavení",
             "blueprints": "Návrhy",
+            "demolish": "Demolice",
             "subtitle": "Toto je předběžná verze hry Project Rebearth. Pokud narazíte na nějaké problémy při hraní, kontaktujte nás.",
             "suspended": "Váš účet byl pozastaven. Důvod: {{reason}}",
             "demoSubtitle": "Toto je demo hry Project Rebearth. K dispozici je pouze sandboxový editor měst. Chcete-li hrát na multiplayerovém globu s řízením zdrojů, pořiďte si plnou verzi.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Stavební plány",
-            "description": "Vytvořte opakovaně použitelné plány budov, abyste mohli rychle umisťovat skupiny budov.",
+            "description": "Vytvářejte opakovaně použitelné návrhy plánů, které můžete umístit do svého města nebo sdílet s ostatními.",
             "createNew": "Vytvořit nový blueprint",
             "noBlueprints": "Zatím žádné návrhy. Vytvořte svůj první!",
             "edit": "Upravit",
@@ -527,7 +530,7 @@
             "update": "Aktualizace",
             "publishToWorkshop": "Publikovat na Steam Workshop",
             "updateWorkshop": "Aktualizovat položku v Workshopu",
-            "duplicate": "Vytvořte kopii",
+            "duplicate": "Kopie",
             "copyLabel": "(Kopie)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Sbalit vše",
             "throttleHelp": "Tento typ budovy je omezován, protože dochází požadovaný zdroj. Produkce je automaticky snížena, aby se zabránilo zápornému stavu zdrojů."
         },
+        "storage": {
+            "title": "Přidělení úložného prostoru",
+            "noBuildings": "Zatím nemáš žádné skladové budovy s více sloty pro suroviny.",
+            "mixed": "Smíšené",
+            "mixedHelp": "Budovy tohoto typu mají v současné době různá přidělení. Použitím této funkce se všechna nastaví na zobrazené hodnoty.",
+            "perBuildingVolume": "Celkový objem úložiště na budovu",
+            "building": "budování",
+            "evenSplit": "Rovnoměrné rozdělení",
+            "reset": "Obnovit",
+            "setFull": "Přidělte 100 % tomuto zdroji"
+        },
         "save": {
             "download": "Stáhnout soubor",
             "message": "Vaše hra byla uložena lokálně.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "bezejmenný okres",
         "upgrade": "Upgradujte n{{building}}"
     },
+    "demolish": {
+        "title": "Nástroj pro demolici",
+        "hint": "Přetažením myši po mapě označte budovy. Označené budovy se zobrazí v tomto seznamu a lze je společně zbourat.",
+        "drawingPaused": "Kreslení pozastaveno. Klikněte pravým tlačítkem myši nebo použijte tlačítko níže k obnovení značení.",
+        "resumeDrawing": "Pokračovat v hodnocení",
+        "empty": "Zatím nejsou označeny žádné budovy. Přetáhněte kurzor přes budovy na mapě a přidejte je do seznamu.",
+        "clearAll": "Vymazat výběr",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Demolice...",
+        "confirmAll": "Opravdu chcete zbourat budovy v{{count}}? Tento krok nelze vrátit zpět.",
+        "removeFromList": "Odebrat ze seznamu",
+        "removeGroup": "Odebrat vše v této skupině",
+        "expandGroup": "Rozbalit",
+        "collapseGroup": "Sbalit",
+        "expandAll": "Rozbalit vše",
+        "collapseAll": "Sbalit vše",
+        "selectedCount": "{{count}} vybráno",
+        "selectedCountCapped": "{{count}} / Vybráno {{cap}}",
+        "someExcluded": "Některé označené budovy nelze zbourat a budou přeskočeny.",
+        "controlsTitle": "Nástroj pro demolici",
+        "controlsDrag": "Přetažením označte budovy",
+        "controlsScroll": "Kolečkem myši měňte velikost štětce",
+        "controlsRight": "Kliknutím pravým tlačítkem myši pozastavíte/obnovíte kreslení",
+        "refundTitle": "Vrácení peněz",
+        "changesTitle": "Změny zdrojů",
+        "reason": {
+            "protected": "Tuto budovu nelze zbourat.",
+            "population": "Počet obyvatel nestačí k bezpečnému zbourání této budovy.",
+            "other": "Tuto budovu nelze v tuto chvíli zbourat."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Obecné",
-            "performance": "Výkon"
+            "performance": "Výkon",
+            "controls": "Ovládání"
+        },
+        "controls": {
+            "help": "Vyberte možnost „Rebind“ a poté stiskněte klávesu, kterou chcete přiřadit. Klávesové zkratky využívají fyzické pozice kláves.",
+            "rebind": "Připojit znovu",
+            "reset": "Obnovit",
+            "resetAll": "Vynulovat vše",
+            "cancel": "Zrušit",
+            "unbind": "Vymazat",
+            "capturing": "Stiskněte klávesu…",
+            "conflict": "Tento klávesový zkratek používá i jiná akce ve stejné skupině."
         },
         "animations": "Animace",
         "accessibleColors": "Vysoký kontrast",
@@ -839,7 +895,8 @@
             "Připojte se k naší živé komunitě hráčů na Discord a sdílejte své výtvory a získejte tipy.",
             "Některé budovy lze umístit pouze v blízkosti mateřské budovy, například pila a dřevorubec.",
             "Ne všechny suroviny lze snadno získat všude. Někdy bude obchodování levnější než vlastní výroba.",
-            "Recenze na Steam nám pomáhá najít nové hráče, kteří nám pomohou vytvořit živoucí svět."
+            "Recenze na Steam nám pomáhá najít nové hráče, kteří nám pomohou vytvořit živoucí svět.",
+            "Vyhledávejte kozy, ovce a krávy prostřednictvím výprav. Tato zvířata vám poskytnou jedinečné suroviny."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Zadejte své objednávky! Oznamte ostatním hráčům, co chcete koupit nebo prodat a za jakou cenu. To je částka, kterou obdržíte nebo zaplatíte. Mějte na paměti, že ostatní budou platit za dopravu. Nákup za nízkou cenu tedy nemusí být výhodný, pokud jsou náklady na dopravu ostatních hráčů příliš vysoké.",
         "popup": "Toto vyskakovací okno zobrazuje všechny informace o této budově. Zde můžete změnit klíčové parametry budovy nebo je dokonce přesunout. Tato funkce je k dispozici pouze v režimu stavění.",
         "production": "Tento panel vám poskytuje přehled všech vašich výrobních budov. Můžete individuálně nastavit rychlost výroby každé budovy. Budovy jsou seskupeny podle typu a můžete si přehledně prohlédnout celkovou produkci zdrojů každé skupiny.",
-        "storage": "Zde můžete nastavit, kolik tato budova skladuje. Má určitou kapacitu a může pojmout určité množství zboží. Můžete změnit její poměr, aby vyhovoval vašim potřebám."
+        "storage": "Zde můžete nastavit, kolik tato budova skladuje. Má určitou kapacitu a může pojmout určité množství zboží. Můžete změnit její poměr, aby vyhovoval vašim potřebám.",
+        "storageAllocation": "Tento panel umožňuje hromadně přidělit skladovací kapacitu všem budovám stejného typu. Posunutím posuvníků nastavíte, jaký podíl z celkového objemu každé budovy je vyhrazen pro jednotlivé zdroje. Součet nesmí překročit 100 %; jakýkoli přebytek představuje nevyužitou kapacitu. Použitím této funkce se všechny budovy daného typu přepíší zvoleným rozdělením."
     },
     "tooltip": {
         "cannotChange": "Nelze změnit pro",
@@ -880,9 +938,9 @@
         "name": "Název",
         "namePlaceholder": "Název plánu",
         "description": "Popis",
-        "descriptionPlaceholder": "Co tento blueprint vytváří?",
+        "descriptionPlaceholder": "Co je to za design?",
         "category": "Kategorie",
-        "categoryPlaceholder": "např. průmyslové, obytné",
+        "categoryPlaceholder": "např. Průmyslová, Obytná...",
         "biome": "Nastavení biomu",
         "allBiomes": "Stejné rozložení pro všechny biomy",
         "copyConfig": "Kopírovat konfiguraci biomu",
@@ -903,7 +961,8 @@
         "rates": "Ceny",
         "noRates": "Umístěte budovy a podívejte se na sazby",
         "deleteObject": "Odebrat",
-        "outOfBounds": "Mimo oblast plánu"
+        "outOfBounds": "Mimo oblast plánu",
+        "duplicateLocation": "Duplicitní umístění"
     },
     "warnings": {
         "notEnoughPop": "Nedostatek dobrovolníků"

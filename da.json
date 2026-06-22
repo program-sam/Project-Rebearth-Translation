@@ -98,6 +98,7 @@
             "notEnoughPop": "Ikke nok befolkning",
             "notEnoughResources": "Ikke nok ressourcer",
             "territoryPreview": "Territoriets udstrækning",
+            "tooClose": "For tæt på en anden bygning af samme type",
             "tooHigh": "Zoom ind tættere"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Dobbeltklik for at placere noder",
             "fineRotate": "Fin rotation",
+            "mirror": "Spejl vandret",
             "multiPlace": "Fortsæt med at placere",
             "rotate": "Rotér",
             "restriction": "Område, der ikke kan bebygges"
@@ -499,6 +501,7 @@
             "serverOffline": "Kan ikke oprette forbindelse til serveren. Serveren er muligvis overbelastet eller midlertidigt nede på grund af vedligeholdelse. Tjek Discord for den seneste status.",
             "settings": "Indstillinger",
             "blueprints": "Tegninger",
+            "demolish": "Nedrivning",
             "subtitle": "Dette er en tidlig udgave af Project Rebearth. Kontakt os, hvis du støder på problemer under spillet.",
             "suspended": "Din konto er blevet suspenderet. Årsag: {{reason}}",
             "demoSubtitle": "Dette er demoen af Project Rebearth. Kun sandkasse-bybyggerspillet er aktiveret. For at spille på multiplayer-kloden med ressourcehåndtering skal du hente den fulde version.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Byggeplaner",
-            "description": "Opret genanvendelige bygningstegninger for hurtigt at placere grupper af bygninger.",
+            "description": "Opret genanvendelige blueprint-design, som du kan placere i din by eller dele med andre.",
             "createNew": "Opret ny skitse",
             "noBlueprints": "Der er endnu ingen skitser. Opret din første!",
             "edit": "Rediger",
@@ -527,7 +530,7 @@
             "update": "Opdatering",
             "publishToWorkshop": "Udgiv på Steam Workshop",
             "updateWorkshop": "Opdater Workshop-genstand",
-            "duplicate": "Lav en kopi",
+            "duplicate": "Kopier",
             "copyLabel": "(Kopier)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Skjul alt",
             "throttleHelp": "Denne bygningstype er begrænset, fordi en nødvendig ressource er ved at være opbrugt. Produktionen reduceres automatisk for at forhindre, at ressourcerne bliver negative."
         },
+        "storage": {
+            "title": "Allokering af lagerplads",
+            "noBuildings": "Du har endnu ingen lagerbygninger med flere ressourcepladser.",
+            "mixed": "Blandet",
+            "mixedHelp": "Bygninger af denne type har i øjeblikket forskellige tildelinger. Hvis du anvender dette, vil de alle blive sat til de viste værdier.",
+            "perBuildingVolume": "Samlet lagerplads pr. bygning",
+            "building": "bygning",
+            "evenSplit": "Jævn fordeling",
+            "reset": "Nulstil",
+            "setFull": "Alloker 100 % til denne ressource"
+        },
         "save": {
             "download": "Download fil",
             "message": "Dit spil er blevet gemt lokalt.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "navnløst distrikt",
         "upgrade": "Opgrader til {{building}}"
     },
+    "demolish": {
+        "title": "Nedrivningsværktøj",
+        "hint": "Træk på kortet for at markere bygninger. Markerede bygninger vises på denne liste og kan rives ned samlet.",
+        "drawingPaused": "Tegningen er sat på pause. Højreklik eller brug knappen nedenfor for at genoptage markeringen.",
+        "resumeDrawing": "Genoptag markering",
+        "empty": "Der er endnu ikke markeret nogen bygninger. Træk hen over bygningerne på kortet for at føje dem til listen.",
+        "clearAll": "Ryd valg",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Nedrivning...",
+        "confirmAll": "Er du sikker på, at du vil rive bygningerne i \"{{count}}\" ned? Dette kan ikke fortrydes.",
+        "removeFromList": "Fjern fra listen",
+        "removeGroup": "Fjern alt i denne gruppe",
+        "expandGroup": "Udvid",
+        "collapseGroup": "Skjul",
+        "expandAll": "Udvid alt",
+        "collapseAll": "Skjul alt",
+        "selectedCount": "{{count}} valgt",
+        "selectedCountCapped": "{{count}} / {{cap}} valgt",
+        "someExcluded": "Nogle markerede bygninger kan ikke rives ned og vil blive sprunget over.",
+        "controlsTitle": "Nedrivningsværktøj",
+        "controlsDrag": "Træk for at markere bygninger",
+        "controlsScroll": "Rul med rullehjulet for at ændre penselstørrelsen",
+        "controlsRight": "Højreklik for at pause/genoptage tegningen",
+        "refundTitle": "Refusion",
+        "changesTitle": "Ændringer i ressourcer",
+        "reason": {
+            "protected": "Denne bygning kan ikke rives ned.",
+            "population": "Der er ikke nok indbyggere til at rive denne bygning ned på en sikker måde.",
+            "other": "Denne bygning kan ikke rives ned lige nu."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Generelt",
-            "performance": "Ydeevne"
+            "performance": "Ydeevne",
+            "controls": "Kontroller"
+        },
+        "controls": {
+            "help": "Vælg Rebind, og tryk derefter på en tast for at tildele den. Tastaturgenveje bruger fysiske tastpositioner.",
+            "rebind": "Rebind",
+            "reset": "Nulstil",
+            "resetAll": "Nulstil alt",
+            "cancel": "Annuller",
+            "unbind": "Ryd",
+            "capturing": "Tryk på en tast…",
+            "conflict": "Denne tast bruges også af en anden handling i samme gruppe."
         },
         "animations": "Animationer",
         "accessibleColors": "Høj kontrast",
@@ -839,7 +895,8 @@
             "Deltag i vores livlige spillerfællesskab på Discord for at dele dine kreationer og få tips.",
             "Nogle bygninger kan kun placeres tæt på moderbygningen, f.eks. saven og træfælderen.",
             "Ikke alle ressourcer er lige nemme at få fat i overalt. Nogle gange er det billigere at handle end at producere alt selv.",
-            "En anmeldelse på Steam hjælper os med at finde nye spillere, der kan være med til at skabe en levende verden."
+            "En anmeldelse på Steam hjælper os med at finde nye spillere, der kan være med til at skabe en levende verden.",
+            "Find geder, får og køer ved at gennemføre ekspeditioner. Disse dyr giver dig unikke ressourcer."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Afgiv dine ordrer! Fortæl de andre spillere, hvad du vil købe eller sælge, og til hvilken pris. Det er det, du vil modtage eller betale. Husk, at andre vil betale for transporten. Så det kan være, at det ikke kan betale sig at købe noget til en lav pris, hvis de andre spilleres forsendelsesomkostninger er for høje.",
         "popup": "Denne popup viser dig alle oplysninger om denne bygning. Her kan du ændre bygningens vigtigste parametre eller endda flytte dem. Dette er kun tilgængeligt, når du er i byggetilstand.",
         "production": "Dette panel giver dig et overblik over alle dine produktionsbygninger. Du kan justere produktionshastigheden for hver bygning individuelt. Bygningerne er grupperet efter type, og du kan se hver gruppes samlede ressourceproduktion med et enkelt blik.",
-        "storage": "Her kan du justere, hvor meget denne bygning kan opbevare. Den har en bestemt kapacitet og kan rumme en bestemt mængde varer. Du kan ændre dens forhold for at optimere den til dine behov."
+        "storage": "Her kan du justere, hvor meget denne bygning kan opbevare. Den har en bestemt kapacitet og kan rumme en bestemt mængde varer. Du kan ændre dens forhold for at optimere den til dine behov.",
+        "storageAllocation": "Dette panel giver dig mulighed for at fordele lagerkapacitet samlet på tværs af alle bygninger af samme type. Flyt skyderne for at indstille, hvor stor en andel af hver bygnings samlede volumen der skal reserveres til hver ressource. Summen må ikke overstige 100 %; overskydende kapacitet går til spilde. Anvendelse overskriver alle bygninger af den pågældende type med den valgte fordeling."
     },
     "tooltip": {
         "cannotChange": "Kan ikke ændres for",
@@ -880,9 +938,9 @@
         "name": "Navn",
         "namePlaceholder": "Navn på blueprint",
         "description": "Beskrivelse",
-        "descriptionPlaceholder": "Hvad bygger denne blueprint?",
+        "descriptionPlaceholder": "Hvad er dette design?",
         "category": "Kategori",
-        "categoryPlaceholder": "f.eks. Industri, Bolig",
+        "categoryPlaceholder": "f.eks. Industri, Bolig...",
         "biome": "Biom-konfiguration",
         "allBiomes": "Samme layout for alle biomer",
         "copyConfig": "Kopier biome-konfiguration",
@@ -903,7 +961,8 @@
         "rates": "Priser",
         "noRates": "Placer bygninger for at se priser",
         "deleteObject": "Fjern",
-        "outOfBounds": "Uden for tegneområdet"
+        "outOfBounds": "Uden for tegneområdet",
+        "duplicateLocation": "Duplikeret placering"
     },
     "warnings": {
         "notEnoughPop": "Ikke nok frivillige"

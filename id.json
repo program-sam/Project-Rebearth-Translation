@@ -98,6 +98,7 @@
             "notEnoughPop": "Populasi tidak cukup.",
             "notEnoughResources": "Sumber daya tidak mencukupi",
             "territoryPreview": "Jangkauan wilayah",
+            "tooClose": "Terlalu dekat dengan bangunan lain dari jenis yang sama",
             "tooHigh": "Perbesar tampilan."
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Klik ganda untuk menempatkan node.",
             "fineRotate": "Rotasi halus",
+            "mirror": "Cerminkan secara horizontal",
             "multiPlace": "Terus letakkan",
             "rotate": "Putar",
             "restriction": "Area yang tidak dapat dibangun."
@@ -499,6 +501,7 @@
             "serverOffline": "Tidak dapat terhubung ke server. Server mungkin sedang mengalami beban berat atau sedang offline sementara untuk pemeliharaan. Periksa Discord untuk status terbaru.",
             "settings": "Pengaturan",
             "blueprints": "Blueprint",
+            "demolish": "Hancurkan",
             "subtitle": "Ini adalah versi awal dari Project Rebearth. Silakan hubungi kami jika Anda menemui masalah saat bermain.",
             "suspended": "Akun Anda telah ditangguhkan. Alasan: {{reason}}",
             "demoSubtitle": "Ini adalah demo dari Project Rebearth. Hanya mode sandbox pembangun kota yang diaktifkan. Untuk bermain di globe multipemain dengan manajemen sumber daya, dapatkan versi lengkapnya.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Rancangan Bangunan",
-            "description": "Buat cetak biru bangunan yang dapat digunakan kembali untuk menempatkan kelompok bangunan dengan cepat.",
+            "description": "Buat desain cetak biru yang dapat digunakan kembali untuk ditempatkan di kota Anda atau dibagikan kepada orang lain.",
             "createNew": "Buat Blueprint Baru",
             "noBlueprints": "Belum ada blueprint. Buat yang pertama!",
             "edit": "Edit",
@@ -527,7 +530,7 @@
             "update": "Pembaruan",
             "publishToWorkshop": "Publikasikan ke Steam Workshop",
             "updateWorkshop": "Perbarui item Workshop",
-            "duplicate": "Buat salinan",
+            "duplicate": "Salin",
             "copyLabel": "(Salin)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Sembunyikan Semua",
             "throttleHelp": "Jenis bangunan ini dibatasi karena sumber daya yang diperlukan sedang menipis. Produksi secara otomatis dikurangi untuk mencegah sumber daya menjadi negatif."
         },
+        "storage": {
+            "title": "Alokasi Penyimpanan",
+            "noBuildings": "Anda belum memiliki bangunan penyimpanan dengan beberapa slot sumber daya.",
+            "mixed": "Campuran",
+            "mixedHelp": "Bangunan jenis ini saat ini memiliki alokasi yang berbeda-beda. Dengan menerapkan pengaturan ini, semua bangunan akan disetel ke nilai yang ditampilkan.",
+            "perBuildingVolume": "Total volume penyimpanan per bangunan",
+            "building": "pembangunan",
+            "evenSplit": "Pembagian Merata",
+            "reset": "Atur ulang",
+            "setFull": "Alokasikan 100% ke sumber daya ini"
+        },
         "save": {
             "download": "Unduh File",
             "message": "Permainan Anda telah disimpan secara lokal.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "distrik tanpa nama",
         "upgrade": "Perbarui k{{building}}"
     },
+    "demolish": {
+        "title": "Alat Penghancur",
+        "hint": "Seret pada peta untuk menandai bangunan. Bangunan yang ditandai akan muncul dalam daftar ini dan dapat dihancurkan secara bersamaan.",
+        "drawingPaused": "Penggambaran ditangguhkan. Klik kanan atau gunakan tombol di bawah ini untuk melanjutkan penandaan.",
+        "resumeDrawing": "Menandai resume",
+        "empty": "Belum ada bangunan yang ditandai. Seret kursor melintasi bangunan di peta untuk menambahkannya ke daftar.",
+        "clearAll": "Batalkan pilihan",
+        "demolishAll": "Hancurkan ({{count}})",
+        "working": "Sedang menghancurkan...",
+        "confirmAll": "Apakah Anda yakin ingin menghancurkan bangunan-bangunan di {{count}}? Tindakan ini tidak dapat dibatalkan.",
+        "removeFromList": "Hapus dari daftar",
+        "removeGroup": "Hapus semua dalam grup ini",
+        "expandGroup": "Perluas",
+        "collapseGroup": "Sembunyikan",
+        "expandAll": "Perluas semua",
+        "collapseAll": "Sembunyikan semua",
+        "selectedCount": "{{count}} dipilih",
+        "selectedCountCapped": "{{count}} / {{cap}} dipilih",
+        "someExcluded": "Beberapa bangunan yang ditandai tidak dapat dihancurkan dan akan dilewati.",
+        "controlsTitle": "Alat Penghancur",
+        "controlsDrag": "Seret untuk menandai bangunan",
+        "controlsScroll": "Gulir roda mouse untuk mengubah ukuran kuas",
+        "controlsRight": "Klik kanan untuk menjeda/melanjutkan menggambar",
+        "refundTitle": "Pengembalian dana",
+        "changesTitle": "Perubahan sumber daya",
+        "reason": {
+            "protected": "Bangunan ini tidak dapat dihancurkan.",
+            "population": "Populasi tidak cukup untuk menghancurkan bangunan ini dengan aman.",
+            "other": "Bangunan ini tidak dapat dihancurkan saat ini."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Umum",
-            "performance": "Kinerja"
+            "performance": "Kinerja",
+            "controls": "Kontrol"
+        },
+        "controls": {
+            "help": "Pilih \"Rebind\", lalu tekan tombol untuk menetapkannya. Pintasan keyboard menggunakan posisi tombol fisik.",
+            "rebind": "Rebind",
+            "reset": "Atur ulang",
+            "resetAll": "Atur Ulang Semua",
+            "cancel": "Batal",
+            "unbind": "Hapus",
+            "capturing": "Tekan tombol…",
+            "conflict": "Tombol ini juga digunakan oleh tindakan lain dalam grup yang sama."
         },
         "animations": "Animasi",
         "accessibleColors": "Kontras Tinggi",
@@ -839,7 +895,8 @@
             "Bergabunglah dengan komunitas pemain kami yang ramai di Discord untuk berbagi kreasi Anda dan mendapatkan tips.",
             "Beberapa bangunan hanya dapat ditempatkan dekat dengan bangunan induknya, seperti gergaji dan penebang kayu.",
             "Tidak semua sumber daya mudah didapatkan di mana-mana. Terkadang berdagang akan lebih murah daripada memproduksi semuanya sendiri.",
-            "Ulasan di Steam membantu kami menemukan pemain baru untuk membangun dunia yang hidup."
+            "Ulasan di Steam membantu kami menemukan pemain baru untuk membangun dunia yang hidup.",
+            "Temukan kambing, domba, dan sapi dengan melakukan ekspedisi. Hewan-hewan ini memberikan sumber daya unik kepada Anda."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Pasang pesanan Anda! Beritahukan kepada pemain lain apa yang ingin Anda beli atau jual, serta harganya. Ini adalah apa yang akan Anda terima atau bayar. Perlu diingat bahwa pemain lain akan membayar biaya pengiriman. Jadi, membeli sesuatu dengan harga rendah mungkin tidak berhasil jika biaya pengiriman pemain lain terlalu tinggi.",
         "popup": "Popup ini menampilkan semua informasi tentang bangunan ini. Di sini Anda dapat mengubah parameter utama bangunan, atau bahkan memindahkannya. Fitur ini hanya tersedia saat Anda berada dalam mode bangunan.",
         "production": "Panel ini memberikan gambaran umum tentang semua bangunan produksi Anda. Anda dapat menyesuaikan laju produksi setiap bangunan secara individual. Bangunan dikelompokkan berdasarkan jenisnya, dan Anda dapat melihat total output sumber daya setiap kelompok dengan sekilas.",
-        "storage": "Di sini Anda dapat menyesuaikan seberapa banyak bangunan ini dapat menyimpan barang. Bangunan ini memiliki kapasitas tertentu dan jumlah barang tertentu yang dapat ditampungnya. Anda dapat mengubah rasionya untuk mengoptimalkan sesuai kebutuhan Anda."
+        "storage": "Di sini Anda dapat menyesuaikan seberapa banyak bangunan ini dapat menyimpan barang. Bangunan ini memiliki kapasitas tertentu dan jumlah barang tertentu yang dapat ditampungnya. Anda dapat mengubah rasionya untuk mengoptimalkan sesuai kebutuhan Anda.",
+        "storageAllocation": "Panel ini memungkinkan Anda mengalokasikan kapasitas penyimpanan secara massal ke semua bangunan dengan jenis yang sama. Geser penggeser untuk menentukan berapa persentase dari total volume setiap bangunan yang dialokasikan untuk setiap sumber daya. Jumlah total tidak boleh melebihi 100%; kelebihan kapasitas akan terbuang percuma. Penerapan akan mengganti alokasi semua bangunan jenis tersebut dengan alokasi yang dipilih."
     },
     "tooltip": {
         "cannotChange": "Tidak dapat diubah untuk",
@@ -880,9 +938,9 @@
         "name": "Nama",
         "namePlaceholder": "Nama blueprint",
         "description": "Deskripsi",
-        "descriptionPlaceholder": "Apa yang dibangun oleh blueprint ini?",
+        "descriptionPlaceholder": "Apa desain ini?",
         "category": "Kategori",
-        "categoryPlaceholder": "misalnya: Industri, Perumahan",
+        "categoryPlaceholder": "misalnya: Industri, Perumahan...",
         "biome": "Konfigurasi Bioma",
         "allBiomes": "Tata letak yang sama untuk semua bioma",
         "copyConfig": "Salin Konfigurasi Bioma",
@@ -903,7 +961,8 @@
         "rates": "Tarif",
         "noRates": "Tempatkan bangunan untuk melihat tarif",
         "deleteObject": "Hapus",
-        "outOfBounds": "Di luar area blueprint"
+        "outOfBounds": "Di luar area blueprint",
+        "duplicateLocation": "Lokasi duplikat"
     },
     "warnings": {
         "notEnoughPop": "Tidak cukup sukarelawan"

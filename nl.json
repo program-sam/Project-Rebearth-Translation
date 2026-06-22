@@ -98,6 +98,7 @@
             "notEnoughPop": "Onvoldoende bevolking",
             "notEnoughResources": "Onvoldoende middelen",
             "territoryPreview": "Territoriumbereik",
+            "tooClose": "Te dicht bij een ander gebouw van hetzelfde type",
             "tooHigh": "Zoom in"
         },
         "cancel": "✗",
@@ -436,6 +437,7 @@
         "build": {
             "doubleClickNodes": "Dubbelklik om knooppunten te plaatsen",
             "fineRotate": "Fijne rotatie",
+            "mirror": "Horizontaal spiegelen",
             "multiPlace": "Blijf plaatsen",
             "rotate": "Draaien",
             "restriction": "Niet-bebouwbaar gebied"
@@ -499,6 +501,7 @@
             "serverOffline": "Kan geen verbinding maken met de server. De server is mogelijk overbelast of tijdelijk buiten gebruik vanwege onderhoud. Kijk op Discord voor de laatste status.",
             "settings": "Instellingen",
             "blueprints": "Blauwdrukken",
+            "demolish": "Sloop",
             "subtitle": "Dit is een vroege versie van Project Rebearth. Neem contact met ons op als je tijdens het spelen problemen ondervindt.",
             "suspended": "Uw account is opgeschort. Reden: {{reason}}",
             "demoSubtitle": "Dit is de demo van Project Rebearth. Alleen de sandbox-stedenbouwgame is beschikbaar. Voor het spelen op de multiplayer-globe met resourcebeheer moet je de volledige versie aanschaffen.",
@@ -509,7 +512,7 @@
         },
         "blueprints": {
             "title": "Bouwtekeningen",
-            "description": "Maak herbruikbare bouwtekeningen om snel groepen gebouwen te plaatsen.",
+            "description": "Maak herbruikbare blauwdrukontwerpen om in je stad te plaatsen of met anderen te delen.",
             "createNew": "Nieuwe blauwdruk maken",
             "noBlueprints": "Er zijn nog geen blauwdrukken. Maak je eerste!",
             "edit": "Bewerken",
@@ -527,7 +530,7 @@
             "update": "Update",
             "publishToWorkshop": "Publiceren op Steam Workshop",
             "updateWorkshop": "Workshop-item bijwerken",
-            "duplicate": "Maak een kopie",
+            "duplicate": "Tekst kopiëren",
             "copyLabel": "(Kopiëren)"
         },
         "sandbox": {
@@ -659,6 +662,17 @@
             "collapseAll": "Alles samenvouwen",
             "throttleHelp": "Dit type gebouw wordt afgeremd omdat een benodigde grondstof bijna op is. De productie wordt automatisch verminderd om te voorkomen dat de grondstoffen negatief worden."
         },
+        "storage": {
+            "title": "Toewijzing van opslagruimte",
+            "noBuildings": "Je hebt nog geen opslaggebouwen met meerdere grondstofvakken.",
+            "mixed": "Gemengd",
+            "mixedHelp": "Gebouwen van dit type hebben momenteel verschillende toewijzingen. Als u dit toepast, worden ze allemaal ingesteld op de weergegeven waarden.",
+            "perBuildingVolume": "Totaal opslagvolume per gebouw",
+            "building": "gebouw",
+            "evenSplit": "Gelijk verdeeld",
+            "reset": "Resetten",
+            "setFull": "Wijs 100% toe aan deze bron"
+        },
         "save": {
             "download": "Bestand downloaden",
             "message": "Je spel is lokaal opgeslagen.",
@@ -789,10 +803,52 @@
         "unnamedDistrict": "naamloos district",
         "upgrade": "Upgrade naar {{building}}"
     },
+    "demolish": {
+        "title": "Sloopgereedschap",
+        "hint": "Sleep over de kaart om gebouwen te markeren. Gemarkeerde gebouwen verschijnen in deze lijst en kunnen samen worden gesloopt.",
+        "drawingPaused": "Tekenen gepauzeerd. Klik met de rechtermuisknop of gebruik de onderstaande knop om verder te gaan met tekenen.",
+        "resumeDrawing": "Markering hervatten",
+        "empty": "Er zijn nog geen gebouwen gemarkeerd. Sleep over gebouwen op de kaart om ze aan de lijst toe te voegen.",
+        "clearAll": "Selectie wissen",
+        "demolishAll": "Demolish ({{count}})",
+        "working": "Aan het slopen...",
+        "confirmAll": "Weet je zeker dat je de gebouwen v{{count}} wilt slopen? Dit kan niet ongedaan worden gemaakt.",
+        "removeFromList": "Verwijderen uit lijst",
+        "removeGroup": "Alles in deze groep verwijderen",
+        "expandGroup": "Uitvouwen",
+        "collapseGroup": "Sluiten",
+        "expandAll": "Alles uitvouwen",
+        "collapseAll": "Alles samenvouwen",
+        "selectedCount": "{{count}} geselecteerd",
+        "selectedCountCapped": "{{count}} / {{cap}} geselecteerd",
+        "someExcluded": "Sommige gemarkeerde gebouwen kunnen niet worden gesloopt en worden overgeslagen.",
+        "controlsTitle": "Sloopgereedschap",
+        "controlsDrag": "Sleep om gebouwen te markeren",
+        "controlsScroll": "Scrollwiel om het formaat van het penseel aan te passen",
+        "controlsRight": "Klik met de rechtermuisknop om het tekenen te pauzeren/hervatten",
+        "refundTitle": "Terugbetaling",
+        "changesTitle": "Wijzigingen in bronnen",
+        "reason": {
+            "protected": "Dit gebouw kan niet worden gesloopt.",
+            "population": "Er is onvoldoende bevolking om dit gebouw veilig te slopen.",
+            "other": "Dit gebouw kan op dit moment niet worden gesloopt."
+        }
+    },
     "settings": {
         "tabs": {
             "general": "Algemeen",
-            "performance": "Prestaties"
+            "performance": "Prestaties",
+            "controls": "Besturing"
+        },
+        "controls": {
+            "help": "Selecteer 'Opnieuw toewijzen' en druk vervolgens op een toets om deze toe te wijzen. Sneltoetsen maken gebruik van de fysieke toetsposities.",
+            "rebind": "Opnieuw toewijzen",
+            "reset": "Resetten",
+            "resetAll": "Alles resetten",
+            "cancel": "Annuleren",
+            "unbind": "Wissen",
+            "capturing": "Druk op een toets…",
+            "conflict": "Deze toets wordt ook gebruikt door een andere actie in dezelfde groep."
         },
         "animations": "Animaties",
         "accessibleColors": "Hoog contrast",
@@ -839,7 +895,8 @@
             "Word lid van onze levendige community van spelers op Discord om je creaties te delen en tips te krijgen.",
             "Sommige gebouwen kunnen alleen in de buurt van het moedergebouw worden geplaatst, zoals de zaag en de houthakker.",
             "Niet alle grondstoffen zijn overal even gemakkelijk te verkrijgen. Soms is handelen goedkoper dan alles zelf produceren.",
-            "Een recensie op Steam helpt ons nieuwe spelers te vinden om een levendige wereld op te bouwen."
+            "Een recensie op Steam helpt ons nieuwe spelers te vinden om een levendige wereld op te bouwen.",
+            "Ga op expeditie om geiten, schapen en koeien te vinden. Deze dieren leveren je unieke grondstoffen op."
         ]
     },
     "help": {
@@ -849,7 +906,8 @@
         "orders": "Plaats je bestellingen! Laat andere spelers weten wat je wilt kopen of verkopen, en tegen welke prijs. Dit is wat je ontvangt of betaalt. Houd er rekening mee dat anderen voor het transport betalen. Dus iets voor een lage prijs kopen werkt misschien niet als de verzendkosten van andere spelers te hoog zijn.",
         "popup": "Deze pop-up toont u alle informatie over dit gebouw. Hier kunt u belangrijke parameters van het gebouw wijzigen of zelfs verplaatsen. Dit is alleen beschikbaar wanneer u zich in de bouwmodus bevindt.",
         "production": "Dit paneel geeft u een overzicht van al uw productiegebouwen. U kunt de productiesnelheid van elk gebouw afzonderlijk aanpassen. Gebouwen zijn gegroepeerd op type en u kunt in één oogopslag de totale grondstofproductie van elke groep zien.",
-        "storage": "Hier kun je instellen hoeveel dit gebouw kan opslaan. Het heeft een bepaalde capaciteit en kan een bepaalde hoeveelheid goederen bevatten. Je kunt de verhouding aanpassen om het aan je behoeften te optimaliseren."
+        "storage": "Hier kun je instellen hoeveel dit gebouw kan opslaan. Het heeft een bepaalde capaciteit en kan een bepaalde hoeveelheid goederen bevatten. Je kunt de verhouding aanpassen om het aan je behoeften te optimaliseren.",
+        "storageAllocation": "Met dit paneel kun je opslagcapaciteit in bulk toewijzen aan alle gebouwen van hetzelfde type. Verplaats de schuifregelaars om in te stellen welk deel van het totale volume van elk gebouw wordt gereserveerd voor elke grondstof. De som mag niet hoger zijn dan 100%; het overschot is verspilde capaciteit. Als je dit toepast, worden alle gebouwen van dat type overschreven met de gekozen toewijzing."
     },
     "tooltip": {
         "cannotChange": "Kan niet worden gewijzigd voor",
@@ -880,9 +938,9 @@
         "name": "Naam",
         "namePlaceholder": "Naam van de blauwdruk",
         "description": "Beschrijving",
-        "descriptionPlaceholder": "Wat wordt er met deze blauwdruk gebouwd?",
+        "descriptionPlaceholder": "Wat is dit voor ontwerp?",
         "category": "Categorie",
-        "categoryPlaceholder": "bijv. Industrieel, Residentieel",
+        "categoryPlaceholder": "bijv. Industrieel, Residentieel...",
         "biome": "Biome-configuratie",
         "allBiomes": "Dezelfde lay-out voor alle biomen",
         "copyConfig": "Biome Config kopiëren",
@@ -903,7 +961,8 @@
         "rates": "Tarieven",
         "noRates": "Plaats gebouwen om tarieven te bekijken",
         "deleteObject": "Verwijderen",
-        "outOfBounds": "Buiten het blauwdrukgebied"
+        "outOfBounds": "Buiten het blauwdrukgebied",
+        "duplicateLocation": "Locatie dupliceren"
     },
     "warnings": {
         "notEnoughPop": "Onvoldoende vrijwilligers"
